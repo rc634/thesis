@@ -45,6 +45,12 @@ where $\partial_\nu = {\partial}/{\partial x^\nu}$ and the Einstein summation co
 \end{equation}
 The operator $\dd/\dd \lambda $ can act on any function $f$ and return a new function $\tilde{f}$ over $\M$, formally this is written as $\dd/\dd \lambda (f) = \tilde{f}$ where $\tilde{f}:p\in\M\rightarrow \rspace$. We can also think of $\dd/\dd \lambda$ as a vector $\bs{X}$ with components $X^\mu=\dd x^\mu / \dd \lambda$ and basis vectors $\bs{e}_\mu:=\partial_\mu$ taken from Eq.~(\ref{eq:ddl}). The vector $\bs{X}$ can be written as $\bs{X} = X^\mu \bs{e}_\mu$ and can act on a general function $f$ over $\M$ as $\bs{X}(f) = X^\mu \bs{e}_\mu(f) = X^\mu \partial_\mu f$. 
 
+Considering the set of all possible curves through a points $p\in\M$, the tangent vector components $\dd x^\mu / \dd \lambda$ span an $N$ dimensional space with basis $\bs{e}_\mu = \partial_\mu$; this space is called the tangent space and is denoted as $\T_p(\M)$. For the tangent space to be a vector space we need to define an inner product between two general vectors $\bs{X},\bs{Y} \in \T_p(\M)$, linear in it's arguments, like
+\begin{equation}
+(a\bs{X})\cdot(b \bs{Y}) = abX^\mu Y^\nu \bs{e}_\mu \cdot \bs{e}_\nu
+\end{equation}
+for any coefficients $a$ and $b$. In General Relativity it is helpful to define the dot product with the metric components $g_{\mu\nu}$ like $\bs{e}_\mu \cdot \bs{e}_\nu = g_{\mu\nu}$; alternatively $\bs{X} \cdot \bs{Y} = X^\mu Y^\nu g_{\mu\nu}$.
+
 discuss coords, paths, vectoirs, forms, tensors, derivatives (lie, cov, partial ...), pullbacks (needed later), Riemann and stuff. see intro and appendix of smith kight.
 
 \subsection{General Relativity}
@@ -61,3 +67,5 @@ wheeler quote, matter tells space how to curve, adn space tells matter how to mo
 GRChombo section?
 
 einstein summation conventions?
+
+distinguish between tensors and tensor fields (especially in teh d/dlambda and X bit)
