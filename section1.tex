@@ -1,0 +1,25 @@
+
+ \section*{Hoop Conjecture Calculation for Grazing Star Collisions}
+
+Here Geometric units are used, $G=c=1$, and given that $\hbar$ doesn't arise we can equally take the units to be Plank units to match with the scalar field equation conventions in GRChombo. Take two stars significantly separated in the $x$ direction and separated in the $y$ direction by $d$. Approximate the stars as spheres of radius $r_1$, $r_2$ with masses $m_1$, $m_2$. The stars are boosted parallel to the x axis, towards each other, with speeds $v_1$ and $v_2$ and hence have sepate total energies 
+\begin{align}
+E_1 &= m_1 \gamma_1 = \frac{m_1 }{\sqrt{1-v_1^2}}, \\
+E_2 &= m_2 \gamma_2 = \frac{m_2 }{\sqrt{1-v_2^2}}.
+\end{align}
+Ignoring gravitational interaction, they will reach a distance of closest approach $d$, hence the two stars are enclosed in a sphere of diameter $D = r_1 + r_2 + d$. The hoop conjecture then says a Black Hole should form if there is sufficient mass inside this sphere, the condition becomes
+\begin{align}
+r_1 + r_2 + d \leq \alpha \left( m_1 \gamma_1 + m_2 \gamma_2\right)
+\end{align}
+for the formation of a Black Hole. The parameter $\alpha$ could be determined numerically. In a perfect isotropic gauge, where the diamter of a Black Hole is equal to it's mass, the ideal value is $\alpha = 1$. This ignores the binding energy of the system and ignores the fact that the two stars are not uniform density. The ideal values for moving puncture gauge and Schwarzschild gauge are $\alpha = 2$ and $\alpha = 4$ respectively.
+
+In the case both stars are identical and we are in the rest frame (so the boosts are equal) we get the condition
+\begin{align}
+2r + d \leq 2 \alpha m \gamma. 
+\end{align}
+The value of $\alpha$ is likely to be much greater than $2$, of the moving puncture gauge, as the centres of these stars are far denser than the outsides and we should really imagine a hoop conjecture based on $r_x$ and $m_x$ where $x$ denotes some percentage of the whole star. In other words $m_x = xm$ and $r_x$ is the radius containing the mass $xm$. This could be inserted into the hoop conjecture giving 
+\begin{align}
+ d \leq 2  (x \alpha m \gamma - r_x). 
+\end{align}
+Now both $x$ and $\alpha$ are numerically fittable constants. The option of varying $(\alpha,x)$ may be overfitting the problem and we should probably set $x$ to some constant, such as $x=0.95$, unless numerically fitting $\alpha$ turns out to not work.
+
+For all the discussion above, the results will be more accurate at higher velocities. The gravitational interaction between the stars, and the Klein-Gordon interaction at collision, are expected to be dominated by the kinetic energy of the collision.

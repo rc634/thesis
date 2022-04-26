@@ -1,0 +1,135 @@
+\documentclass[11pt, oneside]{report}  %can try book instead 	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[margin = 0.7in, bmargin = 1.1in, tmargin = 0.9in]{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or epsÂ§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsmath,mathtools}
+\usepackage{array}
+\usepackage{tabu}
+\usepackage{bm}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{floatrow}
+\usepackage{subfig}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\usepackage{lipsum}  
+\usepackage{mdframed}
+\usepackage{verbatim}
+\usepackage{slashed}
+%\usepackage[compat=1.1.0]{tikz-feynman}
+%\usepackage{animate}
+
+
+\newcommand{\G}{\mathcal{G}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\E}{\mathcal{E}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\K}{\mathcal{K}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\R}{\mathcal{R}}
+\renewcommand{\P}{\mathcal{P}}
+\newcommand{\vp}{\varphi}
+\newcommand{\T}{\mathcal{T}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\bs}{\boldsymbol}
+\newcommand{\rspace}{\mathbb{R}}
+
+
+\definecolor{purple}{RGB}{38,0,75}
+\pagecolor{white}
+\color{black}
+
+%SetFonts
+
+%SetFonts
+\usepackage{subfiles} % Best loaded last in the preamble
+
+\numberwithin{equation}{section}
+\pagenumbering{gobble}
+\title{Third Term Report}
+\author{Robin Croft}
+%\date{}	
+\begin{document}
+\begin{titlepage}
+\pagenumbering{gobble}
+  \centering
+  
+  \centering
+  {\scshape\LARGE Cambridge University \par}
+  \vspace{1cm}
+  {\scshape\Large Doctoral Thesis \par} 
+    \vspace{2cm} 
+    \hline
+    \vspace{0.3cm}
+  {\Large\itshape \par}
+  {\huge\bfseries On the Simulation of Boson Stars in General Relativity\par} \vspace{0.3cm}
+  \hline
+  \vfill
+   Author: Robin Croft
+\vfill
+  Supervisor: Dr. Ulrich Sperhake
+  \vfill
+
+    \begin{figure}[H]
+  \centering
+  \subfloat{\includegraphics[width=0.25\textwidth]{uni_logo.png}\label{fig:f1}}
+\end{figure}
+
+
+% Bottom of the page
+ % {\large \today\par}
+\end{titlepage}						% Activate to display a given date or no date
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+
+
+
+
+\chapter{Introduction}
+
+\subfile{intro}
+
+
+
+
+
+
+\chapter{Numerical Relativity}
+
+\subfile{nr}
+
+
+
+
+
+\chapter{Boson Stars}
+
+\subfile{bosonstars}
+
+
+
+\begin{thebibliography}{9}
+
+
+\bibitem{review}
+blank
+  \end{thebibliography}
+
+\end{document}
