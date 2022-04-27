@@ -4,7 +4,9 @@
 
 
 \section{Introduction}
-\subsection{Introduction to Compact Objects and Boson Stars}
+general gr shit?
+
+\section{Introduction to Compact Objects and Boson Stars}
 The first non flat solution to Einstein's equation found was that of the spherically symmetric, static and asymptotically flat vacuum spacetime by Karl Schwarzschild in 1915. The solution was designed to be used outside a spherically symmetric, non-spinning, body of mass; however it turned out to provide use in describing black holes. This metric was then modified by Tolman, Oppenheimer and Volkov in 1939 to describe the non-vacuum case of a constant density neutron star. This turned out to give an unphysical estimate of $0.7 M_\odot$ for the upper limit of neutron star mass due to the equation of state. 
 
 The study of compact exotic objects can be traced back to John Wheeler who investigated Geons in 1955 for their potential similarity to elementary particles. Geons are gravito-electromagnetic objects with the name arising from "gravitational electromagnetic entity". In 1968 David Kaup published [] describing what he called "Klein-Gordon Geons", nowadays referred to as boson stars. Importantly, boson stars are a localised complex Klein-Gordon configuration, with the real counterparts being unstable. Many variants such as (Spin 1) proca stars [], electromagnetically charged boson stars and many others have been studied. 
@@ -19,7 +21,8 @@ The conventions used in this report are Geometric units, $c=G=\hbar=1$, unless s
 
 
 
-\subsection{Differential Geometry}
+\section{Differential Geometry}
+\subsection{Introduction to Geometry / Manifolds (maybe change this)}
 We all learned Pythagerous theorem at school [INSERT PICTURE OF RIGHT ANGLED TRIANGLE], this is 2d. Generalise this to algebraic metric rather than constant kroneka delta metric. Give exmaple in spherical polars. Maybe use this to calculate areas/lengths. Maybe insert picture of sphere. Insert proof that root det g is needed for volume elment from transforming a generic metric from one coord system to another? maybe need to invoke diff forms?
 
 Differential Geometry (DG) is the extension of calculus, linear algebra and multilinear algebra to general
@@ -29,6 +32,7 @@ introduction to DG, we should start with a manifold $\M$ which is an $N$ dimensi
 like $\rspace^N$, $N$ dimensional Euclidean space. This is important as at a point $p\in\M$ we can find infinitesimally
 close neighbouring points $p + \delta p \in \M$. 
 
+\subsection{Functions, Curves and Tensors on Manifolds}
 A real scalar function $f$ over $\M$ maps any point $p\in \M$ to a real number, this is denoted as
 $f : p \rightarrow \rspace$. An important example of a set of scalar functions is the coordinate system $\phi$, $\phi : p \rightarrow \rspace^N$,
 this is normally written $x^\mu$ where $\mu\in\{0,1,...,N-1\}$ is an index labelling the coordinate. The map $\phi$ is called a chart,
@@ -51,21 +55,34 @@ Considering the set of all possible curves through a points $p\in\M$, the tangen
 \end{equation}
 for any coefficients $a$ and $b$. In General Relativity it is helpful to define the dot product with the metric components $g_{\mu\nu}$ like $\bs{e}_\mu \cdot \bs{e}_\nu = g_{\mu\nu}$; alternatively $\bs{X} \cdot \bs{Y} = X^\mu Y^\nu g_{\mu\nu}$.
 
+The next object to discuss is the co-vector which is defined as a map from vectors to real numbers. [DOESN@T DEPEND ON TEH METRIC TO DO SO BY TEH WAY] Co-vectors are also called 1-forms/diff-forms which have their own operations such as the antisymmetric derivative ... Similarly to a vector, a co-vector $\bs{\omega}$ can be expressed as a sum of components $\omega_\mu$ and basis co-vectors $\bs{\theta}^\mu$ like $\bs{\omega} = \omega_\mu \bs{\theta}^\mu$. Contrary to vectors, co-vector components have downstairs indeces and the basis has upstairs indeces; this choice makes [WHAT DOES THIS MAKE EWASY, OPERATING ON VECTORS]. The power of co-vectors is that they map a vector to a real number like $\bs{\omega}:\bs{X} \rightarrow \rspace$ or $\bs{\omega}(\bs{X}) \rightarrow \rspace$. Vectors are equally able to map co-vectors to real numbers like $\bs{X}:\bs{\omega}\rightarrow\rspace$. Co-vectors are defined such that $\bs{\theta}^\mu : \bs{e}_\nu = \delta^\mu_\nu$ where $\delta^\mu_\nu$ are the components of the Kroneka delta which are equal to zero unless $\mu=\nu$ in which case they equal unity. The general operation of a co-vector $\bs{\omega}$ on a vector $\bs{X}$ is
+\begin{equation}
+\bs{\omega}: \bs{X} = \omega_\mu X^\nu \bs{\theta}^\mu:\bs{e}_\nu = \omega_\mu X^\nu \delta^\mu_\nu = \omega_\mu X^\mu \in \rspace.
+\end{equation}
+This map is linear and identical under reversing the order of operation; $\bs{\omega} : \bs{X} = \bs{X} : \bs{\omega}$. Similarly to vectors, the set of all possible co-vectors at a point $p\in\M$ span an N-dimensional space called the co-tangent space, written as $\T^*_p(\M)$.
+
+Linear maps can be easily generalised to multilinear maps
+
+\subsection{General Covariance / Coordinate transformations}
+
 discuss coords, paths, vectoirs, forms, tensors, derivatives (lie, cov, partial ...), pullbacks (needed later), Riemann and stuff. see intro and appendix of smith kight.
 
-\subsection{General Relativity}
+\section{General Relativity}
 Einstein vacuum eqn, then add matter, maybe horizons and black holes stuff. check harvey/tong gr/bh notes for inspiration.
+
+specific solutions like minkowski, gravitational waves, BH's, NS'
 
 \subsection{Special Relativity}
 gradient of metric go to zero, drops out SR?
 
 1887 Michelson-Morley to find aether that light moves on. Instead found not true. laws of physics are the same in all frames. Assming these two things Einstein derived the Lorentz group.
 
-\subsection{Stuff}
+\section{Stuff}
 wheeler quote, matter tells space how to curve, adn space tells matter how to move.
 
 GRChombo section?
 
-einstein summation conventions?
+einstein summation conventions? and upstiars/downstairs incedes in conventions
 
 distinguish between tensors and tensor fields (especially in teh d/dlambda and X bit)
+
