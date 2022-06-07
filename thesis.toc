@@ -1,3 +1,61 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Numerical Relativity}{2}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Boson Stars}{3}{chapter.3}%
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Introduction to Compact Objects and Boson Stars}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Conventions}{2}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.3}Differential Geometry}{2}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Introduction to Geometry / Manifolds (maybe change this)}{2}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Functions, Curves and Tensors on Manifolds}{3}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}General Covariance / Coordinate transformations}{4}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Differential Forms}{5}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Differentiation on Manifolds}{6}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.6}Integrating Forms on Manifolds}{7}{subsection.1.3.6}%
+\contentsline {subsection}{\numberline {1.3.7}Length and Geodesics on Manifolds}{7}{subsection.1.3.7}%
+\contentsline {subsection}{\numberline {1.3.8}Maps Between Manifolds}{8}{subsection.1.3.8}%
+\contentsline {section}{\numberline {1.4}General Relativity}{9}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Low Curvature Limit of General Relativity}{9}{subsection.1.4.1}%
+\contentsline {section}{\numberline {1.5}Stuff}{10}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Numerical Relativity}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Numerical Relativity}{12}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Spacetime Foliation}{12}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}The 3+1 Decomposition}{13}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Gauss, Codazzi and Ricci Equations}{14}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Decomposition of Einstein's Equation}{15}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Foliation Adapted Coordinates, CHECK ERORR IN ADM METRIC MATRIX}{16}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}ADM Equations}{17}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.1.7}BSSN}{17}{subsection.2.1.7}%
+\contentsline {subsection}{\numberline {2.1.8}Z4 Formalism}{18}{subsection.2.1.8}%
+\contentsline {subsection}{\numberline {2.1.9}CCZ4}{18}{subsection.2.1.9}%
+\contentsline {subsection}{\numberline {2.1.10}Gauge Conditions}{19}{subsection.2.1.10}%
+\contentsline {chapter}{\numberline {3}Boson Stars}{22}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Mathematical Modelling of Boson Stars}{22}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Action}{22}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Solitons}{23}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}3+1 Klein Gordon System}{24}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Klein Gordon's Noether Charge}{25}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Boosted Boson Stars and Black Holes}{25}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Spherical Harmonics in Curved Space}{27}{subsection.3.1.6}%
+\contentsline {section}{\numberline {3.2}Boson Star Numerical Simulations}{28}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Simulation Units}{28}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}GRChombo}{28}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Initial Data}{28}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Single Star Evolutions}{31}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Superposition of Initial Data}{32}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Head-on Collisions}{33}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Binary Inspiral}{38}{subsection.3.2.7}%
+\contentsline {section}{\numberline {3.3}Future Work}{40}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Local Continuity of Angular Momentum and Noether Charge}{41}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{41}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Derivation of the QFS System}{43}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Application to Spherical extraction}{46}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Noether Currents}{47}{section.4.4}%
+\contentsline {subsubsection}{Complex Scalar Fields}{47}{section*.22}%
+\contentsline {subsubsection}{Complex Vector Fields}{48}{section*.23}%
+\contentsline {section}{\numberline {4.5}Energy-Momentum Currents}{49}{section.4.5}%
+\contentsline {subsubsection}{Angular Momentum}{50}{section*.24}%
+\contentsline {subsubsection}{Energy}{51}{section*.25}%
+\contentsline {section}{\numberline {4.6}Numerical Application}{51}{section.4.6}%
+\contentsline {subsubsection}{Numerical Setup of Simulations}{51}{section*.26}%
+\contentsline {subsubsection}{Convergence Analysis}{53}{section*.30}%
+\contentsline {section}{\numberline {4.7}Conclusion}{54}{section.4.7}%
+\contentsline {section}{\numberline {.1}Source Term Calculation}{55}{section.Alph0.1}%
+\contentsline {section}{\numberline {.2}Generality of Result}{56}{section.Alph0.2}%

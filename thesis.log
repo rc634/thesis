@@ -1,214 +1,239 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.14)  26 MAY 2022 14:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.10)  7 JUN 2022 16:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
-LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18>
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count179
-\c@chapter=\count180
-\c@section=\count181
-\c@subsection=\count182
-\c@subsubsection=\count183
-\c@paragraph=\count184
-\c@subparagraph=\count185
-\c@figure=\count186
-\c@table=\count187
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen138
+\bibindent=\dimen134
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
+\KV@toks@=\toks14
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
 ))
-\Gm@cnth=\count188
-\Gm@cntv=\count189
-\c@Gm@tempcnt=\count190
-\Gm@bindingoffset=\dimen139
-\Gm@wd@mp=\dimen140
-\Gm@odd@mp=\dimen141
-\Gm@even@mp=\dimen142
-\Gm@layoutwidth=\dimen143
-\Gm@layoutheight=\dimen144
-\Gm@layouthoffset=\dimen145
-\Gm@layoutvoffset=\dimen146
-\Gm@dimlist=\toks16
+\Gm@cnth=\count176
+\Gm@cntv=\count177
+\c@Gm@tempcnt=\count178
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks15
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/parskip/parskip.sty
-Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2020-01-22 v2.0d non-zero parskip adjustments
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ))
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count191
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count179
 ))
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen147
-\Gin@req@width=\dimen148
+\Gin@req@height=\dimen143
+\Gin@req@width=\dimen144
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks17
+\@emptytoks=\toks16
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2020/09/23 v2.17i AMS math features
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks18
-\ex@=\dimen149
+\@emptytoks=\toks17
+\ex@=\dimen145
 ))
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen150
+\pmbraise@=\dimen146
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count192
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count193
-\leftroot@=\count194
-LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count195
-\DOTSCASE@=\count196
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box47
-\strutbox@=\box48
-\big@size=\dimen151
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count197
-\c@MaxMatrixCols=\count198
+\inf@bad=\count180
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count181
+\leftroot@=\count182
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count183
+\DOTSCASE@=\count184
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen147
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count185
+\c@MaxMatrixCols=\count186
 \dotsspace@=\muskip16
-\c@parentequation=\count199
-\dspbrk@lvl=\count266
-\tag@help=\toks19
-\row@=\count267
-\column@=\count268
-\maxfields@=\count269
-\andhelp@=\toks20
-\eqnshift@=\dimen152
-\alignsep@=\dimen153
-\tagshift@=\dimen154
-\tagwidth@=\dimen155
-\totwidth@=\dimen156
-\lineht@=\dimen157
-\@envbody=\toks21
+\c@parentequation=\count187
+\dspbrk@lvl=\count188
+\tag@help=\toks18
+\row@=\count189
+\column@=\count190
+\maxfields@=\count191
+\andhelp@=\toks19
+\eqnshift@=\dimen148
+\alignsep@=\dimen149
+\tagshift@=\dimen150
+\tagwidth@=\dimen151
+\totwidth@=\dimen152
+\lineht@=\dimen153
+\@envbody=\toks20
 \multlinegap=\skip50
 \multlinetaggap=\skip51
-\mathdisplay@stack=\toks22
-LaTeX Info: Redefining \[ on input line 2923.
-LaTeX Info: Redefining \] on input line 2924.
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2021/03/18 v1.25 mathematical typesetting tools
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/tools/calc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count270
-\calc@Bcount=\count271
-\calc@Adimen=\dimen158
-\calc@Bdimen=\dimen159
+\calc@Acount=\count192
+\calc@Bcount=\count193
+\calc@Adimen=\dimen154
+\calc@Bdimen=\dimen155
 \calc@Askip=\skip52
 \calc@Bskip=\skip53
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count272
+\calc@Ccount=\count194
 \calc@Cskip=\skip54
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
-LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
-LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
-LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
-LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count273
-\l_MT_multwidth_dim=\dimen160
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count195
+\l_MT_multwidth_dim=\dimen156
 \origjot=\skip55
-\l_MT_shortvdotswithinadjustabove_dim=\dimen161
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen162
-\l_MT_above_intertext_sep=\dimen163
-\l_MT_below_intertext_sep=\dimen164
-\l_MT_above_shortintertext_sep=\dimen165
-\l_MT_below_shortintertext_sep=\dimen166
-\xmathstrut@box=\box49
-\xmathstrut@dim=\dimen167
+\l_MT_shortvdotswithinadjustabove_dim=\dimen157
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen158
+\l_MT_above_intertext_sep=\dimen159
+\l_MT_below_intertext_sep=\dimen160
+\l_MT_above_shortintertext_sep=\dimen161
+\l_MT_below_shortintertext_sep=\dimen162
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/tools/array.sty
-Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
-\col@sep=\dimen168
-\ar@mcellbox=\box50
-\extrarowheight=\dimen169
-\NC@list=\toks23
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen163
+\ar@mcellbox=\box47
+\extrarowheight=\dimen164
+\NC@list=\toks22
 \extratabsurround=\skip56
 \backup@length=\skip57
-\ar@cellbox=\box51
+\ar@cellbox=\box48
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed) + inter
+mediate FMi
 
-! LaTeX Error: File `tabu.sty' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
-
-Enter file name: 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/tools/bm.sty
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box49
+\sift@deathcycles=\count196
+\@vwid@loff=\dimen165
+\@vwid@roff=\dimen166
+)
+\c@taburow=\count197
+\tabu@nbcols=\count198
+\tabu@cnt=\count199
+\tabu@Xcol=\count266
+\tabu@alloc=\count267
+\tabu@nested=\count268
+\tabu@target=\dimen167
+\tabu@spreadtarget=\dimen168
+\tabu@naturalX=\dimen169
+\tabucolX=\dimen170
+\tabu@Xsum=\dimen171
+\extrarowdepth=\dimen172
+\abovetabulinesep=\dimen173
+\belowtabulinesep=\dimen174
+\tabustrutrule=\dimen175
+\tabu@thebody=\toks23
+\tabu@footnotes=\toks24
+\tabu@box=\box50
+\tabu@arstrutbox=\box51
+\tabu@hleads=\box52
+\tabu@vleads=\box53
+\tabu@cellskip=\skip58
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
@@ -216,186 +241,185 @@ Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 209.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen176
+\WF@size=\dimen177
+\c@WF@wrappedlines=\count269
+\WF@box=\box54
+\WF@everypar=\toks25
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip59
+\multirow@cntb=\count270
+\multirow@dima=\skip60
+\bigstrutjot=\dimen178
+)
+(/usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
+Package: physics 
 
-! LaTeX Error: File `wrapfig.sty' not found.
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-14 L3 programming layer (loader) 
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count271
+\l__pdf_internal_box=\box55
+))
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count272
+\g__xparse_grabber_int=\count273
+\l__xparse_m_args_int=\count274
+\l__xparse_v_nesting_int=\count275
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
 
-Enter file name: 
-
-! LaTeX Error: File `multirow.sty' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
-
-Enter file name: 
-
-! LaTeX Error: File `physics.sty' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
-
-Enter file name: 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
-
-(/usr/local/texlive/2021basic/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.
-sty
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/hycolor/hycolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (/usr/local/texlive/2021basic/texmf-dist/tex/latex/auxhook/auxhook.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen170
-\Hy@linkcounter=\count274
-\Hy@pagecounter=\count275
+\@linkdim=\dimen179
+\Hy@linkcounter=\count276
+\Hy@pagecounter=\count277
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/hyperref/hyperref-langpatche
-s.def
-File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
-nguages
-) (/usr/local/texlive/2021basic/texmf-dist/tex/generic/intcalc/intcalc.sty
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) (/usr/local/texlive/2021basic/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count276
-
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
-)
-Package hyperref Info: Hyper figures OFF on input line 4192.
-Package hyperref Info: Link nesting OFF on input line 4197.
-Package hyperref Info: Hyper index ON on input line 4200.
-Package hyperref Info: Plain pages OFF on input line 4207.
-Package hyperref Info: Backreferencing OFF on input line 4212.
+\Hy@SavedSpaceFactor=\count278
+\pdfmajorversion=\count279
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count277
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count280
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/url/url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen171
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen180
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count278
-\Field@Width=\dimen172
-\Fld@charsize=\dimen173
-Package hyperref Info: Hyper figures OFF on input line 6075.
-Package hyperref Info: Link nesting OFF on input line 6080.
-Package hyperref Info: Hyper index ON on input line 6083.
-Package hyperref Info: backreferencing OFF on input line 6090.
-Package hyperref Info: Link coloring OFF on input line 6095.
-Package hyperref Info: Link coloring with OCG OFF on input line 6100.
-Package hyperref Info: PDF/A mode OFF on input line 6105.
-LaTeX Info: Redefining \ref on input line 6145.
-LaTeX Info: Redefining \pageref on input line 6149.
- (/usr/local/texlive/2021basic/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
-ge
-with kernel methods
+\Fld@menulength=\count281
+\Field@Width=\dimen181
+\Fld@charsize=\dimen182
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+
+(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count279
-\c@Item=\count280
-\c@Hfootnote=\count281
+\Hy@abspage=\count282
+\c@Item=\count283
+\c@Hfootnote=\count284
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
-e
-with kernel methods
+(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count282
-\c@bookmark@seq@number=\count283
+\Fld@listcount=\count285
+\c@bookmark@seq@number=\count286
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/rerunfilecheck/rerunfilechec
-k.sty
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/generic/uniquecounter/uniquecounte
-r.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip58
+\Hy@SectionHShift=\skip61
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count284
-\lst@gtempboxa=\box52
-\lst@token=\toks24
-\lst@length=\count285
-\lst@currlwidth=\dimen174
-\lst@column=\count286
-\lst@pos=\count287
-\lst@lostspace=\dimen175
-\lst@width=\dimen176
-\lst@newlines=\count288
-\lst@lineno=\count289
-\lst@maxwidth=\dimen177
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count287
+\lst@gtempboxa=\box56
+\lst@token=\toks26
+\lst@length=\count288
+\lst@currlwidth=\dimen183
+\lst@column=\count289
+\lst@pos=\count290
+\lst@lostspace=\dimen184
+\lst@width=\dimen185
+\lst@newlines=\count291
+\lst@lineno=\count292
+\lst@maxwidth=\dimen186
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count290
-\lst@skipnumbers=\count291
-\lst@framebox=\box53
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count293
+\lst@skipnumbers=\count294
+\lst@framebox=\box57
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2020/03/24 1.8d listings configuration
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
-Package: listings 2020/03/24 1.8d (Carsten Heinz)
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks25
-\inpenc@posthook=\toks26
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks27
+\inpenc@posthook=\toks28
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/lm/lmodern.sty
-Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
@@ -429,78 +453,104 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen178
-\captionmargin@=\dimen179
-\captionwidth=\dimen180
-\caption@tempdima=\dimen181
-\caption@indent=\dimen182
-\caption@parindent=\dimen183
-\caption@hangindent=\dimen184
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen187
+\captionmargin@=\dimen188
+\captionwidth=\dimen189
+\caption@tempdima=\dimen190
+\caption@indent=\dimen191
+\caption@parindent=\dimen192
+\caption@hangindent=\dimen193
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count292
-\c@continuedfloat=\count293
+\c@caption@flags=\count295
+\c@continuedfloat=\count296
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/floatrow/floatrow.sty
+Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+\c@float@type=\count297
+\float@exts=\toks29
+\float@box=\box58
+\@floatcapt=\box59
+Package floatrow Info: Modified float package code loaded on input line 455.
+Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 
-! LaTeX Error: File `floatrow.sty' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
-
-Enter file name: 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/subfig/subfig.sty
+\FR@everyfloat=\toks30
+\flrow@foot=\insert252
+\FB@wd=\dimen194
+\FBo@wd=\dimen195
+\FBc@wd=\dimen196
+\FBo@ht=\skip62
+\FBc@ht=\skip63
+\FBf@ht=\skip64
+\FBo@max=\skip65
+\FBc@max=\skip66
+\FBf@max=\skip67
+\c@FBl@b=\count298
+\floatbox@depth=\count299
+\c@FRobj=\count300
+\c@FRsobj=\count301
+\Xhsize=\skip68
+\sXhsize=\skip69
+\Zhsize=\skip70
+\sZhsize=\skip71
+\flrow@rowbox=\box60
+\FR@Zunitlength=\dimen197
+\c@FBcnt=\count302
+\FPOScnt=\count303
+\LTleft=\skip72
+\LTright=\skip73
+\LTleft=\skip74
+\LTright=\skip75
+\flrow@types=\toks31
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count294
-\sf@farskip=\skip59
-\sf@captopadj=\dimen185
-\sf@capskip=\skip60
-\sf@nearskip=\skip61
-\c@subfigure=\count295
-\c@subfigure@save=\count296
-\c@lofdepth=\count297
-\c@subtable=\count298
-\c@subtable@save=\count299
-\c@lotdepth=\count300
-\sf@top=\skip62
-\sf@bottom=\skip63
+\c@KVtest=\count304
+\sf@farskip=\skip76
+\sf@captopadj=\dimen198
+\sf@capskip=\skip77
+\sf@nearskip=\skip78
+\c@subfigure=\count305
+\c@subfigure@save=\count306
+\c@lofdepth=\count307
+\c@subtable=\count308
+\c@subtable@save=\count309
+\c@lotdepth=\count310
+\sf@top=\skip79
+\sf@bottom=\skip80
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/tools/multicol.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count301
-\mult@box=\box54
-\multicol@leftmargin=\dimen186
-\c@unbalance=\count302
-\c@collectmore=\count303
-\doublecol@number=\count304
-\multicoltolerance=\count305
-\multicolpretolerance=\count306
-\full@width=\dimen187
-\page@free=\dimen188
-\premulticols=\dimen189
-\postmulticols=\dimen190
-\multicolsep=\skip64
-\multicolbaselineskip=\skip65
-\partial@page=\box55
-\last@line=\box56
-\maxbalancingoverflow=\dimen191
-\mult@rightbox=\box57
-\mult@grightbox=\box58
-\mult@gfirstbox=\box59
-\mult@firstbox=\box60
-\@tempa=\box61
-\@tempa=\box62
-\@tempa=\box63
-\@tempa=\box64
-\@tempa=\box65
-\@tempa=\box66
-\@tempa=\box67
+\c@tracingmulticols=\count311
+\mult@box=\box61
+\multicol@leftmargin=\dimen199
+\c@unbalance=\count312
+\c@collectmore=\count313
+\doublecol@number=\count314
+\multicoltolerance=\count315
+\multicolpretolerance=\count316
+\full@width=\dimen256
+\page@free=\dimen257
+\premulticols=\dimen258
+\postmulticols=\dimen259
+\multicolsep=\skip81
+\multicolbaselineskip=\skip82
+\partial@page=\box62
+\last@line=\box63
+\maxbalancingoverflow=\dimen260
+\mult@rightbox=\box64
+\mult@grightbox=\box65
+\mult@gfirstbox=\box66
+\mult@firstbox=\box67
 \@tempa=\box68
 \@tempa=\box69
 \@tempa=\box70
@@ -531,20 +581,27 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box95
 \@tempa=\box96
 \@tempa=\box97
-\c@minrows=\count307
-\c@columnbadness=\count308
-\c@finalcolumnbadness=\count309
-\last@try=\dimen192
-\multicolovershoot=\dimen193
-\multicolundershoot=\dimen194
-\mult@nat@firstbox=\box98
-\colbreak@box=\box99
-\mc@col@check@num=\count310
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\c@minrows=\count317
+\c@columnbadness=\count318
+\c@finalcolumnbadness=\count319
+\last@try=\dimen261
+\multicolovershoot=\dimen262
+\multicolundershoot=\dimen263
+\mult@nat@firstbox=\box105
+\colbreak@box=\box106
+\mc@col@check@num=\count320
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -558,55 +615,326 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/pagecolor/pagecolor.sty
+Package: pagecolor 2017/05/29 v1.0i Provides thepagecolor (HMM)
 
-! LaTeX Error: File `pagecolor.sty' not found.
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+))
+(/usr/share/texlive/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
 
-Enter file name: 
+(/usr/share/texlive/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2019/11/29 v2.28 Module abspage for zref (HO)
 
-! LaTeX Error: File `lipsum.sty' not found.
+(/usr/share/texlive/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2019/11/29 v2.28 Module base for zref (HO)
+Package zref Info: New property list: main on input line 763.
+Package zref Info: New property: default on input line 764.
+Package zref Info: New property: page on input line 765.
+)
+\c@abspage=\count321
+Package zref Info: New property: abspage on input line 66.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip83
+\c@mdf@globalstyle@cnt=\count322
+\mdf@skipabove@length=\skip84
+\mdf@skipbelow@length=\skip85
+\mdf@leftmargin@length=\skip86
+\mdf@rightmargin@length=\skip87
+\mdf@innerleftmargin@length=\skip88
+\mdf@innerrightmargin@length=\skip89
+\mdf@innertopmargin@length=\skip90
+\mdf@innerbottommargin@length=\skip91
+\mdf@splittopskip@length=\skip92
+\mdf@splitbottomskip@length=\skip93
+\mdf@outermargin@length=\skip94
+\mdf@innermargin@length=\skip95
+\mdf@linewidth@length=\skip96
+\mdf@innerlinewidth@length=\skip97
+\mdf@middlelinewidth@length=\skip98
+\mdf@outerlinewidth@length=\skip99
+\mdf@roundcorner@length=\skip100
+\mdf@footenotedistance@length=\skip101
+\mdf@userdefinedwidth@length=\skip102
+\mdf@needspace@length=\skip103
+\mdf@frametitleaboveskip@length=\skip104
+\mdf@frametitlebelowskip@length=\skip105
+\mdf@frametitlerulewidth@length=\skip106
+\mdf@frametitleleftmargin@length=\skip107
+\mdf@frametitlerightmargin@length=\skip108
+\mdf@shadowsize@length=\skip109
+\mdf@extratopheight@length=\skip110
+\mdf@subtitleabovelinewidth@length=\skip111
+\mdf@subtitlebelowlinewidth@length=\skip112
+\mdf@subtitleaboveskip@length=\skip113
+\mdf@subtitlebelowskip@length=\skip114
+\mdf@subtitleinneraboveskip@length=\skip115
+\mdf@subtitleinnerbelowskip@length=\skip116
+\mdf@subsubtitleabovelinewidth@length=\skip117
+\mdf@subsubtitlebelowlinewidth@length=\skip118
+\mdf@subsubtitleaboveskip@length=\skip119
+\mdf@subsubtitlebelowskip@length=\skip120
+\mdf@subsubtitleinneraboveskip@length=\skip121
+\mdf@subsubtitleinnerbelowskip@length=\skip122
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+(/usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box107
+\mdf@footnotebox=\box108
+\mdf@splitbox@one=\box109
+\mdf@splitbox@two=\box110
+\mdf@splitbox@save=\box111
+\mdfsplitboxwidth=\skip123
+\mdfsplitboxtotalwidth=\skip124
+\mdfsplitboxheight=\skip125
+\mdfsplitboxdepth=\skip126
+\mdfsplitboxtotalheight=\skip127
+\mdfframetitleboxwidth=\skip128
+\mdfframetitleboxtotalwidth=\skip129
+\mdfframetitleboxheight=\skip130
+\mdfframetitleboxdepth=\skip131
+\mdfframetitleboxtotalheight=\skip132
+\mdffootnoteboxwidth=\skip133
+\mdffootnoteboxtotalwidth=\skip134
+\mdffootnoteboxheight=\skip135
+\mdffootnoteboxdepth=\skip136
+\mdffootnoteboxtotalheight=\skip137
+\mdftotallinewidth=\skip138
+\mdfboundingboxwidth=\skip139
+\mdfboundingboxtotalwidth=\skip140
+\mdfboundingboxheight=\skip141
+\mdfboundingboxdepth=\skip142
+\mdfboundingboxtotalheight=\skip143
+\mdf@freevspace@length=\skip144
+\mdf@horizontalwidthofbox@length=\skip145
+\mdf@verticalmarginwhole@length=\skip146
+\mdf@horizontalspaceofbox=\skip147
+\mdfsubtitleheight=\skip148
+\mdfsubsubtitleheight=\skip149
+\c@mdfcountframes=\count323
 
-Enter file name: 
+****** mdframed patching \endmdf@trivlist
 
-! LaTeX Error: File `mdframed.sty' not found.
+****** -- success******
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
-
-Enter file name: 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks27
-\verbatim@line=\toks28
+\mdf@envdepth=\count324
+\c@mdf@env@i=\count325
+\c@mdf@env@ii=\count326
+\c@mdf@zref@counter=\count327
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks32
+\verbatim@line=\toks33
 \verbatim@in@stream=\read2
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/carlisle/slashed.sty
+(/usr/share/texlive/texmf-dist/tex/latex/carlisle/slashed.sty
 Package: slashed 1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
 )
+\GPT@outputbox=\box112
 
-! LaTeX Error: File `subfiles.sty' not found.
+(/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
+Package: subfiles 2020/02/14 v1.6 Multi-file projects (package)
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+(/usr/share/texlive/texmf-dist/tex/latex/import/import.sty
+Package: import 2009/03/23  v 5.1
+)) (./thesis.aux
 
-Enter file name: 
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 67
-.
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.d
-ef
-File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count311
-\l__pdf_internal_box=\box100
-)
-No file thesis.aux.
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -625,8 +953,11 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 67
+.
+ (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -661,54 +992,62 @@ LaTeX Font Info:    ... okay on input line 67.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count312
-\scratchdimen=\dimen195
-\scratchbox=\box101
-\nofMPsegments=\count313
-\nofMParguments=\count314
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count315
-\MPscratchDim=\dimen196
-\MPnumerator=\count316
-\makeMPintoPDFobject=\count317
-\everyMPtoPDFconversion=\toks30
-)
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.s
-ty
+\scratchcounter=\count328
+\scratchdimen=\dimen264
+\scratchbox=\box113
+\nofMPsegments=\count329
+\nofMParguments=\count330
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count331
+\MPscratchDim=\dimen265
+\MPnumerator=\count332
+\makeMPintoPDFobject=\count333
+\everyMPtoPDFconversion=\toks35
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+\AtBeginShipoutBox=\box114
 Package hyperref Info: Link coloring OFF on input line 67.
- (/usr/local/texlive/2021basic/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/refcount/refcount.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(/usr/local/texlive/2021basic/texmf-dist/tex/generic/gettitlestring/gettitlestr
-ing.sty
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count318
+\c@section@level=\count334
 )
 LaTeX Info: Redefining \ref on input line 67.
 LaTeX Info: Redefining \pageref on input line 67.
 LaTeX Info: Redefining \nameref on input line 67.
+
+(./thesis.out) (./thesis.out)
 \@outlinefile=\write3
 \openout3 = `thesis.out'.
 
-\c@lstlisting=\count319
+\c@lstlisting=\count335
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: floatrow package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
+(/usr/share/texlive/texmf-dist/tex/latex/floatrow/fr-subfig.sty
+Package: fr-subfig 2007/12/24 v0.1g (beta) floatrow: additions for subfig
+\FBsc@max=\skip150
+\FBso@max=\skip151
+)
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
@@ -720,16 +1059,6 @@ l.77     \hline
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
 l.81   \hline
              
-? 
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88     \begin{figure}[H]
-                          
 ? 
 
 LaTeX Warning: File `uni_logo.png' not found on input line 90.
@@ -747,17 +1076,57 @@ l.90 ...25\textwidth]{uni_logo.png}\label{fig:f1}}
 ? 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9
 0.
-(/usr/local/texlive/2021basic/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1
 
-{/usr/local/texlive/2021basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]pdf
-TeX warning (ext4): destination with the same identifier (name{page.}) has been
- already used, duplicate ignored
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./thesis.toc
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+.
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+2.
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+2.
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.97 \tableofcontents
-                      [1]
+l.40 ...{3.2.3}Initial Data}{27}{subsection.3.2.3}
+                                                  % [1
+
+])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
@@ -766,64 +1135,1085 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.98 \newpage
-              [2
-
-]
+              [2]
 Chapter 1.
-! Undefined control sequence.
-l.107 \subfile
-              {intro}
-? 
-[1
+(./intro.tex [1
 
 ]
+<pics/pythag_proof.png, id=306, 1027.84pt x 969.6225pt>
+File: pics/pythag_proof.png Graphic file (type png)
+<use pics/pythag_proof.png>
+Package pdftex.def Info: pics/pythag_proof.png  used on input line 50.
+(pdftex.def)             Requested size: 201.01103pt x 189.61565pt.
+ [2 <./pics/pythag_proof.png>] [3] [4] [5] [6] [7]
+
+LaTeX Warning: Reference `where ref?' on page 8 undefined on input line 263.
+
+[8] [9] [10]) [11]
 Chapter 2.
-! Undefined control sequence.
-l.116 \subfile
-              {nr}
+(./nr.tex [12
+
+] [13] [14] [15]
+
+LaTeX Warning: File `adm.png' not found on input line 114.
+
+
+! Package pdftex.def Error: File `adm.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.114 ...degraphics[width=0.65\textwidth]{adm.png}
+                                                  
 ? 
-[2
+
+Underfull \hbox (badness 2245) in paragraph at lines 116--117
+[]\T1/lmr/m/n/10.95 Picking co-or-di-nates in GR in-
+ []
+
+[16]
+
+LaTeX Warning: Citation `harmonic' on page 17 undefined on input line 144.
+
+[17]
+
+LaTeX Warning: Citation `z4' on page 18 undefined on input line 158.
+
+[18]
+
+LaTeX Warning: File `schwarzschild2.png' not found on input line 190.
+
+
+! Package pdftex.def Error: File `schwarzschild2.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.190 ...width]{schwarzschild2.png}\label{fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `schwarzschild.png' not found on input line 192.
+
+
+! Package pdftex.def Error: File `schwarzschild.png' not found: using draft set
+ting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.192 ...twidth]{schwarzschild.png}\label{fig:f2}}
+                                                  
+? 
+[19] [20]) [21]
+Chapter 3.
+(./bosonstars.tex [22
+
+] [23] [24] [25] [26] [27] [28]
+
+LaTeX Warning: File `bosonstar_groundstate.png' not found on input line 196.
+
+
+! Package pdftex.def Error: File `bosonstar_groundstate.png' not found: using d
+raft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196 ...bosonstar_groundstate.png}\label{fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `bosonstar_excitedstate.png' not found on input line 198.
+
+
+! Package pdftex.def Error: File `bosonstar_excitedstate.png' not found: using 
+draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...osonstar_excitedstate.png}\label{fig:f2}}
+                                                  
+? 
+[29]
+
+LaTeX Warning: File `ADM_vs_PC.png' not found on input line 206.
+
+
+! Package pdftex.def Error: File `ADM_vs_PC.png' not found: using draft setting
+.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 ...\textwidth]{ADM_vs_PC.png}\label{fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `ADM_vs_r99.png' not found on input line 208.
+
+
+! Package pdftex.def Error: File `ADM_vs_r99.png' not found: using draft settin
+g.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 ...textwidth]{ADM_vs_r99.png}\label{fig:f2}}
+                                                  
+? 
+[30]
+
+LaTeX Warning: File `mod_phi_nice0000.png' not found on input line 218.
+
+
+! Package pdftex.def Error: File `mod_phi_nice0000.png' not found: using draft 
+setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 ...dth]{mod_phi_nice0000.png}\label{fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `modphimax.png' not found on input line 220.
+
+
+! Package pdftex.def Error: File `modphimax.png' not found: using draft setting
+.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.220 ...\textwidth]{modphimax.png}\label{fig:f2}}
+                                                  
+? 
+[31]
+
+LaTeX Warning: File `N.png' not found on input line 227.
+
+
+! Package pdftex.def Error: File `N.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 ...idth=0.5\textwidth]{N.png}\label{fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `H.png' not found on input line 229.
+
+
+! Package pdftex.def Error: File `H.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 ...idth=0.5\textwidth]{H.png}\label{fig:f2}}
+                                                  
+? 
+
+LaTeX Warning: File `headon_bs/chi0000.png' not found on input line 252.
+
+
+! Package pdftex.def Error: File `headon_bs/chi0000.png' not found: using draft
+ setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.252 ...th]{headon_bs/chi0000.png}\label{fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `headon_bs/modphi0000.png' not found on input line 254.
+
+
+! Package pdftex.def Error: File `headon_bs/modphi0000.png' not found: using dr
+aft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.254 ...{headon_bs/modphi0000.png}\label{fig:f2}}
+                                                  
+? 
+[32]
+
+LaTeX Warning: File `headon_bs/modphi0003.png' not found on input line 259.
+
+
+! Package pdftex.def Error: File `headon_bs/modphi0003.png' not found: using dr
+aft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.259 ...{headon_bs/modphi0003.png}\label{fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `headon_bs/modphi0004.png' not found on input line 261.
+
+
+! Package pdftex.def Error: File `headon_bs/modphi0004.png' not found: using dr
+aft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.261 ...{headon_bs/modphi0004.png}\label{fig:f2}}
+                                                  
+? 
+
+LaTeX Warning: File `headon_bs/phi_re0004.png' not found on input line 266.
+
+
+! Package pdftex.def Error: File `headon_bs/phi_re0004.png' not found: using dr
+aft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.266 ...{headon_bs/phi_re0004.png}\label{fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `headon_bs/phi_re_perp0004.png' not found on input line 268
+.
+
+
+! Package pdftex.def Error: File `headon_bs/phi_re_perp0004.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 ...on_bs/phi_re_perp0004.png}\label{fig:f2}}
+                                                  
+? 
+[33]
+
+LaTeX Warning: File `LMR/chi0000.png' not found on input line 276.
+
+
+! Package pdftex.def Error: File `LMR/chi0000.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.276 ...extwidth]{LMR/chi0000.png}\label{fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `LMR/modphi0000.png' not found on input line 278.
+
+
+! Package pdftex.def Error: File `LMR/modphi0000.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.278 ...width]{LMR/modphi0000.png}\label{fig:f2}}
+                                                  
+? 
+[34]
+
+LaTeX Warning: File `LMR/chi0005.png' not found on input line 283.
+
+
+! Package pdftex.def Error: File `LMR/chi0005.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.283 ...extwidth]{LMR/chi0005.png}\label{fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `LMR/modphi0005.png' not found on input line 285.
+
+
+! Package pdftex.def Error: File `LMR/modphi0005.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.285 ...width]{LMR/modphi0005.png}\label{fig:f2}}
+                                                  
+? 
+
+LaTeX Warning: File `LMR/phi_re0000.png' not found on input line 287.
+
+
+! Package pdftex.def Error: File `LMR/phi_re0000.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287 ...width]{LMR/phi_re0000.png}\label{fig:f2}}
+                                                  
+? 
+[35]
+
+LaTeX Warning: File `headon/chi0000.png' not found on input line 293.
+
+
+! Package pdftex.def Error: File `headon/chi0000.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.293 ...width]{headon/chi0000.png}\label{fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `headon/mod_phi0000.png' not found on input line 295.
+
+
+! Package pdftex.def Error: File `headon/mod_phi0000.png' not found: using draf
+t setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.295 ...h]{headon/mod_phi0000.png}\label{fig:f2}}
+                                                  
+? 
+
+LaTeX Warning: File `headon/phi_re0000.png' not found on input line 300.
+
+
+! Package pdftex.def Error: File `headon/phi_re0000.png' not found: using draft
+ setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.300 ...th]{headon/phi_re0000.png}\label{fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `headon/mod_phi0007.png' not found on input line 302.
+
+
+! Package pdftex.def Error: File `headon/mod_phi0007.png' not found: using draf
+t setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.302 ...h]{headon/mod_phi0007.png}\label{fig:f2}}
+                                                  
+? 
+[36] [37]
+
+LaTeX Warning: File `inspiral/mod_phi_inspiral_nice0000.png' not found on input
+ line 315.
+
+
+! Package pdftex.def Error: File `inspiral/mod_phi_inspiral_nice0000.png' not f
+ound: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.315 ...phi_inspiral_nice0000.png}\label{fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `inspiral/mod_phi_inspiral_nice0002.png' not found on input
+ line 317.
+
+
+! Package pdftex.def Error: File `inspiral/mod_phi_inspiral_nice0002.png' not f
+ound: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.317 ...phi_inspiral_nice0002.png}\label{fig:f2}}
+                                                  
+? 
+
+LaTeX Warning: File `inspiral/phi_inspiral_nice0000.png' not found on input lin
+e 322.
+
+
+! Package pdftex.def Error: File `inspiral/phi_inspiral_nice0000.png' not found
+: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.322 ...phi_inspiral_nice0000.png}\label{fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `inspiral/phi_inspiral_nice0002.png' not found on input lin
+e 324.
+
+
+! Package pdftex.def Error: File `inspiral/phi_inspiral_nice0002.png' not found
+: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.324 ...phi_inspiral_nice0002.png}\label{fig:f2}}
+                                                  
+? 
+
+LaTeX Warning: File `inspiral/N.png' not found on input line 329.
+
+
+! Package pdftex.def Error: File `inspiral/N.png' not found: using draft settin
+g.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.329 ...textwidth]{inspiral/N.png}\label{fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `inspiral/GW.png' not found on input line 331.
+
+
+! Package pdftex.def Error: File `inspiral/GW.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.331 ...extwidth]{inspiral/GW.png}\label{fig:f2}}
+                                                  
+? 
+[38] [39]) [40]
+Chapter 4.
+(./q.tex [41
 
 ]
-Chapter 3.
+
+LaTeX Warning: Citation `Alcubierre:2002kk' on page 42 undefined on input line 
+49.
+
+
+LaTeX Warning: Citation `10.2307/2397365' on page 42 undefined on input line 51
+.
+
+[42]
+
+LaTeX Warning: Citation `Sanchis_Gual_2019' on page 43 undefined on input line 
+55.
+
+
+LaTeX Warning: Citation `Di_Giovanni_2020' on page 43 undefined on input line 5
+5.
+
+
+LaTeX Warning: Citation `PhysRevD.103.044059' on page 43 undefined on input lin
+e 55.
+
+
+LaTeX Warning: Citation `PhysRevD.96.024004' on page 43 undefined on input line
+ 55.
+
+
+LaTeX Warning: Citation `Clough_2021' on page 43 undefined on input line 57.
+
+
+LaTeX Warning: Citation `Clough_2021' on page 43 undefined on input line 59.
+
 ! Undefined control sequence.
-l.124 \subfile
-              {bosonstars}
+<recently read> \grchombo 
+                          
+l.61 ...tem for angular momentum, using $\grchombo
+                                                  $ \cite{clough2015grchombo...
+
 ? 
-[3
 
-] [4
-
-] (./thesis.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: Citation `clough2015grchombo' on page 43 undefined on input line
+ 61.
 
 
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Citation `Andrade2021' on page 43 undefined on input line 61.
 
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  316AC26564540FC434FC3CFE593D5F3A;350.
+
+LaTeX Warning: Citation `2008' on page 43 undefined on input line 84.
+
+
+LaTeX Warning: Citation `gourgoulhon20073+' on page 43 undefined on input line 
+84.
+
+[43]
+<png/qfs_simple.png, id=755, 1045.65656pt x 1087.81406pt>
+File: png/qfs_simple.png Graphic file (type png)
+<use png/qfs_simple.png>
+Package pdftex.def Info: png/qfs_simple.png  used on input line 87.
+(pdftex.def)             Requested size: 496.33032pt x 516.35188pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (0.22266pt too wide) in paragraph at lines 92--93
+[]\T1/lmr/m/n/10.95 With the rel-e-vant ge-om-e-try dis-cussed we can de-rive t
+he QFS sys-tem, Eq. ([]4.1.3[]), by in-te-grat-ing Eq. ([]4.2.1[])
+ []
+
+
+LaTeX Warning: Citation `baumgarte_shapiro_2010' on page 44 undefined on input 
+line 96.
+
+[44]
+! Undefined control sequence.
+<argument>  \label {3plus1n}N_\mu = \pN 
+                                        _\mu - \bs {n} \cdot \bs {N} n_\mu , 
+l.138 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument>  \label {3plus1n}N_\mu = \pN 
+                                        _\mu - \bs {n} \cdot \bs {N} n_\mu , 
+l.138 \end{align}
+                 
+? 
+! Undefined control sequence.
+<recently read> \pN 
+                    
+l.139 where $\pN
+                _\mu = \perp^\nu_\mu N_\nu$ is the projected part of $\bs{N}...
+
+? 
+! Undefined control sequence.
+<argument> \pN 
+               
+l.139 ... onto $\Sigma$ with $\bs{n}\cdot \bs{\pN}
+                                                  =0$ and $\bs{\perp}$ is th...
+
+? 
+! Undefined control sequence.
+<argument> ...rt {-h}}{\sqrt {\sigma }}J^\mu (\pN 
+                                                  _\mu - \bs {n} \cdot \bs {...
+l.147 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ...rt {-h}}{\sqrt {\sigma }}J^\mu (\pN 
+                                                  _\mu - \bs {n} \cdot \bs {...
+l.147 \end{align}
+                 
+? 
+[45] [46]
+! Undefined control sequence.
+l.238 ...scalar field $\vp \rightarrow \vp e^{\rmi
+                                                   a}$, for constant $a$, le...
+
+? 
+
+LaTeX Warning: Citation `liebling2017dynamical' on page 47 undefined on input l
+ine 238.
+
+! Undefined control sequence.
+<argument>  J^\mu = \rmi 
+                         g^{\mu \nu }(\vp \partial _\nu \bar \vp - \bar \vp ...
+l.241 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument>  J^\mu = \rmi 
+                         g^{\mu \nu }(\vp \partial _\nu \bar \vp - \bar \vp ...
+l.241 \end{align}
+                 
+? 
+[47]
+! Undefined control sequence.
+<argument> ...hcal {Q}&= n_\mu J^\mu , \\ &= \rmi 
+                                                  (\vp n^\mu \partial _\mu \...
+l.248 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ...mu \partial _\mu \vp ), \\ & = \rmi 
+                                                  (\bar \vp \Pi - \bar \Pi \...
+l.248 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ... {\sqrt {-h}}{\sqrt {\sigma }}(\rmi 
+                                                  \gamma ^{\nu \mu }N_\mu (\...
+l.248 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ...hcal {Q}&= n_\mu J^\mu , \\ &= \rmi 
+                                                  (\vp n^\mu \partial _\mu \...
+l.248 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ...mu \partial _\mu \vp ), \\ & = \rmi 
+                                                  (\bar \vp \Pi - \bar \Pi \...
+l.248 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ... {\sqrt {-h}}{\sqrt {\sigma }}(\rmi 
+                                                  \gamma ^{\nu \mu }N_\mu (\...
+l.248 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ...frac {1}{\sqrt {\gamma ^{rr}}}(\rmi 
+                                                  \alpha \gamma ^{\nu r} (\v...
+l.252        \end{align}
+                        
+? 
+! Undefined control sequence.
+<argument> ...frac {1}{\sqrt {\gamma ^{rr}}}(\rmi 
+                                                  \alpha \gamma ^{\nu r} (\v...
+l.252        \end{align}
+                        
+? 
+! Undefined control sequence.
+l.262 ...or field $A^\mu \rightarrow A^\mu e^{\rmi
+                                                   a}$ for constant $a$. Fol...
+
+? 
+
+LaTeX Warning: Citation `Minamitsuji_2018' on page 48 undefined on input line 2
+62.
+
+! Undefined control sequence.
+<argument>  J_\mu = \rmi 
+                         \left (\bar {A}^\nu F_{\mu \nu } - A^\nu \bar {F}_{...
+l.265 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument>  J_\mu = \rmi 
+                         \left (\bar {A}^\nu F_{\mu \nu } - A^\nu \bar {F}_{...
+l.265 \end{align}
+                 
+? 
+
+LaTeX Warning: Citation `Zilh_o_2015' on page 48 undefined on input line 266.
+
+! Undefined control sequence.
+<argument> ...thcal {Q}&= n_\mu J^\mu , \\ &=\rmi 
+                                                  \left ( n^\mu \bar {A}^\nu...
+l.281 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ... {F}_{\mu \nu } \right ), \\ &=\rmi 
+                                                  \left ( n^\mu \bar {a}^\nu...
+l.281 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ...\bar {E}_{\nu } \right ), \\ &=\rmi 
+                                                  \left ( a^\nu \bar {E}_{\n...
+l.281 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ...thcal {Q}&= n_\mu J^\mu , \\ &=\rmi 
+                                                  \left ( n^\mu \bar {A}^\nu...
+l.281 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ... {F}_{\mu \nu } \right ), \\ &=\rmi 
+                                                  \left ( n^\mu \bar {a}^\nu...
+l.281 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ...\bar {E}_{\nu } \right ), \\ &=\rmi 
+                                                  \left ( a^\nu \bar {E}_{\n...
+l.281 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ...\sqrt {-h}}{\sqrt {\sigma }} ( \rmi 
+                                                  \overrightarrow {N}^\mu (\...
+l.286  \end{align}
+                  
+? 
+! Undefined control sequence.
+<argument> ...\sqrt {-h}}{\sqrt {\sigma }} ( \rmi 
+                                                  \overrightarrow {N}^\mu (\...
+l.286  \end{align}
+                  
+? 
+[48]
+! Undefined control sequence.
+<argument> ...sqrt {-h}}{\sqrt {\sigma }} \{ \rmi 
+                                                  \gamma ^{\mu \rho }{N}_\rh...
+l.296  \end{align}
+                  
+? 
+! Undefined control sequence.
+<argument> ...sqrt {-h}}{\sqrt {\sigma }} \{ \rmi 
+                                                  \gamma ^{\mu \rho }{N}_\rh...
+l.296  \end{align}
+                  
+? 
+! Undefined control sequence.
+<argument> ...ac {1}{\sqrt {\gamma ^{rr}}} ( \rmi 
+                                                  \alpha \gamma ^{\mu r} ( \...
+l.300  \end{split}\end{align}
+                             
+? 
+! Undefined control sequence.
+<argument> ...ac {1}{\sqrt {\gamma ^{rr}}} ( \rmi 
+                                                  \alpha \gamma ^{\mu r} ( \...
+l.300  \end{split}\end{align}
+                             
+? 
+
+LaTeX Warning: Citation `Clough_2021' on page 49 undefined on input line 325.
+
+
+LaTeX Warning: Citation `Clough_2021' on page 49 undefined on input line 325.
+
+
+LaTeX Warning: Citation `gourgoulhon20073+' on page 49 undefined on input line 
+335.
+
+
+LaTeX Warning: Citation `alcubierre2008introduction' on page 49 undefined on in
+put line 335.
+
+[49]
+
+LaTeX Warning: Citation `Clough_2021' on page 50 undefined on input line 361.
+
+
+LaTeX Warning: Citation `gourgoulhon20073+' on page 50 undefined on input line 
+372.
+
+
+LaTeX Warning: Citation `alcubierre2008introduction' on page 50 undefined on in
+put line 372.
+
+[50]
+! Undefined control sequence.
+<argument> ...h}}{\sqrt {\sigma }}T^\mu _\nu (\pN 
+                                                  _\mu - \bs {n}\cdot \bs {N...
+l.382 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ...s {n}\cdot \bs {N}\alpha \rho - \pN 
+                                                  _\mu S^\mu \alpha \\&\quad...
+l.382 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ...cdot \bs {N} S_\mu \beta ^\mu + \pN 
+                                                  ^\mu \beta ^\nu S_{\mu \nu...
+l.382 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ...h}}{\sqrt {\sigma }}T^\mu _\nu (\pN 
+                                                  _\mu - \bs {n}\cdot \bs {N...
+l.382 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ...s {n}\cdot \bs {N}\alpha \rho - \pN 
+                                                  _\mu S^\mu \alpha \\&\quad...
+l.382 \end{align}
+                 
+? 
+! Undefined control sequence.
+<argument> ...cdot \bs {N} S_\mu \beta ^\mu + \pN 
+                                                  ^\mu \beta ^\nu S_{\mu \nu...
+l.382 \end{align}
+                 
+? 
+
+LaTeX Warning: Citation `Clough_2021' on page 51 undefined on input line 387.
+
+! Undefined control sequence.
+<recently read> \grchombo 
+                          
+l.405 ...stars is simulated in 3D using $\grchombo
+                                                  $ \cite{clough2015grchombo...
+
+? 
+
+LaTeX Warning: Citation `clough2015grchombo' on page 51 undefined on input line
+ 405.
+
+
+LaTeX Warning: Citation `Andrade2021' on page 51 undefined on input line 405.
+
+! Undefined control sequence.
+<recently read> \grchombo 
+                          
+l.405 ...ough2015grchombo,Andrade2021}. $\grchombo
+                                                  $ is a modern, open source...
+
+? 
+
+LaTeX Warning: Citation `PhysRevD.67.104005' on page 51 undefined on input line
+ 406.
+
+
+LaTeX Warning: Citation `PhysRevD.67.104005' on page 51 undefined on input line
+ 406.
+
+
+LaTeX Warning: Citation `PhysRevD.85.064040' on page 51 undefined on input line
+ 406.
+
+
+LaTeX Warning: Citation `PhysRevLett.96.111101' on page 51 undefined on input l
+ine 406.
+
+
+LaTeX Warning: Citation `PhysRevLett.96.111102' on page 51 undefined on input l
+ine 406.
+
+
+LaTeX Warning: Citation `liebling2017dynamical' on page 51 undefined on input l
+ine 413.
+
+[51]
+<png/Qplot_20.0.png, id=943, 565.1514pt x 370.0224pt>
+File: png/Qplot_20.0.png Graphic file (type png)
+<use png/Qplot_20.0.png>
+Package pdftex.def Info: png/Qplot_20.0.png  used on input line 441.
+(pdftex.def)             Requested size: 446.69426pt x 292.47256pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<png/Qplot_40.0.png, id=950, 573.1011pt x 388.8126pt>
+File: png/Qplot_40.0.png Graphic file (type png)
+<use png/Qplot_40.0.png>
+Package pdftex.def Info: png/Qplot_40.0.png  used on input line 447.
+(pdftex.def)             Requested size: 446.69426pt x 303.05309pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<png/Qplot_60.0.png, id=953, 581.7735pt x 391.7034pt>
+File: png/Qplot_60.0.png Graphic file (type png)
+<use png/Qplot_60.0.png>
+Package pdftex.def Info: png/Qplot_60.0.png  used on input line 453.
+(pdftex.def)             Requested size: 446.69426pt x 300.76382pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `helfer2021malaise' on page 52 undefined on input line 
+459.
+
+
+Overfull \hbox (6.39803pt too wide) in paragraph at lines 459--461
+[]\T1/lmr/m/n/10.95 The ini-tial data of the nu-mer-i-cal sim-u-la-tions con-si
+sts of two bo-son stars, each with mass $\OML/lmm/m/it/10.95 M \OT1/lmr/m/n/10.
+95 = 0\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/10.95 395(0) []\OML/lmm/m/it/10.95 m[]$
+\T1/lmr/m/n/10.95 ,
+ []
+
+[52]
+<png/paper_conv40_2.png, id=986, 527.571pt x 352.6776pt>
+File: png/paper_conv40_2.png Graphic file (type png)
+<use png/paper_conv40_2.png>
+Package pdftex.def Info: png/paper_conv40_2.png  used on input line 474.
+(pdftex.def)             Requested size: 471.51228pt x 315.20589pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<png/paper_conv40.png, id=989, 529.0164pt x 349.7868pt>
+File: png/paper_conv40.png Graphic file (type png)
+<use png/paper_conv40.png>
+Package pdftex.def Info: png/paper_conv40.png  used on input line 479.
+(pdftex.def)             Requested size: 471.51228pt x 311.77362pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation `Clough_2015' on page 53 undefined on input line 484.
+
+
+LaTeX Warning: Citation `PresTeukVettFlan92' on page 53 undefined on input line
+ 489.
+
+<png/paper_conv123.png, id=996, 670.75594pt x 651.18282pt>
+File: png/paper_conv123.png Graphic file (type png)
+<use png/paper_conv123.png>
+Package pdftex.def Info: png/paper_conv123.png  used on input line 497.
+(pdftex.def)             Requested size: 471.51228pt x 457.7525pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[53]
+<png/conv_order_40.0.png, id=1021, 586.44093pt x 379.4175pt>
+File: png/conv_order_40.0.png Graphic file (type png)
+<use png/conv_order_40.0.png>
+Package pdftex.def Info: png/conv_order_40.0.png  used on input line 520.
+(pdftex.def)             Requested size: 471.51228pt x 305.05702pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[54]
+
+LaTeX Warning: Citation `Clough_2021' on page 55 undefined on input line 574.
+
+
+LaTeX Warning: Citation `gourgoulhon20073+' on page 55 undefined on input line 
+574.
+
+
+LaTeX Warning: Citation `alcubierre2008introduction' on page 55 undefined on in
+put line 574.
+
+[55]
+<png/qfs_coloured.png, id=1071, 1041.8925pt x 1084.05pt>
+File: png/qfs_coloured.png Graphic file (type png)
+<use png/qfs_coloured.png>
+Package pdftex.def Info: png/qfs_coloured.png  used on input line 622.
+(pdftex.def)             Requested size: 496.33032pt x 516.41782pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[56] [57] (./thesis.bbl [58] [59 <./png/qfs_simple.png>] [60 <./png/Qplot_20.0.
+png>] [61 <./png/Qplot_40.0.png> <./png/Qplot_60.0.png>] [62 <./png/paper_conv4
+0_2.png>] [63 <./png/paper_conv40.png>] [64 <./png/paper_conv123.png>] [65 <./p
+ng/conv_order_40.0.png>] [66 <./png/qfs_coloured.png>]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+)) [67
+
+] (./thesis.bbl [68
+
+]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{thebibliography}{}
+                             
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{thebibliography}{}
+                             
+? 
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
+ [69
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
+ (./thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: C293325F56DCE72DD68DFB83E0A15F57;4070.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 14004 strings out of 480445
- 208263 string characters out of 5892390
- 517013 words of memory out of 5000000
- 31075 multiletter control sequences out of 15000+600000
- 435480 words of font info for 40 fonts, out of 8000000 for 9000
- 319 hyphenation exceptions out of 8191
- 71i,6n,74p,590b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021basic/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/l
-ocal/texlive/2021basic/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/
-texlive/2021basic/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texl
-ive/2021basic/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/20
-21basic/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on thesis.pdf (7 pages, 99981 bytes).
+ 15894 strings out of 481239
+ 247995 string characters out of 5920377
+ 694246 words of memory out of 5000000
+ 30286 multiletter control sequences out of 15000+600000
+ 604495 words of font info for 70 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,20n,51p,2055b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (72 pages, 2140197 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1373 PDF objects out of 1440 (max. 8388607)
+ 1229 compressed objects within 13 object streams
+ 494 named destinations out of 1000 (max. 500000)
+ 491 words of extra memory for PDF output out of 10000 (max. 10000000)
 
