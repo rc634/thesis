@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.10)  7 JUN 2022 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.10)  8 JUN 2022 19:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -755,6 +755,9 @@ Package: subfiles 2020/02/14 v1.6 Multi-file projects (package)
 Package: import 2009/03/23  v 5.1
 )) (./thesis.aux
 
+LaTeX Warning: Label `eq:Lxiphi' multiply defined.
+
+
 LaTeX Warning: Label `fig:f1' multiply defined.
 
 
@@ -1123,7 +1126,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 ...{3.2.3}Initial Data}{27}{subsection.3.2.3}
+l.40 ...ics in Curved Space}{29}{subsection.3.1.6}
                                                   % [1
 
 ])
@@ -1140,7 +1143,7 @@ Chapter 1.
 (./intro.tex [1
 
 ]
-<pics/pythag_proof.png, id=306, 1027.84pt x 969.6225pt>
+<pics/pythag_proof.png, id=326, 1027.84pt x 969.6225pt>
 File: pics/pythag_proof.png Graphic file (type png)
 <use pics/pythag_proof.png>
 Package pdftex.def Info: pics/pythag_proof.png  used on input line 50.
@@ -1149,11 +1152,11 @@ Package pdftex.def Info: pics/pythag_proof.png  used on input line 50.
 
 LaTeX Warning: Reference `where ref?' on page 8 undefined on input line 263.
 
-[8] [9] [10]) [11]
+[8] [9] [10] [11] [12]) [13]
 Chapter 2.
-(./nr.tex [12
+(./nr.tex [14
 
-] [13] [14] [15]
+] [15] [16] [17]
 
 LaTeX Warning: File `adm.png' not found on input line 114.
 
@@ -1172,15 +1175,15 @@ Underfull \hbox (badness 2245) in paragraph at lines 116--117
 []\T1/lmr/m/n/10.95 Picking co-or-di-nates in GR in-
  []
 
-[16]
-
-LaTeX Warning: Citation `harmonic' on page 17 undefined on input line 144.
-
-[17]
-
-LaTeX Warning: Citation `z4' on page 18 undefined on input line 158.
-
 [18]
+
+LaTeX Warning: Citation `harmonic' on page 19 undefined on input line 144.
+
+[19]
+
+LaTeX Warning: Citation `z4' on page 20 undefined on input line 158.
+
+[20]
 
 LaTeX Warning: File `schwarzschild2.png' not found on input line 190.
 
@@ -1209,11 +1212,11 @@ Type  H <return>  for immediate help.
 l.192 ...twidth]{schwarzschild.png}\label{fig:f2}}
                                                   
 ? 
-[19] [20]) [21]
+[21] [22]) [23]
 Chapter 3.
-(./bosonstars.tex [22
+(./bosonstars.tex [24
 
-] [23] [24] [25] [26] [27] [28]
+] [25] [26] [27] [28] [29] [30]
 
 LaTeX Warning: File `bosonstar_groundstate.png' not found on input line 196.
 
@@ -1242,7 +1245,7 @@ Type  H <return>  for immediate help.
 l.198 ...osonstar_excitedstate.png}\label{fig:f2}}
                                                   
 ? 
-[29]
+[31]
 
 LaTeX Warning: File `ADM_vs_PC.png' not found on input line 206.
 
@@ -1271,7 +1274,7 @@ Type  H <return>  for immediate help.
 l.208 ...textwidth]{ADM_vs_r99.png}\label{fig:f2}}
                                                   
 ? 
-[30]
+[32]
 
 LaTeX Warning: File `mod_phi_nice0000.png' not found on input line 218.
 
@@ -1300,7 +1303,7 @@ Type  H <return>  for immediate help.
 l.220 ...\textwidth]{modphimax.png}\label{fig:f2}}
                                                   
 ? 
-[31]
+[33]
 
 LaTeX Warning: File `N.png' not found on input line 227.
 
@@ -1355,7 +1358,7 @@ Type  H <return>  for immediate help.
 l.254 ...{headon_bs/modphi0000.png}\label{fig:f2}}
                                                   
 ? 
-[32]
+[34]
 
 LaTeX Warning: File `headon_bs/modphi0003.png' not found on input line 259.
 
@@ -1413,7 +1416,7 @@ Type  H <return>  for immediate help.
 l.268 ...on_bs/phi_re_perp0004.png}\label{fig:f2}}
                                                   
 ? 
-[33]
+[35]
 
 LaTeX Warning: File `LMR/chi0000.png' not found on input line 276.
 
@@ -1442,7 +1445,7 @@ Type  H <return>  for immediate help.
 l.278 ...width]{LMR/modphi0000.png}\label{fig:f2}}
                                                   
 ? 
-[34]
+[36]
 
 LaTeX Warning: File `LMR/chi0005.png' not found on input line 283.
 
@@ -1485,7 +1488,7 @@ Type  H <return>  for immediate help.
 l.287 ...width]{LMR/phi_re0000.png}\label{fig:f2}}
                                                   
 ? 
-[35]
+[37]
 
 LaTeX Warning: File `headon/chi0000.png' not found on input line 293.
 
@@ -1542,7 +1545,7 @@ Type  H <return>  for immediate help.
 l.302 ...h]{headon/mod_phi0007.png}\label{fig:f2}}
                                                   
 ? 
-[36] [37]
+[38] [39]
 
 LaTeX Warning: File `inspiral/mod_phi_inspiral_nice0000.png' not found on input
  line 315.
@@ -1631,41 +1634,41 @@ Type  H <return>  for immediate help.
 l.331 ...extwidth]{inspiral/GW.png}\label{fig:f2}}
                                                   
 ? 
-[38] [39]) [40]
+[40] [41]) [42]
 Chapter 4.
-(./q.tex [41
+(./q.tex [43
 
 ]
 
-LaTeX Warning: Citation `Alcubierre:2002kk' on page 42 undefined on input line 
+LaTeX Warning: Citation `Alcubierre:2002kk' on page 44 undefined on input line 
 49.
 
 
-LaTeX Warning: Citation `10.2307/2397365' on page 42 undefined on input line 51
+LaTeX Warning: Citation `10.2307/2397365' on page 44 undefined on input line 51
 .
 
-[42]
+[44]
 
-LaTeX Warning: Citation `Sanchis_Gual_2019' on page 43 undefined on input line 
+LaTeX Warning: Citation `Sanchis_Gual_2019' on page 45 undefined on input line 
 55.
 
 
-LaTeX Warning: Citation `Di_Giovanni_2020' on page 43 undefined on input line 5
+LaTeX Warning: Citation `Di_Giovanni_2020' on page 45 undefined on input line 5
 5.
 
 
-LaTeX Warning: Citation `PhysRevD.103.044059' on page 43 undefined on input lin
+LaTeX Warning: Citation `PhysRevD.103.044059' on page 45 undefined on input lin
 e 55.
 
 
-LaTeX Warning: Citation `PhysRevD.96.024004' on page 43 undefined on input line
+LaTeX Warning: Citation `PhysRevD.96.024004' on page 45 undefined on input line
  55.
 
 
-LaTeX Warning: Citation `Clough_2021' on page 43 undefined on input line 57.
+LaTeX Warning: Citation `Clough_2021' on page 45 undefined on input line 57.
 
 
-LaTeX Warning: Citation `Clough_2021' on page 43 undefined on input line 59.
+LaTeX Warning: Citation `Clough_2021' on page 45 undefined on input line 59.
 
 ! Undefined control sequence.
 <recently read> \grchombo 
@@ -1675,21 +1678,21 @@ l.61 ...tem for angular momentum, using $\grchombo
 
 ? 
 
-LaTeX Warning: Citation `clough2015grchombo' on page 43 undefined on input line
+LaTeX Warning: Citation `clough2015grchombo' on page 45 undefined on input line
  61.
 
 
-LaTeX Warning: Citation `Andrade2021' on page 43 undefined on input line 61.
+LaTeX Warning: Citation `Andrade2021' on page 45 undefined on input line 61.
 
 
-LaTeX Warning: Citation `2008' on page 43 undefined on input line 84.
+LaTeX Warning: Citation `2008' on page 45 undefined on input line 84.
 
 
-LaTeX Warning: Citation `gourgoulhon20073+' on page 43 undefined on input line 
+LaTeX Warning: Citation `gourgoulhon20073+' on page 45 undefined on input line 
 84.
 
-[43]
-<png/qfs_simple.png, id=755, 1045.65656pt x 1087.81406pt>
+[45]
+<png/qfs_simple.png, id=807, 1045.65656pt x 1087.81406pt>
 File: png/qfs_simple.png Graphic file (type png)
 <use png/qfs_simple.png>
 Package pdftex.def Info: png/qfs_simple.png  used on input line 87.
@@ -1705,10 +1708,10 @@ he QFS sys-tem, Eq. ([]4.1.3[]), by in-te-grat-ing Eq. ([]4.2.1[])
  []
 
 
-LaTeX Warning: Citation `baumgarte_shapiro_2010' on page 44 undefined on input 
+LaTeX Warning: Citation `baumgarte_shapiro_2010' on page 46 undefined on input 
 line 96.
 
-[44]
+[46]
 ! Undefined control sequence.
 <argument>  \label {3plus1n}N_\mu = \pN 
                                         _\mu - \bs {n} \cdot \bs {N} n_\mu , 
@@ -1747,14 +1750,14 @@ l.147 \end{align}
 l.147 \end{align}
                  
 ? 
-[45] [46]
+[47] [48]
 ! Undefined control sequence.
 l.238 ...scalar field $\vp \rightarrow \vp e^{\rmi
                                                    a}$, for constant $a$, le...
 
 ? 
 
-LaTeX Warning: Citation `liebling2017dynamical' on page 47 undefined on input l
+LaTeX Warning: Citation `liebling2017dynamical' on page 49 undefined on input l
 ine 238.
 
 ! Undefined control sequence.
@@ -1769,7 +1772,7 @@ l.241 \end{align}
 l.241 \end{align}
                  
 ? 
-[47]
+[49]
 ! Undefined control sequence.
 <argument> ...hcal {Q}&= n_\mu J^\mu , \\ &= \rmi 
                                                   (\vp n^\mu \partial _\mu \...
@@ -1824,7 +1827,7 @@ l.262 ...or field $A^\mu \rightarrow A^\mu e^{\rmi
 
 ? 
 
-LaTeX Warning: Citation `Minamitsuji_2018' on page 48 undefined on input line 2
+LaTeX Warning: Citation `Minamitsuji_2018' on page 50 undefined on input line 2
 62.
 
 ! Undefined control sequence.
@@ -1840,7 +1843,7 @@ l.265 \end{align}
                  
 ? 
 
-LaTeX Warning: Citation `Zilh_o_2015' on page 48 undefined on input line 266.
+LaTeX Warning: Citation `Zilh_o_2015' on page 50 undefined on input line 266.
 
 ! Undefined control sequence.
 <argument> ...thcal {Q}&= n_\mu J^\mu , \\ &=\rmi 
@@ -1890,7 +1893,7 @@ l.286  \end{align}
 l.286  \end{align}
                   
 ? 
-[48]
+[50]
 ! Undefined control sequence.
 <argument> ...sqrt {-h}}{\sqrt {\sigma }} \{ \rmi 
                                                   \gamma ^{\mu \rho }{N}_\rh...
@@ -1916,32 +1919,32 @@ l.300  \end{split}\end{align}
                              
 ? 
 
-LaTeX Warning: Citation `Clough_2021' on page 49 undefined on input line 325.
+LaTeX Warning: Citation `Clough_2021' on page 51 undefined on input line 325.
 
 
-LaTeX Warning: Citation `Clough_2021' on page 49 undefined on input line 325.
+LaTeX Warning: Citation `Clough_2021' on page 51 undefined on input line 325.
 
 
-LaTeX Warning: Citation `gourgoulhon20073+' on page 49 undefined on input line 
+LaTeX Warning: Citation `gourgoulhon20073+' on page 51 undefined on input line 
 335.
 
 
-LaTeX Warning: Citation `alcubierre2008introduction' on page 49 undefined on in
+LaTeX Warning: Citation `alcubierre2008introduction' on page 51 undefined on in
 put line 335.
 
-[49]
+[51]
 
-LaTeX Warning: Citation `Clough_2021' on page 50 undefined on input line 361.
+LaTeX Warning: Citation `Clough_2021' on page 52 undefined on input line 361.
 
 
-LaTeX Warning: Citation `gourgoulhon20073+' on page 50 undefined on input line 
+LaTeX Warning: Citation `gourgoulhon20073+' on page 52 undefined on input line 
 372.
 
 
-LaTeX Warning: Citation `alcubierre2008introduction' on page 50 undefined on in
+LaTeX Warning: Citation `alcubierre2008introduction' on page 52 undefined on in
 put line 372.
 
-[50]
+[52]
 ! Undefined control sequence.
 <argument> ...h}}{\sqrt {\sigma }}T^\mu _\nu (\pN 
                                                   _\mu - \bs {n}\cdot \bs {N...
@@ -1979,7 +1982,7 @@ l.382 \end{align}
                  
 ? 
 
-LaTeX Warning: Citation `Clough_2021' on page 51 undefined on input line 387.
+LaTeX Warning: Citation `Clough_2021' on page 53 undefined on input line 387.
 
 ! Undefined control sequence.
 <recently read> \grchombo 
@@ -1989,11 +1992,11 @@ l.405 ...stars is simulated in 3D using $\grchombo
 
 ? 
 
-LaTeX Warning: Citation `clough2015grchombo' on page 51 undefined on input line
+LaTeX Warning: Citation `clough2015grchombo' on page 53 undefined on input line
  405.
 
 
-LaTeX Warning: Citation `Andrade2021' on page 51 undefined on input line 405.
+LaTeX Warning: Citation `Andrade2021' on page 53 undefined on input line 405.
 
 ! Undefined control sequence.
 <recently read> \grchombo 
@@ -2003,31 +2006,31 @@ l.405 ...ough2015grchombo,Andrade2021}. $\grchombo
 
 ? 
 
-LaTeX Warning: Citation `PhysRevD.67.104005' on page 51 undefined on input line
+LaTeX Warning: Citation `PhysRevD.67.104005' on page 53 undefined on input line
  406.
 
 
-LaTeX Warning: Citation `PhysRevD.67.104005' on page 51 undefined on input line
+LaTeX Warning: Citation `PhysRevD.67.104005' on page 53 undefined on input line
  406.
 
 
-LaTeX Warning: Citation `PhysRevD.85.064040' on page 51 undefined on input line
+LaTeX Warning: Citation `PhysRevD.85.064040' on page 53 undefined on input line
  406.
 
 
-LaTeX Warning: Citation `PhysRevLett.96.111101' on page 51 undefined on input l
+LaTeX Warning: Citation `PhysRevLett.96.111101' on page 53 undefined on input l
 ine 406.
 
 
-LaTeX Warning: Citation `PhysRevLett.96.111102' on page 51 undefined on input l
+LaTeX Warning: Citation `PhysRevLett.96.111102' on page 53 undefined on input l
 ine 406.
 
 
-LaTeX Warning: Citation `liebling2017dynamical' on page 51 undefined on input l
+LaTeX Warning: Citation `liebling2017dynamical' on page 53 undefined on input l
 ine 413.
 
-[51]
-<png/Qplot_20.0.png, id=943, 565.1514pt x 370.0224pt>
+[53]
+<png/Qplot_20.0.png, id=996, 565.1514pt x 370.0224pt>
 File: png/Qplot_20.0.png Graphic file (type png)
 <use png/Qplot_20.0.png>
 Package pdftex.def Info: png/Qplot_20.0.png  used on input line 441.
@@ -2036,7 +2039,7 @@ Package pdftex.def Info: png/Qplot_20.0.png  used on input line 441.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<png/Qplot_40.0.png, id=950, 573.1011pt x 388.8126pt>
+<png/Qplot_40.0.png, id=1003, 573.1011pt x 388.8126pt>
 File: png/Qplot_40.0.png Graphic file (type png)
 <use png/Qplot_40.0.png>
 Package pdftex.def Info: png/Qplot_40.0.png  used on input line 447.
@@ -2044,7 +2047,7 @@ Package pdftex.def Info: png/Qplot_40.0.png  used on input line 447.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<png/Qplot_60.0.png, id=953, 581.7735pt x 391.7034pt>
+<png/Qplot_60.0.png, id=1006, 581.7735pt x 391.7034pt>
 File: png/Qplot_60.0.png Graphic file (type png)
 <use png/Qplot_60.0.png>
 Package pdftex.def Info: png/Qplot_60.0.png  used on input line 453.
@@ -2053,7 +2056,7 @@ Package pdftex.def Info: png/Qplot_60.0.png  used on input line 453.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation `helfer2021malaise' on page 52 undefined on input line 
+LaTeX Warning: Citation `helfer2021malaise' on page 54 undefined on input line 
 459.
 
 
@@ -2064,8 +2067,8 @@ sts of two bo-son stars, each with mass $\OML/lmm/m/it/10.95 M \OT1/lmr/m/n/10.
 \T1/lmr/m/n/10.95 ,
  []
 
-[52]
-<png/paper_conv40_2.png, id=986, 527.571pt x 352.6776pt>
+[54]
+<png/paper_conv40_2.png, id=1037, 527.571pt x 352.6776pt>
 File: png/paper_conv40_2.png Graphic file (type png)
 <use png/paper_conv40_2.png>
 Package pdftex.def Info: png/paper_conv40_2.png  used on input line 474.
@@ -2074,7 +2077,7 @@ Package pdftex.def Info: png/paper_conv40_2.png  used on input line 474.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<png/paper_conv40.png, id=989, 529.0164pt x 349.7868pt>
+<png/paper_conv40.png, id=1040, 529.0164pt x 349.7868pt>
 File: png/paper_conv40.png Graphic file (type png)
 <use png/paper_conv40.png>
 Package pdftex.def Info: png/paper_conv40.png  used on input line 479.
@@ -2083,13 +2086,13 @@ Package pdftex.def Info: png/paper_conv40.png  used on input line 479.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `Clough_2015' on page 53 undefined on input line 484.
+LaTeX Warning: Citation `Clough_2015' on page 55 undefined on input line 484.
 
 
-LaTeX Warning: Citation `PresTeukVettFlan92' on page 53 undefined on input line
+LaTeX Warning: Citation `PresTeukVettFlan92' on page 55 undefined on input line
  489.
 
-<png/paper_conv123.png, id=996, 670.75594pt x 651.18282pt>
+<png/paper_conv123.png, id=1047, 670.75594pt x 651.18282pt>
 File: png/paper_conv123.png Graphic file (type png)
 <use png/paper_conv123.png>
 Package pdftex.def Info: png/paper_conv123.png  used on input line 497.
@@ -2097,8 +2100,8 @@ Package pdftex.def Info: png/paper_conv123.png  used on input line 497.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[53]
-<png/conv_order_40.0.png, id=1021, 586.44093pt x 379.4175pt>
+[55]
+<png/conv_order_40.0.png, id=1072, 586.44093pt x 379.4175pt>
 File: png/conv_order_40.0.png Graphic file (type png)
 <use png/conv_order_40.0.png>
 Package pdftex.def Info: png/conv_order_40.0.png  used on input line 520.
@@ -2107,20 +2110,20 @@ Package pdftex.def Info: png/conv_order_40.0.png  used on input line 520.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[54]
+[56]
 
-LaTeX Warning: Citation `Clough_2021' on page 55 undefined on input line 574.
+LaTeX Warning: Citation `Clough_2021' on page 57 undefined on input line 574.
 
 
-LaTeX Warning: Citation `gourgoulhon20073+' on page 55 undefined on input line 
+LaTeX Warning: Citation `gourgoulhon20073+' on page 57 undefined on input line 
 574.
 
 
-LaTeX Warning: Citation `alcubierre2008introduction' on page 55 undefined on in
+LaTeX Warning: Citation `alcubierre2008introduction' on page 57 undefined on in
 put line 574.
 
-[55]
-<png/qfs_coloured.png, id=1071, 1041.8925pt x 1084.05pt>
+[57]
+<png/qfs_coloured.png, id=1123, 1041.8925pt x 1084.05pt>
 File: png/qfs_coloured.png Graphic file (type png)
 <use png/qfs_coloured.png>
 Package pdftex.def Info: png/qfs_coloured.png  used on input line 622.
@@ -2129,16 +2132,16 @@ Package pdftex.def Info: png/qfs_coloured.png  used on input line 622.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[56] [57] (./thesis.bbl [58] [59 <./png/qfs_simple.png>] [60 <./png/Qplot_20.0.
-png>] [61 <./png/Qplot_40.0.png> <./png/Qplot_60.0.png>] [62 <./png/paper_conv4
-0_2.png>] [63 <./png/paper_conv40.png>] [64 <./png/paper_conv123.png>] [65 <./p
-ng/conv_order_40.0.png>] [66 <./png/qfs_coloured.png>]
+[58] [59] (./thesis.bbl [60] [61 <./png/qfs_simple.png>] [62 <./png/Qplot_20.0.
+png>] [63 <./png/Qplot_40.0.png> <./png/Qplot_60.0.png>] [64 <./png/paper_conv4
+0_2.png>] [65 <./png/paper_conv40.png>] [66 <./png/paper_conv123.png>] [67 <./p
+ng/conv_order_40.0.png>] [68 <./png/qfs_coloured.png>]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-)) [67
+)) [69
 
-] (./thesis.bbl [68
+] (./thesis.bbl [70
 
 ]
 
@@ -2166,7 +2169,7 @@ LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
- [69
+ [71
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
@@ -2174,7 +2177,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: C293325F56DCE72DD68DFB83E0A15F57;4070.
+(rerunfilecheck)             Checksum: DF729A34DC7020C633D7BEBF143D31F2;4408.
 
 
 LaTeX Warning: There were undefined references.
@@ -2184,15 +2187,15 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15894 strings out of 481239
- 247995 string characters out of 5920377
+ 15927 strings out of 481239
+ 248486 string characters out of 5920377
  694246 words of memory out of 5000000
- 30286 multiletter control sequences out of 15000+600000
+ 30291 multiletter control sequences out of 15000+600000
  604495 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,20n,51p,2055b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -2210,10 +2213,10 @@ ublic/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (72 pages, 2140197 bytes).
+Output written on thesis.pdf (74 pages, 2150742 bytes).
 PDF statistics:
- 1373 PDF objects out of 1440 (max. 8388607)
- 1229 compressed objects within 13 object streams
- 494 named destinations out of 1000 (max. 500000)
- 491 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1431 PDF objects out of 1440 (max. 8388607)
+ 1285 compressed objects within 13 object streams
+ 522 named destinations out of 1000 (max. 500000)
+ 523 words of extra memory for PDF output out of 10000 (max. 10000000)
 
