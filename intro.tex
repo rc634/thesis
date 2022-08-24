@@ -125,7 +125,7 @@ where $\tilde{Z}_{\nu\rho} = Z^\mu_{\,\,\,\mu\nu\rho}$.
 check faking field vs obect at a point p
 
 
-\subsection{General Covariance / Coordinate transformations}
+\subsection{General Covariance / Coordinate transformations}\label{sec:cov}
 
 The power of tensor algebra and tensor calculus is that if a tensor equation can be written in one coordiante system then must hold (in abstact from) in any [NON-PATHOLOGICAL?] coordinate system. This is a consequence of the tensor transformation law and hence the saying "the definition of a tensor is an object that transforms like a tensor" [FIND QUOTE OR PUT THIS IN A BETTER PLACE?]. Looking back, we can write a generic vector field $\bs{X}$ as $X^\mu \bs{e}_\mu = X^\mu \partial_\mu$ and if we choose a coordinate transformation $x^\mu \rightarrow \tilde{x}^\mu$ then we see that in the transformed coordinate system the vector $\bs{X}$, written $\tilde{\bs{X}}$, becomes
 \begin{align}
@@ -159,35 +159,22 @@ The general tensor transformation law comes from chaining multiple of the previo
 discuss coords, paths, vectoirs, forms, tensors, derivatives (lie, cov, partial ...), pullbacks (needed later), Riemann and stuff. see intro and appendix of smith kight. talk about forms? 0-form scalar, 1-form vector, 2-form antisymmetric 0,2 tensor ... exterior derivds and lie derivs?
 
 use words lorentz invariant and covariant
+[expain better that scalars are lorentz invariant]
 
 
 
 
 
 
-\subsection{Differential Forms}
-A differential $p$-form is an antisymetric $(0,p)$ tensor; the tensor components (e.g. $A_{\alpha\beta...\zeta}$) vanish if there is a repeating index, equal $1$ for an even permutation of indeces (like 1,2,3,...,N) and $-1$ for an odd permutation (such as 2,1,3,4,...,N). Note that a $0$-form is a function, a $1$-form is a co-vector and for an $N$-dimensional manifold the $N$-form is unique and the $p$-forms with $p>N$ vanish. 
+\subsection{The Covariant Derivative}
+There are four types of derivative on a manifold, all related to each other, that we care about in the context of General Relativity. The simplest is the partial derivative, denoted \begin{equation}\partial_\mu = \frac{\partial}{\partial x^\mu},\end{equation} which works much the same as always. Two other derivatives are the exterior derivative and the Lie derivative which are discussed in [REF] and [REF] respectively. Generalising the partial derivative to curved spaces we have the covariant derivative, denoted $\nabla_\mu$. This reduces to the partial derivative ($\partial$) in flat space with cartesian coordinates. The purpose of the covariant derivative is to take a $(p,q)$ tensor $\bs{T}$ and return a $(p,q+1)$ tensor $\bs{\nabla T}$ which obeys the tensor transformation law given in \ref{sec:cov}. [THIS ALLOWS US TO WRITE DIFFERENTIAL TENSOR EQUATIONS WHICH ISNT TRIVIAL APRIORI]. 
 
-When considering differential forms, the conventional covector basis is often changed from $\bs{\theta}^\mu$ to $\dd x^\mu$ which will lend itself nicely to integrating p-forms on manifolds later. This convention means we can write the metric as $\bs{g} = g_{\mu\nu} \dd x^\mu \otimes \dd x^\nu$; the same can be done for any tensor. Note that the metric cannot be a $2$-form as it is not a symmetric tensor, infact the metric is a symmetric tensor.
-
-
-\subsection{Differentiation on Manifolds}
-There are three types of derivative, all related to each other, that we care about on a manifold. [CHECK WHOLE PARAGRAPH] The simplest is the exterior derivative of a p-form, returning a $p+1$-form. For a $p$-form $\bs{A} = A_\mu \dd x^\mu$, the exterior derivative is given by 
-\begin{equation}
-(\dd A)_{\mu_1 ... \mu_{p+1}} = (p+1)\partial_{[ \mu_1}A_{\mu_2 ... \mu_{p+1}]},
-\end{equation}
-where the square brackets mean the antisymmetric [check as i might need epsilons here ]. This derivative guarentees to return a tensor without the need for a connection or metric on the manifold, unlike the partial derivative that we will see next. One common example of an exterior derivative is of a 1-form, say $\bs{A}$ giving 
-\begin{equation}
-(\dd A)_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu,
-\end{equation}
-and we will see soon, as with all exterior derivatives of forms, returns a tensor object.
-
-The most common type of derivative is the coraviant derivative ($\nabla$), which reduces to the partial derivative ($\partial$) in flat space with cartesian coordinates. The purpose of the covariant derivative is to take a $(p,q)$ tensor $\bs{T}$ and return a $(p,q+1)$ tensor $\bs{\nabla T}$ which obeys the tensor transformatino law [REF]. For a scalar field $\varphi$ the partial derivative does obey the tensor transformation law for a co-vector, demonstraed here 
+The partial derivative of a scalar field $\varphi$ does obey the tensor transformation law for a co-vector, demonstrated here 
 \begin{align}
 \frac{\partial}{\partial \tilde{x}^\mu} \tilde{\varphi} &=\frac{\partial}{\partial \tilde{x}^\mu} {\varphi} ,\\
                                                         &=\frac{\partial x^\nu}{\partial\tilde{x}^\mu}\frac{\partial}{\partial {x}^\nu} {\varphi}
 \end{align}
-and therefore the components $\partial_\mu \varphi$ transform like a co-vector. Note the fact $\varphi=\tilde{\varphi}$ as a scalar remains unchanged in a coordinate transformation. Unfortunately, when taking the partial derivative of any other tensor we do not receive a new tensor; let's demonstrate this with a vector $X$.
+and therefore the components $\partial_\mu \varphi$ transform like a co-vector. Note that $\varphi=\tilde{\varphi}$ for any point $p$ as a scalar remains unchanged in a coordinate transformation. Unfortunately, when taking the partial derivative of any other tensor we do not receive a new tensor; let's demonstrate this with a vector $\bs{X}$.
 \begin{align}
 \frac{\partial}{\partial \tilde{x}^\mu} \tilde{X}^\alpha &= \frac{\partial}{\partial \tilde{x}^\mu}\left( \frac{\partial \tilde{x}^\alpha}{\partial x^\beta}{X}^\beta\right),\\
                                                          &= \frac{\partial x^\nu}{\partial \tilde{x}^\mu}\frac{\partial}{\partial \tilde{x}^\nu}\left( \frac{\partial \tilde{x}^\alpha}{\partial x^\beta}{X}^\beta\right),\\
@@ -210,10 +197,126 @@ and only the term on the right obeys the tensor transformation law. Interestingl
 \end{align}
 and the tensor tranformation law is obeyed.
 
-The final type of derivative we need is the Lie deivative, denoted $\L$. This maps a $(p,q)$ tensor to a $(p,q)$ tensor, acting as more of a directional derivative with respect to some vector $X$. It represents to rate of change of an object with respect to the inverse mapping of an infinitessimal diffeomorphism locally along vector $X^\mu$ [WRITE THIS BETTER]. Copy Lie reriv def here. A common Lie derivative is the derivative of a vector [DO] and the metric [DO] which leads to killings equaiton.
+CONTRACTED CHRISTOFFEL AND ROOT G STUFF FOR DIVERGENCE
 
-talk about linearity and liebnitz rule [check correct definitino]
-derive covariant deriv and torsion free, metric compatibility.
+DEFINE METRIC COMPATIBILITY AND TORSAION FREE HERE
+
+
+
+
+\subsection{Curvature Tensors}
+ricci adn riemann and mayube einstein? maybe einstein tensor goes in GR bit. discuss symmetries of riemann and ricci and degreees of freedome here?
+
+In flat space we are used to the idea that the partial derivative commutes, i.e. $\partial_\mu \partial_\nu = \partial_\nu \partial_\mu$, and this is trivially true in curved space too. however,the covariant derivative does not generally commute. A special case where the covariant derivative does commute is on a scalar field $\varphi$, this can be seen by
+\begin{align}
+(\nabla_\mu \nabla_\nu  - \nabla_\nu \nabla_\mu )\varphi &= \nabla_\mu \nabla_\nu \varphi - \nabla_\nu \nabla_\mu \varphi , \\
+                                               &= \nabla_\mu \partial_\nu \varphi - \nabla_\nu \partial_\mu \varphi , \\
+                                               &= (\partial_\mu \partial_\nu  - \partial_\nu \partial_\mu )\varphi,\\ &=0, 
+\end{align}
+where we used the fact that $\nabla_\mu \varphi = \partial_\mu \varphi$ for a scalar field and $\nabla_\mu A_\nu- \nabla_\nu A_\mu = \partial_\mu A_\nu- \partial_\nu A_\mu$ as shown in [REF]. 
+
+Taking the commuted derivative of a vector field $\bs{X}$ gives,
+\begin{align}
+(\nabla_\mu \nabla_\nu  - \nabla_\nu \nabla_\mu )X^\sigma &=(\partial_\mu \nabla_\nu  - \partial_\nu \nabla_\mu )X^\sigma + (\Gamma^{\sigma}_{\,\,\,\mu\rho}\nabla_\nu -\Gamma^{\sigma}_{\,\,\,\nu\rho}\nabla_\mu  )X^\rho - (\Gamma^{\rho}_{\,\,\,\nu\mu} - \Gamma^{\rho}_{\,\,\,\mu\nu})\nabla_\rho X^\sigma , \\
+                         &=(\partial_\mu \nabla_\nu  - \partial_\nu \nabla_\mu )X^\sigma + (\Gamma^{\sigma}_{\,\,\,\mu\rho}\nabla_\nu -\Gamma^{\sigma}_{\,\,\,\nu\rho}\nabla_\mu  )X^\rho  , \\
+                         &=(\partial_\mu \partial_\nu  - \partial_\nu \partial_\mu )X^\sigma + (\partial_\mu \Gamma^\sigma_{\,\,\,\nu\rho}  - \partial_\nu \Gamma^\sigma_{\,\,\,\mu\rho} )X^\rho + (\Gamma^{\sigma}_{\,\,\,\mu\rho}\nabla_\nu -\Gamma^{\sigma}_{\,\,\,\nu\rho}\nabla_\mu  )X^\rho  , \\
+                         \begin{split}&=(\partial_\mu \Gamma^\sigma_{\,\,\,\nu\rho}  - \partial_\nu \Gamma^\sigma_{\,\,\,\mu\rho} )X^\rho + (\Gamma^{\sigma}_{\,\,\,\mu\rho}\partial_\nu -\Gamma^{\sigma}_{\,\,\,\nu\rho}\partial_\mu  )X^\rho  ,
+                         \quad\quad\\&+ (\Gamma^{\sigma}_{\,\,\,\mu\rho}\Gamma^\rho_{\,\,\,\nu\sigma} -\Gamma^{\sigma}_{\,\,\,\nu\rho}\Gamma^\rho_{\,\,\,\mu\rho} )X^\sigma \end{split}, 
+\end{align}
+and does not generally vanish.
+
+proper defn or riemann here from harvey
+
+
+NORMAL COORDS SOMEWHERE, MAKES EXPANSIONS AND SOME DERIVATIONS EASIER, USE NORMAL COORDS FOR SYMMETRIES OF RIEMANN
+
+\subsection{Maps Between Manifolds}
+In this work we will be interested in the mapping of objects between two manifolds $M$ and $N$ of similar dimension [VERIFY]. This has many uses such as finding the metric (or any tensor) on an embedded surface and very importantly allowed us to perform the 3+1 decomposition [REF] on a spacetime.
+
+Let's start by defining a smooth map $\Phi : M \rightarrow N$ between manifolds on some coordinate patch; we will always deal with maps that have a smooth inverse $\Phi^{-1} :N \rightarrow M$ which are diffeomorphisms. Two common examples of diffeomorphisms are coordinate changes and translations [CHECK]. Labelling coordinates $x^\mu\in M$ and $y^\mu\in N$ the map $\Phi:x^\mu \rightarrow y^\mu$ is equivalent to $y^\mu(x^\nu)$. Scalar functions must also map trivially $f_N(y^\mu(x^\nu))=f_M(x^\mu)$ where $f_N\in N$ and $f_M \in M$, thus we will no longer identify which manifold a function is on. Looking back to [REF] we define a vector field $\bs{X} = X^\mu \partial_\mu$ on $M$, the abstract object $\bs{X}$ should be pushed from $M$ to $N$ in a way such that it's action on a function $f$ is the same in either manifold. Given that 
+\begin{equation}
+\bs{X}(f) = X^\mu \frac{\partial f}{\partial x^\mu} = \left( X^\mu \frac{\partial y^\nu}{\partial x^\mu}\right) \frac{\partial f}{\partial y^\nu} = (\Phi_* X^\mu)\frac{\partial f}{\partial y^\nu} = \Phi_* \bs{X} (\Phi : f),
+\end{equation} 
+where $\Phi_* \bs{X} \in N$ denotes the push-foreward of $\bs{X}$, we can calculate the push-foreward of vector field components like
+\begin{equation}
+(\Phi_* X)^\mu = \frac{\partial y^\mu}{\partial x^\nu}X^\nu.
+\end{equation}
+Given a co-vector field $\bs{\omega} \in N$ we can pull the field back from $N \rightarrow M$, denoted $\Phi^*\bs{\omega}$, by demanding that $\Phi^*\bs{\omega}(\bs{X})\in M = \bs{\omega}(\Phi_* \bs{X})\in N$. Evaluating this gives 
+\begin{align}
+\Phi^*\bs{\omega}(\bs{X}) &= (\Phi^* \omega)_\mu X^\mu, \\
+\bs{\omega}(\Phi_* \bs{X})&= \omega_\nu (\Phi_*X)^\nu = \omega_\nu \frac{\partial y^\nu}{\partial x^\mu} X^\mu , \\ 
+(\Phi^* \omega)_\mu &= \omega_\nu \frac{\partial y^\nu}{\partial x^\mu}.
+\end{align}
+Considering an $(0,2)$ tensor $\bs{T} \in N$ the pullback $\Phi^*\bs{T} \in M$ follows simply from demanding that $\bs{T}{\Phi_* \bs{X},\Phi_*\bs{Y}} = \Phi^*\bs{T}(\bs{X},\bs{Y})$ where $\bs{X}$ and $\bs{Y}$ are vector fields on $M$. The components of the pull-back of $\bs{T}$ are therefore
+\begin{equation}
+(\Phi^*T)_{\mu\nu} = \frac{\partial y^\rho}{\partial x^\mu} \frac{\partial y^\sigma}{\partial x^\nu}T_{\rho\sigma}.
+\end{equation}
+The pull-back of a generic $(0,q)$ tensor and the push-foreward of a generic $(p,0)$ tensor can be found similarly.
+
+So far we have only discussed the mapping $\Phi :M \rightarrow N$, which was required to have a well behaved $\partial y^\nu / \partial x^\mu$. In the case $y^\nu(x^\mu)$ has a smooth inverse $x^\nu(y^\mu)$, and therefore a well behaved $\partial x^\nu/\partial y^\mu$, we have a smooth inverse map $\Phi^{-1}:N \rightarrow M$ and the mapping $\Phi$ is a diffeomorphism. When $\Phi$ is a diffeomorphism we can then also define the pull-back of $(p,0)$ tensors from $N$ to $M$ along with the push-foreward of $(0,q)$ tensors from $M$ to $N$.
+
+As mentioned, a good use of this formalism is to find the metric on an embedded surface. Starting from an $m$ dimensional manifold $M$ with metric $g_{\mu\nu}$ and coordinates $x^\mu$ we consider an embedded $n$ dimensional surface $N$ where $n<m$. We can treat $N$ as a separate $n$ dimensional manifold with metric $h_{\mu\nu}$. MAYBGE PUT THIS LATER AS THIS REQUIRES PROJECTIONS.
+
+[MENTION SOMEWHERE HERE THAT MAPPINGS ARE USED FOR LIE DERIVS TOO]
+
+
+\subsection{Lie Derivatives}
+
+We have now discussed the necesary formalism to define the Lie derivative. The Lie derivative at a point is the rate of change of a tensor field with respect to a pull-back from a diffeomorphism $\Phi$ mapping infinitessimally close points $p,q \in \mathcal{M}$ like $\Phi:p=x^\mu \rightarrow q = x^\mu+\epsilon \xi^\mu$ for some vector field $\xi$. The simplest example is the Lie derivative of a scalar field $\phi$, denoted $\L_\xi \phi$ with respect to vector field $\bs \xi$, is
+\begin{align} \label{eq:Lxiphi}
+\L_\xi \phi &= \lim_{\epsilon \rightarrow 0}\left[\frac{\Phi^*\phi\vert_q - \phi\vert_p}{\epsilon} \right] , \\
+&= \lim_{\epsilon \rightarrow 0}\left[\frac{\phi(x^\mu + \epsilon \xi^\mu) - \phi(x^\mu)}{\epsilon} \right] , \\
+&= \xi^\mu \partial_\mu \phi,
+\end{align}
+which reduces to the directional derivative of $\phi$ with respect to $\bs{\xi}$. Next let's calculate the Lie derivative of a vector field $\bs{X}$ with respect to vector field $\bs\xi$. Starting with the same definition as Eq.~(\ref{eq:Lxiphi}), and using $y^\mu = x^\mu + \epsilon \xi^\mu$, the Lie derivative of $\bs X$ is 
+\begin{align} \label{eq:Lxiphi}
+(\L_\xi {X})^\mu &= \lim_{\epsilon \rightarrow 0}\left[\frac{(\Phi^*X\vert_q)^\mu - {X\vert_p}^\mu}{\epsilon} \right] , \\
+&= \lim_{\epsilon \rightarrow 0}\left[\frac{ \frac{\partial x^\mu}{\partial y^\nu}X^\nu(x^\rho + \epsilon \xi^\rho) - X^\mu(x^\rho)}{\epsilon} \right] , \\
+&= \lim_{\epsilon \rightarrow 0}\left[\frac{ (\delta_\nu^\mu - \epsilon \partial_\nu \xi^\mu)X^\nu(x^\rho + \epsilon \xi^\rho) - X^\mu(x^\rho)}{\epsilon} \right] , \\
+&= \lim_{\epsilon \rightarrow 0}\left[\frac{ - \epsilon \partial_\nu \xi^\mu X^\nu(x^\rho + \epsilon \xi^\rho)+ X^\mu(x^\rho + \epsilon \xi^\rho) - X^\mu(x^\rho)}{\epsilon}  \right] , \\
+&= \lim_{\epsilon \rightarrow 0}\left[\frac{ - \epsilon \partial_\nu \xi^\mu X^\nu(x^\rho)+ X^\mu(x^\rho + \epsilon \xi^\rho) - X^\mu(x^\rho)+\mathcal{O}(\epsilon^2)}{\epsilon}  \right] , \\
+&= \xi^\nu \partial_\nu X^\mu - X^\nu \partial_\nu \xi^\mu.
+\end{align}
+The Lie derivative for co-vectors and tensors can be derived in the same way, but can be quickly derived from the Liebnitz rule as follows. Define a scalar field $\psi$, vector field $\bs{X}$ and co-vector field $\bs\omega$, where $\psi = X^\mu \omega_\mu$, then it follows that
+\begin{align}
+\L_\xi \psi &= \xi^\mu \partial_\mu \psi =  X^\nu\xi^\mu\partial_\mu\omega_\nu+\omega_\nu\xi^\mu\partial_\mu X^\nu, \\
+              &= \L_\xi (X^\mu \omega_\mu),\\
+              &= \omega_\mu (\L_\xi X)^\mu + X^\mu(\L_\xi\omega)_\mu,\\
+               X^\mu(\L_\xi \omega)_\mu & =X^\nu\xi^\mu\partial_\mu\omega_\nu+\omega_\nu\xi^\mu\partial_\mu X^\nu-\omega_\mu (\L_\xi X)^\mu, \\
+               (\L_\xi \omega)_\mu&= \xi^\nu \partial_\nu \omega_\mu + \omega_\nu \partial_\mu \xi^\nu.
+\end{align}
+As it turns out, any Lie derivative can replace all partial derivatives with covariant derivatives $\nabla$ due to the connection/Christoffel symbols cancelling.
+
+A special example of a Lie derivative is of the metric tensor, $\bs{g}$, giving
+\begin{align}
+(\L_\xi g)_{\mu\nu} &= \xi^\rho \partial_\rho g_{\mu\nu} + g_{\rho\nu}\partial_\mu \xi^\rho + + g_{\mu\rho}\partial_\nu \xi^\rho, \\
+&= \xi^\rho \underbrace{\nabla_\rho g_{\mu\nu}}_{=0} + g_{\rho\nu}\nabla_\mu \xi^\rho  + g_{\mu\rho}\nabla_\nu \xi^\rho, \\
+\end{align}
+where $\nabla_\rho g_{\mu\nu}=0$ is assumed from metric compatibility in [REF]. In the case the Lie derivative vanishes we get Killing's equation
+\begin{equation}
+\nabla_{\mu}\xi_\nu + \nabla_\nu \xi_\mu =0
+\end{equation} 
+and a vector field $\bs\xi$ satisfying Killing's equation is called a Killing vector. [MENTION IS MENAS CONSERVATINO OF ENERGY-MOM HERE?]
+
+special case lei metric
+
+
+
+\subsection{Differential Forms}
+A differential $p$-form is an antisymetric $(0,p)$ tensor; the tensor components (e.g. $A_{\alpha\beta...\zeta}$) vanish if there is a repeating index, equal $1$ for an even permutation of indeces (like 1,2,3,...,N) and $-1$ for an odd permutation (such as 2,1,3,4,...,N). Note that a $0$-form is a function, a $1$-form is a co-vector and for an $N$-dimensional manifold the $N$-form is unique and the $p$-forms with $p>N$ vanish. 
+
+When considering differential forms, the conventional covector basis is often changed from $\bs{\theta}^\mu$ to $\dd x^\mu$ which will lend itself nicely to integrating p-forms on manifolds later. This convention means we can write the metric as $\bs{g} = g_{\mu\nu} \dd x^\mu \otimes \dd x^\nu$; the same can be done for any tensor. Note that the metric cannot be a $2$-form as it is not a symmetric tensor, infact the metric is a symmetric tensor.
+
+Differential forms have their own unique differential operator called the exterior derivative, it acts on a p-form and returns a $p+1$-form. For a $p$-form $\bs{A} = A_\mu \dd x^\mu$, the exterior derivative is given by 
+\begin{equation}
+(\dd A)_{\mu_1 ... \mu_{p+1}} = (p+1)\partial_{[ \mu_1}A_{\mu_2 ... \mu_{p+1}]},
+\end{equation}
+where the square brackets mean the antisymmetric [check as i might need epsilons here ]. This derivative guarentees to return a tensor without the need for a connection or metric on the manifold, unlike the partial derivative that we will see next. One common example of an exterior derivative is of a 1-form, say $\bs{A}$ giving 
+\begin{equation}
+(\dd A)_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu,
+\end{equation}
+and we will see soon, as with all exterior derivatives of forms, returns a tensor object. [DO WE PROVE HERE THAT THE CHRISTOFFELS CANCEL ADN GIVE SAME THING WITH NABLA RATHER THAN PARTIAL]
+
 
 
 \subsection{Integrating Forms on Manifolds}
@@ -263,78 +366,23 @@ Rearranging and multiplying by $g^{\alpha\beta}$ gives
 where $\Gamma^\beta_{\,\,\,\mu\nu}$ is the components of the connection-symbol from Eq.~(\ref{where ref?}). A trivial solution to Eq.~(\ref{eq:geodesic}) is in flat space using cartesian coordinates where $\Gamma^\beta_{\,\,\,\mu\nu}=0$ and therefore $\ddot{x}^\beta=0$ so $\dot{x}^\beta$ is a constant; this tells us the shortest distance between two points in flat space is a straight line. In other words, geodesics are straight lines in flat space.
 
 
+PARALLEL TRANSPORT
 
-\subsection{Maps Between Manifolds}
-In this work we will be interested in the mapping of objects between two manifolds $M$ and $N$ of similar dimension [VERIFY]. This has many uses such as finding the metric (or any tensor) on an embedded surface and very importantly allowed us to perform the 3+1 decomposition [REF] on a spacetime.
-
-Let's start by defining a smooth map $\Phi : M \rightarrow N$ between manifolds on some coordinate patch; we will always deal with maps that have a smooth inverse $\Phi^{-1} :N \rightarrow M$ which are diffeomorphisms. Two common examples of diffeomorphisms are coordinate changes and translations [CHECK]. Labelling coordinates $x^\mu\in M$ and $y^\mu\in N$ the map $\Phi:x^\mu \rightarrow y^\mu$ is equivalent to $y^\mu(x^\nu)$. Scalar functions must also map trivially $f_N(y^\mu(x^\nu))=f_M(x^\mu)$ where $f_N\in N$ and $f_M \in M$, thus we will no longer identify which manifold a function is on. Looking back to [REF] we define a vector field $\bs{X} = X^\mu \partial_\mu$ on $M$, the abstract object $\bs{X}$ should be pushed from $M$ to $N$ in a way such that it's action on a function $f$ is the same in either manifold. Given that 
-\begin{equation}
-\bs{X}(f) = X^\mu \frac{\partial f}{\partial x^\mu} = \left( X^\mu \frac{\partial y^\nu}{\partial x^\mu}\right) \frac{\partial f}{\partial y^\nu} = (\Phi_* X^\mu)\frac{\partial f}{\partial y^\nu} = \Phi_* \bs{X} (\Phi : f),
-\end{equation} 
-where $\Phi_* \bs{X} \in N$ denotes the push-foreward of $\bs{X}$, we can calculate the push-foreward of vector field components like
-\begin{equation}
-(\Phi_* X)^\mu = \frac{\partial y^\mu}{\partial x^\nu}X^\nu.
-\end{equation}
-Given a co-vector field $\bs{\omega} \in N$ we can pull the field back from $N \rightarrow M$, denoted $\Phi^*\bs{\omega}$, by demanding that $\Phi^*\bs{\omega}(\bs{X})\in M = \bs{\omega}(\Phi_* \bs{X})\in N$. Evaluating this gives 
-\begin{align}
-\Phi^*\bs{\omega}(\bs{X}) &= (\Phi^* \omega)_\mu X^\mu, \\
-\bs{\omega}(\Phi_* \bs{X})&= \omega_\nu (\Phi_*X)^\nu = \omega_\nu \frac{\partial y^\nu}{\partial x^\mu} X^\mu , \\ 
-(\Phi^* \omega)_\mu &= \omega_\nu \frac{\partial y^\nu}{\partial x^\mu}.
-\end{align}
-Considering an $(0,2)$ tensor $\bs{T} \in N$ the pullback $\Phi^*\bs{T} \in M$ follows simply from demanding that $\bs{T}{\Phi_* \bs{X},\Phi_*\bs{Y}} = \Phi^*\bs{T}(\bs{X},\bs{Y})$ where $\bs{X}$ and $\bs{Y}$ are vector fields on $M$. The components of the pull-back of $\bs{T}$ are therefore
-\begin{equation}
-(\Phi^*T)_{\mu\nu} = \frac{\partial y^\rho}{\partial x^\mu} \frac{\partial y^\sigma}{\partial x^\nu}T_{\rho\sigma}.
-\end{equation}
-The pull-back of a generic $(0,q)$ tensor and the push-foreward of a generic $(p,0)$ tensor can be found similarly.
-
-So far we have only discussed the mapping $\Phi :M \rightarrow N$, which was required to have a well behaved $\partial y^\nu / \partial x^\mu$. In the case $y^\nu(x^\mu)$ has a smooth inverse $x^\nu(y^\mu)$, and therefore a well behaved $\partial x^\nu/\partial y^\mu$, we have a smooth inverse map $\Phi^{-1}:N \rightarrow M$ and the mapping $\Phi$ is a diffeomorphism. When $\Phi$ is a diffeomorphism we can then also define the pull-back of $(p,0)$ tensors from $N$ to $M$ along with the push-foreward of $(0,q)$ tensors from $M$ to $N$.
-
-As mentioned, a good use of this formalism is to find the metric on an embedded surface. Starting from an $m$ dimensional manifold $M$ with metric $g_{\mu\nu}$ and coordinates $x^\mu$ we consider an embedded $n$ dimensional surface $N$ where $n<m$. We can treat $N$ as a separate $n$ dimensional manifold with metric $h_{\mu\nu}$. MAYBGE PUT THIS LATER AS THIS REQUIRES PROJECTIONS.
-
-We have now discussed the necesary formalism to define the Lie derivative. The Lie derivative at a point is the rate of change of a tensor field with respect to a pull-back from a diffeomorphism $\Phi$ mapping infinitessimally close points $p,q \in \mathcal{M}$ like $\Phi:p=x^\mu \rightarrow q = x^\mu+\epsilon \xi^\mu$ for some vector field $\xi$. The simplest example is the Lie derivative of a scalar field $\phi$, denoted $\L_\xi \phi$ with respect to vector field $\bs \xi$, is
-\begin{align} \label{eq:Lxiphi}
-\L_\xi \phi &= \lim_{\epsilon \rightarrow 0}\left[\frac{\Phi^*\phi\vert_q - \phi\vert_p}{\epsilon} \right] , \\
-&= \lim_{\epsilon \rightarrow 0}\left[\frac{\phi(x^\mu + \epsilon \xi^\mu) - \phi(x^\mu)}{\epsilon} \right] , \\
-&= \xi^\mu \partial_\mu \phi,
-\end{align}
-which reduces to the directional derivative of $\phi$ with respect to $\bs{\xi}$. Next let's calculate the Lie derivative of a vector field $\bs{X}$ with respect to vector field $\bs\xi$. Starting with the same definition as Eq.~(\ref{eq:Lxiphi}), and using $y^\mu = x^\mu + \epsilon \xi^\mu$, the Lie derivative of $\bs X$ is 
-\begin{align} \label{eq:Lxiphi}
-(\L_\xi {X})^\mu &= \lim_{\epsilon \rightarrow 0}\left[\frac{(\Phi^*X\vert_q)^\mu - {X\vert_p}^\mu}{\epsilon} \right] , \\
-&= \lim_{\epsilon \rightarrow 0}\left[\frac{ \frac{\partial x^\mu}{\partial y^\nu}X^\nu(x^\rho + \epsilon \xi^\rho) - X^\mu(x^\rho)}{\epsilon} \right] , \\
-&= \lim_{\epsilon \rightarrow 0}\left[\frac{ (\delta_\nu^\mu - \epsilon \partial_\nu \xi^\mu)X^\nu(x^\rho + \epsilon \xi^\rho) - X^\mu(x^\rho)}{\epsilon} \right] , \\
-&= \lim_{\epsilon \rightarrow 0}\left[\frac{ - \epsilon \partial_\nu \xi^\mu X^\nu(x^\rho + \epsilon \xi^\rho)+ X^\mu(x^\rho + \epsilon \xi^\rho) - X^\mu(x^\rho)}{\epsilon}  \right] , \\
-&= \lim_{\epsilon \rightarrow 0}\left[\frac{ - \epsilon \partial_\nu \xi^\mu X^\nu(x^\rho)+ X^\mu(x^\rho + \epsilon \xi^\rho) - X^\mu(x^\rho)+\mathcal{O}(\epsilon^2)}{\epsilon}  \right] , \\
-&= \xi^\nu \partial_\nu X^\mu - X^\nu \partial_\nu \xi^\mu.
-\end{align}
-The Lie derivative for co-vectors and tensors can be derived in the same way, but can be quickly derived from the Liebnitz rule as follows. Define a scalar field $\psi$, vector field $\bs{X}$ and co-vector field $\bs\omega$, where $\psi = X^\mu \omega_\mu$, then it follows that
-\begin{align}
-\L_\xi \psi &= \xi^\mu \partial_\mu \psi =  X^\nu\xi^\mu\partial_\mu\omega_\nu+\omega_\nu\xi^\mu\partial_\mu X^\nu, \\
-              &= \L_\xi (X^\mu \omega_\mu),\\
-              &= \omega_\mu (\L_\xi X)^\mu + X^\mu(\L_\xi\omega)_\mu,\\
-               X^\mu(\L_\xi \omega)_\mu & =X^\nu\xi^\mu\partial_\mu\omega_\nu+\omega_\nu\xi^\mu\partial_\mu X^\nu-\omega_\mu (\L_\xi X)^\mu, \\
-               (\L_\xi \omega)_\mu&= \xi^\nu \partial_\nu \omega_\mu + \omega_\nu \partial_\mu \xi^\nu.
-\end{align}
-As it turns out, any Lie derivative can replace all partial derivatives with covariant derivatives $\nabla$ due to the connection/Christoffel symbols cancelling.
-
-A special example of a Lie derivative is of the metric tensor, $\bs{g}$, giving
-\begin{align}
-(\L_\xi g)_{\mu\nu} &= \xi^\rho \partial_\rho g_{\mu\nu} + g_{\rho\nu}\partial_\mu \xi^\rho + + g_{\mu\rho}\partial_\nu \xi^\rho, \\
-&= \xi^\rho \underbrace{\nabla_\rho g_{\mu\nu}}_{=0} + g_{\rho\nu}\nabla_\mu \xi^\rho  + g_{\mu\rho}\nabla_\nu \xi^\rho, \\
-\end{align}
-where $\nabla_\rho g_{\mu\nu}=0$ is assumed from metric compatibility in [REF]. In the case the Lie derivative vanishes we get Killing's equation
-\begin{equation}
-\nabla_{\mu}\xi_\nu + \nabla_\nu \xi_\mu =0
-\end{equation} 
-and a vector field $\bs\xi$ satisfying Killing's equation is called a Killing vector. [MENTION IS MENAS CONSERVATINO OF ENERGY-MOM HERE?]
-
-special case lei metric
 
 \section{General Relativity}
+
+special rrelativity start? no aether?
+
+postulates here? Liek metric compatibility and torsion free
+
 General Relativity is the theory of gravity
 
 Einstein vacuum eqn, then add matter, maybe horizons and black holes stuff. check harvey/tong gr/bh notes for inspiration.
 
 specific solutions like minkowski, gravitational waves, BH's, NS'
+
+\subsection{Physical in Curved Space}
+e.g. Mamxwell, klein gordon ... stress tensor, see ahrveys notes, perfect euler fluid here or somewhere else?
 
 \subsection{The Einstein Equation}
 [MAYBE SPLIT THE VACUUMMSPACETIME TO ANOTHER SECTION]
@@ -364,7 +412,7 @@ In the special case of $D=2$ it can be shown that $R_{\mu\nu} = Rg_{\mu\nu}/2$ [
 \subsection{The Cosmological Constant}
 
 \subsection{The Lagrangean Formulation of General Relativity}
-[ADD SOME MOTIVATION OF WHY WE LIKE LAGRANGEANS, EASY TO QUNATIZE OR ADD MORE MATTER RO INTERACTIONS OF MATTER?
+[ADD SOME MOTIVATION OF WHY WE LIKE LAGRANGEANS, EASY TO QUNATIZE OR ADD MORE MATTER RO INTERACTIONS OF MATTER? note hilbert did einstein eq before einstein
 
 
 \subsection{Low Curvature Limit of General Relativity}
@@ -410,6 +458,9 @@ Note [TALK ABOUT G PLUS H RATHER THAN ETA PLUS H FOR BH RINGDOWN AND MAYBE BS ST
 
 [MENTION : GW'S, PRECESSION, LIGHT DEFLECTION, TIME DILATION AROUND EARTH/SUN, MAYBE MENTION INTERSTELLAR'S TIME DILATION? ARE THESE REALLY LOW ENERGY LIMIT? MENTION POST NEWTONIAN OTHER THINGS?]
 
+\section{Newman-Penrose Formalism}
+
+
 \section{Stuff}
 wheeler quote, matter tells space how to curve, adn space tells matter how to move.
 
@@ -436,3 +487,7 @@ talk about newman penrose scalars for GW extraction?
 check capital letters
 
 define trace
+
+3+1 stress tensor is wrong for klein gordon
+
+adm metric is wring in 4th term report

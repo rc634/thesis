@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.15)  15 JUL 2022 14:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.15)  24 AUG 2022 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -609,7 +609,11 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count318
 \l__pdf_internal_box=\box104
 )
-(./intro.aux)
+(./intro.aux
+
+LaTeX Warning: Label `eq:Lxiphi' multiply defined.
+
+)
 \openout1 = `intro.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
@@ -713,126 +717,268 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
-4.
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+ (./intro.toc
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+.
+
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
-4.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-84.
+1.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-84.
+1.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 84.
+(Font)              <10.95> on input line 1.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 84.
+(Font)              <8> on input line 1.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 84.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
-
+(Font)              <6> on input line 1.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+))
+\tf@toc=\write4
+\openout4 = `intro.toc'.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<../pics/pythag_proof.png, id=78, 1027.84pt x 969.6225pt>
-File: ../pics/pythag_proof.png Graphic file (type png)
-<use ../pics/pythag_proof.png>
-Package pdftex.def Info: ../pics/pythag_proof.png  used on input line 123.
-(pdftex.def)             Requested size: 173.71863pt x 163.87195pt.
+ [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (ext4): dest
+ination with the same identifier (name{page.}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.111 
+       [2]
+
+! LaTeX Error: Environment wrapfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 \begin{wrapfigure}
+                        {r}{0.45\textwidth}
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.125 \begin{wrapfigure}{r}{0.45\textwidth}
+                                           
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.125 \begin{wrapfigure}{r}{0.45\textwidth}
+                                           
+? 
+<pics/pythag_proof.png, id=161, 1027.84pt x 969.6225pt>
+File: pics/pythag_proof.png Graphic file (type png)
+<use pics/pythag_proof.png>
+Package pdftex.def Info: pics/pythag_proof.png  used on input line 127.
+(pdftex.def)             Requested size: 223.34712pt x 210.68405pt.
+
+! Package caption Error: \caption outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128     \caption
+                  {Diagram for proof of Pythagoras' theorem.}
+? 
+
+! LaTeX Error: \begin{document} ended by \end{wrapfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 \end{wrapfigure}
+                      
+? 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.144 
-       [2 <../pics/pythag_proof.png>]pdfTeX warning (ext4): destination with th
-e same identifier (name{page.}) has been already used, duplicate ignored
+l.151 
+       [3 <./pics/pythag_proof.png>]pdfTeX warning (ext4): destination with the
+ same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.177 
-       [3]pdfTeX warning (ext4): destination with the same identifier (name{pag
-e.}) has been already used, duplicate ignored
+l.180 \begin{equation}
+                       [4]pdfTeX warning (ext4): destination with the same iden
+tifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.212 \end{align}
-                  [4]pdfTeX warning (ext4): destination with the same identifie
+l.215 \end{align}
+                  [5]pdfTeX warning (ext4): destination with the same identifie
 r (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.250 \begin{equation}
-                       [5]pdfTeX warning (ext4): destination with the same iden
-tifier (name{page.}) has been already used, duplicate ignored
+l.254 ...{\partial}{\partial x^\mu},\end{equation}
+                                                   which works much the same...
+[6]pdfTeX warning (ext4): destination with the same identifier (name{page.}) ha
+s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.296 \begin{equation}
-                       [6]pdfTeX warning (ext4): destination with the same iden
-tifier (name{page.}) has been already used, duplicate ignored
+l.286 \end{align}
+                  [7]pdfTeX warning (ext4): destination with the same identifie
+r (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.332 \end{align}
-                  [7]
+l.335 T
+       he covariant derivative of a general tensor can be found by following...
+[8]pdfTeX warning (ext4): destination with the same identifier (name{page.}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.380 ...T_{\rho}^{\,\,\,\beta ...} \end{equation}
+                                                   [9]pdfTeX warning (ext4): de
+stination with the same identifier (name{page.}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.425 \begin{align}
+                    [10]pdfTeX warning (ext4): destination with the same identi
+fier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.466 \end{align}
+                  [11]pdfTeX warning (ext4): destination with the same identifi
+er (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.504 
+       [12]pdfTeX warning (ext4): destination with the same identifier (name{pa
+ge.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.539 \end{align}
+                  [13]pdfTeX warning (ext4): destination with the same identifi
+er (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.576 \subsection
+                 {Tensor Densities} [14]
+! Undefined control sequence.
+l.578 ...dinate transformation $x^\mu -\rigtharrow
+                                                   \tilde{x}^\mu$ is applied...
 
-LaTeX Warning: Reference `where ref?' on page  undefined on input line 333.
+? 
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.604 \end{equation}
+                     [15]pdfTeX warning (ext4): destination with the same ident
+ifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.655 F
+       or a manifold equipped with metric $(\M,g)$ the curve with shortest d...
+[16]
+
+LaTeX Warning: Reference `where ref?' on page  undefined on input line 671.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.364 \end{document}
-                     [8] (./intro.aux)
+l.692 \end{align}
+                  [17]pdfTeX warning (ext4): destination with the same identifi
+er (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.734 \end{align}
+                  [18]pdfTeX warning (ext4): destination with the same identifi
+er (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.779 \begin{align}
+                    [19]pdfTeX warning (ext4): destination with the same identi
+fier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.814 \end{equation}
+                     [20]
+Overfull \hbox (5.12526pt too wide) in paragraph at lines 819--821
+\T1/lmr/m/n/10.95 Given that the Con-nec-tion sym-bols $\OT1/lmr/m/n/10.95 ^^@[
+]$ \T1/lmr/m/n/10.95 van-ish ev-ery-where for the met-ric com-po-nents $\OML/lm
+m/m/it/10.95 ^^Q[]$ \T1/lmr/m/n/10.95 then Eq. ([]0.4.24[])
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.853 \section
+              {Newman-Penrose Formalism} [21]pdfTeX warning (ext4): destination
+ with the same identifier (name{page.}) has been already used, duplicate ignore
+d
+<to be read again> 
+                   \relax 
+l.890 \end{document}
+                     [22] (./intro.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `intro.out' has not changed.
-(rerunfilecheck)             Checksum: 740056F23C6F50D5AB64947CE0204D4D;2820.
+(rerunfilecheck)             Checksum: 7014EFE455F2702A83338A27858D1400;5230.
  ) 
 Here is how much of TeX's memory you used:
- 14936 strings out of 480247
- 234907 string characters out of 5896151
- 551599 words of memory out of 5000000
- 32590 multiletter control sequences out of 15000+600000
- 503333 words of font info for 61 fonts, out of 8000000 for 9000
+ 15135 strings out of 480247
+ 237820 string characters out of 5896151
+ 554154 words of memory out of 5000000
+ 32621 multiletter control sequences out of 15000+600000
+ 524411 words of font info for 73 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,17n,63p,1146b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,17n,63p,1179b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--mathsy.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fo
-nts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
->
-Output written on intro.pdf (8 pages, 340963 bytes).
+ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb>
+Output written on intro.pdf (22 pages, 443145 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 204 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 578 PDF objects out of 1000 (max. 8388607)
+ 510 compressed objects within 6 object streams
+ 222 named destinations out of 1000 (max. 500000)
+ 222 words of extra memory for PDF output out of 10000 (max. 10000000)
 

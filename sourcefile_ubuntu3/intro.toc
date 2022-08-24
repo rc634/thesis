@@ -1,0 +1,27 @@
+\contentsline {section}{\numberline {0.1}Introduction}{}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Introduction to Compact Objects and Boson Stars}{}{section.0.2}%
+\contentsline {subsection}{\numberline {0.2.1}Conventions}{}{subsection.0.2.1}%
+\contentsline {section}{\numberline {0.3}Differential Geometry}{}{section.0.3}%
+\contentsline {subsection}{\numberline {0.3.1}Introduction to Geometry and Manifolds}{}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {0.3.2}Functions, Curves and Tensors on Manifolds}{}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {0.3.3}General Covariance and Coordinate transformations}{}{subsection.0.3.3}%
+\contentsline {subsection}{\numberline {0.3.4}The Covariant Derivative}{}{subsection.0.3.4}%
+\contentsline {subsection}{\numberline {0.3.5}The Levi-Civita Connection}{}{subsection.0.3.5}%
+\contentsline {subsection}{\numberline {0.3.6}Curvature Tensors}{}{subsection.0.3.6}%
+\contentsline {subsection}{\numberline {0.3.7}Maps Between Manifolds}{}{subsection.0.3.7}%
+\contentsline {subsection}{\numberline {0.3.8}Lie Derivatives}{}{subsection.0.3.8}%
+\contentsline {subsection}{\numberline {0.3.9}Tensor Densities}{}{subsection.0.3.9}%
+\contentsline {subsection}{\numberline {0.3.10}Differential Forms}{}{subsection.0.3.10}%
+\contentsline {subsection}{\numberline {0.3.11}Integrating Forms on Manifolds}{}{subsection.0.3.11}%
+\contentsline {subsection}{\numberline {0.3.12}Length and Geodesics on Manifolds}{}{subsection.0.3.12}%
+\contentsline {subsection}{\numberline {0.3.13}Parallel Transport}{}{subsection.0.3.13}%
+\contentsline {subsection}{\numberline {0.3.14}The Divergence Theorem}{}{subsection.0.3.14}%
+\contentsline {section}{\numberline {0.4}General Relativity}{}{section.0.4}%
+\contentsline {subsection}{\numberline {0.4.1}Physics in Curved Space}{}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {0.4.2}The Einstein Equation}{}{subsection.0.4.2}%
+\contentsline {subsection}{\numberline {0.4.3}Matter in General Relativity}{}{subsection.0.4.3}%
+\contentsline {subsection}{\numberline {0.4.4}The Cosmological Constant}{}{subsection.0.4.4}%
+\contentsline {subsection}{\numberline {0.4.5}The Lagrangean Formulation of General Relativity}{}{subsection.0.4.5}%
+\contentsline {subsection}{\numberline {0.4.6}Low Curvature Limit of General Relativity}{}{subsection.0.4.6}%
+\contentsline {section}{\numberline {0.5}Newman-Penrose Formalism}{}{section.0.5}%
+\contentsline {section}{\numberline {0.6}Stuff}{}{section.0.6}%
