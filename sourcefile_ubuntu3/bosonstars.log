@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.15)  5 SEP 2022 18:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.15)  5 SEP 2022 18:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**intro.tex
-(./intro.tex
+**bosonstars.tex
+(./bosonstars.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
@@ -599,7 +599,7 @@ Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: sty)
 
 Enter file name: 
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 69
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 71
 .
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -609,31 +609,190 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count318
 \l__pdf_internal_box=\box104
 )
-(./intro.aux
+(./bosonstars.aux
 
-LaTeX Warning: Label `intro:eq:Lxiphi' multiply defined.
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
 
 )
-\openout1 = `intro.aux'.
+\openout1 = `bosonstars.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -691,7 +850,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 69.
+Package hyperref Info: Link coloring OFF on input line 71.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -704,20 +863,20 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count325
 )
-LaTeX Info: Redefining \ref on input line 69.
-LaTeX Info: Redefining \pageref on input line 69.
-LaTeX Info: Redefining \nameref on input line 69.
+LaTeX Info: Redefining \ref on input line 71.
+LaTeX Info: Redefining \pageref on input line 71.
+LaTeX Info: Redefining \nameref on input line 71.
 
-(./intro.out) (./intro.out)
+(./bosonstars.out) (./bosonstars.out)
 \@outlinefile=\write3
-\openout3 = `intro.out'.
+\openout3 = `bosonstars.out'.
 
 \c@lstlisting=\count326
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
- (./intro.toc
+ (./bosonstars.toc
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
 .
 
@@ -759,7 +918,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write4
-\openout4 = `intro.toc'.
+\openout4 = `bosonstars.toc'.
 
  [1
 
@@ -769,364 +928,559 @@ ination with the same identifier (name{page.}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.112 
-       [2]
-<pics/pythag_proof.png, id=192, 1027.84pt x 969.6225pt>
-File: pics/pythag_proof.png Graphic file (type png)
-<use pics/pythag_proof.png>
-Package pdftex.def Info: pics/pythag_proof.png  used on input line 130.
-(pdftex.def)             Requested size: 223.34712pt x 210.68405pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
+l.122 $$
+         x^\mu \in \{t,r,\theta,\phi \}$$ [2]pdfTeX warning (ext4): destination
+ with the same identifier (name{page.}) has been already used, duplicate ignore
+d
 <to be read again> 
                    \relax 
-l.147 
-       [3 <./pics/pythag_proof.png>]pdfTeX warning (ext4): destination with the
- same identifier (name{page.}) has been already used, duplicate ignored
+l.147 ...i'}{\Psi}+\frac{2}{r} \right]\end{gather}
+                                                   [3]pdfTeX warning (ext4): de
+stination with the same identifier (name{page.}) has been already used, duplica
+te ignored
 <to be read again> 
                    \relax 
-l.184 \end{equation}
-                     [4]
-Overfull \hbox (1.86719pt too wide) in paragraph at lines 196--198
-\T1/lmr/m/n/10.95 which uses the $\OT1/lmr/m/n/10.95 (0\OML/lmm/m/it/10.95 ; \O
-T1/lmr/m/n/10.95 2)$ \T1/lmr/m/n/10.95 ten-sor $\OML/cmm/b/it/10.95 T$ \T1/lmr/
-m/n/10.95 to map the vec-tor $\OML/cmm/b/it/10.95 X$ \T1/lmr/m/n/10.95 to a co-
-vector $\OML/cmm/b/it/10.95 W$ \T1/lmr/m/n/10.95 with com-po-nents $\OML/lmm/m/
-it/10.95 W[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 T[]X[]$\T1/lmr/m/n/10.95 
-. 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
+l.174 ...hcal{J}^\mu = \sqrt{-g}j^\mu.\end{align*}
+                                                   [4]pdfTeX warning (ext4): de
+stination with the same identifier (name{page.}) has been already used, duplica
+te ignored
 <to be read again> 
                    \relax 
-l.233 
-       [5]pdfTeX warning (ext4): destination with the same identifier (name{pag
+l.197 ... \\ 0&0&0&\Psi^2\end{pmatrix}\end{align*}
+                                                   [5]pdfTeX warning (ext4): de
+stination with the same identifier (name{page.}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.224 ...rtial}_i \tilde{m}^k\right]\end{equation}
+                                                   [6]pdfTeX warning (ext4): de
+stination with the same identifier (name{page.}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.247 
+       [7]pdfTeX warning (ext4): destination with the same identifier (name{pag
 e.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.275 \end{align}
-                  [6]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 287.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 287.
+l.286 ...in{equation} \Box \vp = \vp\end{equation}
+                                                   [8]pdfTeX warning (ext4): de
+stination with the same identifier (name{page.}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.305 
+       [9]
 
-! Undefined control sequence.
-l.287 ...paces associated with $p\in\M$ or $q\in\N
-                                                  $ are therefore also prese...
+LaTeX Warning: File `bosonstar_groundstate.png' not found on input line 311.
 
+
+! Package pdftex.def Error: File `bosonstar_groundstate.png' not found: using d
+raft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.311 ...tar_groundstate.png}\label{boson:fig:f1}}
+                                                  
+? 
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
+11.
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+
+LaTeX Warning: File `bosonstar_excitedstate.png' not found on input line 313.
+
+
+! Package pdftex.def Error: File `bosonstar_excitedstate.png' not found: using 
+draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 ...ar_excitedstate.png}\label{boson:fig:f2}}
+                                                  
+? 
+
+LaTeX Warning: File `ADM_vs_PC.png' not found on input line 321.
+
+
+! Package pdftex.def Error: File `ADM_vs_PC.png' not found: using draft setting
+.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.321 ...idth]{ADM_vs_PC.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `ADM_vs_r99.png' not found on input line 323.
+
+
+! Package pdftex.def Error: File `ADM_vs_r99.png' not found: using draft settin
+g.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.323 ...dth]{ADM_vs_r99.png}\label{boson:fig:f2}}
+                                                  
 ? 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.306 \end{align}
-                  [7]pdfTeX warning (ext4): destination with the same identifie
-r (name{page.}) has been already used, duplicate ignored
+l.325 
+       [10]
+
+LaTeX Warning: File `mod_phi_nice0000.png' not found on input line 333.
+
+
+! Package pdftex.def Error: File `mod_phi_nice0000.png' not found: using draft 
+setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.333 ...od_phi_nice0000.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `modphimax.png' not found on input line 335.
+
+
+! Package pdftex.def Error: File `modphimax.png' not found: using draft setting
+.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.335 ...idth]{modphimax.png}\label{boson:fig:f2}}
+                                                  
+? 
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.346 \begin{align}
-                    [8]pdfTeX warning (ext4): destination with the same identif
+l.338 
+       [11]
+
+LaTeX Warning: File `N.png' not found on input line 342.
+
+
+! Package pdftex.def Error: File `N.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.342 ....5\textwidth]{N.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `H.png' not found on input line 344.
+
+
+! Package pdftex.def Error: File `H.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.344 ....5\textwidth]{H.png}\label{boson:fig:f2}}
+                                                  
+? 
+
+LaTeX Warning: File `headon_bs/chi0000.png' not found on input line 367.
+
+
+! Package pdftex.def Error: File `headon_bs/chi0000.png' not found: using draft
+ setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.367 ...adon_bs/chi0000.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `headon_bs/modphi0000.png' not found on input line 369.
+
+
+! Package pdftex.def Error: File `headon_bs/modphi0000.png' not found: using dr
+aft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369 ...n_bs/modphi0000.png}\label{boson:fig:f2}}
+                                                  
+? 
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.370 \end{figure}
+                   [12]
+
+LaTeX Warning: File `headon_bs/modphi0003.png' not found on input line 374.
+
+
+! Package pdftex.def Error: File `headon_bs/modphi0003.png' not found: using dr
+aft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.374 ...n_bs/modphi0003.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `headon_bs/modphi0004.png' not found on input line 376.
+
+
+! Package pdftex.def Error: File `headon_bs/modphi0004.png' not found: using dr
+aft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.376 ...n_bs/modphi0004.png}\label{boson:fig:f2}}
+                                                  
+? 
+
+LaTeX Warning: File `headon_bs/phi_re0004.png' not found on input line 381.
+
+
+! Package pdftex.def Error: File `headon_bs/phi_re0004.png' not found: using dr
+aft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.381 ...n_bs/phi_re0004.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `headon_bs/phi_re_perp0004.png' not found on input line 383
+.
+
+
+! Package pdftex.def Error: File `headon_bs/phi_re_perp0004.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.383 ...phi_re_perp0004.png}\label{boson:fig:f2}}
+                                                  
+? 
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.384 \end{figure}
+                   [13]
+
+LaTeX Warning: File `LMR/chi0000.png' not found on input line 391.
+
+
+! Package pdftex.def Error: File `LMR/chi0000.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.391 ...th]{LMR/chi0000.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `LMR/modphi0000.png' not found on input line 393.
+
+
+! Package pdftex.def Error: File `LMR/modphi0000.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.393 ...{LMR/modphi0000.png}\label{boson:fig:f2}}
+                                                  
+? 
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.394 \end{figure}
+                   [14]
+
+LaTeX Warning: File `LMR/chi0005.png' not found on input line 398.
+
+
+! Package pdftex.def Error: File `LMR/chi0005.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.398 ...th]{LMR/chi0005.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `LMR/modphi0005.png' not found on input line 400.
+
+
+! Package pdftex.def Error: File `LMR/modphi0005.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.400 ...{LMR/modphi0005.png}\label{boson:fig:f2}}
+                                                  
+? 
+
+LaTeX Warning: File `LMR/phi_re0000.png' not found on input line 402.
+
+
+! Package pdftex.def Error: File `LMR/phi_re0000.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 ...{LMR/phi_re0000.png}\label{boson:fig:f2}}
+                                                  
+? 
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.404 F
+       inal case consists of an equal mass Black Hole and Boson Star, initia...
+[15]
+
+LaTeX Warning: File `headon/chi0000.png' not found on input line 408.
+
+
+! Package pdftex.def Error: File `headon/chi0000.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.408 ...{headon/chi0000.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `headon/mod_phi0000.png' not found on input line 410.
+
+
+! Package pdftex.def Error: File `headon/mod_phi0000.png' not found: using draf
+t setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.410 ...don/mod_phi0000.png}\label{boson:fig:f2}}
+                                                  
+? 
+
+LaTeX Warning: File `headon/phi_re0000.png' not found on input line 415.
+
+
+! Package pdftex.def Error: File `headon/phi_re0000.png' not found: using draft
+ setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.415 ...adon/phi_re0000.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `headon/mod_phi0007.png' not found on input line 417.
+
+
+! Package pdftex.def Error: File `headon/mod_phi0007.png' not found: using draf
+t setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.417 ...don/mod_phi0007.png}\label{boson:fig:f2}}
+                                                  
+? 
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.418 \end{figure}
+                   [16]pdfTeX warning (ext4): destination with the same identif
 ier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.388 \end{equation}
-                     [9]
-Overfull \hbox (1.33098pt too wide) in paragraph at lines 412--414
-\T1/lmr/m/n/10.95 where $\OT1/lmr/m/n/10.95 ^^@[]$ \T1/lmr/m/n/10.95 is the com
--po-nents of the connection-symbol from Eq. ([]0.3.77[]). A triv-ial so-lu-tion
- to Eq. ([]0.2.71[])
- []
+l.424 ...quation} v^2 = \frac{M}{2d}\end{equation}
+                                                   [17]
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.420 \begin{align}
-                    [10]pdfTeX warning (ext4): destination with the same identi
-fier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.453 \end{align}
-                  [11]pdfTeX warning (ext4): destination with the same identifi
-er (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.489 \begin{align}
-                    [12]pdfTeX warning (ext4): destination with the same identi
-fier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.524 ...{\partial}{\partial x^\mu},\end{equation}
-                                                   which works much the same...
-[13]
-! Missing { inserted.
-<to be read again> 
-                   \begingroup 
-l.527  a $(p,q)$ tensor field ${\bs{\nabla}_\bs{X}
-                                                  } \bs{T}$. Requiring the c...
+LaTeX Warning: File `inspiral/mod_phi_inspiral_nice0000.png' not found on input
+ line 430.
 
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.527 ...ensor field ${\bs{\nabla}_\bs{X}} \bs{T}$
-                                                  . Requiring the covariant ...
 
-? 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.555 \begin{align}
-                    [14]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.602 ... SECTION. COULD BE QUICK, I ASSUME NABLA_
-                                                  MU ROOTG =0
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.603 
-      
-? 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.608 \begin{align}
-                    [15]pdfTeX warning (ext4): destination with the same identi
-fier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.649 \end{equation}
-                     [16]pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.697 M
-       AYBE DERIVE THE FORM OF BIG GAMMA? [17]
-! Missing delimiter (. inserted).
-<to be read again> 
-                   _
-l.710 ... possible to demand that $g_{\mu\nu}\big_
-                                                  p = \eta_{\mu\nu}$, the Mi...
+! Package pdftex.def Error: File `inspiral/mod_phi_inspiral_nice0000.png' not f
+ound: using draft setting.
 
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.430 ...spiral_nice0000.png}\label{boson:fig:f1}}
+                                                  
 ? 
-! Missing { inserted.
-<to be read again> 
-                   \vcenter 
-l.710 ... possible to demand that $g_{\mu\nu}\big_
-                                                  p = \eta_{\mu\nu}$, the Mi...
 
+LaTeX Warning: File `inspiral/mod_phi_inspiral_nice0002.png' not found on input
+ line 432.
+
+
+! Package pdftex.def Error: File `inspiral/mod_phi_inspiral_nice0002.png' not f
+ound: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.432 ...spiral_nice0002.png}\label{boson:fig:f2}}
+                                                  
 ? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.710 ... possible to demand that $g_{\mu\nu}\big_
-                                                  p = \eta_{\mu\nu}$, the Mi...
 
+LaTeX Warning: File `inspiral/phi_inspiral_nice0000.png' not found on input lin
+e 437.
+
+
+! Package pdftex.def Error: File `inspiral/phi_inspiral_nice0000.png' not found
+: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.437 ...spiral_nice0000.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `inspiral/phi_inspiral_nice0002.png' not found on input lin
+e 439.
+
+
+! Package pdftex.def Error: File `inspiral/phi_inspiral_nice0002.png' not found
+: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.439 ...spiral_nice0002.png}\label{boson:fig:f2}}
+                                                  
+? 
+
+LaTeX Warning: File `inspiral/N.png' not found on input line 444.
+
+
+! Package pdftex.def Error: File `inspiral/N.png' not found: using draft settin
+g.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.444 ...dth]{inspiral/N.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `inspiral/GW.png' not found on input line 446.
+
+
+! Package pdftex.def Error: File `inspiral/GW.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.446 ...th]{inspiral/GW.png}\label{boson:fig:f2}}
+                                                  
 ? 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.740 \begin{equation}
-                       [18]pdfTeX warning (ext4): destination with the same ide
-ntifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.786 \end{equation}
-                     [19]pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.841 \end{align}
-                  [20]
-! Undefined control sequence.
-<recently read> \lamba 
-                       
-l.860 ... can be evaluated in terms of the $\lamba
-                                                  _i$ as follows,
-? 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.880 \begin{equation}
-                       [21]pdfTeX warning (ext4): destination with the same ide
-ntifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.903 \end{equation}
-                     [22]pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.939 \end{equation}
-                     [23]pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.981 q
-       uick conservation law [24]pdfTeX warning (ext4): destination with the sa
-me identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1000 \end{align}
-                   [25]pdfTeX warning (ext4): destination with the same identif
+l.447 \end{figure}
+                   [18]pdfTeX warning (ext4): destination with the same identif
 ier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1039 
-        [26]pdfTeX warning (ext4): destination with the same identifier (name{p
-age.}) has been already used, duplicate ignored
+l.449 
+       [19]pdfTeX warning (ext4): destination with the same identifier (name{pa
+ge.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1075  \end{equation}
-                       [27]pdfTeX warning (ext4): destination with the same ide
-ntifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1113 
-        [28]pdfTeX warning (ext4): destination with the same identifier (name{p
-age.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1140 \end{align}
-                   [29]
-<pics/scbh_penrose.png, id=630, 1027.84pt x 977.6525pt>
-File: pics/scbh_penrose.png Graphic file (type png)
-<use pics/scbh_penrose.png>
-Package pdftex.def Info: pics/scbh_penrose.png  used on input line 1154.
-(pdftex.def)             Requested size: 223.34712pt x 212.42885pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1167 T
-        he subject of black holes in General Relativity is huge. [30 <./pics/sc
-bh_penrose.png>]
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.1215 \end{align}
-                  
-? 
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.1215 \end{align}
-                  
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1215 \end{align}
-                  
-? 
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.1215 \end{align}
-                  
-? 
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.1215 \end{align}
-                  
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1215 \end{align}
-                  
-? 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1221 
-        [31]pdfTeX warning (ext4): destination with the same identifier (name{p
-age.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1252 \end{align}
-                   [32]pdfTeX warning (ext4): destination with the same identif
-ier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1293 \end{equation}
-                      [33]pdfTeX warning (ext4): destination with the same iden
-tifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1346 u
-        se invisible (with star) subsubsections to break up longer sections
-[34]pdfTeX warning (ext4): destination with the same identifier (name{page.}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1400 \begin{align}
-                     [35]
-Overfull \hbox (5.12526pt too wide) in paragraph at lines 1419--1421
-\T1/lmr/m/n/10.95 Given that the Con-nec-tion sym-bols $\OT1/lmr/m/n/10.95 ^^@[
-]$ \T1/lmr/m/n/10.95 van-ish ev-ery-where for the met-ric com-po-nents $\OML/lm
-m/m/it/10.95 ^^Q[]$ \T1/lmr/m/n/10.95 then Eq. ([]0.5.14[])
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1438 \end{align}
-                   [36]pdfTeX warning (ext4): destination with the same identif
-ier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1455 \end{document}
-                      [37] (./intro.aux)
+l.457 \end{document}
+                     [20] (./bosonstars.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `intro.out' has not changed.
-(rerunfilecheck)             Checksum: D6D58B48AEF8ACBE63C2B9D89BB3CEC9;6082.
+Package rerunfilecheck Info: File `bosonstars.out' has not changed.
+(rerunfilecheck)             Checksum: 7E6F1238C9EEE6CA0BC1EAC44A500907;2869.
  ) 
 Here is how much of TeX's memory you used:
- 15389 strings out of 480247
- 241656 string characters out of 5896151
- 557769 words of memory out of 5000000
- 32690 multiletter control sequences out of 15000+600000
- 543238 words of font info for 92 fonts, out of 8000000 for 9000
+ 15974 strings out of 480247
+ 264295 string characters out of 5896151
+ 551271 words of memory out of 5000000
+ 33498 multiletter control sequences out of 15000+600000
+ 506670 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,17n,63p,1903b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi
-9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
-bm10.pfb>
-Output written on intro.pdf (37 pages, 613805 bytes).
+ 60i,14n,63p,1163b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib
+10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb>
+Output written on bosonstars.pdf (20 pages, 267344 bytes).
 PDF statistics:
- 919 PDF objects out of 1000 (max. 8388607)
- 822 compressed objects within 9 object streams
- 389 named destinations out of 1000 (max. 500000)
- 275 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 384 PDF objects out of 1000 (max. 8388607)
+ 329 compressed objects within 4 object streams
+ 135 named destinations out of 1000 (max. 500000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 

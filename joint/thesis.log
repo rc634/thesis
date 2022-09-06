@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.15)  6 SEP 2022 14:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.15)  6 SEP 2022 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -605,191 +605,184 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Unused global option(s):
     [book].
 
-(./thesis.aux (./intro2.aux
+(./thesis.aux (./intro.aux
 
-LaTeX Warning: Label `eq:Lxiphi' multiply defined.
+LaTeX Warning: Label `intro:eq:Lxiphi' multiply defined.
 
-) (./nr.aux
+) (./nr.aux) (./bosonstars.aux
 
-LaTeX Warning: Label `fig:f1' multiply defined.
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f1' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
 
-) (./grchombo.aux) (./bosonstars.aux
 
-LaTeX Warning: Label `fig:f1' multiply defined.
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f1' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `fig:f2' multiply defined.
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f2' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `fig:f1' multiply defined.
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f1' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `fig:f2' multiply defined.
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f2' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `fig:f1' multiply defined.
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f1' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `fig:f2' multiply defined.
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f2' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `fig:f1' multiply defined.
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f1' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `fig:f2' multiply defined.
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f2' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `fig:f1' multiply defined.
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f1' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `fig:f2' multiply defined.
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f2' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `fig:f1' multiply defined.
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f1' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `fig:f2' multiply defined.
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f2' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `fig:f1' multiply defined.
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f1' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `fig:f2' multiply defined.
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f2' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `fig:f1' multiply defined.
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f1' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `fig:f2' multiply defined.
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f2' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `fig:f1' multiply defined.
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f1' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `fig:f2' multiply defined.
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f2' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `fig:f2' multiply defined.
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f2' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `fig:f1' multiply defined.
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f1' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `fig:f2' multiply defined.
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f2' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `fig:f1' multiply defined.
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f1' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `fig:f2' multiply defined.
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f2' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `fig:f1' multiply defined.
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f1' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `fig:f2' multiply defined.
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f2' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `fig:f1' multiply defined.
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f1' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `fig:f2' multiply defined.
+LaTeX Warning: Label `boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f2' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f1' multiply defined.
 
 
-LaTeX Warning: Label `fig:f1' multiply defined.
+LaTeX Warning: Label `boson:fig:f2' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f2' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:f2' multiply defined.
+LaTeX Warning: Label `sub@boson:fig:f2' multiply defined.
 
 ) (./q.aux))
 \openout1 = `thesis.aux'.
@@ -983,17 +976,11 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (15.05272pt too wide) in paragraph at lines 24--24
- [][] [][]\T1/lmr/m/n/10.95 MAYBE FIELD THE-ORY HERE AND STRESS TEN-SORS? MAT-T
-ER IN CURVED 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
+)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 ...and Ricci Equations}{33}{subsection.2.1.3}
+l.61 ...N ADM METRIC MATRIX}{43}{subsection.2.1.5}
                                                   % [2
 
 ])
@@ -1010,102 +997,201 @@ Chapter 1.
 [1
 
 ]
-\openout2 = `intro2.aux'.
+\openout2 = `intro.aux'.
 
- (./intro2.tex [2
+ (./intro.tex [2
 
 ]
 
-! LaTeX Error: Environment wrapfigure undefined.
+! LaTeX Error: Unknown float option `H'.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.45 \begin{wrapfigure}
-                       {r}{0.45\textwidth}
-? 
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-l.45 \begin{wrapfigure}{r}{0.45\textwidth}
-                                          
-? 
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.45 \begin{wrapfigure}{r}{0.45\textwidth}
-                                          
-? 
-<pics/pythag_proof.png, id=424, 1027.84pt x 969.6225pt>
-File: pics/pythag_proof.png Graphic file (type png)
-<use pics/pythag_proof.png>
-Package pdftex.def Info: pics/pythag_proof.png  used on input line 47.
-(pdftex.def)             Requested size: 223.34712pt x 210.68405pt.
-
-! Package caption Error: \caption outside float.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.48     \caption
-                 {Diagram for proof of Pythagoras' theorem.}
-? 
-
-! LaTeX Error: \begin{document} ended by \end{wrapfigure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 \end{wrapfigure}
-                     
-? 
-[3 <./pics/pythag_proof.png>] [4] [5] [6] [7] [8]
-
-LaTeX Warning: Reference `where ref?' on page 9 undefined on input line 307.
-
-[9]
-! Undefined control sequence.
-<recently read> \tile 
+l.48 \begin{figure}[H]
                       
-l.331 ...the form of the weight function in $\tile
-                                                  {x}^\mu$ coordinates is $w...
-
 ? 
-[10] [11]
+
+LaTeX Warning: File `pics/pythag_proof.png' not found on input line 50.
+
+
+! Package pdftex.def Error: File `pics/pythag_proof.png' not found: using draft
+ setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 ...dth=0.45\textwidth]{pics/pythag_proof.png}
+                                                  
+? 
+[3] [4]
+Overfull \hbox (1.86719pt too wide) in paragraph at lines 116--118
+\T1/lmr/m/n/10.95 which uses the $\OT1/lmr/m/n/10.95 (0\OML/lmm/m/it/10.95 ; \O
+T1/lmr/m/n/10.95 2)$ \T1/lmr/m/n/10.95 ten-sor $\OML/cmm/b/it/10.95 T$ \T1/lmr/
+m/n/10.95 to map the vec-tor $\OML/cmm/b/it/10.95 X$ \T1/lmr/m/n/10.95 to a co-
+vector $\OML/cmm/b/it/10.95 W$ \T1/lmr/m/n/10.95 with com-po-nents $\OML/lmm/m/
+it/10.95 W[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 T[]X[]$\T1/lmr/m/n/10.95 
+. 
+ []
+
+[5] [6]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 207.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 207.
+
 ! Undefined control sequence.
-l.400 ...dinate transformation $x^\mu -\rigtharrow
-                                                   \tilde{x}^\mu$ is applied...
+l.207 ...paces associated with $p\in\M$ or $q\in\N
+                                                  $ are therefore also prese...
 
 ? 
-[12] [13] [14] [15] [16] [17] [18]
+[7] [8] [9]
+Overfull \hbox (1.33098pt too wide) in paragraph at lines 332--334
+\T1/lmr/m/n/10.95 where $\OT1/lmr/m/n/10.95 ^^@[]$ \T1/lmr/m/n/10.95 is the com
+-po-nents of the connection-symbol from Eq. ([]1.3.77[]). A triv-ial so-lu-tion
+ to Eq. ([]1.2.71[])
+ []
+
+[10] [11] [12]
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.447  a $(p,q)$ tensor field ${\bs{\nabla}_\bs{X}
+                                                  } \bs{T}$. Requiring the c...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.447 ...ensor field ${\bs{\nabla}_\bs{X}} \bs{T}$
+                                                  . Requiring the covariant ...
+
+? 
+[13] [14]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.522 ... SECTION. COULD BE QUICK, I ASSUME NABLA_
+                                                  MU ROOTG =0
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.523 
+      
+? 
+[15] [16] [17]
+! Missing delimiter (. inserted).
+<to be read again> 
+                   _
+l.630 ... possible to demand that $g_{\mu\nu}\big_
+                                                  p = \eta_{\mu\nu}$, the Mi...
+
+? 
+! Missing { inserted.
+<to be read again> 
+                   \vcenter 
+l.630 ... possible to demand that $g_{\mu\nu}\big_
+                                                  p = \eta_{\mu\nu}$, the Mi...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ... possible to demand that $g_{\mu\nu}\big_
+                                                  p = \eta_{\mu\nu}$, the Mi...
+
+? 
+[18] [19] [20]
 ! Undefined control sequence.
 <recently read> \lamba 
                        
-l.709 ... can be evaluated in terms of the $\lamba
+l.780 ... can be evaluated in terms of the $\lamba
                                                   _i$ as follows,
 ? 
-[19] [20] [21] [22] [23] [24] [25]
-Overfull \hbox (5.12526pt too wide) in paragraph at lines 969--971
+[21] [22] [23] [24] [25] [26] [27] [28] [29]
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1072 \begin{figure}[H]
+                        
+? 
+
+LaTeX Warning: File `pics/scbh_penrose.png' not found on input line 1074.
+
+
+! Package pdftex.def Error: File `pics/scbh_penrose.png' not found: using draft
+ setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1074 ...h=0.45\textwidth]{pics/scbh_penrose.png}
+                                                  
+? 
+[30] [31]
+! Extra }, or forgotten \right.
+<template> }
+            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
+l.1135 \end{align}
+                  
+? 
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.1135 \end{align}
+                  
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1135 \end{align}
+                  
+? 
+! Extra }, or forgotten \right.
+<template> }
+            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
+l.1135 \end{align}
+                  
+? 
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.1135 \end{align}
+                  
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1135 \end{align}
+                  
+? 
+[32] [33] [34] [35]
+Overfull \hbox (5.12526pt too wide) in paragraph at lines 1339--1341
 \T1/lmr/m/n/10.95 Given that the Con-nec-tion sym-bols $\OT1/lmr/m/n/10.95 ^^@[
 ]$ \T1/lmr/m/n/10.95 van-ish ev-ery-where for the met-ric com-po-nents $\OML/lm
-m/m/it/10.95 ^^Q[]$ \T1/lmr/m/n/10.95 then Eq. ([]1.5.45[])
+m/m/it/10.95 ^^Q[]$ \T1/lmr/m/n/10.95 then Eq. ([]1.5.14[])
  []
 
-[26] [27] [28]) [29]
+[36]) [37]
 Chapter 2.
-[30
+[38
 
 
 
 ]
 \openout2 = `nr.aux'.
 
- (./nr.tex [31
+ (./nr.tex [39
 
-] [32] [33]
+] [40] [41]
 
 ! LaTeX Error: Environment wrapfigure undefined.
 
@@ -1113,23 +1199,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.113 \begin{wrapfigure}
+l.117 \begin{wrapfigure}
                         {r}{0.65\textwidth}
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.113 \begin{wrapfigure}{r}{0.65\textwidth}
+l.117 \begin{wrapfigure}{r}{0.65\textwidth}
                                            
 ? 
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.113 \begin{wrapfigure}{r}{0.65\textwidth}
+l.117 \begin{wrapfigure}{r}{0.65\textwidth}
                                            
 ? 
 
-LaTeX Warning: File `adm.png' not found on input line 114.
+LaTeX Warning: File `adm.png' not found on input line 118.
 
 
 ! Package pdftex.def Error: File `adm.png' not found: using draft setting.
@@ -1138,7 +1224,7 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 ...degraphics[width=0.65\textwidth]{adm.png}
+l.118 ...degraphics[width=0.65\textwidth]{adm.png}
                                                   
 ? 
 
@@ -1148,26 +1234,26 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.115 \end{wrapfigure}
+l.119 \end{wrapfigure}
                       
 ? 
-[34] [35]
+[42] [43]
 
-LaTeX Warning: Citation `harmonic' on page 36 undefined on input line 144.
+LaTeX Warning: Citation `harmonic' on page 44 undefined on input line 148.
 
 ! Undefined control sequence.
 <recently read> \trace 
                        
-l.150 During an evolution the conditions $\trace
+l.154 During an evolution the conditions $\trace
                                                 {\tilde{A}_{ij}=0}$  and $\t...
 
 ? 
 
-LaTeX Warning: Citation `z4' on page 36 undefined on input line 158.
+LaTeX Warning: Citation `z4' on page 44 undefined on input line 162.
 
-[36] [37]
+[44] [45]
 
-LaTeX Warning: File `schwarzschild2.png' not found on input line 190.
+LaTeX Warning: File `schwarzschild2.png' not found on input line 194.
 
 
 ! Package pdftex.def Error: File `schwarzschild2.png' not found: using draft se
@@ -1177,11 +1263,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.190 ...width]{schwarzschild2.png}\label{fig:f1}}
+l.194 ...{schwarzschild2.png}\label{boson:fig:f1}}
                                                   
 ? 
 
-LaTeX Warning: File `schwarzschild.png' not found on input line 192.
+LaTeX Warning: File `schwarzschild.png' not found on input line 196.
 
 
 ! Package pdftex.def Error: File `schwarzschild.png' not found: using draft set
@@ -1191,142 +1277,17 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.192 ...twidth]{schwarzschild.png}\label{fig:f2}}
+l.196 ...]{schwarzschild.png}\label{boson:fig:f2}}
                                                   
 ? 
-[38]) [39]
-\openout2 = `grchombo.aux'.
-
-
-No file grchombo.tex.
-Chapter 3.
-[40
-
-
-
-
-
-
-]
+[46]) [47] [48]
 \openout2 = `bosonstars.aux'.
 
- (./bosonstars.tex [41
-
-] [42] [43] [44] [45] [46] [47]
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193   \begin{figure}[H]
-                         
-? 
-
-LaTeX Warning: File `bosonstar_groundstate.png' not found on input line 196.
+ (./bosonstars.tex [49
 
 
-! Package pdftex.def Error: File `bosonstar_groundstate.png' not found: using d
-raft setting.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.196 ...bosonstar_groundstate.png}\label{fig:f1}}
-                                                  
-? 
-
-LaTeX Warning: File `bosonstar_excitedstate.png' not found on input line 198.
-
-
-! Package pdftex.def Error: File `bosonstar_excitedstate.png' not found: using 
-draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.198 ...osonstar_excitedstate.png}\label{fig:f2}}
-                                                  
-? 
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.203   \begin{figure}[H]
-                         
-? 
-
-LaTeX Warning: File `ADM_vs_PC.png' not found on input line 206.
-
-
-! Package pdftex.def Error: File `ADM_vs_PC.png' not found: using draft setting
-.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.206 ...\textwidth]{ADM_vs_PC.png}\label{fig:f1}}
-                                                  
-? 
-
-LaTeX Warning: File `ADM_vs_r99.png' not found on input line 208.
-
-
-! Package pdftex.def Error: File `ADM_vs_r99.png' not found: using draft settin
-g.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.208 ...textwidth]{ADM_vs_r99.png}\label{fig:f2}}
-                                                  
-? 
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.215   \begin{figure}[H]
-                         
-? 
-
-LaTeX Warning: File `mod_phi_nice0000.png' not found on input line 218.
-
-
-! Package pdftex.def Error: File `mod_phi_nice0000.png' not found: using draft 
-setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.218 ...dth]{mod_phi_nice0000.png}\label{fig:f1}}
-                                                  
-? 
-
-LaTeX Warning: File `modphimax.png' not found on input line 220.
-
-
-! Package pdftex.def Error: File `modphimax.png' not found: using draft setting
-.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.220 ...\textwidth]{modphimax.png}\label{fig:f2}}
-                                                  
-? 
+] [50] [51] [52] [53] [54] [55] [56]
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -1338,7 +1299,121 @@ l.224   \begin{figure}[H]
                          
 ? 
 
-LaTeX Warning: File `N.png' not found on input line 227.
+LaTeX Warning: File `bosonstar_groundstate.png' not found on input line 227.
+
+
+! Package pdftex.def Error: File `bosonstar_groundstate.png' not found: using d
+raft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 ...tar_groundstate.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `bosonstar_excitedstate.png' not found on input line 229.
+
+
+! Package pdftex.def Error: File `bosonstar_excitedstate.png' not found: using 
+draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 ...ar_excitedstate.png}\label{boson:fig:f2}}
+                                                  
+? 
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234   \begin{figure}[H]
+                         
+? 
+
+LaTeX Warning: File `ADM_vs_PC.png' not found on input line 237.
+
+
+! Package pdftex.def Error: File `ADM_vs_PC.png' not found: using draft setting
+.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...idth]{ADM_vs_PC.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `ADM_vs_r99.png' not found on input line 239.
+
+
+! Package pdftex.def Error: File `ADM_vs_r99.png' not found: using draft settin
+g.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239 ...dth]{ADM_vs_r99.png}\label{boson:fig:f2}}
+                                                  
+? 
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.246   \begin{figure}[H]
+                         
+? 
+
+LaTeX Warning: File `mod_phi_nice0000.png' not found on input line 249.
+
+
+! Package pdftex.def Error: File `mod_phi_nice0000.png' not found: using draft 
+setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.249 ...od_phi_nice0000.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `modphimax.png' not found on input line 251.
+
+
+! Package pdftex.def Error: File `modphimax.png' not found: using draft setting
+.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.251 ...idth]{modphimax.png}\label{boson:fig:f2}}
+                                                  
+? 
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.255   \begin{figure}[H]
+                         
+? 
+
+LaTeX Warning: File `N.png' not found on input line 258.
 
 
 ! Package pdftex.def Error: File `N.png' not found: using draft setting.
@@ -1347,11 +1422,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.227 ...idth=0.5\textwidth]{N.png}\label{fig:f1}}
+l.258 ....5\textwidth]{N.png}\label{boson:fig:f1}}
                                                   
 ? 
 
-LaTeX Warning: File `H.png' not found on input line 229.
+LaTeX Warning: File `H.png' not found on input line 260.
 
 
 ! Package pdftex.def Error: File `H.png' not found: using draft setting.
@@ -1360,163 +1435,10 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.229 ...idth=0.5\textwidth]{H.png}\label{fig:f2}}
+l.260 ....5\textwidth]{H.png}\label{boson:fig:f2}}
                                                   
 ? 
-[48] [49]
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.249   \begin{figure}[H]
-                         
-? 
-
-LaTeX Warning: File `headon_bs/chi0000.png' not found on input line 252.
-
-
-! Package pdftex.def Error: File `headon_bs/chi0000.png' not found: using draft
- setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.252 ...th]{headon_bs/chi0000.png}\label{fig:f1}}
-                                                  
-? 
-
-LaTeX Warning: File `headon_bs/modphi0000.png' not found on input line 254.
-
-
-! Package pdftex.def Error: File `headon_bs/modphi0000.png' not found: using dr
-aft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.254 ...{headon_bs/modphi0000.png}\label{fig:f2}}
-                                                  
-? 
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.256   \begin{figure}[H]
-                         
-? 
-
-LaTeX Warning: File `headon_bs/modphi0003.png' not found on input line 259.
-
-
-! Package pdftex.def Error: File `headon_bs/modphi0003.png' not found: using dr
-aft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.259 ...{headon_bs/modphi0003.png}\label{fig:f1}}
-                                                  
-? 
-
-LaTeX Warning: File `headon_bs/modphi0004.png' not found on input line 261.
-
-
-! Package pdftex.def Error: File `headon_bs/modphi0004.png' not found: using dr
-aft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.261 ...{headon_bs/modphi0004.png}\label{fig:f2}}
-                                                  
-? 
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.263    \begin{figure}[H]
-                          
-? 
-
-LaTeX Warning: File `headon_bs/phi_re0004.png' not found on input line 266.
-
-
-! Package pdftex.def Error: File `headon_bs/phi_re0004.png' not found: using dr
-aft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.266 ...{headon_bs/phi_re0004.png}\label{fig:f1}}
-                                                  
-? 
-
-LaTeX Warning: File `headon_bs/phi_re_perp0004.png' not found on input line 268
-.
-
-
-! Package pdftex.def Error: File `headon_bs/phi_re_perp0004.png' not found: usi
-ng draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.268 ...on_bs/phi_re_perp0004.png}\label{fig:f2}}
-                                                  
-? 
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.273   \begin{figure}[H]
-                         
-? 
-
-LaTeX Warning: File `LMR/chi0000.png' not found on input line 276.
-
-
-! Package pdftex.def Error: File `LMR/chi0000.png' not found: using draft setti
-ng.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.276 ...extwidth]{LMR/chi0000.png}\label{fig:f1}}
-                                                  
-? 
-
-LaTeX Warning: File `LMR/modphi0000.png' not found on input line 278.
-
-
-! Package pdftex.def Error: File `LMR/modphi0000.png' not found: using draft se
-tting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.278 ...width]{LMR/modphi0000.png}\label{fig:f2}}
-                                                  
-? 
+[57] [58] [59]
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -1528,7 +1450,160 @@ l.280   \begin{figure}[H]
                          
 ? 
 
-LaTeX Warning: File `LMR/chi0005.png' not found on input line 283.
+LaTeX Warning: File `headon_bs/chi0000.png' not found on input line 283.
+
+
+! Package pdftex.def Error: File `headon_bs/chi0000.png' not found: using draft
+ setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.283 ...adon_bs/chi0000.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `headon_bs/modphi0000.png' not found on input line 285.
+
+
+! Package pdftex.def Error: File `headon_bs/modphi0000.png' not found: using dr
+aft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.285 ...n_bs/modphi0000.png}\label{boson:fig:f2}}
+                                                  
+? 
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287   \begin{figure}[H]
+                         
+? 
+
+LaTeX Warning: File `headon_bs/modphi0003.png' not found on input line 290.
+
+
+! Package pdftex.def Error: File `headon_bs/modphi0003.png' not found: using dr
+aft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.290 ...n_bs/modphi0003.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `headon_bs/modphi0004.png' not found on input line 292.
+
+
+! Package pdftex.def Error: File `headon_bs/modphi0004.png' not found: using dr
+aft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.292 ...n_bs/modphi0004.png}\label{boson:fig:f2}}
+                                                  
+? 
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.294    \begin{figure}[H]
+                          
+? 
+
+LaTeX Warning: File `headon_bs/phi_re0004.png' not found on input line 297.
+
+
+! Package pdftex.def Error: File `headon_bs/phi_re0004.png' not found: using dr
+aft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 ...n_bs/phi_re0004.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `headon_bs/phi_re_perp0004.png' not found on input line 299
+.
+
+
+! Package pdftex.def Error: File `headon_bs/phi_re_perp0004.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.299 ...phi_re_perp0004.png}\label{boson:fig:f2}}
+                                                  
+? 
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.304   \begin{figure}[H]
+                         
+? 
+
+LaTeX Warning: File `LMR/chi0000.png' not found on input line 307.
+
+
+! Package pdftex.def Error: File `LMR/chi0000.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.307 ...th]{LMR/chi0000.png}\label{boson:fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `LMR/modphi0000.png' not found on input line 309.
+
+
+! Package pdftex.def Error: File `LMR/modphi0000.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.309 ...{LMR/modphi0000.png}\label{boson:fig:f2}}
+                                                  
+? 
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.311   \begin{figure}[H]
+                         
+? 
+
+LaTeX Warning: File `LMR/chi0005.png' not found on input line 314.
 
 
 ! Package pdftex.def Error: File `LMR/chi0005.png' not found: using draft setti
@@ -1538,11 +1613,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.283 ...extwidth]{LMR/chi0005.png}\label{fig:f1}}
+l.314 ...th]{LMR/chi0005.png}\label{boson:fig:f1}}
                                                   
 ? 
 
-LaTeX Warning: File `LMR/modphi0005.png' not found on input line 285.
+LaTeX Warning: File `LMR/modphi0005.png' not found on input line 316.
 
 
 ! Package pdftex.def Error: File `LMR/modphi0005.png' not found: using draft se
@@ -1552,11 +1627,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.285 ...width]{LMR/modphi0005.png}\label{fig:f2}}
+l.316 ...{LMR/modphi0005.png}\label{boson:fig:f2}}
                                                   
 ? 
 
-LaTeX Warning: File `LMR/phi_re0000.png' not found on input line 287.
+LaTeX Warning: File `LMR/phi_re0000.png' not found on input line 318.
 
 
 ! Package pdftex.def Error: File `LMR/phi_re0000.png' not found: using draft se
@@ -1566,7 +1641,7 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.287 ...width]{LMR/phi_re0000.png}\label{fig:f2}}
+l.318 ...{LMR/phi_re0000.png}\label{boson:fig:f2}}
                                                   
 ? 
 
@@ -1576,11 +1651,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.290   \begin{figure}[H]
+l.321   \begin{figure}[H]
                          
 ? 
 
-LaTeX Warning: File `headon/chi0000.png' not found on input line 293.
+LaTeX Warning: File `headon/chi0000.png' not found on input line 324.
 
 
 ! Package pdftex.def Error: File `headon/chi0000.png' not found: using draft se
@@ -1590,11 +1665,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.293 ...width]{headon/chi0000.png}\label{fig:f1}}
+l.324 ...{headon/chi0000.png}\label{boson:fig:f1}}
                                                   
 ? 
 
-LaTeX Warning: File `headon/mod_phi0000.png' not found on input line 295.
+LaTeX Warning: File `headon/mod_phi0000.png' not found on input line 326.
 
 
 ! Package pdftex.def Error: File `headon/mod_phi0000.png' not found: using draf
@@ -1604,7 +1679,7 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.295 ...h]{headon/mod_phi0000.png}\label{fig:f2}}
+l.326 ...don/mod_phi0000.png}\label{boson:fig:f2}}
                                                   
 ? 
 
@@ -1614,11 +1689,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.297   \begin{figure}[H]
+l.328   \begin{figure}[H]
                          
 ? 
 
-LaTeX Warning: File `headon/phi_re0000.png' not found on input line 300.
+LaTeX Warning: File `headon/phi_re0000.png' not found on input line 331.
 
 
 ! Package pdftex.def Error: File `headon/phi_re0000.png' not found: using draft
@@ -1628,11 +1703,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.300 ...th]{headon/phi_re0000.png}\label{fig:f1}}
+l.331 ...adon/phi_re0000.png}\label{boson:fig:f1}}
                                                   
 ? 
 
-LaTeX Warning: File `headon/mod_phi0007.png' not found on input line 302.
+LaTeX Warning: File `headon/mod_phi0007.png' not found on input line 333.
 
 
 ! Package pdftex.def Error: File `headon/mod_phi0007.png' not found: using draf
@@ -1642,10 +1717,9 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.302 ...h]{headon/mod_phi0007.png}\label{fig:f2}}
+l.333 ...don/mod_phi0007.png}\label{boson:fig:f2}}
                                                   
 ? 
-[50] [51] [52] [53] [54] [55]
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -1653,12 +1727,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.312   \begin{figure}[H]
+l.343   \begin{figure}[H]
                          
 ? 
 
 LaTeX Warning: File `inspiral/mod_phi_inspiral_nice0000.png' not found on input
- line 315.
+ line 346.
 
 
 ! Package pdftex.def Error: File `inspiral/mod_phi_inspiral_nice0000.png' not f
@@ -1668,12 +1742,12 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.315 ...phi_inspiral_nice0000.png}\label{fig:f1}}
+l.346 ...spiral_nice0000.png}\label{boson:fig:f1}}
                                                   
 ? 
 
 LaTeX Warning: File `inspiral/mod_phi_inspiral_nice0002.png' not found on input
- line 317.
+ line 348.
 
 
 ! Package pdftex.def Error: File `inspiral/mod_phi_inspiral_nice0002.png' not f
@@ -1683,7 +1757,7 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.317 ...phi_inspiral_nice0002.png}\label{fig:f2}}
+l.348 ...spiral_nice0002.png}\label{boson:fig:f2}}
                                                   
 ? 
 
@@ -1693,12 +1767,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.319   \begin{figure}[H]
+l.350   \begin{figure}[H]
                          
 ? 
 
 LaTeX Warning: File `inspiral/phi_inspiral_nice0000.png' not found on input lin
-e 322.
+e 353.
 
 
 ! Package pdftex.def Error: File `inspiral/phi_inspiral_nice0000.png' not found
@@ -1708,12 +1782,12 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.322 ...phi_inspiral_nice0000.png}\label{fig:f1}}
+l.353 ...spiral_nice0000.png}\label{boson:fig:f1}}
                                                   
 ? 
 
 LaTeX Warning: File `inspiral/phi_inspiral_nice0002.png' not found on input lin
-e 324.
+e 355.
 
 
 ! Package pdftex.def Error: File `inspiral/phi_inspiral_nice0002.png' not found
@@ -1723,7 +1797,7 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.324 ...phi_inspiral_nice0002.png}\label{fig:f2}}
+l.355 ...spiral_nice0002.png}\label{boson:fig:f2}}
                                                   
 ? 
 
@@ -1733,11 +1807,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.326   \begin{figure}[H]
+l.357   \begin{figure}[H]
                          
 ? 
 
-LaTeX Warning: File `inspiral/N.png' not found on input line 329.
+LaTeX Warning: File `inspiral/N.png' not found on input line 360.
 
 
 ! Package pdftex.def Error: File `inspiral/N.png' not found: using draft settin
@@ -1747,11 +1821,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.329 ...textwidth]{inspiral/N.png}\label{fig:f1}}
+l.360 ...dth]{inspiral/N.png}\label{boson:fig:f1}}
                                                   
 ? 
 
-LaTeX Warning: File `inspiral/GW.png' not found on input line 331.
+LaTeX Warning: File `inspiral/GW.png' not found on input line 362.
 
 
 ! Package pdftex.def Error: File `inspiral/GW.png' not found: using draft setti
@@ -1761,51 +1835,51 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.331 ...extwidth]{inspiral/GW.png}\label{fig:f2}}
+l.362 ...th]{inspiral/GW.png}\label{boson:fig:f2}}
                                                   
 ? 
-) [56] [57] [58]
-Chapter 4.
-[59
+[60] [61] [62] [63] [64] [65]) [66] [67]
+Chapter 3.
+[68
 
 
 
 ]
 \openout2 = `q.aux'.
 
- (./q.tex [60
+ (./q.tex [69
 
 ]
 
-LaTeX Warning: Citation `Alcubierre:2002kk' on page 61 undefined on input line 
+LaTeX Warning: Citation `Alcubierre:2002kk' on page 70 undefined on input line 
 53.
 
 
-LaTeX Warning: Citation `10.2307/2397365' on page 61 undefined on input line 55
+LaTeX Warning: Citation `10.2307/2397365' on page 70 undefined on input line 55
 .
 
 
-LaTeX Warning: Citation `Sanchis_Gual_2019' on page 61 undefined on input line 
+LaTeX Warning: Citation `Sanchis_Gual_2019' on page 70 undefined on input line 
 59.
 
 
-LaTeX Warning: Citation `Di_Giovanni_2020' on page 61 undefined on input line 5
+LaTeX Warning: Citation `Di_Giovanni_2020' on page 70 undefined on input line 5
 9.
 
 
-LaTeX Warning: Citation `PhysRevD.103.044059' on page 61 undefined on input lin
+LaTeX Warning: Citation `PhysRevD.103.044059' on page 70 undefined on input lin
 e 59.
 
 
-LaTeX Warning: Citation `PhysRevD.96.024004' on page 61 undefined on input line
+LaTeX Warning: Citation `PhysRevD.96.024004' on page 70 undefined on input line
  59.
 
-[61]
+[70]
 
-LaTeX Warning: Citation `Clough_2021' on page 62 undefined on input line 61.
+LaTeX Warning: Citation `Clough_2021' on page 71 undefined on input line 61.
 
 
-LaTeX Warning: Citation `Clough_2021' on page 62 undefined on input line 63.
+LaTeX Warning: Citation `Clough_2021' on page 71 undefined on input line 63.
 
 ! Undefined control sequence.
 <recently read> \grchombo 
@@ -1815,25 +1889,34 @@ l.65 ...tem for angular momentum, using $\grchombo
 
 ? 
 
-LaTeX Warning: Citation `clough2015grchombo' on page 62 undefined on input line
+LaTeX Warning: Citation `clough2015grchombo' on page 71 undefined on input line
  65.
 
 
-LaTeX Warning: Citation `Andrade2021' on page 62 undefined on input line 65.
+LaTeX Warning: Citation `Andrade2021' on page 71 undefined on input line 65.
 
 
-LaTeX Warning: Citation `2008' on page 62 undefined on input line 88.
+LaTeX Warning: Citation `2008' on page 71 undefined on input line 88.
 
 
-LaTeX Warning: Citation `gourgoulhon20073+' on page 62 undefined on input line 
+LaTeX Warning: Citation `gourgoulhon20073+' on page 71 undefined on input line 
 88.
 
-<png/qfs_simple.png, id=1144, 1045.65656pt x 1087.81406pt>
-File: png/qfs_simple.png Graphic file (type png)
-<use png/qfs_simple.png>
-Package pdftex.def Info: png/qfs_simple.png  used on input line 91.
-(pdftex.def)             Requested size: 496.33032pt x 516.35188pt.
-[62]
+
+LaTeX Warning: File `png/qfs_simple.png' not found on input line 91.
+
+
+! Package pdftex.def Error: File `png/qfs_simple.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91 ...width=1.0\columnwidth]{png/qfs_simple.png}
+                                                  }
+? 
+[71]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1844,52 +1927,52 @@ he QFS sys-tem, Eq. ([]4.1.4[]), by in-te-grat-ing Eq. ([]4.1.5[])
  []
 
 
-LaTeX Warning: Citation `baumgarte_shapiro_2010' on page 63 undefined on input 
+LaTeX Warning: Citation `baumgarte_shapiro_2010' on page 72 undefined on input 
 line 100.
 
-[63] [64] [65]
+[72] [73] [74]
 
-LaTeX Warning: Citation `liebling2017dynamical' on page 66 undefined on input l
+LaTeX Warning: Citation `liebling2017dynamical' on page 75 undefined on input l
 ine 242.
 
-[66]
+[75]
 
-LaTeX Warning: Citation `Minamitsuji_2018' on page 67 undefined on input line 2
+LaTeX Warning: Citation `Minamitsuji_2018' on page 76 undefined on input line 2
 66.
 
 
-LaTeX Warning: Citation `Zilh_o_2015' on page 67 undefined on input line 270.
+LaTeX Warning: Citation `Zilh_o_2015' on page 76 undefined on input line 270.
 
-[67]
+[76]
 
-LaTeX Warning: Citation `Clough_2021' on page 68 undefined on input line 329.
-
-
-LaTeX Warning: Citation `Clough_2021' on page 68 undefined on input line 329.
+LaTeX Warning: Citation `Clough_2021' on page 77 undefined on input line 329.
 
 
-LaTeX Warning: Citation `gourgoulhon20073+' on page 68 undefined on input line 
+LaTeX Warning: Citation `Clough_2021' on page 77 undefined on input line 329.
+
+
+LaTeX Warning: Citation `gourgoulhon20073+' on page 77 undefined on input line 
 339.
 
 
-LaTeX Warning: Citation `alcubierre2008introduction' on page 68 undefined on in
+LaTeX Warning: Citation `alcubierre2008introduction' on page 77 undefined on in
 put line 339.
 
-[68]
+[77]
 
-LaTeX Warning: Citation `Clough_2021' on page 69 undefined on input line 365.
+LaTeX Warning: Citation `Clough_2021' on page 78 undefined on input line 365.
 
 
-LaTeX Warning: Citation `gourgoulhon20073+' on page 69 undefined on input line 
+LaTeX Warning: Citation `gourgoulhon20073+' on page 78 undefined on input line 
 376.
 
 
-LaTeX Warning: Citation `alcubierre2008introduction' on page 69 undefined on in
+LaTeX Warning: Citation `alcubierre2008introduction' on page 78 undefined on in
 put line 376.
 
-[69]
+[78]
 
-LaTeX Warning: Citation `Clough_2021' on page 70 undefined on input line 391.
+LaTeX Warning: Citation `Clough_2021' on page 79 undefined on input line 391.
 
 ! Undefined control sequence.
 <recently read> \grchombo 
@@ -1899,11 +1982,11 @@ l.409 ...stars is simulated in 3D using $\grchombo
 
 ? 
 
-LaTeX Warning: Citation `clough2015grchombo' on page 70 undefined on input line
+LaTeX Warning: Citation `clough2015grchombo' on page 79 undefined on input line
  409.
 
 
-LaTeX Warning: Citation `Andrade2021' on page 70 undefined on input line 409.
+LaTeX Warning: Citation `Andrade2021' on page 79 undefined on input line 409.
 
 ! Undefined control sequence.
 <recently read> \grchombo 
@@ -1913,57 +1996,83 @@ l.409 ...ough2015grchombo,Andrade2021}. $\grchombo
 
 ? 
 
-LaTeX Warning: Citation `PhysRevD.67.104005' on page 70 undefined on input line
+LaTeX Warning: Citation `PhysRevD.67.104005' on page 79 undefined on input line
  410.
 
 
-LaTeX Warning: Citation `PhysRevD.67.104005' on page 70 undefined on input line
+LaTeX Warning: Citation `PhysRevD.67.104005' on page 79 undefined on input line
  410.
 
 
-LaTeX Warning: Citation `PhysRevD.85.064040' on page 70 undefined on input line
+LaTeX Warning: Citation `PhysRevD.85.064040' on page 79 undefined on input line
  410.
 
 
-LaTeX Warning: Citation `PhysRevLett.96.111101' on page 70 undefined on input l
+LaTeX Warning: Citation `PhysRevLett.96.111101' on page 79 undefined on input l
 ine 410.
 
 
-LaTeX Warning: Citation `PhysRevLett.96.111102' on page 70 undefined on input l
+LaTeX Warning: Citation `PhysRevLett.96.111102' on page 79 undefined on input l
 ine 410.
 
 
-LaTeX Warning: Citation `liebling2017dynamical' on page 70 undefined on input l
+LaTeX Warning: Citation `liebling2017dynamical' on page 79 undefined on input l
 ine 417.
 
-[70]
-<png/Qplot_20.0.png, id=1339, 565.1514pt x 370.0224pt>
-File: png/Qplot_20.0.png Graphic file (type png)
-<use png/Qplot_20.0.png>
-Package pdftex.def Info: png/Qplot_20.0.png  used on input line 445.
-(pdftex.def)             Requested size: 446.69426pt x 292.47256pt.
+[79]
+
+LaTeX Warning: File `png/Qplot_20.0.png' not found on input line 445.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+! Package pdftex.def Error: File `png/Qplot_20.0.png' not found: using draft se
+tting.
 
-<png/Qplot_40.0.png, id=1346, 573.1011pt x 388.8126pt>
-File: png/Qplot_40.0.png Graphic file (type png)
-<use png/Qplot_40.0.png>
-Package pdftex.def Info: png/Qplot_40.0.png  used on input line 451.
-(pdftex.def)             Requested size: 446.69426pt x 303.05309pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<png/Qplot_60.0.png, id=1349, 581.7735pt x 391.7034pt>
-File: png/Qplot_60.0.png Graphic file (type png)
-<use png/Qplot_60.0.png>
-Package pdftex.def Info: png/Qplot_60.0.png  used on input line 457.
-(pdftex.def)             Requested size: 446.69426pt x 300.76382pt.
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.445 ...idth=0.9\columnwidth]{png/Qplot_20.0.png}
+                                                  }
+? 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation `helfer2021malaise' on page 71 undefined on input line 
+LaTeX Warning: File `png/Qplot_40.0.png' not found on input line 451.
+
+
+! Package pdftex.def Error: File `png/Qplot_40.0.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.451 ...idth=0.9\columnwidth]{png/Qplot_40.0.png}
+                                                  }
+? 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: File `png/Qplot_60.0.png' not found on input line 457.
+
+
+! Package pdftex.def Error: File `png/Qplot_60.0.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.457 ...idth=0.9\columnwidth]{png/Qplot_60.0.png}
+                                                  }
+? 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `helfer2021malaise' on page 80 undefined on input line 
 463.
 
 
@@ -1974,154 +2083,405 @@ sts of two bo-son stars, each with mass $\OML/lmm/m/it/10.95 M \OT1/lmr/m/n/10.
 \T1/lmr/m/n/10.95 ,
  []
 
-[71]
-<png/paper_conv40_2.png, id=1380, 527.571pt x 352.6776pt>
-File: png/paper_conv40_2.png Graphic file (type png)
-<use png/paper_conv40_2.png>
-Package pdftex.def Info: png/paper_conv40_2.png  used on input line 478.
-(pdftex.def)             Requested size: 471.51228pt x 315.20589pt.
+[80]
 
+LaTeX Warning: File `png/paper_conv40_2.png' not found on input line 478.
+
+
+! Package pdftex.def Error: File `png/paper_conv40_2.png' not found: using draf
+t setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.478 ...0.95\columnwidth]{png/paper_conv40_2.png}
+                                                  }
+? 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<png/paper_conv40.png, id=1383, 529.0164pt x 349.7868pt>
-File: png/paper_conv40.png Graphic file (type png)
-<use png/paper_conv40.png>
-Package pdftex.def Info: png/paper_conv40.png  used on input line 483.
-(pdftex.def)             Requested size: 471.51228pt x 311.77362pt.
+
+LaTeX Warning: File `png/paper_conv40.png' not found on input line 483.
+
+
+! Package pdftex.def Error: File `png/paper_conv40.png' not found: using draft 
+setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.483 ...h=0.95\columnwidth]{png/paper_conv40.png}
+                                                  }
+? 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `Clough_2015' on page 72 undefined on input line 488.
+LaTeX Warning: Citation `Clough_2015' on page 81 undefined on input line 488.
 
 
-LaTeX Warning: Citation `PresTeukVettFlan92' on page 72 undefined on input line
+LaTeX Warning: Citation `PresTeukVettFlan92' on page 81 undefined on input line
  493.
 
-<png/paper_conv123.png, id=1390, 670.75594pt x 651.18282pt>
-File: png/paper_conv123.png Graphic file (type png)
-<use png/paper_conv123.png>
-Package pdftex.def Info: png/paper_conv123.png  used on input line 501.
-(pdftex.def)             Requested size: 471.51228pt x 457.7525pt.
+
+LaTeX Warning: File `png/paper_conv123.png' not found on input line 501.
+
+
+! Package pdftex.def Error: File `png/paper_conv123.png' not found: using draft
+ setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.501 ...=0.95\columnwidth]{png/paper_conv123.png}
+                                                  }
+? 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[72]
-<png/conv_order_40.0.png, id=1417, 586.44093pt x 379.4175pt>
-File: png/conv_order_40.0.png Graphic file (type png)
-<use png/conv_order_40.0.png>
-Package pdftex.def Info: png/conv_order_40.0.png  used on input line 524.
-(pdftex.def)             Requested size: 471.51228pt x 305.05702pt.
+[81]
 
+LaTeX Warning: File `png/conv_order_40.0.png' not found on input line 524.
+
+
+! Package pdftex.def Error: File `png/conv_order_40.0.png' not found: using dra
+ft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.524 ....95\columnwidth]{png/conv_order_40.0.png}
+                                                  }
+? 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[73]
+[82]
 
-LaTeX Warning: Citation `Clough_2021' on page 74 undefined on input line 568.
+LaTeX Warning: Citation `Clough_2021' on page 83 undefined on input line 568.
 
 
-LaTeX Warning: Citation `gourgoulhon20073+' on page 74 undefined on input line 
+LaTeX Warning: Citation `gourgoulhon20073+' on page 83 undefined on input line 
 568.
 
 
-LaTeX Warning: Citation `alcubierre2008introduction' on page 74 undefined on in
+LaTeX Warning: Citation `alcubierre2008introduction' on page 83 undefined on in
 put line 568.
 
-[74]
-<png/qfs_coloured.png, id=1467, 1041.8925pt x 1084.05pt>
-File: png/qfs_coloured.png Graphic file (type png)
-<use png/qfs_coloured.png>
-Package pdftex.def Info: png/qfs_coloured.png  used on input line 616.
-(pdftex.def)             Requested size: 496.33032pt x 516.41782pt.
+[83]
 
+LaTeX Warning: File `png/qfs_coloured.png' not found on input line 616.
+
+
+! Package pdftex.def Error: File `png/qfs_coloured.png' not found: using draft 
+setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.616 ...th=1.0\columnwidth]{png/qfs_coloured.png}
+                                                  }
+? 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[75] (./thesis.bbl [76] [77 <./png/qfs_simple.png>] [78 <./png/Qplot_20.0.png>]
-[79 <./png/Qplot_40.0.png> <./png/Qplot_60.0.png>] [80 <./png/paper_conv40_2.pn
-g>] [81 <./png/paper_conv40.png>] [82 <./png/paper_conv123.png>] [83 <./png/con
-v_order_40.0.png>] [84 <./png/qfs_coloured.png>]
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-)) [85
-
-] (./thesis.bbl [86
+[84]
+No file thesis.bbl.
+) [85] [86] [87] [88] [89] [90] [91] [92] [93] [94]
+No file thesis.bbl.
+[95
 
 
 
-]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 \begin{thebibliography}{}
-                             
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 \begin{thebibliography}{}
-                             
-? 
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [87
-
-] (./thesis.aux (./intro2.aux) (./nr.aux) (./grchombo.aux)
-(./bosonstars.aux) (./q.aux))
+] (./thesis.aux (./intro.aux) (./nr.aux) (./bosonstars.aux) (./q.aux))
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 347537EE77B57A2F5F5F300CF26BF6BF;14215.
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: FB898CCC009BF7089425DE075E231563;13834
+(rerunfilecheck)             After:  AFFBF025A281374ED81F64B4E74F3D28;14358.
  ) 
 Here is how much of TeX's memory you used:
- 17050 strings out of 480247
- 281930 string characters out of 5896151
- 571141 words of memory out of 5000000
- 33927 multiletter control sequences out of 15000+600000
- 543390 words of font info for 80 fonts, out of 8000000 for 9000
+ 17601 strings out of 480247
+ 294251 string characters out of 5896151
+ 570940 words of memory out of 5000000
+ 34221 multiletter control sequences out of 15000+600000
+ 562217 words of font info for 99 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,20n,63p,2064b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lme
-x10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fo
-nts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
-.pfb>
-Output written on thesis.pdf (91 pages, 2253060 bytes).
+pdfTeX warning (dest): name{equation.4.1.106} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.102} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.101} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.103} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.99} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.94} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.129} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.137} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.134} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.33} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.126} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.124} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.125} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.9} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.6} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.116} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.115} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.114} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.108} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.107} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.105} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.104} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.84} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.83} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.74} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.44} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.39} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.77} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.73} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.70} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.72} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.43} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.26} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.18} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.28} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.36} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.34} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.30} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.29} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.32} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.31} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.19} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.17} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.24} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.23} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.15} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.13} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.11} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.8} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.5} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.7} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.16} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.22} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.21} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.4.1.20} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.1.9} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.1.8} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.1.7} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.1.6} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.1.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.1.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.1.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.1.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.1.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.9} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.8} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.7} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.6} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.2} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/sha
+re/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-m
+athex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi
+8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+>
+Output written on thesis.pdf (99 pages, 750539 bytes).
 PDF statistics:
- 1842 PDF objects out of 2073 (max. 8388607)
- 1648 compressed objects within 17 object streams
- 721 named destinations out of 1000 (max. 500000)
- 651 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2185 PDF objects out of 2487 (max. 8388607)
+ 1992 compressed objects within 20 object streams
+ 958 named destinations out of 1000 (max. 500000)
+ 609 words of extra memory for PDF output out of 10000 (max. 10000000)
 

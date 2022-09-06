@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {0.1}Numerical Relativity}{}{section.0.1}%
+\contentsline {subsection}{\numberline {0.1.1}Spacetime Foliation}{}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {0.1.2}The 3+1 Decomposition}{}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {0.1.3}Gauss, Codazzi and Ricci Equations}{}{subsection.0.1.3}%
+\contentsline {subsection}{\numberline {0.1.4}Decomposition of Einstein's Equation}{}{subsection.0.1.4}%
+\contentsline {subsection}{\numberline {0.1.5}Foliation Adapted Coordinates, CHECK ERORR IN ADM METRIC MATRIX}{}{subsection.0.1.5}%
+\contentsline {subsection}{\numberline {0.1.6}ADM Equations}{}{subsection.0.1.6}%
+\contentsline {subsection}{\numberline {0.1.7}BSSN}{}{subsection.0.1.7}%
+\contentsline {subsection}{\numberline {0.1.8}Z4 Formalism}{}{subsection.0.1.8}%
+\contentsline {subsection}{\numberline {0.1.9}CCZ4}{}{subsection.0.1.9}%
+\contentsline {subsection}{\numberline {0.1.10}Gauge Conditions}{}{subsection.0.1.10}%

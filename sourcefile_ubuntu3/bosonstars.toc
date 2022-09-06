@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {0.1}Mathematical Modelling of Boson Stars}{}{section.0.1}%
+\contentsline {subsection}{\numberline {0.1.1}Action}{}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {0.1.2}Solitons}{}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {0.1.3}3+1 Klein Gordon System}{}{subsection.0.1.3}%
+\contentsline {subsection}{\numberline {0.1.4}Klein Gordon's Noether Charge}{}{subsection.0.1.4}%
+\contentsline {subsection}{\numberline {0.1.5}Boosted Boson Stars and Black Holes}{}{subsection.0.1.5}%
+\contentsline {subsection}{\numberline {0.1.6}Spherical Harmonics in Curved Space}{}{subsection.0.1.6}%
+\contentsline {section}{\numberline {0.2}Numerical Simulations}{}{section.0.2}%
+\contentsline {subsection}{\numberline {0.2.1}Introduction to Numerical Methods}{}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {0.2.2}GRChombo}{}{subsection.0.2.2}%
+\contentsline {subsection}{\numberline {0.2.3}Simulation Units}{}{subsection.0.2.3}%
+\contentsline {subsection}{\numberline {0.2.4}Initial Data}{}{subsection.0.2.4}%
+\contentsline {subsection}{\numberline {0.2.5}Single Star Evolutions}{}{subsection.0.2.5}%
+\contentsline {subsection}{\numberline {0.2.6}Superposition of Initial Data}{}{subsection.0.2.6}%
+\contentsline {subsection}{\numberline {0.2.7}Head-on Collisions}{}{subsection.0.2.7}%
+\contentsline {subsection}{\numberline {0.2.8}Binary Inspiral}{}{subsection.0.2.8}%
+\contentsline {subsection}{\numberline {0.2.9}stuff}{}{subsection.0.2.9}%

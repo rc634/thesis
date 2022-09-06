@@ -1,27 +1,53 @@
 \contentsline {section}{\numberline {0.1}Introduction}{}{section.0.1}%
-\contentsline {section}{\numberline {0.2}Introduction to Compact Objects and Boson Stars}{}{section.0.2}%
-\contentsline {subsection}{\numberline {0.2.1}Conventions}{}{subsection.0.2.1}%
-\contentsline {section}{\numberline {0.3}Differential Geometry}{}{section.0.3}%
-\contentsline {subsection}{\numberline {0.3.1}Introduction to Geometry and Manifolds}{}{subsection.0.3.1}%
-\contentsline {subsection}{\numberline {0.3.2}Functions, Curves and Tensors on Manifolds}{}{subsection.0.3.2}%
-\contentsline {subsection}{\numberline {0.3.3}General Covariance and Coordinate transformations}{}{subsection.0.3.3}%
-\contentsline {subsection}{\numberline {0.3.4}The Covariant Derivative}{}{subsection.0.3.4}%
-\contentsline {subsection}{\numberline {0.3.5}The Levi-Civita Connection}{}{subsection.0.3.5}%
-\contentsline {subsection}{\numberline {0.3.6}Curvature Tensors}{}{subsection.0.3.6}%
-\contentsline {subsection}{\numberline {0.3.7}Maps Between Manifolds}{}{subsection.0.3.7}%
-\contentsline {subsection}{\numberline {0.3.8}Lie Derivatives}{}{subsection.0.3.8}%
-\contentsline {subsection}{\numberline {0.3.9}Tensor Densities}{}{subsection.0.3.9}%
-\contentsline {subsection}{\numberline {0.3.10}Differential Forms}{}{subsection.0.3.10}%
-\contentsline {subsection}{\numberline {0.3.11}Integrating Forms on Manifolds}{}{subsection.0.3.11}%
-\contentsline {subsection}{\numberline {0.3.12}Length and Geodesics on Manifolds}{}{subsection.0.3.12}%
-\contentsline {subsection}{\numberline {0.3.13}Parallel Transport}{}{subsection.0.3.13}%
-\contentsline {subsection}{\numberline {0.3.14}The Divergence Theorem}{}{subsection.0.3.14}%
-\contentsline {section}{\numberline {0.4}General Relativity}{}{section.0.4}%
-\contentsline {subsection}{\numberline {0.4.1}Physics in Curved Space}{}{subsection.0.4.1}%
-\contentsline {subsection}{\numberline {0.4.2}The Einstein Equation}{}{subsection.0.4.2}%
-\contentsline {subsection}{\numberline {0.4.3}Matter in General Relativity}{}{subsection.0.4.3}%
-\contentsline {subsection}{\numberline {0.4.4}The Cosmological Constant}{}{subsection.0.4.4}%
-\contentsline {subsection}{\numberline {0.4.5}The Lagrangean Formulation of General Relativity}{}{subsection.0.4.5}%
-\contentsline {subsection}{\numberline {0.4.6}Low Curvature Limit of General Relativity}{}{subsection.0.4.6}%
-\contentsline {section}{\numberline {0.5}Newman-Penrose Formalism}{}{section.0.5}%
-\contentsline {section}{\numberline {0.6}Stuff}{}{section.0.6}%
+\contentsline {subsection}{\numberline {0.1.1}Introduction to General Relativity}{}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {0.1.2}Introduction to Compact Objects and Boson Stars}{}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {0.1.3}Conventions}{}{subsection.0.1.3}%
+\contentsline {section}{\numberline {0.2}Differential Geometry}{}{section.0.2}%
+\contentsline {subsection}{\numberline {0.2.1}Introduction to Geometry and Manifolds}{}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {0.2.2}Functions, Curves and Tensors on Manifolds}{}{subsection.0.2.2}%
+\contentsline {subsubsection}{Multilinear Maps and Tensors}{}{section*.3}%
+\contentsline {subsection}{\numberline {0.2.3}The Inner Product and the Metric}{}{subsection.0.2.3}%
+\contentsline {subsection}{\numberline {0.2.4}Maps Between Manifolds}{}{subsection.0.2.4}%
+\contentsline {subsubsection}{Diffeomorphisms}{}{section*.4}%
+\contentsline {subsubsection}{Projection Mappings}{}{section*.5}%
+\contentsline {subsection}{\numberline {0.2.5}Lie Derivatives}{}{subsection.0.2.5}%
+\contentsline {subsection}{\numberline {0.2.6}Lengths on Manifolds}{}{subsection.0.2.6}%
+\contentsline {subsection}{\numberline {0.2.7}Volumes on Manifolds}{}{subsection.0.2.7}%
+\contentsline {subsection}{\numberline {0.2.8}Geodesics}{}{subsection.0.2.8}%
+\contentsline {section}{\numberline {0.3}Tensor Calculus and Curvature}{}{section.0.3}%
+\contentsline {subsection}{\numberline {0.3.1}General Covariance and Coordinate transformations}{}{subsection.0.3.1}%
+\contentsline {subsubsection}{Tensor Densities}{}{section*.7}%
+\contentsline {subsubsection}{Lie Derivatives of Tensor Densities}{}{section*.8}%
+\contentsline {subsection}{\numberline {0.3.2}The Covariant Derivative}{}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {0.3.3}The Connection}{}{subsection.0.3.3}%
+\contentsline {subsubsection}{Torsion}{}{section*.9}%
+\contentsline {subsubsection}{Metric Compatibility}{}{section*.10}%
+\contentsline {subsubsection}{The Levi Civita-Connection}{}{section*.11}%
+\contentsline {subsubsection}{Lie Derivatives in the Levi Civita Connection}{}{section*.12}%
+\contentsline {subsubsection}{Normal Coordinates}{}{section*.13}%
+\contentsline {subsection}{\numberline {0.3.4}Curvature Tensors}{}{subsection.0.3.4}%
+\contentsline {subsubsection}{Symmetries of the Riemann Tensor}{}{section*.14}%
+\contentsline {subsubsection}{Contractions of the Riemann Tensor}{}{section*.15}%
+\contentsline {subsection}{\numberline {0.3.5}The Divergence Theorem}{}{subsection.0.3.5}%
+\contentsline {section}{\numberline {0.4}Relativity}{}{section.0.4}%
+\contentsline {subsection}{\numberline {0.4.1}Special Relativity}{}{subsection.0.4.1}%
+\contentsline {subsubsection}{Minkowski Space}{}{section*.16}%
+\contentsline {subsubsection}{Worldlines and Causality}{}{section*.17}%
+\contentsline {subsection}{\numberline {0.4.2}Physics in Special Relativity}{}{subsection.0.4.2}%
+\contentsline {subsubsection}{The Wave Equation}{}{section*.18}%
+\contentsline {subsubsection}{Electromagnetism}{}{section*.19}%
+\contentsline {subsection}{\numberline {0.4.3}Physics in Curved Space}{}{subsection.0.4.3}%
+\contentsline {subsection}{\numberline {0.4.4}The Stress-Energy-Momentum Tensor}{}{subsection.0.4.4}%
+\contentsline {subsection}{\numberline {0.4.5}The Einstein Equation}{}{subsection.0.4.5}%
+\contentsline {subsection}{\numberline {0.4.6}Black Holes}{}{subsection.0.4.6}%
+\contentsline {subsubsection}{Coordinate Singularities and Physical Singularities}{}{section*.22}%
+\contentsline {subsubsection}{Isotropic Coordinates}{}{section*.23}%
+\contentsline {subsubsection}{Penrose Diagrams and the Causal Structure of the Schwarzschild Black Hole}{}{section*.24}%
+\contentsline {subsubsection}{Spinning, Charged Black Holes and Higher Dimensions}{}{section*.26}%
+\contentsline {subsection}{\numberline {0.4.7}The Cosmological Constant}{}{subsection.0.4.7}%
+\contentsline {subsection}{\numberline {0.4.8}The Lagrangean Formulation of General Relativity}{}{subsection.0.4.8}%
+\contentsline {section}{\numberline {0.5}Stuff}{}{section.0.5}%
+\contentsline {subsection}{\numberline {0.5.1}notes}{}{subsection.0.5.1}%
+\contentsline {subsection}{\numberline {0.5.2}Differential Forms}{}{subsection.0.5.2}%
+\contentsline {subsection}{\numberline {0.5.3}Parallel Transport}{}{subsection.0.5.3}%
+\contentsline {subsection}{\numberline {0.5.4}Low Curvature Limit of General Relativity}{}{subsection.0.5.4}%

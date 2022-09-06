@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.15)  5 SEP 2022 18:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.15)  5 SEP 2022 18:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**intro.tex
-(./intro.tex
+**nr.tex
+(./nr.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
@@ -599,7 +599,7 @@ Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: sty)
 
 Enter file name: 
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 69
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 71
 .
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -609,31 +609,27 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count318
 \l__pdf_internal_box=\box104
 )
-(./intro.aux
+(./nr.aux)
+\openout1 = `nr.aux'.
 
-LaTeX Warning: Label `intro:eq:Lxiphi' multiply defined.
-
-)
-\openout1 = `intro.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -691,7 +687,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 69.
+Package hyperref Info: Link coloring OFF on input line 71.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -704,24 +700,23 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count325
 )
-LaTeX Info: Redefining \ref on input line 69.
-LaTeX Info: Redefining \pageref on input line 69.
-LaTeX Info: Redefining \nameref on input line 69.
+LaTeX Info: Redefining \ref on input line 71.
+LaTeX Info: Redefining \pageref on input line 71.
+LaTeX Info: Redefining \nameref on input line 71.
 
-(./intro.out) (./intro.out)
+(./nr.out) (./nr.out)
 \@outlinefile=\write3
-\openout3 = `intro.out'.
+\openout3 = `nr.out'.
 
 \c@lstlisting=\count326
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
- (./intro.toc
+ (./nr.toc
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
 .
-
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
@@ -759,7 +754,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write4
-\openout4 = `intro.toc'.
+\openout4 = `nr.toc'.
 
  [1
 
@@ -769,364 +764,178 @@ ination with the same identifier (name{page.}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.112 
-       [2]
-<pics/pythag_proof.png, id=192, 1027.84pt x 969.6225pt>
-File: pics/pythag_proof.png Graphic file (type png)
-<use pics/pythag_proof.png>
-Package pdftex.def Info: pics/pythag_proof.png  used on input line 130.
-(pdftex.def)             Requested size: 223.34712pt x 210.68405pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
+l.112 ...u_\perp &= -n^\mu n_\nu X^\nu \end{align}
+                                                   [2]pdfTeX warning (ext4): de
+stination with the same identifier (name{page.}) has been already used, duplica
+te ignored
 <to be read again> 
                    \relax 
-l.147 
-       [3 <./pics/pythag_proof.png>]pdfTeX warning (ext4): destination with the
- same identifier (name{page.}) has been already used, duplicate ignored
+l.143 ...mbda \alpha\beta}v^\lambda, \end{gather*}
+                                                   [3]pdfTeX warning (ext4): de
+stination with the same identifier (name{page.}) has been already used, duplica
+te ignored
 <to be read again> 
                    \relax 
-l.184 \end{equation}
-                     [4]
-Overfull \hbox (1.86719pt too wide) in paragraph at lines 196--198
-\T1/lmr/m/n/10.95 which uses the $\OT1/lmr/m/n/10.95 (0\OML/lmm/m/it/10.95 ; \O
-T1/lmr/m/n/10.95 2)$ \T1/lmr/m/n/10.95 ten-sor $\OML/cmm/b/it/10.95 T$ \T1/lmr/
-m/n/10.95 to map the vec-tor $\OML/cmm/b/it/10.95 X$ \T1/lmr/m/n/10.95 to a co-
-vector $\OML/cmm/b/it/10.95 W$ \T1/lmr/m/n/10.95 with com-po-nents $\OML/lmm/m/
-it/10.95 W[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 T[]X[]$\T1/lmr/m/n/10.95 
-. 
- []
+l.177 \begin{align}
+                    \mathcal{E} &= T(n,n) = T_{ab}n^an^b\\ [4]
 
+! LaTeX Error: Environment wrapfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 \begin{wrapfigure}
+                        {r}{0.65\textwidth}
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.199 \begin{wrapfigure}{r}{0.65\textwidth}
+                                           
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.199 \begin{wrapfigure}{r}{0.65\textwidth}
+                                           
+? 
+
+LaTeX Warning: File `adm.png' not found on input line 200.
+
+
+! Package pdftex.def Error: File `adm.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200 ...degraphics[width=0.65\textwidth]{adm.png}
+                                                  
+? 
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
+00.
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+
+! LaTeX Error: \begin{document} ended by \end{wrapfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.201 \end{wrapfigure}
+                      
+? 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.233 
-       [5]pdfTeX warning (ext4): destination with the same identifier (name{pag
-e.}) has been already used, duplicate ignored
+l.203 \begin{equation}
+                       m^\mu = t^\mu - \beta^\mu  = (\partial_0)^\mu - \beta...
+[5]pdfTeX warning (ext4): destination with the same identifier (name{page.}) ha
+s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.275 \end{align}
-                  [6]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 287.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 287.
+l.217 ...g} = \alpha \sqrt{\gamma} .\end{equation}
+                                                   [6]
+
+LaTeX Warning: Citation `harmonic' on page  undefined on input line 230.
 
 ! Undefined control sequence.
-l.287 ...paces associated with $p\in\M$ or $q\in\N
-                                                  $ are therefore also prese...
-
-? 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.306 \end{align}
-                  [7]pdfTeX warning (ext4): destination with the same identifie
-r (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.346 \begin{align}
-                    [8]pdfTeX warning (ext4): destination with the same identif
-ier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.388 \end{equation}
-                     [9]
-Overfull \hbox (1.33098pt too wide) in paragraph at lines 412--414
-\T1/lmr/m/n/10.95 where $\OT1/lmr/m/n/10.95 ^^@[]$ \T1/lmr/m/n/10.95 is the com
--po-nents of the connection-symbol from Eq. ([]0.3.77[]). A triv-ial so-lu-tion
- to Eq. ([]0.2.71[])
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.420 \begin{align}
-                    [10]pdfTeX warning (ext4): destination with the same identi
-fier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.453 \end{align}
-                  [11]pdfTeX warning (ext4): destination with the same identifi
-er (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.489 \begin{align}
-                    [12]pdfTeX warning (ext4): destination with the same identi
-fier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.524 ...{\partial}{\partial x^\mu},\end{equation}
-                                                   which works much the same...
-[13]
-! Missing { inserted.
-<to be read again> 
-                   \begingroup 
-l.527  a $(p,q)$ tensor field ${\bs{\nabla}_\bs{X}
-                                                  } \bs{T}$. Requiring the c...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.527 ...ensor field ${\bs{\nabla}_\bs{X}} \bs{T}$
-                                                  . Requiring the covariant ...
-
-? 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.555 \begin{align}
-                    [14]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.602 ... SECTION. COULD BE QUICK, I ASSUME NABLA_
-                                                  MU ROOTG =0
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.603 
-      
-? 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.608 \begin{align}
-                    [15]pdfTeX warning (ext4): destination with the same identi
-fier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.649 \end{equation}
-                     [16]pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.697 M
-       AYBE DERIVE THE FORM OF BIG GAMMA? [17]
-! Missing delimiter (. inserted).
-<to be read again> 
-                   _
-l.710 ... possible to demand that $g_{\mu\nu}\big_
-                                                  p = \eta_{\mu\nu}$, the Mi...
-
-? 
-! Missing { inserted.
-<to be read again> 
-                   \vcenter 
-l.710 ... possible to demand that $g_{\mu\nu}\big_
-                                                  p = \eta_{\mu\nu}$, the Mi...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.710 ... possible to demand that $g_{\mu\nu}\big_
-                                                  p = \eta_{\mu\nu}$, the Mi...
-
-? 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.740 \begin{equation}
-                       [18]pdfTeX warning (ext4): destination with the same ide
-ntifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.786 \end{equation}
-                     [19]pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.841 \end{align}
-                  [20]
-! Undefined control sequence.
-<recently read> \lamba 
+<recently read> \trace 
                        
-l.860 ... can be evaluated in terms of the $\lamba
-                                                  _i$ as follows,
+l.236 During an evolution the conditions $\trace
+                                                {\tilde{A}_{ij}=0}$  and $\t...
+
 ? 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.880 \begin{equation}
-                       [21]pdfTeX warning (ext4): destination with the same ide
-ntifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.903 \end{equation}
-                     [22]pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.939 \end{equation}
-                     [23]pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.981 q
-       uick conservation law [24]pdfTeX warning (ext4): destination with the sa
-me identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1000 \end{align}
-                   [25]pdfTeX warning (ext4): destination with the same identif
-ier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1039 
-        [26]pdfTeX warning (ext4): destination with the same identifier (name{p
-age.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1075  \end{equation}
-                       [27]pdfTeX warning (ext4): destination with the same ide
-ntifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1113 
-        [28]pdfTeX warning (ext4): destination with the same identifier (name{p
-age.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1140 \end{align}
-                   [29]
-<pics/scbh_penrose.png, id=630, 1027.84pt x 977.6525pt>
-File: pics/scbh_penrose.png Graphic file (type png)
-<use pics/scbh_penrose.png>
-Package pdftex.def Info: pics/scbh_penrose.png  used on input line 1154.
-(pdftex.def)             Requested size: 223.34712pt x 212.42885pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1167 T
-        he subject of black holes in General Relativity is huge. [30 <./pics/sc
-bh_penrose.png>]
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.1215 \end{align}
-                  
-? 
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.1215 \end{align}
-                  
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1215 \end{align}
-                  
-? 
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.1215 \end{align}
-                  
-? 
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.1215 \end{align}
-                  
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1215 \end{align}
-                  
-? 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1221 
-        [31]pdfTeX warning (ext4): destination with the same identifier (name{p
-age.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1252 \end{align}
-                   [32]pdfTeX warning (ext4): destination with the same identif
-ier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1293 \end{equation}
-                      [33]pdfTeX warning (ext4): destination with the same iden
-tifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1346 u
-        se invisible (with star) subsubsections to break up longer sections
-[34]pdfTeX warning (ext4): destination with the same identifier (name{page.}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1400 \begin{align}
-                     [35]
-Overfull \hbox (5.12526pt too wide) in paragraph at lines 1419--1421
-\T1/lmr/m/n/10.95 Given that the Con-nec-tion sym-bols $\OT1/lmr/m/n/10.95 ^^@[
-]$ \T1/lmr/m/n/10.95 van-ish ev-ery-where for the met-ric com-po-nents $\OML/lm
-m/m/it/10.95 ^^Q[]$ \T1/lmr/m/n/10.95 then Eq. ([]0.5.14[])
- []
+
+LaTeX Warning: Citation `z4' on page  undefined on input line 244.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1438 \end{align}
-                   [36]pdfTeX warning (ext4): destination with the same identif
-ier (name{page.}) has been already used, duplicate ignored
+l.245 ...ac{1}{2}Tg_{\mu\nu} \right]\end{equation}
+                                                   [7]pdfTeX warning (ext4): de
+stination with the same identifier (name{page.}) has been already used, duplica
+te ignored
 <to be read again> 
                    \relax 
-l.1455 \end{document}
-                      [37] (./intro.aux)
+l.267 
+       [8]
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: File `schwarzschild2.png' not found on input line 276.
 
-Package rerunfilecheck Info: File `intro.out' has not changed.
-(rerunfilecheck)             Checksum: D6D58B48AEF8ACBE63C2B9D89BB3CEC9;6082.
+
+! Package pdftex.def Error: File `schwarzschild2.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.276 ...width]{schwarzschild2.png}\label{fig:f1}}
+                                                  
+? 
+
+LaTeX Warning: File `schwarzschild.png' not found on input line 278.
+
+
+! Package pdftex.def Error: File `schwarzschild.png' not found: using draft set
+ting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.278 ...twidth]{schwarzschild.png}\label{fig:f2}}
+                                                  
+? 
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.286 \begin{equation}
+                      \L_m \alpha = -\alpha^2 f(\alpha)\K \end{equation}
+[9]pdfTeX warning (ext4): destination with the same identifier (name{page.}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.310 \end{document}
+                     [10] (./nr.aux)
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `nr.out' has not changed.
+(rerunfilecheck)             Checksum: 9FE7168BE8E32B131F836795A56D7BA5;1934.
  ) 
 Here is how much of TeX's memory you used:
- 15389 strings out of 480247
- 241656 string characters out of 5896151
- 557769 words of memory out of 5000000
- 32690 multiletter control sequences out of 15000+600000
- 543238 words of font info for 92 fonts, out of 8000000 for 9000
+ 15106 strings out of 480247
+ 237992 string characters out of 5896151
+ 550181 words of memory out of 5000000
+ 32714 multiletter control sequences out of 15000+600000
+ 509665 words of font info for 64 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,17n,63p,1903b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi
-9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
-bm10.pfb>
-Output written on intro.pdf (37 pages, 613805 bytes).
+ 60i,14n,63p,1450b,388s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex
+10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on nr.pdf (10 pages, 254017 bytes).
 PDF statistics:
- 919 PDF objects out of 1000 (max. 8388607)
- 822 compressed objects within 9 object streams
- 389 named destinations out of 1000 (max. 500000)
- 275 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 275 PDF objects out of 1000 (max. 8388607)
+ 231 compressed objects within 3 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
