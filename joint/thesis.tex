@@ -1,4 +1,5 @@
-\documentclass[11pt, book]{report}  %can try book instead 	% use "amsart" instead of "article" for AMSLaTeX format
+%\documentclass[11pt, book]{report}  %can try book instead 	% use "amsart" instead of "article" for AMSLaTeX format
+\documentclass[11pt]{report}  %can try book instead   % use "amsart" instead of "article" for AMSLaTeX format
 \usepackage[margin = 0.7in, bmargin = 1.1in, tmargin = 0.9in]{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
 \geometry{a4paper}                   		% ... or a4paper or a5paper or ... 
 %\geometry{landscape}                		% Activate for rotated page geometry
@@ -48,7 +49,7 @@
 \newcommand{\A}{\mathcal{A}}
 \newcommand{\bs}{\boldsymbol}
 \newcommand{\rspace}{\mathbb{R}}
-\newcommand{\dd}{\mathrm{d}}
+%\newcommand{\dd}{\mathrm{d}} % is included in physics package??
 
 \newcommand{\mL}{\mathcal{L}} 
 \newcommand{\xt}{\tilde{x}}    
@@ -91,7 +92,7 @@
   Supervisor: Dr. Ulrich Sperhake
   \vfill
 
-    \begin{figure}[H]
+    \begin{figure}[h!]
   \centering
   \subfloat{\includegraphics[width=0.25\textwidth]{uni_logo.png}\label{fig:f1}}
 \end{figure}
@@ -145,13 +146,49 @@ Matter in General Relativity}
 \chapter{STUFF TO DO}
 PUT A NICE FIGURE ON EACH CHAPTER PAGE?
 
+CODE DEV? LIKE INITIAL DATA AND RANDOM SIMS IVE DONE ESPECIALLY WITH BLACK HOLES, MAYBE AN INITIAL DATA SECTION THEN FOLOWED BY MALAISE?
+
+rename the sections maybe, or maybe not. is NUmerical relativity the best name for section that has no numerics and just does a 3+1 spacetime split?
+
+ADD TO CONVENTIONS THAT LATE LATIN INDECES (I,J,K,...) SYMBOLISE 3D OBJECTS IN 4D SPACE ASWELL AS 3D OBJECST IN 3D SPACE
+
+BOX IMPORTANT EQS? MAYBE NOT.
+
+CHECK THE 3+1 SPLIT STRESS TENSOR AGREES WITH PAPERS ...
+
+CHECK CURLY VS SMOOTH BRACKETS FOR SETS AND VECTORS ALL OVER
+
+REF THE ADM METRIC?
+
+make a note of the dx form notation but don't go into depth, maybe hint at intergating over a mfold?
+
+maybe put BSSN and onwards in the GRCHOMBO SECTION? OR A CODE SECTION? and keep the first half as the adm decomposiiton section?
+
+MAYBE ADD Z4 LAGRANGEAN OR UNDERSTAND IT BETTER? LOOK AT MARKUS THESIS? OR KATY?
+
+CHECK CONVENTIONS ARE OBEYED IN
+INTRO
+NR
+BOSON
+Q
+MALAISE
+OTHER SECTRIONS...
+
+MAKE SOME UNIFORM CONVENTION FOR STRESS TENSOR, MAYBE RHO FOR ENERGY DENSITY MAYBE EPSILON? SIMILAR FOR THE MOMENTA AND THE PROJECTED TENSOR? its in the ccz4 equations too ...
+
+fig or Fig in figure referneceing?
+
+DECIDE ON A FACTOR OF 16PI IN TEH MATTER LAGRANGEAN OF GR BETWEEN THE INTRO SECTION AND THE LATER SECTION. PROBABLY USE R/16PI RATHER THAN 16PI*MATTER ... 
+
+standardise complex phi, bar or star for conjugate? or dagger??
+
 
 
 \begin{thebibliography}{9}
 \bibliographystyle{ieeetr}
 %\bibliographystyle{prsty}
-\bibliography{refs.bib}
-%\bibliography{../bibtex/refs.bib}
+%\bibliography{refs.bib}
+\bibliography{../../bibtex/refs.bib}
 
 \bibitem{review}
 blank

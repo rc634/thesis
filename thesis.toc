@@ -39,11 +39,11 @@
 \contentsline {subsection}{\numberline {2.1.2}The 3+1 Decomposition}{31}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}Gauss, Codazzi and Ricci Equations}{33}{subsection.2.1.3}%
 \contentsline {subsection}{\numberline {2.1.4}Decomposition of Einstein's Equation}{34}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Foliation Adapted Coordinates, CHECK ERORR IN ADM METRIC MATRIX}{35}{subsection.2.1.5}%
-\contentsline {subsection}{\numberline {2.1.6}ADM Equations}{36}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.1.5}Foliation Adapted Coordinates, CHECK ERORR IN ADM METRIC MATRIX}{34}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}ADM Equations}{35}{subsection.2.1.6}%
 \contentsline {subsection}{\numberline {2.1.7}BSSN}{36}{subsection.2.1.7}%
-\contentsline {subsection}{\numberline {2.1.8}Z4 Formalism}{37}{subsection.2.1.8}%
-\contentsline {subsection}{\numberline {2.1.9}CCZ4}{37}{subsection.2.1.9}%
+\contentsline {subsection}{\numberline {2.1.8}Z4 Formalism}{36}{subsection.2.1.8}%
+\contentsline {subsection}{\numberline {2.1.9}CCZ4}{36}{subsection.2.1.9}%
 \contentsline {subsection}{\numberline {2.1.10}Gauge Conditions}{38}{subsection.2.1.10}%
 \contentsline {chapter}{\numberline {3}Boson Stars}{40}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Mathematical Modelling of Boson Stars}{41}{section.3.1}%
@@ -57,25 +57,25 @@
 \contentsline {subsection}{\numberline {3.2.1}Simulation Units}{47}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}GRChombo}{47}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Initial Data}{47}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Single Star Evolutions}{48}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Superposition of Initial Data}{50}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Head-on Collisions}{50}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.4}Single Star Evolutions}{50}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Superposition of Initial Data}{51}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Head-on Collisions}{51}{subsection.3.2.6}%
 \contentsline {subsection}{\numberline {3.2.7}Binary Inspiral}{56}{subsection.3.2.7}%
-\contentsline {section}{\numberline {3.3}Future Work}{56}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Future Work}{58}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Research}{59}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Local Continuity of Angular Momentum and Noether Charge for Matter in General Relativity}{60}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Introduction}{60}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Derivation of the QFS System}{62}{subsection.4.1.2}%
 \contentsline {subsection}{\numberline {4.1.3}Application to Spherical extraction}{64}{subsection.4.1.3}%
 \contentsline {subsection}{\numberline {4.1.4}Noether Currents}{66}{subsection.4.1.4}%
-\contentsline {subsubsection}{Complex Scalar Fields}{66}{section*.20}%
-\contentsline {subsubsection}{Complex Vector Fields}{67}{section*.21}%
+\contentsline {subsubsection}{Complex Scalar Fields}{66}{section*.22}%
+\contentsline {subsubsection}{Complex Vector Fields}{67}{section*.23}%
 \contentsline {subsection}{\numberline {4.1.5}Energy-Momentum Currents}{68}{subsection.4.1.5}%
-\contentsline {subsubsection}{Angular Momentum}{68}{section*.22}%
-\contentsline {subsubsection}{Energy}{69}{section*.23}%
+\contentsline {subsubsection}{Angular Momentum}{68}{section*.24}%
+\contentsline {subsubsection}{Energy}{69}{section*.25}%
 \contentsline {subsection}{\numberline {4.1.6}Numerical Application}{70}{subsection.4.1.6}%
-\contentsline {subsubsection}{Numerical Setup of Simulations}{70}{section*.24}%
-\contentsline {subsubsection}{Convergence Analysis}{72}{section*.28}%
+\contentsline {subsubsection}{Numerical Setup of Simulations}{70}{section*.26}%
+\contentsline {subsubsection}{Convergence Analysis}{72}{section*.30}%
 \contentsline {subsection}{\numberline {4.1.7}Conclusion}{73}{subsection.4.1.7}%
 \contentsline {subsection}{\numberline {4.1.8}Source Term Calculation}{74}{subsection.4.1.8}%
 \contentsline {subsection}{\numberline {4.1.9}Generality of Result}{75}{subsection.4.1.9}%

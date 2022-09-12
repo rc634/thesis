@@ -38,6 +38,16 @@ EINSTEIN SUMMATION CONV
 
 make explicit th inner product, dot product, outer product (otimes) and wedge product (for forms, antisymm)
 
+\subsubsection*{Conventions (from q)}
+
+Throughout this work the metric has sign $\{-,+,+,+\}$ and physical quantities will be expressed as a dimensionless ratio of the Planck length $L_{pl}$, time $T_{pl}$ and mass $M_{pl}$ unless stated otherwise; for example Newtons equation of gravity would be written as
+\begin{equation}
+F=\frac{GMm}{r^2} \quad \rightarrow \quad\left(\frac{F}{F_{pl}}\right) = \frac{\left(\frac{M}{M_{pl}}\right)  \left(\frac{m}{M_{pl}}\right)}{\left(\frac{r}{L_{pl}}\right)^2},
+\end{equation}
+where $F_{pl} = M_{pl}L_{pl}T_{pl}^{-2}$ is the Planck force. Consequently $c$, $G$ and $\hbar$ take the numerical value of $1$. Additionally, tensor fields will be denoted using bold font for index free notation and normal font for the components. The dot product between two vector fields will be written interchangeably as $\bs{A}\cdot\bs{B}\leftrightarrow A^\mu B_\mu$ for readability. Additionally, $\nabla_\mu$ denotes the covariant derivative and $\partial_\mu$ is the partial derivative, both with respect to coordinate $x^\mu$. Finally, unless stated otherwise, Greek indices such as $\{\alpha, \beta, ..., \mu, \nu, ... \}$ label four dimensional tensor components whereas late Latin indices such as $\{i,j,k,...\}$ label three dimensional tensor components and early Latin indices such as $\{a,b,...\}$ label two dimensional ones.
+
+PROBABLY DELETE THIS
+
 
 
 
@@ -45,12 +55,7 @@ make explicit th inner product, dot product, outer product (otimes) and wedge pr
 
 \section{Differential Geometry}
 \subsection{Introduction to Geometry and Manifolds}
-\begin{figure}[H]
-\centering
-    \includegraphics[width=0.45\textwidth]{pics/pythag_proof.png}
-    \caption{Diagram for proof of Pythagoras' theorem.}
-    \label{intro:fig:pythag_proof}
-\end{figure}
+
 
 
 
@@ -64,6 +69,14 @@ and we have proved Pythagoras' theorem. Using an infinitessimally small triangle
 \dd s^2 = \dd x^2 + \dd y^2 + \dd z^2 + ...\,\,\,.
 \end{equation}
 The infinitessimal form of Pythagoras' theorem is very powerful as it can be used to calculate the length of a generic curve by approximating the curve as a collection of infinitessimally small straight lines with length $\dd s$. So far we have assumed that space is flat meaning Eq.~(\ref{intro:eq:pythag_inf}) is true for all points in space, this is an assumpion we will have to drop if we want to study the curved spaces arising in strong gravity. In the next sections we will explore the generalisation of Pythagoras' equation to curved spaces and use it to measure curve lengths answell as volumes and areas.
+
+\begin{figure}[h]
+\centering
+    \includegraphics[width=0.45\textwidth]{pics/pythag_proof2.png}
+    \caption{Diagram for proof of Pythagoras' theorem.}
+    \label{intro:fig:pythag_proof}
+\end{figure}
+
 
 Differential Geometry (DG) is the extension of calculus, linear algebra and multilinear algebra to general
 geometries. Einstein’s Theory of Relativity is written using the language of DG as it is the natural
@@ -204,7 +217,7 @@ Considering an $(0,2)$ tensor $\bs{T} \in N$, the pullback $\Phi^*\bs{T} \in M$ 
 and the pull-back of a generic $(0,q)$ tensor and the push-foreward of a generic $(p,0)$ tensor can be found similarly.
 
 \subsubsection{Diffeomorphisms}
-So far we have only discussed the mapping $\Phi :M \rightarrow N$ which is requires a well behaved $\partial y^\nu / \partial x^\mu$. A diffeomorphism is an isomorphism\footnote{An isomorphism is a structure preserving bijective map between sets.} between smooth manifolds $\Phi :M \rightarrow N$, meaning $M$ and $N$ have the same number of dimensions. Two infinitessimally close points $\{p,p+\delta p\}\in\M$ map to two infinitessimally close points $(q,q+\delta q)\in\mathcal{N}$ meaning that open sets are preserved. Given that a diffeomorphism is smooth bijective map then it must be invertible with inverse map $\Phi^{-1}:N \rightarrow M$, and $y^\nu(x^\mu)$ has a smooth inverse $x^\nu(y^\mu)$. When an inverse map $\Phi^{-1}$ is defined then the pull-back of $(p,0)$ tensors from $N$ to $M$ along with the push-foreward of $(0,q)$ tensors from $M$ to $N$ is possible. This means it is possible to push or pull generic tensors between $M$ and $N$ in any direction. The tangent spaces associated with $p\in\M$ or $q\in\N$ are therefore also preserved under mapping (aswell as open sets) meaning that local structure on the manifold is preserved under the mapping. Two common examples of diffeomorphisms are coordinate changes and translations.
+So far we have only discussed the mapping $\Phi :M \rightarrow N$ which is requires a well behaved $\partial y^\nu / \partial x^\mu$. A diffeomorphism is an isomorphism\footnote{An isomorphism is a structure preserving bijective map between sets.} between smooth manifolds $\Phi :M \rightarrow N$, meaning $M$ and $N$ have the same number of dimensions. Two infinitessimally close points $\{p,p+\delta p\}\in\M$ map to two infinitessimally close points $(q,q+\delta q)\in\mathcal{N}$ meaning that open sets are preserved. Given that a diffeomorphism is smooth bijective map then it must be invertible with inverse map $\Phi^{-1}:N \rightarrow M$, and $y^\nu(x^\mu)$ has a smooth inverse $x^\nu(y^\mu)$. When an inverse map $\Phi^{-1}$ is defined then the pull-back of $(p,0)$ tensors from $N$ to $M$ along with the push-foreward of $(0,q)$ tensors from $M$ to $N$ is possible. This means it is possible to push or pull generic tensors between $M$ and $N$ in any direction. The tangent spaces associated with $p \in \M$ or $q \in \mathcal{N}$ are therefore also preserved under mapping (aswell as open sets) meaning that local structure on the manifold is preserved under the mapping. Two common examples of diffeomorphisms are coordinate changes and translations.
 
 
 \subsubsection{Projection Mappings}
@@ -233,7 +246,7 @@ The simplest example is the Lie derivative of a scalar field $\phi$, denoted $\L
 &= \xi^\mu \partial_\mu \phi,
 \end{align}
 which reduces to the directional derivative of $\phi$ with respect to $\bs{\xi}$. Next let's calculate the Lie derivative of a vector field $\bs{X}$ with respect to vector field $\bs\xi$. Starting with the same definition as Eq.~(\ref{intro:eq:Lxiphi}), and using $y^\mu = x^\mu + \epsilon \xi^\mu$, the Lie derivative of $\bs X$ is 
-\begin{align} \label{intro:eq:Lxiphi}
+\begin{align} 
 (\L_\xi {X})^\mu &= \lim_{\epsilon \rightarrow 0}\left[\frac{(\Phi^*X\vert_q)^\mu - {X\vert_p}^\mu}{\epsilon} \right] , \\
 &= \lim_{\epsilon \rightarrow 0}\left[\frac{ \frac{\partial x^\mu}{\partial y^\nu}X^\nu(x^\rho + \epsilon \xi^\rho) - X^\mu(x^\rho)}{\epsilon} \right] , \\
 &= \lim_{\epsilon \rightarrow 0}\left[\frac{ (\delta_\nu^\mu - \epsilon \partial_\nu \xi^\mu)X^\nu(x^\rho + \epsilon \xi^\rho) - X^\mu(x^\rho)}{\epsilon} \right] , \\
@@ -260,7 +273,7 @@ Derivatives of a generic tensor $\bs{T}$ follows simply, for example
 \subsection{Lengths on Manifolds}\label{intro:sect:lgm}
 The natural entry point for studying curved geometry is to revisit Pythagoras' theorem. For this we need a manifold $\M$ equipped with a metric $g$, written as $(\M,g)$ for short. The distance $\dd s$ between two infinitessimaly close points $p\in\M$ and $p+\delta p \in \M$, with coordinates $x^\mu$ and $x^\mu + \dd x^\mu$, is given by
 \begin{equation}
-\dd s^2 = \bs{g}(\bs{\dd x},\bs{\dd x}) =  g_{\mu\nu}\dd x^\mu \dd x^\nu,
+\dd s^2 = \bs{g}(\bs{\mathrm{d}}\bs{x},\bs{\mathrm{d}}\bs{x}) =  g_{\mu\nu}\dd x^\mu \dd x^\nu,
 \end{equation}
 where $g_{\mu\nu}$ are the components of the metric tensor. This is the generalisation of Eq.~(\ref{intro:eq:pythag_inf}) to curved space; noteably the line element can now have varying coefficients from $g_{\mu\nu}$ and cross terms such as $\dd x \dd y$. The special choice of $g_{\mu\nu} = \delta_{\mu\nu}$ gives us flat space, also called Euclidean space, where $\delta_{\mu\nu}=1$ if $\mu=\nu$ and vanishes otherwise. With the line elemend defined, we can immediately apply it to calculating the length of a general curve in curved space. Consider the curve $\Gamma$ consisting of a set of smoothly connected points $p(\lambda)\in\M$ smoothly parameterised by $\lambda$. We can calculate the length $\Delta s$ of the curve between $\lambda_1 \geq\lambda\geq\lambda_0$ by
 \begin{align}
@@ -407,32 +420,35 @@ A tensor density $\bs{\mathcal{T}}$ of weight $w$ can be written in the form,
 \subsubsection{Lie Derivatives of Tensor Densities}
 To calculate the Lie derivative of a tensor density, first the Lie derivative of $\sqrt{-g}$ should be calculated, and in order to calculate the Lie derivative of the volume element a preliminary result is needed. Following the definition of a Lie derivative in section \ref{intro:sec:lie_deriv} and setting $y^\mu = x^\mu + \epsilon \xi^\mu$, the determinant of the Jacobean matrix is,
 \begin{align}
-\det\left(\frac{\partial x^\mu}{\partial y^\rho}\right) 
-&= \det\left(\frac{\partial y^\mu}{\partial x^\rho}\right)^{-1} ,\\
-&= \det\left(\delta^\mu_\rho + \epsilon \frac{\partial \xi^\mu}{\partial x^\rho}\right)^{-1} ,\\ 
+ \det\left(\frac{\partial y^\mu}{\partial x^\rho}\right) 
+&= \det\left(\delta^\mu_\rho + \epsilon \frac{\partial \xi^\mu}{\partial x^\rho}\right) ,\\ 
 &= \det\begin{pmatrix} 
 1+\epsilon\frac{\partial \xi^1}{\partial x^1}& \epsilon\frac{\partial \xi^1}{\partial x^2}& \epsilon\frac{\partial \xi^1}{\partial x^3}& \epsilon\frac{\partial \xi^1}{\partial x^4}\\
 \epsilon\frac{\partial \xi^2}{\partial x^1}& 1+\epsilon\frac{\partial \xi^2}{\partial x^2}& \epsilon\frac{\partial \xi^2}{\partial x^3}& \epsilon\frac{\partial \xi^2}{\partial x^4}\\
 \epsilon\frac{\partial \xi^3}{\partial x^1}& \epsilon\frac{\partial \xi^3}{\partial x^2}& 1+\epsilon\frac{\partial \xi^3}{\partial x^3}& \epsilon\frac{\partial \xi^3}{\partial x^4}\\ 
-\epsilon\frac{\partial \xi^4}{\partial x^1}&\epsilon\frac{\partial \xi^4}{\partial x^2} & \epsilon\frac{\partial \xi^4}{\partial x^3}& 1+\epsilon\frac{\partial \xi^4}{\partial x^4}\end{pmatrix}^{-1} ,\\
-&=\left(1 + \epsilon \sum_i \frac{\partial \xi^i}{\partial x^i} + \mathcal{O}(\epsilon^2)\right)^{-1} ,\\
-&=1 - \epsilon \partial_\mu \xi^\mu + \mathcal{O}(\epsilon^2),
+\epsilon\frac{\partial \xi^4}{\partial x^1}&\epsilon\frac{\partial \xi^4}{\partial x^2} & \epsilon\frac{\partial \xi^4}{\partial x^3}& 1+\epsilon\frac{\partial \xi^4}{\partial x^4}\end{pmatrix} ,\\
+&=\left(1 + \epsilon \sum_i \frac{\partial \xi^i}{\partial x^i} + \mathcal{O}(\epsilon^2)\right) ,\\
+&=1 + \epsilon \partial_\mu \xi^\mu + \mathcal{O}(\epsilon^2),
 \end{align}
 where four dimensions was used for clarity, but the calculation works exactly the same in any number of dimensions. Using this result and the definition of a Lie derivative, $\L_\xi \sqrt{-g}$ evaluates to
 \begin{align}
 \L_\xi \sqrt{-g} &= \lim_{\epsilon\rightarrow 0 }\left( \frac{\Phi^*\sqrt{-\tilde{g}}\Big|_q-\sqrt{-g}\Big|_p}{\epsilon} \right) ,\\
-&= \lim_{\epsilon\rightarrow 0 }\left( \frac{\sqrt{-\det\left(g_{\mu\nu}(y^\alpha){\frac{\partial x^\mu}{\partial y^\rho}  \frac{\partial x^\nu}{\partial y^\sigma}}\right)}-\sqrt{-g}(x^\alpha)}{\epsilon} \right) ,\\
-&= \lim_{\epsilon\rightarrow 0 }\left( \frac{\sqrt{-g}(y^\alpha) \det\left(\frac{\partial x^\mu}{\partial y^\rho}\right) -\sqrt{-g}(x^\alpha)}{\epsilon} \right) ,\\
-&= \lim_{\epsilon\rightarrow 0 }\left( \frac{\sqrt{-g}(y^\alpha) (1 - \epsilon \partial_\mu \xi^\mu + \mathcal{O}(\epsilon^2)) -\sqrt{-g}(x^\alpha)}{\epsilon} \right) ,\\
-&= \lim_{\epsilon\rightarrow 0 }\left( \frac{[\sqrt{-g}(x^\alpha) + \epsilon \xi^\mu \partial_\mu \sqrt{-g}(x^\alpha)] (1 - \epsilon \partial_\mu \xi^\mu + \mathcal{O}(\epsilon^2)) -\sqrt{-g}(x^\alpha)}{\epsilon} \right) ,\\
-&= \lim_{\epsilon\rightarrow 0 }\left( \frac{ \epsilon \xi^\mu \partial_\mu \sqrt{-g}(x^\alpha) - \epsilon \sqrt{-g}(x^\alpha)\partial_\mu \xi^\mu + \mathcal{O}(\epsilon^2))}{\epsilon}  \right) ,\\
-\L_\xi \sqrt{-g} &= \xi^\mu \partial_\mu \sqrt{-g} - \sqrt{-g} \partial_\mu \xi^\mu.
+&= \lim_{\epsilon\rightarrow 0 }\left( \frac{\sqrt{-\det\left(g_{\mu\nu}(y^\alpha){\frac{\partial y^\mu}{\partial x^\rho}  \frac{\partial y^\nu}{\partial x^\sigma}}\right)}-\sqrt{-g}(x^\alpha)}{\epsilon} \right) ,\\
+&= \lim_{\epsilon\rightarrow 0 }\left( \frac{\sqrt{-g}(y^\alpha) \det\left(\frac{\partial y^\mu}{\partial x^\rho}\right) -\sqrt{-g}(x^\alpha)}{\epsilon} \right) ,\\
+&= \lim_{\epsilon\rightarrow 0 }\left( \frac{\sqrt{-g}(y^\alpha) (1 + \epsilon \partial_\mu \xi^\mu + \mathcal{O}(\epsilon^2)) -\sqrt{-g}(x^\alpha)}{\epsilon} \right) ,\\
+&= \lim_{\epsilon\rightarrow 0 }\left( \frac{[\sqrt{-g}(x^\alpha) + \epsilon \xi^\mu \partial_\mu \sqrt{-g}(x^\alpha)] (1 + \epsilon \partial_\mu \xi^\mu + \mathcal{O}(\epsilon^2)) -\sqrt{-g}(x^\alpha)}{\epsilon} \right) ,\\
+&= \lim_{\epsilon\rightarrow 0 }\left( \frac{ \epsilon \xi^\mu \partial_\mu \sqrt{-g}(x^\alpha) + \epsilon \sqrt{-g}(x^\alpha)\partial_\mu \xi^\mu + \mathcal{O}(\epsilon^2))}{\epsilon}  \right) ,\\
+\L_\xi \sqrt{-g} &= \xi^\mu \partial_\mu \sqrt{-g} + \sqrt{-g} \partial_\mu \xi^\mu.
 \end{align}
 Given that $\L_\xi \sqrt{-g}$ has been calculated, it is straightforeward to calculate the Lie derivarive of a tensor density $\bs{\mathcal{T}} = \sqrt{-g}^w\bs{T}$ of weight $w$, where $\bs{T}$ is a regular tensor, using the Liebnitz rule in Eq.~(\ref{intro:eq:lie_liebnitz}). The Lie derivative is,
-\begin{equation}
-\L_\xi \bs{\mathcal{T}} = \sqrt{-g}^w \left( \L_\xi \bs{T} - w \bs{T} \partial_\mu \xi^\mu + w\frac{1}{\sqrt{-g}} \xi^\mu \partial_\mu \sqrt{-g} \right),
+\begin{equation} \label{intro:eq:Ltensordensity}
+\L_\xi \bs{\mathcal{T}} = \sqrt{-g}^w \left( \L_\xi \bs{T} + w \bs{T} \left(   \frac{1}{\sqrt{-g}} \xi^\mu \partial_\mu \sqrt{-g} + \partial_\mu \xi^\mu \right) \right),
 \end{equation}
-where the Leibnitz rule of differentiation has been used. As would be expected, setting $w=0$ returns the regular Lie derivative of a tensor.
+where the Leibnitz rule of differentiation has been used. As would be expected, setting $w=0$ returns the regular Lie derivative of a tensor. This can also be written as, 
+\begin{equation} \label{intro:eq:Ltensordensity2}
+\L_\xi \bs{\mathcal{T}} =  \widetilde{\L}_\xi \bs{\T} + w \bs{\T}  \partial_\mu \xi^\mu ,
+\end{equation}
+where $ \widetilde{\L}_\xi$ is the differential operator equivalent to the Lie derivate of the same tensor but with weight zero.
 
 CHECK THIS IS CORRECT AND USED CORRECTLY LATER IN THE CCZ4 EQUATIONS SECTION
 
@@ -444,7 +460,7 @@ CHECK THIS IS CORRECT AND USED CORRECTLY LATER IN THE CCZ4 EQUATIONS SECTION
 There are many types of derivative on a manifold, all related to each other, that we care about in the context of General Relativity. The simplest is the partial derivative, denoted \begin{equation}\partial_\mu = \frac{\partial}{\partial x^\mu},\end{equation} which works much the same as always. Two other derivatives are the exterior derivative [MAYBE REF THIS] and the Lie derivative which are discussed in [REF] and section \ref{intro:sec:lie_deriv} respectively. 
 
 The purpose of the covariant derivative, denoted $\nabla_\mu$, is to generalise the partial derivative to curved spaces (or curvilinear coordinates). The covariant derivative exactly reduces to the partial derivative ($\partial_\mu$) in flat space with cartesian coordinates. As suggested by the name, the covariant derivative of an object is covariant; it obeys the tensor transformation law in section \ref{intro:sec:cov}. The covariant derivative uses a vector field $\bs{X}$ to map a $(p,q)$ tensor field $\bs{T}$ to 
- a $(p,q)$ tensor field ${\bs{\nabla}_\bs{X}} \bs{T}$. Requiring the covariant derivative of a tensor to return another tensor may sound pedantic but it allows the writing of physical differential equations that are covariant, i.e. that hold in all coordiante systems. Encoding the laws of physics with tensor differential equations is explored in more detail in Section [REF!]. 
+ a $(p,q)$ tensor field ${\bs{\nabla}_{\bs{X}}} \bs{T}$. Requiring the covariant derivative of a tensor to return another tensor may sound pedantic but it allows the writing of physical differential equations that are covariant, i.e. that hold in all coordiante systems. Encoding the laws of physics with tensor differential equations is explored in more detail in Section [REF!]. 
 
 To be the analogue of the partial derivative, three properties of the covariant derivative are required,
 \begin{align}
@@ -519,7 +535,7 @@ The covariant derivative of a general tensor can be found by following the simpl
 \end{equation}
 
 
-COV DERIV OF TENSOR DENSITIES - MAYBE TENSOR DENSITIES ARE THEIR OWN SECTION. COULD BE QUICK, I ASSUME NABLA_MU ROOTG =0
+COV DERIV OF TENSOR DENSITIES - MAYBE TENSOR DENSITIES ARE THEIR OWN SECTION. COULD BE QUICK, I ASSUME NABLA MU ROOTG =0
 
 
 \subsection{The Connection}\label{intro:sec:levicivita}
@@ -627,7 +643,7 @@ Using the Levi-civita connection, the connection symbol must be symmetric in low
 \begin{equation}
 \partial_\alpha g_{\mu\nu} = \nabla_\alpha g_{\mu\nu} + \Gamma^{\beta}_{\,\,\,\alpha\nu}g_{\mu\beta} + \Gamma^{\beta}_{\,\,\,\alpha\mu}g_{\beta \nu},
 \end{equation}
-which must vanish in normal coordintes as $\Gamma^\alpha_{\,\,\,\mu\nu}=0$ and the Levi-Civita connection demands $\nabla_\alpha g_{\mu\nu}=0$. Therefore, it is possible to construct a coordinate system that at one point $p$ both $\partial_\alpha g_{\mu\nu}=0$ and $\Gamma^\alpha_{\,\,\,\mu\nu}=0$; importantly $\partial_\alpha \partial_\beta g_{\mu\nu}\neq 0$. As well as the metric's first derivative vanishing at $p$, it is also possible to demand that $g_{\mu\nu}\big_p = \eta_{\mu\nu}$, the Minkowski metric. This can be done with a set of ${}^{(j)}X^\mu \big|_p$, one for each normal coordinate $x^j$, that satisfy 
+which must vanish in normal coordintes as $\Gamma^\alpha_{\,\,\,\mu\nu}=0$ and the Levi-Civita connection demands $\nabla_\alpha g_{\mu\nu}=0$. Therefore, it is possible to construct a coordinate system that at one point $p$ both $\partial_\alpha g_{\mu\nu}=0$ and $\Gamma^\alpha_{\,\,\,\mu\nu}=0$; importantly $\partial_\alpha \partial_\beta g_{\mu\nu}\neq 0$. As well as the metric's first derivative vanishing at $p$, it is also possible to demand that $g_{\mu\nu}\big|_p = \eta_{\mu\nu}$, the Minkowski metric. This can be done with a set of ${}^{(j)}X^\mu \big|_p$, one for each normal coordinate $x^j$, that satisfy 
 \begin{equation} \bs{g}({}^{(j)}\bs{X}\big|_p , {}^{(k)}\bs{X}\big|_p) = \eta_{jk}. \end{equation}
 
 
@@ -740,7 +756,7 @@ DEGREES OF FREEDOM
 
 
 
-\subsection{The Divergence Theorem}
+\subsection{The Divergence Theorem}\label{intro:sec:div}
 
 There is a generalisation of the divergence theorem to non-flat spaces, using differential geometry, which will be extremely useful in section [REF]. First, we will have to find a convenient form of the divergence $\nabla_\mu X^\mu$ of a vector $\bs{X}$. Expanding the covariant deriative gives
 \begin{align}
@@ -777,7 +793,7 @@ Given that $\bs{D}$ is the diagonal matrix composed of the eigenvalues $\lambda_
 \partial_\mu\bs{D} &= \mathrm{Diag}\{\partial_\mu\lambda_1,\partial_\mu\lambda_2,...,\partial_\mu\lambda_n\} ,\\
 \bs{D}^{-1} &= \mathrm{Diag}\{\lambda^{-1}_1,\lambda^{-1}_2,...,\lambda^{-1}_n\} ,
 \end{align}
-then finally $\mathrm{Tr}(\bs{D}^{-1} \partial_\mu \bs{D})$ can be evaluated in terms of the $\lamba_i$ as follows,
+then finally $\mathrm{Tr}(\bs{D}^{-1} \partial_\mu \bs{D})$ can be evaluated in terms of the $\lambda_i$ as follows,
 \begin{align}
 \mathrm{Tr}(\bs{D}^{-1} \partial_\mu \bs{D}) &= \sum_{ij} D^{-1}_{ij} \partial_\mu D_{ij} ,\\
 &= \sum_i D^{-1}_{ii} \partial_\mu D_{ii} ,\\
@@ -944,14 +960,14 @@ where the first equation states {\it "The rate of change of energy density is eq
 
 The stress tensor is also very useful in curved space and the continuity equation becomes,
 \begin{align}
-\nabla_\mu T^{\mu\nu} = \partial_\mu T^{\mu\nu}  + \Gamma^\mu_{\,\,\,\mu \rho}T^{\rho \nu}  + \Gamma^\nu_{\,\,\,\mu\rho}T^{\mu\rho}= 0,
+\nabla_\mu T^{\mu\nu} = \partial_\mu T^{\mu\nu}  + \Gamma^\mu_{\,\,\,\mu \rho}T^{\rho \nu}  + \Gamma^\nu_{\,\,\,\mu\rho}T^{\mu\rho}= 0\label{intro:eq:cont},
 \end{align}
 which can be rewtitten using Eq.~(\ref{intro:eq:div_vector}) as 
 \begin{align}
 \partial_\mu( \sqrt{-g} T^{\mu\nu})  &=-\sqrt{-g} \Gamma^\nu_{\,\,\,\mu\rho}T^{\mu\rho},\\
 \partial_\mu( \T^{\mu\nu})  &=-\Gamma^\nu_{\,\,\,\mu\rho}\T^{\mu\rho},
 \end{align}
-where the second equation writes the stress tensor as a tensor density $\bs{\T}$ making the equation resemble the flat space continuity equation more closely. The take away message is that traditional continuity of energy and momentum no longer hold for curved spaces. This point will be revisited in section REF where a differnet type of variable is defined to try recover traditional continuity.
+where the second equation writes the stress tensor as a tensor density $\bs{\T} = \sqrt{-g} \bs{T}$ making the equation resemble the flat space continuity equation more closely. The take away message is that traditional continuity of energy and momentum no longer hold for curved spaces. This point will be revisited in section REF where a differnet type of variable is defined to try recover traditional continuity.
 
 
 \subsection{The Einstein Equation}
@@ -1192,22 +1208,23 @@ g_{\mu\nu} \Lambda &= \frac{1}{\sqrt{-g}}\frac{\delta (\L_\Lambda \sqrt{-g})}{\d
 &=-\frac{1}{2}g_{\mu\nu}\L_\Lambda  + \frac{\delta (\L_\Lambda )}{\delta g^{\mu\nu}}, \\
 \end{align}
 which is solved by $\L_\Lambda = -2\Lambda$. Comparing the matter term instead returns another definition of the stress tensor,
-\begin{equation}
-T_{\mu\nu}:=\frac{2}{\sqrt{-g}}\frac{\delta (\L_m \sqrt{-g})}{\delta g^{\mu\nu}}.
-\end{equation} 
+\begin{align}
+T_{\mu\nu}:&=-\frac{2}{\sqrt{-g}}\frac{\delta (\L_m \sqrt{-g})}{\delta g^{\mu\nu}},\\
+&= -2\frac{\delta \L_m}{\delta g^{\mu\nu}} + g_{\mu\nu} \L_m .\label{intro:eq:Tdef}
+\end{align} 
 Collecting these results, the full lagrangean is,
 \begin{align}
-\L = R + \frac{16 \pi G}{c^4} \L_m -2\lambda,
+\L = R + \frac{16 \pi G}{c^4} \L_m -2\Lambda,
 \end{align}
 or in Planck units,
 \begin{align}
-\L = R + 16 \pi \L_m -2\lambda.
+\L = R + 16 \pi \L_m -2\Lambda.
 \end{align}
 The form of $\L_m$ is problem specific, depending on the type of matter. The equation of motion of the matter, described by a set of fields $\phi_i$, and their partial derivatives with respect to $x^\mu$ is,
 \begin{equation}
-\frac{\delta \L}{\delta \phi_i} - \frac{1}{\sqrt{-g}}\partial_\mu \left(\sqrt{-g}\frac{\delta\L}{\delta \partial_\mu \phi_i}\right)=0.
+\sqrt{-g}\frac{\delta \L}{\delta \phi_i} -\partial_\mu \left(\sqrt{-g}\frac{\delta\L}{\delta \partial_\mu \phi_i}\right)=0.
 \end{equation}
-If the $\phi_i$ are scalar fields then the equation of motion simplifies to 
+If the $\phi_i$ are scalar fields then the equation of motion simplifies, using Eq.~(\ref{intro:eq:div_vector}), to 
 \begin{equation}
 \frac{\delta \L}{\delta \phi_i} - \nabla_\mu \left(\frac{\delta\L}{\delta \nabla_\mu \phi_i}\right)=0.
 \end{equation}
@@ -1227,17 +1244,17 @@ CAN HELP WITH MORE THEORETICAL THEORIES, NEXT EXPANSIONS OF R SUCH AS MODIIFED G
 \section{Stuff}
 \subsection{notes}
 
+maybe put the field theory bit straght into the curved space bit and dont bother with SR as much?
+
 prove the diff of christoffels is a tensor?
 
 NEwman penrose formalism? 
-
-wheeler quote, matter tells space how to curve, adn space tells matter how to move.
 
 GRChombo section?
 
 einstein summation conventions? and upstiars/downstairs incedes in conventions
 
-distinguish between tensors and tensor fields (especially in teh d/dlambda and X bit)
+check tensor vs tensor field
 
 maybe work coordinate transformation into the text earlier with ther introduction of vectors? maybe split the long diff geom section (fucntions curves and tensors) into two sections, functions curves, coords trans, vectors part 1 then covectors, tensors and tensor transformation part 2, forms part 3 then differentiation then calculuas?
 
@@ -1247,11 +1264,9 @@ maybe make SR as a solution to the Einstein eqation a different section to just 
 
 decide when to use SR and GR acronyms
 
-1887 Michelson-Morley to find aether that light moves on. Instead found not true. laws of physics are the same in all frames. Assming these two things Einstein derived the Lorentz group.
-
 connection/christoffel and capitalise or not?
 
-talk about newman penrose scalars for GW extraction?
+talk about newman penrose scalars for GW extraction? nah
 
 check capital letters
 
