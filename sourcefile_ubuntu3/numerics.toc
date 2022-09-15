@@ -1,0 +1,21 @@
+\contentsline {section}{\numberline {0.1}The Wave Equation}{}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Numerical methods}{}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Von Neumann Stability}{}{section.0.3}%
+\contentsline {section}{\numberline {0.4}Boundary Conditions}{}{section.0.4}%
+\contentsline {section}{\numberline {0.5}Scalar Field Theories}{}{section.0.5}%
+\contentsline {subsection}{\numberline {0.5.1}General Theories}{}{subsection.0.5.1}%
+\contentsline {subsection}{\numberline {0.5.2}Klein Gordon Equation}{}{subsection.0.5.2}%
+\contentsline {subsection}{\numberline {0.5.3}Lambda Phi 4 Theories \& Higgs }{}{subsection.0.5.3}%
+\contentsline {subsection}{\numberline {0.5.4}Sine Gordon Equation}{}{subsection.0.5.4}%
+\contentsline {section}{\numberline {0.6}Curved Space}{}{section.0.6}%
+\contentsline {subsection}{\numberline {0.6.1}Field Equations in Curved Space}{}{subsection.0.6.1}%
+\contentsline {subsection}{\numberline {0.6.2}Simplifications}{}{subsection.0.6.2}%
+\contentsline {section}{\numberline {0.7}Numerical Implementation}{}{section.0.7}%
+\contentsline {subsection}{\numberline {0.7.1}Method of Lines}{}{subsection.0.7.1}%
+\contentsline {subsection}{\numberline {0.7.2}Runge Kutta 4}{}{subsection.0.7.2}%
+\contentsline {section}{\numberline {0.8}The Klein Gordon Equation}{}{section.0.8}%
+\contentsline {section}{\numberline {0.9}Simplified 2D Klein Gordon Equation}{}{section.0.9}%
+\contentsline {section}{\numberline {0.10}Numerical Implementation: Method of Lines}{}{section.0.10}%
+\contentsline {section}{\numberline {0.11}Numerical Implementation: Runge Kutta 4}{}{section.0.11}%
+\contentsline {section}{\numberline {0.12}Fourrier Analysis}{}{section.0.12}%
+\contentsline {subsection}{\numberline {0.12.1}stuff}{}{subsection.0.12.1}%

@@ -1,0 +1,542 @@
+
+
+\documentclass[11pt, oneside]{report}  %can try book instead    % use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[margin = 0.7in, bmargin = 1.1in, tmargin = 0.9in]{geometry}                     % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                          % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                       % Activate for rotated page geometry
+\usepackage[parfill]{parskip}           % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}               % Use pdf, png, jpg, or epsÂ§ with pdflatex; use eps in DVI mode
+                                % TeX will automatically convert eps --> pdf in pdflatex        
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsmath,mathtools}
+\usepackage{array}
+\usepackage{tabu}
+\usepackage{bm}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+%\usepackage{graphicx} %already declared above
+\usepackage{caption}
+\usepackage{float}
+\usepackage{floatrow}
+\usepackage{subfig}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\usepackage{lipsum}  
+\usepackage{mdframed}
+\usepackage{verbatim}
+\usepackage{slashed}
+%\usepackage[compat=1.1.0]{tikz-feynman}
+%\usepackage{animate}
+
+
+\newcommand{\G}{\mathcal{G}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\E}{\mathcal{E}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\K}{\mathcal{K}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\R}{\mathcal{R}}
+\renewcommand{\P}{\mathcal{P}}
+\newcommand{\vp}{\varphi}
+\newcommand{\T}{\mathcal{T}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\bs}{\boldsymbol}
+\newcommand{\rspace}{\mathbb{R}}
+\newcommand{\dd}{\mathrm{d}}
+
+
+\definecolor{purple}{RGB}{38,0,75}
+\pagecolor{white}
+\color{black}
+
+%SetFonts
+
+%SetFonts
+\usepackage{subfiles} % Best loaded last in the preamble
+
+\numberwithin{equation}{section}
+\pagenumbering{gobble}
+\title{Third Term Report}
+\author{Robin Croft}
+%\date{}    
+\begin{document}
+
+
+
+
+
+
+
+%\newpage
+%\pagenumbering{arabic}
+\tableofcontents
+\newpage
+
+
+\section{The Wave Equation}
+The wave equation is
+$$\frac{1}{c^2}  \frac{\partial^2 \psi}{\partial t^2} - \nabla^2 \psi=0.$$
+The one dimensional wave equation is  
+$$ \frac{1}{c^2} \frac{\partial^2 \psi}{\partial t^2} - \frac{\partial^2 \psi}{\partial x^2}=0.$$
+This can be simplified using a change of coordinates to $\xi_1$, $\xi_2$
+$$ \xi_1 = ct-x \quad \& \quad \xi_2 = ct+x $$
+which reduces the wave equation to 
+$$\boxed{ \frac{\partial^2 \psi}{\partial \xi_1 \partial \xi_2}=0}$$
+and therefore the solutions to the one dimensional wave equation are below.
+$$\psi(\xi_1,\xi_2) =  f_1(\xi_1) + f_2(\xi_2) $$
+$$\psi(ct,x) =  f_1(ct-x) + f_2(ct+x) $$
+This simulation uses gaussian wavepackets with $c=1$ as given.
+$$ \psi(t,x) = A_1 e^{\frac{-(x-x_0 - t)^2}{2\sigma_1}} + A_2 e^{\frac{-(x-x_0 + t)^2}{2\sigma_2}}$$ 
+
+\section{Numerical methods}
+To solve the wave equation numerically you have to discretize space and time onto a grid with lattice spacings $\Delta t$, $\Delta x$. Each lattice point $(n,j)$ have a scalar function $\psi^n_j$, $j$ is the spatial index and $n$ is the temporal one. In the limit $\Delta x \rightarrow 0$ and $\Delta t \rightarrow 0$ the set of scalar functions $\psi$ approximate a scalar field $\psi(t,x)$ over the space. For time evolution simulations, known as initial value problems or Cauchy problems, it is standard to define a set of initial data 
+$ \psi_{j}^0$ $\forall j$ and solve for the set $ \psi_{j}^1$ $\forall j$ (and upto $\psi^n_j$) using iterative formulae.
+
+ The continuum spatial gradient between points $(n,j)$ and $(n,j+1)$ is approximated as
+$$ \frac{\partial \psi(t,x)}{\partial x}\Bigg|_{(n,j+1/2)} \approx \frac{\psi^n_{j+1}-\psi^n_j}{\Delta x}$$
+and a similar time derivative can be found.
+$$ \frac{\partial \psi(t,x)}{\partial t}\Bigg|_{(n+1/2,j)} \approx \frac{\psi^{n+1}_{j}-\psi^n_j}{\Delta t}$$
+
+Using this result it is tempting to define a the second derivative below.
+$$ \frac{\partial^2 \psi(t,x)}{\partial x^2}\Bigg|_{(n,j)} \approx \frac{1}{\Delta x}\left[\frac{\partial \psi(t,x)}{\partial x}\Bigg|_{(n,j+1/2)}-\frac{\partial \psi(t,x)}{\partial x}\Bigg|_{(n,j-1/2)} \right]$$
+$$ \frac{\partial^2 \psi(t,x)}{\partial x^2}\Bigg|_{(n,j)} \approx \frac{1}{\Delta x}\left[\frac{\psi^n_{j+1}-\psi^n_j}{\Delta x}-\frac{\psi^n_{j}-\psi^n_{j-1}}{\Delta x}\right]$$
+$$ \frac{\partial^2 \psi(t,x)}{\partial x^2}\Bigg|_{(n,j)} \approx \frac{\psi^n_{j+1}-2\psi^n_j + \psi^n_{j-1}}{\Delta x^2}$$
+$$ \frac{\partial^2 \psi(t,x)}{\partial t^2}\Bigg|_{(n,j)} \approx \frac{\psi^{n+1}_{j}-2\psi^n_j + \psi^{n-1}_{j}}{\Delta t^2}$$
+Now we can follow the wave equation
+$$ \frac{\partial^2 \psi(t,x)}{\partial t^2}\Bigg|_{(n,j)} = \frac{\partial^2 \psi(t,x)}{\partial x^2}\Bigg|_{(n,j)}$$
+and use the derived results to single out $\psi^{n+1}_{j}$ as a function of the $\psi^n$'s and $\psi^{n-1}$'s.
+$$\frac{\psi^{n+1}_{j}-2\psi^n_j + \psi^{n-1}_{j}}{\Delta t^2} =   \frac{\psi^n_{j+1}-2\psi^n_j + \psi^n_{j-1}}{\Delta x^2}$$
+$$ \boxed{\psi^{n+1}_j = 2\psi^n_j - \psi^{n-1}_j+ \frac{\Delta t^2}{\Delta x^2}\left[ \psi^n_{j+1}-2\psi^n_j + \psi^n_{j-1}\right]}$$
+While in theory this gives an iterative regime to calculate the future evolution of $\psi$ it is not stable; this will be explored in the next section. 
+
+It is better to break the problem down into a simultaneous set of first order differential equations.
+$$ \partial_x \psi = r$$
+$$ \dot \psi = s$$
+By construction we have 
+$$ \dot r = \partial_x s$$
+and the wave equation reads 
+$$\dot s = \partial_x r .$$
+Putting everything on a lattice as before, it might be tempting to try iterative regimes such as 
+$$ \frac{s^{n+1}_j - s^n_j}{\Delta t} = \frac{r^n_{j+1}-r^n_j}{\Delta x} $$
+but this kind of thing is unstable; explored in next section. The better method is to try the following 'Lax' method
+$$ \dot s = \frac{2s^{n+1}_j - (s^{n}_{j+1}+s^{n}_{j-1})}{2 \Delta t} = \partial_x r= \frac{r^n_{j+1}-r^n_{j-1}}{2 \Delta x}$$
+which leads to an equation for $s^{n-1}_j$ in terms of $s^n$'s and $r^n$'s. A similar equation for $r^{n+1}_j$ can be found in the same way.
+$$ \boxed{s^{n+1}_j = \frac{1}{2}\left[s^{n}_{j+1}+s^{n}_{j-1} + \frac{\Delta t}{\Delta x}\left( r^n_{j+1}-r^n_{j-1}\right) \right]}$$
+$$ \boxed{r^{n+1}_j = \frac{1}{2}\left[r^{n}_{j+1}+r^{n}_{j-1} + \frac{\Delta t}{\Delta x}\left( r^n_{s+1}-s^n_{j-1}\right) \right]}$$
+The above two equations can be used with the expansion of $\dot \psi = s$ to fully determine the wave evolution.
+$$ \dot \psi = \frac{2\psi^{n+1}_j - (\psi^n_{j+1}+\psi^n_{j-1})}{2\Delta t} = s^n_j$$
+$$ \boxed{\psi^{n+1}_j = \frac{1}{2}\left[\psi^n_{j+1}+\psi^n_{j-1}\right]+ s^n_j\Delta t  }$$
+
+
+\section{Von Neumann Stability}
+The Von Neumann stability condition tests how the amplitude of a sine wave (fourrier mode) would vary over iterations of the algorithm. This can only work for linear differential equations that obey the principle of linear superposition of solutions. Basically no equations like 
+$$ \partial_x \eta - \dot \eta - \eta^n = 0$$
+$$ \partial_x \chi^2 - \dot \chi =0$$
+
+For an easy example lets consider the equation 
+$$ \partial_x \phi = \dot \phi$$
+and assume a fourrier mode solution 
+$$ \psi^n_j = \xi^n e^{i\Delta x j k} $$
+where $k$ is the wavevector. Assuming we can take gradients in the following scheme
+$$ \partial_x \phi = \frac{ \phi^n_{j+1} - \phi^n_{j-1}}{2\Delta x} = \dot \phi = \frac{\phi^{n+1}_j - \phi^n_j}{\Delta t}$$
+$$ \phi^{n+1}_j = \phi^n_j + \frac{\Delta t}{2 \Delta x}\left( \phi^n_{j+1} - \phi^n_{j-1}\right)$$
+$$ \xi^{n+1} e^{i\Delta x j k} = \xi^n e^{i\Delta x j k} + \frac{\Delta t}{2 \Delta x}\left( \xi^n e^{i\Delta x (j+1) k} - \xi^n e^{i\Delta x (j-1) k}\right) $$
+$$\boxed{\tilde\xi(k) = \frac{\xi^{n+1}}{\xi^n} = 1 + i\frac{\Delta t}{\Delta x} \sin \left( k\Delta x\right)} $$
+Clearly this blows up under any condition and does not work!
+ $$|\tilde \xi| \geq 1 \;\; \forall k,\Delta x,\Delta t$$
+ 
+ A better scheme, as touched on in the previous section would be 
+ $$ \partial_x \phi = \frac{ \phi^n_{j+1} - \phi^n_{j-1}}{2\Delta x} = \dot \phi = \frac{2\phi^{n+1}_j - (\phi^n_{j+1}+\phi^n_{j-1})}{2\Delta t}$$
+ $$\boxed{\phi^{n+1}_j = \frac{1}{2}\left[\phi^{n}_{j+1}+\phi^{n}_{j-1} + \frac{\Delta t}{\Delta x}\left( \phi^n_{j+1}-\phi^n_{j-1}\right) \right]}$$
+ Now substituting in the fourrier mode expansion
+ $$\xi^{n+1} = \frac{1}{2}\xi^n\left[e^{ik\Delta x}+e^{-ik\Delta x} + \frac{\Delta t}{\Delta x}\left( e^{ik\Delta x}-e^{-ik\Delta x}\right) \right] $$
+ $$\boxed{\tilde\xi(k) = \cos(k\Delta x) + i\frac{\Delta t}{\Delta x}\sin(k\Delta x)} $$
+ This is very promising!
+ $$ |\tilde \xi|^2 = \cos(k\Delta x)^2 + \frac{\Delta t^2}{\Delta x^2}\sin(k\Delta x)^2$$
+ $$ |\tilde \xi|^2 < 1 \;\; \forall \;k \;\; \mathrm{if} \;\; \frac{\Delta t}{\Delta x} < 1$$
+ This inequality is known as the Courant condition.
+ 
+ Finally lets analyse the second order wave equation as discussed in the previous section with the following scheme.
+ $$ \psi^{n+1}_j = 2\psi^n_j - \psi^{n-1}_j+ \frac{\Delta t^2}{\Delta x^2}\left[ \psi^n_{j+1}-2\psi^n_j + \psi^n_{j-1}\right]$$
+ $$ \xi^{n+1} = 2\xi^n - \xi^{n-1} + \xi^n \frac{\Delta t^2}{\Delta x^2}\left[ e^{ik\Delta x}-2 + e^{-ik\Delta x}\right]$$
+ $$ \frac{\xi^{n+1}}{\xi^n} -2\left( 1+ 2\frac{\Delta t^2}{\Delta x^2}\sin(\frac{k\Delta x}{2})^2\right) + \frac{\xi^{n-1}}{\xi^n}=0$$
+ $$ \tilde \xi - 2\lambda(k) + \tilde \xi^{-1}=0$$
+ $$ \tilde\xi_{\pm} = \lambda \pm \sqrt{\lambda^2-1}$$
+ Given that $\lambda > 1$ then $\tilde\xi_+ > 1$ is guarenteed and we have proved this second order scheme doesn't work.
+
+\section{Boundary Conditions}
+Infinitely large spaces are not practical on a computer; you have to choose either periodic or fixed boundary conditions. This is usually done along the set of points $\psi^n_0$ and $\psi^n_{j^*}$, $\forall \; n$. The points $j=0$ and $j =j^*$ are the two endpoints of the spatial lattice. Problems will come when trying to take spatial gradients at the boundaries as this will contain terms like $\psi^n_{-1}$ and $\psi^n_{j^* +1}$ which don't exist!
+
+Periodic boundary conditions make this very easy to deal with, simply enforce the following six conditions at every time step.
+$$\psi^n_{-1} = \psi^n_{j^*} \quad \& \quad \psi^n_{j^*+1} = \psi^n_0 $$
+$$ r^n_{-1} = r^n_{j^*} \quad \& \quad r^n_{j^*+1} = r^n_0 $$
+$$ s^n_{-1} = s^n_{j^*} \quad \& \quad s^n_{j^*+1} = s^n_0 $$
+
+Fixed boundary conditions are slightly harder to achieve, but not much harder. Let's consider fixing $\psi^n_0 = C_0$ and $\psi^n_{j^*} = C_*$ at the spatial ends of the lattice $\forall \;n$. Without loss of generality, lets set $C_0 = C_* = 0$. The way to get a fixed $\psi=0$ at $x=0$ is to adopt a wavefunction which is the sum of a travelling wavepacket $f(t-x)$ and the negative reflected wavepacket travelling backwards $g(t-x)$.
+$$\psi(t,x) = A f(t-x) + Ag(t+x) $$
+$$ g(\xi) = -f(-\xi)$$
+$$ \therefore \psi(t,x) = A f(t-x) - A(-x-t)$$
+$$ \psi(t,x=0) = A f(t)- A f(-t) = 0$$
+which is clearly odd about $x=0$ by construction. This is the key part! Therefore $\psi$ and $s$ are odd functions about $x=0$. Given that $r = \partial_x \psi$ then $r$ must be an even function about $x=0$. We must remember that the domains $x<0$ and $x>x^*$ do not lie on out lattice and are not physical, but imagining it has let us find out how to enforce fixed boundary conditions.
+$$ \psi^n_{-1} = - \psi^n_1 \quad \& \quad \psi^n_{j^*+1} = -\psi^n_{j^*-1}$$
+$$ s^n_{-1} = - s^n_1 \quad \& \quad s^n_{j^*+1} = -s^n_{j^*-1}$$
+$$ r^n_{-1} = r^n_1 \quad \& \quad r^n_{j^*+1} = r^n_{j^*-1}$$
+
+
+
+
+
+
+\section{Scalar Field Theories}
+\subsection{General Theories}
+The most general scalar field Lagrangian in flat space with second derivatives is given by
+$$\mathcal{L} = \frac{1}{2}\partial_\mu\varphi \partial^\mu \varphi - \frac{1}{2}m^2 \varphi-V(\varphi,x^\mu) $$
+where $V$ is some potential function. This reduces to the wave equation for a scalar field in the massless limit, $m \rightarrow 0$ with zero potential $V=0$. The conjugate momentum $\pi$ is 
+$$ \pi = \frac{\partial \mathcal{L}}{\partial \dot\varphi} = \dot\varphi$$
+and hence we can find a Hamiltonian.
+$$ \mathcal{H} = \pi\dot{\varphi} - \mathcal{L}$$
+$$ \boxed{\mathcal{H} = \frac{1}{2}\pi^2 +\frac{1}{2}(\nabla\varphi)^2 + \frac{1}{2}m^2\varphi^2 + V(\varphi,x^\mu)}$$
+This is important as it tells us that aslong as $\frac{1}{2}m^2\varphi^2 + V(\varphi,x^\mu)$ is bound from below we can define a physical Hamiltonian and therefore a simulation of the equation of motion should be possible. The field equations, aka equations of motion, can be gotten from Hamiltons equations or an Eular Lagrange minimisation of the Lagrangian density. 
+$$ \boxed{\partial_\mu\partial^\mu\varphi + m^2\varphi + \frac{\partial V}{\partial \varphi}(\varphi,x^\mu)=0}$$
+
+\subsection{Klein Gordon Equation}
+The Klein Gordon Lagrangian and equation are 
+$$\mathcal{L} = \frac{1}{2}\partial_\mu\varphi \partial^\mu \varphi - \frac{1}{2}m^2 \varphi $$
+$$\partial_\mu\partial^\mu\varphi + m^2\varphi =0$$
+For the massless case this simply reduces to the normal wave equation which in 1D is non dispersive [1].  Now a fourrier analysis is done. Any computational simulation will have to be put on a finite grid. Given the metric can vary it makes sense to choose hard reflective boundary conditions over periodic ones. We can choose an anzats for the solution to the Klein-Gordon equation in a finite $(x \in \{0,L \})$ Minkowski space and boundary conditions $\varphi(0) = \varphi(L) =0$.
+$$ (\partial_t^2 - \partial_x^2 + m^2)\varphi = 0 $$
+$$ \varphi(t,x) = \sum^\infty_{n=1} \sin(k_n x) \left[ a_n\exp(i\xi_n t) + b_n \exp(-i\xi_n t) \right]$$ 
+$$ k_n = \frac{n\pi}{L} \quad \& \quad \xi_n = \sqrt{k_n^2 + m^2}$$
+Adding a mass term to the Klein Gordon means the following dispersion relation for waves.
+$$ \omega^2 = k^2 + m^2$$
+With, phase velocity, group velocity and spreading velocity.
+$$ v_p = \frac{\omega}{k} = \sqrt{1+\frac{m^2}{k^2}}$$
+$$ v_g = \frac{\dd \omega}{\dd k} = \frac{k}{w} =\frac{1}{\sqrt{1+\frac{m^2}{k^2}}} $$
+$$ v_s = \frac{\dd^2 \omega}{\dd k^2} = \frac{m^2}{k^3}\left({1+\frac{m^2}{k^2}}\right)^{-\frac{3}{2}}$$
+With the nonzero spreading velocity, qualitatively we expect all localised waveforms to spread out. This is observed for the gaussian and triangle wave. However the pure sine waves of course just have the modified frequency and don't spread. 
+
+\subsection{Lambda Phi 4 Theories \& Higgs }
+The most general Lambda Phi 4 theory has the following Lagrangian, Hamiltonian and equation of motion.
+$$ \mathcal{L} = \frac{1}{2}\partial_\mu\varphi \partial^\mu \varphi - \frac{1}{2}m^2 \varphi-\frac{\lambda}{4}\varphi^4$$
+$$ \mathcal{H} = \frac{1}{2}\dot\varphi^2 + \frac{1}{2}(\nabla\varphi)^2+\frac{1}{2}m^2 \varphi+\frac{\lambda}{4}\varphi^4$$
+$$ \partial_\mu\partial^\mu\varphi +m^2\varphi + \lambda \varphi^3 =0$$
+Note the Hamiltonian is still bound from below if $m^2<0$ as for large $\varphi$ the $\varphi^4$ term dominates. In this case the ground state is nonzero.
+$$ \varphi_0 = \pm\sqrt{\frac{-m^2}{\lambda}}$$
+This Higgs is thought to be a complex scalar field like this with a spontaneous symmetry breaking nonzero amplitude ground state. This nonzero ground state gives masses to Dirac Fermions with a Yukawa interaction term in the total Lagrangean.
+$$ \mathcal{L}_{Higgs} = \partial_\mu H \partial^\mu H^* - m^2 |H|^2 - \lambda |H|^4$$
+$$ \mathcal{L}_{Dirac} = \bar \psi\slashed{\partial}\psi$$
+$$ \mathcal{L}_{Yukawa} = -\alpha H \bar\psi\psi - \left( \alpha H \bar\psi\psi \right)^* = -2|\alpha H| \bar\psi\psi$$
+$$ \mathcal{L}_{Total} = \bar \psi\slashed{\partial}\psi + \partial_\mu H \partial^\mu H^* - m^2 |H|^2 - \lambda |H|^4 + -2|\alpha H| \bar\psi\psi$$
+Expanding the Higgs feild about the minimum $H_0$ we see $H = H_0 +\tilde H$ and the fermion has picked up a mass of $m_f = 2|\alpha H_0|$.
+
+Finally, an important thing to note is that we can't use fourrier analysis for the interacting field (without small interactions and perturbation theory). Suppose we have two seperate solutions to the equation of motion of $\varphi_1$ and $\varphi_2$, the sum is not generally a solution.
+$$ \partial_\mu \partial^\mu(\varphi_1 + \varphi_2) + m^2(\varphi_1 + \varphi_2) + \lambda (\varphi_1 + \varphi_2)^3 =0$$
+$$ \partial_\mu \partial^\mu\varphi_1 +  \partial_\mu \partial^\mu\varphi_2 + m^2\varphi_1 + m^2\varphi_2 + \lambda \varphi_1^3 +  \lambda\varphi_2^3 + 3\lambda[\varphi_1\varphi_2^2 + \varphi_1^2\varphi_2]=0$$
+The terms in the square brackets ruin the linearity of the differential equation.
+
+
+\subsection{Sine Gordon Equation}
+The Sine Gordon Lagrangian and Hamiltonian are  
+$$ \mathcal{L} = \frac{1}{2}\partial_\mu\varphi \partial^\mu \varphi + m^2 \cos\varphi$$
+$$ \mathcal{H} =\frac{1}{2}\dot\varphi^2 + \frac{1}{2}(\nabla\varphi)^2 - m^2\cos(\varphi)$$
+which has the following Taylor expansion.
+$$  \mathcal{L} = \frac{1}{2}\partial_\mu\varphi \partial^\mu \varphi +m^2 \left[ 1 -\frac{\varphi^2}{2} + \frac{\varphi^4}{4!} -\frac{\varphi^6}{6!}+ ... \right]$$
+$$  \mathcal{L} = \frac{1}{2}\partial_\mu\varphi \partial^\mu \varphi -\frac{1}{2}m^2 \varphi^2 + m^2 \frac{\varphi^4}{4!} -m^2\frac{\varphi^6}{6!} + ... $$
+Where the constant factor $m^2$ has been omitted as it doesn't matter. Thus for small field fluctuations it can be truncated to a special kind of Lambda Phi 4 theory with $\lambda = \frac{m^2}{4!}$.
+$$  \mathcal{L} = \frac{1}{2}\partial_\mu\varphi \partial^\mu \varphi -\frac{1}{2}m^2 \varphi^2 + m^2 \frac{\varphi^4}{4!}$$ 
+Notice that the Hamiltonain for this is only bound from below if $m^2<0$. For even smaller field amplitudes, it can even be approximated as a free Klein Gordon field. Of course the Hamiltonian is bound from below if $m^2>0$ in this case.
+ $$\mathcal{L} = \frac{1}{2}\partial_\mu\varphi \partial^\mu \varphi -\frac{1}{2}m^2 \varphi^2$$
+The full equation of motion can be obtained as usual from Eular-Lagrange minimisation.
+$$ \boxed{\partial_\mu\partial^\mu\varphi  + m^2 \sin\varphi =0}$$
+Looking at this, when the amplitude of $\varphi$ approaches $2\pi$ the differential equation approaches the free massless wave equation and hence amplitude fluctuations often don't pass this point. 
+
+Like the previous section on Lambda Phi 4 theories, the differential equation isn't linear and hence fourrier analysis doesn't work for non-small amplitudes.
+
+\section{Curved Space}
+\subsection{Field Equations in Curved Space}
+All the field equations we are looking are of the form
+$$ \partial_\mu\partial^\mu\varphi + m^2\varphi + \frac{\partial V}{\partial \varphi}(\varphi,x^\mu)=0.$$
+To promote this equation to hold on a curved manifold we need to replace the partial derivative $(\partial)$ with the covariant derivative $(\nabla)$; which transforms as a tensor. The wave equation becomes 
+$$ \nabla_\mu \nabla^\mu \varphi = - m^2\varphi - \frac{\partial V}{\partial \varphi}$$
+This needs to be simplified before a numerical method is found. Firstly, $\partial_\mu \varphi$ is already a co-vector (1-form) and $\partial^\mu \varphi$ is a contravariant vector. 
+$$ \partial_\mu \varphi = \nabla_\mu \varphi$$
+$$ \partial^\mu \varphi = \nabla^\mu \varphi$$
+Secondly, it can be shown that the divergeance of a vector field $A$ in curved space can be written as follows.
+$$ g = \det(g_{\mu\nu})$$
+$$ \nabla_\mu A^\mu=\frac{1}{\sqrt{-g}}\partial_{\mu}\left( \sqrt{-g}A^\mu\right)$$ 
+Thus we can apply these results to the wave equation to get 
+$$  \nabla_\mu \nabla^\mu \varphi =  \nabla_\mu \partial^\mu \varphi$$
+$$  \nabla_\mu \nabla^\mu \varphi = \frac{1}{\sqrt{-g}}\partial_{\mu}\left( \sqrt{-g}\partial^\mu\varphi\right)$$
+$$  \nabla_\mu \nabla^\mu \varphi = \frac{1}{\sqrt{-g}}\partial_{\mu}\left( \sqrt{-g}g^{\alpha\mu}\partial_\alpha\varphi\right)$$
+Multiplying everything by $\sqrt{-g}$ we get the simplest form for the Klein-Gordon equation in curved space.
+$$ \boxed{\partial_\mu\left(\sqrt{-g}g^{\mu\nu}\partial_\nu \varphi \right) + \sqrt{-g}\left(m^2\varphi+\frac{\partial V}{\partial \varphi}\right)=0}$$
+$$ \boxed{\frac{\partial}{\partial x^\mu}\left(\sqrt{-g}g^{\mu\nu}\frac{\partial \varphi}{\partial x^\nu} \right) + \sqrt{-g}\left(m^2\varphi+\frac{\partial V}{\partial \varphi}\right)=0}$$
+
+\subsection{Simplifications}
+Numerically I choose to solve for a 2-dimensional metric with coordinates $x^0 = t$ and $x^1 = x$. The wave equation becomes
+$$ \partial_t\left(\sqrt{-g}g^{tt}\partial_t \varphi \right) +\partial_t\left(\sqrt{-g}g^{tx}\partial_x \varphi \right)+\partial_x\left(\sqrt{-g}g^{xt}\partial_t \varphi \right)+\partial_x\left(\sqrt{-g}g^{xx}\partial_x \varphi \right) + \sqrt{-g}\left(m^2\varphi+\frac{\partial V}{\partial \varphi}\right)=0$$
+which could be solved in general. Note that the metric is always symmetric so $g^{xt} = g^{tx}$.
+
+Working with a diagonal and static metric we get 
+$$ g^{xt} = g^{tx}  =0$$
+$$ \partial_t g_{\mu\nu} = 0$$
+$$ \partial_t \sqrt{-g} =0$$
+$$\sqrt{-g}g^{tt}\partial^2_t\varphi = -\sqrt{-g}g^{xx}\partial^2_x\varphi -\partial_x(\sqrt{-g}g^{xx})\partial_x\varphi- \sqrt{-g}\left(m^2\varphi+\frac{\partial V}{\partial \varphi}\right)$$
+For a diagonal metric we know $g^{tt}g_{tt} = 1$ and $g^{xx}g_{xx} = 1$.
+$$\boxed{\ddot \varphi = -g_{tt}g^{xx}\varphi''- \frac{1}{\sqrt{-g}}g_{tt}\partial_x(\sqrt{-g}g^{xx})\varphi' - g_{tt} \left(m^2\varphi+\frac{\partial V}{\partial \varphi}\right)}$$
+This may look difficult, but it is just of the form
+$$ \ddot \varphi = -a(x)\varphi'' -b(x)\varphi' - c(x) \varphi - d(x)\frac{\partial V}{\partial \varphi}.$$
+
+\section{Numerical Implementation}
+\subsection{Method of Lines}
+Given the wave equation in curved space it a little more complicated than that in flat space it was decided to use a 4'th order Runge-Kutta method to simulate this differential equation. Along with this we use the method of lines technique where we pretend the equation is a single variable differential equation (with respect to time) and all spatial derivatives can simply be treated as a function along the line. Each different $\varphi^n_j$ evolves towards $\varphi^{n+N}_j$ as if it were a simple ODE. 
+
+Splitting time and space $(t,x)$ into a lattice $(n,j)$ with $t = n\Delta t$ and $x = j\Delta x$ we can see the spatial Taylor expansion is as follows.
+$$ \varphi_{(j+k)} = \varphi_j + k\Delta x \varphi_j' + \frac{(k\Delta x)^2}{2!}\varphi_j'' + \frac{(k\Delta x)^3}{3!}\varphi_j''' + \frac{(k\Delta x)^4}{4!}\varphi_j'''' + \mathcal{O}(\Delta x^5)$$ 
+Now we can use this to find the fourth order accuracy spatial derivatives and second derivatives. To find the spatial derivative we must demand that 
+$$ A \varphi_{j+2} +B \varphi_{j+1} +C \varphi_{j} +D \varphi_{j-1} +E \varphi_{j-2} = \Delta x \varphi_j' $$
+which gives a set of simultaneous equations by comparing powers of $\Delta x$. 
+$$\mathcal{O}(\Delta x^0): \quad \rightarrow \quad  A+B+C+D+E=0$$
+$$\mathcal{O}(\Delta x^1): \quad \rightarrow \quad   2A+B-D-2E=1$$
+$$\mathcal{O}(\Delta x^2): \quad \rightarrow \quad   4A+B+D+4E=0$$
+$$\mathcal{O}(\Delta x^3): \quad \rightarrow \quad   8A+B-D-8E=0$$
+$$\mathcal{O}(\Delta x^4): \quad \rightarrow \quad   16A+B+D+16E=0$$
+Which has the following solution. 
+$$ A = -E = -\frac{1}{12}$$
+ $$ B = -D = \frac{2}{3}$$
+  $$C=0$$
+This uniquely determines the value of the gradient to fourth order accuracy.
+$$ \boxed{\varphi_j' = \frac{1}{\Delta x}\left[-\frac{1}{12} \varphi_{j+2} +\frac{2}{3} \varphi_{j+1}  -\frac{2}{3} \varphi_{j-1} +\frac{1}{12}\varphi_{j-2}\right]}$$
+A similar method can get us the second derivative to fourth order aswell.
+$$F \varphi_{j+2} +G \varphi_{j+1} +H \varphi_{j} +I \varphi_{j-1} +J \varphi_{j-2} = \Delta x^2 \varphi_j''  $$
+$$\mathcal{O}(\Delta x^0): \quad \rightarrow \quad  F+G+H+I+J=0$$
+$$\mathcal{O}(\Delta x^1): \quad \rightarrow \quad   2F+G-I-2J=0$$
+$$\mathcal{O}(\Delta x^2): \quad \rightarrow \quad   4F+G+I+4J=2$$
+$$\mathcal{O}(\Delta x^3): \quad \rightarrow \quad   8F+G-I-8J=0$$
+$$\mathcal{O}(\Delta x^4): \quad \rightarrow \quad   16F+G+I+16J=0$$
+This has the following solutions
+$$F = J = -\frac{1}{12} $$
+$$G = I = \frac{4}{3} $$
+$$H= -\frac{5}{2}$$
+which uniquely determines the second derivative to fourth order.
+$$ \boxed{\varphi_j'' = \frac{1}{\Delta x^2}\left[-\frac{1}{12} \varphi_{j+2} +\frac{4}{3} \varphi_{j+1} -\frac{5}{2}\varphi_j  +\frac{4}{3} \varphi_{j-1} -\frac{1}{12}\varphi_{j-2}\right]}$$
+Using the equations derived we can write the partial differential equation as a differential equation as follows.
+$$ \ddot \varphi_j = \frac{1}{12 \Delta x^2}\left[\left(a +b\Delta x \right)\varphi_{j+2} -8\left(2a+b\Delta x \right) \varphi_{j+1} +\left(30a-12c\Delta x^2\right)\varphi_j -12d\frac{\partial V}{\partial \varphi}\Big|_j +8\left(b\Delta x - 2a \right) \varphi_{j-1} +\left(a-2\Delta x \right)\varphi_{j-2}\right] $$
+$$ a = g_{tt}g^{xx}$$
+$$ b =\frac{1}{\sqrt{-g}}g_{tt}\partial_x(\sqrt{-g}g^{xx})$$
+$$ c= g_{tt} m^2$$
+$$ d = g_{tt}$$
+From this we can see that we have effectively turned the partial differential equation into a single variable differential equation. Of course the knowledge of 4 nearest neighbour site's values of $\varphi$ and $g_{\mu\nu}$ are needed.
+$$\boxed{\ddot \varphi_j = \Lambda_2\varphi_{j+2}+\Lambda_1 \varphi_{j+1} +\Lambda_0\varphi_j + \Lambda_*\frac{\partial V}{\partial \varphi}\Big|_j  +\Lambda_{-1} \varphi_{j-1} +\Lambda_{-2}\varphi_{j-2}} $$
+$$ \boxed{\ddot\varphi_j = \Lambda_j(\varphi)}$$
+\subsection{Runge Kutta 4}
+To implement a fourth order Runge-Kutta method it is easy to reduce the wave equation
+$$\ddot\varphi_j = \Lambda_j(\varphi) $$
+to two coupled first order differential equations.
+$$ \dot \varphi_j = \psi_j$$
+$$ \dot \psi_j = \Lambda_j(\varphi)$$
+These are both of the form
+$$ \dot f = g(f)$$
+which has a standard method of solution. 
+
+Using the standard Runge-Kutta method on $ \dot\varphi = \psi$ over a timestep $\Delta t$ we get,
+$$ \dot\varphi = \psi(\varphi)$$
+$$ k_1 =  \psi(\varphi))\Delta t$$
+$$ k_2 =  \psi(\varphi+\frac{1}{2}k_1)\Delta t = \psi(\hat\varphi)\Delta t$$
+$$ k_3 =  \psi(\varphi+\frac{1}{2}k_2)\Delta t= \psi(\tilde\varphi)\Delta t$$
+$$ k_4 = \psi(\varphi+k_3)\Delta t= \psi(\bar\varphi)\Delta t$$
+$$\boxed{\varphi(t_n + \Delta t) = \varphi(t_n) + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4) }$$
+
+The same can be done for the field velocity $\psi$, $\dot\psi = \Lambda(\varphi)$ over $\Delta t$.
+$$ \dot\psi = \Lambda(\psi) = \Lambda(\psi(\varphi))$$
+$$ q_1 =  \Lambda(\psi) \Delta t$$
+$$ q_2 =   \Lambda(\psi + \frac{1}{2}q_1) \Delta t = \Lambda(\hat\psi)\Delta t$$
+$$ q_3 =  \Lambda(\psi + \frac{1}{2}q_2)\Delta t =\Lambda(\tilde\psi)\Delta t$$
+$$ q_4 =  \Lambda(\psi + q_3)\Delta t =\Lambda(\bar\psi)\Delta t $$
+$$ \boxed{\psi(t_n + h) = \psi(t_n)  + \frac{1}{6}(q_1 + 2q_2 + 2q_3 + q_4)}$$
+
+It should be seen that $\hat\psi(\varphi) = \psi(\hat\varphi)$. To actually get the result out of this scheme requires the following order of computation.
+$$ q_1 =  \Lambda(\psi) \Delta t$$
+$$ k_1 =  \psi(\varphi)\Delta t$$
+$$ q_2  = \Lambda(\hat\psi(\varphi))\Delta t = \Lambda(\psi(\hat\varphi))\Delta t  = \Lambda(\hat\varphi)\Delta t = \Lambda(\varphi + \frac{1}{2}k_1)$$
+$$ k_2  = \psi(\hat\varphi)\Delta t = \hat\psi\Delta t = (\psi + \frac{1}{2}q_1)\Delta t$$
+$$ q_3  = \Lambda(\varphi + \frac{1}{2}k_2)$$
+$$ k_3  = (\psi + \frac{1}{2}q_2)\Delta t$$
+$$ q_4  =  \Lambda(\varphi + k_3)$$
+$$ k_4  =  (\psi + q_3)\Delta t$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{The Klein Gordon Equation}
+The Klein-Gordon equation in flat space is given by
+$$\partial_\mu \partial^\mu \phi = m^2 \phi $$
+which reduces to the wave equation for a scalar feild in the massless limit, $m \rightarrow 0$. To promote this equation to hold on a curved manifold we need to replace the partial derivative $(\partial)$ with the covariant derivative $(\nabla)$; which transforms as a tensor. The wave equation becomes 
+$$ \nabla_\mu \nabla^\mu \phi = m^2 \phi$$
+This needs to be simplified before a numerical method is found. Firstly, $\partial_\mu \phi$ is already a co-vector (1-form) and $\partial^\mu \phi$ is a contravariant vector. 
+$$ \partial_\mu \phi = \nabla_\mu \phi$$
+$$ \partial^\mu \phi = \nabla^\mu \phi$$
+Secondly, it can be shown that the divergeance of a vector field $A$ in curved space can be written as follows.
+$$ g = \det(g_{\mu\nu})$$
+$$ \nabla_\mu A^\mu=\frac{1}{\sqrt{-g}}\partial_{\mu}\left( \sqrt{-g}A^\mu\right)$$ 
+Thus we can apply these results to the wave equation to get 
+$$  \nabla_\mu \nabla^\mu \phi =  \nabla_\mu \partial^\mu \phi$$
+$$  \nabla_\mu \nabla^\mu \phi = \frac{1}{\sqrt{-g}}\partial_{\mu}\left( \sqrt{-g}\partial^\mu\phi\right)$$
+$$  \nabla_\mu \nabla^\mu \phi = \frac{1}{\sqrt{-g}}\partial_{\mu}\left( \sqrt{-g}g^{\alpha\mu}\partial_\alpha\phi\right)$$
+Multiplying everything by $\sqrt{-g}$ we get the simplest form for the Klein-Gordon equation in curved space.
+$$ \boxed{\partial_\mu\left(\sqrt{-g}g^{\mu\nu}\partial_\nu \phi \right) = \sqrt{-g}m^2\phi}$$
+$$ \boxed{\frac{\partial}{\partial x^\mu}\left(\sqrt{-g}g^{\mu\nu}\frac{\partial}{\partial x^\nu} \phi \right) = \sqrt{-g}m^2\phi}$$
+
+\section{Simplified 2D Klein Gordon Equation}
+Numerically I choose to solve for a 2-dimensional metric with coordinates $x^0 = t$ and $x^1 = x$. The wave equation becomes
+$$ \partial_t\left(\sqrt{-g}g^{tt}\partial_t \phi \right) +\partial_t\left(\sqrt{-g}g^{tx}\partial_x \phi \right)+\partial_x\left(\sqrt{-g}g^{xt}\partial_t \phi \right)+\partial_x\left(\sqrt{-g}g^{xx}\partial_x \phi \right) = \sqrt{-g}m^2\phi$$
+which could be solved in general. Note that the metric is always symmetric so $g^{xt} = g^{tx}$.
+
+Working with a diagonal and static metric we get 
+$$ g^{xt} = g^{tx}  =0$$
+$$ \partial_t g_{\mu\nu} = 0$$
+$$ \partial_t \sqrt{-g} =0$$
+$$\sqrt{-g}g^{tt}\partial^2_t\phi = -\sqrt{-g}g^{xx}\partial^2_x\phi -\partial_x(\sqrt{-g}g^{xx})\partial_x\phi+ \sqrt{-g}m^2\phi$$
+For a diagonal metric we know $g^{tt}g_{tt} = 1$ and $g^{xx}g_{xx} = 1$.
+$$\boxed{\ddot \phi = -g_{tt}g^{xx}\phi''- \frac{1}{\sqrt{-g}}g_{tt}\partial_x(\sqrt{-g}g^{xx})\phi' + g_{tt} m^2 \phi}$$
+This may look difficult, but it is just of the form
+$$ \ddot \phi = -a(x)\phi'' -b(x)\phi' + c(x) \phi.$$
+
+\section{Numerical Implementation: Method of Lines}
+Given the wave equation in curved space it a little more complicated than that in flat space it was decided to use a 4'th order Runge-Kutta method to simulate this differential equation. Along with this we use the method of lines technique where we pretend the equation is a single variable differential equation (with respect to time) and all spatial derivatives can simply be treated as a function along the line. Each different $\phi^n_j$ evolves towards $\phi^{n+N}_j$ as if it were a simple ODE. 
+
+Splitting time and space $(t,x)$ into a lattice $(n,j)$ with $t = n\Delta t$ and $x = j\Delta x$ we can see the spatial Taylor expansion is as follows.
+$$ \phi_{(j+k)} = \phi_j + k\Delta x \phi_j' + \frac{(k\Delta x)^2}{2!}\phi_j'' + \frac{(k\Delta x)^3}{3!}\phi_j''' + \frac{(k\Delta x)^4}{4!}\phi_j'''' + \mathcal{O}(\Delta x^5)$$ 
+Now we can use this to find the fourth order accuracy spatial derivatives and second derivatives. To find the spatial derivative we must demand that 
+$$ A \phi_{j+2} +B \phi_{j+1} +C \phi_{j} +D \phi_{j-1} +E \phi_{j-2} = \Delta x \phi_j' $$
+which gives a set of simultaneous equations by comparing powers of $\Delta x$. 
+$$\mathcal{O}(\Delta x^0): \quad \rightarrow \quad  A+B+C+D+E=0$$
+$$\mathcal{O}(\Delta x^1): \quad \rightarrow \quad   2A+B-D-2E=1$$
+$$\mathcal{O}(\Delta x^2): \quad \rightarrow \quad   4A+B+D+4E=0$$
+$$\mathcal{O}(\Delta x^3): \quad \rightarrow \quad   8A+B-D-8E=0$$
+$$\mathcal{O}(\Delta x^4): \quad \rightarrow \quad   16A+B+D+16E=0$$
+Which has the following solution. 
+$$ A = -E = -\frac{1}{12}$$
+ $$ B = -D = \frac{2}{3}$$
+  $$C=0$$
+This uniquely determines the value of the gradient to fourth order accuracy.
+$$ \boxed{\phi_j' = \frac{1}{\Delta x}\left[-\frac{1}{12} \phi_{j+2} +\frac{2}{3} \phi_{j+1}  -\frac{2}{3} \phi_{j-1} +\frac{1}{12}\phi_{j-2}\right]}$$
+A similar method can get us the second derivative to fourth order aswell.
+$$F \phi_{j+2} +G \phi_{j+1} +H \phi_{j} +I \phi_{j-1} +J \phi_{j-2} = \frac{1}{2}\Delta x^2 \phi_j''  $$
+$$\mathcal{O}(\Delta x^0): \quad \rightarrow \quad  F+G+H+I+J=0$$
+$$\mathcal{O}(\Delta x^1): \quad \rightarrow \quad   2F+G-I-2J=0$$
+$$\mathcal{O}(\Delta x^2): \quad \rightarrow \quad   4F+G+I+4J=1$$
+$$\mathcal{O}(\Delta x^3): \quad \rightarrow \quad   8F+G-I-8J=0$$
+$$\mathcal{O}(\Delta x^4): \quad \rightarrow \quad   16F+G+I+16J=0$$
+This has the following solutions
+$$F = J = -\frac{1}{24} $$
+$$G = I = \frac{2}{3} $$
+$$H= -\frac{5}{4}$$
+which uniquely determines the second derivative to fourth order.
+$$ \boxed{\phi_j'' = \frac{1}{\Delta x^2}\left[-\frac{1}{24} \phi_{j+2} +\frac{2}{3} \phi_{j+1} -\frac{5}{4}\phi_j  +\frac{2}{3} \phi_{j-1} -\frac{1}{24}\phi_{j-2}\right]}$$
+Using the equations derived we can write the partial differential equation as a differential equation as follows.
+$$ \ddot \phi_j = \frac{1}{24 \Delta x^2}\left[\left(a +2b\Delta x \right)\phi_{j+2} -16\left(a+b\Delta x \right) \phi_{j+1} +\left(24c\Delta x^2+30a\right)\phi_j  +16\left(b\Delta x - a \right) \phi_{j-1} +\left(a-2b\Delta x \right)\phi_{j-2}\right] $$
+$$ a = g_{tt}g^{xx}$$
+$$ b =\frac{1}{\sqrt{-g}}g_{tt}\partial_x(\sqrt{-g}g^{xx})$$
+$$ c= g_{tt} m^2$$
+From this we can see that we have effectively turned the partial differential equation into a single variable differential equation. Of course the knowledge of 4 nearest neighbour site's values of $\phi$ and $g_{\mu\nu}$ are needed.
+$$\boxed{\ddot \phi_j = \Lambda_2\phi_{j+2}+\Lambda_1 \phi_{j+1} +\Lambda_0\phi_j  +\Lambda_{-1} \phi_{j-1} +\Lambda_{-2}\phi_{j-2}} $$
+$$ \boxed{\ddot\phi_j = \Lambda_j(\phi)}$$
+\section{Numerical Implementation: Runge Kutta 4}
+To implement a fourth order Runge-Kutta method it is easy to reduce the wave equation
+$$\ddot\phi_j = \Lambda_j(\phi) $$
+to two coupled first order differential equations.
+$$ \dot \phi_j = \psi_j$$
+$$ \dot \psi_j = \Lambda_j(\phi)$$
+These are both of the form
+$$ \dot f = g(f)$$
+which has a standard method of solution. 
+
+Using the standard Runge-Kutta method on $ \dot\phi = \psi$ over a timestep $\Delta t$ we get,
+$$ \dot\phi = \psi(\phi)$$
+$$ k_1 =  \psi(\phi))\Delta t$$
+$$ k_2 =  \psi(\phi+\frac{1}{2}k_1)\Delta t = \psi(\hat\phi)\Delta t$$
+$$ k_3 =  \psi(\phi+\frac{1}{2}k_2)\Delta t= \psi(\tilde\phi)\Delta t$$
+$$ k_4 = \psi(\phi+k_3)\Delta t= \psi(\bar\phi)\Delta t$$
+$$\boxed{\phi(t_n + \Delta t) = \phi(t_n) + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4) }$$
+
+The same can be done for the field velocity $\psi$, $\dot\psi = \Lambda(\phi)$ over $\Delta t$.
+$$ \dot\psi = \Lambda(\psi) = \Lambda(\psi(\phi))$$
+$$ q_1 =  \Lambda(\psi) \Delta t$$
+$$ q_2 =   \Lambda(\psi + \frac{1}{2}q_1) \Delta t = \Lambda(\hat\psi)\Delta t$$
+$$ q_3 =  \Lambda(\psi + \frac{1}{2}q_2)\Delta t =\Lambda(\tilde\psi)\Delta t$$
+$$ q_4 =  \Lambda(\psi + q_3)\Delta t =\Lambda(\bar\psi)\Delta t $$
+$$ \boxed{\psi(t_n + h) = \psi(t_n)  + \frac{1}{6}(q_1 + 2q_2 + 2q_3 + q_4)}$$
+
+It should be seen that $\hat\psi(\phi) = \psi(\hat\phi)$. To actually get the result out of this scheme requires the following order of computation.
+$$ q_1 =  \Lambda(\psi) \Delta t$$
+$$ k_1 =  \psi(\phi)\Delta t$$
+$$ q_2  = \Lambda(\hat\psi(\phi))\Delta t = \Lambda(\psi(\hat\phi))\Delta t  = \Lambda(\hat\phi)\Delta t = \Lambda(\phi + \frac{1}{2}k_1)$$
+$$ k_2  = \psi(\hat\phi)\Delta t = \hat\psi\Delta t = (\psi + \frac{1}{2}q_1)\Delta t$$
+$$ q_3  = \Lambda(\phi + \frac{1}{2}k_2)$$
+$$ k_3  = (\psi + \frac{1}{2}q_2)\Delta t$$
+$$ q_4  =  \Lambda(\phi + k_3)$$
+$$ k_4  =  (\psi + q_3)\Delta t$$
+
+\section{Fourrier Analysis}
+Any computational simulation will have to be put on a finite grid. Given the metric can vary it makes sense to choose hard reflective boundary conditions over periodic ones. We can choose an anzats for the solution to the Klein-Gordon equation in a finite $(x \in \{0,L \})$ minkowski space.
+$$ (\partial_t^2 - \partial_x^2 - m^2)\phi = 0 $$
+$$ \phi(t,x) = \sum_n \sin(k_n x) \left[ a_n\exp(i\xi_n t) + b_n \exp(-i\xi_n t) \right]$$ 
+$$ k_n = \frac{n\pi}{L} \quad \& \quad \xi_n = \sqrt{k_n^2 - m^2}$$
+Straight away, if we want a stable solution, we know it exists for $$ \xi_n \in \mathbb{R} \;\; \forall \;\; n$$ and hence $m<k_n \;\forall\;n$ which is equivalent to the following.
+$$ \boxed{m < \frac{\pi}{L}} $$
+For any $n$ that $m>n\pi/L$ we can write the fourrier mode as 
+$$ \phi_n(t,x) =\sin(k_n x) \left[ a_n\exp(\zeta_n t) + b_n \exp(-\zeta_n t) \right] $$
+$$ \phi_n(t,x) =\sin(k_n x) \left[ c_n\cosh(\zeta_n t) +d_n \sinh(-\zeta_n t) \right] $$
+$$ \zeta_n = \sqrt{m^2-\frac{n^2\pi^2}{L^2}}$$
+and therefore any fourrier modes $\phi_n$ with $m>n\pi/L$ must ensure that the $c_n =0$ and $d_n < 0$ (or $a_n <0$) to stop solutions that grow in time exponentially. Therefore, if $\frac{\partial}{\partial t}{\phi_n} =0$ for one of these modes it must grow and destroy the solution as it's time function is $\cosh(\zeta_n t)$. Any modes that contain just the $\exp(-\zeta_n t)$ will die away and leave only the standing wave (non-evanescant) modes after time. Clearly we should just restrict $m<\pi/L$ and we never have to worry about these growing modes. 
+
+For curved space there is probably some similar condition for the mass being too high. Therefore, any shape that looks roughly like $\sin(k_n x)e^{\zeta_n t} $ that emerges and destroys the system is probably indicative of the Klein-Gordon mass being too high.
+
+Physically, what this means is that the initial conditions given are not physical. You shouldn't be able to give a field some initial condition and it goes to infinite density in minkowski space. You should lower the mass or change the initial conditions to get the decay.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{stuff}
+WHAT DOOOOO?
+
+
+
+\end{document}

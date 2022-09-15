@@ -303,6 +303,7 @@ which is very similar to before; it should be noted that the advection term is i
       \caption{Diagram showing the time evolution of a hypersurface using a singularity avoiding lapse gauge condition. The vertical squiggled line represents a physical singularty that is formed at some point in spacetime, potentially from the collapse of matter to a black hole.} \label{nr:fig:singularity_avoiding}
 \end{figure}
 
+
 \subsubsection{Shift Gauge Conditions}
 
 So far the shift vector $\beta^i$ has been ignored, the simplest choice for it would be $\beta^i=0$ as in 1+log slicing. Using 1+log slicing causes great stretching and shearing of $\Sigma_t$ in the neghbourhood of a singularity as in Fig.~(\ref{nr:fig:singularity_avoiding}); the effect of this is that neighbouring gridpoints have large differences in field values leading to inaccurate and unstable evolutions. Another negative side effect is that the computational domain can fall inside an event horizon in black hole simulations. To counteract this we want to pick a shift vector that minimises hypersurface shear $\sigma_{ij}$ which can be defined as [REF] [ref 1977 smarr and york], 

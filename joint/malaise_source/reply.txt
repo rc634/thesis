@@ -1,0 +1,240 @@
+We thank the reviewers for their comments and have revised the manuscript
+accordingly. More specifically, our response to the reviewer's questions
+is as follows. We number our responses to the individual questions raised
+to allow for ease of cross referencing.
+
+
+Report 1:
+
+> Can we assume that the presence of a second star nearby should have
+> just a minor effect?. To be more specific: should the central density
+> values of a boson star really be unaffected by the presence of a
+> close companion?.
+
+(1) We can only rigorously conclude that the central density values
+of a boson star are unaffected by the companion in the limit of
+infinite separation. It is for this reason that we have studied
+sequences of collisions for varying initial separation and used
+the asymptotic results as the baseline for our comparison of the
+different types of initial data.
+
+For finite separations, we do not have a rigorous argument for the
+expected effect on a boson star's central density. The tidal forces
+exert an anisotropic perturbation of the pressure at the star's center
+and we expect the star's reaction in terms of a change in density
+to depend on the equation of state. We note, however, that our Fig.9
+presents empirical evidence in support of the hypothesis that at leading
+order the central density indeed remains unaffected by the tidal force:
+For the corrected initial data, the central scalar field amplitude
+(to leading order the square root of the energy density)
+remains constant throughout most of the infall period
+and identical to that of a single boson star in isolation. A "wrong"
+central density, instead, induces the spurious oscillations
+or collapse dynamics that we observe in the evolutions of non-corrected
+initial data. Finally, we note that our correction also preserves
+the energy density at leading order only; non-linear effects still
+allow for small changes in the central energy density orders of
+magnitude below the percent level.
+
+TODO: Check to see place where we can clarify the text. It'd be nice to
+say "we have adjusted the text in Sec.?? to clarify this point more
+strongly in the text".
+
+
+Report 2:
+
+> On the one hand there is a lot of work that went into this
+> obviously. The various parts are clearly written and the whole paper
+> is easy to read and follow. On the other hand, not a lot of what
+> is presented is new. Half of the paper is more a review of already
+> known material (BBSN, boson stars). Concerning the core of the
+> paper, that is the computing of the initial data, I also have a
+> problem. This is not a surprise that the superposition of two boson
+> stars does not lead to very good initial data, the constraints
+> equations being non-linear. I found that the proposed cure is also
+> not very satisfactory (and not new either).
+
+(2) While we agree that the opening part summarizes a fair amount
+of already known material (which we decided to include in rather
+comprehensive form for self consistency and also for future
+referencing), our article contains a considerable amount of new and
+"first" results:
+
+* To the best of our knowledge, our work reports the first
+  boson star collisions (of any form) with convergence analysis
+  and quantitative uncertainty estimates -- both critical if we
+  ever wish to employ boson-star wave signals in a quantitative
+  analysis of LIGO-Virgo data.
+
+* Our work presents the first exploration of the errors and
+  their magnitude of using superposed initial data in boson-star
+  binary collisions. We note in this context that (as far as we
+  are aware), *all* boson star binary modeling prior to our paper
+  has employed the plainly superposed initial data. Our work
+  therefore also represents the first boson-star binary simulations
+  using improved initial data.
+
+* While the lack of rigor of superposed initial data is indeed not
+  surprising, the dramatic degree of contamination thus incurred
+  was new for us and at least one of us (Sperhake)
+  unexpected. The fact that all previous work of this type has used
+  these ill-suited initial data, clearly demonstrates that the
+  severity of their limitations is news not only to us but most
+  of the boson-star binary community.
+
+> Also the paper is only concerned with non-rotating bosons stars.
+
+(3) Recent numerical results have presented considerable evidence
+suggesting that rotating scalar-field boson stars are not physically
+stable. We note, however, that our proposed remedy for the initial
+data would require no modification in its application to spinning
+boson-star collisions.
+
+> It would have been much more satisfactory if the authors had
+> proposed a real cure to the initial data problem, solving explicitly
+> the constrain equations for instance (I know this is easier said
+> than done).
+
+(4) A point we may not have made sufficiently clear in the original
+manuscript is that we do not regard our proposed remedy as a
+competition for a constraint solving approach. On the other hand,
+we do not regard the constraint solving on its own an ideal
+solution either. While a solution of the constraints projects our
+initial data onto the hypersurface of constraint-satisfying
+initial data, it does not guarantee in any way how closely these
+data represent a physically plausible initial state. A better
+solution, in our opinion, consists of employing our modification
+as a preconditioner to a constraint solving procedure. We plan
+to explore this calculation in future work but, as the reviewer
+rightly states, this is a highly non-trivial exercise that will
+require a good deal more time.
+
+We have added to our conclusion a sentence to emphasize
+the importance of adding our remedy irrespective of whether or
+not an initial data construction uses an elliptic solver for
+the entire set of constraints.
+#TODO: Add this.
+#DONE!
+
+
+Report 3:
+
+> The method of [1] of improving the binary BS initial data is
+> somewhat limited in scope to a specific configuration of the binary.
+> Therefore, the relevance of this approach is relatively marginal.
+> This drawback is mentioned in the summary/conclusions but not in
+> the introduction/abstract, which might be misleading for readers.
+
+We have added explicit statements to the abstract and introduction
+to note the limitations of our approach.
+#TODO: Do this!
+#DONE!
+
+> On the technical side, I do not think it makes sense to consider
+> the time evolution of the direct superposition of BS at all. The
+> initial perturbation of individual BS and significant constraint
+> violation disqualifies pure superposition initial data as physically
+> (and mathematically) relevant.  I am not very surprised that improved
+> initial conditions, which reduce the initial constraint violation,
+> lead to more physically desirable evolutions. I think the paper
+> should concentrate more on the improved data and their subsequent
+> developments.
+
+We fully agree with the reviewer on the unsatisfactory character of
+the pure superposition of individual boson-star initial data.
+Nevertheless, as mentioned above, to the best of our knowledge,
+all previous boson-star binary modeling has used this type of
+data. We therefore regard our study as an important and necessary
+(if not all that surprising) message of caution against the use of
+pure superposition data in as cavalier a fashion as appears to
+have prevailed prior to our work.
+
+We furthermore added a more extended discussion on the further
+development of our improved data regarding in particular its
+extension to arbitrary mass ratios.
+TODO: add this.
+
+> - The abstract needs to be updated ('we argue that this vulnerability
+> is universal' - an argument based on what? and in what sense
+> universal?; `up to a 6th-order-polynomial potential' - where is it
+> discussed?)
+
+We have removed the claim of universality from the abstract and
+rephrased the character of the scalar potential in less technical
+terms, rather focussing on the physical character of the corresponding
+stellar models.
+#TODO: Do this!
+#DONE!
+
+> - Why these specific configurations (Fig. 1) were picked? Why not
+> compare considerably different, compact and squishy BS for each
+> model?
+
+Our choice was motivated by the need to study the effects on as
+different types of boson stars as possible; hence the choice of
+a highly compact and a highly squishy model. We note that for
+the infall dynamics of a given boson star in a collision, the nature
+of the companion is not important (to leading order, the companion
+is a pointlike source thanks to Birkhoff's theorem). For example,
+in a mixed collision starting with the plain superposition of one
+compact and one squishy boson star, the former would be perturbed
+in the same way as by another compact star and would spuriously
+collapse to a black hole as it does in our figure 9. To demonstrate
+this more explicitly, we have compared the binary dynamics with those
+of artificially perturbed single boson stars (see also Fig.9).
+
+> - The citation list is biased toward the NR/astrophysics community;
+> it omits more rigorous works on the topic of BS.
+
+We have added references to some analytic work in Sec.1. We will be
+happy to consider citing any further analytic work on boson star binaries
+that the reviewer can bring to our attention.
+
+> - Fig. 4, Please add the value of Q2. Correct h3 (missing M).
+
+Thank you for spotting these; both have been corrected/added.
+
+> - Fig. 7 and 8: What is MR\psi? I guess the label should read
+> M\Re\psi? Unfortunately, the clarity of presentation of the data
+> on these figures is rather low.
+
+The labels are actually correct, but we agree that they are confusing
+and have fixed them accordingly. $R$ is the extraction radius
+and is added as a factor here to compensate for the 1/R fall off of
+the gravitational-wave signal. We have added to the caption of
+Fig.7 that $R$ denotes the extraction radius. The (2,0) mode
+of the Newman-Penrose scalar is purely real for the configurations
+reported here. But this is more coincidental, so we followed the
+reviewers notation and added the "Re" for real part, noting in the
+caption of Fig.7 that the imaginary part vanishes.
+
+> - What does 'a non-interacting potential' mean?
+
+We have replaced "non-interacting potential" with "potential
+V_min" and also explicitly reference Eq.(24) where
+the potential is given.
+
+> - Fig. 2 Better vertical arrangement?
+
+TODO: Thomas, any chance to add a bit of vertical space between
+the good and the bad cases? Use the black line as separator?
+#DONE
+
+> - p. 13 Last paragraph:  discussion of constraint violation and
+> physical relevance of a solution is not very clean.
+
+We have modified the paragraph for clarification.
+TODO: Clarify the "have drifted" sentence which I also find a bit unclear.
+Use the hand written suggestion in the printed draft.
+
+> I believe there is new and interesting material here to merit
+> publication, as soon as the authors have addressed the previous
+> comments made by the referees. In addition, as a further suggestion,
+> I think it would be interesting to investigate and mention whether
+> a similar trick would work for asymmetrical configurations.
+
+We have added a discussion of the generalization to asymmetrical
+configurations to the conclusions.
+TODO: write this.
+
+

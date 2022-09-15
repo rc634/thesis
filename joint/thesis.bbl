@@ -1,0 +1,122 @@
+\begin{thebibliography}{10}
+
+\bibitem{Alcubierre:2002kk}
+M.~Alcubierre, B.~Br{\"u}gmann, P.~Diener, M.~Koppitz, D.~Pollney, E.~Seidel,
+  and R.~Takahashi, ``Gauge conditions for long-term numerical black hole
+  evolutions without excision,'' {\em Phys. Rev. D}, vol.~67, p.~084023, 2003.
+\newblock gr-qc/0206072.
+
+\bibitem{10.2307/2397365}
+R.~Penrose, ``Quasi-local mass and angular momentum in general relativity,''
+  {\em Proceedings of the Royal Society of London. Series A, Mathematical and
+  Physical Sciences}, vol.~381, no.~1780, pp.~53--63, 1982.
+
+\bibitem{Sanchis_Gual_2019}
+N.~Sanchis-Gual, C.~Herdeiro, J.~A. Font, E.~Radu, and F.~Di~Giovanni,
+  ``Head-on collisions and orbital mergers of proca stars,'' {\em Physical
+  Review D}, vol.~99, Jan 2019.
+
+\bibitem{Di_Giovanni_2020}
+F.~Di~Giovanni, N.~Sanchis-Gual, P.~Cerdá-Durán, M.~Zilhão, C.~Herdeiro,
+  J.~A. Font, and E.~Radu, ``Dynamical bar-mode instability in spinning bosonic
+  stars,'' {\em Physical Review D}, vol.~102, Dec 2020.
+
+\bibitem{PhysRevD.103.044059}
+J.~Bamber, K.~Clough, P.~G. Ferreira, L.~Hui, and M.~Lagos, ``Growth of
+  accretion driven scalar hair around kerr black holes,'' {\em Phys. Rev. D},
+  vol.~103, p.~044059, Feb 2021.
+
+\bibitem{PhysRevD.96.024004}
+W.~E. East, ``Superradiant instability of massive vector fields around spinning
+  black holes in the relativistic regime,'' {\em Phys. Rev. D}, vol.~96,
+  p.~024004, Jul 2017.
+
+\bibitem{Clough_2021}
+K.~Clough, ``Continuity equations for general matter: applications in numerical
+  relativity,'' {\em Classical and Quantum Gravity}, vol.~38, p.~167001, jul
+  2021.
+
+\bibitem{clough2015grchombo}
+K.~Clough, P.~Figueras, H.~Finkel, M.~Kunesch, E.~A. Lim, and
+  S.~Tunyasuvunakool, ``Grchombo: numerical relativity with adaptive mesh
+  refinement,'' {\em Classical and Quantum Gravity}, vol.~32, no.~24,
+  p.~245011, 2015.
+
+\bibitem{Andrade2021}
+T.~Andrade, L.~A. Salo, J.~C. Aurrekoetxea, J.~Bamber, K.~Clough, R.~Croft,
+  E.~de~Jong, A.~Drew, A.~Duran, P.~G. Ferreira, P.~Figueras, H.~Finkel,
+  T.~Fran\c{c}a, B.-X. Ge, C.~Gu, T.~Helfer, J.~Jäykkä, C.~Joana, M.~Kunesch,
+  K.~Kornet, E.~A. Lim, F.~Muia, Z.~Nazari, M.~Radia, J.~Ripley, P.~Shellard,
+  U.~Sperhake, D.~Traykova, S.~Tunyasuvunakool, Z.~Wang, J.~Y. Widdicombe, and
+  K.~Wong, ``Grchombo: An adaptable numerical relativity code for fundamental
+  physics,'' {\em Journal of Open Source Software}, vol.~6, no.~68, p.~3703,
+  2021.
+
+\bibitem{2008}
+R.~Arnowitt, S.~Deser, and C.~W. Misner, ``Republication of: The dynamics of
+  general relativity,'' {\em General Relativity and Gravitation}, vol.~40,
+  p.~1997–2027, Aug 2008.
+
+\bibitem{gourgoulhon20073+}
+E.~Gourgoulhon, ``3+ 1 formalism and bases of numerical relativity,'' {\em
+  arXiv preprint gr-qc/0703035}, 2007.
+
+\bibitem{baumgarte_shapiro_2010}
+T.~W. Baumgarte and S.~L. Shapiro, {\em Numerical Relativity: Solving
+  Einstein's Equations on the Computer}.
+\newblock Cambridge University Press, 2010.
+
+\bibitem{liebling2017dynamical}
+S.~L. Liebling and C.~Palenzuela, ``Dynamical boson stars,'' {\em Living
+  Reviews in Relativity}, vol.~20, no.~1, p.~5, 2017.
+
+\bibitem{Minamitsuji_2018}
+M.~Minamitsuji, ``Vector boson star solutions with a quartic order
+  self-interaction,'' {\em Physical Review D}, vol.~97, May 2018.
+
+\bibitem{Zilh_o_2015}
+M.~Zilhão, H.~Witek, and V.~Cardoso, ``Nonlinear interactions between black
+  holes and proca fields,'' {\em Classical and Quantum Gravity}, vol.~32,
+  p.~234003, Nov 2015.
+
+\bibitem{alcubierre2008introduction}
+M.~Alcubierre, {\em Introduction to 3+ 1 numerical relativity}, vol.~140.
+\newblock Oxford University Press, 2008.
+
+\bibitem{PhysRevD.67.104005}
+C.~Bona, T.~Ledvinka, C.~Palenzuela, and M.~\ifmmode \check{Z}\else
+  \v{Z}\fi{}\'a\ifmmode~\check{c}\else \v{c}\fi{}ek, ``General-covariant
+  evolution formalism for numerical relativity,'' {\em Phys. Rev. D}, vol.~67,
+  p.~104005, May 2003.
+
+\bibitem{PhysRevD.85.064040}
+D.~Alic, C.~Bona-Casas, C.~Bona, L.~Rezzolla, and C.~Palenzuela, ``Conformal
+  and covariant formulation of the z4 system with constraint-violation
+  damping,'' {\em Phys. Rev. D}, vol.~85, p.~064040, Mar 2012.
+
+\bibitem{PhysRevLett.96.111101}
+M.~Campanelli, C.~O. Lousto, P.~Marronetti, and Y.~Zlochower, ``Accurate
+  evolutions of orbiting black-hole binaries without excision,'' {\em Phys.
+  Rev. Lett.}, vol.~96, p.~111101, Mar 2006.
+
+\bibitem{PhysRevLett.96.111102}
+J.~G. Baker, J.~Centrella, D.-I. Choi, M.~Koppitz, and J.~van Meter,
+  ``Gravitational-wave extraction from an inspiraling configuration of merging
+  black holes,'' {\em Phys. Rev. Lett.}, vol.~96, p.~111102, Mar 2006.
+
+\bibitem{helfer2021malaise}
+T.~Helfer, U.~Sperhake, R.~Croft, M.~Radia, B.-X. Ge, and E.~A. Lim, ``Malaise
+  and remedy of binary boson-star initial data,'' 2021.
+
+\bibitem{Clough_2015}
+K.~Clough, P.~Figueras, H.~Finkel, M.~Kunesch, E.~A. Lim, and
+  S.~Tunyasuvunakool, ``{GRChombo} : Numerical relativity with adaptive mesh
+  refinement,'' {\em Classical and Quantum Gravity}, vol.~32, p.~245011, dec
+  2015.
+
+\bibitem{PresTeukVettFlan92}
+W.~H. Press, S.~A. Teukolsky, W.~T. Vetterling, and B.~P. Flannery, {\em
+  Numerical Recipes in C}.
+\newblock Cambridge, USA: Cambridge University Press, second~ed., 1992.
+
+\end{thebibliography}
