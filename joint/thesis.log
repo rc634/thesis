@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.6)  15 SEP 2022 18:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.6)  23 SEP 2022 13:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -886,7 +886,7 @@ LaTeX Warning: Label `boson:fig:f1' multiply defined.
 
 LaTeX Warning: Label `boson:fig:f2' multiply defined.
 
-) (./malaise.aux) (./q.aux))
+))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
@@ -1075,12 +1075,7 @@ been already used, duplicate ignored
 l.64 ...Adapted Coordinates}{45}{subsection.2.1.5}
                                                   % [1
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.116 ...}Noether Currents}{102}{subsection.4.1.4}
-                                                  % [2])
+])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -1089,7 +1084,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.107 \newpage
-               [3]
+               [2]
 Chapter 1.
 [1
 
@@ -1099,7 +1094,7 @@ Chapter 1.
  (./intro.tex [2
 
 ] [3]
-<pics/pythag_proof2.png, id=541, 256.5585pt x 247.1634pt>
+<pics/pythag_proof2.png, id=404, 256.5585pt x 247.1634pt>
 File: pics/pythag_proof2.png Graphic file (type png)
 <use pics/pythag_proof2.png>
 Package pdftex.def Info: pics/pythag_proof2.png  used on input line 75.
@@ -1142,44 +1137,7 @@ Type  H <return>  for immediate help.
 l.1090 ...h=0.45\textwidth]{pics/scbh_penrose.png}
                                                   
 ? 
-[31]
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.1151 \end{align}
-                  
-? 
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.1151 \end{align}
-                  
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1151 \end{align}
-                  
-? 
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.1151 \end{align}
-                  
-? 
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.1151 \end{align}
-                  
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1151 \end{align}
-                  
-? 
-[32] [33] [34] [35] [36]
+[31] [32] [33] [34] [35] [36]
 Overfull \hbox (5.12526pt too wide) in paragraph at lines 1354--1356
 \T1/lmr/m/n/10.95 Given that the Con-nec-tion sym-bols $\OT1/lmr/m/n/10.95 ^^@[
 ]$ \T1/lmr/m/n/10.95 van-ish ev-ery-where for the met-ric com-po-nents $\OML/lm
@@ -1198,64 +1156,38 @@ Chapter 2.
  (./nr.tex [40
 
 ] [41] [42] [43]
+<png/ADM_screeny.png, id=1058, 916.42375pt x 900.36375pt>
+File: png/ADM_screeny.png Graphic file (type png)
+<use png/ADM_screeny.png>
+Package pdftex.def Info: png/ADM_screeny.png  used on input line 164.
+(pdftex.def)             Requested size: 322.61168pt x 316.95924pt.
 
-LaTeX Warning: File `adm.png' not found on input line 162.
-
-
-! Package pdftex.def Error: File `adm.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.162 ...degraphics[width=0.65\textwidth]{adm.png}
-                                                  
-? 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[44] [45] [46]
+[44] [45 <./png/ADM_screeny.png>] [46]
 
-LaTeX Warning: Citation `harmonic' on page 47 undefined on input line 222.
+LaTeX Warning: Citation `harmonic' on page 47 undefined on input line 224.
 
 
-LaTeX Warning: Citation `z4' on page 47 undefined on input line 228.
+LaTeX Warning: Citation `z4' on page 47 undefined on input line 230.
 
 [47] [48]
-
-LaTeX Warning: File `schwarzschild2.png' not found on input line 284.
-
-
-! Package pdftex.def Error: File `schwarzschild2.png' not found: using draft se
-tting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.284 ...{schwarzschild2.png}\label{boson:fig:f1}}
-                                                   \label{nr:fig:eddington-f...
-
-? 
-
-LaTeX Warning: File `schwarzschild.png' not found on input line 286.
-
-
-! Package pdftex.def Error: File `schwarzschild.png' not found: using draft set
-ting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.286 ...]{schwarzschild.png}\label{boson:fig:f2}}
-                                                   \label{nr:fig:isotropic}
-? 
-[49]
-<svg/foliation.png, id=1297, 462.52798pt x 220.13441pt>
+<png/sc_penrose.png, id=1154, 419.8887pt x 272.9397pt>
+File: png/sc_penrose.png Graphic file (type png)
+<use png/sc_penrose.png>
+Package pdftex.def Info: png/sc_penrose.png  used on input line 294.
+(pdftex.def)             Requested size: 213.4184pt x 138.73094pt.
+<png/iso_penrose.png, id=1155, 1284.8pt x 872.25874pt>
+File: png/iso_penrose.png Graphic file (type png)
+<use png/iso_penrose.png>
+Package pdftex.def Info: png/iso_penrose.png  used on input line 296.
+(pdftex.def)             Requested size: 248.16516pt x 168.47266pt.
+ [49 <./png/sc_penrose.png> <./png/iso_penrose.png>]
+<svg/foliation.png, id=1165, 462.52798pt x 220.13441pt>
 File: svg/foliation.png Graphic file (type png)
 <use svg/foliation.png>
-Package pdftex.def Info: svg/foliation.png  used on input line 302.
+Package pdftex.def Info: svg/foliation.png  used on input line 312.
 (pdftex.def)             Requested size: 446.69426pt x 212.60976pt.
  [50 <./svg/foliation.png>]) [51]
 \openout2 = `bosonstars.aux'.
@@ -1264,55 +1196,67 @@ Package pdftex.def Info: svg/foliation.png  used on input line 302.
 
 
 
-] [53] [54]
-! Misplaced alignment tab character &.
-l.139 ...a_t} \mathcal{J}^0 \dd x^3 \right]\dd t &
-                                                  = 0,
-? 
-[55] [56] [57] [58]) [59]
+] [53] [54] [55] [56] [57] [58]) [59]
+Chapter 3.
+[60
+
+
+
+]
 \openout2 = `grchombo.aux'.
 
- (./grchombo.tex [60
+ (./grchombo.tex [61
 
+] [62] [63] [64]
 
+! LaTeX Error: Unicode character 本 (U+672C)
+               not set up for use with LaTeX.
 
-] [61]
-<png/bosonstar_groundstate.png, id=1518, 1284.8pt x 963.6pt>
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 ...ke a new, gradient sensitive variable 本
+                                                  $\aleph$,
+? 
+
+LaTeX Warning: Reference `q:sec:q' on page 65 undefined on input line 161.
+
+[65] [66] [67]
+<png/bosonstar_groundstate.png, id=1464, 1284.8pt x 963.6pt>
 File: png/bosonstar_groundstate.png Graphic file (type png)
 <use png/bosonstar_groundstate.png>
-Package pdftex.def Info: png/bosonstar_groundstate.png  used on input line 97.
+Package pdftex.def Info: png/bosonstar_groundstate.png  used on input line 237.
+
 (pdftex.def)             Requested size: 397.06577pt x 297.8013pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<png/bosonstar_excitedstate.png, id=1520, 1284.8pt x 963.6pt>
+<png/bosonstar_excitedstate.png, id=1466, 1284.8pt x 963.6pt>
 File: png/bosonstar_excitedstate.png Graphic file (type png)
 <use png/bosonstar_excitedstate.png>
-Package pdftex.def Info: png/bosonstar_excitedstate.png  used on input line 103
+Package pdftex.def Info: png/bosonstar_excitedstate.png  used on input line 243
 .
 (pdftex.def)             Requested size: 397.06577pt x 297.8013pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<png/ADM_vs_PC.png, id=1523, 1284.8pt x 963.6pt>
+<png/ADM_vs_PC.png, id=1469, 1284.8pt x 963.6pt>
 File: png/ADM_vs_PC.png Graphic file (type png)
 <use png/ADM_vs_PC.png>
-Package pdftex.def Info: png/ADM_vs_PC.png  used on input line 119.
+Package pdftex.def Info: png/ADM_vs_PC.png  used on input line 259.
 (pdftex.def)             Requested size: 397.06577pt x 297.8013pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<png/ADM_vs_r99.png, id=1524, 1284.8pt x 963.6pt>
+<png/ADM_vs_r99.png, id=1470, 1284.8pt x 963.6pt>
 File: png/ADM_vs_r99.png Graphic file (type png)
 <use png/ADM_vs_r99.png>
-Package pdftex.def Info: png/ADM_vs_r99.png  used on input line 125.
+Package pdftex.def Info: png/ADM_vs_r99.png  used on input line 265.
 (pdftex.def)             Requested size: 397.06577pt x 297.8013pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: File `mod_phi_nice0000.png' not found on input line 139.
+LaTeX Warning: File `mod_phi_nice0000.png' not found on input line 279.
 
 
 ! Package pdftex.def Error: File `mod_phi_nice0000.png' not found: using draft 
@@ -1322,11 +1266,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.139 ...od_phi_nice0000.png}\label{boson:fig:f5}}
+l.279 ...od_phi_nice0000.png}\label{boson:fig:f5}}
                                                   
 ? 
 
-LaTeX Warning: File `modphimax.png' not found on input line 141.
+LaTeX Warning: File `modphimax.png' not found on input line 281.
 
 
 ! Package pdftex.def Error: File `modphimax.png' not found: using draft setting
@@ -1336,15 +1280,17 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141 ...idth]{modphimax.png}\label{boson:fig:f6}}
+l.281 ...idth]{modphimax.png}\label{boson:fig:f6}}
                                                   
 ? 
+[68 <./png/bosonstar_groundstate.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[62] [63 <./png/bosonstar_groundstate.png> <./png/bosonstar_excitedstate.png>]
+[69 <./png/bosonstar_excitedstate.png> <./png/ADM_vs_PC.png>] [70 <./png/ADM_vs
+_r99.png>]
 
-LaTeX Warning: File `N.png' not found on input line 148.
+LaTeX Warning: File `N.png' not found on input line 288.
 
 
 ! Package pdftex.def Error: File `N.png' not found: using draft setting.
@@ -1353,11 +1299,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.148 ....5\textwidth]{N.png}\label{boson:fig:f7}}
+l.288 ....5\textwidth]{N.png}\label{boson:fig:f7}}
                                                   
 ? 
 
-LaTeX Warning: File `H.png' not found on input line 150.
+LaTeX Warning: File `H.png' not found on input line 290.
 
 
 ! Package pdftex.def Error: File `H.png' not found: using draft setting.
@@ -1366,15 +1312,12 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.150 ....5\textwidth]{H.png}\label{boson:fig:f8}}
+l.290 ....5\textwidth]{H.png}\label{boson:fig:f8}}
                                                   
 ? 
+[71]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[64 <./png/ADM_vs_PC.png> <./png/ADM_vs_r99.png>] [65]
-
-LaTeX Warning: File `headon_bs/chi0000.png' not found on input line 173.
+LaTeX Warning: File `headon_bs/chi0000.png' not found on input line 321.
 
 
 ! Package pdftex.def Error: File `headon_bs/chi0000.png' not found: using draft
@@ -1384,11 +1327,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.173 ...adon_bs/chi0000.png}\label{boson:fig:f9}}
+l.321 ...adon_bs/chi0000.png}\label{boson:fig:f9}}
                                                   
 ? 
 
-LaTeX Warning: File `headon_bs/modphi0000.png' not found on input line 175.
+LaTeX Warning: File `headon_bs/modphi0000.png' not found on input line 323.
 
 
 ! Package pdftex.def Error: File `headon_bs/modphi0000.png' not found: using dr
@@ -1398,11 +1341,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.175 ..._bs/modphi0000.png}\label{boson:fig:f10}}
+l.323 ..._bs/modphi0000.png}\label{boson:fig:f10}}
                                                   
 ? 
 
-LaTeX Warning: File `headon_bs/modphi0003.png' not found on input line 180.
+LaTeX Warning: File `headon_bs/modphi0003.png' not found on input line 328.
 
 
 ! Package pdftex.def Error: File `headon_bs/modphi0003.png' not found: using dr
@@ -1412,11 +1355,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.180 ..._bs/modphi0003.png}\label{boson:fig:f11}}
+l.328 ..._bs/modphi0003.png}\label{boson:fig:f11}}
                                                   
 ? 
 
-LaTeX Warning: File `headon_bs/modphi0004.png' not found on input line 182.
+LaTeX Warning: File `headon_bs/modphi0004.png' not found on input line 330.
 
 
 ! Package pdftex.def Error: File `headon_bs/modphi0004.png' not found: using dr
@@ -1426,11 +1369,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.182 ..._bs/modphi0004.png}\label{boson:fig:f12}}
+l.330 ..._bs/modphi0004.png}\label{boson:fig:f12}}
                                                   
 ? 
 
-LaTeX Warning: File `headon_bs/phi_re0004.png' not found on input line 187.
+LaTeX Warning: File `headon_bs/phi_re0004.png' not found on input line 335.
 
 
 ! Package pdftex.def Error: File `headon_bs/phi_re0004.png' not found: using dr
@@ -1440,11 +1383,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.187 ..._bs/phi_re0004.png}\label{boson:fig:f13}}
+l.335 ..._bs/phi_re0004.png}\label{boson:fig:f13}}
                                                   
 ? 
 
-LaTeX Warning: File `headon_bs/phi_re_perp0004.png' not found on input line 189
+LaTeX Warning: File `headon_bs/phi_re_perp0004.png' not found on input line 337
 .
 
 
@@ -1455,7 +1398,7 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.189 ...hi_re_perp0004.png}\label{boson:fig:f14}}
+l.337 ...hi_re_perp0004.png}\label{boson:fig:f14}}
                                                   
 ? 
 
@@ -1465,10 +1408,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: File `LMR/chi0000.png' not found on input line 197.
+LaTeX Warning: File `LMR/chi0000.png' not found on input line 345.
 
 
 ! Package pdftex.def Error: File `LMR/chi0000.png' not found: using draft setti
@@ -1478,11 +1418,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.197 ...h]{LMR/chi0000.png}\label{boson:fig:f15}}
+l.345 ...h]{LMR/chi0000.png}\label{boson:fig:f15}}
                                                   
 ? 
 
-LaTeX Warning: File `LMR/modphi0000.png' not found on input line 199.
+LaTeX Warning: File `LMR/modphi0000.png' not found on input line 347.
 
 
 ! Package pdftex.def Error: File `LMR/modphi0000.png' not found: using draft se
@@ -1492,14 +1432,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.199 ...LMR/modphi0000.png}\label{boson:fig:f16}}
+l.347 ...LMR/modphi0000.png}\label{boson:fig:f16}}
                                                   
 ? 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: File `LMR/chi0005.png' not found on input line 204.
+LaTeX Warning: File `LMR/chi0005.png' not found on input line 352.
 
 
 ! Package pdftex.def Error: File `LMR/chi0005.png' not found: using draft setti
@@ -1509,11 +1449,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.204 ...h]{LMR/chi0005.png}\label{boson:fig:f17}}
+l.352 ...h]{LMR/chi0005.png}\label{boson:fig:f17}}
                                                   
 ? 
 
-LaTeX Warning: File `LMR/modphi0005.png' not found on input line 206.
+LaTeX Warning: File `LMR/modphi0005.png' not found on input line 354.
 
 
 ! Package pdftex.def Error: File `LMR/modphi0005.png' not found: using draft se
@@ -1523,11 +1463,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.206 ...LMR/modphi0005.png}\label{boson:fig:f18}}
+l.354 ...LMR/modphi0005.png}\label{boson:fig:f18}}
                                                   
 ? 
 
-LaTeX Warning: File `LMR/phi_re0000.png' not found on input line 208.
+LaTeX Warning: File `LMR/phi_re0000.png' not found on input line 356.
 
 
 ! Package pdftex.def Error: File `LMR/phi_re0000.png' not found: using draft se
@@ -1537,14 +1477,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.208 ...LMR/phi_re0000.png}\label{boson:fig:f19}}
+l.356 ...LMR/phi_re0000.png}\label{boson:fig:f19}}
                                                   
 ? 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: File `headon/chi0000.png' not found on input line 214.
+LaTeX Warning: File `headon/chi0000.png' not found on input line 362.
 
 
 ! Package pdftex.def Error: File `headon/chi0000.png' not found: using draft se
@@ -1554,11 +1494,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.214 ...headon/chi0000.png}\label{boson:fig:f20}}
+l.362 ...headon/chi0000.png}\label{boson:fig:f20}}
                                                   
 ? 
 
-LaTeX Warning: File `headon/mod_phi0000.png' not found on input line 216.
+LaTeX Warning: File `headon/mod_phi0000.png' not found on input line 364.
 
 
 ! Package pdftex.def Error: File `headon/mod_phi0000.png' not found: using draf
@@ -1568,11 +1508,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.216 ...on/mod_phi0000.png}\label{boson:fig:f21}}
+l.364 ...on/mod_phi0000.png}\label{boson:fig:f21}}
                                                   
 ? 
 
-LaTeX Warning: File `headon/phi_re0000.png' not found on input line 221.
+LaTeX Warning: File `headon/phi_re0000.png' not found on input line 369.
 
 
 ! Package pdftex.def Error: File `headon/phi_re0000.png' not found: using draft
@@ -1582,11 +1522,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.221 ...don/phi_re0000.png}\label{boson:fig:f22}}
+l.369 ...don/phi_re0000.png}\label{boson:fig:f22}}
                                                   
 ? 
 
-LaTeX Warning: File `headon/mod_phi0007.png' not found on input line 223.
+LaTeX Warning: File `headon/mod_phi0007.png' not found on input line 371.
 
 
 ! Package pdftex.def Error: File `headon/mod_phi0007.png' not found: using draf
@@ -1596,7 +1536,7 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.223 ...on/mod_phi0007.png}\label{boson:fig:f23}}
+l.371 ...on/mod_phi0007.png}\label{boson:fig:f23}}
                                                   
 ? 
 
@@ -1605,10 +1545,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[66]
+[72] [73]
 
 LaTeX Warning: File `inspiral/mod_phi_inspiral_nice0000.png' not found on input
- line 236.
+ line 384.
 
 
 ! Package pdftex.def Error: File `inspiral/mod_phi_inspiral_nice0000.png' not f
@@ -1618,12 +1558,12 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.236 ...piral_nice0000.png}\label{boson:fig:f24}}
+l.384 ...piral_nice0000.png}\label{boson:fig:f24}}
                                                   
 ? 
 
 LaTeX Warning: File `inspiral/mod_phi_inspiral_nice0002.png' not found on input
- line 238.
+ line 386.
 
 
 ! Package pdftex.def Error: File `inspiral/mod_phi_inspiral_nice0002.png' not f
@@ -1633,7 +1573,7 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.238 ...piral_nice0002.png}\label{boson:fig:f25}}
+l.386 ...piral_nice0002.png}\label{boson:fig:f25}}
                                                   
 ? 
 
@@ -1641,7 +1581,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: File `inspiral/phi_inspiral_nice0000.png' not found on input lin
-e 243.
+e 391.
 
 
 ! Package pdftex.def Error: File `inspiral/phi_inspiral_nice0000.png' not found
@@ -1651,12 +1591,12 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 ...piral_nice0000.png}\label{boson:fig:f26}}
+l.391 ...piral_nice0000.png}\label{boson:fig:f26}}
                                                   
 ? 
 
 LaTeX Warning: File `inspiral/phi_inspiral_nice0002.png' not found on input lin
-e 245.
+e 393.
 
 
 ! Package pdftex.def Error: File `inspiral/phi_inspiral_nice0002.png' not found
@@ -1666,14 +1606,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.245 ...piral_nice0002.png}\label{boson:fig:f27}}
+l.393 ...piral_nice0002.png}\label{boson:fig:f27}}
                                                   
 ? 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: File `inspiral/N.png' not found on input line 250.
+LaTeX Warning: File `inspiral/N.png' not found on input line 398.
 
 
 ! Package pdftex.def Error: File `inspiral/N.png' not found: using draft settin
@@ -1683,11 +1623,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.250 ...th]{inspiral/N.png}\label{boson:fig:f28}}
+l.398 ...th]{inspiral/N.png}\label{boson:fig:f28}}
                                                   
 ? 
 
-LaTeX Warning: File `inspiral/GW.png' not found on input line 252.
+LaTeX Warning: File `inspiral/GW.png' not found on input line 400.
 
 
 ! Package pdftex.def Error: File `inspiral/GW.png' not found: using draft setti
@@ -1697,1331 +1637,31 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.252 ...h]{inspiral/GW.png}\label{boson:fig:f29}}
+l.400 ...h]{inspiral/GW.png}\label{boson:fig:f29}}
                                                   
 ? 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[67] [68] [69]) [70] [71] [72]
-Chapter 3.
-[73
-
-
-
-]
-\openout2 = `malaise.aux'.
-
- (./malaise.tex
-
-LaTeX Warning: Citation `Helfer:2018vtq' on page 74 undefined on input line 11.
-
-
-
-LaTeX Warning: Citation `Abbott:2016blz' on page 74 undefined on input line 61.
-
-
-
-LaTeX Warning: Citation `LIGOScientific:2018mvr' on page 74 undefined on input 
-line 62.
-
-
-LaTeX Warning: Citation `LIGOScientific:2020ibl' on page 74 undefined on input 
-line 62.
-
-
-LaTeX Warning: Citation `Berti:2015itd' on page 74 undefined on input line 66.
-
-
-LaTeX Warning: Citation `TheLIGOScientific:2016src' on page 74 undefined on inp
-ut line 66.
-
-
-LaTeX Warning: Citation `Abbott:2018lct' on page 74 undefined on input line 66.
-
-
-
-LaTeX Warning: Citation `LIGOScientific:2019fpa' on page 74 undefined on input 
-line 66.
-
-
-LaTeX Warning: Citation `LIGOScientific:2020tif' on page 74 undefined on input 
-line 66.
-
-
-LaTeX Warning: Citation `Moore:2021eok' on page 74 undefined on input line 66.
-
-
-LaTeX Warning: Citation `Trifiro:2015zda' on page 74 undefined on input line 68
-.
-
-
-LaTeX Warning: Citation `Belczynski:2017gds' on page 74 undefined on input line
- 68.
-
-
-LaTeX Warning: Citation `LIGOScientific:2020kqk' on page 74 undefined on input 
-line 68.
-
-
-LaTeX Warning: Citation `Baibhav:2020xdf' on page 74 undefined on input line 68
-.
-
-
-LaTeX Warning: Citation `Gerosa:2021mno' on page 74 undefined on input line 68.
-
-
-
-LaTeX Warning: Citation `LIGOScientific:2017adf' on page 74 undefined on input 
-line 70.
-
-
-LaTeX Warning: Citation `LIGOScientific:2019zcs' on page 74 undefined on input 
-line 70.
-
-
-LaTeX Warning: Citation `Barack:2018yly' on page 74 undefined on input line 72.
-
-
-
-LaTeX Warning: Citation `TheLIGOScientific:2017qsa' on page 74 undefined on inp
-ut line 75.
-
-
-LaTeX Warning: Citation `Monitor:2017mdv' on page 74 undefined on input line 75
-.
-
-
-LaTeX Warning: Citation `Cardoso:2014uka' on page 74 undefined on input line 79
-.
-
-
-LaTeX Warning: Citation `Barack:2018yly' on page 74 undefined on input line 79.
-
-
-
-LaTeX Warning: Citation `Brito:2015oca' on page 74 undefined on input line 82.
-
-
-LaTeX Warning: Citation `Wheeler:1955zz' on page 74 undefined on input line 87.
-
-
-
-LaTeX Warning: Citation `Baumgarte:2021skc' on page 74 undefined on input line 
-100.
-
-
-LaTeX Warning: Citation `Wheeler:1955zz' on page 74 undefined on input line 104
-.
-
-
-LaTeX Warning: Citation `Feinblum:1968nwc' on page 74 undefined on input line 1
-14.
-
-
-LaTeX Warning: Citation `Kaup:1968zz' on page 74 undefined on input line 114.
-
-
-LaTeX Warning: Citation `Ruffini:1969qy' on page 74 undefined on input line 114
-.
-
-
-LaTeX Warning: Citation `Brito:2015pxa' on page 74 undefined on input line 124.
-
-
-
-LaTeX Warning: Citation `Alcubierre:2018ahf' on page 74 undefined on input line
- 126.
-
-
-LaTeX Warning: Citation `Choptuik:2019zji' on page 74 undefined on input line 1
-26.
-
-
-LaTeX Warning: Citation `Pretorius:2005gq' on page 74 undefined on input line 1
-29.
-
-
-LaTeX Warning: Citation `Campanelli:2005dd' on page 74 undefined on input line 
-129.
-
-
-LaTeX Warning: Citation `Baker:2005vv' on page 74 undefined on input line 129.
-
-
-LaTeX Warning: Citation `Sperhake:2014wpa' on page 74 undefined on input line 1
-30.
-
-
-LaTeX Warning: Citation `Tolman:1939jz' on page 74 undefined on input line 142.
-
-
-
-LaTeX Warning: Citation `Oppenheimer:1939ne' on page 74 undefined on input line
- 142.
-
-
-LaTeX Warning: Citation `Breit:1983nr' on page 74 undefined on input line 145.
-
-
-LaTeX Warning: Citation `Gleiser:1988ih' on page 74 undefined on input line 145
-.
-
-
-LaTeX Warning: Citation `Seidel:1990jh' on page 74 undefined on input line 145.
-
-
-
-LaTeX Warning: Citation `Lee:1991ax' on page 74 undefined on input line 148.
-
-
-LaTeX Warning: Citation `Jetzer:1991jr' on page 74 undefined on input line 148.
-
-
-
-LaTeX Warning: Citation `Liddle:1992fmk' on page 74 undefined on input line 148
-.
-
-
-LaTeX Warning: Citation `Balakrishna:1997ej' on page 74 undefined on input line
- 151.
-
-
-LaTeX Warning: Citation `Colpi:1986ye' on page 74 undefined on input line 161.
-
-
-LaTeX Warning: Citation `Lee:1986ts' on page 74 undefined on input line 161.
-
-
-LaTeX Warning: Citation `Schunck:1999zu' on page 74 undefined on input line 161
-.
-
-
-LaTeX Warning: Citation `Hartmann:2012da' on page 74 undefined on input line 16
-1.
-
-
-LaTeX Warning: Citation `Bustillo:2020syj' on page 74 undefined on input line 1
-64.
-
-
-LaTeX Warning: Citation `Sennett:2017etc' on page 74 undefined on input line 16
-8.
-
-
-LaTeX Warning: Citation `DiGiovanni:2020ror' on page 74 undefined on input line
- 168.
-
-
-LaTeX Warning: Citation `Toubiana:2020lzd' on page 74 undefined on input line 1
-68.
-
-[74
-
-]
-
-LaTeX Warning: Citation `Kobayashi:1994qi' on page 75 undefined on input line 1
-76.
-
-
-LaTeX Warning: Citation `Schunck:1996he' on page 75 undefined on input line 177
-.
-
-
-LaTeX Warning: Citation `Ryan:1996nk' on page 75 undefined on input line 182.
-
-
-LaTeX Warning: Citation `Yoshida:1997jq' on page 75 undefined on input line 182
-.
-
-
-LaTeX Warning: Citation `Yoshida:1997qf' on page 75 undefined on input line 182
-.
-
-
-LaTeX Warning: Citation `Yoshida:1997nd' on page 75 undefined on input line 182
-.
-
-
-LaTeX Warning: Citation `Schunck:1999pm' on page 75 undefined on input line 182
-.
-
-
-LaTeX Warning: Citation `Kleihaus:2005me' on page 75 undefined on input line 18
-2.
-
-
-LaTeX Warning: Citation `Kleihaus:2007vk' on page 75 undefined on input line 18
-2.
-
-
-LaTeX Warning: Citation `Kleihaus:2011sx' on page 75 undefined on input line 18
-2.
-
-
-LaTeX Warning: Citation `Collodel:2017biu' on page 75 undefined on input line 1
-82.
-
-
-LaTeX Warning: Citation `Herdeiro:2019mbz' on page 75 undefined on input line 1
-85.
-
-
-LaTeX Warning: Citation `Sanchis-Gual:2019ljs' on page 75 undefined on input li
-ne 191.
-
-
-LaTeX Warning: Citation `DiGiovanni:2020ror' on page 75 undefined on input line
- 191.
-
-
-LaTeX Warning: Citation `Dmitriev:2021utv' on page 75 undefined on input line 1
-93.
-
-
-LaTeX Warning: Citation `Siemonsen:2020hcg' on page 75 undefined on input line 
-196.
-
-
-LaTeX Warning: Citation `Mielke:1997re' on page 75 undefined on input line 199.
-
-
-
-LaTeX Warning: Citation `Mielke:2000mh' on page 75 undefined on input line 199.
-
-
-
-LaTeX Warning: Citation `Mundim:2010hi' on page 75 undefined on input line 199.
-
-
-
-LaTeX Warning: Citation `Liebling:2012fv' on page 75 undefined on input line 19
-9.
-
-
-LaTeX Warning: Citation `Palenzuela:2006wp' on page 75 undefined on input line 
-204.
-
-
-LaTeX Warning: Citation `Choptuik:2009ww' on page 75 undefined on input line 20
-5.
-
-
-LaTeX Warning: Citation `Bezares:2017mzk' on page 75 undefined on input line 20
-5.
-
-
-LaTeX Warning: Citation `Palenzuela:2007dm' on page 75 undefined on input line 
-214.
-
-
-LaTeX Warning: Citation `Palenzuela:2017kcg' on page 75 undefined on input line
- 214.
-
-
-LaTeX Warning: Citation `Helfer:2018vtq' on page 75 undefined on input line 236
-.
-
-
-! LaTeX Error: No counter 'count' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.242 ...us0.2ex minus0.1ex \itemsep0ex plus0.2ex}
-                                                  
-? 
-
-! LaTeX Error: No counter 'count' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.243   \item A
-               n adjustment of the superposition procedure, given
-? 
-! Missing number, treated as zero.
-<to be read again> 
-                   \c@count 
-l.243   \item A
-               n adjustment of the superposition procedure, given
-? 
-
-! LaTeX Error: No counter 'count' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.248   \item I
-               n the head-on collision of mini BS binaries with rather low c...
-
-? 
-! Missing number, treated as zero.
-<to be read again> 
-                   \c@count 
-l.248   \item I
-               n the head-on collision of mini BS binaries with rather low c...
-
-? 
-
-LaTeX Warning: Citation `Arnowitt:1962hi' on page 75 undefined on input line 25
-4.
-
-
-! LaTeX Error: No counter 'count' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.261   \item I
-               n collisions of highly compact BSs with solitonic potentials,
-? 
-! Missing number, treated as zero.
-<to be read again> 
-                   \c@count 
-l.261   \item I
-               n collisions of highly compact BSs with solitonic potentials,
-? 
-[75]
-
-! LaTeX Error: No counter 'count' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.273   \item W
-               e have verified through evolutions of single boosted BSs that...
-
-? 
-! Missing number, treated as zero.
-<to be read again> 
-                   \c@count 
-l.273   \item W
-               e have verified through evolutions of single boosted BSs that...
-
-? 
-! Undefined control sequence.
-l.381   + V(\varphi)\right] \right\} \du
-                                        ^4 x\,,
-? 
-
-LaTeX Warning: Citation `Lee:1986ts' on page 76 undefined on input line 402.
-
-! Undefined control sequence.
-l.420   \defeq
-               \varphi \frac{\du}{\du |\varphi|^2}
-? 
-! Undefined control sequence.
-<argument> \du 
-               
-l.420   \defeq \varphi \frac{\du}{\du |\varphi|^2}
-                                                  
-? 
-! Undefined control sequence.
-<argument> \du 
-               |\varphi |^2
-l.420   \defeq \varphi \frac{\du}{\du |\varphi|^2}
-                                                  
-? 
-
-LaTeX Warning: Citation `Arnowitt:1962hi' on page 76 undefined on input line 43
-9.
-
-
-LaTeX Warning: Citation `York1979' on page 76 undefined on input line 439.
-
-
-LaTeX Warning: Citation `Gourgoulhon:2007ue' on page 76 undefined on input line
- 440.
-
-! Undefined control sequence.
-l.445   \du
-            s^2 = g_{\alpha\beta}\du x^{\alpha}\du x^{\beta}
-? 
-! Undefined control sequence.
-l.445   \du s^2 = g_{\alpha\beta}\du
-                                     x^{\alpha}\du x^{\beta}
-? 
-! Undefined control sequence.
-l.445   \du s^2 = g_{\alpha\beta}\du x^{\alpha}\du
-                                                   x^{\beta}
-? 
-! Undefined control sequence.
-l.446   = -\alpha^2 \du
-                        t^2 + \gamma_{mn}(\du x^m+\beta^m \du t)
-? 
-! Undefined control sequence.
-l.446   = -\alpha^2 \du t^2 + \gamma_{mn}(\du
-                                              x^m+\beta^m \du t)
-? 
-! Undefined control sequence.
-l.446 ...\du t^2 + \gamma_{mn}(\du x^m+\beta^m \du
-                                                   t)
-? 
-! Undefined control sequence.
-l.447   (\du
-             x^n + \beta^n \du t)\,,
-? 
-! Undefined control sequence.
-l.447   (\du x^n + \beta^n \du
-                               t)\,,
-? 
-[76]
-
-LaTeX Warning: Citation `Baumgarte:1998te' on page 77 undefined on input line 4
-69.
-
-
-LaTeX Warning: Citation `Shibata:1995we' on page 77 undefined on input line 469
-.
-
-
-LaTeX Warning: Citation `Nakamura:1987zz' on page 77 undefined on input line 46
-9.
-
-
-LaTeX Warning: Citation `Cardoso:2014uka' on page 77 undefined on input line 48
-4.
-
-[77]
-! Undefined control sequence.
-l.649 where $V'=\du
-                    V/\du (|\varphi|^2)$
-? 
-! Undefined control sequence.
-l.649 where $V'=\du V/\du
-                          (|\varphi|^2)$
-? 
-
-LaTeX Warning: Citation `Campanelli:2005dd' on page 78 undefined on input line 
-654.
-
-
-LaTeX Warning: Citation `Baker:2005vv' on page 78 undefined on input line 654.
-
-! Undefined control sequence.
-<argument>  &\mathcal {H} \defeq 
-                                 \mathcal {R}+K^2-K^{mn}K_{mn} - 16\pi \rho ...
-l.699 \end{align}
-                 
-? 
-! Undefined control sequence.
-<argument> ...al:eq:ham} \\ &\mathcal {M}_i\defeq 
-                                                  D_i K - D_m K^m{}_i + 8\pi...
-l.699 \end{align}
-                 
-? 
-! Undefined control sequence.
-<argument>  &\mathcal {H} \defeq 
-                                 \mathcal {R}+K^2-K^{mn}K_{mn} - 16\pi \rho ...
-l.699 \end{align}
-                 
-? 
-! Undefined control sequence.
-<argument> ...al:eq:ham} \\ &\mathcal {M}_i\defeq 
-                                                  D_i K - D_m K^m{}_i + 8\pi...
-l.699 \end{align}
-                 
-? 
-
-LaTeX Warning: Citation `Sperhake:2006cy' on page 78 undefined on input line 70
-8.
-
-
-LaTeX Warning: Citation `Allen:1999' on page 78 undefined on input line 709.
-
-
-LaTeX Warning: Citation `Schnetter:2003rb' on page 78 undefined on input line 7
-14.
-
-
-LaTeX Warning: Citation `Thornburg:1995cp' on page 78 undefined on input line 7
-16.
-
-
-LaTeX Warning: Citation `Thornburg:2003sf' on page 78 undefined on input line 7
-16.
-
-! Undefined control sequence.
-l.735   \du
-            s^2 =
-? 
-! Undefined control sequence.
-l.736   -e^{2\Phi} \du
-                       t^2
-? 
-! Undefined control sequence.
-l.737   + \left(1-\frac{2m}{r}\right)^{-1} \du
-                                               r^2
-? 
-! Undefined control sequence.
-l.740   \du
-            \theta^2
-? 
-! Undefined control sequence.
-l.741   + \sin^2\theta \du
-                           \phi^2
-? 
-! Undefined control sequence.
-l.754   e^{\iu
-               \omega t}\,,~~~~~\omega = \mathrm{const}\in \mathbb{R}\,.
-? 
-[78]
-! Undefined control sequence.
-<argument> \du 
-               \hat {V}
-l.844 \end{align}
-                 
-? 
-! Undefined control sequence.
-<argument> \du 
-               (\hat {A})^2
-l.844 \end{align}
-                 
-? 
-! Undefined control sequence.
-<argument> \du 
-               \hat {V}
-l.844 \end{align}
-                 
-? 
-! Undefined control sequence.
-<argument> \du 
-               (\hat {A})^2
-l.844 \end{align}
-                 
-? 
-
-LaTeX Warning: Citation `Balakrishna:1997ej' on page 79 undefined on input line
- 868.
-
-Package epstopdf Info: Source file: <malaise_source/statBS.eps>
-(epstopdf)                    date: 2022-09-14 12:04:23
-(epstopdf)                    size: 30621 bytes
-(epstopdf)             Output file: <malaise_source/statBS-eps-converted-to.pdf
->
-(epstopdf)             Command: <repstopdf --outfile=malaise_source/statBS-eps-
-converted-to.pdf malaise_source/statBS.eps>
-(epstopdf)             \includegraphics on input line 902.
-runsystem(repstopdf --outfile=malaise_source/statBS-eps-converted-to.pdf malais
-e_source/statBS.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <malaise_source/statBS-eps-converted-to.pdf
->.
-
-! Package pdftex.def Error: File `malaise_source/statBS-eps-converted-to.pdf' n
-ot found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.902 ...s[width=250pt]{malaise_source/statBS.eps}
-                                                  
-? 
-[79pdfTeX warning (ext4): destination with the same identifier (name{equation.3
-.2.24}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.967 \begin{equation}
-                      ]
-! Undefined control sequence.
-l.968   \mu^2 \du
-                  s^2 = -e^{2\Phi}\du \hat{t}^2+\psi^4 (\du \hat{R}^2 + \hat...
-
-? 
-! Undefined control sequence.
-l.968   \mu^2 \du s^2 = -e^{2\Phi}\du
-                                      \hat{t}^2+\psi^4 (\du \hat{R}^2 + \hat...
-
-? 
-! Undefined control sequence.
-l.968 ...s^2 = -e^{2\Phi}\du \hat{t}^2+\psi^4 (\du
-                                                   \hat{R}^2 + \hat{R}^2\du ...
-
-? 
-! Undefined control sequence.
-l.968 ...t}^2+\psi^4 (\du \hat{R}^2 + \hat{R}^2\du
-                                                   \Omega^2)\,,
-? 
-! Undefined control sequence.
-<recently read> \du 
-                    
-l.972 where $\du
-                 \Omega^2=\du\theta^2+\sin^2\theta\,\du \phi^2$. Comparing this
-
-? 
-! Undefined control sequence.
-l.972 where $\du \Omega^2=\du
-                             \theta^2+\sin^2\theta\,\du \phi^2$. Comparing this
-
-? 
-! Undefined control sequence.
-l.972 ...du \Omega^2=\du\theta^2+\sin^2\theta\,\du
-                                                   \phi^2$. Comparing this
-? 
-! Undefined control sequence.
-l.978   \psi^4\du
-                  \hat{R}^2=
-? 
-! Undefined control sequence.
-l.979   X^2 \du
-                \hat{r}^2~~~\text{with}~~~
-? 
-! Undefined control sequence.
-<argument> \du 
-               f
-l.986   \frac{\du f}{\du \hat{r}}
-                                  = \frac{f}{\hat{r}}(X-1)\,,
-? 
-! Undefined control sequence.
-<argument> \du 
-               \hat {r}
-l.986   \frac{\du f}{\du \hat{r}}
-                                  = \frac{f}{\hat{r}}(X-1)\,,
-? 
-! Undefined control sequence.
-<recently read> \du 
-                    
-l.1010 $\du
-            \hat{R}^2 + \hat{R}^2\du \Omega^2=\du \hat{x}^2+\du \hat{y}^2+\d...
-
-? 
-! Undefined control sequence.
-l.1010 $\du \hat{R}^2 + \hat{R}^2\du
-                                     \Omega^2=\du \hat{x}^2+\du \hat{y}^2+\d...
-
-? 
-! Undefined control sequence.
-l.1010 $\du \hat{R}^2 + \hat{R}^2\du \Omega^2=\du
-                                                  \hat{x}^2+\du \hat{y}^2+\d...
-
-? 
-! Undefined control sequence.
-l.1010 ... \hat{R}^2\du \Omega^2=\du \hat{x}^2+\du
-                                                   \hat{y}^2+\du \hat{z}^2$,...
-
-? 
-! Undefined control sequence.
-l.1010 ...\Omega^2=\du \hat{x}^2+\du \hat{y}^2+\du
-                                                   \hat{z}^2$, so that
-? 
-! Undefined control sequence.
-l.1013   \mu^2 \du
-                   s^2 = -e^{2\Phi} \du \hat{t}^2 + \psi^4 \delta_{ij}\du \h...
-
-? 
-! Undefined control sequence.
-l.1013   \mu^2 \du s^2 = -e^{2\Phi} \du
-                                        \hat{t}^2 + \psi^4 \delta_{ij}\du \h...
-
-? 
-! Undefined control sequence.
-l.1013 ...i} \du \hat{t}^2 + \psi^4 \delta_{ij}\du
-                                                   \hat{x}^i \,\du \hat{x}^j
-? 
-! Undefined control sequence.
-l.1013 ... + \psi^4 \delta_{ij}\du \hat{x}^i \,\du
-                                                   \hat{x}^j
-? 
-[80]
-! Undefined control sequence.
-l.1052 $\varphi(t,R)=A(R)e^{\iu
-                                \omega t + \vartheta_0}$ with $R=\sqrt{\delt...
-
-? 
-
-! LaTeX Error: No counter 'count' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1058 ...s0.2ex minus0.1ex \itemsep0ex plus0.2ex}
-                                                  
-? 
-
-! LaTeX Error: No counter 'count' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1059   \item A
-                 straightforward calculation leads to the first derivatives ...
-
-? 
-! Missing number, treated as zero.
-<to be read again> 
-                   \c@count 
-l.1059   \item A
-                 straightforward calculation leads to the first derivatives ...
-
-? 
-! Undefined control sequence.
-<argument> \du 
-               \Phi 
-l.1067 ...{00} = -2e^{2\Phi}\frac{\du \Phi}{\du R}
-                                                   \frac{x^i}{R}\,,
-? 
-! Undefined control sequence.
-<argument> \du 
-               R
-l.1067 ...{00} = -2e^{2\Phi}\frac{\du \Phi}{\du R}
-                                                   \frac{x^i}{R}\,,
-? 
-! Undefined control sequence.
-<argument> \du 
-               \Phi 
-l.1069 ...00} = 2e^{-2\Phi} \frac{\du \Phi}{\du R}
-                                                  \frac{x^i}{R}\,,
-? 
-! Undefined control sequence.
-<argument> \du 
-               R
-l.1069 ...00} = 2e^{-2\Phi} \frac{\du \Phi}{\du R}
-                                                  \frac{x^i}{R}\,,
-? 
-! Undefined control sequence.
-<argument> \du 
-               \psi 
-l.1071 ... g_{kk} = 4\psi^3 \frac{\du \psi}{\du R}
-                                                   \frac{x^i}{R}\,,
-? 
-! Undefined control sequence.
-<argument> \du 
-               R
-l.1071 ... g_{kk} = 4\psi^3 \frac{\du \psi}{\du R}
-                                                   \frac{x^i}{R}\,,
-? 
-! Undefined control sequence.
-<argument> \du 
-               \psi 
-l.1072 ...kk} = -4\psi^{-5} \frac{\du \psi}{\du R}
-                                                  
-? 
-! Undefined control sequence.
-<argument> \du 
-               R
-l.1072 ...kk} = -4\psi^{-5} \frac{\du \psi}{\du R}
-                                                  
-? 
-! Undefined control sequence.
-<argument> \du 
-               \psi 
-l.1090     \frac{\du \psi}{\du R}
-                                  = -\frac{1}{2}
-? 
-! Undefined control sequence.
-<argument> \du 
-               R
-l.1090     \frac{\du \psi}{\du R}
-                                  = -\frac{1}{2}
-? 
-! Undefined control sequence.
-<argument> \du 
-               \Phi 
-l.1092 ...    \displaystyle \frac{\du \Phi}{\du R}
-                                                  =
-? 
-! Undefined control sequence.
-<argument> \du 
-               R
-l.1092 ...    \displaystyle \frac{\du \Phi}{\du R}
-                                                  =
-? 
-
-! LaTeX Error: No counter 'count' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1097   \item W
-                e Lorentz transform the spacetime metric, the scalar field a...
-
-? 
-! Missing number, treated as zero.
-<to be read again> 
-                   \c@count 
-l.1097   \item W
-                e Lorentz transform the spacetime metric, the scalar field a...
-
-? 
-
-! LaTeX Error: No counter 'count' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1118   \item W
-                e construct the 3+1 variables in the boosted frame from these
-? 
-! Missing number, treated as zero.
-<to be read again> 
-                   \c@count 
-l.1118   \item W
-                e construct the 3+1 variables in the boosted frame from these
-? 
-
-! LaTeX Error: No counter 'count' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1160   \item I
-                n addition to these expressions, we need to bear in mind the...
-
-? 
-! Missing number, treated as zero.
-<to be read again> 
-                   \c@count 
-l.1160   \item I
-                n addition to these expressions, we need to bear in mind the...
-
-? 
-[81pdfTeX warning (ext4): destination with the same identifier (name{equation.3
-.2.36}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1200 
-       ]
-
-LaTeX Warning: Citation `Palenzuela:2006wp' on page 82 undefined on input line 
-1261.
-
-
-LaTeX Warning: Citation `Palenzuela:2007dm' on page 82 undefined on input line 
-1261.
-
-
-LaTeX Warning: Citation `Shibata:2008rq' on page 82 undefined on input line 126
-1.
-
-
-LaTeX Warning: Citation `Okawa:2011fv' on page 82 undefined on input line 1261.
-
-
-
-LaTeX Warning: Citation `Palenzuela:2017kcg' on page 82 undefined on input line
- 1261.
-
-
-LaTeX Warning: Citation `Sperhake:2019oaw' on page 82 undefined on input line 1
-261.
-
-
-LaTeX Warning: Citation `Brill:1963yv' on page 82 undefined on input line 1271.
-
-
-
-LaTeX Warning: Citation `Aichelburg:1970dh' on page 82 undefined on input line 
-1276.
-
-
-LaTeX Warning: Citation `Helfer:2018vtq' on page 82 undefined on input line 127
-8.
-
-
-LaTeX Warning: Citation `Helfer:2018vtq' on page 82 undefined on input line 132
-0.
-
-
-LaTeX Warning: Citation `Helfer:2018vtq' on page 82 undefined on input line 132
-2.
-
-<malaise_source/BosonStarTrick.png, id=1768, 961.09714pt x 540.61714pt>
-File: malaise_source/BosonStarTrick.png Graphic file (type png)
-<use malaise_source/BosonStarTrick.png>
-Package pdftex.def Info: malaise_source/BosonStarTrick.png  used on input line 
-1335.
-(pdftex.def)             Requested size: 350.0pt x 196.87404pt.
-[82]
-
-LaTeX Warning: Citation `Bernuzzi:2009ex' on page 83 undefined on input line 13
-58.
-
-
-LaTeX Warning: Citation `Alic:2011gg' on page 83 undefined on input line 1358.
-
-! Undefined control sequence.
-l.1433 ...binaries, $v_{\rm A}=-v_{\rm B}\invdefeq
-                                                   v$.
-? 
-[83]
-
-LaTeX Warning: Citation `Helfer:2018vtq' on page 84 undefined on input line 158
-2.
-
-Package epstopdf Info: Source file: <malaise_source/constraints.eps>
-(epstopdf)                    date: 2022-09-14 12:04:23
-(epstopdf)                    size: 64428 bytes
-(epstopdf)             Output file: <malaise_source/constraints-eps-converted-t
-o.pdf>
-(epstopdf)             Command: <repstopdf --outfile=malaise_source/constraints
--eps-converted-to.pdf malaise_source/constraints.eps>
-(epstopdf)             \includegraphics on input line 1604.
-runsystem(repstopdf --outfile=malaise_source/constraints-eps-converted-to.pdf m
-alaise_source/constraints.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <malaise_source/constraints-eps-converted-t
-o.pdf>.
-
-! Package pdftex.def Error: File `malaise_source/constraints-eps-converted-to.p
-df' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1604 ...h=300pt]{malaise_source/constraints.eps}
-                                                  
-? 
-
-LaTeX Warning: Citation `Husa:2007hp' on page 84 undefined on input line 1682.
-
-[84]
-Package epstopdf Info: Source file: <malaise_source/conv_tmBS_Erad.eps>
-(epstopdf)                    date: 2022-09-14 12:04:23
-(epstopdf)                    size: 121619 bytes
-(epstopdf)             Output file: <malaise_source/conv_tmBS_Erad-eps-converte
-d-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=malaise_source/conv_tmBS_E
-rad-eps-converted-to.pdf malaise_source/conv_tmBS_Erad.eps>
-(epstopdf)             \includegraphics on input line 1738.
-runsystem(repstopdf --outfile=malaise_source/conv_tmBS_Erad-eps-converted-to.pd
-f malaise_source/conv_tmBS_Erad.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <malaise_source/conv_tmBS_Erad-eps-converte
-d-to.pdf>.
-
-
-! Package pdftex.def Error: File `malaise_source/conv_tmBS_Erad-eps-converted-t
-o.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1738 ...50pt]{malaise_source/conv_tmBS_Erad.eps}
-                                                  
-? 
-Package epstopdf Info: Source file: <malaise_source/conv_tsBS_Erad.eps>
-(epstopdf)                    date: 2022-09-14 12:04:23
-(epstopdf)                    size: 93434 bytes
-(epstopdf)             Output file: <malaise_source/conv_tsBS_Erad-eps-converte
-d-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=malaise_source/conv_tsBS_E
-rad-eps-converted-to.pdf malaise_source/conv_tsBS_Erad.eps>
-(epstopdf)             \includegraphics on input line 1760.
-runsystem(repstopdf --outfile=malaise_source/conv_tsBS_Erad-eps-converted-to.pd
-f malaise_source/conv_tsBS_Erad.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <malaise_source/conv_tsBS_Erad-eps-converte
-d-to.pdf>.
-
-! Package pdftex.def Error: File `malaise_source/conv_tsBS_Erad-eps-converted-t
-o.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1760 ...50pt]{malaise_source/conv_tsBS_Erad.eps}
-                                                  
-? 
-
-LaTeX Warning: Citation `Clough:2015sqa' on page 85 undefined on input line 180
-8.
-
-
-LaTeX Warning: Citation `Radia:2021' on page 85 undefined on input line 1808.
-
-
-LaTeX Warning: Citation `Alic:2011gg' on page 85 undefined on input line 1808.
-
-Package epstopdf Info: Source file: <malaise_source/erad.eps>
-(epstopdf)                    date: 2022-09-14 12:04:23
-(epstopdf)                    size: 23515 bytes
-(epstopdf)             Output file: <malaise_source/erad-eps-converted-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=malaise_source/erad-eps-co
-nverted-to.pdf malaise_source/erad.eps>
-(epstopdf)             \includegraphics on input line 1848.
-runsystem(repstopdf --outfile=malaise_source/erad-eps-converted-to.pdf malaise_
-source/erad.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <malaise_source/erad-eps-converted-to.pdf>.
-
-
-! Package pdftex.def Error: File `malaise_source/erad-eps-converted-to.pdf' not
- found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1848 ...cs[width=250pt]{malaise_source/erad.eps}
-                                                  
-? 
-
-LaTeX Warning: Citation `Sperhake:2019oaw' on page 85 undefined on input line 1
-857.
-
-
-LaTeX Warning: Citation `Sperhake:2019oaw' on page 85 undefined on input line 1
-857.
-
-[85]
-Package epstopdf Info: Source file: <malaise_source/mini_psi20.eps>
-(epstopdf)                    date: 2022-09-14 12:04:23
-(epstopdf)                    size: 233661 bytes
-(epstopdf)             Output file: <malaise_source/mini_psi20-eps-converted-to
-.pdf>
-(epstopdf)             Command: <repstopdf --outfile=malaise_source/mini_psi20-
-eps-converted-to.pdf malaise_source/mini_psi20.eps>
-(epstopdf)             \includegraphics on input line 2018.
-runsystem(repstopdf --outfile=malaise_source/mini_psi20-eps-converted-to.pdf ma
-laise_source/mini_psi20.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <malaise_source/mini_psi20-eps-converted-to
-.pdf>.
-
-
-! Package pdftex.def Error: File `malaise_source/mini_psi20-eps-converted-to.pd
-f' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2018 ...th=250pt]{malaise_source/mini_psi20.eps}
-                                                  
-? 
-Package epstopdf Info: Source file: <malaise_source/soli_psi20.eps>
-(epstopdf)                    date: 2022-09-14 12:04:23
-(epstopdf)                    size: 211127 bytes
-(epstopdf)             Output file: <malaise_source/soli_psi20-eps-converted-to
-.pdf>
-(epstopdf)             Command: <repstopdf --outfile=malaise_source/soli_psi20-
-eps-converted-to.pdf malaise_source/soli_psi20.eps>
-(epstopdf)             \includegraphics on input line 2029.
-runsystem(repstopdf --outfile=malaise_source/soli_psi20-eps-converted-to.pdf ma
-laise_source/soli_psi20.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <malaise_source/soli_psi20-eps-converted-to
-.pdf>.
-
-! Package pdftex.def Error: File `malaise_source/soli_psi20-eps-converted-to.pd
-f' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2029 ...th=250pt]{malaise_source/soli_psi20.eps}
-                                                  
-? 
-
-LaTeX Warning: Citation `Helfer:2018vtq' on page 86 undefined on input line 204
-2.
-
-Package epstopdf Info: Source file: <malaise_source/ampctr_sBS.eps>
-(epstopdf)                    date: 2022-09-14 12:04:23
-(epstopdf)                    size: 43403 bytes
-(epstopdf)             Output file: <malaise_source/ampctr_sBS-eps-converted-to
-.pdf>
-(epstopdf)             Command: <repstopdf --outfile=malaise_source/ampctr_sBS-
-eps-converted-to.pdf malaise_source/ampctr_sBS.eps>
-(epstopdf)             \includegraphics on input line 2062.
-runsystem(repstopdf --outfile=malaise_source/ampctr_sBS-eps-converted-to.pdf ma
-laise_source/ampctr_sBS.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <malaise_source/ampctr_sBS-eps-converted-to
-.pdf>.
-
-! Package pdftex.def Error: File `malaise_source/ampctr_sBS-eps-converted-to.pd
-f' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2062 ...th=250pt]{malaise_source/ampctr_sBS.eps}
-                                                  
-? 
-
-LaTeX Warning: Citation `Helfer:2018vtq' on page 86 undefined on input line 210
-4.
-
-[86]
-
-LaTeX Warning: Citation `Binnington:2009bb' on page 87 undefined on input line 
-2172.
-
-
-LaTeX Warning: Citation `Helfer:2018vtq' on page 87 undefined on input line 219
-8.
-
-
-LaTeX Warning: Citation `10.1145/3311790.3396656' on page 87 undefined on input
- line 2240.
-
-[87] [88]) [89] [90 <./malaise_source/BosonStarTrick.png>] [91] [92] [93]
-[94]
+) [74] [75] [76] [77] [78]
 Chapter 4.
-[95
 
-
-
-]
-\openout2 = `q.aux'.
-
- (./q.tex [96
-
-]
-! Undefined control sequence.
-<recently read> \grchombo 
-                          
-l.52 ...tem for angular momentum, using $\grchombo
-                                                  $ \cite{clough2015grchombo...
-
-? 
-[97]
-<png/qfs_simple.png, id=2002, 1045.65656pt x 1087.81406pt>
-File: png/qfs_simple.png Graphic file (type png)
-<use png/qfs_simple.png>
-Package pdftex.def Info: png/qfs_simple.png  used on input line 78.
-(pdftex.def)             Requested size: 297.80121pt x 309.81444pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (0.22266pt too wide) in paragraph at lines 83--84
-[]\T1/lmr/m/n/10.95 With the rel-e-vant ge-om-e-try dis-cussed we can de-rive t
-he QFS sys-tem, Eq. ([]4.1.3[]), by in-te-grat-ing Eq. ([]4.1.4[])
- []
-
-[98] [99 <./png/qfs_simple.png>] [100] [101] [102] [103] [104] [105]
-! Undefined control sequence.
-<recently read> \grchombo 
-                          
-l.396 ...stars is simulated in 3D using $\grchombo
-                                                  $ \cite{clough2015grchombo...
-
-? 
-! Undefined control sequence.
-<recently read> \grchombo 
-                          
-l.396 ...ough2015grchombo,Andrade2021}. $\grchombo
-                                                  $ is a modern, open source...
-
-? 
-[106]
-<png/Qplot_20.0.png, id=2231, 565.1514pt x 370.0224pt>
-File: png/Qplot_20.0.png Graphic file (type png)
-<use png/Qplot_20.0.png>
-Package pdftex.def Info: png/Qplot_20.0.png  used on input line 432.
-(pdftex.def)             Requested size: 297.80121pt x 194.98735pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<png/Qplot_40.0.png, id=2238, 573.1011pt x 388.8126pt>
-File: png/Qplot_40.0.png Graphic file (type png)
-<use png/Qplot_40.0.png>
-Package pdftex.def Info: png/Qplot_40.0.png  used on input line 438.
-(pdftex.def)             Requested size: 297.80121pt x 202.03539pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<png/Qplot_60.0.png, id=2241, 581.7735pt x 391.7034pt>
-File: png/Qplot_60.0.png Graphic file (type png)
-<use png/Qplot_60.0.png>
-Package pdftex.def Info: png/Qplot_60.0.png  used on input line 444.
-(pdftex.def)             Requested size: 297.80121pt x 200.5132pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (6.39803pt too wide) in paragraph at lines 450--452
-[]\T1/lmr/m/n/10.95 The ini-tial data of the nu-mer-i-cal sim-u-la-tions con-si
-sts of two bo-son stars, each with mass $\OML/lmm/m/it/10.95 M \OT1/lmr/m/n/10.
-95 = 0\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/10.95 395(0) []\OML/lmm/m/it/10.95 m[]$
-\T1/lmr/m/n/10.95 ,
- []
-
-[107] [108 <./png/Qplot_20.0.png> <./png/Qplot_40.0.png>]
-<png/paper_conv40_2.png, id=2281, 527.571pt x 352.6776pt>
-File: png/paper_conv40_2.png Graphic file (type png)
-<use png/paper_conv40_2.png>
-Package pdftex.def Info: png/paper_conv40_2.png  used on input line 465.
-(pdftex.def)             Requested size: 322.61168pt x 215.66577pt.
-<png/paper_conv40.png, id=2284, 529.0164pt x 349.7868pt>
-File: png/paper_conv40.png Graphic file (type png)
-<use png/paper_conv40.png>
-Package pdftex.def Info: png/paper_conv40.png  used on input line 470.
-(pdftex.def)             Requested size: 322.61168pt x 213.31627pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[109 <./png/Qplot_60.0.png> <./png/paper_conv40_2.png>]
-<png/paper_conv123.png, id=2301, 670.75594pt x 651.18282pt>
-File: png/paper_conv123.png Graphic file (type png)
-<use png/paper_conv123.png>
-Package pdftex.def Info: png/paper_conv123.png  used on input line 488.
-(pdftex.def)             Requested size: 322.61168pt x 313.19019pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[110 <./png/paper_conv40.png>]
-<png/conv_order_40.0.png, id=2327, 586.44093pt x 379.4175pt>
-File: png/conv_order_40.0.png Graphic file (type png)
-<use png/conv_order_40.0.png>
-Package pdftex.def Info: png/conv_order_40.0.png  used on input line 511.
-(pdftex.def)             Requested size: 322.61168pt x 208.72078pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[111 <./png/paper_conv123.png>] [112 <./png/conv_order_40.0.png>] [113]
-<png/qfs_coloured.png, id=2386, 1041.8925pt x 1084.05pt>
-File: png/qfs_coloured.png Graphic file (type png)
-<use png/qfs_coloured.png>
-Package pdftex.def Info: png/qfs_coloured.png  used on input line 603.
-(pdftex.def)             Requested size: 297.80121pt x 309.8507pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[114] [115 <./png/qfs_coloured.png>] [116]) [117]
-Chapter 5.
-
-Overfull \hbox (0.59471pt too wide) in paragraph at lines 178--179
+Overfull \hbox (0.59471pt too wide) in paragraph at lines 180--181
 []\T1/lmr/m/n/10.95 make a note of the dx form no-ta-tion but don't go into dep
 th, maybe hint at in-ter-gat-ing over a mfold? 
  []
 
 
-Overfull \hbox (18.91101pt too wide) in paragraph at lines 196--197
+Overfull \hbox (18.91101pt too wide) in paragraph at lines 198--199
 \T1/lmr/m/n/10.95 TRO SEC-TION AND THE LATER SEC-TION. PROB-A-BLY USE R/16PI RA
 THER THAN 16PI*MATTER
  []
 
-[118
+[79
 
 
 
-] (./thesis.bbl [119
+] (./thesis.bbl [80
 
 ]
 
@@ -3044,10 +1684,10 @@ Type  H <return>  for immediate help.
 l.1 \begin{thebibliography}{10}
                                
 ? 
-[120
+[81
 
-]) [121] (./thesis.aux (./intro.aux) (./nr.aux) (./bosonstars.aux)
-(./grchombo.aux) (./malaise.aux) (./q.aux))
+]) [82] (./thesis.aux (./intro.aux) (./nr.aux) (./bosonstars.aux)
+(./grchombo.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -3055,19 +1695,19 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A1062E01BA7805E0AA963CD0D69E12B6;18398.
+(rerunfilecheck)             Checksum: 8393A37B2F31CB627B7782D12BD11D7E;12685.
  ) 
 Here is how much of TeX's memory you used:
- 23194 strings out of 480171
- 400564 string characters out of 5894490
- 826666 words of memory out of 5000000
- 39502 multiletter control sequences out of 15000+600000
- 569476 words of font info for 101 fonts, out of 8000000 for 9000
+ 22559 strings out of 480171
+ 389397 string characters out of 5894490
+ 804379 words of memory out of 5000000
+ 39163 multiletter control sequences out of 15000+600000
+ 562217 words of font info for 99 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 94i,20n,92p,2059b,524s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+ 94i,17n,92p,1920b,524s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
@@ -3078,23 +1718,22 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmbsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmbx9.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lms
-y6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/font
-s/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (125 pages, 2971114 bytes).
+c/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lms
+y9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (85 pages, 1265633 bytes).
 PDF statistics:
- 2837 PDF objects out of 2984 (max. 8388607)
- 2558 compressed objects within 26 object streams
- 1109 named destinations out of 1200 (max. 500000)
- 853 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1921 PDF objects out of 2073 (max. 8388607)
+ 1744 compressed objects within 18 object streams
+ 848 named destinations out of 1000 (max. 500000)
+ 610 words of extra memory for PDF output out of 10000 (max. 10000000)
 

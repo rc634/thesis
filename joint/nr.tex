@@ -31,7 +31,9 @@ X^\mu_\perp &= -n^\mu n_\nu X^\nu .\end{align}
 Considering scalars such as $\phi = w_\mu X^\mu$ or $\psi = T^{\mu\nu}w_\mu w_\nu$, and remembering scalars don't vary under projection, it is simple to show that any tensor $T$ can be projected by contracting a projection operator $\perp$ on any free index,
 \begin{equation} {T_\|}^{ij ...}_{\;\;\;\;\;\;\;kl ...} = {\mathcal{T}}^{ij ...}_{\;\;\;\;\;\;\;kl ...} =\perp^{i}_{\mu}\perp^{j}_{\nu}\perp^{\rho}_{k}\perp^{\sigma}_{l}\cdot\cdot\cdot\, T^{\mu\nu ...}_{\;\;\;\;\;\;\;\;\;\;\rho\sigma ...}.\end{equation}
 We can find the 3-metric $\gamma_{\mu\nu}$ of $\Sigma_t$ by projecting $g_{\mu\nu}$, 
-\begin{equation} \gamma_{ij} = \perp^\mu_i \perp^\nu_j g_{\mu\nu} = g_{\mu\nu} + n_\mu n_\nu\quad \rightarrow \quad \gamma^i_j = \perp^i_j,\end{equation}
+\begin{equation} \label{nr:eq:gammaij}
+\gamma_{ij} = \perp^\mu_i \perp^\nu_j g_{\mu\nu} = g_{\mu\nu} + n_\mu n_\nu\quad \rightarrow \quad \gamma^i_j = \perp^i_j,
+\end{equation}
 and we find it is equivalent to the projector $\perp$; this had to be the case as $\perp_{ij}\dd x^i\dd x^j$ gives the line element along $\Sigma_t$. With this machinery we can define the extrinsic curvature tensor $\K_{ij}$ representing curvature due to the choice of spacetime foliation; it could be nonzero for certain foliations of Minkowski space. It is not the same as the 3-Ricci tensor $\R_{ij}$ which is due to genuine spacetime curvature of $\M$ regardless of foliation. The extrinsic curvature tensor is defined the following way,
 \begin{align} \label{nr:eq:Kij}\K_{ij}  &= \K_{ji}:= -\perp_i^\mu \perp_j^\nu \nabla_\mu n_\nu = -\perp_i^\mu \nabla_\mu n_j = -\nabla_i n_j - n_i a_j, \\
 \K &= \K_i^i = -\bs{\nabla} \cdot \bs{n},\end{align}
@@ -139,11 +141,11 @@ and by construction,
 With this and the Gauss-Codazzi equations of section \ref{nr:sec:gausscodazzi} we can project the Einstein equation. Lets first look at the scalar equation,
 \begin{equation} G_{\mu\nu}n^\mu n^\nu = R_{\mu\nu}n^\mu n^\nu + \frac{1}{2}R = 8\pi \E,\end{equation}
 and equating the geometric terms to the scalar Gauss equation we get the Hamiltonian constraint, $\mathcal{H}=0$,
-\begin{equation}\mathcal{H} = \K_{\mu\nu}\K^{\mu\nu}-\K^2 -\R + 16\pi \E  .\end{equation}
+\begin{equation}\mathcal{H} = \K_{\mu\nu}\K^{\mu\nu}-\K^2 -\R + 16\pi \E  =0.\label{nr:eq:ham}\end{equation}
 Now looking at the once projected part we see,
 \begin{equation} \perp^\mu_i n^\nu G_{\mu\nu} =  \perp^\mu_i n^\nu R_{\mu\nu} = -8\pi\S_i,\end{equation}
 and substituting the geometric terms for the contracted Codazzi relation we get the momentum constraint, $\mathcal{P}_i = 0$,
-\begin{equation} \mathcal{P}_i = \D_i \K - \D_j\K^j_i  + 8\pi \S_i.\end{equation}
+\begin{equation} \mathcal{P}_i = \D_i \K - \D_j\K^j_i  + 8\pi \S_i=0. \label{nr:eq:mom}\end{equation}
 Finally, the space-space projection gives the 6 evolution PDE's. This time start with the trace reversed Einstein Equation
 \begin{align} R_{\mu\nu} &= 8 \pi \left[T_{\mu\nu} - \frac{1}{2}Tg_{\mu\nu}\right],\\
 \perp^\mu_i\perp^\nu_jR_{\mu\nu} &= 8 \pi \left[\S_{ij} - \frac{1}{2}(\S-\E)\gamma_{ij}\right],
@@ -159,7 +161,7 @@ this gives the normal evolution equations for $\gamma_{ij}$ and $\K_{ij}$. In $4
 \subsection{Foliation Adapted Coordinates}
 
 \begin{figure}[h!]
-    \includegraphics[width=0.65\textwidth]{adm.png}
+    \includegraphics[width=0.65\textwidth]{png/ADM_screeny.png}
 \end{figure}
 Picking coordinates in GR introduces a large gauge freedom which allows us to use a level set of the time coordinate $x^0=t$ to define our foliation hypersurfaces $\Sigma_t$. The other three coordinates $x^i$ for $i\in[1,2,3]$ can be used to span each hypersurface $\Sigma_t$ however we define. It is conventional to split the normal evolution vector $m^\mu$ into time $t^\mu$ and space parts $\beta^\mu$,
 \begin{equation}\label{nr:eq:m1} m^\mu = t^\mu - \beta^\mu  = (\partial_0)^\mu - \beta^i (\partial_i)^\mu, \end{equation}
@@ -198,7 +200,7 @@ and the ADM equations can be written by expanding the $\L_m$ in the normal evolu
 Unfortunately, these PDE's turn out to be ill-posed [REF]; this means that the time evolution of these equations does not depens smoothly on the initial data. The ill-posedness of the ADM equations is resolved in the next section.
 
 
-\subsection{BSSN}
+\subsection{BSSN} \label{nr:sec:bssn}
 To tackle the ill-posedness of the ADM equations in section \ref{nr:sec:ADM} the Baumgarte-Shapiro-Shibata-Nakamura (BSSN) formalism [REF] is introduced. The first step in BSSN is to decompose the 3-metric into the conformal metric $\tilde{\gamma}_{ij}$ and the conformal factor $\chi$,
 \begin{align} 
 \tilde{\gamma}_{ij} &= \chi \gamma_{ij},\\
@@ -229,7 +231,7 @@ The Z4 formalism \cite{z4} generalises the Einstein equation to include an unphy
 \begin{equation}\label{nr:eq:z4einstein} R_{\mu\nu} + \nabla_\mu Z_\nu + \nabla_\nu Z_\mu - \kappa_1\left[ n_\mu Z_\nu + n_\nu Z_\mu - [1+\kappa_2]g_{\mu\nu}n^\alpha Z_\alpha\right] = 8\pi G \left[T_{\mu\nu}- \frac{1}{2}Tg_{\mu\nu} \right].\end{equation}
 Of course regular General Relativity is returned setting $Z_\mu=0$. It is shown in [] that achieving $Z_\mu=0$ whilst dynamically evolving $Z_\mu$  is equivalent to solving the constraints. $Z_\mu$ is subjected to a wave equation, transporting constraint violation off the computational domain. It can be shown that the system is driven to $Z_\mu =0$ for $k_1>0$ and $k_2<-1$. It is much cheaper to evolve the variables $Z_\mu$, driven to zero, than do perform four elliptic solves for the constraints $\{\mathcal{H},\M^i\}$ on each timestep. 
 
-\subsection{CCZ4}
+\subsection{CCZ4} \label{nr:sec:ccz4}
 Joining BSSN with Z4 gives the CCZ4 formalism. The additional modifications,
 \begin{align} \Theta &= -n\cdot Z  = -\alpha Z^0,\\
 \hat{\Upsilon}^i &= \tilde{\Upsilon}^i + \frac{2\gamma^{ij}Z_j}{\chi},\end{align}
@@ -276,14 +278,22 @@ Note that Eqs.~(\ref{nr:eq:ccz4kg1}) and (\ref{nr:eq:ccz4kg2}) are for the 3+1 K
 The CCZ4 scheme proves useful in my simulations for a few reason. Firstly, any initial data that does not satisfy the constraints will not do so along evolution either when using BSSN. Given that superposition of solutions in GR does not generally give a new solution, but does approximate one for separated compact objects, all the simulated binaries considered in the report will have non constraint satisfying initial data. The use of the CCZ4 scheme will also help simulations satisfy the constraints even if they initially satisfy them; one reason being that finite resolution imposes some small deviation from the continuum solution. More importantly, the use of adaptive mesh refinement AMR introduces large interpolation errors into the simulation at the boundary of the different grid resolution levels. Finally, the Sommerfeld boundary conditions used are inexact in GR and will introduce small errors at the boundary that ruin constraint satisfaction. In all above cases, the CCZ4 system forces the evolution towards constraint satisfaction, despite the numerical errors and approximations.
 
 
-\subsection{Gauge Conditions}
+\subsection{Gauge Conditions}\label{nr:sec:gaugeconditions}
 In GR, the lapse $\alpha$ and shift $\beta^i$ are freely specifiable being gauge variables, however they must be chosen carefully along with a suitable initial Cauchy surface $\Sigma_{t_0}$ for sensible foliations and numerical accuracy. Figure~\ref{nr:fig:eddington-finkelstein} (left) shows how a poor initial Cauchy surface could extend to the singularity for ingoing Eddington-Finkelstein coordinates; likely causing a simulation crash. In this work $\Sigma_{t_0}$ is chosen to be in the isotropic gauge as in figure~\ref{nr:fig:isotropic} (right); not only does this allow trivial swapping between spherical polar and Cartesian (used in the simulation) coordinates but also provides an initial Cauchy surface free of singularities and easy to compute. For a poor choice of lapse function, even a well chosen $\Sigma_{t_0}$ can advance to the singularity in finite simulation time.
+%   \begin{figure}[h]
+%   \caption{Penrose Diagrams, $\Sigma_{t_0}$ dashed, Left: Ingoing Eddington-Finkelstein Coordinates, Right: Isotropic Coordinates.}
+%   \centering
+%   \subfloat{\includegraphics[width=0.43\textwidth]{schwarzschild2.png}\label{boson:fig:f1}} \label{nr:fig:eddington-finkelstein}
+%   \hfill
+%   \subfloat{\includegraphics[width=0.5\textwidth]{schwarzschild.png}\label{boson:fig:f2}} \label{nr:fig:isotropic}
+% \end{figure}
+
   \begin{figure}[h]
   \caption{Penrose Diagrams, $\Sigma_{t_0}$ dashed, Left: Ingoing Eddington-Finkelstein Coordinates, Right: Isotropic Coordinates.}
   \centering
-  \subfloat{\includegraphics[width=0.43\textwidth]{schwarzschild2.png}\label{boson:fig:f1}} \label{nr:fig:eddington-finkelstein}
+  \subfloat{\includegraphics[width=0.43\textwidth]{png/sc_penrose.png}\label{boson:fig:f1}} \label{nr:fig:eddington-finkelstein}
   \hfill
-  \subfloat{\includegraphics[width=0.5\textwidth]{schwarzschild.png}\label{boson:fig:f2}} \label{nr:fig:isotropic}
+  \subfloat{\includegraphics[width=0.5\textwidth]{png/iso_penrose.png}\label{boson:fig:f2}} \label{nr:fig:isotropic}
 \end{figure}
 
 \subsubsection{Lapse Gauge Conditions}
@@ -316,6 +326,8 @@ This is known as the minimal shift condition. As before, promoting $\beta^i$ to 
 \begin{align} \partial_t \beta^i &= FB^i,\\
  \partial_t B^i &= \partial_t \tilde{\Gamma}^i - \eta B^i,\end{align}
 where $F=3/4$ and $\eta=1$ are used.
+
+TALK ABOUT MOVING PUNCTURE GAUGE AND CHI CLOOR OF CHI TEN MINUS 6 (OR IS IT 5?)
 
 
 \subsection{stuff}
