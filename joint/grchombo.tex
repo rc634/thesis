@@ -35,7 +35,7 @@ and an approximation for the second derivative using a discrete sum of neighbour
 
 
 \subsection{Boundary Conditions} \label{grchombo:sec:bc}
-Another artefact of evolving field equations over a volume on a computer is that the volume must have finite volume; a computer does not have infinite memory to store an infinite amount of gridpoints. The usual way to deal with this problem is to enforce an algebraic condition on the fields on a surface surrounding the region of interest. Alternatively, an infinite volume can be modeled if coordinates are used which compactify the volume to some finite region, this corresponds to the grid space diverging or resolution becoming infintely low quality towards the boundary.
+Another artefact of evolving field equations over a volume on a computer is that the volume must have finite size; a computer does not have infinite memory to store an infinite amount of gridpoints. The usual way to deal with this problem is to enforce an algebraic condition on the fields on a surface surrounding the region of interest. Alternatively, an infinite volume can be modeled if coordinates are used which compactify the volume to some finite region, this corresponds to the grid spacing $\Delta x$ diverging or resolution becoming infintely low quality towards the boundary.
 
 Common boundary conditions include Dirichlet (fixed value), Von-Neumann (fixed derivative) or some mix of these conditions. When discretising a field theory over a lattice of points, it is more common to re-categorize boundary conditions into types such as reflective, periodic or symmetric.
 
@@ -51,7 +51,7 @@ where $\phi_i = \phi(x_i)$. These extra ghost cells allow the calculation of der
 Generic boundary conditions can be imposed by assigning values to ghost cells similarly to above. Although the examples given in this section are in one dimension, the ideas generalise to arbitrary dimensions.
 
 
-\subsubsection{Sommerfeld Boundary Conditions}
+\subsubsection{Sommerfeld Boundary Conditions} \label{grchombo:sec:sommerfeld}
 A very useful type of boundary condition is the Sommerfeld boundary condition [REF], used to approximate an outgoing wave being transmitted through the boundary condition. Sommerfeld boundary condtions can be derived from studying the solution to the wave equation in spherical symmetry in flat space,
 \begin{equation}
 -\frac{1}{v^2}\partial_t^2 \Psi +  \gamma^{ij}\D_i \D_j \Psi = 
@@ -124,9 +124,9 @@ where the index $n$ has been omitted from $F_{ijk}$ as is can be replaced with a
 MAYBE CUT THIS BIT SHORT AT EQ \ref{grchombo:eq:hmmmmm} 
 
 \subsubsection{The Runge Kutta Method} \label{grchombo:sec:rk4}
-The Runge-Kutta method is an explicit ODE integration scheme that can be made accurate to arbitrary order in $\Delta t$. For an ODE like
+The Runge-Kutta method is an explicit ODE integration scheme that can be made accurate to arbitrary order in $\Delta t$. For an ODE of the form,
 \begin{equation}
-\frac{\dd \phi}{ \dd t} + F(\phi,t),
+\frac{\dd \phi}{ \dd t} = F(\phi,t),
 \end{equation}
 the widely used fourth order accurate Runge-Kutta (RK4) method first calculates four intermediate gradients $\{k_1,k_2,k_3,k_4\}$,
 \begin{align}
@@ -165,9 +165,8 @@ While GRChombo can be used to simulate traditional spacetimes, such as binary bl
 
 
 \subsubsection{Simulation Units}
-MAKE THIS WORK WITH THE CONVENTIONS SECTION ASND THEN DESCRIBE WHAT IS NEW FOR ONLY THE SIMULATIONS
 
-GRChombo defaults to geometric units, as described in section (1.2). The scalar field $\vp$ appears in the action as
+GRChombo defaults to geometric units with $c=G=1$, but the value of Newton's gravitational constant $G$ can be pre-specified. Following the conventions of section \ref{intro:sec:conventions}, Planks reduced constant $\hbar$ is also set to unity and Planck units are used; Plancks constant does not arise in vaccum General Relaticity, but does appear when the Klein Gordon equation for a scalar fi . The scalar field $\vp$ appears in the action as
 \begin{equation} S = \int_{\M} \left[g^{\mu\nu}\partial_\mu \vp \partial_\nu \vp^* + ... \right]\dd x^4\end{equation}
 and given $S$ and the metric are dimensionless, dimensional analysis tells us $\vp$ has units of inverse length in natural units, or units of energy. The Klein-Gordon mass $m$
 \begin{equation} \Box \vp = m^2 \vp\end{equation}

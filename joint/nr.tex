@@ -9,7 +9,7 @@ MAYBE PUT SOME STUFF HERE ABOUT NUMERICAL ALGORITHMS LIKE RK4 EULAR STEP LEAPFRO
 
 
 \section{Numerical Relativity}\label{nr:sec:nr} 
-\subsection{Spacetime Foliation}
+\subsection{Spacetime Foliation} \label{nr:sec:foliation}
 Einstein's equation is a classical field equation which governs the dynamics of physical objects and spacetime curvature. 
 \begin{equation}\label{nr:eq:einstein}R_{\mu\nu} - \frac{1}{2} Rg_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}\end{equation}
 The above version is fully covariant, agnostic of the definition of time, and many solutions are known analytically, for instance Black Hole geometries. When the system of interest becomes more complicated, such as the case of orbiting objects which will be discussed later, finding an analytic expression becomes impossible. For low energy dynamics, Newtonian theory, Post-Newtonian theory and perturbation theory can make more progress; however this report will focus on the highly nonlinear regime where Numerical relativity is truly the only hope to solve Einstein's equations. To do this it is common to split spacetime into 3+1 dimensions, evolving a 3 dimensional manifold (maybe with matter) on a computer along the final 4th dimension. To do this we need to define a suitable hypersurface $\Sigma \in \M$. This is usually done by demanding the hypersurface $\Sigma_t$ be the set of points $p \in \M$ where some scalar function $f:\M\mapsto \mathbb{R}$ satisfies $f(p)=t$. This hypersurface should be a Cauchy surface, intersecting all causal curves only once, or a partial Cauchy surface which intersects all causal curves at most once. Generally we will choose a partial Cauchy surface due to the finite memory of computers, however by picking certain compactified coordinates it is possible to use a Cauchy surface [REF]. A foliation $\mathcal{F}$ is then the union of a set of $\Sigma_t$ for some range of the parameter $t$,
@@ -24,7 +24,7 @@ showing that $m^\mu$ points between neighbouring hypersurfaces; therefore when c
 
 
 
-\subsection{The 3+1 Decomposition}
+\subsection{The 3+1 Decomposition} 
 With the notion of a spacetime foliation we should define how to project tensors onto $\Sigma_t$; clearly scalars need no projecting. Splitting a vector $X^\mu \bs{e}_\mu = X^\mu_\| \bs{e}_\mu + X^\mu_\perp \bs{e}_\mu$ into components tangent or normal to $\Sigma_t$ we define the orthogonal projector $\perp^\mu_\nu$ and parallel projector $-n^\mu n_\nu$,
 \begin{align}X^\mu_\| &= \left[ \delta^\mu_\nu + n^\mu n_\nu\right] X^\mu  = \perp^\mu_\nu X^\nu,\\
 X^\mu_\perp &= -n^\mu n_\nu X^\nu .\end{align}
@@ -171,7 +171,7 @@ We can view $t^\mu$ as the (not necessarily causal) worldline for a simulation g
 n^\mu &=  \frac{1}{\alpha}\left( 1,-\beta^1,-\beta^2,-\beta^3\right),\\  
 n_\mu &= -\alpha\left( 1,0,0,0\right).
 \end{align}
-The decomposed metric can be calculated, using the property that $\beta$ is tangent to $\Sigma_t$ and orthogonal to $m$,
+The decomposed metric can be calculated, using the property that $\bs{\beta}$ is tangent to $\Sigma_t$ and orthogonal to $\bs{m}$,
 \begin{align} 
 g_{00} &= \bs{g}(\bs{\partial}_0,\bs{\partial}_0) = \bs{g}(\bs{m} + \beta^i \bs{\partial}_i,\bs{m} + \beta^j\bs{\partial}_j) = \bs{g}(\bs{m},\bs{m}) + \beta^i \beta_j \langle \bs{\partial}_i,{\bs{\mathrm{d}}} \bs{x}^j \rangle = -\alpha^2 + \beta^i \beta_i ,\\
  g_{0i} &= \bs{g} (\bs{\partial}_0,\bs{\partial}_i) =  \bs{g}(\bs{m} + \beta^j \bs{\partial}_j, \bs{\partial}_i) =   \beta^j\bs{g}( \bs{\partial}_j, \bs{\partial}_i) = \beta_i,\\
@@ -229,7 +229,7 @@ for some functions $H^\mu$.
 \subsection{Z4 Formalism}
 The Z4 formalism \cite{z4} generalises the Einstein equation to include an unphysical field $Z_\mu$, along with damping terms parameterised by $\kappa_1$, $\kappa_2$, 
 \begin{equation}\label{nr:eq:z4einstein} R_{\mu\nu} + \nabla_\mu Z_\nu + \nabla_\nu Z_\mu - \kappa_1\left[ n_\mu Z_\nu + n_\nu Z_\mu - [1+\kappa_2]g_{\mu\nu}n^\alpha Z_\alpha\right] = 8\pi G \left[T_{\mu\nu}- \frac{1}{2}Tg_{\mu\nu} \right].\end{equation}
-Of course regular General Relativity is returned setting $Z_\mu=0$. It is shown in [] that achieving $Z_\mu=0$ whilst dynamically evolving $Z_\mu$  is equivalent to solving the constraints. $Z_\mu$ is subjected to a wave equation, transporting constraint violation off the computational domain. It can be shown that the system is driven to $Z_\mu =0$ for $k_1>0$ and $k_2<-1$. It is much cheaper to evolve the variables $Z_\mu$, driven to zero, than do perform four elliptic solves for the constraints $\{\mathcal{H},\M^i\}$ on each timestep. 
+Of course regular General Relativity is returned setting $Z_\mu=0$. It is shown in [REF] that achieving $Z_\mu=0$ whilst dynamically evolving $Z_\mu$  is equivalent to solving the constraints. $Z_\mu$ is subjected to a wave equation, transporting constraint violation off the computational domain. It can be shown that the system is driven to $Z_\mu =0$ for $k_1>0$ and $k_2<-1$. It is much cheaper to evolve the variables $Z_\mu$, driven to zero, than do perform four elliptic solves for the constraints $\{\mathcal{H},\M^i\}$ on each timestep. 
 
 \subsection{CCZ4} \label{nr:sec:ccz4}
 Joining BSSN with Z4 gives the CCZ4 formalism. The additional modifications,
@@ -253,7 +253,7 @@ where $\omega=-2/3$ is the weight of $\chi$. The equation for the lie derivative
 \begin{equation} 
 \L_\xi \bs{\mathcal{T}} =  \widetilde{\L}_\xi \bs{\T} + w \bs{\T}  \partial_\mu \xi^\mu ,
 \end{equation}
-given in Eq.~\ref{intro:eq:Ltensordensity2} was used where $ \widetilde{\L}_X$ represents the differential operator that is equivalent to $\L_X$ if it didn't act on a tensor density.
+given in Eq.~\ref{intro:eq:Ltensordensity2}, was used. Here $ \widetilde{\L}_X$ represents the differential operator that is equivalent to $\L_X$ if it acted on a tensor density of weight zero or a regular tensor.
 Finally, rearanging gives the equation of motion for $\chi$,
 \begin{equation}
 \partial_t \chi =  \beta^k \partial_k \chi + \frac{2\chi}{3} \left[\alpha \K - \partial_k \beta^k \right].
@@ -279,7 +279,7 @@ The CCZ4 scheme proves useful in my simulations for a few reason. Firstly, any i
 
 
 \subsection{Gauge Conditions}\label{nr:sec:gaugeconditions}
-In GR, the lapse $\alpha$ and shift $\beta^i$ are freely specifiable being gauge variables, however they must be chosen carefully along with a suitable initial Cauchy surface $\Sigma_{t_0}$ for sensible foliations and numerical accuracy. Figure~\ref{nr:fig:eddington-finkelstein} (left) shows how a poor initial Cauchy surface could extend to the singularity for ingoing Eddington-Finkelstein coordinates; likely causing a simulation crash. In this work $\Sigma_{t_0}$ is chosen to be in the isotropic gauge as in figure~\ref{nr:fig:isotropic} (right); not only does this allow trivial swapping between spherical polar and Cartesian (used in the simulation) coordinates but also provides an initial Cauchy surface free of singularities and easy to compute. For a poor choice of lapse function, even a well chosen $\Sigma_{t_0}$ can advance to the singularity in finite simulation time.
+The lapse $\alpha$ and shift $\beta^i$ are freely specifiable on a hypersurface $\Sigma_t$ being gauge variables, however they must be chosen carefully along with a suitable initial Cauchy surface $\Sigma_{t_0}$ and initial data. $\Sigma_{t_0}$ should be a smooth non-intersecting Cauchy surface as described in section \ref{nr:sec:foliation} and contain smooth initial data. It is also wise to avoid singularities (both coordinate and physical) on this surface. As an example, consider the simulation of a single Schwarzschild black hole. Figure~\ref{nr:fig:eddington-finkelstein} (left) shows how an initial Cauchy surface could extend to the singularity for ingoing Eddington-Finkelstein coordinates. In this work $\Sigma_{t_0}$ is chosen to be in the isotropic gauge as in figure~\ref{nr:fig:isotropic} (right); not only does this allow trivial swapping between spherical polar and Cartesian (used in the simulation) coordinates but also provides an initial Cauchy surface free of singularities and easy to compute. However, for a poor choice of lapse function, even a well chosen $\Sigma_{t_0}$ can advance to the singularity in finite simulation time.
 %   \begin{figure}[h]
 %   \caption{Penrose Diagrams, $\Sigma_{t_0}$ dashed, Left: Ingoing Eddington-Finkelstein Coordinates, Right: Isotropic Coordinates.}
 %   \centering
@@ -300,13 +300,13 @@ In GR, the lapse $\alpha$ and shift $\beta^i$ are freely specifiable being gauge
 
 The simplest lapse choice would be to enforce $\alpha=1$, called geodesic slicing, with the hypersurface following intergral curves of $n^\mu$; given that geodesics can converge this can lead to hypersurface self-intersection which breaks the definition of a Cauchy surface and the simulation will likely fail. Another problem is that a black hole singularity can be reached in finite simulation time. Geodesic slicing can be modified to the maximal slicing condition which keeps the volume element $\sqrt{-g}$ constant along geodesics. This means as $\gamma\rightarrow\infty$ nearing a singularity $\alpha\rightarrow0$ from Eq.~(\ref{nr:eq:gay}), causing the hypersurface to advance more slowly before a singularity is reached. This property is called singularity avoiding and is crucial for numerical stability (unless using excision?). Maximal slicing can be implemented by forcing $\mathcal{K} = \partial_t \K = 0$ $\forall t$ which requires a slow elliptic solve for $\alpha$ at each timestep. Instead $\alpha$ is promoted to an evolution variable and is evolved along with every other simulation variable. To do this we can pick an algebraic slicing condition of the Bona-Masso type,
 \begin{equation}\L_m \alpha = \partial_t \alpha - \beta^i \partial_i \alpha = -\alpha^2 f(\alpha)\K. \end{equation}
-This is used with $f = 2\alpha^{-1}$ in GRChombo [REF] giving,
-\begin{equation}\L_m \alpha = -2\alpha \K, \end{equation}
-and using gaussian normal coordinates $\beta^i=0$ it reduces to, 
-\begin{equation} \alpha = 1+ \ln \gamma,\end{equation}
+Using this with $f = 2\alpha^{-1}$ gives,
+\begin{equation}\L_m \alpha = \partial_t \alpha - \beta^i \partial_i \alpha = -2\alpha \K, \label{nr:eq:1pluslog} \end{equation}
 which is called 1+log slicing; this is very common in Numerical Relativity codes. In practice 1+log slicing is strongly singularity avoiding reaching $\alpha=0$ before the singularity. This is modified in the CCZ4 scheme to, 
-\begin{equation}\partial_t \alpha = -2\alpha\left[ \K-2\Theta\right] + \beta^i \partial_i \alpha,\end{equation}
-which is very similar to before; it should be noted that the advection term is important for black hole simulations.
+\begin{equation}\partial_t \alpha = -2\alpha\left[ \K-2\Theta\right] + \beta^i \partial_i \alpha.\end{equation}
+In the absence of the CCZ4 formulation and using gaussian normal coordinates $\beta^i=0$, the 1+log slicing condition reduces to, 
+\begin{equation} \alpha = 1+ \ln \gamma,\end{equation}
+giving the slicing condition it's name.
 
 \begin{figure}[h!]
     \includegraphics[width=0.9\textwidth]{svg/foliation.png} 
@@ -316,21 +316,26 @@ which is very similar to before; it should be noted that the advection term is i
 
 \subsubsection{Shift Gauge Conditions}
 
-So far the shift vector $\beta^i$ has been ignored, the simplest choice for it would be $\beta^i=0$ as in 1+log slicing. Using 1+log slicing causes great stretching and shearing of $\Sigma_t$ in the neghbourhood of a singularity as in Fig.~(\ref{nr:fig:singularity_avoiding}); the effect of this is that neighbouring gridpoints have large differences in field values leading to inaccurate and unstable evolutions. Another negative side effect is that the computational domain can fall inside an event horizon in black hole simulations. To counteract this we want to pick a shift vector that minimises hypersurface shear $\sigma_{ij}$ which can be defined as [REF] [ref 1977 smarr and york], 
+The simplest choice for the shift vector would be $\beta^i=0$ but this causes great stretching and shearing of $\Sigma_t$ in the neghbourhood of a singularity as in Fig.~(\ref{nr:fig:singularity_avoiding}); the effect of this is that neighbouring gridpoints have large differences in field values leading to inaccurate and unstable evolutions. Another negative side effect is that the computational domain can fall inside an event horizon in black hole simulations. To counteract this we want to pick a shift vector that minimises hypersurface shear $\sigma_{ij}$ which can be defined as [REF] [ref 1977 smarr and york], 
 \begin{equation} \sigma_{ij}:= \perp^\mu_i \perp^\nu_j \left[\nabla_{(\mu} n_{\nu)}-\frac{1}{3}\gamma^{ab}\nabla_{(a} n_{b)} \gamma_{\mu\nu}\right], \end{equation}
 where $\sigma_{ij}$ is tracefree corresponding to shearing rather than inflation or expansion. Minimising the total shear $\Sigma$,
 \begin{equation} \Sigma = \int \sigma_{ij}\sigma^{ij}\sqrt{\gamma}\,\dd x^3,\end{equation}
 with respect to $\beta^i$ leads to an elliptic PDE to be solved for each $\beta^i$ at each time step that minimises shear, 
 \begin{equation} \delta \Sigma = 0 \rightarrow \D_i\sigma^{ij}=0.\end{equation}
-This is known as the minimal shift condition. As before, promoting $\beta^i$ to be evolution variables is computationally cheaper that solving a set of PDE's at each time step. A very common choice is to promote the elliptic PDE for $\beta^i$ into a hyperbolic equation via introducing a $\partial_t^2\beta^i$ term and an artificial damping term parameterised by $\eta$. This becomes a damped wave equation and is supposed to transport away any part of $\beta^i$ which does not satisfy $\D_i \sigma^{ij}=0$. This requires Sommerfeld (outgoing wave) boundary conditions as in [REF]. In GRChombo the standard gamma driver shift condition is used,
-\begin{align} \partial_t \beta^i &= FB^i,\\
- \partial_t B^i &= \partial_t \tilde{\Gamma}^i - \eta B^i,\end{align}
-where $F=3/4$ and $\eta=1$ are used.
+This is known as the minimal shift condition. As before, promoting $\beta^i$ to be evolution variables is computationally cheaper that solving a set of PDE's at each time step. A very common choice is to promote the elliptic PDE for $\beta^i$ into a hyperbolic equation via introducing a $\partial_t^2\beta^i$ term and an artificial damping term parameterised by $\eta$. This becomes a damped wave equation and is supposed to transport away any part of $\beta^i$ which does not satisfy $\D_i \sigma^{ij}=0$. This works well with Sommerfeld (outgoing wave) boundary conditions given in section \ref{grchombo:sec:sommerfeld}. The standard Gamma driver shift condition is,
+\begin{align} 
+\partial_t \beta^i &= FB^i,\label{nr:eq:gammadriver1}\\
+ \partial_t B^i &= \partial_t \tilde{\Gamma}^i - \eta B^i,\label{nr:eq:gammadriver2}\end{align}
+where $F=3/4$ and $\eta=1$.
 
-TALK ABOUT MOVING PUNCTURE GAUGE AND CHI CLOOR OF CHI TEN MINUS 6 (OR IS IT 5?)
+\subsubsection{Moving Puncture Gauge}
+The moving puncture gauge is the combination of the 1+log slicing lapse condition in Eq.~\ref{nr:eq:1pluslog} and the Gamma driver shift condition in Eqs.~(\ref{nr:eq:gammadriver1}) and (\ref{nr:eq:gammadriver2}). The moving puncture gauge lead to a breakthrough in numerical relativity, allowing for the first successful simulation of a back hole binary [REF]. Even though $\chi\rightarrow 0$, or $\gamma \rightarrow \infty$, at the centre of a black hole, as long as the black hole singulary (also called the puncture) does not start on a gridpoint then no field values diverge and the simulation can run. This can be safeguarded by setting a minimum value for $\chi$, such as $\chi=10^{-4}$. Even thought it is unphysical to modify a physical varibale, any errors this causes are localised to well within the event horizon and as a result do not propogate away from the puncture. 
 
+Not only does the moving puncture gauge safely allow for the divergence of fields at the puncture, but it causes the puncture to move; hence the name {\it moving} puncture gauge. Near the puncture, the lapse $\alpha$ becomes vanishingly small and the 1+log slicing condition in Eq.~(\ref{nr:eq:1pluslog}) becomes,
+\begin{equation}
+\partial_t \alpha = \beta^i \partial_i \alpha,
+\end{equation}
+which causes the puncture to move.
 
-\subsection{stuff}
-FIX THE FUCKING HAND REFERNECES!
 
 
