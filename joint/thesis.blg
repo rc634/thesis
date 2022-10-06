@@ -4,54 +4,62 @@ The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: intro.aux
 A level-1 auxiliary file: nr.aux
 A level-1 auxiliary file: bosonstars.aux
-A level-1 auxiliary file: q.aux
+A level-1 auxiliary file: grchombo.aux
+A level-1 auxiliary file: malaise.aux
 The style file: ieeetr.bst
-Database file #1: ../../bibtex/refs.bib
-Repeated entry---line 492 of file ../../bibtex/refs.bib
- : @article{PhysRevD.67.104005
- :                            ,
+Database file #1: gigabib.bib
+Repeated entry---line 16999 of file gigabib.bib
+ : @article{Alcubierre:2002kk
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 17225 of file gigabib.bib
+ : @article{hadjidimos2000successive
+ :                                  ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "harmonic"
 Warning--I didn't find a database entry for "z4"
-You've used 23 entries,
+Warning--there's a number but no series in kreiss1973methods
+Warning--empty journal in Moore:2021eok
+Warning--empty journal in Gerosa:2021mno
+You've used 103 entries,
             1876 wiz_defined-function locations,
-            644 strings with 8408 characters,
-and the built_in function-call counts, 6379 in all, are:
-= -- 584
-> -- 376
+            1136 strings with 20775 characters,
+and the built_in function-call counts, 31896 in all, are:
+= -- 3341
+> -- 1212
 < -- 0
-+ -- 135
-- -- 112
-* -- 458
-:= -- 941
-add.period$ -- 27
-call.type$ -- 23
-change.case$ -- 21
++ -- 442
+- -- 339
+* -- 1976
+:= -- 4244
+add.period$ -- 119
+call.type$ -- 103
+change.case$ -- 99
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 358
-empty$ -- 482
-format.name$ -- 112
-if$ -- 1546
+cite$ -- 106
+duplicate$ -- 1917
+empty$ -- 2644
+format.name$ -- 339
+if$ -- 8110
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 25
-newline$ -- 76
-num.names$ -- 23
-pop$ -- 62
+int.to.str$ -- 103
+missing$ -- 104
+newline$ -- 328
+num.names$ -- 105
+pop$ -- 239
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 297
+skip$ -- 1673
 stack$ -- 0
-substring$ -- 188
-swap$ -- 192
+substring$ -- 1813
+swap$ -- 1090
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 40
-width$ -- 25
-write$ -- 229
-(There was 1 error message)
+warning$ -- 3
+while$ -- 254
+width$ -- 106
+write$ -- 1086
+(There were 2 error messages)

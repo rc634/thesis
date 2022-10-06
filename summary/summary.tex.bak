@@ -1,0 +1,102 @@
+\documentclass[11pt, oneside]{report}  %can try book instead    % use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[margin = 0.7in, bmargin = 1.1in, tmargin = 0.9in]{geometry}                     % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                          % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                       % Activate for rotated page geometry
+\usepackage[parfill]{parskip}           % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}               % Use pdf, png, jpg, or epsÂ§ with pdflatex; use eps in DVI mode
+                                % TeX will automatically convert eps --> pdf in pdflatex        
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsmath,mathtools}
+\usepackage{array}
+\usepackage{tabu}
+\usepackage{bm}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+%\usepackage{graphicx} %already declared above
+\usepackage{caption}
+\usepackage{float}
+\usepackage{floatrow}
+\usepackage{subfig}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\usepackage{lipsum}  
+\usepackage{mdframed}
+\usepackage{verbatim}
+\usepackage{slashed}
+%\usepackage[compat=1.1.0]{tikz-feynman}
+%\usepackage{animate}
+
+
+\newcommand{\G}{\mathcal{G}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\E}{\mathcal{E}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\K}{\mathcal{K}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\R}{\mathcal{R}}
+\renewcommand{\P}{\mathcal{P}}
+\newcommand{\vp}{\varphi}
+\newcommand{\T}{\mathcal{T}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\bs}{\boldsymbol}
+\newcommand{\rspace}{\mathbb{R}}
+\newcommand{\dd}{\mathrm{d}}
+
+
+\definecolor{purple}{RGB}{38,0,75}
+\pagecolor{white}
+\color{black}
+
+%SetFonts
+
+%SetFonts
+\usepackage{subfiles} % Best loaded last in the preamble
+
+\numberwithin{equation}{section}
+\pagenumbering{gobble}
+\title{Third Term Report}
+\author{Robin Croft}
+%\date{}    
+\begin{document}
+
+
+
+
+\pagenumbering{gobble}
+  
+  {\centering
+  \scshape\LARGE Thesis Summary \par}
+  \vspace{1cm}
+
+  {\centering
+  \scshape\large Student : Robin Croft \par}
+  {\centering
+  \scshape\large Supervisor : Dr. Ulrich Sperhake \par}
+  \vspace{1cm}
+
+General relativity (GR), published in 1915 by Albert Einstein, is the modern description of gravity. GR poses that gravitational physics should be described by matter fields existing in a curved space described by differential geometry. The Newtonian gravitational force is then replaced by a fictitious force on matter arising from curvature; on the flipside, matter and energy tell space how to curve as described by Einstein's eqaution. GR can explain a plethora of gravitational phenomenon that are out of the scope of the traditional Newtonian theory of gravity. Some examples of these phenomena are gravitational time dilation, inspiralling and precessing orbits, gravitational waves, inflation and the big bang. Other examples are self gravitating compact objects such as black holes (BH) and neutron stars (NS). The gravitational waves from the inspirals and collisions of BHs and NSs can be measured by large interferometer experiments such as the Laser Interferometer Gravitational-Wave Observatory (LIGO) which lead to the 2017 nobel prize in physics.  
+
+This thesis is concerned with the modelling of collisions of compact objects using numerical relativity (NR) and developing diagnostics for these simulations. The code used in simulations is GRChombo, a modern NR code with adaptive mesh refinement (AMR) that supports both the BSSN and CCZ4 formulations. The compact objects modelled are black holes and boson stars. 
+
+Boson stars are a self gravitating complex scalar field configuration governed by the Klein Gordon equation in curved space. On the small scale these are stars comprising of spin zero boson particles rather than atoms like regular fermionic star. Boson stars are interesting for a number of reasons, one being that given scalar fields exist in nature it is thought that scalar fields could condense to starlike objects called boson stars. Collisions of these boson stars emit gravitational waves that are detectable at LIGO and other gravitational wave detectors. Boson stars are also a candidate for dark matter clusters permeating galaxies.
+
+In order to collide compact objects one must superpose the initial data for two objects; this generally is not valid in GR and violates the Einstein Equation. While the initial data for two black holes is a well known, the initial data for two boson stars is not. The plain superposisiton of two boson star solutions causes significant artefacts in simulations and an important part of this thesis is the exploration of improvements to naive superposition methods. 
+
+Conservation laws have many applications in numerical relativity. However, it is not straightforward to define local conservation laws for general dynamic spacetimes due the lack of coordinate translation symmetries. In flat space, the rate of change of energy-momentum within a finite spacelike volume is equivalent to the flux integrated over the surface of this volume; for general spacetimes it is necessary to include a volume integral of a source term arising from spacetime curvature. In this work a study of continuity of matter in general relativity is extended to include angular momentum of matter and Noether currents associated with gauge symmetries. Expressions for the Noether charge and flux of complex scalar fields and complex Proca fields are found using this formalism. Expressions for the angular momentum density, flux and source are also derived which are then applied to a numerical relativity collision of boson stars in 3D with non-zero impact parameter as an illustration of the methods.
+
+The previous innovations for the binary initial data, which significantly reduce spurious initial excitations of the scalar field profiles, as well as a measure for the angular momentum are used to study the long-lived post-merger gravitational wave signature of a boson-star binary coalescence. We use full numerical relativity to simulate the post-merger and track the gravitational afterglow over an extended period of time. We find the afterglow to last much longer than the spin-down timescale. This prolonged gravitational wave afterglow provides a characteristic signal that may distinguish it from other astrophysical sources.
+
+Finally, we investigate the impact of nonzero eccentricity on the kick magnitude and gravitational-wave emission of nonspinning, unequal-mass black hole binaries. Here "kick" refers to the radiation of linear momentum to the centre of mass of a merging black hole binary system. Recent numerical relativity calculations have shown that eccentricity can lead to an approximate 25 percent increase in recoil velocities for equal-mass, spinning binaries with spins lying in the orbital plane; these are “superkick” configurations. We confirm that nonzero eccentricities at merger can lead to kicks which are larger by up to approximately 25 percent relative to the quasicircular case. We also find that the kick velocity has an oscillatory dependence on eccentricity, which we interpret as a consequence of changes in the angle between the infall direction at merger and the apoapsis (or periapsis) direction.
+
+  
+
+\end{document}

@@ -7,14 +7,14 @@
 
 
 \section{Mathematical Modelling of Boson Stars}
-\subsection{Action}
+\subsection{Action} \label{boson:sec:action}
 The Boson Stars considered are a complex Klein Gordon Scalar field, $\varphi$, minimally coupled to gravity. The action is the Einstein-Hilbert vacuum action plus the matter action for curved space,
 \begin{gather} S = \int_\mathcal{M}\left[\mathcal{L}_{EH} + \mathcal{L}_M\right] \sqrt{-g}\,\dd x^4, \\
  \L_{EH} = \frac{1}{16\pi G}R, \\
  \L_{M} =-\frac{1}{2}g^{\mu\nu}\nabla_\mu \varphi^* \nabla_\nu \varphi - \frac{1}{2}V(|\varphi|^2),  \end{gather}
 Here $V$ is the Klein-Gordon potential and it's effect on boson stars is discussed in []. Some common choices of poteantials are,
 \begin{align}
-V &= \frac{m^2 c^2}{\hbar^2 }|\vp|^2,\\
+V &= \frac{m^2 c^2}{\hbar^2 }|\vp|^2,\label{boson:eq:Vmini} \\
 V &= \frac{m^2 c^2}{\hbar^2 }|\vp|^2 + \frac{1}{2}\Lambda_4|\vp|^4 ,\\
 V &= \frac{m^2 c^2}{\hbar^2 }|\vp|^2\left(1-\frac{|\vp|^2}{2\sigma^2}\right)^2 , \label{boson:eq:Vsoliton}
 \end{align}
@@ -34,7 +34,7 @@ Studying neutron stars requires the fermionic, or ordinary fluid, stress tensor 
 The continuity equation from Eq.~(\ref{intro:eq:cont}), $\nabla_\nu T^{\mu\nu}=0 $, returns the highly nonlinear relativistic Navier-Stokes equations of curved space. The viscosity term $\pi^{\mu\nu}$ and heat flux $q^\mu$ are often omitted for simplicity. The remaining variables $\rho$, $P$ and $u^\mu$ are the fluid density, pressure and worldline tangent. Just as in flat space, the Navier-Stokes equations can develop shockwaves and the use of sophisticated shock capturing schemes is required, unlike the linear Klein-Gordon equation which is linear in the principal part.
 
 
-\subsection{Solitons}
+\subsection{Solitons} \label{boson:sec:soliton}
 A soliton is a wave that exhibits particle-like behaviour. More precisely, in classical field theory, a soliton
 is a field or set of fields in a localised configuration that can travel at constant speed but not disperse. For
 our purposes, we look for solitons in the Einstein-Klein-Gordon (EKG) system which are self gravitating
@@ -162,32 +162,30 @@ Equivalently, the Noether charge density $\mathcal{N}$ is ,
 \mathcal{N} = i\left( \vp \Pi^*-\vp^*\Pi\right) .
 \end{equation}
 
-MAYBE POINT THIS SECTION AT THE CONTINUITY PAPER, OR JSUT SAY WE GENERALISE IT IN THERE?
-
-THE IDEAS OF THIS SECTION ARE FURTHAR EXPLORED FOR ENERGY, MOMENTUM, ANGULAR MOMENTUM AND PROCA FIELDS IN SECTION REFFF
+The ideas of this section, concerning conserved charges are extended in section \ref{q:sec:q} with applications to continuity equations in energy, momentum, angular momentum and noether charges for spin-1 Proca fields. The results of this section have all been derived for an infinite volume where only a charge density $\mathcal{Q}$ needs be considered. Section \ref{q:sec:q} considers continuity equations in a finite volume $V$ so must also consider the flux density $\mathcal{F}$ of conserved particles through $\partial V$ (the boundary of $V$) and the source density $\mathcal{S}$ (creation and destruction of $\mathcal{Q}$) in $V$. 
 
 \subsection{Boosted Boson Stars and Black Holes}
-Let us now consider a moving star, this corresponds to boosting a stationary soliton solution. There is no unique way of doing this as any coordinate transformation that reduces to a Minkowski spacetime boost at large radius will do the job. All the degrees of freedom we have can be absorbed into a coordinate gauge choice, so it makes sense to choose the trivial, constant valued boost, with rapidity $\chi = \mathrm{arctanh} (v)$ for a velocity $v$, from Special Relativity. Using Cartesian coordinates, boost matrix $\bs{\Lambda}$ for a boost in the $x$ direction is,
+Let us now consider a moving star, this corresponds to boosting a stationary soliton solution. There is no unique way of doing this as any coordinate transformation that reduces to a Minkowski spacetime boost at large radius is valid. All the degrees of freedom we have can be absorbed into a coordinate gauge choice so it makes sense to choose the trivial, constant valued boost, with rapidity $\chi = \mathrm{arctanh} (v)$ for a velocity $v$, from Special Relativity. Using Cartesian coordinates, the boost matrix $\bs{\Lambda}$ for a boost in the $x$ direction is,
 \begin{equation}
-\Lambda_\nu^\mu =  \exp\begin{pmatrix} 0 & -\chi & 0& 0 \\ -\chi & 0 & 0 & 0\\ 0 & 0&1&0 \\ 0&0&0&1\end{pmatrix} = \begin{pmatrix} \cosh(\chi) & -\sinh(\chi) & 0& 0 \\ -\sinh(\chi) & \cosh(\chi) & 0 & 0\\ 0 & 0&1&0 \\ 0&0&0&1\end{pmatrix}.
+\Lambda_\nu^\mu =  \exp\begin{pmatrix} 0 & -\chi & 0& 0 \\ -\chi & 0 & 0 & 0\\ 0 & 0&1&0 \\ 0&0&0&1\end{pmatrix} = \begin{pmatrix} \cosh(\chi) & -\sinh(\chi) & 0& 0 \\ -\sinh(\chi) & \cosh(\chi) & 0 & 0\\ 0 & 0&1&0 \\ 0&0&0&1\end{pmatrix},
 \end{equation}
-Declaring the boosted and rest frame to have coordinates $x^\mu$ and $\tilde{x}^\mu$, 
+as discussed in section \ref{intro:sec:minkowski_space}. Declaring the boosted frame and lab frame (in which the star is moving) to have coordinates $x^\mu$ and $\tilde{x}^\mu$, 
 \begin{equation}
 \tilde{x}^\mu = [\Lambda^{-1}]^{\mu}_{\,\,\,\nu}x^{\nu},
 \end{equation}
-and the metric transforms via the tensor transformation law like,
+where both $x^\mu$ and $\tilde{x}^\mu$ agree on an origin. The metric transforms via the tensor transformation law like,
 \begin{equation}
 \tilde{g}_{\mu\nu}(\tilde{x}^\sigma)= \frac{\partial x^\alpha}{\partial \tilde{x}^\mu}  \frac{\partial x^\beta}{\partial \tilde{x}^\nu}g_{\alpha\beta}(\tilde{x}^\sigma) = \Lambda^\alpha_{\,\,\,\mu}\Lambda^\beta_{\,\,\,\nu} g_{\alpha\beta}(\tilde{x}^\sigma),
 \end{equation}
-where the inverse boost matrix $\bs{\Lambda}^{-1}$ can be found simply by $\bs{\Lambda}^{-1}(\chi) = \bs{\Lambda}(-\chi)$.
-We choose the boosted soliton's initial Cauchy surface to be the level set of $\tilde{t}=0$; this corresponds to the star begin stationary in the boosted frame. The coordinates and metric transform as,
+where the inverse boost matrix $\bs{\Lambda}^{-1}$ can be found simply by $\bs{\Lambda}^{-1}(\chi) = \bs{\Lambda}(-\chi)$ which is equivalent to a boost in the opposite direction.
+We choose the boosted soliton's initial Cauchy surface to be the level set of $\tilde{t}=0$, an instance of time in the lab frame. The coordinates and metric transform as,
 \begin{align}
  x^\mu &= \{ t,x,y,z\} = \{\tilde{t}\cosh(\chi) + \tilde{x} \sinh(\chi),\tilde{x}\cosh(\chi)+\tilde{t}\sinh(\chi),\tilde{y},\tilde{z}\} ,\\
  g_{\mu\nu} &= \mathrm{diag} \{ -\Omega^2, \Psi^2,  \Psi^2, \Psi^2\} ,\\
  \tilde{g}_{\mu\nu}&=\begin{pmatrix} -\Omega^2\cosh^2 (\chi) + \Psi^2 \sinh^2 (\chi) & \sinh(\chi)\cosh(\chi)\left[\Omega^2-\Psi^2\right] & 0& 0 \\  \sinh(\chi)\cosh(\chi)\left[\Omega^2-\Psi^2\right] & \Psi^2 \cosh^2 (\chi) - \Omega^2 \sinh^2 (\chi) & 0 & 0\\ 0 & 0&\Psi^2&0 \\ 0&0&0&\Psi^2\end{pmatrix},
  \end{align}
  as the star is at rest using coordinates $x^\mu$ rather than $\tilde{x}^\mu$.
-Comparing this boosted metric to the $3+1$ decomposed metric in Eq.~(\ref{nr:eq:admmetric}) we can read off the shift vector $\tilde{\beta}_i$, the 3 metric $\tilde{\gamma}_{ij}$ and obtain the lapse and metric determinant,
+Comparing this boosted metric to the $3+1$ decomposed metric in Eq.~(\ref{nr:eq:admmetric}) we can read off the shift vector $\tilde{\beta}_i$, the 3-metric $\tilde{\gamma}_{ij}$ and obtain the lapse and metric determinant,
 \begin{align} 
 \tilde{\alpha}^2 &= \frac{\Psi ^2 \Omega ^2}{\Psi ^2 \cosh ^2(\chi) -\Omega ^2 \sinh ^2(\chi) },\\ 
 \tilde{\gamma} &= \det \tilde{\gamma}_{ij} = \Psi^4\left[ \Psi^2 \cosh^2 (\chi) - \Omega^2 \sinh^2(\chi)\right].
@@ -200,7 +198,7 @@ Finally, the conformal 3-metric with unit determinant is,
  0 & 0 & \Psi ^2 \\
 \end{array}
 \right),\end{equation}
-where normally $\tilde{\gamma}_{ij}$ is the conformal 3-metric, but to avoid confusion it is denoted $\bar{\gamma}_{ij}$ in this section. Turning our attention to the matter fields now we only need to change the coordinate dependance, like $\vp(x)\rightarrow \vp(\tilde{x})$, given that $\vp$ and $\Pi$ are (complex) scalar fields. Given that $\tilde{t}=0$ describes a time slice in the rest frame (where the star has non-zero velocity), $t = \tilde{x}\sinh(\chi)$ in the rest frame and we get the following boosted complex scalar field,
+where normally $\tilde{\gamma}_{ij}$ is the conformal 3-metric, but to avoid confusion it is denoted $\bar{\gamma}_{ij}$ in this section. Turning our attention to the matter fields now we only need to change the coordinate dependance, like $\vp(x)\rightarrow \vp(\tilde{x})$, given that $\vp$ and $\Pi$ are (complex) scalar fields. Given that $\tilde{t}=0$ describes a time slice in the lab frame (where the star has non-zero velocity), $t = \tilde{x}\sinh(\chi)$ in the rest frame and we get the following boosted complex scalar field,
 \begin{equation}\vp = \Phi(r)e^{i\omega \tilde{x}\sinh(\chi)}, \end{equation}
 where $r$ is the radius in the boosted frame; $r = \sqrt{\tilde{x}^2\cosh^2(\chi) +\tilde{y}^2 + \tilde{z}^2}$.
 Note the field is modulated by an oscillatory phase now with wavenumber $k = \omega \tilde{x} \sinh(\chi)$; nodal planes in $\Re(\vp)$ appear perpendicular to velocity. The conjugate momentum $\tilde{\Pi}$, defined in Eq.~(\ref{boson:eq:Pidef}), in the rest frame it becomes, 
@@ -229,10 +227,10 @@ where the $\{x,y,z\}$ need to be expanded in terms of $\{\tilde{x},  \tilde{y}, 
 
 The final object needed is the three-dimensional connection symbols $\Upsilon^i_{\,\,\,jk}$, these are calculated numerically after the initial data is loaded in using the definition from Eq.~(\ref{intro:eq:christoffel_def}),
  \begin{equation}
-\Upsilon^i_{jk} = \frac{1}{2}\gamma^{im}\left( \partial_k g_{jm} +  \partial_j g_{mk} -  \partial_m g_{jk} \right).
+\Upsilon^i_{jk} = \frac{1}{2}\gamma^{im}\left( \partial_k \gamma_{jm} +  \partial_j \gamma_{mk} -  \partial_m \gamma_{jk} \right).
  \end{equation}
 
- The boost formalism described here can apply this to the Black Hole spacetime by an identical procedure setting 
+ The boost formalism described here can apply this to the Black Hole spacetime by an identical procedure setting, 
 \begin{align} 
 \vp&=0,\\
 \Pi&=0,\\
@@ -240,6 +238,8 @@ The final object needed is the three-dimensional connection symbols $\Upsilon^i_
  \Psi &= \left[1+\frac{M}{2r}\right]^2,
  \end{align}
  corresponding to the isotropic Schwarzschild black hole given in section \ref{intro:sec:bh_theory}.
+ \newpage
+ MIGHT JUST DELETE THIS SECTION
  
  \subsection{Spherical Harmonics in Curved Space DO I KEEP THIS SECTION? MAYBE JUST FOR INTERPITING SOME SIMS}
  Spherical harmonics are an orthonormal function basis for the surface of a sphere. They arise when looking for solutions to the 3D spherical polar laplacian
