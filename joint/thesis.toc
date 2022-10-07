@@ -38,22 +38,23 @@
 \contentsline {subsection}{\numberline {1.4.3}Physics in Curved Space}{27}{subsection.1.4.3}%
 \contentsline {subsubsection}{The Wave Equation}{27}{section*.20}%
 \contentsline {subsubsection}{Electromagnetism}{28}{section*.21}%
-\contentsline {subsection}{\numberline {1.4.4}The Stress-Energy-Momentum Tensor}{29}{subsection.1.4.4}%
-\contentsline {subsection}{\numberline {1.4.5}The Einstein Equation}{29}{subsection.1.4.5}%
-\contentsline {subsection}{\numberline {1.4.6}Black Holes}{30}{subsection.1.4.6}%
-\contentsline {subsubsection}{Coordinate Singularities and Physical Singularities}{31}{section*.24}%
-\contentsline {subsubsection}{Isotropic Coordinates}{32}{section*.25}%
-\contentsline {subsubsection}{Penrose Diagrams and the Causal Structure of the Schwarzschild Black Hole}{33}{section*.27}%
-\contentsline {subsection}{\numberline {1.4.7}The Cosmological Constant}{35}{subsection.1.4.7}%
-\contentsline {subsection}{\numberline {1.4.8}The Lagrangean Formulation of General Relativity}{36}{subsection.1.4.8}%
+\contentsline {subsubsection}{The Stress-Energy-Momentum Tensor}{29}{section*.22}%
+\contentsline {subsection}{\numberline {1.4.4}The Einstein Equation}{29}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Black Holes}{30}{subsection.1.4.5}%
+\contentsline {subsubsection}{Coordinate Singularities and Physical Singularities}{31}{section*.25}%
+\contentsline {subsubsection}{Isotropic Coordinates}{32}{section*.26}%
+\contentsline {subsubsection}{Penrose Diagrams and the Causal Structure of the Schwarzschild Black Hole}{33}{section*.28}%
+\contentsline {subsection}{\numberline {1.4.6}The Cosmological Constant}{35}{subsection.1.4.6}%
+\contentsline {subsection}{\numberline {1.4.7}The Lagrangean Formulation of General Relativity}{36}{subsection.1.4.7}%
+\contentsline {subsection}{\numberline {1.4.8}STUFF}{38}{subsection.1.4.8}%
 \contentsline {chapter}{\numberline {2}Numerical Relativity and Boson Stars}{39}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Numerical Relativity}{40}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Spacetime Foliation}{40}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}The 3+1 Decomposition}{40}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}Gauss, Codazzi and Ricci Equations}{42}{subsection.2.1.3}%
-\contentsline {subsubsection}{The Gauss Equations}{42}{section*.33}%
-\contentsline {subsubsection}{The Codazzi Equations}{42}{section*.34}%
-\contentsline {subsubsection}{The Ricci Equation}{43}{section*.35}%
+\contentsline {subsubsection}{The Gauss Equations}{42}{section*.34}%
+\contentsline {subsubsection}{The Codazzi Equations}{42}{section*.35}%
+\contentsline {subsubsection}{The Ricci Equation}{43}{section*.36}%
 \contentsline {subsection}{\numberline {2.1.4}Decomposition of Einstein's Equation}{43}{subsection.2.1.4}%
 \contentsline {subsection}{\numberline {2.1.5}Foliation Adapted Coordinates}{45}{subsection.2.1.5}%
 \contentsline {subsection}{\numberline {2.1.6}ADM Equations}{46}{subsection.2.1.6}%
@@ -61,9 +62,9 @@
 \contentsline {subsection}{\numberline {2.1.8}Z4 Formalism}{47}{subsection.2.1.8}%
 \contentsline {subsection}{\numberline {2.1.9}CCZ4}{48}{subsection.2.1.9}%
 \contentsline {subsection}{\numberline {2.1.10}Gauge Conditions}{49}{subsection.2.1.10}%
-\contentsline {subsubsection}{Lapse Gauge Conditions}{50}{section*.38}%
-\contentsline {subsubsection}{Shift Gauge Conditions}{51}{section*.40}%
-\contentsline {subsubsection}{Moving Puncture Gauge}{52}{section*.41}%
+\contentsline {subsubsection}{Lapse Gauge Conditions}{50}{section*.39}%
+\contentsline {subsubsection}{Shift Gauge Conditions}{51}{section*.41}%
+\contentsline {subsubsection}{Moving Puncture Gauge}{52}{section*.42}%
 \contentsline {section}{\numberline {2.2}Mathematical Modelling of Boson Stars}{53}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Action}{53}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Solitons}{54}{subsection.2.2.2}%
@@ -75,20 +76,20 @@
 \contentsline {section}{\numberline {3.1}Numerical Methods}{62}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Numerical Discretisation of Spacetime}{62}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Boundary Conditions}{63}{subsection.3.1.2}%
-\contentsline {subsubsection}{Sommerfeld Boundary Conditions}{63}{section*.42}%
+\contentsline {subsubsection}{Sommerfeld Boundary Conditions}{63}{section*.43}%
 \contentsline {subsection}{\numberline {3.1.3}The Method of Lines}{64}{subsection.3.1.3}%
 \contentsline {subsection}{\numberline {3.1.4}Integration of ODE's}{64}{subsection.3.1.4}%
-\contentsline {subsubsection}{The Runge Kutta Method}{65}{section*.43}%
+\contentsline {subsubsection}{The Runge Kutta Method}{65}{section*.44}%
 \contentsline {section}{\numberline {3.2}GRChombo}{66}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Overview of GRChombo}{66}{subsection.3.2.1}%
-\contentsline {subsubsection}{Simulation Units}{67}{section*.44}%
+\contentsline {subsubsection}{Simulation Units}{67}{section*.45}%
 \contentsline {subsection}{\numberline {3.2.2}Boson Star Initial Data}{68}{subsection.3.2.2}%
-\contentsline {subsubsection}{Shooting Method}{68}{section*.45}%
+\contentsline {subsubsection}{Shooting Method}{68}{section*.46}%
 \contentsline {subsection}{\numberline {3.2.3}Single Star Evolution}{70}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Superposition of Initial Data}{71}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}Collisions of Boson Stars}{72}{subsection.3.2.5}%
-\contentsline {subsubsection}{Headon Collision}{72}{section*.49}%
-\contentsline {subsubsection}{Grazing Collision}{73}{section*.52}%
+\contentsline {subsubsection}{Headon Collision}{72}{section*.50}%
+\contentsline {subsubsection}{Grazing Collision}{73}{section*.53}%
 \contentsline {chapter}{\numberline {4}MALAISE PAPER}{77}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introduction}{78}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}TODO}{80}{subsection.4.1.1}%
