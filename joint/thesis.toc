@@ -46,7 +46,6 @@
 \contentsline {subsubsection}{Penrose Diagrams and the Causal Structure of the Schwarzschild Black Hole}{33}{section*.28}%
 \contentsline {subsection}{\numberline {1.4.6}The Cosmological Constant}{35}{subsection.1.4.6}%
 \contentsline {subsection}{\numberline {1.4.7}The Lagrangean Formulation of General Relativity}{36}{subsection.1.4.7}%
-\contentsline {subsection}{\numberline {1.4.8}STUFF}{38}{subsection.1.4.8}%
 \contentsline {chapter}{\numberline {2}Numerical Relativity and Boson Stars}{39}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Numerical Relativity}{40}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Spacetime Foliation}{40}{subsection.2.1.1}%
