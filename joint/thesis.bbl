@@ -1,5 +1,22 @@
 \begin{thebibliography}{100}
 
+\bibitem{Kaup:1968zz}
+D.~J. Kaup, ``{Klein-Gordon Geon},'' {\em Phys. Rev.}, vol.~172,
+  pp.~1331--1342, 1968.
+
+\bibitem{brito2016proca}
+R.~Brito, V.~Cardoso, C.~A. Herdeiro, and E.~Radu, ``Proca stars: gravitating
+  bose--einstein condensates of massive spin 1 particles,'' {\em Physics
+  Letters B}, vol.~752, pp.~291--295, 2016.
+
+\bibitem{lee1996galactic}
+J.-w. Lee and I.-g. Koh, ``Galactic halos as boson stars,'' {\em Physical
+  Review D}, vol.~53, no.~4, p.~2236, 1996.
+
+\bibitem{schunck2003general}
+F.~E. Schunck and E.~W. Mielke, ``General relativistic boson stars,'' {\em
+  Classical and Quantum Gravity}, vol.~20, no.~20, p.~R301, 2003.
+
 \bibitem{einstein1905electrodynamics}
 A.~Einstein {\em et~al.}, ``On the electrodynamics of moving bodies,'' {\em
   Annalen der physik}, vol.~17, no.~10, pp.~891--921, 1905.
@@ -80,11 +97,6 @@ A.~Hadjidimos, ``Successive overrelaxation (sor) and related methods,'' {\em
 \bibitem{PhysRev.172.1331}
 D.~J. Kaup, ``Klein-gordon geon,'' {\em Phys. Rev.}, vol.~172, pp.~1331--1342,
   Aug 1968.
-
-\bibitem{Helfer:2018vtq}
-T.~Helfer, E.~A. Lim, M.~A.~G. Garcia, and M.~A. Amin, ``{Gravitational Wave
-  Emission from Collisions of Compact Scalar Solitons},'' {\em Phys. Rev. D},
-  vol.~99, no.~4, p.~044046, 2019.
 
 \bibitem{Abbott:2016blz}
 B.~P. Abbott {\em et~al.}, ``{Observation of Gravitational Waves from a Binary
@@ -201,10 +213,6 @@ T.~W. Baumgarte and S.~L. Shapiro, {\em {Numerical Relativity: Starting from
 \bibitem{Feinblum:1968nwc}
 D.~A. Feinblum and W.~A. McKinley, ``{Stable States of a Scalar Particle in Its
   Own Gravational Field},'' {\em Phys. Rev.}, vol.~168, no.~5, p.~1445, 1968.
-
-\bibitem{Kaup:1968zz}
-D.~J. Kaup, ``{Klein-Gordon Geon},'' {\em Phys. Rev.}, vol.~172,
-  pp.~1331--1342, 1968.
 
 \bibitem{Ruffini:1969qy}
 R.~Ruffini and S.~Bonazzola, ``{Systems of selfgravitating particles in general
@@ -431,6 +439,11 @@ C.~Palenzuela, P.~Pani, M.~Bezares, V.~Cardoso, L.~Lehner, and S.~Liebling,
   ``{Gravitational Wave Signatures of Highly Compact Boson Star Binaries},''
   {\em Phys. Rev. D}, vol.~96, no.~10, p.~104058, 2017.
 
+\bibitem{Helfer:2018vtq}
+T.~Helfer, E.~A. Lim, M.~A.~G. Garcia, and M.~A. Amin, ``{Gravitational Wave
+  Emission from Collisions of Compact Scalar Solitons},'' {\em Phys. Rev. D},
+  vol.~99, no.~4, p.~044046, 2019.
+
 \bibitem{Arnowitt:1962hi}
 R.~Arnowitt, S.~Deser, and C.~W. Misner, ``The dynamics of general
   relativity,'' in {\em Gravitation an introduction to current research}
@@ -493,11 +506,531 @@ M.~Radia, U.~Sperhake, K.~Clough, A.~Drew, E.~A. Lim, and J.~L. Ripley,
 T.~Binnington and E.~Poisson, ``{Relativistic theory of tidal Love numbers},''
   {\em Phys. Rev. D}, vol.~80, p.~084018, 2009.
 
+\bibitem{10.2307/2397365}
+R.~Penrose, ``Quasi-local mass and angular momentum in general relativity,''
+  {\em Proceedings of the Royal Society of London. Series A, Mathematical and
+  Physical Sciences}, vol.~381, no.~1780, pp.~53--63, 1982.
+
+\bibitem{Sanchis_Gual_2019}
+N.~Sanchis-Gual, C.~Herdeiro, J.~A. Font, E.~Radu, and F.~Di~Giovanni,
+  ``Head-on collisions and orbital mergers of proca stars,'' {\em Physical
+  Review D}, vol.~99, Jan 2019.
+
+\bibitem{Di_Giovanni_2020}
+F.~Di~Giovanni, N.~Sanchis-Gual, P.~Cerdá-Durán, M.~Zilhão, C.~Herdeiro,
+  J.~A. Font, and E.~Radu, ``Dynamical bar-mode instability in spinning bosonic
+  stars,'' {\em Physical Review D}, vol.~102, Dec 2020.
+
+\bibitem{PhysRevD.103.044059}
+J.~Bamber, K.~Clough, P.~G. Ferreira, L.~Hui, and M.~Lagos, ``Growth of
+  accretion driven scalar hair around kerr black holes,'' {\em Phys. Rev. D},
+  vol.~103, p.~044059, Feb 2021.
+
+\bibitem{PhysRevD.96.024004}
+W.~E. East, ``Superradiant instability of massive vector fields around spinning
+  black holes in the relativistic regime,'' {\em Phys. Rev. D}, vol.~96,
+  p.~024004, Jul 2017.
+
+\bibitem{Clough_2021}
+K.~Clough, ``Continuity equations for general matter: applications in numerical
+  relativity,'' {\em Classical and Quantum Gravity}, vol.~38, p.~167001, jul
+  2021.
+
+\bibitem{2008}
+R.~Arnowitt, S.~Deser, and C.~W. Misner, ``Republication of: The dynamics of
+  general relativity,'' {\em General Relativity and Gravitation}, vol.~40,
+  p.~1997–2027, Aug 2008.
+
+\bibitem{gourgoulhon20073+}
+E.~Gourgoulhon, ``3+ 1 formalism and bases of numerical relativity,'' {\em
+  arXiv preprint gr-qc/0703035}, 2007.
+
+\bibitem{baumgarte_shapiro_2010}
+T.~W. Baumgarte and S.~L. Shapiro, {\em Numerical Relativity: Solving
+  Einstein's Equations on the Computer}.
+\newblock Cambridge University Press, 2010.
+
+\bibitem{liebling2017dynamical}
+S.~L. Liebling and C.~Palenzuela, ``Dynamical boson stars,'' {\em Living
+  Reviews in Relativity}, vol.~20, no.~1, p.~5, 2017.
+
+\bibitem{Minamitsuji_2018}
+M.~Minamitsuji, ``Vector boson star solutions with a quartic order
+  self-interaction,'' {\em Physical Review D}, vol.~97, May 2018.
+
+\bibitem{Zilh_o_2015}
+M.~Zilhão, H.~Witek, and V.~Cardoso, ``Nonlinear interactions between black
+  holes and proca fields,'' {\em Classical and Quantum Gravity}, vol.~32,
+  p.~234003, Nov 2015.
+
+\bibitem{alcubierre2008introduction}
+M.~Alcubierre, {\em Introduction to 3+ 1 numerical relativity}, vol.~140.
+\newblock Oxford University Press, 2008.
+
+\bibitem{PhysRevD.67.104005}
+C.~Bona, T.~Ledvinka, C.~Palenzuela, and M.~\ifmmode \check{Z}\else
+  \v{Z}\fi{}\'a\ifmmode~\check{c}\else \v{c}\fi{}ek, ``General-covariant
+  evolution formalism for numerical relativity,'' {\em Phys. Rev. D}, vol.~67,
+  p.~104005, May 2003.
+
+\bibitem{PhysRevLett.96.111101}
+M.~Campanelli, C.~O. Lousto, P.~Marronetti, and Y.~Zlochower, ``Accurate
+  evolutions of orbiting black-hole binaries without excision,'' {\em Phys.
+  Rev. Lett.}, vol.~96, p.~111101, Mar 2006.
+
+\bibitem{PhysRevLett.96.111102}
+J.~G. Baker, J.~Centrella, D.-I. Choi, M.~Koppitz, and J.~van Meter,
+  ``Gravitational-wave extraction from an inspiraling configuration of merging
+  black holes,'' {\em Phys. Rev. Lett.}, vol.~96, p.~111102, Mar 2006.
+
+\bibitem{helfer2021malaise}
+T.~Helfer, U.~Sperhake, R.~Croft, M.~Radia, B.-X. Ge, and E.~A. Lim, ``Malaise
+  and remedy of binary boson-star initial data,'' 2021.
+
+\bibitem{Clough_2015}
+K.~Clough, P.~Figueras, H.~Finkel, M.~Kunesch, E.~A. Lim, and
+  S.~Tunyasuvunakool, ``{GRChombo} : Numerical relativity with adaptive mesh
+  refinement,'' {\em Classical and Quantum Gravity}, vol.~32, p.~245011, dec
+  2015.
+
+\bibitem{PresTeukVettFlan92}
+W.~H. Press, S.~A. Teukolsky, W.~T. Vetterling, and B.~P. Flannery, {\em
+  Numerical Recipes in C}.
+\newblock Cambridge, USA: Cambridge University Press, second~ed., 1992.
+
+\bibitem{LIGOScientific:2016aoc}
+B.~P. Abbott {\em et~al.}, ``{Observation of Gravitational Waves from a Binary
+  Black Hole Merger},'' {\em Phys. Rev. Lett.}, vol.~116, no.~6, p.~061102,
+  2016.
+
+\bibitem{LIGOScientific:2018jsj}
+B.~P. Abbott {\em et~al.}, ``{Binary Black Hole Population Properties Inferred
+  from the First and Second Observing Runs of Advanced LIGO and Advanced
+  Virgo},'' {\em Astrophys. J. Lett.}, vol.~882, no.~2, p.~L24, 2019.
+
+\bibitem{LIGOScientific:2021psn}
+``{The population of merging compact binaries inferred using gravitational
+  waves through GWTC-3},'' 11 2021.
+
+\bibitem{Arkani-Hamed:2008hhe}
+N.~Arkani-Hamed, D.~P. Finkbeiner, T.~R. Slatyer, and N.~Weiner, ``{A Theory of
+  Dark Matter},'' {\em Phys. Rev. D}, vol.~79, p.~015014, 2009.
+
+\bibitem{Feng:2010gw}
+J.~L. Feng, ``{Dark Matter Candidates from Particle Physics and Methods of
+  Detection},'' {\em Ann. Rev. Astron. Astrophys.}, vol.~48, pp.~495--545,
+  2010.
+
+\bibitem{Marsh:2015xka}
+D.~J.~E. Marsh, ``{Axion Cosmology},'' {\em Phys. Rept.}, vol.~643, pp.~1--79,
+  2016.
+
+\bibitem{Svrcek:2006yi}
+P.~Svrcek and E.~Witten, ``{Axions In String Theory},'' {\em JHEP}, vol.~06,
+  p.~051, 2006.
+
+\bibitem{Kim:1986ax}
+J.~E. Kim, ``{Light Pseudoscalars, Particle Physics and Cosmology},'' {\em
+  Phys. Rept.}, vol.~150, pp.~1--177, 1987.
+
+\bibitem{Arvanitaki:2009fg}
+A.~Arvanitaki, S.~Dimopoulos, S.~Dubovsky, N.~Kaloper, and J.~March-Russell,
+  ``{String Axiverse},'' {\em Phys. Rev. D}, vol.~81, p.~123530, 2010.
+\newblock arXiv:0905.4720 [hep-th].
+
+\bibitem{Ringwald:2012cu}
+A.~Ringwald, ``{Searching for axions and ALPs from string theory},'' {\em J.
+  Phys. Conf. Ser.}, vol.~485, p.~012013, 2014.
+
+\bibitem{Wilczek:1977pj}
+F.~Wilczek, ``{Problem of Strong $P$ and $T$ Invariance in the Presence of
+  Instantons},'' {\em Phys. Rev. Lett.}, vol.~40, pp.~279--282, 1978.
+
+\bibitem{Peccei:1977hh}
+R.~D. Peccei and H.~R. Quinn, ``{CP Conservation in the Presence of
+  Instantons},'' {\em Phys. Rev. Lett.}, vol.~38, pp.~1440--1443, 1977.
+
+\bibitem{Weinberg:1977ma}
+S.~Weinberg, ``{A New Light Boson?},'' {\em Phys. Rev. Lett.}, vol.~40,
+  pp.~223--226, 1978.
+
+\bibitem{Widdicombe:2018oeo}
+J.~Y. Widdicombe, T.~Helfer, D.~J.~E. Marsh, and E.~A. Lim, ``{Formation of
+  Relativistic Axion Stars},'' {\em JCAP}, vol.~10, p.~005, 2018.
+
+\bibitem{Amin:2018xfe}
+M.~A. Amin, J.~Braden, E.~J. Copeland, J.~T. Giblin, C.~Solorio, Z.~J. Weiner,
+  and S.-Y. Zhou, ``{Gravitational waves from asymmetric oscillon dynamics?},''
+  {\em Phys. Rev. D}, vol.~98, p.~024040, 2018.
+
+\bibitem{PhysRev.187.1767}
+R.~RUFFINI and S.~BONAZZOLA, ``Systems of self-gravitating particles in general
+  relativity and the concept of an equation of state,'' {\em Phys. Rev.},
+  vol.~187, pp.~1767--1783, Nov 1969.
+
+\bibitem{PhysRev.97.511}
+J.~A. Wheeler, ``Geons,'' {\em Phys. Rev.}, vol.~97, pp.~511--536, Jan 1955.
+
+\bibitem{Visinelli:2021uve}
+L.~Visinelli, ``{Boson Stars and Oscillatons: A Review},'' 9 2021.
+
+\bibitem{Schunck:2003kk}
+F.~E. Schunck and E.~W. Mielke, ``{General relativistic boson stars},'' {\em
+  Class. Quant. Grav.}, vol.~20, pp.~R301--R356, 2003.
+
+\bibitem{Guerra:2019srj}
+D.~Guerra, C.~F.~B. Macedo, and P.~Pani, ``{Axion boson stars},'' {\em JCAP},
+  vol.~09, no.~09, p.~061, 2019.
+\newblock [Erratum: JCAP 06, E01 (2020)].
+
+\bibitem{Vaglio:2022flq}
+M.~Vaglio, C.~Pacilio, A.~Maselli, and P.~Pani, ``{The multipolar structure of
+  rotating boson stars},'' 3 2022.
+
+\bibitem{Cardoso:2022vpj}
+V.~Cardoso, T.~Ikeda, Z.~Zhong, and M.~Zilh\~ao, ``{The piercing of a boson
+  star by a black hole},'' 5 2022.
+
+\bibitem{Amin:2021tnq}
+M.~A. Amin, A.~J. Long, Z.-G. Mou, and P.~Saffin, ``{Dipole radiation and
+  beyond from axion stars in electromagnetic fields},'' {\em JHEP}, vol.~06,
+  p.~182, 2021.
+
+\bibitem{Zhang:2020bec}
+H.-Y. Zhang, M.~A. Amin, E.~J. Copeland, P.~M. Saffin, and K.~D. Lozanov,
+  ``{Classical Decay Rates of Oscillons},'' {\em JCAP}, vol.~07, p.~055, 2020.
+
+\bibitem{Sanchis-Gual:2020mzb}
+N.~Sanchis-Gual, M.~Zilh\~ao, C.~Herdeiro, F.~Di~Giovanni, J.~A. Font, and
+  E.~Radu, ``{Synchronized gravitational atoms from mergers of bosonic
+  stars},'' {\em Phys. Rev. D}, vol.~102, no.~10, p.~101504, 2020.
+
+\bibitem{Alcubierre:2021psa}
+M.~Alcubierre, J.~Barranco, A.~Bernal, J.~C. Degollado, A.~Diez-Tejedor,
+  V.~Jaramillo, M.~Megevand, D.~N\'u\~nez, and O.~Sarbach, ``{Extreme
+  $\ell$-boson stars},'' 12 2021.
+
+\bibitem{Boskovic:2021nfs}
+M.~Bo\v{s}kovi\'c and E.~Barausse, ``{Soliton boson stars, Q-balls and the
+  causal Buchdahl bound},'' 11 2021.
+
+\bibitem{Astefanesei:2003qy}
+D.~Astefanesei and E.~Radu, ``{Boson stars with negative cosmological
+  constant},'' {\em Nucl. Phys. B}, vol.~665, pp.~594--622, 2003.
+
+\bibitem{Friedberg:1986tq}
+R.~Friedberg, T.~D. Lee, and Y.~Pang, ``{Scalar Soliton Stars and Black
+  Holes},'' {\em Phys. Rev. D}, vol.~35, p.~3658, 1987.
+
+\bibitem{Jetzer:1989av}
+P.~Jetzer and J.~J. van~der Bij, ``{CHARGED BOSON STARS},'' {\em Phys. Lett.
+  B}, vol.~227, pp.~341--346, 1989.
+
+\bibitem{Pugliese:2013gsa}
+D.~Pugliese, H.~Quevedo, J.~A. Rueda~H., and R.~Ruffini, ``{On charged boson
+  stars},'' {\em Phys. Rev. D}, vol.~88, p.~024053, 2013.
+
+\bibitem{Hawley:2002zn}
+S.~H. Hawley and M.~W. Choptuik, ``{Numerical evidence for `multi - scalar
+  stars'},'' {\em Phys. Rev. D}, vol.~67, p.~024010, 2003.
+
+\bibitem{Urena-Lopez:2012udq}
+L.~A. Urena-Lopez, S.~Valdez-Alvarado, and R.~Becerril, ``{Evolution and
+  stability phi**4 oscillatons},'' {\em Class. Quant. Grav.}, vol.~29,
+  p.~065021, 2012.
+
+\bibitem{Muia:2019coe}
+F.~Muia, M.~Cicoli, K.~Clough, F.~Pedro, F.~Quevedo, and G.~P. Vacca, ``{The
+  Fate of Dense Scalar Stars},'' {\em JCAP}, vol.~07, p.~044, 2019.
+
+\bibitem{Helfer:2016ljl}
+T.~Helfer, D.~J.~E. Marsh, K.~Clough, M.~Fairbairn, E.~A. Lim, and R.~Becerril,
+  ``{Black hole formation from axion stars},'' {\em JCAP}, vol.~1703, no.~03,
+  p.~055, 2017.
+
+\bibitem{Coleman:1985ki}
+S.~R. Coleman, ``{Q-balls},'' {\em Nucl. Phys. B}, vol.~262, no.~2, p.~263,
+  1985.
+\newblock [Addendum: Nucl.Phys.B 269, 744 (1986)].
+
+\bibitem{Cardoso:2014sna}
+V.~Cardoso, L.~C.~B. Crispino, C.~F.~B. Macedo, H.~Okawa, and P.~Pani, ``{Light
+  rings as observational evidence for event horizons: long-lived modes,
+  ergoregions and nonlinear instabilities of ultracompact objects},'' {\em
+  Phys. Rev. D}, vol.~90, no.~4, p.~044069, 2014.
+
+\bibitem{Amin:2014fua}
+M.~A. Amin, I.~Banik, C.~Negreanu, and I.-S. Yang, ``{Ultrarelativistic
+  oscillon collisions},'' {\em Phys. Rev. D}, vol.~90, no.~8, p.~085024, 2014.
+
+\bibitem{Amin:2011hj}
+M.~A. Amin, R.~Easther, H.~Finkel, R.~Flauger, and M.~P. Hertzberg,
+  ``{Oscillons After Inflation},'' {\em Phys. Rev. Lett.}, vol.~108, p.~241302,
+  2012.
+
+\bibitem{Amin:2010dc}
+M.~A. Amin, R.~Easther, and H.~Finkel, ``{Inflaton Fragmentation and Oscillon
+  Formation in Three Dimensions},'' {\em JCAP}, vol.~12, p.~001, 2010.
+
+\bibitem{Minamitsuji:2018kof}
+M.~Minamitsuji, ``{Vector boson star solutions with a quartic order
+  self-interaction},'' {\em Phys. Rev. D}, vol.~97, no.~10, p.~104023, 2018.
+
+\bibitem{Brito:2015yga}
+R.~Brito, V.~Cardoso, and H.~Okawa, ``{Accretion of dark matter by stars},''
+  {\em Phys. Rev. Lett.}, vol.~115, no.~11, p.~111301, 2015.
+\newblock arXiv:1508.04773 [gr-qc].
+
+\bibitem{Zhang:2021xxa}
+H.-Y. Zhang, M.~Jain, and M.~A. Amin, ``{Polarized Vector Oscillons},'' 11
+  2021.
+
+\bibitem{CalderonBustillo:2022cja}
+J.~Calderon~Bustillo, N.~Sanchis-Gual, S.~H.~W. Leong, K.~Chandra,
+  A.~Torres-Forne, J.~A. Font, C.~Herdeiro, E.~Radu, I.~C.~F. Wong, and
+  T.~G.~F. Li, ``{Searching for vector boson-star mergers within LIGO-Virgo
+  intermediate-mass black-hole merger candidates},'' 6 2022.
+
+\bibitem{March-Russell:2022zll}
+J.~March-Russell and J.~a.~G. Rosa, ``{Micro-Bose/Proca dark matter stars from
+  black hole superradiance},'' 5 2022.
+
+\bibitem{Gorghetto:2022sue}
+M.~Gorghetto, E.~Hardy, J.~March-Russell, N.~Song, and S.~M. West, ``{Dark
+  Photon Stars: Formation and Role as Dark Matter Substructure},'' 3 2022.
+
+\bibitem{Herdeiro:2021lwl}
+C.~A.~R. Herdeiro, A.~M. Pombo, E.~Radu, P.~V.~P. Cunha, and N.~Sanchis-Gual,
+  ``{The imitation game: Proca stars that can mimic the Schwarzschild
+  shadow},'' {\em JCAP}, vol.~04, p.~051, 2021.
+
+\bibitem{Minamitsuji:2017pdr}
+M.~Minamitsuji, ``{Proca stars with nonminimal coupling to the Einstein
+  tensor},'' {\em Phys. Rev. D}, vol.~96, no.~4, p.~044017, 2017.
+
+\bibitem{Sanchis-Gual:2017bhw}
+N.~Sanchis-Gual, C.~Herdeiro, E.~Radu, J.~C. Degollado, and J.~A. Font,
+  ``{Numerical evolutions of spherical Proca stars},'' {\em Phys. Rev. D},
+  vol.~95, no.~10, p.~104028, 2017.
+
+\bibitem{Duarte:2016lig}
+M.~Duarte and R.~Brito, ``{Asymptotically anti-de Sitter Proca Stars},'' {\em
+  Phys. Rev. D}, vol.~94, no.~6, p.~064055, 2016.
+
+\bibitem{SalazarLandea:2016bys}
+I.~Salazar~Landea and F.~Garc\'\i{}a, ``{Charged Proca Stars},'' {\em Phys.
+  Rev. D}, vol.~94, no.~10, p.~104006, 2016.
+
+\bibitem{Zilhao:2015tya}
+M.~Zilh{\~a}o, H.~Witek, and V.~Cardoso, ``{Nonlinear interactions between
+  black holes and Proca fields},'' {\em Class. Quant. Grav.}, vol.~32,
+  p.~234003, 2015.
+
+\bibitem{Jain:2021pnk}
+M.~Jain and M.~A. Amin, ``{Polarized solitons in higher-spin wave dark
+  matter},'' 9 2021.
+
+\bibitem{Herdeiro:2020kba}
+C.~Herdeiro, G.~Panotopoulos, and E.~Radu, ``{Tidal Love numbers of Proca
+  stars},'' {\em JCAP}, vol.~08, p.~029, 2020.
+
+\bibitem{Cardoso:2017cfl}
+V.~Cardoso, E.~Franzin, A.~Maselli, P.~Pani, and G.~Raposo, ``{Testing
+  strong-field gravity with tidal Love numbers},'' {\em Phys. Rev. D}, vol.~95,
+  no.~8, p.~084014, 2017.
+\newblock [Addendum: Phys.Rev.D 95, 089901 (2017)].
+
+\bibitem{Diamond:2021dth}
+M.~D. Diamond, D.~E. Kaplan, and S.~Rajendran, ``{Binary Collisions of Dark
+  Matter Blobs},'' 12 2021.
+
+\bibitem{Pacilio:2020jza}
+C.~Pacilio, M.~Vaglio, A.~Maselli, and P.~Pani, ``{Gravitational-wave detectors
+  as particle-physics laboratories: Constraining scalar interactions with a
+  coherent inspiral model of boson-star binaries},'' {\em Phys. Rev. D},
+  vol.~102, no.~8, p.~083002, 2020.
+
+\bibitem{Amin:2020vja}
+M.~A. Amin and Z.-G. Mou, ``{Electromagnetic Bursts from Mergers of Oscillons
+  in Axion-like Fields},'' {\em JCAP}, vol.~02, p.~024, 2021.
+
+\bibitem{Sanchis-Gual:2018oui}
+N.~Sanchis-Gual, C.~Herdeiro, J.~A. Font, E.~Radu, and F.~Di~Giovanni,
+  ``{Head-on collisions and orbital mergers of Proca stars},'' {\em Phys. Rev.
+  D}, vol.~99, no.~2, p.~024017, 2019.
+
+\bibitem{Widdicombe:2019woy}
+J.~Y. Widdicombe, T.~Helfer, and E.~A. Lim, ``{Black hole formation in
+  relativistic Oscillaton collisions},'' {\em JCAP}, vol.~2001, no.~01, p.~027,
+  2020.
+
+\bibitem{Bezares:2018qwa}
+M.~Bezares and C.~Palenzuela, ``{Gravitational Waves from Dark Boson Star
+  binary mergers},'' {\em Class. Quant. Grav.}, vol.~35, no.~23, p.~234002,
+  2018.
+
+\bibitem{Dietrich:2018jov}
+T.~Dietrich, F.~Day, K.~Clough, M.~Coughlin, and J.~Niemeyer, ``{Neutron
+  star\textendash{}axion star collisions in the light of multimessenger
+  astronomy},'' {\em Mon. Not. Roy. Astron. Soc.}, vol.~483, no.~1,
+  pp.~908--914, 2019.
+
+\bibitem{Dietrich:2018bvi}
+T.~Dietrich, S.~Ossokine, and K.~Clough, ``{Full 3D numerical relativity
+  simulations of neutron star\textendash{}boson star collisions with BAM},''
+  {\em Class. Quant. Grav.}, vol.~36, no.~2, p.~025002, 2019.
+
+\bibitem{Jaramillo:2022zwg}
+V.~Jaramillo, N.~Sanchis-Gual, J.~Barranco, A.~Bernal, J.~C. Degollado,
+  C.~Herdeiro, M.~Megevand, and D.~N\'u\~nez, ``{Head-on collisions of
+  $\ell$-boson stars},'' 2 2022.
+
+\bibitem{Bezares:2022obu}
+M.~Bezares, M.~Bo\v{s}kovi\'c, S.~Liebling, C.~Palenzuela, P.~Pani, and
+  E.~Barausse, ``{Gravitational waves and kicks from the merger of unequal
+  mass, highly compact boson stars},'' {\em Phys. Rev. D}, vol.~105, no.~6,
+  p.~064067, 2022.
+
+\bibitem{Macedo:2013jja}
+C.~F.~B. Macedo, P.~Pani, V.~Cardoso, and L.~C.~B. Crispino, ``{Astrophysical
+  signatures of boson stars: quasinormal modes and inspiral resonances},'' {\em
+  Phys. Rev. D}, vol.~88, no.~6, p.~064046, 2013.
+
+\bibitem{Gleiser:1988rq}
+M.~Gleiser, ``{Stability of Boson Stars},'' {\em Phys. Rev. D}, vol.~38,
+  p.~2376, 1988.
+\newblock [Erratum: Phys.Rev.D 39, 1257 (1989)].
+
+\bibitem{Jetzer:1988vr}
+P.~Jetzer, ``{Dynamical Instability of Bosonic Stellar Configurations},'' {\em
+  Nucl. Phys. B}, vol.~316, pp.~411--428, 1989.
+
+\bibitem{Helfer:2021brt}
+T.~Helfer, U.~Sperhake, R.~Croft, M.~Radia, B.-X. Ge, and E.~A. Lim, ``{Malaise
+  and remedy of binary boson-star initial data},'' 8 2021.
+
+\bibitem{Radia:2021smk}
+M.~Radia, U.~Sperhake, A.~Drew, K.~Clough, E.~A. Lim, J.~L. Ripley, J.~C.
+  Aurrekoetxea, T.~Fran\c{c}a, and T.~Helfer, ``{Lessons for adaptive mesh
+  refinement in numerical relativity},'' 12 2021.
+
+\bibitem{Andrade:2021rbd}
+T.~Andrade {\em et~al.}, ``{GRChombo: An adaptable numerical relativity code
+  for fundamental physics},'' {\em J. Open Source Softw.}, vol.~6, p.~3703,
+  2021.
+
+\bibitem{PhysRevD.90.024068}
+P.~Grandcl\'ement, C.~Som\'e, and E.~Gourgoulhon, ``Models of rotating boson
+  stars and geodesics around them: New type of orbits,'' {\em Phys. Rev. D},
+  vol.~90, p.~024068, Jul 2014.
+
+\bibitem{1996rscc.conf..138S}
+F.~E. {Schunck} and E.~W. {Mielke}, ``{Rotating boson stars.},'' in {\em
+  Relativity and Scientific Computing. Computer Algebra, Numerics,
+  Visualization}, pp.~138--151, Jan. 1996.
+
+\bibitem{Macedo:2016wgh}
+C.~F.~B. Macedo, V.~Cardoso, L.~C.~B. Crispino, and P.~Pani, ``{Quasinormal
+  modes of relativistic stars and interacting fields},'' {\em Phys. Rev. D},
+  vol.~93, no.~6, p.~064053, 2016.
+
+\bibitem{Yoshida:1994xi}
+S.~Yoshida, Y.~Eriguchi, and T.~Futamase, ``{Quasinormal modes of boson
+  stars},'' {\em Phys. Rev. D}, vol.~50, pp.~6235--6246, 1994.
+
+\bibitem{Flores:2019iwp}
+C.~V\'asquez~Flores, A.~Parisi, C.-S. Chen, and G.~Lugones, ``{Fundamental
+  oscillation modes of self-interacting bosonic dark stars},'' {\em JCAP},
+  vol.~06, p.~051, 2019.
+
+\bibitem{Aggarwal:2020olq}
+N.~Aggarwal {\em et~al.}, ``{Challenges and opportunities of gravitational-wave
+  searches at MHz to GHz frequencies},'' {\em Living Rev. Rel.}, vol.~24,
+  no.~1, p.~4, 2021.
+
+\bibitem{Badurina:2019hst}
+L.~Badurina {\em et~al.}, ``{AION: An Atom Interferometer Observatory and
+  Network},'' {\em JCAP}, vol.~05, p.~011, 2020.
+
+\bibitem{LIGOScientific:2019yhl}
+B.~P. Abbott {\em et~al.}, ``{All-sky search for continuous gravitational waves
+  from isolated neutron stars using Advanced LIGO O2 data},'' {\em Phys. Rev.
+  D}, vol.~100, no.~2, p.~024004, 2019.
+
+\bibitem{KAGRA:2021una}
+R.~Abbott {\em et~al.}, ``{All-sky search for continuous gravitational waves
+  from isolated neutron stars in the early O3 LIGO data},'' {\em Phys. Rev. D},
+  vol.~104, no.~8, p.~082004, 2021.
+
+\bibitem{LIGOScientific:2021jlr}
+R.~Abbott {\em et~al.}, ``{All-sky search for gravitational wave emission from
+  scalar boson clouds around spinning black holes in LIGO O3 data},'' 11 2021.
+
+\bibitem{LIGOScientific:2021oez}
+R.~Abbott {\em et~al.}, ``{All-sky, all-frequency directional search for
+  persistent gravitational-waves from Advanced LIGO's and Advanced Virgo's
+  first three observing runs},'' 10 2021.
+
+\bibitem{LIGOScientific:2022lsr}
+R.~Abbott {\em et~al.}, ``{Search for continuous gravitational wave emission
+  from the Milky Way center in O3 LIGO--Virgo data},'' 4 2022.
+
+\bibitem{LIGOScientific:2022pjk}
+R.~Abbott {\em et~al.}, ``{All-sky search for continuous gravitational waves
+  from isolated neutron stars using Advanced LIGO and Advanced Virgo O3
+  data},'' 1 2022.
+
+\bibitem{LIGOScientific:2021hvc}
+R.~Abbott {\em et~al.}, ``{Searches for Gravitational Waves from Known Pulsars
+  at Two Harmonics in the Second and Third LIGO-Virgo Observing Runs},'' 11
+  2021.
+
+\bibitem{LIGOScientific:2021ozr}
+R.~Abbott {\em et~al.}, ``{Search for continuous gravitational waves from 20
+  accreting millisecond X-ray pulsars in O3 LIGO data},'' 9 2021.
+
+\bibitem{Croon:2018ftb}
+D.~Croon, M.~Gleiser, S.~Mohapatra, and C.~Sun, ``{Gravitational Radiation
+  Background from Boson Star Binaries},'' {\em Phys. Lett. B}, vol.~783,
+  pp.~158--162, 2018.
+
 \bibitem{10.1145/3311790.3396656}
 D.~Stanzione, J.~West, R.~T. Evans, T.~Minyard, O.~Ghattas, and D.~K. Panda,
   ``Frontera: The evolution of leadership computing at the national science
   foundation,'' in {\em Practice and Experience in Advanced Research
   Computing}, PEARC '20, (New York, NY, USA), p.~106–111, Association for
   Computing Machinery, 2020.
+
+\bibitem{jones_scipy_2001}
+E.~Jones, T.~Oliphant, P.~Peterson, and Others, ``{SciPy}: Open source
+  scientific tools for python,'' 2001.
+
+\bibitem{Hunter:2007}
+J.~D. Hunter, ``Matplotlib: A 2d graphics environment,'' {\em Computing In
+  Science \& Engineering}, vol.~9, no.~3, pp.~90--95, 2007.
+
+\bibitem{van2011numpy}
+S.~Van Der~Walt, S.~C. Colbert, and G.~Varoquaux, ``The numpy array: a
+  structure for efficient numerical computation,'' {\em Computing in Science \&
+  Engineering}, vol.~13, no.~2, pp.~22--30, 2011.
+
+\bibitem{Turk_2010}
+M.~J. Turk, B.~D. Smith, J.~S. Oishi, S.~Skory, S.~W. Skillman, T.~Abel, and
+  M.~L. Norman, ``yt: A {MULTI}-{CODE} {ANALYSIS} {TOOLKIT} {FOR}
+  {ASTROPHYSICAL} {SIMULATION} {DATA},'' {\em The Astrophysical Journal
+  Supplement Series}, vol.~192, p.~9, dec 2010.
+
+\bibitem{Gundlach:2005eh}
+C.~Gundlach, G.~Calabrese, I.~Hinder, and J.~M. Mart{\'i}n-Garc{\'i}a,
+  ``Constraint damping in the {Z}4 formulation and harmonic gauge,'' {\em
+  Class. Quantum Grav.}, vol.~22, pp.~3767--3773, 2005.
+
+\bibitem{Croft:2022gks}
+R.~Croft, ``{Local Continuity of Angular Momentum and Noether Charge for Matter
+  in General Relativity},'' 3 2022.
+
+\bibitem{Clough:2021qlv}
+K.~Clough, ``{Continuity equations for general matter: applications in
+  numerical relativity},'' 4 2021.
 
 \end{thebibliography}

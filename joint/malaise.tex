@@ -1,17 +1,23 @@
 
+% THE OLD ABSTRACT
 
-Through numerical simulations of boson-star head-on collisions,
-we explore
-the quality of binary initial data obtained from the superposition
-of single-star spacetimes. 
-Our results demonstrate that evolutions starting from a
-plain superposition of individual boosted boson-star spacetimes
-are vulnerable to significant unphysical artefacts. These
-difficulties can be overcome with a simple modification of the
-initial data suggested in \cite{Helfer:2018vtq} for collisions of oscillatons.
-%\us{Do we need the remainder of the abstract?}
-While we specifically consider massive complex scalar field boson star models up to a 6th-order-polynomial potential, we argue that this vulnerability is universal and present in other kinds of
-exotic compact systems and hence needs to be addressed.
+
+% Through numerical simulations of boson-star head-on collisions,
+% we explore
+% the quality of binary initial data obtained from the superposition
+% of single-star spacetimes. 
+% Our results demonstrate that evolutions starting from a
+% plain superposition of individual boosted boson-star spacetimes
+% are vulnerable to significant unphysical artefacts. These
+% difficulties can be overcome with a simple modification of the
+% initial data suggested in \cite{Helfer:2018vtq} for collisions of oscillatons.
+% %\us{Do we need the remainder of the abstract?}
+% While we specifically consider massive complex scalar field boson star models up to a 6th-order-polynomial potential, we argue that this vulnerability is universal and present in other kinds of
+% exotic compact systems and hence needs to be addressed.
+
+
+
+
 %\us{The text is nice, but do we really argue that this is
 %a universal problem? I don't think we do...}
 %We present numerical simulations of head-on collisions of
@@ -253,9 +259,9 @@ superposition. We summarise our main findings as follows.
   where $M$ denotes the Arnowitt-Deser-Misner (ADM) mass
   \cite{Arnowitt:1962hi}. In contrast, the total radiated energy computed from
   the evolution of our adjusted initial data displays the expected
-  behaviour over the entire studied range $75.5\,M\le d\le 176\,M$:
+  behaviour over the entire studied range $75.5\,m\le d\le 176\,m$:
   a very mild increase in the radiated energy with $d$. In the limit of large
-  $d \gtrsim 150\,M$, both types of simulations agree within numerical uncertainties;
+  $d \gtrsim 150\,m$, both types of simulations agree within numerical uncertainties;
   see upper panel in Fig.~\ref{mal:fig:erad}.
   %
   \item In collisions of highly compact BSs with solitonic potentials,
@@ -282,11 +288,7 @@ superposition. We summarise our main findings as follows.
 
 
 
-The detailed derivation of these results begins
-in Sec.~\ref{mal:sec:formalism} with a review of
-the formalism and the computational framework of our
-%single BS and binary 
-BS simulations. We discuss in more detail
+We discuss in more detail
 in Sec.~\ref{mal:sec:superposition} the construction of initial
 data through plain superposition and our modification of this
 method. In Sec.~\ref{mal:sec:results}, we compare the dynamics
@@ -298,11 +300,6 @@ modification to be correct within numerical uncertainties.
 We summarise our findings
 and discuss future extensions of this work in
 Sec.~\ref{mal:sec:conclusions}.
-
-Throughout this work, we use units where the speed of light and
-Planck's constant are set to unity, $c=\hbar=1$. We denote
-spacetime indices by Greek letters running from 0 to 3 and
-spatial indices by Latin indices running from 1 to 3.
 
 %\us{Need paragraph reviewing the most important work here.
 %For now I do bullet points.}
@@ -363,12 +360,10 @@ spatial indices by Latin indices running from 1 to 3.
 %   BSs head-ons can form grav.atoms.
 % \end{itemize}
 % %
-\subsection{TODO}
-
 %=============================================================================
 \subsection{Boson Star Initial Data}
 %
-The initial data for our time evolution are based on single stationary
+The initial data for our time evolution is based on single stationary
 BS solutions in spherical symmetry as discussed in section \ref{boson:sec:soliton}.
 % The computation of these
 % single-star models is a well understood problem
@@ -389,9 +384,9 @@ line element can be written as
 %
 where $\Phi$ and $\psi$ are functions of $r$ only. The metric can be compared to the metric of the isotropic schwarzschild metric by setting,
 \begin{equation}
-\psi(r) = \left(1+\frac{m(r)}{2 r} \right),
+\psi(r) = \left(1+\frac{M(r)}{2 r} \right),
 \end{equation} 
-and defining a function $m(r)$ describing the mass inside a given radius $r$. At large radius the boson star spacetime approaches the vaccum black hole spacetime, $m(r)$ is constant and $m(\infty)$ gives the ADM mass of an isolated boson star.
+and defining a the aspect mass function $M(r)$ approximating the mass inside a given radius $r$. At large radius the boson star spacetime approaches the vaccum black hole spacetime, $M(r)$ is constant and $M(\infty)$ gives the ADM mass\footnote{It should be noted that the aspect mass is not equivalent ot the ADM mass at finite radii, only for large radius in an asymptotically flat spacetime.} of an isolated boson star.
 %We will shortly rescale these variables and therefore mark %them by a tilde at this point.
 It turns out convenient to express the complex
 scalar field in terms of amplitude and frequency,
@@ -408,8 +403,6 @@ as shown in section \ref{boson:sec:soliton}. The scalar field potentials used fo
 \end{align}
 taken from Eqs.~(\ref{boson:eq:Vmini}) and (\ref{boson:eq:Vsoliton}) for a mini boson star and a solitonic boson star respectively; clearly setting $\sigma_0 \rightarrow \infty$ gives $V_{\rm min} = V_{\rm sol}$.
 
-
-Following the conventions of [REF] MAKE THE PLANK UNITS AND BOSON MASS CONVENTIONS WORK
 
 
 %
@@ -470,16 +463,12 @@ Their parameters and properties are summarised in Table
 
 
 
-TALK ABOUT THE BOOSTS HERE!
-
-MAYBE ADD PLOT OF SOLITONIC STAR VS MINI BOSON STAR HERE TOO
-
 
 
 
 
 %=============================================================================
-\section{Boson-star binary initial data}
+\section{Boson Star Binary Initial Data}
 \label{mal:sec:superposition}
 %
 %The construction of boson-star binary initial data also forms part of
@@ -493,8 +482,8 @@ point variable type employed. The construction of binary initial data is
 conceptually more challenging due to the non-linear character of the
 Einstein equations; the superposition of two individual solutions will,
 in general, not constitute a new solution. Instead, such a superposition
-incurs some violation of the constraint equations (\ref{mal:eq:ham}),
-(\ref{mal:eq:mom}). The purpose of this section is to illustrate
+incurs some violation of the constraint equations (\ref{nr:eq:ham}) and
+(\ref{nr:eq:mom}). The purpose of this section is to illustrate
 how we can substantially reduce the degree of constraint
 violation with a relatively simple adjustment in the
 superposition. Before introducing this ``trick'', we first
@@ -502,34 +491,35 @@ summarise the superposition as it is commonly used in numerical
 simulations.
 
 %=============================================================================
-\subsection{Simple superposition of boson stars}
+\subsection{Simple Superposition of Boson Stars}
 %
 \label{mal:sec:superpossimple}
 The most common configuration involving more than one BS
 is a binary system, and this is the scenario we will
 describe here. We note, however, that the method
-generalises straightforwardly to any number of stars.
-Let us then consider two individual BS solutions
+generalises straightforwardly to any number of stars. Recapping the naive superposition
+procedure given in section \ref{grchombo:sec:superposition},
+let us then consider two individual BS solutions
 with their centres located at $x^i_{\rm A}$ and $x^i_{\rm B}$,
 velocities $v_{\rm A}^i$ and $v_{\rm B}^i$.
 The two BS spacetimes are
 described by the 3+1 (ADM) variables $\gamma_{ij}^{\rm A}$,
-$\alpha_{\rm A}$, $\beta_{\rm A}^i$ and $K_{ij}^{\rm A}$,
+$\alpha_{\rm A}$, $\beta_{\rm A}^i$ and ${\mathcal{K}}_{ij}^{\rm A}$,
 the scalar field variables $\varphi_{\rm A}$ and $\Pi_{\rm A}$,
 and likewise for star B. We can construct from these
 individual solutions an approximation for a binary BS system
-via the pointwise superposition
+via the pointwise superposition,
 %
 \begin{align}
   &\gamma_{ij} =
   \gamma_{ij}^{\rm A}
   +\gamma_{ij}^{\rm B}
   -\delta_{ij}\,,~~~~~~
-  K_{ij} = \gamma_{m(i}
+  {\mathcal{K}}_{ij} = \gamma_{m(i}
   \left[
-  K^{\rm A}_{j)n}
+  {\mathcal{K}}^{\rm A}_{j)n}
   \gamma_{\rm A}^{nm}
-  +K^{\rm B}_{j)n}
+  +{\mathcal{K}}^{\rm B}_{j)n}
   \gamma_{\rm B}^{nm}
   \right]\,,
   \nonumber \\
@@ -566,9 +556,7 @@ spacetimes in particular, this leading-order approximation
 has proved remarkably successful and in some limits
 a simple superposition is
 exact, such as infinite initial separation,
-in Brill-Lindquist initial data for non-boosted
-\setcounter{footnote}{6}
-BHs\footnote{Note that for Brill-Lindquist one superposes the conformal
+in Brill-Lindquist initial data for non-boosted BHs\footnote{Note that for Brill-Lindquist one superposes the conformal
 factor $\psi$ rather than $\psi^4$ as in the
 method discussed here.}
 \cite{Brill:1963yv}
@@ -619,7 +607,7 @@ the volume element $\sqrt{\gamma}$
 %$=\sqrt{\det\gamma_{ij}}$
 at the centre of star A. More specifically, the volume element
 at star A's centre is enhanced by $\mathcal{O}(1)\,\%$ for initial
-separations $\mathcal{O}(100)\,M$ and likewise for the centre of
+separations $\mathcal{O}(100)\,m$ and likewise for the centre of
 star B (by symmetry); see appendix A of Ref.~\cite{Helfer:2018vtq}
 for more details.\footnote{Due to the slow decay of this effect $\propto 1/\sqrt{d}$ \cite{Helfer:2018vtq},
 a simple cure in terms of using larger $d$ is often not practical.}
@@ -663,7 +651,7 @@ may eventually drive the system to a solution, it may no longer be what was orig
 
 
 %=============================================================================
-\subsection{Improved superposition}
+\subsection{Improved Superposition} \label{mal:sec:improvedsuperposition}
 %
 The problem of the simple superposition is encapsulated
 by Eq.~(\ref{mal:eq:metricpert}) and the resulting deviation
@@ -719,7 +707,7 @@ Eq.~(\ref{mal:eq:superposplus}).
 %\el{We should also mention that since the effect scales as $\sqrt{r}$, increasing the distance of the initial separation \emph{may} not help as much, and may increase other inaccuracies associated with a long infall evolution. The argument for $\sqrt{r}$ is described in the \cite{Helfer:2018vtq}, i.e. using a Schwarzchild ansatz, the determinant scales like $\sqrt{r}$ for small perturbations.}
 
 %=============================================================================
-\section{Models and results}
+\section{Models and Results}
 \label{mal:sec:results}
 %
 For our analysis of the two types of superposed initial data,
@@ -727,13 +715,13 @@ we will now discuss time evolutions of binary BS head-on collisions.
 A head-on collision is characterised
 by the two individual BS models and three further parameters,
 the initial separation in units of the ADM mass,
-$d/M$,
+$d/m$,
 %\mr{Worth defining $M$ here?}
 %\us{I thought I had defined it, but maybe I didn't. Might be
 %worth redefining anyway. Done.}
 and the initial velocities $v_{\rm A}$ and
 $v_{\rm B}$ of the BSs. We perform all our simulations in the centre-of-mass
-frame, so that for equal-mass binaries, $v_{\rm A}=-v_{\rm B}\invdefeq v$.
+frame, so that for equal-mass binaries, $v_{\rm A}=-v_{\rm B} =: v$.
 One additional parameter arises from the type of superposition
 used for the initial data construction: we either use the
 ``plain'' superposition of Eq.~(\ref{mal:eq:superpossimple}) or
@@ -762,7 +750,7 @@ without the simulations becoming prohibitively long.
     }
     \begin{tabular}{r|ccccc}
     \hline
-    Label & star A & star B & $v$ & initial data & $d/M$ \\
+    Label & star A & star B & $v$ & initial data & $d/m$ \\
     \hline
     {\tt mini} & mini & mini & $0.1$ & plain &
     75.5,~101,~126,~151,~176 \\
@@ -879,7 +867,7 @@ initial data.
 %Ref.~\cite{Helfer:2018vtq}.
 
 %=============================================================================
-\subsection{Initial constraint violations}
+\subsection{Initial Constraint Violations}
 %
 As discussed in Sec.~\ref{mal:sec:superpossimple} and in Appendix
 A of Ref.~\cite{Helfer:2018vtq},
@@ -890,7 +878,7 @@ of the mass-energy inside the stars away from their equilibrium
 values. If this interpretation is correct, we would expect
 this effect to manifest itself in an elevated level of violation
 of the Hamiltonian constraint
-(\ref{mal:eq:ham}) which relates the energy density to the
+(\ref{nr:eq:ham}) which relates the energy density to the
 spacetime curvature. Put the other way round, we would
 expect our improved method (\ref{mal:eq:superposplus}) to reduce the
 Hamiltonian constraint violation. This is indeed the case
@@ -898,19 +886,19 @@ as demonstrated in the upper panels of
 Fig.~\ref{mal:fig:ham} where we plot the
 Hamiltonian constraint violation of the initial data
 along the collision axis for the configurations
-{\tt mini} and {\tt +mini} with $d=101\,M$ and 
+{\tt mini} and {\tt +mini} with $d=101\,m$ and 
 the configurations {\tt soli} and {\tt +soli} with
-$d=22.3\,M$.
+$d=22.3\,m$.
 %
 \begin{figure}
   \centering
   \includegraphics[width=0.7\textwidth]{malaise_source/constraints.pdf}
   \caption{Upper row: The Hamiltonian constraint violation $\mathcal{H}$ --
-  Eq.~(\ref{mal:eq:ham}) -- normalised by the respective BS's
+  Eq.~(\ref{nr:eq:ham}) -- normalised by the respective BS's
   central energy density $16\pi \rho_{\rm ctr}$
   is plotted along the collision
   axis of the binary configurations {\tt mini}, {\tt +mini}
-  with $d=101\,M$ (left) and {\tt soli}, {\tt +soli} with $d=22.3\,M$ (right).
+  with $d=101\,m$ (left) and {\tt soli}, {\tt +soli} with $d=22.3\,m$ (right).
   The degree of violations is substantially reduced in the
   BS interior by using
   the improved superposition (\ref{mal:eq:superposplus})
@@ -920,7 +908,7 @@ $d=22.3\,M$.
   Bottom row: The same analysis for the momentum constraint
   $\mathcal{M}_x$
   normalised by the central BS's momentum density
-  $8\pi j_x$. Here the improvement is less dramatic,
+  $8\pi \mathcal{S}_x$. Here the improvement is less dramatic,
   but still yields a reduction by a factor of a few
   in the BS core.
   }
@@ -938,9 +926,9 @@ Our adjustment (\ref{mal:eq:superposplus}) also leads to
 a reduction of the momentum constraint violations of the
 initial data, although the effect is less dramatic here.
 The bottom panels of Fig.~\ref{mal:fig:ham} display the
-momentum constraint $\mathcal{M}_x$ of Eq.~(\ref{mal:eq:mom})
+momentum constraint $\mathcal{M}_x$ of Eq.~(\ref{nr:eq:mom})
 along the collision axis normalised by the momentum
-density $8\pi j_x$; we see a reduction by a factor of a few
+density $8\pi \mathcal{S}_x$; we see a reduction by a factor of a few
 over large parts of the BS interior for the modified
 data {\tt +mini} and {\tt +soli}.
 
@@ -955,7 +943,7 @@ work explore the impact of the adjustment
 obtained from the initial data's time evolutions.
 
 %=============================================================================
-\subsection{Convergence and numerical uncertainties}
+\subsection{Convergence and Numerical Uncertainties}
 %
 In order to put any differences in the time evolutions
 into context, we need to understand the uncertainties
@@ -967,9 +955,9 @@ BSs.
 
 Figure \ref{mal:fig:conv_tmBS_Erad} displays the convergence
 of the radiated energy $E_{\rm rad}$ as a function
-of time for the {\tt +mini} configuration with $d=101\,M$ of
+of time for the {\tt +mini} configuration with $d=101\,m$ of
 Table \ref{mal:tab:models} obtained for grid resolutions
-$h_1=M/6.35$, $h_2=M/9.53$ and $h_3=M/12.70$ on the
+$h_1=m/6.35$, $h_2=m/9.53$ and $h_3=m/12.70$ on the
 innermost refinement level and corresponding grid 
 spacings on the other levels. The functions
 $E_{\rm rad}(t)$ and their differences are shown in the
@@ -1031,8 +1019,8 @@ errors.
 
 In Fig.~\ref{mal:fig:conv_tsBS_Erad}, we show the same
 convergence analysis for the solitonic collision
-{\tt +soli} with $d=22.3\,M$ and resolutions
-$h_1=M/22.9$, $h_2=M/45.9$, $h_3=M/68.8$. We observe
+{\tt +soli} with $d=22.3\,m$ and resolutions
+$h_1=m/22.9$, $h_2=m/45.9$, $h_3=m/68.8$. We observe
 second-order convergence during merger and ringdown and
 slightly higher convergence in the earlier infall phase.
 %
@@ -1041,10 +1029,10 @@ slightly higher convergence in the earlier infall phase.
     \includegraphics[width=0.7\textwidth]{malaise_source/conv_tmBS_Erad.pdf}
     \caption{
     Convergence analysis for the GW energy extracted at
-    $R_{\rm ex}=252\,M$ from the head-on collision
+    $R_{\rm ex}=252\,m$ from the head-on collision
     {\tt +mini} of Table \ref{mal:tab:models} with
-    $d=101\,M$. For the resolutions
-    $h_1=M/6.35$, $h_2=M/9.53$ and $h_3=12.70$
+    $d=101\,m$. For the resolutions
+    $h_1=m/6.35$, $h_2=m/9.53$ and $h_3=12.70$
     (on the innermost refinement level),
     we obtain convergence close to second order
     (upper panel). The numerical error,
@@ -1064,8 +1052,8 @@ slightly higher convergence in the earlier infall phase.
     \caption{Convergence analysis as in
     Fig.~\ref{mal:fig:conv_tmBS_Erad} but for the configuration
     {\tt +soli} of Table \ref{mal:tab:models} with
-    $d=22.3\,M$ and
-    resolutions $h_1=M/22.9$, $h_2=M/45.9$ and $h_3=M/68.8$.
+    $d=22.3\,m$ and
+    resolutions $h_1=m/22.9$, $h_2=m/45.9$ and $h_3=m/68.8$.
     The numerical error,
     obtained by comparing our results
     with the second-order Richardson extrapolated values
@@ -1106,7 +1094,7 @@ and $3\,\%$. With the upper range, we arrive at
 a conservative total error budget for discretisation and
 extraction of about $4\,\%$.
 As a final test, we have repeated the {\tt mini} and
-{\tt +mini} collisions for $d=101\,M$
+{\tt +mini} collisions for $d=101\,m$
 with the independent {\sc GRChombo}
 code \cite{Clough:2015sqa,Radia:2021} using the CCZ4 formulation \cite{Alic:2011gg} and obtain the same results within $\approx 1.5\,\%$.
 Bearing in mind these tests and a $4\,\%$ error budget,
@@ -1133,7 +1121,7 @@ with and without our adjustment of the initial data.
 
 
 %=============================================================================
-\subsection{Radiated gravitational-wave energy}
+\subsection{Radiated Gravitational Wave Energy}
 %
 For our first test, we compute the total radiated
 GW energy for all our head-on collisions focusing
@@ -1141,9 +1129,9 @@ in particular on its dependence on the initial separation
 $d$ of the BS centres. In this estimate we exclude
 any spurious or ``junk'' radiation content
 of the initial data by starting the integration
-at $t=R_{\rm ex}+40\,M$. Unless specified otherwise,
-all our results are extracted at $R_{\rm ex}=300\,M$ for
-mini BS collisions and $R_{\rm ex}=84\,M$ for the
+at $t=R_{\rm ex}+40\,m$. Unless specified otherwise,
+all our results are extracted at $R_{\rm ex}=300\,m$ for
+mini BS collisions and $R_{\rm ex}=84\,m$ for the
 solitonic binaries.
 %
 \begin{figure}
@@ -1154,7 +1142,7 @@ solitonic binaries.
     with initial separation $d$ and velocity $v=0.1$ towards
     each other.
     For comparison, a non-spinning, equal-mass BH binary
-    colliding head-on with the same boost velocity $v=0.1$ radiates $E_{\rm rad}=6.0\times 10^{-4}\,M$
+    colliding head-on with the same boost velocity $v=0.1$ radiates $E_{\rm rad}=6.0\times 10^{-4}\,m$
     \cite{Sperhake:2019oaw}.
     %Label: {\tt fig:erad}
     } 
@@ -1173,7 +1161,7 @@ possibly showing a mild increase with $d$. The mini BS collisions
 shown as black $\times$ symbols in the upper panel of
 Fig.~\ref{mal:fig:erad} exhibit a rather different behaviour:
 the radiated energy rapidly decreases with $d$ and only levels
-off for $d\gtrsim 150\,M$. We have verified that the excess
+off for $d\gtrsim 150\,m$. We have verified that the excess
 energy for smaller $d$ is not due to an elevated level of
 junk radiation which consistently contribute well below 
 %\mr{Change to \%?} \us{Not sure this will look better... Is
@@ -1183,7 +1171,7 @@ been excluded from the results of Fig.~\ref{mal:fig:erad} anyway.
 The {\tt +mini} BS collisions,
 in contrast, results in an approximately constant $E_{\rm rad}$
 with a total variation approximately at the level of the
-numerical uncertainties. For $d\gtrsim 150\,M$, both types of
+numerical uncertainties. For $d\gtrsim 150\,m$, both types of
 initial data yield compatible results, as is expected.
 The key benefit of our adjusted initial data is that they provide
 reliable results even for smaller initial separations suitable
@@ -1339,7 +1327,7 @@ of the scalar field amplitude in the next subsection.
 %
 
 %=============================================================================
-\subsection{Evolution of the scalar amplitude and gravitational collapse}
+\subsection{Evolution of the Scalar Amplitude and Gravitational Collapse}
 %
 The adjustment (\ref{mal:eq:superposplus}) in the superposition of oscillatons
 was originally developed in Ref.~\cite{Helfer:2018vtq} to reduce
@@ -1358,14 +1346,14 @@ in Fig.~\ref{mal:fig:soli_ampctr} the scalar amplitude
 at the individual BS centres and the BS trajectories
 as functions of time for the
 {\tt soli} and {\tt +soli} configurations starting with initial
-separation $d=22.3\,M$.
+separation $d=22.3\,m$.
 %
 \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{malaise_source/ampctr_sBS.pdf}
     \caption{The central scalar-field amplitude $|\varphi_{\rm ctr}|$ 
     as a function of time for one BS in the head-on
-    collisions of solitonic BSs with distance $d=22.3\,M$
+    collisions of solitonic BSs with distance $d=22.3\,m$
     (black solid and red long-dashed) as well as a single
     BS spacetime with the same parameters (green dashed)
     and the same single BS spacetime ``poisoned'' with
@@ -1378,7 +1366,7 @@ separation $d=22.3\,M$.
     In the bottom panel, we show for reference the coordinate
     trajectories of the BS centres as obtained from locally
     Gauss-fitting the scalar profile. Around merger this procedure
-    becomes inaccurate, so that the values around $t\approx 70\,M$
+    becomes inaccurate, so that the values around $t\approx 70\,m$
     should be regarded as qualitative measures, only.
     %Label: {\tt fig:soli\_ampctr}
     }
@@ -1389,18 +1377,18 @@ Let us first consider the {\tt soli} configuration using plain
 superposition displayed by the solid (black) curves. In the upper
 panel of Fig.~\ref{mal:fig:soli_ampctr}, we clearly see
 that the scalar amplitude steadily increases, reaching a maximum
-around $t\approx 30\,M$ and then rapidly drops to a near-zero level.
+around $t\approx 30\,m$ and then rapidly drops to a near-zero level.
 Our interpretation of this behaviour as a collapse to a BH is confirmed
 by the horizon finder which reports an apparent horizon of irreducible
-mass $m_{\rm irr}=0.5\,M$ just before the scalar field amplitude
+mass $m_{\rm irr}=0.5\,m$ just before the scalar field amplitude
 collapses; the time of the first identification of an apparent horizon
-is marked by the vertical dotted black line at $t\approx 30\,M$.
+is marked by the vertical dotted black line at $t\approx 30\,m$.
 For reference we plot in the bottom panel the trajectory of the BS centres
 along their collision (here the $x$) axis. In agreement with the
-horizon mass $m_{\rm irr}=0.5\,M$, the trajectory clearly indicates
-that around $t\approx 30\,M$, the BSs are still far away from merging
+horizon mass $m_{\rm irr}=0.5\,m$, the trajectory clearly indicates
+that around $t\approx 30\,m$, the BSs are still far away from merging
 into a single BH; in units of the ADM mass,
-the individual BS radius is $r_{99}=2.78\,M$. We interpret
+the individual BS radius is $r_{99}=2.78\,m$. We interpret
 this early BH collapse as a spurious feature due to the use of
 plain superposition in the initial data construction.
 This behaviour is also seen in the case of the real scalar
@@ -1416,7 +1404,7 @@ is constant, it increases mildly when the BS trajectories meet near $x=0$,
 and then rapidly drops to zero. Just as the maximum amplitude is reached,
 the horizon finder first computes an apparent horizon, now with 
 %\mr{In terms of $M$?} \us{Oh yes! Fixed.}
-$m_{\rm irr}=0.99\,M$, as expected for a BH resulting from the merger;
+$m_{\rm irr}=0.99\,m$, as expected for a BH resulting from the merger;
 see the vertical red line in the figure.
 
 As a final test of our interpretation, we compare the behaviour
@@ -1448,7 +1436,7 @@ the same unphysical behaviour to our {\tt soli} binary constituents.
 %\us{Yes, might be good to ref to the figure.}
 We have repeated this analysis for our entire sequence of
 {\tt soli} binaries with very similar results: the individual
-BSs always collapse to distinct BHs about $\Delta t\approx 50\,M$
+BSs always collapse to distinct BHs about $\Delta t\approx 50\,m$
 before the binary merger.
 
 Finally, the trajectories in the bottom panel of
@@ -1523,37 +1511,13 @@ solver.
 
 
 %=============================================================================
-\section*{Acknowledgments}
-CAN REMOVE THIS LATER PROBABLY 
 
-We thank Andrew Tolley, Serguei Ossokine and Richard Brito for fruitful discussions.
-This work is supported by
-STFC Consolidator Grant Nos.~ST/V005669/1 and ST/P000673/1,
-NSF-XSEDE Grant No.~PHY-090003,
-STFC Capital Grant Nos.~ST/P002307/1, ST/R002452/1,
-STFC Operations Grant No.~ST/R00689X/1 (project ACTP 186),
-PRACE Grant No.~2020225359,
-and
-DIRAC RAC13 Grant No.~ACTP238.
-Computations were performed on
-the San Diego Supercomputing Center's clusters Comet and Expanse,
-the Texas Advanced Supercomputing Center's Stampede2,
-the Cambridge Service for Data Driven Discovery (CSD3) system, Durham COSMA7 system
-and
-the Juwels cluster at GCS@FZJ, Germany.
-T.H. is supported by NSF Grants No. PHY-1912550 and AST-2006538, NASA ATP Grants No. 17-ATP17-0225 and 19-ATP19-0051, NSF-XSEDE Grant No. PHY-090003, and NSF Grant PHY-20043. This work has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No. 690904. This research project was conducted using computational resources at the Maryland Advanced Research Computing Center (MARCC).
-The authors acknowledge the Texas Advanced Computing Center (TACC) at The University of Texas at Austin for providing HPC resources that have contributed to the research results reported within this paper. URL: http://www.tacc.utexas.edu \cite{10.1145/3311790.3396656}
-
-%=============================================================================
-
-\section{Analytic treatment of the Hamiltonian constraint- MIGHT REMOVE}
+\section{Analytic Treatment of the Hamiltonian Constraint}
 \label{mal:sec:hamanalytic}
-CAN REMOVE THIS LATER PROBABLY 
+
 For the case of two non-boosted BSs, we can analytically
 compute the Hamiltonian constraint violation
-at the stars' centres. Let us consider for this purpose
-the metric ansatz (\ref{mal:eq:ds2iso}). From this line
-element, we directly extract the spatial metric
+at the stars' centres. Consider the spatial metric
 % In this section we consider derive the vanishing
 % of the Hamiltonian
 % constraint violation of a binary spacetime of two non-boosted
@@ -1564,7 +1528,7 @@ element, we directly extract the spatial metric
 %for a spherically symmetric compact object's spatial metric
 %
 \begin{equation}
-    \gamma_{ij}^{A} = \psi_{\rm A}^4 \delta_{ij}\,.\label{mal:eqn:appendixansatzmetric}
+    \gamma_{ij}^{A} = \psi_{\rm A}^4 \delta_{ij}\,,\label{mal:eqn:appendixansatzmetric}
 \end{equation}
 %
 for a non-boosted BS at position $x_{\rm A}^i$.
@@ -1573,13 +1537,13 @@ so that for zero shift vector the extrinsic curvature vanishes,
 %and we also assume 
 %
 %\begin{equation}
-$K_{ij}^{\rm A} = 0$. 
+${\mathcal{K}}_{ij}^{\rm A} = 0$. 
 %\end{equation}
 %
 For the second binary member, we likewise obtain a
 %we also choose an identical
 metric $\gamma^{\rm B}_{ij}$ and extrinsic curvature
-$K^{\rm B}_{ij}=0$, now centred at position $x_{\rm B}^i$.
+${\mathcal{K}}^{\rm B}_{ij}=0$, now centred at position $x_{\rm B}^i$.
 
 For sufficiently large initial separation $d=||x_{\rm B}^i
 -x_{\rm A}^i||$, the exponential falloff of the scalar field
@@ -1611,12 +1575,12 @@ and, combined with Eqs.~(\ref{mal:eq:apptmp1}),
 %where we use $\partial_i \phi_{B} (x_{A}) = \partial_i \phi_{B} (x_{B}) = 0$ due to spherical symmetry. 
 The single BS spacetimes are solutions to the Einstein equations;
 by using Eq.~(\ref{mal:eqn:appendixansatzmetric}), their individual
-Hamiltonian constraints (\ref{mal:eq:ham}) simplify to
+Hamiltonian constraints (\ref{nr:eq:ham}) simplify to
 %
-%Assuming that each single-star spacetime fulfills Einstein's equation in isolation and thus the Hamiltonian constraint from Eq. \ref{mal:eq:ham} is equal zero 
+%Assuming that each single-star spacetime fulfills Einstein's equation in isolation and thus the Hamiltonian constraint from Eq. \ref{nr:eq:ham} is equal zero 
 \begin{equation}
     \mathcal{H}_{\rm A} = 8 \delta^{ij} \partial_i\partial_j  \psi_{\rm A} +  16\pi \psi_{\rm A}^5\rho_{\rm A} = 0\,,
-    \label{mal:eq:hamA}
+    \label{nr:eq:hamA}
 \end{equation}
 %
 and likewise for star B.
@@ -1654,7 +1618,7 @@ and the constraint simplifies to
 \end{aligned}
 \end{equation}
 %
-By Eq.~(\ref{mal:eq:hamA}), the derivative of the conformal factor
+By Eq.~(\ref{nr:eq:hamA}), the derivative of the conformal factor
 $\psi_{\rm A}$ cancels out the density $\rho_{\rm A}$,
 so that
 %where using the Hamiltonian constraint for object A and Eq. \ref{mal:eqn:energydensityconditon} gives 
@@ -1665,7 +1629,7 @@ so that
 \end{aligned}
 \end{equation}
 %
-Using the analogue of Eq.~(\ref{mal:eq:hamA}) for star B, we trade
+Using the analogue of Eq.~(\ref{nr:eq:hamA}) for star B, we trade
 the right-hand side for the energy density,
 %using the Hamiltonian constraint for 2nd object with index B
 %

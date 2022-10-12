@@ -10,7 +10,7 @@
 \subsection{Action} \label{boson:sec:action}
 The Boson Stars considered are a complex Klein Gordon Scalar field, $\varphi$, minimally coupled to gravity. The action is the Einstein-Hilbert vacuum action plus the matter action for curved space,
 \begin{gather} S = \int_\mathcal{M}\left[\mathcal{L}_{EH} + \mathcal{L}_M\right] \sqrt{-g}\,\dd x^4, \\
- \L_{EH} = \frac{1}{16\pi G}R, \\
+ \L_{EH} = \frac{c^4}{16\pi G}R, \\
  \L_{M} =-\frac{1}{2}g^{\mu\nu}\nabla_\mu \varphi^* \nabla_\nu \varphi - \frac{1}{2}V(|\varphi|^2),  \end{gather}
 Here $V$ is the Klein-Gordon potential and it's effect on boson stars is discussed in []. Some common choices of poteantials are,
 \begin{align}
@@ -164,7 +164,7 @@ Equivalently, the Noether charge density $\mathcal{N}$ is ,
 
 The ideas of this section, concerning conserved charges are extended in section \ref{q:sec:q} with applications to continuity equations in energy, momentum, angular momentum and noether charges for spin-1 Proca fields. The results of this section have all been derived for an infinite volume where only a charge density $\mathcal{Q}$ needs be considered. Section \ref{q:sec:q} considers continuity equations in a finite volume $V$ so must also consider the flux density $\mathcal{F}$ of conserved particles through $\partial V$ (the boundary of $V$) and the source density $\mathcal{S}$ (creation and destruction of $\mathcal{Q}$) in $V$. 
 
-\subsection{Boosted Boson Stars and Black Holes}
+\subsection{Boosted Boson Stars and Black Holes}\label{boson:sec:boost}
 Let us now consider a moving star, this corresponds to boosting a stationary soliton solution. There is no unique way of doing this as any coordinate transformation that reduces to a Minkowski spacetime boost at large radius is valid. All the degrees of freedom we have can be absorbed into a coordinate gauge choice so it makes sense to choose the trivial, constant valued boost, with rapidity $\chi = \mathrm{arctanh} (v)$ for a velocity $v$, from Special Relativity. Using Cartesian coordinates, the boost matrix $\bs{\Lambda}$ for a boost in the $x$ direction is,
 \begin{equation}
 \Lambda_\nu^\mu =  \exp\begin{pmatrix} 0 & -\chi & 0& 0 \\ -\chi & 0 & 0 & 0\\ 0 & 0&1&0 \\ 0&0&0&1\end{pmatrix} = \begin{pmatrix} \cosh(\chi) & -\sinh(\chi) & 0& 0 \\ -\sinh(\chi) & \cosh(\chi) & 0 & 0\\ 0 & 0&1&0 \\ 0&0&0&1\end{pmatrix},
