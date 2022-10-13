@@ -1,0 +1,1404 @@
+
+  % The radiation of linear momentum imparts a recoil (or ``kick'') to
+  % the center of mass of a merging black-hole binary system. Recent
+  % numerical relativity calculations have shown that
+  % eccentricity can lead to an approximate 25\% increase in recoil
+  % velocities for equal-mass, spinning binaries with spins lying in the
+  % orbital plane (``superkick'' configurations)~[U.~Sperhake et al.~\citetalias{Sperhake:2019wwo}].
+  % %[PRD \textbf{101} (2020) 024044]
+  % Here we investigate the impact of nonzero eccentricity on the kick
+  % magnitude and gravitational-wave emission of nonspinning,
+  % unequal-mass black hole binaries. We confirm that nonzero
+  % eccentricities at merger can lead to kicks which are larger by
+  % up to $\sim 25\,\%$ relative to the quasicircular case.
+  % We also find that the kick velocity $v$ has an oscillatory
+  % dependence on eccentricity, which we interpret as a consequence of
+  % changes in the angle between the infall direction at merger and the
+  % apoapsis (or periapsis) direction.
+
+%=============================================================================
+
+
+\def\aj{\rm{AJ}}
+\def\apj{\rm{ApJ}}
+\def\apjl{\rm{ApJ}}
+\def\apjs{\rm{ApJS}}
+\def\aap{\rm{A\&A}}
+\def\aaps{\rm{A\&AS}}
+\def\mnras{\rm{MNRAS}}
+\def\prd{\rm{PRD}}
+\def\prl{\rm{PRL}}
+\def\prx{\rm{PRX}}
+\def\nat{\rm{Nature}}
+\def\cqg{\rm{CQG}}
+\def\grg{\rm{GRG}}
+\def\lrr{\rm{LRR}}
+\newcommand{\rad}{\mathrm{rad}}
+\newcommand{\tl}{\tilde{\ell}}
+\newcommand{\tm}{\tilde{m}}
+\newcommand{\rmd}{\mathrm{d}}
+
+
+
+
+\section{Introduction}
+
+Gravitational waves (GWs) carry energy, angular momentum and linear
+momentum away from the source with potentially observable
+consequences. The radiated energy corresponds to an often enormous
+mass deficit in the source; for example the first ever detected
+black-hole (BH) binary merger, GW150914~\cite{Abbott:2016blz}, radiated
+$\Delta M\approx 3\,M_{\odot}$, or about $4.6\,\%$ of the total mass
+of the source. A tiny fraction of this energy is deposited into GW
+interferometers, thus enabling us to detect and characterize the
+signal~\cite{Saulson:2010zz}. The angular momentum radiated in GWs
+reduces the rotation rate of possible merger remnants and---at least
+in four spacetime dimensions---plays a critical role in avoiding the
+formation of naked singularities in the form of BHs spinning above the
+Kerr limit; see
+e.g.~Refs.~\cite{Campanelli:2006uy,Sperhake:2009jz}. Therefore, GW emission
+is a necessary ingredient of the theory of general relativity, in the
+sense that it avoids the formation of spacetime singularities and
+preserves its predictive power.
+
+In this paper, we focus on the radiated linear momentum, which
+imparts a recoil (commonly referred to as a \emph{kick}) on the center
+of mass of the emitting
+system~\cite{Bonnor1961-wy,Peres:1962zz,Bekenstein:1973zz}.
+
+Whereas GWs inevitably carry energy and angular momentum---provided
+their sources do---the radiation of linear momentum requires some
+degree of asymmetry, as realized in nonspherical supernova explosions
+or unequal-mass ratios and/or spin misalignments in binary BH
+mergers. The inspiral of two equal-mass, nonspinning BHs, for example,
+radiates energy and angular momentum, whereas the emitted linear
+momentum is zero by symmetry. By turning these considerations around,
+we may also regard the study of recoiling GW emitters as a guided
+search for characteristic (in some loose sense ``asymmetric'')
+features in their orbital dynamics which, in turn, might help us to
+better understand astrophysical sources through GW observations.
+A recoiling postmerger BH, for example, can induce a blue (or
+red) shift in parts of its GW signal that may be exploited in future
+GW observations to directly measure BH kicks
+\cite{Gerosa:2016vip,CalderonBustillo:2018zuq,Lousto:2019lyf}, and
+the effect of kicks should be taken into account in future ringdown
+tests of general relativity with third-generation GW detectors to
+avoid systematic biases~\cite{Varma:2020nbm}.
+The asymmetric emission of GWs is not the only mechanism that 
+can contribute to recoils; if there is an accretion disk or some other
+astrophysical background, this can also impart a kick on the remnant
+BH that can be $\mathcal{O}(100)\;\mathrm{km/s}$ \cite{Cardoso:2020lxx}.
+
+For binary BH mergers, early estimates of the recoil speeds of the
+remnant BH relied on a variety of approximations, including
+post-Newtonian (PN) theory~\cite{Fitchett1983-xq,Blanchet:2005rj}, BH
+perturbation theory~\cite{Hughes:2004ck}, the effective-one-body
+formalism~\cite{Damour:2006tr}, the close-limit
+approximation~\cite{Sopuerta:2006wj,Sopuerta:2006et}, and combinations
+thereof~\cite{LeTiec:2009yg}. Not long afterwards, during the
+numerical relativity (NR) gold rush, several groups obtained more
+accurate results for the kick velocity from the merger of nonspinning
+BHs along
+quasicircular
+orbits~\cite{Baker:2006vn,Gonzalez:2006md,Herrmann:2007cwl}.
+These calculations were followed by the discovery that the merger of
+spinning BHs can lead to kick velocities of $\sim 3000$~km/s when the
+spins lie in the orbital plane and point in opposite directions
+(``superkick''
+configurations~\cite{Gonzalez:2007hi,Campanelli:2007cga,Campanelli:2007ew}),
+and to even larger kicks of order $\sim 5000$~km/s when the spins are
+partially aligned with the orbital angular momentum (``hang-up kick''
+configurations~\cite{Lousto:2011kp}). 
+The probability of such large
+recoils occurring in nature depends therefore on spin alignment, and
+this has been studied by several authors (see, e.g.,
+Refs.~\cite{Schnittman:2007sn,Dotti:2009vz,Kesden:2010ji,Lousto:2012su,Berti:2012zp,Lousto:2012su}).
+
+The possible occurrence of superkicks has important consequences for
+astrophysical BHs and their
+environments~\cite{Komossa:2012cy,Colpi:2014poa,Blecha:2015baa,Barack:2018yly}.
+It is pertinent to compare the recoil velocities obtained from NR
+simulations with the escape velocities of various astrophysical
+environments \cite{Merritt:2004xa}. For example, stellar-mass BH
+binaries are believed to form dynamically in globular clusters
+\cite{Benacquista:2011kv}. In this case the escape velocities are
+generally $\mathcal{O}(10)\;\mathrm{km/s}$, smaller than the
+$\mathcal{O}(100)\;\mathrm{km/s}$ kicks predicted for quasicircular,
+nonspinning binaries~\cite{Gonzalez:2006md}. Then relativistic recoils
+can affect the proportion of BH merger remnants that are retained by
+globular clusters even if the BHs are
+nonspinning~\cite{Morawski:2018kfs}. At the other end of the scale,
+the recoil velocities of supermassive BHs can be used to constrain
+theories of their growth at the center of dark matter halos
+\cite{Haiman:2004ve}. Kicked remnants in the accretion disk of an
+active galactic nucleus may also lead to detectable electromagnetic
+counterparts for stellar-origin BH
+mergers~\cite{Graham:2020gwr,Chen:2020gek}.
+
+As mentioned above, a net gravitational recoil requires some asymmetry in the
+system, so that the GW emission is anisotropic.
+A natural way to
+accentuate the asymmetry is through the addition of orbital
+eccentricity. Early calculations in the close-limit
+approximation~\cite{Sopuerta:2006et} predicted a kick proportional to
+$1+e$ for small eccentricities, $e\lesssim 0.1$.  More recently,
+numerical relativity calculations led to the conclusion that
+eccentricity can lead to an approximate 25\% increase in recoil
+velocities for superkick configurations with moderate
+eccentricities~\cite{Sperhake:2019wwo}.
+
+The main goal of this study is to investigate the impact of nonzero
+eccentricity on the kick magnitude and the corresponding GW emission
+of nonspinning, unequal-mass BH binaries.  As we shall see, the
+eccentricity has a subtle but significant effect on the kick
+magnitude, which manifests itself in corresponding patterns in the GW
+signal, especially in subdominant multipoles.
+
+For isolated binary systems with large initial separations, the
+emission of GWs acts to circularize the orbit by the time the signal
+enters the frequency band of ground-based detectors.  However, viable
+dynamical formation channels of stellar-origin BH binaries could
+result in a non-negligible population of merging BHs that still retain
+moderate eccentricities at frequencies relevant for ground-based GW
+detection (see,
+e.g.,Refs.~\cite{Samsing:2017rat,Samsing:2017xmd,Samsing:2017oij,Rodriguez:2018pss,Samsing:2020tda,Tagawa:2020jnc}).
+Furthermore, the presence of astrophysical media such as
+accretion disks may increase the eccentricity during the inspiral
+\cite{Cardoso:2020iji}.
+Most of the events observed by the LIGO/Virgo Collaboration show no
+evidence of significant eccentricities~\cite{Salemi:2019owp} but the
+extraordinary GW190521 event~\cite{Abbott:2020tfl} is potentially
+consistent with an eccentricity as high as
+$e\approx0.7$~\cite{Romero-Shaw:2020thy,Gayathri:2020coq}.
+
+Orbital eccentricity is expected to be a distinguishing feature of
+stellar-origin BH binaries that form dynamically, but a nonzero
+eccentricity is more likely at the low frequencies accessible by LISA,
+where gravitational radiation reaction has less time to circularize
+the binary~\cite{Nishizawa:2016jji,Breivik:2016ddj,Nishizawa:2016eza}.
+If confirmed, a nonzero eccentricity would hint at a possible
+dynamical origin for this event~\cite{Romero-Shaw:2020thy}.
+
+Eccentricity is expected to play an even more prominent role for
+massive BH binaries: the dynamics of these binaries in stellar and
+gaseous environments is expected to lead to distinct (but generically
+nonzero) orbital eccentricities by the time the binaries enter the
+LISA sensitivity window (see Ref.~\cite{Roedig:2011rn} and references
+therein). Even larger eccentricities are possible if BH binary
+coalescence occurs through the interaction with a third
+BH~\cite{Bonetti:2018tpf}.
+
+Our work is an exploration of the effect of large eccentricities near
+merger, and it differs in several ways from the catalog of eccentric,
+unequal-mass simulations presented in Ref.~\cite{Huerta:2019oxn}.
+While their study considered a larger range of mass ratios (in our
+notation, $1/10\leq q\leq 1$), they carried out fewer simulations for
+each value of $q$. The binaries in their simulations have initial
+eccentricities smaller than $e_0 = 0.18$ 15 cycles before merger,
+and since they start at larger orbital separations,
+their eccentricity will have further decreased by the time of merger.
+As we will see below, the larger initial eccentricities in
+our simulations allow us to highlight interesting periodicities in the
+emission of gravitational radiation and the behavior of the recoil
+velocity.
+
+The remainder of this paper is organized as follows.
+%
+In Sec.~\ref{bhkick:sec:NR} we discuss our two numerical codes (\textsc{Lean}
+and \textsc{GRChombo}), the computational framework, and the catalog
+of simulations we produced for this study. In Sec.~\ref{bhkick:sec:results}
+we present the main results of our simulations. In
+Sec.~\ref{bhkick:sec:concl} we summarize these results and point out possible
+directions for future work. In Appendix \ref{bhkick:sec:accuracy} we
+detail our tests for numerical accuracy and verify that
+our two codes give comparable results.
+Finally, in Appendix \ref{bhkick:sec:tagging} we 
+discuss the tagging of cells for adaptive mesh refinement used in one
+of our numerical codes (\textsc{GRChombo}).
+%
+Throughout this work we use geometrical units ($G=c=1$).
+
+%=============================================================================
+\section{Computational framework and set of simulations}
+\label{bhkick:sec:NR}
+% 
+\subsection{Numerical methods}
+
+The simulations reported in this work have been performed with the
+\textsc{GRChombo}~\cite{Clough:2015sqa, GRChomboWebsite} and 
+\textsc{Lean}~\cite{Sperhake:2006cy} codes.
+We estimate the error budget of our simulations from both codes to be up to 3.5\,\%. Details of our convergence analyses are provided in 
+Appendix~\ref{bhkick:sec:accuracy}. Though different codes were
+used for each sequence of configurations, we undertook comparison tests 
+in order to ensure consistent results, and these can also be found in
+Appendix~\ref{bhkick:sec:accuracy}.
+
+\subsubsection{\textsc{GRChombo} setup}
+\label{bhkick:sec:grchombo}
+\textsc{GRChombo}~\cite{Clough:2015sqa} is a finite difference
+numerical relativity code which uses the method of lines with
+fourth-order Runge-Kutta time stepping. In contrast to previous studies
+with \textsc{GRChombo} we have implemented sixth-order spatial
+stencils in order to improve phase accuracy~\cite{Husa:2007hp}. The
+Einstein equations are solved by evolving the covariant and conformal
+Z4 (CCZ4) formulation~\cite{Alic:2011gg} with the prescription
+described in Sec.~F of~\cite{Alic:2013xsa}, namely the replacement
+$\kappa_1 \to \kappa_1/\alpha$, in order to stably evolve BHs
+and maintain spatial covariance. After this replacement and in the
+notation of Ref.~\cite{Alic:2011gg}, we use the constraint damping
+parameters $\kappa_1=0.1$, $\kappa_2=0$ and $\kappa_3=1$ in all
+simulations.  However, unlike Refs.~\cite{Clough:2015sqa,Alic:2011gg},
+we use the conformal factor defined by
+\begin{equation}
+    \chi = \det(\gamma_{ij})^{-1/3},\label{bhkick:eq:con-fac}
+\end{equation}
+where $\gamma_{ij}$ is the physical spatial metric.
+\textsc{GRChombo} is built on the \textsc{Chombo}~\cite{ChomboReport} 
+library for solving partial differential equations with 
+block-structured adaptive mesh refinement (AMR) which supports
+nontrivial mesh hierarchies using Berger-Rigoutsos grid generation
+\cite{Berger1991}. The grid comprises a hierarchy of cell-centered 
+Cartesian meshes consisting of $L+1$ refinement levels labeled from 
+$l=0,\ldots,L$, each with grid spacing $h_l=h_0/2^l$. Given the 
+AMR, the grid configuration changes dynamically during the simulation.
+The regridding is controlled by the tagging of cells for refinement 
+in the Berger-Rigoutsos algorithm~\cite{Berger1991}, with cells being 
+tagged if the tagging criterion $C$ exceeds a specified threshold 
+value $t_R$. Details of the tagging criterion used in this work are 
+provided in Appendix \ref{bhkick:sec:tagging}. The Berger-Oliger scheme~\cite{Berger1991} 
+is used for time stepping on the mesh hierarchy, and we take a 
+Courant-Friedrichs-Lewy (CFL) factor of $1/4$ in all simulations. 
+Due to the inherent symmetry of the configurations considered, we 
+employ bitant symmetry in order to reduce the computational expense.
+
+\subsubsection{\textsc{Lean} setup}
+\label{bhkick:sec:lean}
+The \textsc{Lean} code~\cite{Sperhake:2006cy} is based on the 
+\textsc{Cactus} computational toolkit~\cite{Goodale2002a} and uses 
+the method of lines with fourth-order Runge-Kutta time stepping and 
+sixth-order spatial stencils for improved phase accuracy 
+\cite{Husa:2007hp}. The Einstein equations are implemented in the form 
+of the Baumgarte-Shapiro-Shibata-Nakamura-Oohara-Kojima (BSSNOK) 
+formulation~\cite{Nakamura:1987zz,Shibata:1995we,Baumgarte:1998te} 
+with the moving-puncture gauge~\cite{Campanelli:2005dd,Baker:2005vv}. 
+The \textsc{Carpet} driver~\cite{Schnetter:2003rb} provides AMR using 
+the technique of ``moving boxes.'' We use bitant symmetry to exploit 
+the symmetry of the simulations and reduce computational expense. 
+The computational domain 
+comprises a hierarchy of $L+1$ refinement levels labeled from 
+$l=0,\ldots l_F,\ldots,L$, each with grid spacing $h_l=h_0/2^l$. 
+Before applying the symmetry, for $l\leq l_F$ each level consists of 
+a single fixed cubic grid of half-length\footnote{In one departure from
+this rule, we enhance $R_2$ by a factor of 4/3 for the simulations
+of sequence \texttt{lq1:2} of Table \ref{bhkick:tab:sequences}.}
+$R_l=R_0/2^l$, and for 
+$l_F<l\leq L$, each level consists of two cubic components of 
+half-length $R_l=2^{L-l}R_L$ centered around each BH. We adopt this 
+notation for consistency with that used to describe \textsc{GRChombo}. 
+This translates into the more conventional \textsc{Lean} grid setup 
+notation (cf. Ref.~\cite{Sperhake:2006cy}) as
+\begin{equation}
+    \left\{(R_0,\ldots,2^{-l_F}R_0) \times 
+    (2^{L-l_F-1}R_L,\ldots,R_L),h_L\right\}.
+\end{equation}
+A CFL factor of $1/2$ is used in all simulations, and apparent horizons 
+are computed with \textsc{AHFinderDirect}
+\cite{Thornburg:1995cp,Thornburg:2003sf}.
+
+\subsubsection{Initial data}
+For both codes, we use puncture data~\cite{Brandt:1997tf} of
+Bowen-York \cite{Bowen:1980yu} type provided by the spectral solver of
+Ref.~\cite{Ansorg:2004ds} in the form of the \textsc{Cactus} thorn
+\textsc{TwoPunctures} for \textsc{Lean}, and a standalone version
+integrated into \textsc{GRChombo}.  In the latter case, we take
+advantage of the improvements made in Ref.~\cite{Paschalidis:2013oya}
+to use spectral interpolation.
+
+%=============================================================================
+\subsection{Black-hole binary configurations}
+%
+\label{bhkick:sec:configs}
+%
+We follow the construction of sequences of BH binary configurations
+and the notation of Ref.~\cite{Sperhake:2007gu}. In particular, we 
+denote by $M_1$ 
+and $M_2$ the initial BH masses. Without loss of generality, since 
+we are only considering unequal masses ($M_1 \neq M_2$), we take $M_2 > M_1$
+and denote their sum by $M = M_1 + M_2$. The reduced mass is 
+$\mu = M_1 M_2 /M$ and to quantify the mass ratio, we use either
+\begin{equation}
+    q = \frac{M_1}{M_2}
+    \label{bhkick:eq:mass-ratio}
+\end{equation}
+or the symmetric mass ratio $\eta = \mu/M$. Finally, the 
+total Arnowitt-Deser-Misner (ADM) mass~\cite{Arnowitt:1962hi} is denoted by 
+$M_{\mathrm{ADM}}$.
+
+
+In order to construct a sequence for a fixed mass ratio, we first 
+determine an initial quasicircular configuration. We specify the initial
+coordinate separation $D/M$ along the $x$ axis, and the scale in the codes 
+is fixed by choosing $M_1=0.5$. Next, Eq.~(65) in 
+Ref.~\cite{Brugmann:2008zz} is used to calculate the initial tangential 
+momentum of each BH, $\mathbf{p}=(0,\pm p,0)$ (as shown in 
+Fig.~\ref{bhkick:fig:bh-setup}). We use a 
+Newton-Raphson method to iteratively solve for the Bowen-York bare mass 
+parameters that give the desired BH masses. The binding energy 
+of this quasicircular configuration is then computed using
+\begin{equation}
+    E_{\mathrm{b}}=M_{\mathrm{ADM}}-M.\label{bhkick:eq:binding-energy}
+\end{equation}
+The rest of the sequence with increasing orbital eccentricity is 
+constructed by fixing the binding energy and gradually reducing the initial
+linear momentum parameter $p$.
+We decide to reduce the linear momentum rather than, for example, 
+altering its direction,
+so that the $x$ axis is fixed as the initial apoapsis for all configurations.
+For a given configuration with fixed $p$, we 
+iteratively solve for the separation $D$ and bare masses that give the 
+required binding energy and BH masses. The choice to keep the 
+binding energy constant as the momentum parameter (and thus the initial 
+kinetic energy) is reduced means that the initial separation increases along 
+the sequence. This ensures an inspiral phase of comparable duration as the 
+eccentricity increases.
+The initial orbital angular momentum of the system 
+is given by $L=Dp$~\cite{York:1989jn}. Even though $D$ increases as $p$ 
+decreases, the initial angular momentum of the system monotonically decreases 
+as $p$ decreases for all but the least one or two eccentric configurations 
+in a sequence.
+
+
+%% FIGURE WAS ORIGINALLY PUT IN LIKE THIS
+% \begin{figure}[t]
+%     \centering
+%     \includegraphics[width=0.7\columnwidth]{bhkick/bh-schematic}
+%     \caption{Schematic diagram of the initial BH binary setup for 
+%     an arbitrary configuration in one of the sequences.}
+%     \label{bhkick:fig:bh-setup}
+% \end{figure}
+
+\begin{figure}[t]
+    \centering
+\begin{tikzpicture}
+          % line connecting BHs
+          \draw[dashed] (-4,0) -- (2,0);
+          \filldraw[color=white, fill=red] (0,0) circle (0.05);
+        
+          % small BH
+          \filldraw[fill = black] (-4,0) circle (0.3);
+          \draw[very thick,-latex] (-4,0) -- (-4,-1.2);
+          \node[anchor=west] at (-4,-1.2) {$p$};
+          \node[color=white] at (-4,0) {$M_1$};
+          
+          % big BH
+          \filldraw[fill = black] (2,0) circle (0.6);
+          \draw[very thick,-latex] (2,0) -- (2,1.5);
+          \node[anchor=east] at (2,1.5) {$p$};
+          \node[color=white] at (2,0) {$M_2$};
+        
+          % length
+          \draw[dotted] (2,0) -- (2,-2);
+          \draw[dotted] (-4,0) -- (-4,-2);
+          \draw[latex-latex] (-4,-1.5) -- (2,-1.5);
+          \node[anchor=south] at (-1,-1.5) {$D$};
+          
+          % axes
+          \draw[-latex] (0,0) -- (0,1);
+          \node [anchor=east] at (0,1) {$y$};
+          \draw[-latex] (0,0) -- (1,0);
+          \node[anchor=north] at (1,0) {$x$};
+\end{tikzpicture}
+    \caption{Schematic diagram of the initial BH binary setup for 
+    an arbitrary configuration in one of the sequences.}
+    \label{bhkick:fig:bh-setup}
+\end{figure}
+
+We have parametrized the configurations within a sequence by their
+initial tangential momentum $p$, but we would like to measure the
+eccentricity of these configurations. Unfortunately, there is no
+gauge-invariant measure of eccentricity~\cite{Loutrel:2018ydu} and the
+ambiguity in any definition is particularly pronounced in the late
+stages of inspiral from which our simulations start. Following
+Ref.~\cite{Sperhake:2007gu}, we use the formalism in
+Ref.~\cite{Memmesheimer:2004cv} to obtain a PN estimate for the
+eccentricity. Note that this formalism has three eccentricity
+parameters---$e_t$, $e_r$ and $e_\phi$---and employs two
+different types of coordinates: ADM-like and harmonic. The choice of
+which parameter and coordinate type to use is somewhat arbitrary.
+We mostly focus on the eccentricity parameter $e_t$ in harmonic coordinates\footnote{
+The ADM-like estimate of Ref.~\cite{Memmesheimer:2004cv} differs
+by only a few percent for $e_t \lesssim 0.8$, and
+would not significantly alter our results.} 
+as in Ref.~\cite{Sperhake:2019wwo}. This estimate should be 
+taken with a pinch of salt due to the relatively small initial binary 
+separations $D$ in our simulations. Furthermore, $e_t$ has an infinite 
+gradient as a function of the initial orbital angular momentum
+in the quasicircular limit (see Fig.~1 in Ref.~\cite{Sperhake:2007gu}),
+such that values of $e_t\lesssim0.1$ are difficult to realize in practice,
+unless the BHs start from large initial distance.
+In the head-on limit $e_t$ diverges, and a Keplerian/Newtonian
+interpretation ceases to be valid. Despite these shortcomings, this 
+estimate provides us with a helpful approximation of the eccentricity
+and a criterion to quantify deviations away from quasicircularity.
+
+The sequences considered in this work are given in
+Table~\ref{bhkick:tab:sequences}.  Note that there are two sequences
+corresponding to the mass ratio $q=1/2$.  The sequence \texttt{lq1:2}
+has a longer inspiral phase compared to the other sequences. For the
+nearly quasicircular configurations, the binary completes about six
+orbits before merger in the \texttt{lq1:2} sequence, and about three
+orbits in all other sequences. The longer sequence of simulations was
+conducted in order to identify any possible artifacts in the shorter
+sequences due to the exclusion of the earlier inspiral phase. In
+addition to the labeling of sequences in Table~\ref{bhkick:tab:sequences},
+we refer to individual simulations within a sequence by appending
+``\texttt{-p}'' to the sequence label followed by a four digit integer
+which is given by $10^3p/M$ truncated appropriately; for example,
+\texttt{sq1:2-p0100} denotes the simulation in sequence
+\texttt{sq1:2} with initial tangential momentum $p = 0.1M$.
+
+
+
+\begin{table}[t]
+    {
+    \caption{Sequences of binary BH configurations studied in this 
+    work with their mass ratio, binding energy $E_{\mathrm{b}}/M$,
+    and the GW extraction radius $r_{\rm ex}$.
+    For reference, we also
+    list for each sequence the kick velocities $v_c$ in the
+    quasicircular limit. These values agree, within the numerical
+    uncertainties, with the results of
+    Ref.~\cite{Gonzalez:2006md}.}
+    \centering
+    %\begin{ruledtabular}
+    \begin{tabular}{cccccc} \hline
+        Sequence & Code & $q$ & $E_{\mathrm{b}}/M$ & $r_{\mathrm{ex}}/M$ 
+        & $v_c$ (km/s)\\
+        \hline
+        \texttt{sq2:3} & \textsc{GRChombo} & $2/3$ & $-0.0113386$ & $88$ & 102 \\
+        \texttt{sq1:2} & \textsc{Lean} & $1/2$  & $-0.0106964$ & $80$ & 149\\
+        \texttt{lq1:2} & \textsc{Lean} & $1/2$ & $-0.0090858$ & 80 & 150 \\
+        \texttt{sq1:3} & \textsc{GRChombo} & $1/3$ & $-0.0093684$ & $65$ & 178 \\
+        \hline
+    \end{tabular}
+    %\end{ruledtabular}
+    }
+    \captionsetup{justification=justified}
+    \label{bhkick:tab:sequences}
+\end{table}
+
+\subsection{Diagnostics}
+For all simulations, we have extracted values of the Weyl scalar $\Psi_4$ 
+on spheres of finite coordinate radius given in Table \ref{bhkick:tab:sequences} 
+for each sequence. We also computed the dominant terms in the multipolar
+decomposition,
+\begin{equation}\label{bhkick:eq:psi4-multipoles}
+    \Psi_4(t,r,\theta,\phi) = \sum_{\ell=2}^\infty\sum_{m=-\ell}^{\ell} 
+    \psi_{\ell, m}(t,r)\left[{}_{-2}Y^{\ell,m}(\theta,\phi)\right],
+\end{equation}
+where ${}_{-2}Y^{\ell,m}$ are the usual spin-weight $-2$ spherical 
+harmonics.
+
+Our main diagnostics are the energy, linear momentum and angular momentum 
+radiated in GWs, which are computed directly from the 
+extracted $\Psi_4$ values on the spheres using standard methods. For
+completeness, we reproduce the formulae here.
+
+The radiated energy $E^{\rad}$ is given by
+\cite{Campanelli:1998jv,Lousto:2007mh}
+\begin{equation}
+    E^{\rad}(t) = \lim_{r\to\infty}\frac{r^2}{16\pi}\int_{t_0}^t\rmd t^\prime
+    \oint_{S^2_r}\rmd\Omega\,\left|\int_{-\infty}^{t^\prime}\rmd t^{\prime\prime}\,
+    \Psi_4\right|^2.\label{bhkick:eq:Erad}
+\end{equation}
+The radiated linear momentum $\mathbf{P}^{\rad}$ is given by
+\begin{equation}
+    \mathbf{P}^{\rad}(t) = \lim_{r\to\infty}\frac{r^2}{16\pi}
+    \int_{t_0}^t\rmd t^\prime\oint_{S^2_r}\rmd\Omega\,
+    \hat{\mathbf{e}}_r\left|\int_{-\infty}^{t^\prime}\rmd t^{\prime\prime}\,
+    \Psi_4\right|^2,\label{bhkick:eq:Prad}
+\end{equation}
+where $\hat{\mathbf{e}}_r$ is the flat-space unit radial vector
+\begin{equation}
+    \hat{\mathbf{e}}_r = (\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta).
+\end{equation}
+Finally, the radiated angular momentum $\mathbf{J}^{\rad}$ is given by
+\begin{equation}
+    \mathbf{J}^{\rad}(t) = - 
+    \lim_{r\to\infty}\frac{r^2}{16\pi}\mathrm{Re}\int_{t_0}^{t}\rmd t^\prime
+    \left\{\oint_{S^2_r}\left(\int_{-\infty}^{t^\prime}\rmd t^{\prime\prime}\,
+    \bar{\Psi}_4\right)\right.
+    \left. \times\hat{\mathbf{J}}\left(\int_{-\infty}^{t^\prime}
+    \rmd t^{\prime\prime}\int_{-\infty}^{t^{\prime\prime}}
+    \rmd t^{\prime\prime\prime}\,\Psi_4\right)\,\rmd\Omega\right\},
+    \label{bhkick:eq:Jrad}
+\end{equation}
+where the angular momentum operator $\hat{\mathbf{J}}$ for spin weight 
+$s=-2$ is given by
+\begin{equation}
+    \hat{\mathbf{J}}=\left(\mathrm{Re}\,\hat{\mathbf{J}}_+,\mathrm{Im}\,
+    \hat{\mathbf{J}}_+,\frac{\partial}{\partial\phi}\right)\,,
+\end{equation}
+and
+\begin{equation}
+    \hat{\mathbf{J}}_+=\mathrm{e}^{\mathrm{i}\phi}\left(\mathrm{i}
+    \frac{\partial}{\partial\theta} - \cot\theta\frac{\partial}{\partial\phi} 
+    + 2\mathrm{i}\csc\theta\right).
+\end{equation}
+
+Additionally, we compute the radiated linear momentum from the multipolar
+amplitudes $\psi_{\ell, m}$ in Eq.~\eqref{bhkick:eq:psi4-multipoles} using the 
+formulae of Ref.~\cite{Ruiz:2007yx}. From the symmetry of our 
+configurations, the $z$ component vanishes identically: $P_z^{\rad}=0$.
+For the components in the orbital plane, we write
+$P_+^{\rad}=P_x^{\rad}+\mathrm{i}P_y^{\rad}$. Then,
+\begin{equation}
+     P_+^{\rad}(t) = \sum_{\tl=2}^{\infty}
+     \sum_{\tm=-\tl}^{\tl}P_+^{\tl,\tm},
+     \label{bhkick:eq:P+rad}
+\end{equation}
+where
+\begin{multline}
+    P_+^{\tl,\tm}(t) = \lim_{r\rightarrow \infty}
+    \frac{r^2}{8\pi}\int_{t_0}^t\rmd t^{\prime}
+    \left\{\left(\int^{t^\prime}_{-\infty}\rmd t^{\prime\prime}\, 
+    \psi_{\tl,\tm}\right)\right. \\
+    \left.\times\left(\int_{-\infty}^{t^\prime} 
+    \left[a_{\tl,\tm}\bar{\psi}_{\tl,\tm+1}+ 
+    b_{\tl,-\tm}\bar{\psi}_{\tl-1,\tm+1}
+    -\,b_{\tl+1,\tm+1}\bar{\psi}_{\tl+1,\tm+1}\right]
+    \rmd t^{\prime\prime}\right)\right\},
+    \label{bhkick:eq:Plmrad}
+\end{multline}
+and the coefficients $a_{\ell,m}$ and $b_{\ell,m}$ are given by
+%
+\begin{align}
+    a_{\ell, m} &= \frac{\sqrt{\left(\ell - m\right)\left(\ell +
+    m+1\right)}}{\ell\left(\ell + 1\right)},\\
+    b_{\ell, m} &= \frac{1}{2\ell}\sqrt{\frac{\left(\ell - 2\right) 
+    \left(\ell + 2\right) \left(\ell + m\right) \left(\ell + m - 
+    1\right)}{\left(2\ell - 1\right)\left(\ell + 1\right)}}.
+\end{align}
+%
+We will find it helpful to define the partial sums,
+%
+\begin{align}
+    P_+^{\tl} &= \sum_{\tm = -\tl}^{\tl} P_+^{\tl,\tm},\\
+    P_+^{\leq\tl} &= \sum_{\tl^\prime=2}^{\tl} P_+^{\tl^\prime}. 
+    \label{bhkick:eq:partialkick}
+\end{align}
+%
+In practice, we do not evaluate the limit in Eqs.~\eqref{bhkick:eq:Erad}, 
+\eqref{bhkick:eq:Prad}, \eqref{bhkick:eq:Jrad} and \eqref{bhkick:eq:Plmrad}, but rather just 
+evaluate them at the finite extraction radius $r=r_{\mathrm{ex}}$, as given 
+in Table \ref{bhkick:tab:sequences}. A discussion of the error this introduces is 
+given in the following section.
+
+In order to exclude the spurious radiation inherent in Bowen-York initial 
+data, we start the integration in Eqs.~\eqref{bhkick:eq:Erad}, \eqref{bhkick:eq:Prad}, 
+\eqref{bhkick:eq:Jrad}, and \eqref{bhkick:eq:Plmrad} at $t_0 = 50M + r_{\mathrm{ex}}$. The 
+recoil velocity is computed from the radiated momentum according to 
+%
+\begin{equation}
+    \mathbf{v}=-\frac{\mathbf{P}^{\rad}}{M_{\mathrm{fin}}},
+\end{equation}
+%
+where $M_{\mathrm{fin}}$ is the mass of the BH merger remnant. The 
+quantity $M_{\mathrm{fin}}$ can be computed using energy balance:
+\begin{equation}
+    M_{\mathrm{fin}} = M_{\mathrm{ADM}} - \tilde{E}^{\rad}\,,
+\end{equation}
+where $\tilde{E}^{\rm rad}$ denotes the radiated energy
+{\it including} the spurious radiation.
+We similarly compute the spin of the final BH $\chi_{\mathrm{fin}}$ (which,
+by symmetry, must be in the $z$ direction) using the radiated angular 
+momentum:
+\begin{equation}
+    \chi_{\mathrm{fin}} = \frac{L-J^{\rad}_z}{M_{\mathrm{fin}}^2},
+\end{equation}
+where the initial angular momentum is $L=pD$. For \textsc{Lean} simulations, 
+we have compared $M_{\rm fin}$ and $\chi_{\rm fin}$ with the
+corresponding values derived from the apparent horizon properties,
+and find agreement to within $\leq 0.1\,\%$.
+
+
+%=============================================================================
+\section{Results}
+%
+\label{bhkick:sec:results}
+%
+\begin{figure*}[t]
+    \subfloat
+    {
+        \includegraphics[width=0.48\linewidth]{bhkick/kick-q1.5-wlabel.pdf}
+    }
+    \hfill
+    \subfloat
+    {
+        \includegraphics[width=0.48\linewidth]{bhkick/kick-q3-wlabel.pdf}
+    }
+    \hspace{0 mm}
+    \subfloat
+    {
+        \includegraphics[width=0.48\linewidth]{bhkick/kick-q2-wlabel.pdf}
+    }
+    \hfill
+    \subfloat
+    {
+        \includegraphics[width=0.48\linewidth]{bhkick/kick-q2l-wlabel.pdf}
+    }
+    \caption{For each sequence of simulations in Table \ref{bhkick:tab:sequences}:
+    Top panel: the recoil velocity $v$ is plotted as a function 
+    of the initial tangential momentum $p/M$. The individual curves 
+    represent the total kick $v_\mathrm{tot}$ (blue, solid), the 
+    contribution to the kick from $\ell=2$ modes of $\Psi_4$, $\psi_{2,m}$, 
+    only in Eqs.~(\ref{bhkick:eq:P+rad})--(\ref{bhkick:eq:Plmrad}) $v_{\ell=2}$ 
+    (red, dashed), and the contributions to the kick from 
+    $P_+^{\leq \tilde{\ell}^\prime}$ defined in Eq.~\eqref{bhkick:eq:partialkick}
+    $v_{\tilde{\ell}\leq\tilde{\ell}^\prime} $ for $\tilde{\ell}^\prime=2$ 
+    (orange, dotted), $\tilde{\ell}^\prime=3$ (green, dot-dashed) 
+    and $\tilde{\ell}^\prime=4$ (purple, long dot-dashed). 
+    Our estimate of the eccentricity (see Sec.~\ref{bhkick:sec:configs}) is 
+    provided on the upper horizontal axis.
+    Bottom panel: The final BH spin $\chi_{\mathrm{fin}}$ 
+    (black, solid) and the energy radiated in GWs $E^\rad$ (gold, dashed) 
+    are also plotted as functions of $p/M$. For both curves, the 
+    individual simulations performed for this analysis are shown by 
+    $\times$ symbols.}
+    \label{bhkick:fig:kicks2}
+\end{figure*}
+%
+Using the framework summarized in the previous section,
+we have simulated four sequences of nonspinning BH binaries,
+characterized by their mass ratio (\ref{bhkick:eq:mass-ratio})
+and binding energy (\ref{bhkick:eq:binding-energy}).
+The parameters of these sequences are listed in Table~\ref{bhkick:tab:sequences}.
+We have selected our mass ratios such that they cover the
+regime of maximum recoil, realized for $\eta=0.195$ or
+$q=1/2.77$ (cf. Fig.~\ref{bhkick:fig:quasicircular-fit-comparison}).
+Recall that sequences \texttt{sq2:3}, \texttt{sq1:2} and \texttt{sq1:3}
+complete about three orbits and sequence \texttt{lq1:2} completes
+about six orbits, respectively, in the quasicircular limit.
+
+Our main results are displayed in Fig.~\ref{bhkick:fig:kicks2}, where we plot
+for all sequences the total recoil speed $v_{\rm tot}$, various
+truncations of the multipolar contributions to the total recoil
+according to Eqs.~(\ref{bhkick:eq:P+rad})--(\ref{bhkick:eq:partialkick}), the
+total radiated GW energy $E^{\rm rad}$ and the dimensionless spin
+$\chi_{\rm fin}$ of the BH resulting from the merger.
+
+Let us first focus on the total recoil $v_{\rm tot}$, displayed in each
+of the figure's top panels as the blue solid line.  For each mass
+ratio, the global maximum of the kick velocity is realized for
+moderate eccentricities
+$e_t\approx 0.5$.
+We also illustrate this kick variation in
+Fig.~\ref{bhkick:fig:quasicircular-fit-comparison}, where
+the solid blue curve shows the
+quasicircular kick as a function
+of the symmetric mass ratio $\eta$ according to
+Fit 3 in Table V of Ref.~\cite{Healy:2017mvh}. The velocity ranges
+obtained for our eccentric binaries are
+overlayed as the vertical bars for each of our sequences.
+The bar for each constant-$\eta$ sequence
+is obtained by starting at the quasicircular limit on the 
+right of each panel in Fig.~\ref{bhkick:fig:kicks2} and identifying
+the minimum and maximum of $v(p)$, excluding the 
+plunge regime to the left of the global maximum.
+
+For our sequences \texttt{sq2:3}, \texttt{sq1:2} and
+\texttt{lq1:2}, the 
+magnification of the kick through moderate values
+of the orbital eccentricity is similar to the
+enhancement by up to 25\,\% reported in
+Ref.~\cite{Sperhake:2019wwo}
+for the so-called superkick configurations
+\cite{Gonzalez:2007hi,Campanelli:2007cga}.
+For \texttt{sq1:3} the effect is milder, with a
+$\sim 12\,\%$ amplification, but still well above
+the uncertainty estimates of our simulations.
+On the other hand, as evidenced by the oscillatory pattern
+of the function $v(p)$ in Fig.~\ref{bhkick:fig:kicks2}, appropriate
+nonzero values of the eccentricity can also
+lead to a {\it reduction} of the maximum kick at a given mass ratio
+by $\sim 10\,\%$.
+This overall modification of the gravitational recoil
+in the merger of eccentric, nonspinning BH binaries
+is the first main result of our study.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{bhkick/quasicircular-fit2.pdf}
+    \caption{The range of recoil velocities obtained for each sequence
+    is plotted against the symmetric mass ratio $\eta$. Note that for
+    each sequence we exclude the configurations with 
+    $p<p_{\text{max}}$ (i.e. the head-on limit), where 
+    $p=p_{\text{max}}$ is the tangential momentum that maximizes the kick.
+    The three short sequences are marked in gold and the long sequence is 
+    marked in red (dashed). A fitted formula for the quasicircular
+    kick as a function of $\eta$ from Ref.~\cite{Healy:2017mvh} is
+    also shown in blue for comparison. 
+    }
+    \label{bhkick:fig:quasicircular-fit-comparison}
+\end{figure}
+
+Besides the global maximum, we also note a number of local minima and
+maxima in the kick velocity as we vary the eccentricity in
+Fig.~\ref{bhkick:fig:kicks2}. For all mass ratios $(q=2/3,\,1/2,\,1/3)$ we
+see about five 
+local extrema in $v(p)$ in our three short sequences,
+corresponding to the two upper panels and the bottom-left panel.
+We notice a similar, albeit less pronounced,
+oscillatory pattern in the functions
+$E_{\rm rad}(p)$ and $\chi_{\rm fin}(p)$ for the radiated
+energy and final spin in the lower subpanels in
+Fig.~\ref{bhkick:fig:kicks2}. Our results display no systematic
+correlation, however, between the extrema of the respective
+quantities; neither global nor local extrema in $v$,
+$E_{\rm rad}$ or $\chi_{\rm fin}$ coincide in
+magnitude or their eccentricity values.
+We believe this diversity is due to the qualitatively
+different dependence of the radiated quantities on the
+GW multipoles: overlaps of {\it different} multipoles for the
+kick, a sum of terms $\propto \psi_{lm}^2$ for the energy,
+and the interaction of first and second time integrals
+for the angular momentum in Eq.~(\ref{bhkick:eq:Jrad}).
+
+We added
+to our study the $q = 1/2$ sequence of longer BH binary inspirals to
+investigate whether these anomalies in $v=v(p)$ might merely result
+from ignoring in our simulations the earlier inspiral phase. The
+remarkable outcome of this test, however, is that the oscillatory
+behavior in the kick as a function of eccentricity is \emph{more}
+pronounced in the long sequence.  The solid blue curve in the
+bottom-right panel of Fig.~\ref{bhkick:fig:kicks2} displays significantly more
+rapid oscillations in the eccentricity regime
+$0.2\lesssim e_t \lesssim 0.4$ as compared to the shorter inspiral
+sequences.  This oscillatory behavior, and the apparent increase in
+the number of oscillations as we increase the initial separation of
+the BHs, is the second of our results.
+
+We next attempt to gain insight into the origin of this
+behavior. For this purpose, we have computed the
+multipolar contributions to the total kick according to
+Eqs.~(\ref{bhkick:eq:Plmrad})--(\ref{bhkick:eq:partialkick}). The resulting
+velocities are displayed in Fig.~\ref{bhkick:fig:kicks2} by the additional
+dashed, dotted and dash-dotted curves. 
+Here, the curves labeled
+$v_{\ell=2}$ have been computed from the $\ell=2$ modes of $\Psi_4$
+($\psi_{2,m}$ only) in Eqs.~(\ref{bhkick:eq:P+rad})-(\ref{bhkick:eq:Plmrad}).
+We computed this additional contribution (red dashed curves in the
+figure) to determine whether the oscillatory behavior is also present
+in the pure quadrupole signal. The answer is yes: the oscillations are
+clearly perceptible in $v_{\ell=2}$, even though they are a bit milder
+than in the total kick $v_{\mathrm{tot}}$. Considering all
+(cumulative) multipolar contributions shown in Fig.~\ref{bhkick:fig:kicks2},
+we notice the following behavior:
+%
+\begin{enumerate}
+ \item The oscillatory dependence of the kick on eccentricity
+       is present at any level of truncating the multipolar
+       contributions in the cumulative sum (\ref{bhkick:eq:partialkick}).
+ \item The partial sum of the kick up to $\tilde{\ell}=4$
+       barely differs from the total kick, indicating that
+       higher-order overlap terms do not significantly
+       contribute to the kick.
+ \item The higher-order contributions $\tilde{\ell}>2$
+       to the cumulative kick (\ref{bhkick:eq:partialkick})
+       systematically decrease the kick, counteracting
+       the pure quadrupole contribution $v_{\ell=2}$.
+\end{enumerate}
+%
+In short, we have not identified any specific multipoles
+dominating the variation in the kick function $v=v_{\mathrm{tot}}(p)$.
+
+In our search for an explanation, we turn next to the infall direction
+of the BH binary just before merger.
+%
+%
+\begin{figure*}[t]
+    \subfloat%[][$v$ against $\vartheta$]
+    {
+    % \centering
+    \includegraphics[width=0.5\columnwidth]{bhkick/kick-theta.pdf}
+    \label{bhkick:fig:kick-theta}
+    }
+    \hfill
+    \subfloat%[][$\vartheta_\text{extrema}$ against $m$]
+    {
+    % \centering
+    \includegraphics[width=0.5\columnwidth]{bhkick/theta-extrema.pdf}
+    \label{bhkick:fig:theta-extrema}
+    }
+    \caption{
+    Plots involving the angle of the kick $\vartheta$ for 
+    all sequences. In the left panel we plot the BH recoil 
+    velocity $v$ against $\vartheta$. In the right panel we plot the location of the local extrema $\vartheta_\text{extrema}$ 
+    of the left panel against the index of the extrema $k$ counting rightwards from
+    the global maximum on the left.
+    }
+    \label{bhkick:fig:theta-plots}
+\end{figure*}
+%
+A well-known feature of the superkicks generated in the inspiral
+of BHs with opposite spins $\boldsymbol{S}_1=-\boldsymbol{S}_2$
+pointing in the orbital
+plane is the sinusoidal variation with the initial azimuthal angle
+of the spin vectors; cf.~Fig.~4 in Ref.~\cite{Bruegmann:2007zj}.
+The initial orientation of the spins can, alternatively, be
+interpreted as a measure for the angle between the in-plane
+spin components and the BH binary's infall direction at merger
+\cite{Lousto:2009ka}. The superkick is therefore commonly
+determined by simulating otherwise identical BH binary configurations
+for different values of this angle and fitting the resulting data
+with a cosine function; see, e.g.,~Sec.~III A in
+Ref.~\cite{Sperhake:2019wwo}. For the eccentric, nonspinning BH
+binaries considered in this work, it is the
+initial apsis (either a periapsis or an apoapsis)
+that defines a reference direction. Unfortunately,
+neither the apsis nor a ``binary infall direction''
+are rigorously defined
+quantities in the strong-field regime of general relativity,
+and we consider instead the orientation of the final
+kick relative to the $x$ axis, defined by
+%
+\begin{equation}
+  \tilde{\vartheta} = \mathrm{arg}(v_x + \mathrm{i}v_y)\,.
+\end{equation}
+For convenience, we define
+\begin{equation}
+    \vartheta = \tilde{\vartheta} + 2n\pi,
+\end{equation}
+where $n\geq 0$ is chosen minimally for each configuration in order to obtain
+$\vartheta$ as a monotonic function of the initial tangential momentum $p$
+for each sequence. We will interchangeably refer to $\vartheta$ 
+and $\tilde{\vartheta}$ as the angle of the kick.
+%
+Since all of our simulations start with the BHs located on the $x$
+axis with purely tangential initial momentum $\mathbf{p}=(0,\pm p,0)$
+(Fig.~\ref{bhkick:fig:bh-setup}), the $x$ direction can be regarded as the
+initial direction of the apoapsis. If we furthermore interpret the
+gravitational recoil to be predominantly generated by the excess
+beaming of the GWs in the direction of the smaller and faster BH (see
+Fig.~3 in Ref.~\cite{Wiseman:1992dv}) during the short merger phase,
+the kick direction can serve as an approximate measure for the infall
+direction of the binary. 
+
+We can test this prediction by computing the kick magnitude
+as a function of the angle $\vartheta$; if correct, we would
+expect a periodic variation with a period close to $2\pi$.
+We do not expect an exact $2\pi$ periodicity because the
+relevant periapsis (or apoapsis) direction should be the last one before merger,
+and will shift away from the $x$ axis during the inspiral
+due to 
+apsidal precession---the BH analog
+of Mercury's perihelion precession around the Sun. More
+specifically, we would expect deviations from a $2\pi$ periodicity
+to be more pronounced for longer inspirals, i.e.,~lower eccentricity
+and/or larger initial separations, but only mildly
+dependent on the mass ratio $q$.
+Quite remarkably, all of these
+features are borne out by the functions $v = v(\vartheta)$
+displayed for our four sequences in the left panel of 
+Fig.~\ref{bhkick:fig:theta-plots}
+and the location of the extrema in this plot shown in 
+the right panel of Fig.~\ref{bhkick:fig:theta-plots}.
+For all sequences we observe the same approximate $2\pi$ periodicity,
+with deviations from this value increasing at larger
+$\vartheta$, i.e.~for longer inspirals.
+Note also that $\vartheta=-\pi$ in the head-on limit, as expected
+for our initial configurations, that start with the heavier BH
+located on the positive $x$ axis.
+
+While short of a rigorous proof, this result provides considerable
+evidence in favor of interpreting the oscillatory dependence of the
+kick on the eccentricity as a consequence of the corresponding
+variation in the infall direction as measured relative to the last
+apoapsis (or periapsis) of the eccentric binary. This interpretation
+also explains why the longer sequence \texttt{lq1:2} exhibits more
+oscillations than the shorter sequences \texttt{sq1:3}, \texttt{sq1:2}
+and \texttt{sq2:3}. Let us consider for this purpose two binary
+configurations that only differ by a tiny amount of eccentricity
+$\delta e$. The longer the inspiral phase, the more time these two
+binaries have to build up a considerable phase difference and, hence,
+a different kick and merger GW signal. Note the potentially dramatic
+consequences of this behavior for the GW emission from eccentric
+binaries over astrophysical time scales. For long astrophysical
+inspirals retaining some eccentricity near merger,
+the kick and GW merger signal should exhibit critical dependence on
+the eccentricity. In terms of our Fig.~\ref{bhkick:fig:kicks2}, the function
+$v=v(e_t)$ would display a huge number of oscillations rather than the
+handful observed in our case, and the resulting curve would look like
+a ``band'' rather than a single line. Within the band, a very small
+change $\delta e_t$ in eccentricity can produce a finite change in the
+kick and merger waveform.
+
+As indicated by our analysis of the multipolar contributions
+to the total recoil, the variations in the GW signal are of a
+complex nature. We defer a more comprehensive analysis of
+the GW pattern to future work, but merely illustrate with an 
+example the type of variations that are encountered.
+For this purpose, we show in Fig.~\ref{bhkick:fig:psi4modes}
+the $(\ell,m)=(2,2)$ and $(3,3)$ multipoles of the
+GW signal around merger for the configurations \texttt{lq1:2-p0537} 
+and \texttt{lq1:2-p0567}, corresponding to a local minimum and 
+maximum in the
+kick, respectively; cf.~the bottom-right panel of Fig.~\ref{bhkick:fig:kicks2}. In Fig.~\ref{bhkick:fig:psi4modes},
+the time has been shifted such that $\Delta t =0$ corresponds
+to the first occurrence of a common apparent horizon. The main
+difference perceptible in the figure is the relative phase shift of
+the (3,3) mode relative to the dominant quadrupole (2,2). For the
+case $p=0.567M$ with maximal kick, the global peaks of both multipoles
+are aligned, whereas for $p=0.537M$ with minimal kick, the global peak
+of the $(2,2)$ mode coincides with a minimum in $(\ell,m)=(3,3)$. We
+have made similar observations for other pairs of modes such as
+$(2,2)$ and $(2,1)$, and find these pairs to dominate the oscillatory
+variation in the multipolar series expansion (\ref{bhkick:eq:partialkick}).
+%
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.7\columnwidth,clip=true]{bhkick/mode-kick-extrema.pdf}    
+    \caption{The real parts of the $(\ell,m)=(2,2)$ and $(3,3)$ modes of $\Psi_4$
+             are shown as functions of time for the two binaries
+             of sequence \texttt{lq1:2} with $p/M=0.537$ and $p/M=0.567$,
+             resulting in kick velocities of $v = 128$
+             and $173\,{\rm km/s}$, respectively.
+            }
+             \label{bhkick:fig:psi4modes}
+\end{figure}
+%
+
+
+
+%=============================================================================
+\section{Conclusions}
+\label{bhkick:sec:concl}
+%
+In this paper we have studied the gravitational recoil and GW emission
+of sequences of nonspinning BH binaries with mass ratios $q=2/3$,
+$1/2$ and $1/3$,
+and eccentricity varying from the quasicircular to the head-on limit.
+For this purpose we have evolved $274$ configurations
+with the {\sc GRChombo} and {\sc Lean} codes. Both codes yield
+convergent results for the recoil with a total error budget of
+$3$-$4\,\%$ and exhibit excellent agreement, well within this uncertainty
+estimate, for a verification configuration simulated with both codes.
+In order to estimate the impact of variations in the overall length
+of the inspirals, we have evolved two sequences for the case $q=1/2$ which
+complete about three and six orbits, respectively, in the quasicircular limit.
+
+The findings of our study are summarized as follows.
+%
+\begin{enumerate}
+ \item For all sequences, the total recoil reaches
+ a global maximum for moderate eccentricities $e \sim 0.5$.
+ As in the case of the enhancement of superkicks studied
+ in Ref.~\cite{Sperhake:2019wwo}, the maximum kick is
+ enhanced by up to about $25\,\%$ relative to the value obtained
+ for quasicircular configurations.
+ %
+\item Besides this global maximum, we observe an oscillatory
+  dependence of the kick $v$ as a function of eccentricity, with
+  several local minima and maxima in the function $v = v(e)$. Appropriate
+  nonzero values of the eccentricity can lead to a
+  {\it reduction} of the kick by $\sim 10\,\%$ relative to the quasicircular
+  value instead of an increase. By
+  splitting the kick into separate multipolar contributions, we notice
+  that this oscillatory dependence is already present, albeit in a
+  slightly weaker form, when we consider only quadrupole terms in the
+  series expansion \eqref{bhkick:eq:P+rad}.  Further contributions involving
+  $\ell \ge 2$ multipoles tend to decrease the overall kick and mildly
+  enhance the oscillatory variation; see Fig.~\ref{bhkick:fig:kicks2}.
+ %
+ \item We interpret this oscillatory variation in the kick
+ as a consequence of changes in the angle between the infall
+ direction at merger and the apoapsis (or periapsis)
+ direction. In the absence of rigorous definitions for either
+ of these directions, we approximate this angular variation
+ by considering the direction of the final kick and the
+ $x$ axis, assuming that the former is related via relativistic
+ GW beaming to the infall direction and by taking into account
+ that our BHs start on the $x$ axis with zero radial momentum.
+ Displayed as a function of this angle, the kick displays
+ the expected periodic behavior with a period close to but
+ mildly deviating from $2\pi$, presumably due to periapsis
+ precession.
+ %
+ \item We have explored the dependence of this oscillatory behavior
+ of the recoil by simulating an additional sequence of eccentric
+ binaries with mass ratio $q=1/2$, but less negative binding energy,
+ corresponding to about six orbits in the quasicircular limit.
+ We find the oscillations in $v=v(e)$ to be more pronounced
+ and numerous than in the shorter sequence. We attribute this
+ feature to the longer available time window during which otherwise
+ identical binaries with tiny differences in the initial
+ eccentricity build up a phase difference prior to merger.
+ This observation raises the intriguing possibility that the
+ total recoil depends highly sensitively on the initial eccentricity.
+ %
+ \item The variations in the kick velocity are accompanied by
+ relative time shifts in the peak amplitudes of subdominant
+ multipoles relative to the peaks of the (2,2) mode;
+ cf.~Fig.~\ref{bhkick:fig:psi4modes}. For configurations with a large (small)
+ kick, the peak amplitude of subdominant multipoles tends to
+ be aligned (misaligned) with the quadrupole peak.
+\end{enumerate}
+%
+Our findings point to a variety of future investigations. While our
+simulations indicate an increased sensitivity of the GW merger signal
+to the initial eccentricity for larger initial separations
+(i.e.~longer inspirals), it is not clear how this will be affected by
+the circularizing nature of GW emission. In this context, it will also
+be important to analyze in more quantitative terms the differences in
+the GW signals and possible implications for parameter inference in GW
+observations. A thorough investigation of long eccentric inspirals on
+astrophysical time scales will likely require PN methods and may
+benefit greatly from a multi-time-scale analysis in phase space, as
+applied to spin-precessing BH binaries in
+Refs.~\cite{Kesden:2014sla,Gerosa:2015tea} or to the dynamics of
+binary systems in external gravitational background potentials in
+Refs.~\cite{Hamilton:2019a,Hamilton:2019b}. If there is a single
+conclusion to draw from the results of this work, it is the
+surprisingly rich phenomenology of the GW signals of eccentric compact
+binaries---even in the absence of spins---which merits as much as it
+requires further investigation.
+
+% %=============================================================================
+% \begin{acknowledgments}
+% %
+% We thank Michalis Agathos, Vishal Baibhav, Vitor Cardoso, Thomas
+% Helfer, and Nicholas Speeney for useful discussions. 
+% We also thank Chris Moore, Carlos Lousto and Juan Calder\'on 
+% Bustillo for helpful comments on this manuscript.
+% M.R. thanks the
+% GRChombo collaboration \cite{GRChomboWebsite} for their code
+% development, and particularly Katy Clough and Tiago Fran\c{c}a. M.R. is
+% supported by a Science and Technology Facilities Council (STFC)
+% studentship. U.S. is supported by the European Union’s H2020 ERC
+% Consolidator Grant ``Matter and strong-field gravity: new frontiers in
+% Einstein's theory'' Grant No.~MaGRaTh--646597, and the STFC
+% Consolidator Grant No. ST/P000673/1. E.B. is supported by NSF Grant
+% No. PHY-1912550, NSF Grant No. AST-2006538, NASA ATP Grant No.
+% 17-ATP17-0225 and NASA ATP Grant No. 19-ATP19-0051. This work has
+% received funding from the European Union's Horizon 2020 research and
+% innovation programme under the Marie Sk\l odowska-Curie Grant
+% No.~690904. This work was supported by the GWverse COST Action
+% CA16104, ``Black holes, gravitational waves and fundamental physics''.
+% %
+% Computational work was performed on
+% the San Diego Supercomputer Center Comet and Texas Advanced Computing 
+% Center (TACC) Stampede2 clusters at the University of California San Diego 
+% and the University of Texas at Austin (UT Austin), respectively, through
+% NSF-XSEDE Grant No.~PHY-090003; the Cambridge Service for Data 
+% Driven Discovery (CSD3) system at the University of Cambridge 
+% through STFC capital Grants No.~ST/P002307/1 and No.~ST/R002452/1,
+% and STFC operations Grant No.~ST/R00689X/1;
+% the TACC Frontera cluster at UT Austin; and
+% the JUWELS cluster at GCS@FZJ, Germany through PRACE Grant No.~2020225359.
+
+% \end{acknowledgments}
+% %===============
+
+
+
+\section{Numerical accuracy}
+\label{bhkick:sec:accuracy}
+\begin{figure*}[t]
+    \subfloat%[\textsc{GRChombo}]
+    {
+        \includegraphics[width=0.48\linewidth]{bhkick/grchombo-convergence5.pdf}
+        %\label{bhkick:fig:grchombo-convergence}
+    }
+    \hfill
+    \subfloat%[\textsc{Lean}]
+    {
+        \includegraphics[width=0.48\linewidth]{bhkick/lean-convergence4.pdf}
+        %\label{bhkick:fig:lean-convergence}
+    }
+    \caption{For each code, we show convergence plots for the
+      accumulated linear momentum radiated from \textsf{sq1:2-p0100}
+      by plotting the BH recoil velocity in the bottom panels. The
+      Richardson extrapolated curve, $v_{\mathrm{Rich4}}$, assuming
+      fourth-order convergence, is also shown in the bottom panel. The
+      grid configurations are given in Table~\ref{bhkick:tab:grchombo-grids}
+      for \textsc{GRChombo} and in Table~\ref{bhkick:tab:lean-grids} for
+      \textsc{Lean}. The top panel shows the difference between the
+      configurations along with rescalings corresponding to fourth- and
+      fifth-order convergence. The inset shows a magnification of the
+      right side of the plot: the final value of the recoil
+      velocity is what we show in Fig.~\ref{bhkick:fig:kicks2}.} 
+    \label{bhkick:fig:convergence}
+\end{figure*}
+As in Ref.~\cite{Sperhake:2019wwo}, the uncertainty in our numerical results 
+for the recoil velocities has two predominant contributions: the 
+discretization error and the finite extraction radii for the Weyl scalar
+$\Psi_4$.
+
+To estimate the uncertainty arising from the latter, we have selected a
+representative sample of the simulations from each sequence and extrapolated 
+the cumulative radiated momentum to infinity from about six extraction
+radii in the range $r_{\rm ex}/2 \le r_{\rm ex}$ 
+using a Taylor series in $1/r$ as in 
+Ref.~\cite{Sperhake:2011zz}. We report the results from the finite 
+extraction radii given in Table~\ref{bhkick:tab:sequences} and estimate the 
+error by comparing with the linear-order extrapolation.
+For both codes, we estimate that the contribution from this error is about
+2\% 
+for all sequences.
+
+In order to estimate the error contribution from finite differencing and
+verify that our codes give consistent results, we have performed simulations
+of \texttt{sq1:2-p0100} (the binary in sequence \texttt{sq1:2} with 
+$p/M = 0.1$) with both codes. We discuss the analyses of the convergence
+of each code separately before comparing.
+
+\subsection{\textsc{GRChombo} convergence}
+\begin{table}[b]
+{   
+    \caption{Grid configurations used for \textsc{GRChombo} simulations.
+    As explained in Sec.~\ref{bhkick:sec:grchombo} and Appendix \ref{bhkick:sec:tagging},
+    the total 
+    number of refinement levels is $L+1$, the number of cells along each
+    dimension on the coarsest level is $N$, $t_R$ is the regridding 
+    threshold value, $b$ is the BH tagging buffer parameter
+    that we
+    set proportional to the mass $M_i$ ($i=1,\,2$)
+    of the nearest BH for all configurations except R4, 
+    and $h_L$ denotes the grid spacing.
+    }
+    \centering
+    %\begin{ruledtabular}
+    \begin{tabular}{lcccccc}\hline
+        Label & $L$ & $N$ & $t_R$ & $b$ & $h_L/M_1$ & tagging\\
+        \hline
+        R1 & 7 & 320 & 0.012 & $0.5M_i$ & 3/80 & Spherical \\
+        R2 & 7 & 368 & 0.01043 & $0.5M_i$ & 3/92 & Spherical\\
+        R3 & 7 & 416 & 0.00923 & $0.5M_i$ & 3/104 & Spherical\\
+        R4 & 7 & 352 & 0.01091 & 0.7 & 3/88 & Box\\\hline
+    \end{tabular}
+    %\end{ruledtabular}
+}
+    \label{bhkick:tab:grchombo-grids}
+\end{table}
+For \textsc{GRChombo}, we have performed the simulations of 
+\texttt{sq1:2-p0100} with resolutions $h_L=3M_1/80$, $3M_1/92$ and 
+$3M_1/104$, and we refer to the configurations corresponding to these 
+resolutions as R1, R2 and R3, respectively.
+The full grid configurations 
+are given in Table~\ref{bhkick:tab:grchombo-grids} and the results of this 
+analysis are shown in the left panel of Fig.~\ref{bhkick:fig:convergence}. Around
+merger, at $(t-r_{\rm ex})/M\sim 420$, our results exhibit mild
+overconvergence
+in the top-left panel of Fig.~\ref{bhkick:fig:convergence}.
+The important results for our analysis in Fig.~\ref{bhkick:fig:kicks2},
+however, are the final kick values after the merged BH has settled down.
+As can be seen from the inset, the convergence here is close to 
+fifth order. 
+From our convergence 
+analysis, the difference between the result obtained from the R1 simulation 
+and the more conservative fourth-order Richardson-extrapolated result leads 
+to an estimate of the discretization error of about $1\%$. A similar error 
+estimate is also obtained for the radiated energy, $E^{\rad}$.
+From experience, we have found smaller values for the mass ratio $q<1$ 
+more challenging to accurately simulate than larger values, and we 
+therefore feel justified in using this error estimate (for a $q=1/2$ 
+configuration) as a conservative estimate for the error in the 
+\texttt{sq2:3} sequence simulations ($q=2/3$). We therefore used the R1 grid
+configuration for this sequence with  $l_1^{\max}=l_2^{\max}=L=7$ 
+(both BHs are covered by 
+the finest level; see Appendix \ref{bhkick:sec:tagging} for details).
+
+For the \texttt{sq1:3} simulations, we used the R4 grid configuration
+(see Table \ref{bhkick:tab:grchombo-grids}) with $l_1^{\max}=L=7$ and
+$l_2^{\max}=L-1=6$ (the larger BH is not covered by the finest level:
+see Appendix \ref{bhkick:sec:tagging} for details). This corresponds to a
+resolution of $h_L=3M_1/88$. We performed a separate convergence
+analysis of \texttt{sq1:3-p0089}, which led to an estimated 1\%
+discretization error.
+
+Combining both the finite extraction radius and discretization errors, 
+our estimate for the total error budget of the \textsc{GRChombo} 
+simulations is about $3\%$.
+
+
+\subsection{\textsc{Lean} convergence}
+\begin{table}[b]
+    {
+    \caption{Grid configurations used for \textsc{Lean} simulations. As 
+    explained in Sec.~\ref{bhkick:sec:lean}, the total number of refinement 
+    levels is $L+1$, the number of fixed refinement levels is $l_F+1$, 
+    $R_0$ is the half-length of the outer grid, $R_L$ is the half-length 
+    of one cubic component of the innermost grid, and $h_L$ is the grid 
+    spacing on the finest level.}
+    \centering
+    %\begin{ruledtabular}
+    \begin{tabular}{lccccc} \hline
+        Label & $L$ & $l_F$ & $R_0$ & $R_L$ & $h_L/M_1$\\
+        \hline
+        S1 & 7 & 4 & 384 & 1 & 1/20\\
+        S2 & 7 & 4 & 384 & 1 & 1/24\\
+        S3 & 7 & 4 & 384 & 1 & 1/32\\
+        S4 & 7 & 4 & 384 & 1 & 1/28\\ \hline
+    \end{tabular}
+    %\end{ruledtabular}
+    }
+    \label{bhkick:tab:lean-grids}
+\end{table}
+
+With \textsc{Lean}, we have simulated \texttt{sq1:2-p0100} with
+resolutions $h_L = M_1/20$, $M_1/24$ and $M_1/32$. We refer to these
+grid configurations as S1, S2 and S3, respectively
+(cf. Table~\ref{bhkick:tab:lean-grids}). The right panel of Fig.~\ref{bhkick:fig:convergence}
+shows convergence between fourth and fifth order. For simulations in
+\texttt{sq1:2}, we used the S2 grid configuration. From the
+convergence analysis, the difference between the result obtained from
+the S2 simulation and the fourth-order Richardson extrapolation leads
+to an estimate of the discretization error of about $1.5\%$.
+
+For the \texttt{lq1:2} simulations, we have undertaken a separate
+convergence analysis of \texttt{lq1:2-p0086} using the same grid
+setup as in
+Table~\ref{bhkick:tab:lean-grids}, but using higher resolutions
+$h_L/M_1=1/24$, $1/28$ and $1/32$. We observe convergence close to
+fourth order and obtain an error estimate of $1\,\%$ from
+the Richardson-extrapolated kick for the medium resolution
+$h_L/M_1=1/28$.
+
+In summary, the {\sc Lean} simulations of sequence \texttt{sq1:2} are
+performed with resolution grid S2 of Table~\ref{bhkick:tab:lean-grids} and an
+error budget of $3.5\,\%$, and those of sequence \texttt{lq1:2} with
+grid S4 of Table~\ref{bhkick:tab:lean-grids} and an error budget of $3\,\%$.
+
+\subsection{Comparison between \textsc{GRChombo} and \textsc{Lean}}
+\label{bhkick:sec:code-comparison}
+\begin{figure}[t]
+    {
+    \centering
+    \includegraphics[width=0.7\columnwidth]{bhkick/grchombo-lean-comparison3.pdf}
+    }
+    \caption{Comparison between \textsc{GRChombo} and \textsc{Lean} 
+    for the accumulated linear momentum radiated in GWs in simulations 
+    of \texttt{sq1:2-p0100} with $e_t=0.10$.
+    We compare the BH recoil velocity (top panel)
+    and the corresponding plus-polarized $\ell=m=2$ strain
+    amplitude (bottom panel).
+    }
+    \label{bhkick:fig:grchombo-lean-comparison}
+\end{figure}
+A comparison of the recoil velocity computed from \textsc{GRChombo} 
+and \textsc{Lean} simulations of \texttt{sq1:2-p0100} with the grid 
+configurations R1 and S2 (used for the \texttt{sq2:3} and \texttt{sq1:2} runs) 
+respectively, is shown in the top panel of Fig.~\ref{bhkick:fig:grchombo-lean-comparison}.
+The eccentricity estimate for this system is $e_t=0.10$. We have chosen
+this configuration for two reasons. First, to determine appropriate
+resolutions, we had to calibrate our codes' accuracy at the start of
+our exploration, which we began in the regime of mild eccentricities to
+acquire an intuitive understanding of their behavior. Second, 
+configurations with mild eccentricity have a longer inspiral phase
+than highly eccentric ones, and therefore impose a stronger requirement
+on phase accuracy. A mildly eccentric binary is therefore ideally suited
+to obtain a conservative estimate of the numerical accuracy, which is representative across the targeted parameter space.
+
+The final recoil velocities obtained for this configuration with
+our two codes differ by about 2\%, which is well within the error budget 
+of each code.
+We also show the quadrupole contribution
+$h^+_{2,2}$ to the `+' polarization strain defined by \cite{Bishop:2016lgv}
+\begin{equation}
+    h^+_{\ell,m}(t,r)-\mathrm{i}h^\times_{\ell,m}(t,r) 
+    = a_{\ell,m} + b_{\ell,m}t + \int_0^t\rmd t^\prime\int_0^{t^\prime}
+    \rmd t^{\prime\prime}\psi_{\ell,m}(t^{\prime\prime},r),
+    \label{bhkick:eq:strain}
+\end{equation}
+where the constants $a_{\ell,m}$ and $b_{\ell,m}$ are chosen to minimize 
+linear drift,
+in the bottom panel of the figure, to better illustrate the agreement
+between the codes for these grid configurations.
+
+In Fig.~\ref{bhkick:fig:convergence} the differences between the results of 
+different resolutions with \textsc{Lean} are greater than that of
+\textsc{GRChombo}. However, we found that \textsc{Lean} entered the 
+convergent regime at lower resolutions than GRChombo. This is compatible 
+with the observations of Ref.~\cite{Alic:2011gg} that higher resolutions 
+were required for convergence with CCZ4 compared to BSSNOK.
+
+
+
+
+%=============================================================================
+\section{\textsc{GRChombo} tagging criterion}
+\label{bhkick:sec:tagging}
+%
+%
+As explained in Sec.~\ref{bhkick:sec:grchombo}, the regridding is controlled by 
+the tagging of cells for refinement in the Berger-Rigoutsos algorithm 
+\cite{Berger1991}, with cells being tagged if the tagging criterion $C$ 
+exceeds the specified threshold value $t_R$ as given in Table 
+\ref{bhkick:tab:grchombo-grids}. For this work, we use the 
+tagging criterion
+
+\begin{equation}
+    C=
+    \begin{cases}
+        0, &\text{if }l\geq l_{\mathrm{BH}}^{\max}
+        \text{ and } r_{\mathrm{BH}} < (M_{\mathrm{BH}}+b),\\
+        \max(C_{\chi},C_{\mathrm{punc}},C_{\mathrm{ex}}),&
+        \text{otherwise},
+    \end{cases}
+\end{equation}
+
+where $l_{\mathrm{BH}}^{\max}$ is a specifiable maximum level parameter 
+for each BH (so that it is not unnecessarily over resolved), 
+$r_{\mathrm{BH}}$ is the coordinate distance to the puncture, 
+$M_{\mathrm{BH}}$ is the mass of the corresponding BH, $b$ is a buffer 
+parameter, and $C_\chi$, $C_{\mathrm{punc}}$, and $C_{\mathrm{ex}}$ are 
+given as follows:
+\begin{enumerate}
+    \item 
+        $C_{\chi}$ tags regions in which the gradients of the conformal 
+        factor $\chi$ become steep. It is given by
+        \begin{equation}
+            C_{\chi} = h_l\sqrt{\sum_{i,j}\left(
+            \partial_i\partial_j\chi\right)^2}\,,
+        \end{equation}
+        where $h_l$ is the grid spacing on refinement level $l$.
+    \item 
+        $C_{\mathrm{punc}}$ tags within spheres around each puncture in 
+        order to ensure the horizon is suitably well resolved. It is given 
+        by
+        \begin{equation}
+            C_{\mathrm{punc}} = 
+            \begin{cases}
+                100, &\text{if } r_{\mathrm{BH}} < 
+                (M_{\mathrm{BH}}+b) 2^{\max(l_\mathrm{BH}^{\max}-l-1, 2)}, \\
+                0, & \text{otherwise}.
+            \end{cases}
+        \end{equation}
+    \item
+        $C_{\mathrm{ex}}$ ensures each sphere on which we extract the 
+        Weyl scalar $\Psi_4$ is suitably well resolved. It is given by
+        \begin{equation}
+            C_{\mathrm{ex}} = 
+            \begin{cases}
+                100, &\text{if } r < 1.2r_{\mathrm{ex}} \text{ and } 
+                l < l_{\mathrm{ex}}, \\
+                0, & \text{otherwise},
+            \end{cases}
+        \end{equation}
+         where $r$ is the coordinate distance to the center of mass,
+         $r=r_{\mathrm{ex}}$ gives the location of the extraction sphere, 
+         and $l_{\mathrm{ex}}$ is a specifiable extraction level parameter 
+         for each sphere.
+\end{enumerate}
+We also used this tagging criterion with the replacement
+$r_{\mathrm{BH}}\to
+\max(x_{\mathrm{BH}},y_{\mathrm{BH}},z_{\mathrm{BH}})$, where,
+e.g. $x_{\mathrm{BH}}$ is the distance to the puncture in the $x$
+direction. We refer to this as ``box'' tagging and the original as
+``spherical'' tagging. Naively, one might hope that $C_{\chi}$ is
+sufficient to ensure suitable refinement around the BHs, since the
+gradients of $\chi$ become increasingly steep close to the
+punctures. However we found empirically that, without
+$C_{\text{punc}}$, the horizons are perturbed significantly by the
+refinement boundaries, leading to lower accuracy.
+

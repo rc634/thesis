@@ -994,37 +994,6 @@ D.~Croon, M.~Gleiser, S.~Mohapatra, and C.~Sun, ``{Gravitational Radiation
   Background from Boson Star Binaries},'' {\em Phys. Lett. B}, vol.~783,
   pp.~158--162, 2018.
 
-\bibitem{10.1145/3311790.3396656}
-D.~Stanzione, J.~West, R.~T. Evans, T.~Minyard, O.~Ghattas, and D.~K. Panda,
-  ``Frontera: The evolution of leadership computing at the national science
-  foundation,'' in {\em Practice and Experience in Advanced Research
-  Computing}, PEARC '20, (New York, NY, USA), p.~106–111, Association for
-  Computing Machinery, 2020.
-
-\bibitem{jones_scipy_2001}
-E.~Jones, T.~Oliphant, P.~Peterson, and Others, ``{SciPy}: Open source
-  scientific tools for python,'' 2001.
-
-\bibitem{Hunter:2007}
-J.~D. Hunter, ``Matplotlib: A 2d graphics environment,'' {\em Computing In
-  Science \& Engineering}, vol.~9, no.~3, pp.~90--95, 2007.
-
-\bibitem{van2011numpy}
-S.~Van Der~Walt, S.~C. Colbert, and G.~Varoquaux, ``The numpy array: a
-  structure for efficient numerical computation,'' {\em Computing in Science \&
-  Engineering}, vol.~13, no.~2, pp.~22--30, 2011.
-
-\bibitem{Turk_2010}
-M.~J. Turk, B.~D. Smith, J.~S. Oishi, S.~Skory, S.~W. Skillman, T.~Abel, and
-  M.~L. Norman, ``yt: A {MULTI}-{CODE} {ANALYSIS} {TOOLKIT} {FOR}
-  {ASTROPHYSICAL} {SIMULATION} {DATA},'' {\em The Astrophysical Journal
-  Supplement Series}, vol.~192, p.~9, dec 2010.
-
-\bibitem{Gundlach:2005eh}
-C.~Gundlach, G.~Calabrese, I.~Hinder, and J.~M. Mart{\'i}n-Garc{\'i}a,
-  ``Constraint damping in the {Z}4 formulation and harmonic gauge,'' {\em
-  Class. Quantum Grav.}, vol.~22, pp.~3767--3773, 2005.
-
 \bibitem{Croft:2022gks}
 R.~Croft, ``{Local Continuity of Angular Momentum and Noether Charge for Matter
   in General Relativity},'' 3 2022.
@@ -1032,5 +1001,487 @@ R.~Croft, ``{Local Continuity of Angular Momentum and Noether Charge for Matter
 \bibitem{Clough:2021qlv}
 K.~Clough, ``{Continuity equations for general matter: applications in
   numerical relativity},'' 4 2021.
+
+\bibitem{jones_scipy_2001}
+E.~Jones, T.~Oliphant, P.~Peterson, and Others, ``{SciPy}: Open source
+  scientific tools for python,'' 2001.
+
+\bibitem{Saulson:2010zz}
+P.~R. Saulson, ``{Josh Goldberg and the physical reality of gravitational
+  waves},'' {\em Gen. Rel. Grav.}, vol.~43, pp.~3289--3299, 2011.
+
+\bibitem{Campanelli:2006uy}
+M.~Campanelli, C.~O. Lousto, and Y.~Zlochower, ``{Spinning-black-hole binaries:
+  The orbital hang up},'' {\em Phys. Rev. D}, vol.~74, p.~041501, 2006.
+\newblock gr-qc/0604012.
+
+\bibitem{Sperhake:2009jz}
+U.~Sperhake, V.~Cardoso, F.~Pretorius, E.~Berti, T.~Hinderer, and N.~Yunes,
+  ``{Cross section, final spin and zoom-whirl behavior in high-energy black
+  hole collisions},'' {\em Phys. Rev. Lett.}, vol.~103, p.~131102, 2009.
+\newblock arXiv:0907.1252 [gr-qc].
+
+\bibitem{Bonnor1961-wy}
+W.~B. Bonnor and M.~A. Rotenberg, ``{Transport of momentum by gravitational
+  waves: the linear approximation},'' {\em Proc. R. Soc. A}, vol.~265,
+  pp.~109--116, Dec. 1961.
+
+\bibitem{Peres:1962zz}
+A.~Peres, ``Classical {R}adiation {R}ecoil,'' {\em Phys. Rev.}, vol.~128,
+  pp.~2471--2475, 1962.
+
+\bibitem{Bekenstein:1973zz}
+J.~D. Bekenstein, ``{G}ravitational-{R}adiation {R}ecoil and {R}unaway {B}lack
+  {H}oles,'' {\em Astrophys. J.}, vol.~183, pp.~657--664, 1973.
+
+\bibitem{Gerosa:2016vip}
+D.~Gerosa and C.~J. Moore, ``{Black hole kicks as new gravitational wave
+  observables},'' {\em Phys. Rev. Lett.}, vol.~117, no.~1, p.~011101, 2016.
+\newblock arXiv:1606.04226 [gr-qc].
+
+\bibitem{CalderonBustillo:2018zuq}
+J.~Calder\'on~Bustillo, J.~A. Clark, P.~Laguna, and D.~Shoemaker, ``{Tracking
+  black hole kicks from gravitational wave observations},'' {\em Phys. Rev.
+  Lett.}, vol.~121, no.~19, p.~191102, 2018.
+
+\bibitem{Lousto:2019lyf}
+C.~O. Lousto and J.~Healy, ``{Kicking gravitational wave detectors with
+  recoiling black holes},'' {\em Phys. Rev. D}, vol.~100, no.~10, p.~104039,
+  2019.
+
+\bibitem{Varma:2020nbm}
+V.~Varma, M.~Isi, and S.~Biscoveanu, ``{Extracting the Gravitational Recoil
+  from Black Hole Merger Signals},'' {\em Phys. Rev. Lett.}, vol.~124, no.~10,
+  p.~101104, 2020.
+
+\bibitem{Cardoso:2020lxx}
+V.~Cardoso and C.~F.~B. Macedo, ``Drifting through the medium: Kicks and
+  self-propulsion of binaries within accretion discs and other environments,''
+  {\em Mon. Not. R. Astron. Soc.}, vol.~498, no.~2, pp.~1963--1972, 2020.
+
+\bibitem{Fitchett1983-xq}
+M.~J. Fitchett, ``{The influence of gravitational wave momentum losses on the
+  centre of mass motion of a Newtonian binary system},'' {\em Mon. Not. R.
+  Astron. Soc.}, vol.~203, pp.~1049--1062, Aug. 1983.
+
+\bibitem{Blanchet:2005rj}
+L.~Blanchet, M.~S.~S. Qusailah, and C.~M. Will, ``Gravitational recoil of
+  inspiralling black hole binaries to second post-{N}ewtonian order,'' {\em
+  Astrophys. J}, vol.~635, pp.~508--515, 2005.
+\newblock astro-ph/0507692.
+
+\bibitem{Hughes:2004ck}
+S.~A. Hughes, M.~Favata, and D.~E. Holz, ``{How black holes get their kicks:
+  Radiation recoil in binary black hole mergers},'' in {\em {Conference on
+  Growing Black Holes: Accretion in a Cosmological Context Garching, Germany,
+  June 21-25, 2004}}, 2004.
+\newblock astro-ph/0408492.
+
+\bibitem{Damour:2006tr}
+T.~Damour and A.~Gopakumar, ``Gravitational recoil during binary black hole
+  coalescence using the effective one body approach,'' {\em Phys. Rev. D},
+  vol.~73, p.~124006, 2006.
+\newblock gr-qc/0602117.
+
+\bibitem{Sopuerta:2006wj}
+C.~F. Sopuerta, N.~Yunes, and P.~Laguna, ``{Gravitational Recoil from Binary
+  Black Hole Mergers: The Close-Limit Approximation},'' {\em Phys. Rev. D},
+  vol.~74, p.~124010, 2006.
+\newblock [Erratum: Phys. Rev.D78,049901(2008)].
+
+\bibitem{Sopuerta:2006et}
+C.~F. Sopuerta, N.~Yunes, and P.~Laguna, ``Gravitational recoil velocities from
+  eccentric binary black hole mergers,'' {\em Astrophys. J.}, vol.~656,
+  pp.~L9--L12, 2007.
+\newblock astro-ph/0611110.
+
+\bibitem{LeTiec:2009yg}
+A.~Le~Tiec, L.~Blanchet, and C.~M. Will, ``{Gravitational-Wave Recoil from the
+  Ringdown Phase of Coalescing Black Hole Binaries},'' {\em Classical Quantum
+  Gravity.}, vol.~27, p.~012001, 2010.
+
+\bibitem{Baker:2006vn}
+J.~G. Baker, J.~Centrella, D.-I. Choi, M.~Koppitz, J.~van Meter, and M.~C.
+  Miller, ``Getting a kick out of numerical relativity,'' {\em Astrophys. J},
+  vol.~653, pp.~L93--L96, 2006.
+\newblock gr-qc/0603204.
+
+\bibitem{Gonzalez:2006md}
+J.~A. Gonz{\'a}lez, U.~Sperhake, B.~Br{\"u}gmann, M.~D. Hannam, and S.~Husa,
+  ``The maximum kick from nonspinning black-hole binary inspiral,'' {\em Phys.
+  Rev. Lett.}, vol.~98, p.~091101, 2007.
+\newblock gr-qc/0610154.
+
+\bibitem{Herrmann:2007cwl}
+F.~Herrmann, I.~Hinder, D.~Shoemaker, and P.~Laguna, ``{Unequal mass binary
+  black hole plunges and gravitational recoil},'' {\em Classical Quantum
+  Gravity.}, vol.~24, no.~12, pp.~S33--S42, 2007.
+
+\bibitem{Gonzalez:2007hi}
+J.~A. Gonz{\'a}lez, M.~D. Hannam, U.~Sperhake, B.~Br{\"u}gmann, and S.~Husa,
+  ``Supermassive kicks for spinning black holes,'' {\em Phys. Rev. Lett.},
+  vol.~98, p.~231101, 2007.
+\newblock gr-qc/0702052.
+
+\bibitem{Campanelli:2007cga}
+M.~Campanelli, C.~O. Lousto, Y.~Zlochower, and D.~Merritt, ``Maximum
+  gravitational recoil,'' {\em Phys. Rev. Lett.}, vol.~98, p.~231102, 2007.
+\newblock gr-qc/0702133.
+
+\bibitem{Campanelli:2007ew}
+M.~Campanelli, C.~O. Lousto, Y.~Zlochower, and D.~Merritt, ``Large {M}erger
+  {R}ecoils and {S}pin {F}lips {F}rom {G}eneric {B}lack-{H}ole {B}inaries,''
+  {\em Astrophys. J.}, vol.~659, pp.~L5--L8, 2007.
+\newblock gr-qc/0701164.
+
+\bibitem{Lousto:2011kp}
+C.~O. Lousto and Y.~Zlochower, ``{Hangup Kicks: Still Larger Recoils by Partial
+  Spin/Orbit Alignment of Black-Hole Binaries},'' {\em Phys. Rev. Lett.},
+  vol.~107, p.~231102, 2011.
+\newblock arXiv:1108.2009 [gr-qc].
+
+\bibitem{Schnittman:2007sn}
+J.~D. Schnittman and A.~Buonanno, ``The distribution of recoil velocities from
+  merging black holes,'' {\em Astrophys. J.}, vol.~662, pp.~L63--L66, 2007.
+\newblock astro-ph/0702641.
+
+\bibitem{Dotti:2009vz}
+M.~Dotti, M.~Volonteri, A.~Perego, M.~Colpi, M.~Ruszkowski, and F.~Haardt,
+  ``{Dual black holes in merger remnants. II: spin evolution and gravitational
+  recoil},'' {\em MNRAS}, vol.~402, pp.~682--690, 2009.
+\newblock arXiv:0910.5729 [astro-ph].
+
+\bibitem{Kesden:2010ji}
+M.~Kesden, U.~Sperhake, and E.~Berti, ``{Relativistic Suppression of Black Hole
+  Recoils},'' {\em Astrophys. J.}, vol.~715, pp.~1006--1011, 2010.
+\newblock arXiv:1003.4993 [astro-ph].
+
+\bibitem{Lousto:2012su}
+C.~O. Lousto, Y.~Zlochower, M.~Dotti, and M.~Volonteri, ``{Gravitational Recoil
+  From Accretion-Aligned Black-Hole Binaries},'' {\em Phys. Rev. D}, vol.~85,
+  p.~084015, 2012.
+\newblock arXiv:1201.1923 [gr-qc].
+
+\bibitem{Berti:2012zp}
+E.~Berti, M.~Kesden, and U.~Sperhake, ``{Effects of post-Newtonian Spin
+  Alignment on the Distribution of Black-Hole Recoils},'' {\em Phys. Rev. D},
+  vol.~85, p.~124049, 2012.
+\newblock arXiv:1203.2920 [astro-ph].
+
+\bibitem{Komossa:2012cy}
+S.~Komossa, ``{Recoiling black holes: electromagnetic signatures, candidates,
+  and astrophysical implications},'' {\em Adv. Astron.}, vol.~2012, p.~364973,
+  2012.
+\newblock arXiv:1202.1977 [astro-ph].
+
+\bibitem{Colpi:2014poa}
+M.~Colpi, ``{Massive binary black holes in galactic nuclei and their path to
+  coalescence},'' {\em Space Sci. Rev.}, vol.~183, no.~1-4, pp.~189--221, 2014.
+
+\bibitem{Blecha:2015baa}
+L.~Blecha, D.~Sijacki, L.~Z. Kelley, P.~Torrey, M.~Vogelsberger, D.~Nelson,
+  V.~Springel, G.~Snyder, and L.~Hernquist, ``{Recoiling black holes: prospects
+  for detection and implications of spin alignment},'' 2015.
+\newblock arXiv:1508.01524 [astro-ph].
+
+\bibitem{Merritt:2004xa}
+D.~Merritt, M.~Milosavljevi{\'c}, M.~Favata, S.~Hughes, and D.~Holz,
+  ``Consequences of gravitational radiation recoil,'' {\em Astrophys. J.},
+  vol.~607, pp.~L9--L12, 2004.
+\newblock astro-ph/0402057.
+
+\bibitem{Benacquista:2011kv}
+M.~J. Benacquista and J.~M.~B. Downing, ``{Relativistic Binaries in Globular
+  Clusters},'' {\em Living Rev. Rel.}, vol.~16, p.~4, 2013.
+
+\bibitem{Morawski:2018kfs}
+J.~Morawski, M.~Giersz, A.~Askar, and K.~Belczynski, ``{MOCCA-SURVEY Database
+  I: Assessing GW kick retention fractions for BH–BH mergers in globular
+  clusters},'' {\em Mon. Not. Roy. Astron. Soc.}, vol.~481, no.~2,
+  pp.~2168--2179, 2018.
+
+\bibitem{Haiman:2004ve}
+Z.~Haiman, ``Constraints from gravitational recoil on the growth of
+  supermassive black holes at high redshift,'' {\em Astrophys. J}, vol.~613,
+  pp.~36--40, 2004.
+\newblock astro-ph/0404196.
+
+\bibitem{Graham:2020gwr}
+M.~J. Graham, K.~E.~S. Ford, B.~McKernan, N.~P. Ross, D.~Stern, K.~Burdge,
+  M.~Coughlin, {\em et~al.}, ``{Candidate Electromagnetic Counterpart to the
+  Binary Black Hole Merger Gravitational Wave Event S190521g},'' {\em Phys.
+  Rev. Lett.}, vol.~124, no.~25, p.~251102, 2020.
+
+\bibitem{Chen:2020gek}
+H.-Y. Chen, C.-J. Haster, S.~Vitale, W.~M. Farr, and M.~Isi, ``{A Standard
+  Siren Cosmological Measurement from the Potential GW190521 Electromagnetic
+  Counterpart ZTF19abanrhr}.'' 9 2020.
+
+\bibitem{Sperhake:2019wwo}
+U.~Sperhake, R.~Rosca-Mead, D.~Gerosa, and E.~Berti, ``{Amplification of
+  superkicks in black-hole binaries through orbital eccentricity},'' {\em Phys.
+  Rev. D}, vol.~101, no.~2, p.~024044, 2020.
+
+\bibitem{Samsing:2017rat}
+J.~Samsing and E.~Ramirez-Ruiz, ``{On the Assembly Rate of Highly Eccentric
+  Binary Black Hole Mergers},'' {\em Astrophys. J. Lett.}, vol.~840, no.~2,
+  p.~L14, 2017.
+
+\bibitem{Samsing:2017xmd}
+J.~Samsing, ``{Eccentric Black Hole Mergers Forming in Globular Clusters},''
+  {\em Phys. Rev. D}, vol.~97, no.~10, p.~103014, 2018.
+
+\bibitem{Samsing:2017oij}
+J.~Samsing, A.~Askar, and M.~Giersz, ``{MOCCA-SURVEY Database. I. Eccentric
+  Black Hole Mergers during Binary\textendash{}Single Interactions in Globular
+  Clusters},'' {\em Astrophys. J.}, vol.~855, no.~2, p.~124, 2018.
+
+\bibitem{Rodriguez:2018pss}
+C.~L. Rodriguez, P.~Amaro-Seoane, S.~Chatterjee, K.~Kremer, F.~A. Rasio,
+  J.~Samsing, C.~S. Ye, and M.~Zevin, ``{Post-Newtonian Dynamics in Dense Star
+  Clusters: Formation, Masses, and Merger Rates of Highly-Eccentric Black Hole
+  Binaries},'' {\em Phys. Rev. D}, vol.~98, no.~12, p.~123005, 2018.
+
+\bibitem{Samsing:2020tda}
+J.~Samsing, I.~Bartos, D.~D'Orazio, Z.~Haiman, B.~Kocsis, N.~Leigh, B.~Liu,
+  M.~Pessah, and H.~Tagawa, ``{Active Galactic Nuclei as Factories for
+  Eccentric Black Hole Mergers}.'' 10 2020.
+
+\bibitem{Tagawa:2020jnc}
+H.~Tagawa, B.~Kocsis, Z.~Haiman, I.~Bartos, K.~Omukai, and J.~Samsing,
+  ``Eccentric {{Black Hole Mergers}} in {{Active Galactic Nuclei}},'' {\em
+  Astrophys.J.Lett.}, vol.~907, no.~arXiv:2010.10526, p.~L20, 2021.
+
+\bibitem{Cardoso:2020iji}
+V.~Cardoso, C.~F.~B. Macedo, and R.~Vicente, ``Eccentricity evolution of
+  compact binaries and applications to gravitational-wave physics,'' {\em Phys.
+  Rev. D}, vol.~103, no.~2, 2021.
+
+\bibitem{Salemi:2019owp}
+B.~Abbott {\em et~al.}, ``{Search for Eccentric Binary Black Hole Mergers with
+  Advanced LIGO and Advanced Virgo during their First and Second Observing
+  Runs},'' {\em Astrophys. J.}, vol.~883, no.~2, p.~149, 2019.
+
+\bibitem{Abbott:2020tfl}
+R.~Abbott {\em et~al.}, ``{GW190521: A Binary Black Hole Merger with a Total
+  Mass of 150\,\,M\ensuremath{\odot}},'' {\em Phys. Rev. Lett.}, vol.~125,
+  no.~10, p.~101102, 2020.
+
+\bibitem{Romero-Shaw:2020thy}
+I.~M. {Romero-Shaw}, P.~D. Lasky, E.~Thrane, and J.~C. Bustillo,
+  ``{{GW190521}}: Orbital eccentricity and signatures of dynamical formation in
+  a binary black hole merger signal,'' {\em Astrophys.J.Lett.}, vol.~903,
+  no.~1, p.~L5, 2020.
+
+\bibitem{Gayathri:2020coq}
+V.~Gayathri, J.~Healy, J.~Lange, B.~O'Brien, M.~Szczepanczyk, I.~Bartos,
+  M.~Campanelli, S.~Klimenko, C.~Lousto, and R.~O'Shaughnessy, ``{GW190521 as a
+  Highly Eccentric Black Hole Merger}.'' 9 2020.
+
+\bibitem{Nishizawa:2016jji}
+A.~Nishizawa, E.~Berti, A.~Klein, and A.~Sesana, ``{eLISA eccentricity
+  measurements as tracers of binary black hole formation},'' {\em Phys. Rev.
+  D}, vol.~94, no.~6, p.~064020, 2016.
+
+\bibitem{Breivik:2016ddj}
+K.~Breivik, C.~L. Rodriguez, S.~L. Larson, V.~Kalogera, and F.~A. Rasio,
+  ``{Distinguishing Between Formation Channels for Binary Black Holes with
+  LISA},'' {\em Astrophys. J. Lett.}, vol.~830, no.~1, p.~L18, 2016.
+
+\bibitem{Nishizawa:2016eza}
+A.~Nishizawa, A.~Sesana, E.~Berti, and A.~Klein, ``{Constraining stellar binary
+  black hole formation scenarios with eLISA eccentricity measurements},'' {\em
+  Mon. Not. R. Astron. Soc.}, vol.~465, no.~4, pp.~4375--4380, 2017.
+
+\bibitem{Roedig:2011rn}
+C.~Roedig and A.~Sesana, ``{Origin and Implications of high eccentricities in
+  massive black hole binaries at sub-pc scales},'' {\em J. Phys. Conf. Ser.},
+  vol.~363, p.~012035, 2012.
+
+\bibitem{Bonetti:2018tpf}
+M.~Bonetti, A.~Sesana, F.~Haardt, E.~Barausse, and M.~Colpi, ``{Post-Newtonian
+  Evolution of Massive Black Hole Triplets in Galactic Nuclei: IV. Implications
+  for LISA},'' 2018.
+
+\bibitem{Huerta:2019oxn}
+E.~Huerta {\em et~al.}, ``{Physics of eccentric binary black hole mergers: A
+  numerical relativity perspective},'' {\em Phys. Rev. D}, vol.~100, no.~6,
+  p.~064003, 2019.
+
+\bibitem{GRChomboWebsite}
+\url{http://www.grchombo.org/}.
+
+\bibitem{Sperhake:2006cy}
+U.~Sperhake, ``Binary black-hole evolutions of excision and puncture data,''
+  {\em Phys. Rev. D}, vol.~76, p.~104015, 2007.
+\newblock gr-qc/0606079.
+
+\bibitem{Alic:2013xsa}
+D.~Alic, W.~Kastaun, and L.~Rezzolla, ``{Constraint damping of the conformal
+  and covariant formulation of the Z4 system in simulations of binary neutron
+  stars},'' {\em Phys. Rev. D}, vol.~88, no.~6, p.~064049, 2013.
+
+\bibitem{ChomboReport}
+M.~Adams {\em et~al.}, ``{Chombo Software Package for AMR Applications - Design
+  Document},'' Tech. Rep. LBNL-6616E, Lawrence Berkeley National Laboratory,
+  2019.
+
+\bibitem{Berger1991}
+M.~{Berger} and I.~{Rigoutsos}, ``An algorithm for point clustering and grid
+  generation,'' {\em IEEE Trans. Sys. Man \& Cybernet.}, vol.~21, no.~5,
+  pp.~1278--1286, 1991.
+
+\bibitem{Goodale2002a}
+T.~Goodale, G.~Allen, G.~Lanfermann, J.~Mass{\'o}, T.~Radke, E.~Seidel, and
+  J.~Shalf, ``The {Cactus} framework and toolkit: Design and applications,'' in
+  {\em Vector and Parallel Processing -- VECPAR'2002, 5th International
+  Conference, Lecture Notes in Computer Science}, (Berlin), Springer, 2003.
+
+\bibitem{Nakamura:1987zz}
+T.~Nakamura, K.~Oohara, and Y.~Kojima, ``{General Relativistic Collapse To
+  Black Holes And Gravitational Waves From Black Holes},'' {\em Prog. Theor.
+  Phys. Suppl.}, vol.~90, pp.~1--218, 1987.
+
+\bibitem{Baumgarte:1998te}
+T.~W. Baumgarte and S.~L. Shapiro, ``On the {N}umerical integration of
+  {E}instein's field equations,'' {\em Phys. Rev. D}, vol.~59, p.~024007, 1998.
+\newblock gr-qc/9810065.
+
+\bibitem{Schnetter:2003rb}
+E.~Schnetter, S.~H. Hawley, and I.~Hawke, ``{Evolutions in 3-D numerical
+  relativity using fixed mesh refinement},'' {\em Class. Quant. Grav.},
+  vol.~21, pp.~1465--1488, 2004.
+\newblock gr-qc/0310042.
+
+\bibitem{Thornburg:1995cp}
+J.~Thornburg, ``{Finding apparent horizons in numerical relativity},'' {\em
+  Phys. Rev. D}, vol.~54, pp.~4899--4918, 1996.
+\newblock gr-qc/9508014.
+
+\bibitem{Thornburg:2003sf}
+J.~Thornburg, ``{A Fast apparent horizon finder for three-dimensional Cartesian
+  grids in numerical relativity},'' {\em Class. Quant. Grav.}, vol.~21,
+  pp.~743--766, 2004.
+\newblock gr-qc/0306056.
+
+\bibitem{Brandt:1997tf}
+S.~Brandt and B.~Br{\"u}gmann, ``{A Simple construction of initial data for
+  multiple black holes},'' {\em Phys. Rev. Lett.}, vol.~78, pp.~3606--3609,
+  1997.
+\newblock gr-qc/9703066.
+
+\bibitem{Bowen:1980yu}
+J.~M. Bowen and J.~W. York, Jr., ``Time-asymmetric initial data for black holes
+  and black-hole collisions,'' {\em Phys. Rev. D}, vol.~21, pp.~2047--2056,
+  1980.
+
+\bibitem{Ansorg:2004ds}
+M.~Ansorg, B.~Br{\"u}gmann, and W.~Tichy, ``A single-domain spectral method for
+  black hole puncture data,'' {\em Phys. Rev. D}, vol.~70, p.~064011, 2004.
+\newblock gr-qc/0404056.
+
+\bibitem{Paschalidis:2013oya}
+V.~Paschalidis, Z.~B. Etienne, R.~Gold, and S.~L. Shapiro, ``{An efficient
+  spectral interpolation routine for the TwoPunctures code}.'' 4 2013.
+
+\bibitem{Sperhake:2007gu}
+U.~Sperhake, E.~Berti, V.~Cardoso, J.~A. Gonz{\'a}lez, B.~Br{\"u}gmann, and
+  M.~Ansorg, ``Eccentric binary black-hole mergers: The transition from
+  inspiral to plunge in general relativity,'' {\em Phys. Rev. D}, vol.~78,
+  p.~064069, 2008.
+\newblock arXiv:0710.3823 [gr-qc].
+
+\bibitem{Brugmann:2008zz}
+B.~Br{\"u}gmann, J.~A. Gonz{\'a}lez, M.~D. Hannam, S.~Husa, U.~Sperhake, and
+  W.~Tichy, ``Calibration of {M}oving {P}uncture {S}imulations,'' {\em Phys.
+  Rev. D}, vol.~77, p.~024027, 2008.
+\newblock gr-qc/0610128.
+
+\bibitem{York:1989jn}
+J.~W. York, Jr., {\em {Initial data for collisions of black holes and other
+  gravitational miscellany}}, p.~89.
+\newblock Cambridge, England: Cambridge University Press, Jan. 1989.
+
+\bibitem{Loutrel:2018ydu}
+N.~Loutrel, S.~Liebersbach, N.~Yunes, and N.~Cornish, ``{The eccentric behavior
+  of inspiralling compact binaries},'' {\em Classical Quantum Gravity.},
+  vol.~36, no.~2, p.~025004, 2019.
+
+\bibitem{Memmesheimer:2004cv}
+R.-M. Memmesheimer, A.~Gopakumar, and G.~Schaefer, ``{Third post-Newtonian
+  accurate generalized quasi-Keplerian parametrization for compact binaries in
+  eccentric orbits},'' {\em Phys. Rev. D}, vol.~70, p.~104011, 2004.
+
+\bibitem{Campanelli:1998jv}
+M.~Campanelli and C.~O. Lousto, ``Second order gauge invariant gravitational
+  perturbations of a {K}err black hole,'' {\em Phys. Rev. D}, vol.~59,
+  p.~124022, 1999.
+\newblock gr-qc/9811019.
+
+\bibitem{Lousto:2007mh}
+C.~O. Lousto and Y.~Zlochower, ``{A practical formula for the radiated angular
+  momentum},'' {\em Phys. Rev. D}, vol.~76, p.~041502, 2007.
+\newblock gr-qc/0703061.
+
+\bibitem{Ruiz:2007yx}
+M.~Ruiz, R.~Takahashi, M.~Alcubierre, and D.~Nu{\~n}ez, ``{Multipole expansions
+  for energy and momenta carried by gravitational waves},'' {\em Gen. Rel.
+  Grav.}, vol.~40, pp.~1705--1729, 2008.
+\newblock arXiv:0707.4654 [gr-qc].
+
+\bibitem{Healy:2017mvh}
+J.~Healy, C.~O. Lousto, and Y.~Zlochower, ``{Nonspinning binary black hole
+  merger scenario revisited},'' {\em Phys. Rev. D}, vol.~96, no.~2, p.~024031,
+  2017.
+
+\bibitem{Bruegmann:2007zj}
+B.~Br{\"u}gmann, J.~A. Gonz{\'a}lez, M.~D. Hannam, S.~Husa, and U.~Sperhake,
+  ``Exploring black hole superkicks,'' {\em Phys. Rev. D}, vol.~77, p.~124047,
+  2008.
+
+\bibitem{Lousto:2009ka}
+C.~O. Lousto, H.~Nakano, Y.~Zlochower, and M.~Campanelli, ``{Statistical
+  studies of Spinning Black-Hole Binaries},'' {\em Phys. Rev. D}, vol.~81,
+  p.~084023, 2010.
+\newblock [Erratum: Phys.Rev.D 82, 129902 (2010)].
+
+\bibitem{Wiseman:1992dv}
+A.~G. Wiseman, ``{Coalescing binary systems of compact objects to (post)5/2
+  Newtonian order. 2. Higher order wave forms and radiation recoil},'' {\em
+  Phys. Rev. D}, vol.~46, pp.~1517--1539, 1992.
+
+\bibitem{Kesden:2014sla}
+M.~Kesden, D.~Gerosa, R.~O'Shaughnessy, E.~Berti, and U.~Sperhake, ``{Effective
+  potentials and morphological transitions for binary black-hole spin
+  precession},'' {\em Phys. Rev. Lett.}, vol.~114, no.~8, p.~081103, 2015.
+\newblock arXiv:1411.0674 [gr-qc].
+
+\bibitem{Gerosa:2015tea}
+D.~Gerosa, M.~Kesden, U.~Sperhake, E.~Berti, and R.~O’Shaughnessy,
+  ``{Multi-timescale analysis of phase transitions in precessing black-hole
+  binaries},'' {\em Phys. Rev. D}, vol.~92, no.~6, p.~064016, 2015.
+\newblock arXiv:1506.03492 [gr-qc].
+
+\bibitem{Hamilton:2019a}
+C.~Hamilton and R.~R. Rafikov, ``{Secular dynamics of binaries in stellar
+  clusters - I. General formulation and dependence on cluster potential},''
+  {\em Mon. Not. Roy. Astron. Soc.}, vol.~488, no.~4, pp.~5489--5511, 2019.
+
+\bibitem{Hamilton:2019b}
+C.~Hamilton and R.~R. Rafikov, ``{Secular dynamics of binaries in stellar
+  clusters - II. Dynamical evolution},'' {\em Mon. Not. Roy. Astron. Soc.},
+  vol.~488, no.~4, pp.~5512--5535, 2019.
+
+\bibitem{Sperhake:2011zz}
+U.~Sperhake, B.~Br{\"u}gmann, D.~M{\"u}ller, and C.~F. Sopuerta, ``{11-orbit
+  inspiral of a mass ratio 4:1 black-hole binary},'' {\em Class. Quant. Grav.},
+  vol.~28, p.~134004, 2011.
+\newblock arXiv:1012.3173 [gr-qc].
+
+\bibitem{Bishop:2016lgv}
+N.~T. Bishop and L.~Rezzolla, ``{Extraction of gravitational waves in numerical
+  relativity},'' {\em Living Reviews in Relativity}, vol.~20, no.~1, p.~1,
+  2016.
+\newblock arXiv:1606.02532 [gr-qc].
 
 \end{thebibliography}
