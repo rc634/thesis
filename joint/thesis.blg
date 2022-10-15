@@ -5,76 +5,15 @@ A level-1 auxiliary file: intro.aux
 A level-1 auxiliary file: nr.aux
 A level-1 auxiliary file: bosonstars.aux
 A level-1 auxiliary file: grchombo.aux
-A level-1 auxiliary file: malaise.aux
-A level-1 auxiliary file: q.aux
-A level-1 auxiliary file: afterglow.aux
-A level-1 auxiliary file: bhkick.aux
 The style file: ieeetr.bst
-Reallocated field_info (elt_size=4) to 12038 items from 5000.
 Database file #1: gigabib.bib
 Repeated entry---line 16999 of file gigabib.bib
  : @article{Alcubierre:2002kk
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 17138 of file gigabib.bib
- : @article{PhysRevD.67.104005
- :                            ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 17225 of file gigabib.bib
  : @article{hadjidimos2000successive
  :                                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17247 of file gigabib.bib
- : @article{10.2307/2397365
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17306 of file gigabib.bib
- : @article{Macedo:2013jja
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17384 of file gigabib.bib
- : @article{LIGOScientific:2020kqk
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17530 of file gigabib.bib
- : @article{Kleihaus:2011sx
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17543 of file gigabib.bib
- : @article{Kleihaus:2005me
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17583 of file gigabib.bib
- : @article{Alcubierre:2018ahf
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17597 of file gigabib.bib
- : @article{Brito:2015yga
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17625 of file gigabib.bib
- : @article{Brito:2015pxa
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17638 of file gigabib.bib
- : @article{Helfer:2016ljl
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17714 of file gigabib.bib
- : @article{Schunck:1999zu
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17727 of file gigabib.bib
- : @article{Lee:1986ts
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17739 of file gigabib.bib
- : @article{Colpi:1986ye
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17763 of file gigabib.bib
- : @article{Ruffini:1969qy
- :                        ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 17773 of file gigabib.bib
  : @article{Kaup:1968zz
@@ -84,22 +23,6 @@ Repeated entry---line 17809 of file gigabib.bib
  : @article{PhysRev.172.1331
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 17863 of file gigabib.bib
- : @article{Peccei:1977hh
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17956 of file gigabib.bib
- : @article{Arvanitaki:2009fg
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17993 of file gigabib.bib
- : @article{Marsh:2015xka
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18023 of file gigabib.bib
- : @article{Nakamura:1987zz
- :                         ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 18046 of file gigabib.bib
  : @article{Baumgarte:1998te
  :                          ,
@@ -108,241 +31,9 @@ Repeated entry---line 18058 of file gigabib.bib
  : @article{Shibata:1995we
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 18103 of file gigabib.bib
- : @article{Sperhake:2019oaw
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18118 of file gigabib.bib
- : @article{Liebling:2012fv
- :                         ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 18191 of file gigabib.bib
  : @article{Alcubierre:2002kk
  :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18201 of file gigabib.bib
- : @article{Alic:2011gg
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18249 of file gigabib.bib
- : @article{Sennett:2017etc
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18420 of file gigabib.bib
- : @article{Toubiana:2020lzd
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18460 of file gigabib.bib
- : @article{Palenzuela:2006wp
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18472 of file gigabib.bib
- : @article{DiGiovanni:2020ror
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18486 of file gigabib.bib
- : @article{Siemonsen:2020hcg
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18500 of file gigabib.bib
- : @article{Dmitriev:2021utv
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18558 of file gigabib.bib
- : @article{Yoshida:1994xi
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18642 of file gigabib.bib
- : @article{Gleiser:1988rq
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18664 of file gigabib.bib
- : @article{Helfer:2018vtq
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18678 of file gigabib.bib
- : @article{Widdicombe:2019woy
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18691 of file gigabib.bib
- : @article{Sanchis_Gual_2019
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18706 of file gigabib.bib
- : @article{Herdeiro:2020kba
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18928 of file gigabib.bib
- : @article{Zilhao:2015tya
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18969 of file gigabib.bib
- : @article{Sanchis-Gual:2017bhw
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18997 of file gigabib.bib
- : @article{Sanchis-Gual:2018oui
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19011 of file gigabib.bib
- : @article{Sanchis-Gual:2020mzb
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19025 of file gigabib.bib
- : @article{Bustillo:2020syj
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19097 of file gigabib.bib
- : @article{Bezares:2018qwa
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19111 of file gigabib.bib
- : @article{Palenzuela:2017kcg
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19125 of file gigabib.bib
- : @article{Baker:2005vv
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19188 of file gigabib.bib
- : @article{Campanelli:2005dd
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19206 of file gigabib.bib
- : @article{Clough:2015sqa
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19269 of file gigabib.bib
- : @article{Yoshida:1997qf
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19338 of file gigabib.bib
- : @article{Sanchis-Gual:2019ljs
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19352 of file gigabib.bib
- : @article{Feng:2010gw
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19486 of file gigabib.bib
- : @article{Choptuik:2009ww
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19499 of file gigabib.bib
- : @article{Palenzuela:2007dm
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19512 of file gigabib.bib
- : @article{Bezares:2017mzk
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19542 of file gigabib.bib
- : @article{Sperhake:2007gu
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19555 of file gigabib.bib
- : @article{Sperhake:2019wwo
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19569 of file gigabib.bib
- : @article{Sperhake:2006cy
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19581 of file gigabib.bib
- : @article{Clough:2015sqa
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19639 of file gigabib.bib
- : @article{Husa:2007hp
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19676 of file gigabib.bib
- : @article{Brandt:1997tf
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19688 of file gigabib.bib
- : @article{Bowen:1980yu
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19698 of file gigabib.bib
- : @article{Ansorg:2004ds
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19722 of file gigabib.bib
- : @article{Alic:2011gg
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19735 of file gigabib.bib
- : @article{Alic:2013xsa
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19750 of file gigabib.bib
- : @article{Brugmann:2008zz
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19762 of file gigabib.bib
- : @article{Sperhake:2011zz
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19773 of file gigabib.bib
- : @article{Bekenstein:1973zz
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19783 of file gigabib.bib
- : @article{Peres:1962zz
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19823 of file gigabib.bib
- : @article{Blanchet:2005rj
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19835 of file gigabib.bib
- : @inproceedings{Hughes:2004ck
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19848 of file gigabib.bib
- : @article{Damour:2006tr
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19860 of file gigabib.bib
- : @article{Sopuerta:2006wj
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19874 of file gigabib.bib
- : @article{Sopuerta:2006et
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19899 of file gigabib.bib
- : @article{Baker:2006vn
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19922 of file gigabib.bib
- : @article{Gonzalez:2006md
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19934 of file gigabib.bib
- : @article{Merritt:2004xa
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19946 of file gigabib.bib
- : @article{Benacquista:2011kv
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19959 of file gigabib.bib
- : @article{Morawski:2018kfs
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19973 of file gigabib.bib
- : @article{Haiman:2004ve
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 19999 of file gigabib.bib
- : @article{Rodriguez:2018pss
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20146 of file gigabib.bib
- : @article{Nakamura:1987zz
- :                         ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 20156 of file gigabib.bib
  : @article{Shibata:1995we
@@ -352,233 +43,50 @@ Repeated entry---line 20166 of file gigabib.bib
  : @article{Baumgarte:1998te
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 20178 of file gigabib.bib
- : @article{Schnetter:2003rb
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20191 of file gigabib.bib
- : @article{Thornburg:2003sf
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20204 of file gigabib.bib
- : @article{Baker:2005vv
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20216 of file gigabib.bib
- : @article{Campanelli:2005dd
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20228 of file gigabib.bib
- : @article{Ruiz:2007yx
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20241 of file gigabib.bib
- : @inproceedings{Arnowitt:1962hi
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20252 of file gigabib.bib
- : @article{Gonzalez:2007hi
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20263 of file gigabib.bib
- : @article{Campanelli:2007cga
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20312 of file gigabib.bib
- : @article{Lousto:2009ka
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20325 of file gigabib.bib
- : @article{Wiseman:1992dv
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20335 of file gigabib.bib
- : @article{Kesden:2014sla
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20348 of file gigabib.bib
- : @article{Gerosa:2015tea
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20361 of file gigabib.bib
- : @article{Hamilton:2019a
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20373 of file gigabib.bib
- : @article{Hamilton:2019b
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20385 of file gigabib.bib
- : @article{Bishop:2016lgv
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20412 of file gigabib.bib
- : @article{Memmesheimer:2004cv
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20424 of file gigabib.bib
- : @article{Thornburg:1995cp
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20435 of file gigabib.bib
- : @article{Komossa:2012cy
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20447 of file gigabib.bib
- : @article{Gerosa:2016vip
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20461 of file gigabib.bib
- : @article{Sperhake:2009jz
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20473 of file gigabib.bib
- : @article{Abbott:2016blz
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20487 of file gigabib.bib
- : @article{Campanelli:2006uy
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20498 of file gigabib.bib
- : @article{Saulson:2010zz
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20525 of file gigabib.bib
- : @article{Blecha:2015baa
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20559 of file gigabib.bib
- : @article{Barack:2018yly
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20574 of file gigabib.bib
- : @article{Lousto:2012su
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20589 of file gigabib.bib
- : @article{Berti:2012zp
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20603 of file gigabib.bib
- : @article{Kesden:2010ji
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20616 of file gigabib.bib
- : @article{Lousto:2011kp
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20630 of file gigabib.bib
- : @article{Campanelli:2007ew
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20645 of file gigabib.bib
- : @article{Dotti:2009vz
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20660 of file gigabib.bib
- : @article{Schnittman:2007sn
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20722 of file gigabib.bib
- : @article{Bonetti:2018tpf
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20739 of file gigabib.bib
- : @article{Healy:2017mvh
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20753 of file gigabib.bib
- : @article{Campanelli:1998jv
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20764 of file gigabib.bib
- : @article{Lousto:2007mh
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 20775 of file gigabib.bib
- : @article{Lousto:2019lyf
- :                        ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 20859 of file gigabib.bib
  : @article{Alcubierre:2002kk
  :                           ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "harmonic"
-Warning--I didn't find a database entry for "z4"
 Warning--there's a number but no series in kreiss1973methods
-Warning--empty journal in Moore:2021eok
-Warning--empty journal in Gerosa:2021mno
-Warning--empty author in LIGOScientific:2021psn
-Warning--empty journal in LIGOScientific:2021psn
-Warning--empty journal in Visinelli:2021uve
-Warning--empty journal in Vaglio:2022flq
-Warning--empty journal in Cardoso:2022vpj
-Warning--empty journal in Alcubierre:2021psa
-Warning--empty journal in Boskovic:2021nfs
-Warning--empty journal in Zhang:2021xxa
-Warning--empty journal in CalderonBustillo:2022cja
-Warning--empty journal in March-Russell:2022zll
-Warning--empty journal in Gorghetto:2022sue
-Warning--empty journal in Jain:2021pnk
-Warning--empty journal in Diamond:2021dth
-Warning--empty journal in Jaramillo:2022zwg
-Warning--empty journal in Helfer:2021brt
-Warning--empty journal in Radia:2021smk
-Warning--empty journal in LIGOScientific:2021jlr
-Warning--empty journal in LIGOScientific:2021oez
-Warning--empty journal in LIGOScientific:2022lsr
-Warning--empty journal in LIGOScientific:2022pjk
-Warning--empty journal in LIGOScientific:2021hvc
-Warning--empty journal in LIGOScientific:2021ozr
-Warning--empty journal in Croft:2022gks
-Warning--empty journal in Clough:2021qlv
-Warning--empty journal in Blecha:2015baa
-Warning--empty note in Chen:2020gek
-Warning--empty note in Samsing:2020tda
-Warning--empty note in Gayathri:2020coq
-Warning--empty journal in Bonetti:2018tpf
-Warning--empty title in GRChomboWebsite
-Warning--empty note in Paschalidis:2013oya
-You've used 304 entries,
+You've used 30 entries,
             1876 wiz_defined-function locations,
-            2224 strings with 54269 characters,
-and the built_in function-call counts, 87468 in all, are:
-= -- 8958
-> -- 3531
-< -- 1
-+ -- 1294
-- -- 990
-* -- 5607
-:= -- 11930
-add.period$ -- 370
-call.type$ -- 304
-change.case$ -- 296
+            688 strings with 8763 characters,
+and the built_in function-call counts, 9204 in all, are:
+= -- 961
+> -- 353
+< -- 0
++ -- 131
+- -- 101
+* -- 592
+:= -- 1249
+add.period$ -- 38
+call.type$ -- 30
+change.case$ -- 27
 chr.to.int$ -- 0
-cite$ -- 338
-duplicate$ -- 5183
-empty$ -- 7297
-format.name$ -- 990
-if$ -- 22038
+cite$ -- 31
+duplicate$ -- 533
+empty$ -- 765
+format.name$ -- 101
+if$ -- 2316
 int.to.chr$ -- 0
-int.to.str$ -- 304
-missing$ -- 301
-newline$ -- 981
-num.names$ -- 304
-pop$ -- 746
+int.to.str$ -- 30
+missing$ -- 33
+newline$ -- 101
+num.names$ -- 30
+pop$ -- 64
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 4314
+skip$ -- 456
 stack$ -- 0
-substring$ -- 4448
-swap$ -- 2783
-text.length$ -- 1
+substring$ -- 530
+swap$ -- 298
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 34
-while$ -- 678
-width$ -- 307
-write$ -- 3139
-(There were 123 error messages)
+warning$ -- 1
+while$ -- 75
+width$ -- 32
+write$ -- 325
+(There were 10 error messages)

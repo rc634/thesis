@@ -88,12 +88,17 @@ Decomposing the Klein Gordon Equation,
 \end{equation}
 The term with $\D^\mu$ simplifies like,
 \begin{equation}\frac{1}{\sqrt{-g}} \partial_\mu \left[ \sqrt{-g}\D^\mu\vp\right] =  \frac{1}{\alpha\sqrt{\gamma}} \partial_\mu \left[\alpha\sqrt{\gamma}\D^\mu\vp\right]  = \D_\mu \D^\mu \vp + \D^\mu \vp \,\partial_\mu \ln \alpha,\end{equation}
-and the remainder becomes,
+and the remainder becomes
 \begin{equation}-\frac{1}{\sqrt{-g}} \partial_\mu \left[ \sqrt{-g}n^\mu \L_n\vp\right] = -\left[\nabla \cdot n + n\cdot \partial\right]\L_n\vp = -\K\Pi + \L_n \Pi.\end{equation}
 Combining these results, the full Klein Gordon system is constructed,
 \begin{align}
  \L_m \Pi &= - \D^\mu\vp\,\partial_\mu \alpha+\alpha\left[\K\Pi - \D_\mu \D^\mu \vp  + V'\vp\right], \\
  \L_m \vp &= - \alpha\Pi.\end{align}
+Using the CCZ4 formalism (covered in section \ref{nr:sec:ccz4}), the equations of motion for the scalar field become
+\begin{align}
+\partial_t \vp &= \beta^k\partial_k \vp - \alpha\Pi ,\label{boson:eq:ccz4kg1}\\
+\partial_t \Pi &= \beta^k\partial_k\Pi -\chi \tilde{\gamma}^{ij}\partial_i \vp \partial_j \alpha + \alpha \left[ \chi \tilde{\Upsilon}^k\partial_k \vp+\frac{1}{2} \tilde{\gamma}^{lk}\partial_k\chi\partial_l\vp  - \chi \tilde{\gamma}^{ij}\partial_i \partial_j \vp + \K \Pi + V' \vp \right],\label{boson:eq:ccz4kg2}
+\end{align}
 The final matter term we must decompose is the Klein-Gordon stress tensor in Eq.~(\ref{boson:eq:KGT}) with Eqs.~(\ref{nr:eq:Tdecomp1}), (\ref{nr:eq:Tdecomp2}) and (\ref{nr:eq:Tdecomp3}). \begin{align} \rho &=n^\mu n^\nu T_{\mu\nu} = \frac{1}{2}|\Pi|^2 + \frac{1}{2}\gamma^{ij}\D_i \varphi^* \D_j \varphi +\frac{1}{2}V(|\varphi|^2)
 ,\\ S_i &= -\perp^\mu_i n^\nu T_{\mu\nu} =  \frac{1}{2}\left[\Pi^* \D_i \vp  +  \Pi\D_i \vp^* \right]
 ,\\ S_{ij} &= \perp^\mu_i \perp^\nu_j T_{\mu\nu} = \D_{(i}\vp\D_{j)}\vp^* - \frac{1}{2}\left[ \gamma^{ij}\D_i\vp\D_j\vp^* - |\Pi|^2 + V(|\vp|^2)\right].\end{align}
