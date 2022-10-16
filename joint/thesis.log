@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.6)  15 OCT 2022 19:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.6)  16 OCT 2022 20:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1216,7 +1216,7 @@ l.88     \hline
 l.92   \hline
              
 ? 
-<png/uni_logo.png, id=244, 6068.6725pt x 2051.665pt>
+<png/uni_logo.png, id=240, 6068.6725pt x 2051.665pt>
 File: png/uni_logo.png Graphic file (type png)
 <use png/uni_logo.png>
 Package pdftex.def Info: png/uni_logo.png  used on input line 101.
@@ -1267,7 +1267,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.67 ...rline {2.2.1}Action}{53}{subsection.2.2.1}
+l.67 ...e {2.2.1}The Action}{53}{subsection.2.2.1}
                                                   % [1
 
 ])
@@ -1289,7 +1289,7 @@ Chapter 1.
  (./intro.tex [2
 
 ] [3] [4]
-<pics/pythag_proof2.png, id=366, 256.5585pt x 247.1634pt>
+<pics/pythag_proof2.png, id=360, 256.5585pt x 247.1634pt>
 File: pics/pythag_proof2.png Graphic file (type png)
 <use pics/pythag_proof2.png>
 Package pdftex.def Info: pics/pythag_proof2.png  used on input line 74.
@@ -1360,7 +1360,7 @@ LaTeX Warning: Reference `q:sect:derive' on page 25 undefined on input line 912
 LaTeX Warning: Reference `q:sec:q' on page 31 undefined on input line 1083.
 
 [31] [32] [33] [34]
-<png/scbh_er_bridge.png, id=899, 928.46875pt x 741.77126pt>
+<png/scbh_er_bridge.png, id=893, 928.46875pt x 741.77126pt>
 File: png/scbh_er_bridge.png Graphic file (type png)
 <use png/scbh_er_bridge.png>
 Package pdftex.def Info: png/scbh_er_bridge.png  used on input line 1204.
@@ -1377,7 +1377,7 @@ Chapter 2.
  (./nr.tex [40
 
 ] [41] [42] [43]
-<png/ADM_screeny.png, id=1051, 916.42375pt x 900.36375pt>
+<png/ADM_screeny.png, id=1045, 916.42375pt x 900.36375pt>
 File: png/ADM_screeny.png Graphic file (type png)
 <use png/ADM_screeny.png>
 Package pdftex.def Info: png/ADM_screeny.png  used on input line 168.
@@ -1396,18 +1396,18 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [49]
-<png/sc_penrose.png, id=1170, 419.8887pt x 272.9397pt>
+<png/sc_penrose.png, id=1166, 419.8887pt x 272.9397pt>
 File: png/sc_penrose.png Graphic file (type png)
 <use png/sc_penrose.png>
 Package pdftex.def Info: png/sc_penrose.png  used on input line 311.
 (pdftex.def)             Requested size: 213.4184pt x 138.73094pt.
-<png/iso_penrose.png, id=1171, 1284.8pt x 872.25874pt>
+<png/iso_penrose.png, id=1167, 1284.8pt x 872.25874pt>
 File: png/iso_penrose.png Graphic file (type png)
 <use png/iso_penrose.png>
 Package pdftex.def Info: png/iso_penrose.png  used on input line 313.
 (pdftex.def)             Requested size: 248.16516pt x 168.47266pt.
  [50 <./png/sc_penrose.png> <./png/iso_penrose.png>]
-<svg/foliation.png, id=1189, 462.52798pt x 220.13441pt>
+<svg/foliation.png, id=1185, 462.52798pt x 220.13441pt>
 File: svg/foliation.png Graphic file (type png)
 <use svg/foliation.png>
 Package pdftex.def Info: svg/foliation.png  used on input line 331.
@@ -1422,168 +1422,174 @@ Package pdftex.def Info: svg/foliation.png  used on input line 331.
 ]
 [54] [55] [56]
 
-LaTeX Warning: Reference `q:sec:q' on page 57 undefined on input line 170.
+LaTeX Warning: Reference `q:sec:q' on page 57 undefined on input line 171.
 
 
-LaTeX Warning: Reference `q:sec:q' on page 57 undefined on input line 170.
+LaTeX Warning: Reference `q:sec:q' on page 57 undefined on input line 171.
 
-[57] [58] [59]) [60]
+[57] [58]) [59]
 Chapter 3.
-[61
+[60
 
 
 
 ]
 \openout2 = `grchombo.aux'.
 
- (./grchombo.tex [62
+ (./grchombo.tex [61
 
-] [63] [64] [65] [66]
+] [62] [63] [64] [65]
 
-LaTeX Warning: Reference `q:sec:q' on page 67 undefined on input line 169.
+LaTeX Warning: Reference `q:sec:q' on page 66 undefined on input line 167.
 
 ! Too many }'s.
-l.187 }
+l.182 }
        
 ? 
-[67] [68]
-<png/bosonstar_groundstate.png, id=1537, 1284.8pt x 963.6pt>
+[66] [67]
+<png/bosonstar_groundstate.png, id=1543, 1284.8pt x 963.6pt>
 File: png/bosonstar_groundstate.png Graphic file (type png)
 <use png/bosonstar_groundstate.png>
-Package pdftex.def Info: png/bosonstar_groundstate.png  used on input line 240.
+Package pdftex.def Info: png/bosonstar_groundstate.png  used on input line 235.
 
 (pdftex.def)             Requested size: 248.16516pt x 186.11479pt.
-<png/bosonstar_excitedstate.png, id=1539, 1284.8pt x 963.6pt>
+<png/bosonstar_excitedstate.png, id=1545, 1284.8pt x 963.6pt>
 File: png/bosonstar_excitedstate.png Graphic file (type png)
 <use png/bosonstar_excitedstate.png>
-Package pdftex.def Info: png/bosonstar_excitedstate.png  used on input line 242
+Package pdftex.def Info: png/bosonstar_excitedstate.png  used on input line 237
 .
 (pdftex.def)             Requested size: 248.16516pt x 186.11479pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<png/ADM_vs_PC.png, id=1541, 1284.8pt x 963.6pt>
+<png/ADM_vs_PC.png, id=1547, 1284.8pt x 963.6pt>
 File: png/ADM_vs_PC.png Graphic file (type png)
 <use png/ADM_vs_PC.png>
-Package pdftex.def Info: png/ADM_vs_PC.png  used on input line 264.
+Package pdftex.def Info: png/ADM_vs_PC.png  used on input line 259.
 (pdftex.def)             Requested size: 248.16516pt x 186.11479pt.
-<png/ADM_vs_r99.png, id=1542, 1284.8pt x 963.6pt>
+<png/ADM_vs_r99.png, id=1548, 1284.8pt x 963.6pt>
 File: png/ADM_vs_r99.png Graphic file (type png)
 <use png/ADM_vs_r99.png>
-Package pdftex.def Info: png/ADM_vs_r99.png  used on input line 266.
+Package pdftex.def Info: png/ADM_vs_r99.png  used on input line 261.
 (pdftex.def)             Requested size: 248.16516pt x 186.11479pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[69]
-<data/star_modphi.pdf, id=1563, 845.1575pt x 597.23125pt>
+[68 <./png/bosonstar_groundstate.png> <./png/bosonstar_excitedstate.png>]
+<data/star_modphi.pdf, id=1567, 845.1575pt x 597.23125pt>
 File: data/star_modphi.pdf Graphic file (type pdf)
 <use data/star_modphi.pdf>
-Package pdftex.def Info: data/star_modphi.pdf  used on input line 298.
+Package pdftex.def Info: data/star_modphi.pdf  used on input line 293.
 (pdftex.def)             Requested size: 248.16516pt x 175.36151pt.
-<data/star_N.pdf, id=1564, 845.1575pt x 597.23125pt>
+<data/star_N.pdf, id=1568, 845.1575pt x 597.23125pt>
 File: data/star_N.pdf Graphic file (type pdf)
 <use data/star_N.pdf>
-Package pdftex.def Info: data/star_N.pdf  used on input line 300.
+Package pdftex.def Info: data/star_N.pdf  used on input line 295.
 (pdftex.def)             Requested size: 248.16516pt x 175.36151pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[70 <./png/bosonstar_groundstate.png> <./png/bosonstar_excitedstate.png> <./png
-/ADM_vs_PC.png> <./png/ADM_vs_r99.png>] [71 <./data/star_modphi.pdf, page is ro
-tated 90 degrees> <./data/star_N.pdf, page is rotated 90 degrees>]
-<data/headon_modphi.pdf, id=1603, 642.4pt x 385.44pt>
+[69 <./png/ADM_vs_PC.png> <./png/ADM_vs_r99.png>] [70 <./data/star_modphi.pdf, 
+page is rotated 90 degrees> <./data/star_N.pdf, page is rotated 90 degrees>]
+<data/headon_modphi.pdf, id=1605, 642.4pt x 385.44pt>
 File: data/headon_modphi.pdf Graphic file (type pdf)
 <use data/headon_modphi.pdf>
-Package pdftex.def Info: data/headon_modphi.pdf  used on input line 360.
+Package pdftex.def Info: data/headon_modphi.pdf  used on input line 355.
 (pdftex.def)             Requested size: 248.16516pt x 148.8977pt.
-<data/headon_N.pdf, id=1604, 642.4pt x 385.44pt>
+<data/headon_N.pdf, id=1606, 642.4pt x 385.44pt>
 File: data/headon_N.pdf Graphic file (type pdf)
 <use data/headon_N.pdf>
-Package pdftex.def Info: data/headon_N.pdf  used on input line 362.
+Package pdftex.def Info: data/headon_N.pdf  used on input line 357.
 (pdftex.def)             Requested size: 248.16516pt x 148.8977pt.
-<data/headon_weyl22.pdf, id=1609, 642.4pt x 385.44pt>
+<data/headon_weyl22.pdf, id=1611, 642.4pt x 385.44pt>
 File: data/headon_weyl22.pdf Graphic file (type pdf)
 <use data/headon_weyl22.pdf>
-Package pdftex.def Info: data/headon_weyl22.pdf  used on input line 373.
+Package pdftex.def Info: data/headon_weyl22.pdf  used on input line 368.
 (pdftex.def)             Requested size: 248.16516pt x 148.8977pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<data/graze_modphi.pdf, id=1612, 642.4pt x 385.44pt>
-File: data/graze_modphi.pdf Graphic file (type pdf)
-<use data/graze_modphi.pdf>
-Package pdftex.def Info: data/graze_modphi.pdf  used on input line 391.
-(pdftex.def)             Requested size: 248.16516pt x 148.8977pt.
-<data/graze_N.pdf, id=1613, 642.4pt x 385.44pt>
-File: data/graze_N.pdf Graphic file (type pdf)
-<use data/graze_N.pdf>
-Package pdftex.def Info: data/graze_N.pdf  used on input line 393.
-(pdftex.def)             Requested size: 248.16516pt x 148.8977pt.
-[72 <./data/headon_modphi.pdf> <./data/headon_N.pdf
+[71 <./data/headon_modphi.pdf> <./data/headon_N.pdf
 
 pdfTeX warning: pdflatex (file ./data/headon_N.pdf): PDF inclusion: multiple pd
 fs with page group included in a single page
+> <./data/headon_weyl22.pdf
+
+pdfTeX warning: pdflatex (file ./data/headon_weyl22.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
 >]
-<data/graze_weyl22.pdf, id=1641, 642.4pt x 385.44pt>
+<data/graze_modphi.pdf, id=1647, 642.4pt x 385.44pt>
+File: data/graze_modphi.pdf Graphic file (type pdf)
+<use data/graze_modphi.pdf>
+Package pdftex.def Info: data/graze_modphi.pdf  used on input line 386.
+(pdftex.def)             Requested size: 248.16516pt x 148.8977pt.
+<data/graze_N.pdf, id=1648, 642.4pt x 385.44pt>
+File: data/graze_N.pdf Graphic file (type pdf)
+<use data/graze_N.pdf>
+Package pdftex.def Info: data/graze_N.pdf  used on input line 388.
+(pdftex.def)             Requested size: 248.16516pt x 148.8977pt.
+<data/graze_weyl22.pdf, id=1651, 642.4pt x 385.44pt>
 File: data/graze_weyl22.pdf Graphic file (type pdf)
 <use data/graze_weyl22.pdf>
-Package pdftex.def Info: data/graze_weyl22.pdf  used on input line 408.
+Package pdftex.def Info: data/graze_weyl22.pdf  used on input line 403.
 (pdftex.def)             Requested size: 248.16516pt x 148.8977pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<data/late_time_N.pdf, id=1642, 642.4pt x 385.44pt>
+<data/late_time_N.pdf, id=1652, 642.4pt x 385.44pt>
 File: data/late_time_N.pdf Graphic file (type pdf)
 <use data/late_time_N.pdf>
-Package pdftex.def Info: data/late_time_N.pdf  used on input line 413.
+Package pdftex.def Info: data/late_time_N.pdf  used on input line 408.
 (pdftex.def)             Requested size: 223.34712pt x 134.00616pt.
-<data/noether_zoom.pdf, id=1643, 642.4pt x 385.44pt>
+<data/noether_zoom.pdf, id=1653, 642.4pt x 385.44pt>
 File: data/noether_zoom.pdf Graphic file (type pdf)
 <use data/noether_zoom.pdf>
-Package pdftex.def Info: data/noether_zoom.pdf  used on input line 414.
+Package pdftex.def Info: data/noether_zoom.pdf  used on input line 409.
 (pdftex.def)             Requested size: 223.34712pt x 134.00616pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[73 <./data/headon_weyl22.pdf> <./data/graze_modphi.pdf
+<modphi/headon_mod_phi0011.png, id=1655, 1606.0pt x 1606.0pt>
+File: modphi/headon_mod_phi0011.png Graphic file (type png)
+<use modphi/headon_mod_phi0011.png>
+Package pdftex.def Info: modphi/headon_mod_phi0011.png  used on input line 421.
 
-pdfTeX warning: pdflatex (file ./data/graze_modphi.pdf): PDF inclusion: multipl
-e pdfs with page group included in a single page
-> <./data/graze_N.pdf
+(pdftex.def)             Requested size: 223.34712pt x 223.34363pt.
+<modphi/headon_mod_phi0012.png, id=1656, 1606.0pt x 1606.0pt>
+File: modphi/headon_mod_phi0012.png Graphic file (type png)
+<use modphi/headon_mod_phi0012.png>
+Package pdftex.def Info: modphi/headon_mod_phi0012.png  used on input line 422.
+
+(pdftex.def)             Requested size: 223.34712pt x 223.34363pt.
+<modphi/headon_mod_phi0014.png, id=1657, 1606.0pt x 1606.0pt>
+File: modphi/headon_mod_phi0014.png Graphic file (type png)
+<use modphi/headon_mod_phi0014.png>
+Package pdftex.def Info: modphi/headon_mod_phi0014.png  used on input line 424.
+
+(pdftex.def)             Requested size: 223.34712pt x 223.34363pt.
+<modphi/headon_mod_phi0020.png, id=1658, 1606.0pt x 1606.0pt>
+File: modphi/headon_mod_phi0020.png Graphic file (type png)
+<use modphi/headon_mod_phi0020.png>
+Package pdftex.def Info: modphi/headon_mod_phi0020.png  used on input line 425.
+
+(pdftex.def)             Requested size: 223.34712pt x 223.34363pt.
+[72 <./data/graze_modphi.pdf> <./data/graze_N.pdf
 
 pdfTeX warning: pdflatex (file ./data/graze_N.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
 >]
-<modphi/headon_mod_phi0011.png, id=1679, 1606.0pt x 1606.0pt>
-File: modphi/headon_mod_phi0011.png Graphic file (type png)
-<use modphi/headon_mod_phi0011.png>
-Package pdftex.def Info: modphi/headon_mod_phi0011.png  used on input line 426.
+Overfull \vbox (252.08429pt too high) has occurred while \output is active []
 
-(pdftex.def)             Requested size: 223.34712pt x 223.34363pt.
-<modphi/headon_mod_phi0012.png, id=1680, 1606.0pt x 1606.0pt>
-File: modphi/headon_mod_phi0012.png Graphic file (type png)
-<use modphi/headon_mod_phi0012.png>
-Package pdftex.def Info: modphi/headon_mod_phi0012.png  used on input line 427.
 
-(pdftex.def)             Requested size: 223.34712pt x 223.34363pt.
-<modphi/headon_mod_phi0014.png, id=1681, 1606.0pt x 1606.0pt>
-File: modphi/headon_mod_phi0014.png Graphic file (type png)
-<use modphi/headon_mod_phi0014.png>
-Package pdftex.def Info: modphi/headon_mod_phi0014.png  used on input line 429.
-
-(pdftex.def)             Requested size: 223.34712pt x 223.34363pt.
-<modphi/headon_mod_phi0020.png, id=1682, 1606.0pt x 1606.0pt>
-File: modphi/headon_mod_phi0020.png Graphic file (type png)
-<use modphi/headon_mod_phi0020.png>
-Package pdftex.def Info: modphi/headon_mod_phi0020.png  used on input line 430.
-
-(pdftex.def)             Requested size: 223.34712pt x 223.34363pt.
- [74 <./data/graze_weyl22.pdf> <./data/late_time_N.pdf
+[73pdfTeX warning (ext4): destination with the same identifier (name{subfigure.
+3.9.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.428 
+      pdfTeX warning (ext4): destination with the same identifier (name{subfigu
+re.3.9.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.428 
+       <./data/graze_weyl22.pdf> <./data/late_time_N.pdf
 
 pdfTeX warning: pdflatex (file ./data/late_time_N.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -1591,42 +1597,32 @@ pdfTeX warning: pdflatex (file ./data/late_time_N.pdf): PDF inclusion: multiple
 
 pdfTeX warning: pdflatex (file ./data/noether_zoom.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
->]
-<modphi/graze_mod_phi0012.png, id=1712, 1606.0pt x 1606.0pt>
+> <./modphi/headon_mod_phi0011.png (PNG copy)> <./modphi/headon_mod_phi0012.png
+ (PNG copy)> <./modphi/headon_mod_phi0014.png (PNG copy)> <./modphi/headon_mod_
+phi0020.png (PNG copy)>]
+<modphi/graze_mod_phi0012.png, id=1717, 1606.0pt x 1606.0pt>
 File: modphi/graze_mod_phi0012.png Graphic file (type png)
 <use modphi/graze_mod_phi0012.png>
-Package pdftex.def Info: modphi/graze_mod_phi0012.png  used on input line 440.
+Package pdftex.def Info: modphi/graze_mod_phi0012.png  used on input line 435.
 (pdftex.def)             Requested size: 223.34712pt x 223.34363pt.
-<modphi/graze_mod_phi0013.png, id=1713, 1606.0pt x 1606.0pt>
+<modphi/graze_mod_phi0013.png, id=1718, 1606.0pt x 1606.0pt>
 File: modphi/graze_mod_phi0013.png Graphic file (type png)
 <use modphi/graze_mod_phi0013.png>
-Package pdftex.def Info: modphi/graze_mod_phi0013.png  used on input line 441.
+Package pdftex.def Info: modphi/graze_mod_phi0013.png  used on input line 436.
 (pdftex.def)             Requested size: 223.34712pt x 223.34363pt.
-<modphi/graze_mod_phi0016.png, id=1714, 1606.0pt x 1606.0pt>
+<modphi/graze_mod_phi0016.png, id=1719, 1606.0pt x 1606.0pt>
 File: modphi/graze_mod_phi0016.png Graphic file (type png)
 <use modphi/graze_mod_phi0016.png>
-Package pdftex.def Info: modphi/graze_mod_phi0016.png  used on input line 443.
+Package pdftex.def Info: modphi/graze_mod_phi0016.png  used on input line 438.
 (pdftex.def)             Requested size: 223.34712pt x 223.34363pt.
-<modphi/graze_mod_phi0020.png, id=1715, 1606.0pt x 1606.0pt>
+<modphi/graze_mod_phi0020.png, id=1720, 1606.0pt x 1606.0pt>
 File: modphi/graze_mod_phi0020.png Graphic file (type png)
 <use modphi/graze_mod_phi0020.png>
-Package pdftex.def Info: modphi/graze_mod_phi0020.png  used on input line 444.
+Package pdftex.def Info: modphi/graze_mod_phi0020.png  used on input line 439.
 (pdftex.def)             Requested size: 223.34712pt x 223.34363pt.
- [75pdfTeX warning (ext4): destination with the same identifier (name{subfigure
-.3.9.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.447 
-      pdfTeX warning (ext4): destination with the same identifier (name{subfigu
-re.3.9.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.447 
-       <./modphi/headon_mod_phi0011.png (PNG copy)> <./modphi/headon_mod_phi001
-2.png (PNG copy)> <./modphi/headon_mod_phi0014.png (PNG copy)> <./modphi/headon
-_mod_phi0020.png (PNG copy)>]) [76 <./modphi/graze_mod_phi0012.png (PNG copy)> 
-<./modphi/graze_mod_phi0013.png (PNG copy)> <./modphi/graze_mod_phi0016.png (PN
-G copy)> <./modphi/graze_mod_phi0020.png (PNG copy)>]
+) [74 <./modphi/graze_mod_phi0012.png (PNG copy)> <./modphi/graze_mod_phi0013.p
+ng (PNG copy)> <./modphi/graze_mod_phi0016.png (PNG copy)> <./modphi/graze_mod_
+phi0020.png (PNG copy)>]
 Chapter 4.
 
 Overfull \hbox (0.59471pt too wide) in paragraph at lines 187--188
@@ -1640,7 +1636,7 @@ Overfull \hbox (18.91101pt too wide) in paragraph at lines 195--196
 THER THAN 16PI*MATTER
  []
 
-[77
+[75
 
 
 
@@ -1648,34 +1644,34 @@ THER THAN 16PI*MATTER
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.234 MAYEB MAKE THE PROOF OF G^
+l.236 MAYEB MAKE THE PROOF OF G^
                                 MUNU IS INVERSE OF G_MUNU A BIT CLEARERR?
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.235 
+l.237 
       
 ? 
 
-Overfull \hbox (0.20204pt too wide) in paragraph at lines 238--239
+Overfull \hbox (0.20204pt too wide) in paragraph at lines 240--241
 []\T1/lmr/m/n/10.95 MAYBE WRITE A BIT ON WHY GEODE-ICS ARE IM-POR-TANT AT THE E
 ND OF THE GEODESIC
  []
 
 
-Overfull \hbox (8.1179pt too wide) in paragraph at lines 242--243
+Overfull \hbox (8.1179pt too wide) in paragraph at lines 244--245
 []\T1/lmr/m/n/10.95 CHECK THE DIS-TRIBU-TIVE AND AS-SO-CIA-TIV-ITY BIT FOR DIFF
  OP-ER-A-TORS <><><><><>
  []
 
 
-Overfull \hbox (15.58113pt too wide) in paragraph at lines 250--252
+Overfull \hbox (15.58113pt too wide) in paragraph at lines 252--254
 []\T1/lmr/m/n/10.95 <><><><><><> SU-PER IM-POR-TANT - CHECK BE-FORE SUB-MIT <><
 ><><><><><><><>
  []
 
-[78] [79] (./thesis.bbl [80
+[76] [77] (./thesis.bbl [78
 
 ]
 
@@ -1698,9 +1694,9 @@ Type  H <return>  for immediate help.
 l.1 \begin{thebibliography}{10}
                                
 ? 
-[81
+[79
 
-]) [82] (./thesis.aux (./intro.aux) (./nr.aux) (./bosonstars.aux)
+] [80]) [81] (./thesis.aux (./intro.aux) (./nr.aux) (./bosonstars.aux)
 (./grchombo.aux))
 
 LaTeX Warning: There were undefined references.
@@ -1709,13 +1705,13 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E375838B4F7E1FFAA4040281F27F8998;11165.
+(rerunfilecheck)             Checksum: 69FF788A3AB7C828A3A7FD3A2B5E95B9;10596.
  ) 
 Here is how much of TeX's memory you used:
- 30705 strings out of 480171
- 561053 string characters out of 5894490
- 969511 words of memory out of 5000000
- 47188 multiletter control sequences out of 15000+600000
+ 30716 strings out of 480171
+ 561307 string characters out of 5894490
+ 970952 words of memory out of 5000000
+ 47198 multiletter control sequences out of 15000+600000
  562263 words of font info for 99 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  94i,20n,92p,1904b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1744,10 +1740,10 @@ f/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (85 pages, 2800374 bytes).
+Output written on thesis.pdf (84 pages, 2801932 bytes).
 PDF statistics:
- 2060 PDF objects out of 2073 (max. 8388607)
- 1846 compressed objects within 19 object streams
- 841 named destinations out of 1000 (max. 500000)
- 630 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2061 PDF objects out of 2073 (max. 8388607)
+ 1848 compressed objects within 19 object streams
+ 842 named destinations out of 1000 (max. 500000)
+ 622 words of extra memory for PDF output out of 10000 (max. 10000000)
 

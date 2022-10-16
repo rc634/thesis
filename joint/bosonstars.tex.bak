@@ -38,7 +38,7 @@ The continuity equation from Eq.~(\ref{intro:eq:cont}), $\nabla_\nu T^{\mu\nu}=0
 
 \subsection{Solitons} \label{boson:sec:soliton}
 A soliton is a wave packet that exhibits particle-like behaviour. More precisely, in classical field theory, a soliton
-is a field or set of fields in a localised configuration that travels at constant speed without dispersing. This is a property of solutions to the linear wave equation but many solitonic solutions exist for non-linear differential equations as well. For
+is a field or set of fields in a localised configuration that travels at constant speed without dispersing. This is a property of solutions to the linear wave equation but many solitonic solutions exist for non-linear differential equations aswell. For
 our purposes, we look for solitons in the Einstein-Klein-Gordon (EKG) system which are self gravitating
 localised scalar field and metric configurations. In the case of the real scalar field it was shown that
 there are no long lived solitons \cite{diez2013no}; however promoting the field to a complex scalar we can find a spherically
@@ -105,9 +105,9 @@ The final matter term we must decompose is the Klein-Gordon stress tensor in Eq.
 ,\\ S_{ij} &= \perp^\mu_i \perp^\nu_j T_{\mu\nu} = \D_{(i}\vp\D_{j)}\vp^* - \frac{1}{2}\left[ \gamma^{ij}\D_i\vp\D_j\vp^* - |\Pi|^2 + V(|\vp|^2)\right].\end{align}
 
 \subsection{Klein Gordon's Noether Charge}
-The complex scalar field has a conserved quantity called the Noether charge. The Noether charge represents the number of particles minus the number of antiparticles described by the field theory. In a numerical simulation a conserved quantity can be used to check the quality of a simulation as with good resolution the total charge should be conserved. 
+The complex scalar field has a conserved quantity called the Noether charge. The Noether charge represents the number of particles minus the number of antiparticles descibed by the field theory. In a numerical simulation a conserved quantity can be used to check the quality of a simulation as with good resolution the total charge should be conserved. 
 
-The Noether charge of the complex scalar field is associated with the following U(1) symmetry,
+The Noether charge of the complex scalar field is associted with the following U(1) symmetry,
 \begin{align}
 \vp \rightarrow \vp e^{i\epsilon} &\approx \vp + i\epsilon \vp , \\ 
 \quad\vp^* \rightarrow \vp^* e^{-i\epsilon}  &\approx \vp^* - i\epsilon \vp^*,
@@ -209,7 +209,7 @@ where normally $\tilde{\gamma}_{ij}$ is the conformal 3-metric, but to avoid con
 where $r$ is the radius in the boosted frame; $r = \sqrt{\tilde{x}^2\cosh^2(\chi) +\tilde{y}^2 + \tilde{z}^2}$.
 Note the field is modulated by an oscillatory phase now with wavenumber $k = \omega \tilde{x} \sinh(\chi)$; nodal planes in $\Re(\vp)$ appear perpendicular to velocity. The conjugate momentum $\tilde{\Pi}$, defined in Eq.~(\ref{boson:eq:Pidef}), in the rest frame it becomes, 
 \begin{equation} \tilde{\Pi}(\tilde{x}^\mu) = -\L_{\tilde{n}} \vp(\tilde{x}^\mu)=-\frac{1}{\tilde{\alpha}}\tilde{m}\cdot \tilde{\partial}\vp = -\frac{1}{\tilde{\alpha}}\left[ \tilde{\partial}_0 - \tilde{\beta}^i\tilde{\partial}_{i}\right]\Phi(r)e^{i\omega t}.\end{equation}
-Inconveniently we can not simply evaluate $\tilde{\Pi}$ in the lab frame from $\Pi$ in the co-moving frame as the two frames have a different spacetime foliation and the normal vector as $\bs{n}\neq \tilde{\bs{n}}$ and is genuinely changed; not just transforming components under coordinate transformation. Explicitly writing the contra-variant components of the shift vector, 
+Inconveniently we can not simply evaluate $\tilde{\Pi}$ in the lab frame from $\Pi$ in the co-moving frame as the two frames have a different spacetime foliation and the normal vector as $\bs{n}\neq \tilde{\bs{n}}$ and is genuinely changed; not just transforming components under coordinate transformation. Explicitly writing the contravariant components of the shift vector, 
 \begin{equation} \tilde{\beta}^i = \left(\frac{\sinh (\chi)  \cosh (\chi)  \left[\Omega ^2-\Psi ^2\right]}{\Psi ^2 \cosh
    ^2(\chi) -\Omega ^2 \sinh ^2(\chi) },0,0\right),\end{equation}
 and using the following derivative formulae,

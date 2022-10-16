@@ -39,14 +39,19 @@ T.~W. Baumgarte and S.~L. Shapiro, ``On the {N}umerical integration of
   {E}instein's field equations,'' {\em Phys. Rev. D}, vol.~59, p.~024007, 1998.
 \newblock gr-qc/9810065.
 
-\bibitem{garfinkle2002harmonic}
-D.~Garfinkle, ``Harmonic coordinate method for simulating generic
-  singularities,'' {\em Physical Review D}, vol.~65, no.~4, p.~044029, 2002.
-
 \bibitem{Garfinkle:2001ni}
 D.~Garfinkle, ``Harmonic coordinate method for simulating generic
   singularities,'' {\em Phys. Rev. D}, vol.~65, p.~044029, 2002.
 \newblock gr-qc/0110013.
+
+\bibitem{garfinkle2002harmonic}
+D.~Garfinkle, ``Harmonic coordinate method for simulating generic
+  singularities,'' {\em Physical Review D}, vol.~65, no.~4, p.~044029, 2002.
+
+\bibitem{Pretorius:2004jg}
+F.~Pretorius, ``Numerical relativity using a generalized harmonic
+  decomposition,'' {\em Class. Quantum Grav.}, vol.~22, pp.~425--452, 2005.
+\newblock gr-qc/0407110.
 
 \bibitem{Pretorius:2005gq}
 F.~Pretorius, ``Evolution of {B}inary {B}lack-{H}ole {S}pacetimes,'' {\em Phys.
@@ -80,6 +85,24 @@ M.~Campanelli, C.~O. Lousto, P.~Marronetti, and Y.~Zlochower, ``Accurate
 B.~Br{\"u}gmann, W.~Tichy, and N.~Jansen, ``Numerical simulation of orbiting
   black holes,'' {\em Phys. Rev. Lett.}, vol.~92, p.~211101, 2004.
 \newblock gr-qc/0312112.
+
+\bibitem{Schunck:2003kk}
+F.~E. Schunck and E.~W. Mielke, ``{General relativistic boson stars},'' {\em
+  Class. Quant. Grav.}, vol.~20, pp.~R301--R356, 2003.
+
+\bibitem{Liebling:2012fv}
+S.~L. Liebling and C.~Palenzuela, ``{Dynamical Boson Stars},'' {\em Living Rev.
+  Rel.}, vol.~15, p.~6, 2012.
+
+\bibitem{Palenzuela:2017kcg}
+C.~Palenzuela, P.~Pani, M.~Bezares, V.~Cardoso, L.~Lehner, and S.~Liebling,
+  ``{Gravitational Wave Signatures of Highly Compact Boson Star Binaries},''
+  {\em Phys. Rev. D}, vol.~96, no.~10, p.~104058, 2017.
+
+\bibitem{diez2013no}
+A.~Diez-Tejedor and A.~X. Gonzalez-Morales, ``No-go theorem for static scalar
+  field dark matter halos with no noether charges,'' {\em Physical Review D},
+  vol.~88, no.~6, p.~067302, 2013.
 
 \bibitem{Press1992}
 {Press, William H. and Teukolsky, Saul A. and Vetterling, William T. and
@@ -138,6 +161,35 @@ H.-O. Kreiss and J.~Oliger, {\em Methods for the approximate solution of time
 M.~Radia, U.~Sperhake, E.~Berti, and R.~Croft, ``Anomalies in the gravitational
   recoil of eccentric black-hole mergers with unequal mass ratios,'' {\em
   Physical Review D}, vol.~103, no.~10, p.~104006, 2021.
+
+\bibitem{Sperhake:2006cy}
+U.~Sperhake, ``Binary black-hole evolutions of excision and puncture data,''
+  {\em Phys. Rev. D}, vol.~76, p.~104015, 2007.
+\newblock gr-qc/0606079.
+
+\bibitem{loffler2012einstein}
+F.~L{\"o}ffler, J.~Faber, E.~Bentivegna, T.~Bode, P.~Diener, R.~Haas,
+  I.~Hinder, B.~C. Mundim, C.~D. Ott, E.~Schnetter, {\em et~al.}, ``The
+  einstein toolkit: a community computational infrastructure for relativistic
+  astrophysics,'' {\em Classical and Quantum Gravity}, vol.~29, no.~11,
+  p.~115001, 2012.
+
+\bibitem{Zilhao:2013hia}
+M.~Zilh{\~a}o and F.~L{\"o}ffler, ``{An Introduction to the Einstein
+  Toolkit},'' {\em Int. J. Mod. Phys. A}, vol.~28, p.~1340014, 2013.
+\newblock arXiv:1305.5299 [gr-qc].
+
+\bibitem{EinsteinToolkit}
+{Einstein Toolkit webpage: http://einsteintoolkit.org/}.
+
+\bibitem{PhysRevD.99.104028}
+T.~Helfer, J.~C. Aurrekoetxea, and E.~A. Lim, ``Cosmic string loop collapse in
+  full general relativity,'' {\em Phys. Rev. D}, vol.~99, p.~104028, May 2019.
+
+\bibitem{Aurrekoetxea_2020}
+J.~C. Aurrekoetxea, K.~Clough, R.~Flauger, and E.~A. Lim, ``The effects of
+  potential shape on inhomogeneous inflation,'' {\em Journal of Cosmology and
+  Astroparticle Physics}, vol.~2020, pp.~030--030, may 2020.
 
 \bibitem{hadjidimos2000successive}
 A.~Hadjidimos, ``Successive overrelaxation (sor) and related methods,'' {\em

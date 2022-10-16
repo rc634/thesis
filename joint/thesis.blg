@@ -7,86 +7,98 @@ A level-1 auxiliary file: bosonstars.aux
 A level-1 auxiliary file: grchombo.aux
 The style file: ieeetr.bst
 Database file #1: gigabib.bib
-Repeated entry---line 16999 of file gigabib.bib
+Repeated entry---line 17013 of file gigabib.bib
  : @article{Alcubierre:2002kk
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 17225 of file gigabib.bib
+Repeated entry---line 17239 of file gigabib.bib
  : @article{hadjidimos2000successive
  :                                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 17773 of file gigabib.bib
+Repeated entry---line 17787 of file gigabib.bib
  : @article{Kaup:1968zz
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 17809 of file gigabib.bib
+Repeated entry---line 17823 of file gigabib.bib
  : @article{PhysRev.172.1331
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 18046 of file gigabib.bib
+Repeated entry---line 18060 of file gigabib.bib
  : @article{Baumgarte:1998te
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 18058 of file gigabib.bib
+Repeated entry---line 18072 of file gigabib.bib
  : @article{Shibata:1995we
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 18191 of file gigabib.bib
+Repeated entry---line 18132 of file gigabib.bib
+ : @article{Liebling:2012fv
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 18205 of file gigabib.bib
  : @article{Alcubierre:2002kk
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 20156 of file gigabib.bib
+Repeated entry---line 19125 of file gigabib.bib
+ : @article{Palenzuela:2017kcg
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 19583 of file gigabib.bib
+ : @article{Sperhake:2006cy
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 20170 of file gigabib.bib
  : @article{Shibata:1995we
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 20166 of file gigabib.bib
+Repeated entry---line 20180 of file gigabib.bib
  : @article{Baumgarte:1998te
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 20859 of file gigabib.bib
+Repeated entry---line 20873 of file gigabib.bib
  : @article{Alcubierre:2002kk
  :                           ,
 I'm skipping whatever remains of this entry
 Warning--there's a number but no series in kreiss1973methods
-You've used 30 entries,
+You've used 41 entries,
             1876 wiz_defined-function locations,
-            688 strings with 8763 characters,
-and the built_in function-call counts, 9204 in all, are:
-= -- 961
-> -- 353
+            760 strings with 10590 characters,
+and the built_in function-call counts, 12441 in all, are:
+= -- 1302
+> -- 474
 < -- 0
-+ -- 131
-- -- 101
-* -- 592
-:= -- 1249
-add.period$ -- 38
-call.type$ -- 30
-change.case$ -- 27
++ -- 176
+- -- 135
+* -- 788
+:= -- 1674
+add.period$ -- 52
+call.type$ -- 41
+change.case$ -- 37
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 533
-empty$ -- 765
-format.name$ -- 101
-if$ -- 2316
+cite$ -- 42
+duplicate$ -- 727
+empty$ -- 1033
+format.name$ -- 135
+if$ -- 3141
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 33
-newline$ -- 101
-num.names$ -- 30
-pop$ -- 64
+int.to.str$ -- 41
+missing$ -- 43
+newline$ -- 137
+num.names$ -- 40
+pop$ -- 91
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 456
+skip$ -- 632
 stack$ -- 0
-substring$ -- 530
-swap$ -- 298
+substring$ -- 706
+swap$ -- 410
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 75
-width$ -- 32
-write$ -- 325
-(There were 10 error messages)
+while$ -- 100
+width$ -- 43
+write$ -- 439
+(There were 13 error messages)

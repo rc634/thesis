@@ -21,7 +21,7 @@ This means we should be careful to pick a parameter $t$ such that the foliation 
 where $\dd t_\mu=\partial_\mu t$ is the exterior derivative of $t$.
 For simplicity we define the lapse function $\alpha$ to be
 \begin{equation}\alpha :=  \frac{1}{\sqrt{|g_{\mu\nu}\nabla^\mu t \nabla^\nu t|}}. \end{equation}
-giving us $n_\mu = -\alpha \dd t_\mu$ as well as the {\it normal evolution vector} $m_\mu = \alpha n_\mu$. Defining two infinitesimally close points $p\in\Sigma_t$ and $q\in\Sigma_{t'}$, where $ q^\mu = p^\mu + m^\mu\delta t$ and $t' = t+ \delta t$, we see,
+giving us $n_\mu = -\alpha \dd t_\mu$ as well as the {\it normal evolution} vector $m_\mu = \alpha n_\mu$. Defining two infinitesimally close points $p\in\Sigma_t$ and $q\in\Sigma_{t'}$, where $ q^\mu = p^\mu + m^\mu\delta t$ and $t' = t+ \delta t$, we see,
 \begin{equation} t(q) = t(p^\mu +  m^\mu\delta t) = t(p) + \frac{\partial t^{\,}}{\partial x^\mu}m^\mu\delta t = t(p) + \dd t_\mu m^\mu \delta t =  t(p) + \delta t,\end{equation} 
 showing that $m^\mu$ connects $\Sigma_t$ and $\Sigma_{t'}$ for any point $p\in \Sigma_t$; therefore when creating evolution equations we should consider Lie derivatives $\L_m$ along $m^\mu$ rather than $\L_n$.
 
@@ -239,7 +239,7 @@ The next step is to introduce the conformal connection functions as auxiliary va
 where $\Gamma^i_{\,\,\,jk}$ are the Christoffel symbols of $\Sigma_t$ as shown in Eq.~(\ref{nr:eq:3connection}).
 This reduces the set of vacuum evolution variables to $\{\chi,\tilde{\gamma}_{ij},\K,\tilde{\A}_{ij},\tilde{\Upsilon}^i \}$. It is conventional to use $-\partial_i \tilde{\gamma}^{ij}$ to evaluate the conformal connection coefficients when they appear in the RHS of an equation, but $\partial_j \tilde{\Upsilon}^i$ is calculated by differentiating the evolution variable $\tilde{\Upsilon}^i$. One final necessity, not included in the CCZ4 formulation discussed later, is to add multiples of the constraint equations (in section \ref{nr:sec:einsteindecomp}) to the evolution equations to change the characteristic matrix and improve stability. 
 
-The BSSN formalism is not the only way to find a well-posed set of evolution equations for general relativity. Another strongly hyperbolic formalism is the generalised harmonic gauge \cite{garfinkle2002harmonic} \cite{Garfinkle:2001ni} \cite{Pretorius:2005gq} with, 
+The BSSN formalism is not the only way to find a well-posed set of evolution equations for general relativity. Another strongly hyperbolic formalism is the generalised harmonic gauge \cite{Garfinkle:2001ni} \cite{garfinkle2002harmonic} \cite{Pretorius:2004jg} \cite{Pretorius:2005gq} with, 
 \begin{equation}\Box x^\mu = H^\mu,\end{equation}
 for some functions $H^\mu$.
 
