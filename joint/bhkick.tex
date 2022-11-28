@@ -61,7 +61,7 @@ is a necessary ingredient of the theory of general relativity, in the
 sense that it avoids the formation of spacetime singularities and
 preserves its predictive power.
 
-In this paper, we focus on the radiated linear momentum, which
+In this chapter, we focus on the radiated linear momentum, which
 imparts a recoil (commonly referred to as a \emph{kick}) on the center
 of mass of the emitting
 system~\cite{Bonnor1961-wy,Peres:1962zz,Bekenstein:1973zz}.
@@ -202,7 +202,7 @@ our simulations allow us to highlight interesting periodicities in the
 emission of gravitational radiation and the behavior of the recoil
 velocity.
 
-The remainder of this paper is organized as follows.
+The remainder of this chapter is organized as follows.
 %
 In Sec.~\ref{bhkick:sec:NR} we discuss our two numerical codes (\textsc{Lean}
 and \textsc{GRChombo}), the computational framework, and the catalog
@@ -219,10 +219,10 @@ of our numerical codes (\textsc{GRChombo}).
 Throughout this work we use geometrical units ($G=c=1$).
 
 %=============================================================================
-\section{Computational framework and set of simulations}
+\section{Computational Framework and Set of Simulations}
 \label{bhkick:sec:NR}
 % 
-\subsection{Numerical methods}
+\subsection{Numerical Methods}
 
 The simulations reported in this work have been performed with the
 \textsc{GRChombo}~\cite{Clough:2015sqa, GRChomboWebsite} and 
@@ -305,7 +305,7 @@ A CFL factor of $1/2$ is used in all simulations, and apparent horizons
 are computed with \textsc{AHFinderDirect}
 \cite{Thornburg:1995cp,Thornburg:2003sf}.
 
-\subsubsection{Initial data}
+\subsubsection{Initial Data}
 For both codes, we use puncture data~\cite{Brandt:1997tf} of
 Bowen-York \cite{Bowen:1980yu} type provided by the spectral solver of
 Ref.~\cite{Ansorg:2004ds} in the form of the \textsc{Cactus} thorn
@@ -315,7 +315,7 @@ advantage of the improvements made in Ref.~\cite{Paschalidis:2013oya}
 to use spectral interpolation.
 
 %=============================================================================
-\subsection{Black-hole binary configurations}
+\subsection{Black-Hole Binary Configurations}
 %
 \label{bhkick:sec:configs}
 %
@@ -459,18 +459,9 @@ which is given by $10^3p/M$ truncated appropriately; for example,
 
 
 
-\begin{table}[t]
-    {
-    \caption{Sequences of binary BH configurations studied in this 
-    work with their mass ratio, binding energy $E_{\mathrm{b}}/M$,
-    and the GW extraction radius $r_{\rm ex}$.
-    For reference, we also
-    list for each sequence the kick velocities $v_c$ in the
-    quasicircular limit. These values agree, within the numerical
-    uncertainties, with the results of
-    Ref.~\cite{Gonzalez:2006md}.}
+
+\begin{table}[t] 
     \centering
-    %\begin{ruledtabular}
     \begin{tabular}{cccccc} \hline
         Sequence & Code & $q$ & $E_{\mathrm{b}}/M$ & $r_{\mathrm{ex}}/M$ 
         & $v_c$ (km/s)\\
@@ -481,9 +472,14 @@ which is given by $10^3p/M$ truncated appropriately; for example,
         \texttt{sq1:3} & \textsc{GRChombo} & $1/3$ & $-0.0093684$ & $65$ & 178 \\
         \hline
     \end{tabular}
-    %\end{ruledtabular}
-    }
-    \captionsetup{justification=justified}
+    \caption{Sequences of binary BH configurations studied in this 
+    work with their mass ratio, binding energy $E_{\mathrm{b}}/M$,
+    and the GW extraction radius $r_{\rm ex}$.
+    For reference, we also
+    list for each sequence the kick velocities $v_c$ in the
+    quasicircular limit. These values agree, within the numerical
+    uncertainties, with the results of
+    Ref.~\cite{Gonzalez:2006md}.}
     \label{bhkick:tab:sequences}
 \end{table}
 
@@ -627,7 +623,7 @@ and find agreement to within $\leq 0.1\,\%$.
 %
 \label{bhkick:sec:results}
 %
-\begin{figure*}[t]
+\begin{figure}[t!]
     \subfloat
     {
         \includegraphics[width=0.48\linewidth]{bhkick/kick-q1.5-wlabel.pdf}
@@ -666,7 +662,7 @@ and find agreement to within $\leq 0.1\,\%$.
     individual simulations performed for this analysis are shown by 
     $\times$ symbols.}
     \label{bhkick:fig:kicks2}
-\end{figure*}
+\end{figure}
 %
 Using the framework summarized in the previous section,
 we have simulated four sequences of nonspinning BH binaries,
@@ -974,7 +970,7 @@ variation in the multipolar series expansion (\ref{bhkick:eq:partialkick}).
 \section{Conclusions}
 \label{bhkick:sec:concl}
 %
-In this paper we have studied the gravitational recoil and GW emission
+In this chapter we have studied the gravitational recoil and GW emission
 of sequences of nonspinning BH binaries with mass ratios $q=2/3$,
 $1/2$ and $1/3$,
 and eccentricity varying from the quasicircular to the head-on limit.
@@ -1027,7 +1023,7 @@ The findings of our study are summarized as follows.
  \item We have explored the dependence of this oscillatory behavior
  of the recoil by simulating an additional sequence of eccentric
  binaries with mass ratio $q=1/2$, but less negative binding energy,
- corresponding to about six orbits in the quasicircular limit.
+ corresponding to about six orbits in the quasicircular limit. 
  We find the oscillations in $v=v(e)$ to be more pronounced
  and numerous than in the shorter sequence. We attribute this
  feature to the longer available time window during which otherwise
@@ -1101,7 +1097,7 @@ requires further investigation.
 
 
 
-\section{Numerical accuracy}
+\section{Numerical Accuracy}
 \label{bhkick:sec:accuracy}
 \begin{figure*}[t]
     \subfloat%[\textsc{GRChombo}]
@@ -1152,9 +1148,8 @@ of \texttt{sq1:2-p0100} (the binary in sequence \texttt{sq1:2} with
 $p/M = 0.1$) with both codes. We discuss the analyses of the convergence
 of each code separately before comparing.
 
-\subsection{\textsc{GRChombo} convergence}
-\begin{table}[b]
-{   
+\subsection{\textsc{GRChombo} Convergence}
+\begin{table}[b]  
     \caption{Grid configurations used for \textsc{GRChombo} simulations.
     As explained in Sec.~\ref{bhkick:sec:grchombo} and Appendix \ref{bhkick:sec:tagging},
     the total 
@@ -1176,8 +1171,6 @@ of each code separately before comparing.
         R3 & 7 & 416 & 0.00923 & $0.5M_i$ & 3/104 & Spherical\\
         R4 & 7 & 352 & 0.01091 & 0.7 & 3/88 & Box\\\hline
     \end{tabular}
-    %\end{ruledtabular}
-}
     \label{bhkick:tab:grchombo-grids}
 \end{table}
 For \textsc{GRChombo}, we have performed the simulations of 
@@ -1221,9 +1214,9 @@ our estimate for the total error budget of the \textsc{GRChombo}
 simulations is about $3\%$.
 
 
-\subsection{\textsc{Lean} convergence}
+\subsection{\textsc{Lean} Convergence}
 \begin{table}[b]
-    {
+    
     \caption{Grid configurations used for \textsc{Lean} simulations. As 
     explained in Sec.~\ref{bhkick:sec:lean}, the total number of refinement 
     levels is $L+1$, the number of fixed refinement levels is $l_F+1$, 
@@ -1241,7 +1234,7 @@ simulations is about $3\%$.
         S4 & 7 & 4 & 384 & 1 & 1/28\\ \hline
     \end{tabular}
     %\end{ruledtabular}
-    }
+    
     \label{bhkick:tab:lean-grids}
 \end{table}
 
@@ -1318,7 +1311,7 @@ between the codes for these grid configurations.
 In Fig.~\ref{bhkick:fig:convergence} the differences between the results of 
 different resolutions with \textsc{Lean} are greater than that of
 \textsc{GRChombo}. However, we found that \textsc{Lean} entered the 
-convergent regime at lower resolutions than GRChombo. This is compatible 
+convergent regime at lower resolutions than {\sc GRChombo}. This is compatible 
 with the observations of Ref.~\cite{Alic:2011gg} that higher resolutions 
 were required for convergence with CCZ4 compared to BSSNOK.
 
@@ -1326,7 +1319,7 @@ were required for convergence with CCZ4 compared to BSSNOK.
 
 
 %=============================================================================
-\section{\textsc{GRChombo} tagging criterion}
+\section{\textsc{GRChombo} Tagging Criterion}
 \label{bhkick:sec:tagging}
 %
 %

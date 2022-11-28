@@ -202,7 +202,7 @@ we get the important relationship,
 where $g$ and $\gamma$ are the determinants of $g_{\mu\nu}$ and $\gamma_{ij}$ respectively.
 
 \subsection{ADM Equations} \label{nr:sec:ADM}
-Now that we have some coordinates suitable for the spacetime foliation we can find the Arnowitt-Deser-Misner (ADM) evolution equations for $\K_{ij}$ and $\gamma_{ij}$. First simplifying the Lie derivative $\L_t$ along $t^\mu$ using,
+Now that we have some coordinates suitable for the spacetime foliation we can find the Arnowitt-Deser-Misner (ADM) evolution equations for $\K_{ij}$ and $\gamma_{ij}$. First we simplify the Lie derivative $\L_t$ along $t^\mu$ using,
 \begin{equation}
 \L_t \bs{T} = \partial_t \bs{T},
 \end{equation}
@@ -221,7 +221,7 @@ To tackle the ill-posedness of the ADM equations in section \ref{nr:sec:ADM} we 
 \tilde{\gamma}_{ij} &= \chi \gamma_{ij},\\
  \det{\tilde{\gamma}_{ij}} &= \tilde{\gamma} = \chi^3\gamma = 1,
 \end{align}
-with the above being the convention used in GRChombo described in section \ref{grchombo:sec:grchombo}. Other conventions include factors such as
+with the above being the convention used in {\sc GRChombo} described in section \ref{grchombo:sec:grchombo}. Other conventions include factors such as
 $\tilde{\gamma}_{ij} = \psi^{-4}\gamma_{ij}$ or $\tilde{\gamma}_{ij} =e^{-\phi}\gamma_{ij}$.
 Along with this the extrinsic curvature $\K_{ij}$ is conformally decomposed with $\chi$ and modified to be trace free,
 \begin{equation} \tilde{A}_{ij} = \chi\left[ \K_{ij}-\frac{1}{3}\K\gamma_{ij}\right], \end{equation} so that $\tilde{A}_{ij}\gamma^{ij}=0$.
@@ -247,7 +247,7 @@ for some functions $H^\mu$.
 \subsection{Z4 Formalism}
 The Z4 formalism \cite{gundlach2005constraint} generalises the Einstein equation to include an unphysical field $Z_\mu$, along with damping terms parameterised by $\kappa_1$, $\kappa_2$, 
 \begin{equation}\label{nr:eq:z4einstein} R_{\mu\nu} + \nabla_\mu Z_\nu + \nabla_\nu Z_\mu - \kappa_1\left[ n_\mu Z_\nu + n_\nu Z_\mu - [1+\kappa_2]g_{\mu\nu}n^\alpha Z_\alpha\right] = 8\pi G \left[T_{\mu\nu}- \frac{1}{2}Tg_{\mu\nu} \right].\end{equation}
-Of course regular General Relativity is recovered by setting $Z_\mu=0$. It can be shown that achieving $Z_\mu=0$ whilst dynamically evolving $Z_\mu$  is equivalent to solving the constraints. $Z_\mu$ is subjected to a wave equation, transporting constraint violation off the computational domain. It can be shown that the system is driven to $Z_\mu =0$ for $k_1>0$ and $k_2<-1$. It is much cheaper to evolve the variables $Z_\mu$, driven to zero, than to solve four elliptic PDEs for the constraints $\{\mathcal{H},\M^i\}$ on each timestep. 
+Of course regular General Relativity is recovered by setting $Z_\mu=0$. It can be shown that achieving $Z_\mu=0$ whilst dynamically evolving $Z_\mu$  is equivalent to solving the constraints. $Z_\mu$ is subjected to a wave equation, transporting constraint violation off the computational domain. It can be shown that the system is driven to $Z_\mu =0$ for $k_1>0$ and $k_2>-1$. It is much cheaper to evolve the variables $Z_\mu$, driven to zero, than to solve four elliptic PDEs for the constraints $\{\mathcal{H},\M^i\}$ on each timestep. 
 
 
 \subsection{CCZ4} \label{nr:sec:ccz4}
@@ -272,7 +272,7 @@ where Eq.~(\ref{intro:eq:Ltensordensity2}) has been used with $\bs{\mathcal{T}}=
 \begin{equation}
 \partial_t \chi =  \beta^i \partial_i \chi + \frac{2\chi}{3} \left[\alpha \K - \partial_i \beta^i \right].
 \end{equation}
-A similar process returns the remaining CCZ4 equations but care should be taken to include the Z4 terms ($\Theta,\hat{\Upsilon}^i$) where they are needed. The complete list of CCZ4 equations used in simulations with GRChombo (section \ref{grchombo:sec:grchombo}) are given below:
+A similar process returns the remaining CCZ4 equations but care should be taken to include the Z4 terms ($\Theta,\hat{\Upsilon}^i$) where they are needed. The complete list of CCZ4 equations used in simulations with {\sc GRChombo} (section \ref{grchombo:sec:grchombo}) are given below:
 \begin{align} \partial_t \chi &=  \beta^i \partial_i \chi + \frac{2\chi}{3} \left[\alpha \K - \partial_i \beta^i \right],\\
 \partial_t\tilde{\gamma}_{ij} &=  \beta^k\partial_k\tilde{\gamma}_{ij}  + \tilde{\gamma}_{kj}\partial_i \beta^k + \tilde{\gamma}_{ik}\partial_j\beta^k - \frac{2}{3}\tilde{\gamma}_{ij} \partial_k \beta^k - 2\alpha\tilde{\A}_{ij},\\
 \partial_t\K &=  \beta^k\partial_k\K + \alpha\left[ \R + 2\bs{\D}\cdot \bs{Z} + \K\left[ \K-2\Theta\right]\right] - 3\alpha \kappa_1\left[ 1+\kappa_2\right]\Theta \nonumber\\
@@ -284,7 +284,7 @@ A similar process returns the remaining CCZ4 equations but care should be taken 
 & + 2\tilde{\gamma}^{ij}\left[ \alpha\partial_j\Theta -\Theta \partial_j\alpha \right] -2\tilde{\A}^{ij}\partial_j\alpha - \alpha\left[ \frac{4}{3}\tilde{\gamma}^{ij}\partial_j\K + 3\tilde{\A}^{ij}\frac{\partial_j \chi}{\chi}\right]\nonumber\\
 & -\left[ \tilde{\Upsilon}^j + 2\kappa_3 \frac{Z^j}{\chi}\right]\partial_j \beta^i + 2\alpha \tilde{\Upsilon}^i_{\,\,\,jk}\tilde{\A}^{jk} + \tilde{\gamma}^{jk}\partial_j\partial_k \beta^i + \frac{1}{3} \tilde{\gamma}^{ij}\partial_k \partial_j \beta^k - 16\pi G \alpha \tilde{\gamma}^{ij}\S_j, \\
 \partial_t \vp &= \beta^k\partial_k \vp - \alpha\Pi ,\label{nr:eq:ccz4kg1}.\end{align}
-In the CCZ4 equations there is an additional parameter $\kappa_3$ premultiplying terms in the evolution of $\hat{\Upsilon}^i$ which experimentally were found to lead to instabilities in black hole simulations \cite{PhysRevD.85.064040}. Setting $\kappa_3<1$ stabilises the simulation but at the cost of covariance. Later on it was realised that setting $\kappa_3=1$ and $\alpha\kappa_1\rightarrow\kappa_1$ retains covariance as well as numerical stability \ref{alic2013constraint}.
+In the CCZ4 equations there is an additional parameter $\kappa_3$ premultiplying terms in the evolution of $\hat{\Upsilon}^i$ which experimentally were found to lead to instabilities in black hole simulations \cite{PhysRevD.85.064040}; setting $\kappa_3<1$ stabilises the simulation but at the cost of covariance. Later on it was realised that setting $\kappa_3=1$ and $\alpha\kappa_1\rightarrow\kappa_1$ retains covariance as well as numerical stability \cite{Alic:2013xsa}; in this work $\kappa_1=0.1$, $\kappa_2=0$ and $\kappa_3=1$ is used.
 
 
 The CCZ4 scheme proves several benefits. 
@@ -295,8 +295,11 @@ The CCZ4 scheme proves several benefits.
 \end{itemize}
 In all the cases above, the CCZ4 system forces the evolution towards constraint satisfaction, despite the numerical errors and approximations. There is a caveat, even if a simulation satisfies the constraints, there is no guarentee it is the desired solution to Einstein's equation. 
 
+
+
 \subsection{Gauge Conditions}\label{nr:sec:gaugeconditions}
-The lapse $\alpha$ and shift $\beta^i$ are freely specifiable on a hypersurface $\Sigma_t$ being gauge variables, however they must be chosen carefully along with a suitable initial Cauchy surface $\Sigma_{t_0}$ and initial data. $\Sigma_{t_0}$ should be a smooth non-intersecting Cauchy surface as described in section \ref{nr:sec:foliation} and contain smooth initial data. It is also wise to avoid singularities (both coordinate and physical) on this surface. As an example, consider the simulation of a single Schwarzschild black hole. Figure~\ref{nr:fig:eddington-finkelstein} (left) shows how an initial Cauchy surface could extend to the singularity for ingoing Eddington-Finkelstein coordinates. In this work $\Sigma_{t_0}$ is chosen to be in the isotropic gauge as in figure~\ref{nr:fig:isotropic} (right); not only does this allow trivial swapping between spherical polar and Cartesian (used in simulations) coordinates but also provides an initial Cauchy surface free of physical singularities and easy to compute. However, for a poor choice of lapse function, even a well chosen $\Sigma_{t_0}$ can advance to the physical singularity in finite simulation time.
+The lapse $\alpha$ and shift $\beta^i$ are freely specifiable on a hypersurface $\Sigma_t$ being gauge variables, however they must be chosen carefully along with a suitable initial Cauchy surface $\Sigma_{t_0}$ and initial data. $\Sigma_{t_0}$ should be a smooth non-intersecting Cauchy surface as described in section \ref{nr:sec:foliation} and contain smooth initial data. It is also wise to avoid singularities (both coordinate and physical) on this surface. As an example, consider the simulation of a single Schwarzschild black hole. Figure~\ref{nr:fig:eddington-finkelstein} (left) shows how an initial data surface could extend to the singularity if polar-areal coordinates are used. Figure~\ref{nr:fig:eddington-finkelstein} also shows how the physical singularity is avoided when using isotropic coordinates. In this work the isotropic gauge is used; not only does this provide an initial Cauchy surface free of physical singularities but also allows for trivial swapping between spherical polar and Cartesian (used in simulations) coordinates. However, for a poor choice of lapse function, even a well chosen $\Sigma_{t_0}$ can advance to the physical singularity in finite simulation time. 
+
 %   \begin{figure}[h]
 %   \caption{Penrose Diagrams, $\Sigma_{t_0}$ dashed, Left: Ingoing Eddington-Finkelstein Coordinates, Right: Isotropic Coordinates.}
 %   \centering
@@ -306,11 +309,11 @@ The lapse $\alpha$ and shift $\beta^i$ are freely specifiable on a hypersurface 
 % \end{figure}
 
   \begin{figure}[h]
-  \caption{Penrose Diagrams, $\Sigma_{t_0}$ dashed, Left: Ingoing Eddington-Finkelstein Coordinates, Right: Isotropic Coordinates.}
+  \caption{Penrose Diagram of the maximally extended Schwarzschild spacetime; the top (future) squiggle represents the spacelike black hole singulary and the bottom (past) squiggle represents the white hole singularity. In the right hand diagram, the straight dashed line labelled by $\Sigma_{\rm iso}$ represent the initial hypersurface $\Sigma_{t_0}$ for $t=0$ in isotropic coordinates. In the left hand diagram, the dashed line labelled by $\Sigma_{\rm pa}$ represent the initial hypersurface $\Sigma_{t_0}$ for $t=0$ in polar-areal coordinates. Notably $\Sigma_{\rm pa}$ initially touches the physical singularity whereas $\Sigma_{t_0}$ does not; additionally $\Sigma_{\rm pa}$ is not a Cauchy surface as there exist causal curves which can intersect it multiple times.}
   \centering
-  \subfloat{\includegraphics[width=0.43\textwidth]{png/sc_penrose.png}\label{boson:fig:f1}} \label{nr:fig:eddington-finkelstein}
-  \hfill
-  \subfloat{\includegraphics[width=0.5\textwidth]{png/iso_penrose.png}\label{boson:fig:f2}} \label{nr:fig:isotropic}
+  \subfloat{\includegraphics[width=0.50\textwidth]{png/penrose_sc.pdf}} \hfill
+  \subfloat{\includegraphics[width=0.50\textwidth]{png/penrose_iso.pdf}} 
+  \label{nr:fig:eddington-finkelstein}\label{nr:fig:isotropic}\label{boson:fig:f1}
 \end{figure}
 
 \subsubsection{Lapse Slicing Conditions}
@@ -328,7 +331,7 @@ Using Gaussian normal coordinates $\beta^i=0$ and provided $\Theta=0$, the 1+log
 giving the slicing condition it's name \cite{alcubierre2008introduction}.
 
 \begin{figure}[h!]
-    \includegraphics[width=0.9\textwidth]{svg/foliation.png} 
+    \includegraphics[width=0.9\textwidth]{png/slicing.pdf} 
       \caption{Diagram showing the time evolution of a hypersurface using a singularity avoiding slicing condition. The vertical squiggled line represents a physical singularity that is formed at some point in spacetime, potentially from the collapse of matter to a black hole.} \label{nr:fig:singularity_avoiding}
 \end{figure}
 

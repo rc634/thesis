@@ -2,7 +2,7 @@
 \contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Introduction to General Relativity}{2}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Introduction to Compact Objects and Boson Stars}{3}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Conventions}{3}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.3}Conventions}{4}{subsection.1.1.3}%
 \contentsline {section}{\numberline {1.2}Differential Geometry}{5}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Introduction to Geometry and Manifolds}{5}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Functions, Curves and Tensors on Manifolds}{5}{subsection.1.2.2}%
@@ -70,7 +70,7 @@
 \contentsline {subsection}{\numberline {2.2.3}3+1 Klein Gordon System}{55}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}Klein Gordon's Noether Charge}{56}{subsection.2.2.4}%
 \contentsline {subsection}{\numberline {2.2.5}Boosted Boson Stars and Black Holes}{57}{subsection.2.2.5}%
-\contentsline {chapter}{\numberline {3}Numerical Methods and GRChombo}{60}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Numerical Methods and {\sc GRChombo}}{60}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Numerical Methods}{61}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Numerical Discretisation of Spacetime}{61}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Boundary Conditions}{62}{subsection.3.1.2}%
@@ -78,14 +78,68 @@
 \contentsline {subsection}{\numberline {3.1.3}The Method of Lines}{63}{subsection.3.1.3}%
 \contentsline {subsection}{\numberline {3.1.4}Integration of ODEs}{63}{subsection.3.1.4}%
 \contentsline {subsubsection}{The Runge Kutta Method}{64}{section*.41}%
-\contentsline {section}{\numberline {3.2}GRChombo}{65}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Overview of GRChombo}{65}{subsection.3.2.1}%
-\contentsline {subsubsection}{Simulation Units}{66}{section*.42}%
-\contentsline {subsection}{\numberline {3.2.2}Boson Star Initial Data}{66}{subsection.3.2.2}%
-\contentsline {subsubsection}{Shooting Method}{67}{section*.43}%
-\contentsline {subsection}{\numberline {3.2.3}Single Star Evolution}{69}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Superposition of Initial Data}{69}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Collisions of Boson Stars}{70}{subsection.3.2.5}%
-\contentsline {subsubsection}{Headon Collision}{71}{section*.47}%
-\contentsline {subsubsection}{Grazing Collision}{72}{section*.50}%
-\contentsline {chapter}{\numberline {4}STUFF TO DO}{75}{chapter.4}%
+\contentsline {section}{\numberline {3.2}\sc GRChombo}{66}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Overview of {\sc GRChombo}}{66}{subsection.3.2.1}%
+\contentsline {subsubsection}{Simulation Units}{67}{section*.42}%
+\contentsline {subsection}{\numberline {3.2.2}Boson Star Initial Data}{67}{subsection.3.2.2}%
+\contentsline {subsubsection}{Shooting Method}{68}{section*.43}%
+\contentsline {subsection}{\numberline {3.2.3}Single Star Evolution}{70}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Superposition of Initial Data}{70}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Collisions of Boson Stars}{71}{subsection.3.2.5}%
+\contentsline {subsubsection}{Headon Collision}{72}{section*.47}%
+\contentsline {subsubsection}{Grazing Collision}{73}{section*.50}%
+\contentsline {chapter}{\numberline {4}Malaise and Remedy of Binary Boson Star Initial Data}{77}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{78}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Boson Star Initial Data}{80}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Boson Star Binary Initial Data}{81}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Simple Superposition of Boson Stars}{82}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Improved Superposition}{83}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Models and Results}{84}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Initial Constraint Violations}{84}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Convergence and Numerical Uncertainties}{86}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Radiated Gravitational Wave Energy}{87}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Evolution of the Scalar Amplitude and Gravitational Collapse}{88}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Conclusions}{92}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Analytic Treatment of the Hamiltonian Constraint}{92}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Local Continuity of Angular Momentum and Noether Charge for Matter in General Relativity}{94}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Local Continuity of Angular Momentum and Noether Charge for Matter in General Relativity}{95}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Introduction}{95}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Derivation of the QFS System}{96}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Application to Spherical extraction}{99}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Noether Currents}{101}{subsection.5.1.4}%
+\contentsline {subsubsection}{Complex Scalar Fields}{101}{section*.68}%
+\contentsline {subsubsection}{Complex Vector Fields}{101}{section*.69}%
+\contentsline {subsection}{\numberline {5.1.5}Energy-Momentum Currents}{103}{subsection.5.1.5}%
+\contentsline {subsubsection}{Angular Momentum}{103}{section*.70}%
+\contentsline {subsubsection}{Energy}{104}{section*.71}%
+\contentsline {subsection}{\numberline {5.1.6}Numerical Application}{105}{subsection.5.1.6}%
+\contentsline {subsubsection}{Numerical Setup of Simulations}{105}{section*.72}%
+\contentsline {subsubsection}{Convergence Analysis}{107}{section*.76}%
+\contentsline {subsection}{\numberline {5.1.7}Conclusion}{109}{subsection.5.1.7}%
+\contentsline {subsection}{\numberline {5.1.8}Source Term Calculation}{111}{subsection.5.1.8}%
+\contentsline {subsection}{\numberline {5.1.9}Generality of Result}{112}{subsection.5.1.9}%
+\contentsline {chapter}{\numberline {6}The Gravitational Afterglow of Boson Stars}{116}{chapter.6}%
+\contentsline {section}{\numberline {6.1}The Gravitational Afterglow of Boson Stars}{117}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Introduction}{117}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Simulation Setup}{118}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}The Merger Remnant}{119}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Gravitational wave signal}{121}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Conclusion}{123}{subsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.1.6}Angular momentum measure}{125}{subsection.6.1.6}%
+\contentsline {subsection}{\numberline {6.1.7}Numerical Accuracy}{127}{subsection.6.1.7}%
+\contentsline {chapter}{\numberline {7}Anomalies in the Gravitational Recoil of Eccentric Black-Hole Mergers with Unequal Mass Ratios}{129}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduction}{130}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Computational Framework and Set of Simulations}{132}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Numerical Methods}{132}{subsection.7.2.1}%
+\contentsline {subsubsection}{\textsc {GRChombo} setup}{132}{section*.92}%
+\contentsline {subsubsection}{\textsc {Lean} setup}{132}{section*.93}%
+\contentsline {subsubsection}{Initial Data}{133}{section*.94}%
+\contentsline {subsection}{\numberline {7.2.2}Black-Hole Binary Configurations}{133}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Diagnostics}{134}{subsection.7.2.3}%
+\contentsline {section}{\numberline {7.3}Results}{136}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Conclusions}{141}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Numerical Accuracy}{142}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}\textsc {GRChombo} Convergence}{142}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}\textsc {Lean} Convergence}{144}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}Comparison between \textsc {GRChombo} and \textsc {Lean}}{144}{subsection.7.5.3}%
+\contentsline {section}{\numberline {7.6}\textsc {GRChombo} Tagging Criterion}{145}{section.7.6}%

@@ -10,7 +10,8 @@
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Introduction} \label{ag:sect:intro2}
+\section{The Gravitational Afterglow of Boson Stars}
+\subsection{Introduction} \label{ag:sect:intro2}
 
 
 
@@ -59,7 +60,7 @@ is a highly perturbed BS with decreasing spin. Crucially, this spin-down occurs 
 
 
 
-The results of this paper suggest that using standard merger templates consisting mostly of the inspiral and merger contributions may be insufficient to capture fundamental dynamics of a boson-star merger event. Rather, comprehensive BS searches likely require extended waveform templates which also capture the rich post-merger GW afterglow phenomenology.
+The results of this work suggest that using standard merger templates consisting mostly of the inspiral and merger contributions may be insufficient to capture fundamental dynamics of a boson-star merger event. Rather, comprehensive BS searches likely require extended waveform templates which also capture the rich post-merger GW afterglow phenomenology.
 
 In \ref{ag:section:inital_data} we 
 briefly summarize our computational framework, list the parameters
@@ -75,11 +76,9 @@ are relegated to
 Sec.~\ref{ag:sec:methods} and Sec.~\ref{ag:sec:numacc}.
 
 %=====================================================================
-\newline \\[20pt]
 \begin{figure*}[h!]
 \begin{center}{
     {\includegraphics[width=1.0\columnwidth]{ag_fig/modphi_plot_axes_log.png}}
-    }
 \caption{
     Snapshots of the scalar field amplitude $|\varphi|$
     in the orbital plane for a
@@ -94,7 +93,7 @@ Sec.~\ref{ag:sec:methods} and Sec.~\ref{ag:sec:numacc}.
 
 
 
-\section{Simulation Setup}\label{ag:section:inital_data} 
+\subsection{Simulation Setup}\label{ag:section:inital_data} 
 
 Throughout this work, we model BSs as a complex scalar field
 minimally coupled to the gravitational sector of a Lorentzian
@@ -179,8 +178,8 @@ consequence of any fine tuning of initial data.
 
 
 
-For all simulations, we use a square box of width $D = 1024~m^{-1}$, employing the adaptive mesh refinement (AMR) capabilities of GRChombo \cite{Radia:2021smk,Andrade:2021rbd,Clough:2015sqa}. Besides the standard computation of the Newman-Penrose scalar
-whose implementation in GRChombo is described in detail in
+For all simulations, we use a square box of width $D = 1024~m^{-1}$, employing the adaptive mesh refinement (AMR) capabilities of {\sc GRChombo} \cite{Radia:2021smk,Andrade:2021rbd,Clough:2015sqa}. Besides the standard computation of the Newman-Penrose scalar
+whose implementation in {\sc GRChombo} is described in detail in
 Ref.~\cite{Radia:2021smk}, we compute in our simulations
 two diagnostic quantities specific to the BS systems under study.
 
@@ -203,7 +202,7 @@ for computing this quantity $\tilde{L}$ are given in
 section \ref{ag:sec:methods}.
 
 %===============================================================
-\section{The Merger Remnant}\label{ag:sec:Remannt}
+\subsection{The Merger Remnant}\label{ag:sec:Remannt}
 
 
 
@@ -220,7 +219,7 @@ expect one of the following outcomes:
 \end{enumerate}
 For sufficiently small compactness of the progenitors the merger does not form a black hole. While we have observed black-hole
 formation in some of our calibration runs starting with more compact
-BSs (for example in section \ref{grchombo:sec:bscollisions}), in the remainder of this paper we focus on the scenario
+BSs (for example in section \ref{grchombo:sec:bscollisions}), in the remainder of this chapter we focus on the scenario
 where the merger results in a compact bosonic configuration
 without a horizon as shown in Fig.~\ref{ag:fig:Panellog}.
 The scalar-amplitude profiles in this figure (nor at any other
@@ -320,7 +319,7 @@ Second, the oscillations occur on a much shorter time scale.
 
 
 
-\section{Gravitational wave signal}\label{ag:sec:GWs}
+\subsection{Gravitational wave signal}\label{ag:sec:GWs}
 
 
 
@@ -490,7 +489,7 @@ third-generation detectors but also high frequency GW observatories presently un
 
 
 
-\section{Conclusion}\label{ag:sec:conclusion}
+\subsection{Conclusion}\label{ag:sec:conclusion}
 
 
 We have shown that the inspiral and
@@ -560,7 +559,7 @@ not promptly form a black hole.
 
 
 
-% \section{Numerical Methodology}\label{ag:appendix:numerical_methodology}
+% \subsection{Numerical Methodology}\label{ag:appendix:numerical_methodology}
 
 % The simulations of this work have been performed with
 % \grchombo, a multipurpose numerical relativity code
@@ -617,7 +616,7 @@ not promptly form a black hole.
 
 
 
-\section{Angular momentum measure}\label{ag:sec:methods}
+\subsection{Angular momentum measure}\label{ag:sec:methods}
 
 \begin{figure*}[h!]
 \begin{center}
@@ -640,7 +639,7 @@ converges to the classical angular momentum definition
 in the flat-spacetime limit.
 
 In order to define such a measure in a
-precise manner we will follow the results of section \ref{q:sec:q} or \cite{Croft:2022gks,Clough:2021qlv}.
+precise manner we will follow the results of chapter \ref{q:sec:q} or \cite{Croft:2022gks,Clough:2021qlv}.
 
 
 
@@ -741,7 +740,7 @@ Using the final value of $\tilde{L}$ obtained for Run 2
 a coordinate sphere of coordinate radius $60~m^{-1}$, we estimate the final spin
 of the merged BS as $0.0321 \pm 0.0007~{M_{\rm pl}}^2 m^{-2}$.
 
-\section{Numerical Accuracy}
+\subsection{Numerical Accuracy}
 \label{ag:sec:numacc}
 
 To assess the accuracy of our results we have performed simulations with four different resolution given, in terms of the number of points in each direction on the coarsest level, by $N = \{256,320,384,448\}$, all for a box width 
