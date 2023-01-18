@@ -12,21 +12,23 @@ T.~Andrade, L.~A. Salo, J.~C. Aurrekoetxea, J.~Bamber, K.~Clough, R.~Croft,
 
 \bibitem{Helfer:2021brt}
 T.~Helfer, U.~Sperhake, R.~Croft, M.~Radia, B.-X. Ge, and E.~A. Lim, ``{Malaise
-  and remedy of binary boson-star initial data},'' 8 2021.
+  and remedy of binary boson-star initial data},'' {\em Class. Quant. Grav.},
+  vol.~39, no.~7, p.~074001, 2022.
 
 \bibitem{Croft:2022gks}
-R.~Croft, ``{Local Continuity of Angular Momentum and Noether Charge for Matter
-  in General Relativity},'' 3 2022.
+R.~Croft, ``Local continuity of angular momentum and noether charge for matter
+  in general relativity,'' {\em arXiv preprint :
+  https://arxiv.org/abs/2203.13845}, 2022.
 
 \bibitem{croft2022gravitational}
 R.~Croft, T.~Helfer, B.-X. Ge, M.~Radia, T.~Evstafyeva, E.~A. Lim, U.~Sperhake,
   and K.~Clough, ``The gravitational afterglow of boson stars,'' {\em arXiv
-  preprint arXiv:2207.05690}, 2022.
+  preprint : arXiv:2207.05690}, 2022.
 
 \bibitem{Radia:2021hjs}
 M.~Radia, U.~Sperhake, E.~Berti, and R.~Croft, ``{Anomalies in the
   gravitational recoil of eccentric black-hole mergers with unequal mass
-  ratios},'' 1 2021.
+  ratios},'' {\em Phys. Rev. D}, vol.~103, no.~10, p.~104006, 2021.
 
 \bibitem{Kaup:1968zz}
 D.~J. Kaup, ``{Klein-Gordon Geon},'' {\em Phys. Rev.}, vol.~172,
@@ -214,10 +216,19 @@ J.~C. Aurrekoetxea, K.~Clough, R.~Flauger, and E.~A. Lim, ``The effects of
   potential shape on inhomogeneous inflation,'' {\em Journal of Cosmology and
   Astroparticle Physics}, vol.~2020, pp.~030--030, may 2020.
 
+\bibitem{Andrade:2020dgc}
+T.~Andrade, P.~Figueras, and U.~Sperhake, ``{Violations of Weak Cosmic
+  Censorship in Black Hole collisions},'' 11 2020.
+
 \bibitem{hadjidimos2000successive}
 A.~Hadjidimos, ``Successive overrelaxation (sor) and related methods,'' {\em
   Journal of Computational and Applied Mathematics}, vol.~123, no.~1-2,
   pp.~177--199, 2000.
+
+\bibitem{arnowitt1962dynamics}
+R.~Arnowitt, S.~Deser, and C.~W. Misner, ``The dynamics of general relativity,
+  gravitation: An introduction to current research,'' {\em Chap}, vol.~7,
+  pp.~227--265, 1962.
 
 \bibitem{PhysRev.172.1331}
 D.~J. Kaup, ``Klein-gordon geon,'' {\em Phys. Rev.}, vol.~172, pp.~1331--1342,

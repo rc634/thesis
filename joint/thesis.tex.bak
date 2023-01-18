@@ -1,0 +1,275 @@
+%\documentclass[11pt, book]{report}  %can try book instead 	% use "amsart" instead of "article" for AMSLaTeX format
+\documentclass[11pt]{report}  %can try book instead   % use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[margin = 0.7in, bmargin = 1.1in, tmargin = 0.9in]{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or epsÂ§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsmath,mathtools}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{tabu}
+\usepackage{bm}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{floatrow}
+\usepackage{subfig}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\usepackage{lipsum}  
+\usepackage{mdframed}
+\usepackage{verbatim}
+\usepackage{slashed}
+%\usepackage[compat=1.1.0]{tikz-feynman}
+%\usepackage{animate}
+
+\usepackage{svg}
+
+
+\newcommand{\G}{\mathcal{G}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\E}{\mathcal{E}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\K}{\mathcal{K}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\R}{\mathcal{R}}
+\renewcommand{\P}{\mathcal{P}}
+\newcommand{\vp}{\varphi}
+\newcommand{\T}{\mathcal{T}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\bs}{\boldsymbol}
+\newcommand{\rspace}{\mathbb{R}}
+%\newcommand{\dd}{\mathrm{d}} % is included in physics package??
+
+\newcommand{\mL}{\mathcal{L}} 
+\newcommand{\xt}{\tilde{x}}    
+\newcommand{\pN}{{}_{\perp}N}
+\newcommand{\rmi}{{\rm i}}
+
+
+\definecolor{purple}{RGB}{38,0,75}
+\pagecolor{white}
+\color{black}
+
+%SetFonts
+
+%SetFonts
+\usepackage{subfiles} % Best loaded last in the preamble
+
+\numberwithin{equation}{section}
+\pagenumbering{gobble}
+\title{Third Term Report}
+\author{Robin Croft}
+%\date{}	
+\begin{document}
+\begin{titlepage}
+\pagenumbering{gobble}
+  \centering
+  
+  \centering
+  {\scshape\LARGE Cambridge University \par}
+  \vspace{1cm}
+  {\scshape\Large Doctoral Thesis \par} 
+    \vspace{2cm} 
+    \hrule
+    \vspace{0.3cm}
+  {\Large\itshape \par}
+  {\huge\bfseries Numerical Modelling of the Dynamics and Gravitational Radiation of Compact Binaries in General Relativity\par} \vspace{0.3cm}
+  \hrule
+  \vfill
+   Author: Robin Croft
+\vfill
+  Supervisor: Dr. Ulrich Sperhake
+  \vfill
+
+    \begin{figure}[h!]
+  \centering
+  \subfloat{\includegraphics[width=0.25\textwidth]{png/uni_logo.png}\label{fig:f1}}
+\end{figure}
+
+
+% Bottom of the page
+ % {\large \today\par}
+\end{titlepage}						% Activate to display a given date or no date
+
+
+\abstract 
+\vspace{2cm} 
+General relativity (GR), published in 1915 by Albert Einstein, is the modern description of gravity. GR poses that gravitational physics should be described by matter fields existing in a curved space described by differential geometry. The Newtonian gravitational force is viewed as a fictitious force arising from curvature; on the flipside, matter and energy tell space how to curve as described by Einstein's equation. GR can explain a plethora of gravitational phenomena that are beyond the scope of the traditional Newtonian theory of gravity. Some examples of these phenomena are gravitational time dilation, inspiralling and precessing orbits, gravitational waves, inflation and the big bang. Other examples are self gravitating compact objects such as black holes (BH) and the precise modeling neutron stars (NS). The gravitational waves from the inspirals and collisions of BHs and NSs can be measured by large interferometer experiments such as the Laser Interferometer Gravitational-Wave Observatory (LIGO) which lead to the 2017 Nobel prize in physics.  
+
+This thesis is concerned with the modelling of collisions of compact objects using numerical relativity (NR) and developing diagnostics for these simulations. The code used for the simulations is GRChombo, a modern NR code with adaptive mesh refinement (AMR) that supports both the BSSN and CCZ4 formulations. The compact objects modelled are black holes and boson stars. 
+
+Boson stars are a self gravitating complex scalar field configuration governed by the Klein Gordon equation in curved space. These are stars composed of spin zero boson particles rather than atoms like regular fermionic star. Boson stars are interesting for a number of reasons, one being that scalar fields exist in nature and may condense to star-like objects called boson stars. Collisions of these boson stars emit gravitational waves that are detectable at LIGO and other gravitational wave detectors. Boson stars are also a candidate for dark matter clusters permeating galaxies.
+
+In order to collide compact objects one must superpose the initial data for two objects; this generally is not valid in GR and violates the Einstein Equation. While the initial data for black hole binaries is well known, the initial data for two boson stars is not. The plain superposition of two boson star solutions causes significant artefacts in simulations and an important part of this thesis is the exploration of improvements to naive superposition methods. 
+
+Conservation laws have many applications in numerical relativity. However, it is not straightforward to define local conservation laws for general dynamic spacetimes due the lack of coordinate translation symmetries. In flat space, the rate of change of energy-momentum within a finite spacelike volume is equal to the flux integrated over the surface of this volume; for general spacetimes it is necessary to include a volume integral of a source term arising from spacetime curvature. In this work a study of continuity of matter in general relativity is extended to include angular momentum of matter and Noether currents associated with gauge symmetries. Expressions for the Noether charge and flux of complex scalar fields and complex Proca fields are found using this formalism. Expressions for the angular momentum density, flux and source are also derived which are then applied to a numerical relativity collision of boson stars in 3D with non-zero impact parameter as an illustration of the methods.
+
+The previous innovations for the binary initial data, which significantly reduce spurious initial excitations of the scalar field profiles, as well as a measure for the angular momentum are used to study the long-lived post-merger gravitational wave signature of a boson-star binary coalescence. We use full numerical relativity to simulate the post-merger and track the gravitational afterglow over an extended period of time. We find the afterglow to last much longer than the spin-down timescale. This prolonged gravitational wave afterglow provides a characteristic signal that may distinguish it from other astrophysical sources.
+
+Finally, we investigate the impact of nonzero eccentricity on the kick magnitude and gravitational-wave emission of non-spinning, unequal-mass black hole binaries. Here "kick" refers to the radiation of linear momentum to the centre of mass of a merging black hole binary system. Recent numerical relativity calculations have shown that eccentricity can lead to an approximate 25 percent increase in recoil velocities for equal-mass, spinning binaries with spins lying in the orbital plane; these are “superkick” configurations. We confirm that nonzero eccentricities at merger can lead to kicks which are larger by up to approximately 25 percent relative to the quasicircular case for non-spinning, unequal-mass black hole binaries. We also find that the kick velocity has an oscillatory dependence on eccentricity, which we interpret as a consequence of changes in the angle between the infall direction at merger and the apoapsis (or periapsis) direction.
+\newpage
+
+  {\centering
+  \scshape\LARGE Declaration of Original and Collaborative Work  \par}
+  \vspace{1cm}
+
+                         {\bf Chapter 1} is my own work introducing the reader to the topics of Differential Geometry, Tensor Calculus and Relativity.
+  \vspace{0.5cm}\newline {\bf Chapter 2} is my own work introducing the reader to topics in Numerical Relativity and Boson Stars.
+  \vspace{0.5cm}\newline {\bf Chapter 3} is a mix of my own work with a collaboration. Section \ref{grchombo:sec:numericalmethods} is my own work introducing numerical methods. The description of {\sc GRChombo} in section \ref{grchombo:sec:grchombo} is heavily inspired by the collaboration paper \cite{Andrade2021}; the rest of section \ref{grchombo:grchombo} is my own work and research.
+  \vspace{0.5cm}\newline {\bf Chapter 4} is based on the collaboration paper \cite{Helfer:2021brt} with Thomas Helfer, Ulrich Sperhake, Miren Radia, Bo-Xuan Ge and Eugene Lim.
+  \vspace{0.5cm}\newline {\bf Chapter 5} is based on my own work in paper \cite{Croft:2022gks}.
+  \vspace{0.5cm}\newline {\bf Chapter 6} is based on the collaboration paper \cite{croft2022gravitational} with Thomas Helfer, Bo-Xuan Ge, Miren Radia, Tamara Evstafyeva, Eugene Lim, Ulrich Sperhake and Katy Clough.
+  \vspace{0.5cm}\newline {\bf Chapter 7} is based on the collaboration paper \cite{Radia:2021hjs} with Miren Radia, Ulrich Sperhake and Emanuele Berti.
+
+\newpage
+
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+
+
+
+
+\chapter{Introduction to Differential Geometry and General Relativity}
+
+
+\include{intro}
+
+
+
+
+
+
+
+
+
+\chapter{Numerical Relativity and Boson Stars}
+
+
+\include{nr}
+
+\include{bosonstars}
+
+\chapter{Numerical Methods and {\sc GRChombo}}
+
+
+\include{grchombo}
+
+
+
+
+
+
+ \chapter{Malaise and Remedy of Binary Boson Star Initial Data}
+
+ \include{malaise}
+
+
+
+
+
+ \chapter{Local Continuity of Angular Momentum and Noether Charge for
+ Matter in General Relativity}
+
+\include{q}
+
+
+ \chapter{The Gravitational Afterglow of Boson Stars}
+
+ \include{afterglow}
+
+  \chapter{Anomalies in the Gravitational Recoil of Eccentric Black-Hole Mergers with Unequal
+Mass Ratios}
+
+
+\include{bhkick}
+
+% \newpage {STUFF TO DO}
+
+
+% check tensor vs tensor field
+
+% add a sections with intro reading such as books alcubbiere baumgarte, adn GR stuff like sean caroll, tong, harvey ..
+
+% CHECK CURLY VS SMOOTH BRACKETS FOR SETS AND VECTORS ALL OVER
+
+% FIG REFERENCING -> Fig.~(\ref{thing:fig:rference})
+
+% DECIDE ON A FACTOR OF 16PI IN TEH MATTER LAGRANGEAN OF GR BETWEEN THE INTRO SECTION AND THE LATER SECTION. PROBABLY USE R/16PI RATHER THAN 16PI*MATTER ... 
+
+% MAKE SURE I CREDIT MIREN FOR THE TIME EVOLUTION OF THE SCALAR FIELD
+
+% SORT OUT MY RANDOM USE OF ITALICS
+
+% DEFINE PDE OR ODE SOMEWHERE
+
+% IN GR OR INTRO MAYBE PUT REFS TO GR TEXTBOOKS, DEFO FOR NR TEXTBOOK BAUMGARTE AND ALCUBIERE
+
+% DO PROPER DRAWING OF CAUCHY SURFACES IN GAUGSE SECTION, MAYBE ADD FUTURE EVOLUTION OR MAYBE COMPARE INITIAL DATA FOR SC
+
+% MAYBE REF THIS GUY FOR THE FUTURE EVOLUTION OF SIGMA T Brown:2009ki
+
+% MAYBE THERE IS TOO MUCH DOUBLE COVER OF QFS STUFF IN APPENDIX OF AFTERGLOW PAPER
+
+% CHECK FOR BROKEN CREF IN AFTERGLOW PAPER, SOME REFERENCES ARE EMPTY IN TYPE (BUT HYPERLINKING STILL WORKS)
+
+% M-DIMENSIONAL OR M DIMENSIONAL ?
+
+% MAYBE WRITE A BIT ON WHY GEODEICS ARE IMPORTANT AT THE END OF THE GEODESIC SECTION? LINK TO GR AND INERTIAL FRAMES.
+
+% MAYBE DISTINGUISH BETWEEN : AND CDOT FOR THE INNER PRODUCT, WITHOUT A METRIC WE MUST USE : NOT CDOT
+
+% FIX ALL THE PLACES THE DIV THEOREM OR THE DIV OF A TENSOR IS USED AND REFERENCES MAYBE?
+
+% CHECK THE RIGHT GAMMA (HAT GAMMA VS TILDE GAMMA) IS USED ALL OVER THE CCZ4 EQNS - ESPACIALLY THE KLEIN GORDON EQUATION. CHECK THE KLEIN GORDON IN CCZ4 IS EVEN CORRECT
+
+% CHECK FOT SUBSCRIPT SLASH RM IN NAMING
+
+% Q PAPER DOENST ALWAYS HAVE COMMAS ON EQUATIONS MAYBE CHECK IT
+
+
+% <><><><><><> SUPER IMPORTANT - CHECK BEFORE SUBMIT <><><><><><><><><>
+
+% REDO THE FIGURES IN GRCHOMBO SIMS AND MAKE THEM HAVE NICE AXES
+
+% READ AND IMPLEMENT ULIS COMENT ABOUT CHARACTORISTICS (AND PUT INTO NUMERICAL SECTION BOUNIDARY CONDITIONS)
+
+
+
+% <><><><><><> FOR ULI TO READ <><><><><><><><>
+
+
+
+
+\newpage % \begin{thebibliography}{9}
+%\bibliographystyle{prsty}
+%\bibliography{refs.bib}
+% \bibliography{../../bibtex/refs.bib}
+% \bibliography{malaise_source/newuli2.bib}
+\bibliography{gigabib.bib}
+\bibliographystyle{ieeetr}
+
+
+%\end{thebibliography}
+
+
+
+  
+
+\end{document}

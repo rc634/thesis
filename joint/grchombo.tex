@@ -7,6 +7,15 @@
 
 
 \section{Numerical Methods} \label{grchombo:sec:numericalmethods}
+{ \color{orchid} 
+\subsection{Introduction to Numerical Methods}
+
+In classical physics it is common for a system to be described by the solution of a differential equation (or a set of differential equations) subjected to suitable boundary conditions. There exist many cases, where the system is sufficiently simple, in which the differential equation(s) can be solved analytically; some well known examples include Newton's equation of gravity for orbits, the Schrödinger equation for certain potentials (such as the infinite square well and the quadratic potential) and Maxwell's equations for propagating electromagnetic fields. 
+
+In four space-time dimensions, general relativity is a set of ten coupled non-linear differential equations. The complexity of general relativity means that analytic solutions are usually restricted to spacetimes with many symmetries or simplifying assumptions. Some common examples are single eternal black hole solutions, cosmological solutions for a uniform universe and the flat Minkowski space. In the case of colliding compact objects (such as black holes, neutron stars or boson stars) there is no analytic solution and numerical methods are the only way to solve the differential equations governing the system. 
+
+The rest of section \ref{grchombo:sec:numericalmethods} introduces the reader into the basic concepts in numerical methods such as discretisation, boundary conditions and time evolution. Section \ref{grchombo:sec:grchombo} describes {\sc GRChombo}, the numerical relativity code used throughout this thesis, and is loosely based on the collaboration paper \cite{Andrade2021}. From section \ref{grchombo:sec:units} onward, the rest of the chapter is my own work towards reproducing known boson star initial data (but in the isotropic gauge) and my own work simulating boson star collisions using a simple superposition scheme.}
+
 \subsection{Numerical Discretisation of Spacetime} \label{grchombo:sec:numericaldisc}
 
 There are many ways to time evolve a field theory on a spatial surface. Some popular numerical methods include spectral methods, finite element models and finite volume methods. The method used throughout this work is the finite difference framework. This models a continuous spacetime with a discrete lattice of points; usually this lattice is cubic or cuboidal. A field $\phi(x^\mu)$ on a manifold $\M$ is expressed as a set of discrete values $\phi^n_{ijk}$, for integer $\{n,i,j,k\}$, on a set of discrete lattice points with coordinates $(x^n_{ijk})^\mu$. In uniform Cartesian coordinates $(x^n_{ijk})^\mu= \{n \Delta t, i \Delta x, j \Delta y, k \Delta z \}$ where $\Delta t$, $\Delta x$, $\Delta y$ and $\Delta z$ represent the grid spacing. In the limit that the grid spacing tends to zero, the lattice and discretised fields should converge to the continuum solution. For a detailed introduction to numerical methods the reader is directed to \cite{Press1992}.
@@ -15,7 +24,7 @@ To calculate gradients on a lattice, we can consider a two dimensional manifold 
 \begin{equation}
 \frac{\dd f}{\dd x} := \lim_{\delta x \rightarrow 0} \left( \frac{f(x+\delta x)-f(x)}{\delta x} \right),
 \end{equation}
-as there no longer exist two points $x$ and $x+\delta x$ that are infinitesimally close to each other. Derivatives are now calculated by comparing gridpoints a finite distance from each other. To elucidate this idea, a formula for the second derivative is calculated. First we pick five lattice points, equally spaced by $\Delta x$, with coordinates $\{x_{-2},x_{-1},x_{0},x_{1},x_{2}\}$, and writing $f(x_i) = f_i$. Then using the well known formula for the Taylor expansion of a function about a point $x_0$,
+as there no longer exist two points $x$ and $x+\delta x$ that are infinitesimally close to each other. Derivatives are now \color{orchid} approximately \color{black} calculated by comparing gridpoints a finite distance from each other. To elucidate this idea, a formula for the second derivative is calculated. First we pick five lattice points, equally spaced by $\Delta x$, with coordinates $\{x_{-2},x_{-1},x_{0},x_{1},x_{2}\}$, and writing $f(x_i) = f_i$. Then using the well known formula for the Taylor expansion of a function about a point $x_0$,
 \begin{equation}
 f(x) = f(x_0) + (x-x_0) f'(x_0) + \frac{(x-x_0)^2}{2!}f''(x_0) + \frac{(x-x_0)^3}{3!}f'''(x_0) + ... \,, \label{grchombo:eq:taylor}
 \end{equation}
@@ -48,7 +57,7 @@ where the $+$ or $-$ sign is taken for even or odd parity variables and $\phi_i 
 \phi_{n+1} = \pm\phi_{n}, \quad \phi_{n+2} = \pm\phi_{n-1}, \quad \phi_{n+3} = \pm\phi_{n-2}, \quad ... \, .
 \end{align} 
 
-Generic boundary conditions can be imposed by assigning values to ghost cells similarly to above. Although the examples given in this section are in one dimension, the ideas generalise to arbitrary dimensions straightforwardly.
+Generic boundary conditions can be imposed by assigning values to ghost cells similarly to above. Although the examples given in this section are in one dimension, the ideas generalise to arbitrary dimensions. \color{choral} removed offending word "straightforewardly" \color{black}
 
 
 \subsubsection{Sommerfeld Boundary Conditions} \label{grchombo:sec:sommerfeld}
@@ -72,7 +81,7 @@ In general relativity, Sommerfeld boundary conditions are commonly used with $v=
  \begin{itemize}
  \item Sommerfeld boundary conditions are derived in spherical symmetry and flat space; spacetimes often asymptote to spherically symmetric flat space, but this is only approximately true for finite radii. 
 \item Matter doesn't always obey a wave equation or propagate at the speed of light. 
-\item Gravitational waves only obey a linear wave equation under special circumstances such as specific wave shapes (such as Brill waves) and small amplitude waves in flat space; again this problem is alleviated at large radius in an asymptotically flat space.
+\item Gravitational waves only obey a linear wave equation under special circumstances such as \color{choral} removed Brill \color{black} small amplitude waves in flat space; again this problem is alleviated at large radius in an asymptotically flat space.
 \end{itemize}
 It has been found experimentally in my work that ensuring the boundary conditions are sufficiently far away from any compact objects is very important in maintaining accuracy of the simulation when using Sommerfeld boundary conditions.
 
@@ -148,6 +157,10 @@ These are then summed in a way that calculates $\phi(t+\Delta t)$ from $\phi(t)$
 A similar procedure can be done for any desired accuracy with higher order methods becoming quite involved. The simplicity of this RK4 scheme along with its robustness has led to it being one of the most popular methods for integrating ODEs. Lower order Runge-Kutta methods also exist, for example the first order RK1 method which is equivalent to the Euler method in Eq.~(\ref{grchombo:eq:eulermethod}). Another common Runge-Kutta method is the second order accurate RK2 method also called the midpoint method.
 
 
+
+
+
+
 \newpage
 \section{\sc GRChombo} \label{grchombo:grchombo}
 \subsection{Overview of {\sc GRChombo}}\label{grchombo:sec:grchombo}
@@ -167,9 +180,11 @@ The code can use Sommerfeld, periodic, reflective and extrapolating boundary con
 A selection of diagnostic tools have been implemented in {\sc GRChombo}. These include a black hole horizon finder, gravitational wave extraction and the calculation of the ADM mass, ADM momentum, Noether charges and energy-momentum densities and fluxes. The diagnostic for the angular momentum density and flux are derived in chapter \ref{q:sec:q}.
 
 
-While {\sc GRChombo} can be used to simulate traditional spacetimes, such as binary black hole inspirals \cite{radia2021anomalies}, it excels at simulating novel physics due to its adaptable code structure and AMR. The advantage of AMR is that regions needing higher resolution are assigned (and de-assigned) dynamically during run time; this requires no a priori knowledge or pre-determined grid structure unlike other NR codes such as {\sc Lean} \cite{Sperhake:2006cy} or {\sc Einstein-Toolkit} \cite{loffler2012einstein} \cite{Zilhao:2013hia} \cite{EinsteinToolkit}. AMR is especially useful for matter simulations that can develop features requiring high resolution in unexpected places. {\sc GRChombo} has also successfully simulated ring-like configurations \cite{PhysRevD.99.104028} and inhomogeneous spacetimes \cite{Aurrekoetxea_2020} which would be difficult to model with a conventional pre-specified grid structure. 
+While {\sc GRChombo} can be used to simulate traditional spacetimes, such as binary black hole inspirals \cite{radia2021anomalies}, it excels at simulating novel physics due to its adaptable code structure and AMR. The advantage of AMR is that regions needing higher resolution are assigned (and de-assigned) dynamically during run time; this requires no a priori knowledge or pre-determined grid structure unlike other NR codes such as {\sc Lean} \cite{Sperhake:2006cy} or the {\sc Einstein-Toolkit} \cite{loffler2012einstein} \cite{Zilhao:2013hia} \cite{EinsteinToolkit}. AMR is especially useful for matter simulations that can develop features requiring high resolution in unexpected places. {\sc GRChombo} has also successfully simulated ring-like configurations \cite{PhysRevD.99.104028}, \color{orchid} inhomogeneous spacetimes \cite{Aurrekoetxea_2020} and black-hole collisions in higher dimensions\footnote{\color{orchid} In this paper \cite{Andrade:2020dgc} the black-hole collisions form {\it dumbell} shaped horizons that pinch off. \color{black}} \cite{Andrade:2020dgc} which would be difficult to accurately resolve \color{black} with a conventional pre-specified grid structure. 
 
-\subsubsection{Simulation Units}
+\color{choral} I think I am being fair, I claim that AMR is more useful in novel situations (such as Uli and Pau's paper on 6/7 D BH collisions \cite{Andrade:2020dgc}) rather than nice well behaved binaries. \color{black}
+
+\subsection{Simulation Units}\label{grchombo:sec:units}
 
 {\sc GRChombo} defaults to geometric units with $c=G=1$, but the value of Newton's gravitational constant $G$ can be changed if desired. Plancks constant does not arise in vacuum General Relativity, but does appear in the Klein Gordon equation for a scalar field as in section \ref{boson:sec:action}. Following the conventions of section \ref{intro:sec:conventions}, Plancks reduced constant $\hbar$ is also set to unity and Planck units are used. 
 
@@ -289,8 +304,21 @@ Putting everything together, a boson star solution with eigenvalue $\omega_0$ (o
 %   \includegraphics[width=0.8\textwidth]{png/ADM_vs_r99.png}\label{boson:fig:f2}
 % \end{figure}
 
+\color{gren} state that it is the ADM mass calculated at finite radius pretending to be large radius. this is done to see where it levels off or agress with the aspect mass. \color{black}
 
-Figure~\ref{boson:fig:f1} shows the numerically obtained radial profile of a mini boson star ($\Lambda=0$) and an excited mini boson star. Note two mass definitions are plotted; the ADM mass (calculated as a function of finite $r$) and the aspect mass defined in Eq.~(\ref{malaise:eq:aspect_mass_def}). Polytropic fluid star initial data has also been calculated as a preliminary test of the code; they are easier to create as they do not require solving an eigenvalue problem and do not have an asymptotically growing mode. Figure~(\ref{boson:fig:f3}) shows how the ADM mass of boson stars varies with central amplitude $\Phi(0)$ and $r_{99}$, the radius which $\Phi(r_{99}) = \Phi(0)/100$. It should be noted that the mini boson star (with $\Lambda =0$) case agrees with the known maximum mass, the Kaup limit \cite{PhysRev.172.1331} $M_{\rm max} \approx 0.633 {M_{\rm PL}^2}{m^{-1}}$ with the largest mass being $ M_{\rm max} = 0.63299(3) {M_{\rm PL}^2}{m^{-1}} $ corresponding to a central amplitude of $ \sqrt{4\pi G}\Phi(0)_{\rm max} = 0.271(0)~m^{-1}$. 
+Figure~\ref{boson:fig:f1} shows the numerically obtained radial profile of a mini boson star ($\Lambda=0$) and an excited mini boson star. Note two mass definitions are plotted; \color{orchid} the aspect mass defined in Eq.~(\ref{malaise:eq:aspect_mass_def}) and the ADM mass \cite{arnowitt1962dynamics}, defined as
+\begin{equation}
+M_{\rm ADM} := \frac{1}{16\pi}\lim_{r\rightarrow\infty}\oint_{s_r} N^i \gamma^{jk}\left(\partial_j \gamma_{ik} - \partial_i \gamma_{jk} \right) \dd A, 
+\end{equation}
+for radial coordinate $r$, 2-sphere $s_r$ of radius $r$ and unit normal vector $\bs{N}$. For an isotropic, diagonal, spherically-symmetric spatial metric ${\gamma}_{ij}$ with $\gamma_{rr} = \Psi^2(r) $, $\gamma_{\theta\theta}=\Psi^2(r)r^2$ and $\gamma_{\phi\phi}=\Psi^2(r)r^2 \sin^2\theta$ (in polar coordinates) this simplifies to,
+\begin{align}
+M_{\rm ADM} &= \frac{1}{16\pi}\lim_{r\rightarrow\infty}\oint_{s_r} \left(N^r \gamma^{rr}\partial_r \gamma_{rr} - N^r \gamma^{jk}\partial_r \gamma_{jk} \right) \dd A,\\
+&= \frac{1}{16\pi}\lim_{r\rightarrow\infty}\oint_{s_r} N^r \Psi^{-2}\left( \partial_r \Psi^2 -  \delta^{jk}\delta_{jk}\partial_r \Psi^2 \right) \sqrt{\gamma_{\theta\theta} \gamma_{\phi\phi}} \dd \theta \dd \phi,\\
+&= \frac{1}{16\pi}\lim_{r\rightarrow\infty}\int_{\theta=0}^{\theta=\pi}\int_{\phi=0}^{\phi=2\pi} -4 \Psi^{-2}\left(\partial_r \Psi \right) \Psi^2 r^2 \sin^2\theta \dd \theta \dd \phi,\\
+&= \lim_{r\rightarrow\infty} \left(- r^2 \partial_r \Psi\right) ,\\
+\end{align}
+where we used the fact that $\bs{\gamma}(\bs{N},\bs{N})=1$ giving $N^r = (\gamma_{rr})^{-1/2} = \Psi^{-1}$. Note that for a Schwarzschild black hole with $\Psi = \left(1+\frac{M}{2r} \right)^2$ the ADM mass formula returns the expected result of $M$. Even thought the ADM mass is only defined at infinity, a pseudo-AMD mass with $M_{ADM}=-\Psi r^2 \partial_r \Psi$ is plotted  as a function of radius. \color{gren} what do i do about that extra factor of $\Psi$? obviously it doesnt change the end result but it is what it plotted in the code ...
+ \color{black}Polytropic fluid star initial data has also been calculated as a preliminary test of the code; they are easier to create as they do not require solving an eigenvalue problem and do not have an asymptotically growing mode. Figure~(\ref{boson:fig:f3}) shows how the ADM mass of boson stars varies with central amplitude $\Phi(0)$ and $r_{99}$, the radius which $\Phi(r_{99}) = \Phi(0)/100$. It should be noted that the mini boson star (with $\Lambda =0$) case agrees with the known maximum mass, the Kaup limit \cite{PhysRev.172.1331} $M_{\rm max} \approx 0.633 {M_{\rm PL}^2}{m^{-1}}$ with the largest mass being $ M_{\rm max} = 0.63299(3) {M_{\rm PL}^2}{m^{-1}} $ corresponding to a central amplitude of $ \sqrt{4\pi G}\Phi(0)_{\rm max} = 0.271(0)~m^{-1}$. 
 
 
 
@@ -301,14 +329,14 @@ While many different boson stars have been computed to test the initial data cod
 
 \subsection{Single Star Evolution}
 
-As a check that the initial data from section \ref{grchombo:sec:initialdata} is correct, a mini boson star with central density $\Phi(0)=0.02820~m^{-1}$ is evolved in time in three spatial dimensions. The simulation has a physical domain size $L=1024~m^{-1}$ with $N=320$ gridpoints on AMR level zero with grid spacing $\Delta x = 3.2~m^{-1}$. The AMR is allowed up to six extra levels; the finest level (level six) has a grid spacing of $\Delta x = 0.05~m^{-1}$. The star is supposed to remain in the centre of the grid and not change as it is a rest frame soliton; this is observed through evolution with {\sc GRChombo}. Figure (\ref{boson:fig:f5}) shows the global maximum value of $|\vp|$ (left figure) and the total integral of the Noether charge ${N}$ over the grid (right figure). As can be seen, $|\vp|_{\rm max}$ is constant to $\sim 0.7\%$ and $N$ is conserved to the $\sim 0.07\%$ level until time $t=350~m^{-1}$.
+As a check that the initial data from section \ref{grchombo:sec:initialdata} is correct, a mini boson star with central density $\Phi(0)=0.02820~m^{-1}$ is evolved in time in three spatial dimensions. The simulation has a physical domain size $L=1024~m^{-1}$ with $N=320$ gridpoints on AMR level zero with grid spacing $\Delta x = 3.2~m^{-1}$. The AMR is allowed up to six extra levels; the finest level (level six) has a grid spacing of $\Delta x = 0.05~m^{-1}$. The star is supposed to remain in the centre of the grid and not change as it is a rest frame soliton; this is observed through evolution with {\sc GRChombo}. Figure (\ref{boson:fig:f5}) shows the global maximum value of $|\vp|$ (left figure) and the total integral of the Noether charge ${N}$ over the grid (right figure). As can be seen, $|\vp|_{\rm max}$ is constant to $\sim 0.7\%$ and $N$ is conserved to the $\sim 0.07\%$ level until time $t=320~m^{-1}$.
 
   \begin{figure}[h!]
   \caption{Left: Maximum of $|\vp|$ during the evolution, Right: Total integrated Noether charge $N$.}
   \centering
-  \subfloat{\includegraphics[width=0.5\textwidth]{data/star_modphi.pdf}}
+  \subfloat{\includegraphics[width=0.5\textwidth]{data/star_modphi_nicer.pdf}}
   \hfill
-  \subfloat{\includegraphics[width=0.5\textwidth]{data/star_N.pdf}}
+  \subfloat{\includegraphics[width=0.5\textwidth]{data/star_N_nicer.pdf}}
   \label{boson:fig:f5}
 \end{figure}
 
@@ -336,7 +364,7 @@ where the super-scripts ${}^{(1)}$ and ${}^{(2)}$ refer to the separate compact 
 \begin{equation} \alpha = \sqrt{\chi},\end{equation}
 ensuring that the lapse is real and non-negative everywhere on $\Sigma_t$. 
 
-Superposing two solutions in general relativity usually no longer satisfies the Einstein equation; the Hamiltonian constraint Eq.~(\ref{nr:eq:ham}) and momentum constraints Eq.~(\ref{nr:eq:mom}) are violated. For asymptotically flat compact objects, the constraint violation reduces to zero as the object separation tends to infinity. In the case of finite separations, the CCZ4 scheme in section \ref{nr:sec:ccz4} aims to drive the constraint violation towards zero and hence a true solution of Einstein's equation. The collisions of compact objects in section \ref{grchombo:sec:bscollisions} use this naive superposition scheme. Section \ref{mal:sec:improvedsuperposition} explores a technique to improve the naive superposition of compact objects.
+Superposing two solutions in general relativity usually no longer satisfies the Einstein equation; the Hamiltonian constraint Eq.~(\ref{nr:eq:ham}) and momentum constraints Eq.~(\ref{nr:eq:mom}) are violated. For asymptotically flat compact objects, the constraint violation reduces to zero as the object separation tends to infinity. In the case of finite separations, the CCZ4 scheme in section \ref{nr:sec:ccz4} aims to drive the constraint violation towards zero and hence a true solution of Einstein's equation; \color{orchid} in practice, the CCZ4 scheme is more efficient at damping low amplitude, high-frequency violations and will not fully reduce long-wavelength violations \cite{gundlach2005constraint}\color{black}. The collisions of compact objects in section \ref{grchombo:sec:bscollisions} use this naive superposition scheme. Section \ref{mal:sec:improvedsuperposition} explores a technique to improve the naive superposition of compact objects.
 
 
 
@@ -369,16 +397,16 @@ Both a headon collision and a grazing collision of two boson stars are simulated
  \begin{figure}[h!]
   \caption{Left: Maximum of $|\vp|$ during evolution, Right: Total integrated Noether charge $N$.}
   \centering
-  \subfloat{\includegraphics[width=0.5\textwidth]{data/headon_modphi.pdf}}
+  \subfloat{\includegraphics[width=0.5\textwidth]{data/headon_modphi_nicer.pdf}}
   \hfill
-  \subfloat{\includegraphics[width=0.5\textwidth]{data/headon_N.pdf}}
+  \subfloat{\includegraphics[width=0.5\textwidth]{data/headon_N_nicer.pdf}}
   \label{boson:fig:f7}
 \end{figure} 
 
 \begin{figure}[h!]
   \caption{Gravitational wave signal of the headon boson star collision. The $l,m=2,2$ and $l,m=2,0$ spin weighted spherical harmonic modes of the $\Psi_4$ Newman-Penrose scalar are given.}
   \centering
-  \subfloat{\includegraphics[width=0.5\textwidth]{data/headon_weyl22.pdf}}\label{boson:fig:f9}
+  \subfloat{\includegraphics[width=0.5\textwidth]{data/headon_weyl_nicer.pdf}}\label{boson:fig:f9}
 \end{figure}
 
 Figure (\ref{boson:fig:f7}) shows $|\vp|_{\rm max}$, the global maximum value of $|\vp|$, and the total Noether charge $N$ as a function of time for the headon collision. At time $t\approx 289 ~m^{-1}$, $|\vp|_{\rm max}$ rapidly increases and then drops to zero, signalling the collapse to a black hole. At time $t\approx 327~m^{-1}$, there is a temporal maximum in $|\vp|_{\rm max}$ as the resolution limit of the simulation is reached and the scalar field is dissipated by the Kreiss-Oliger dissipation and diverging resolution requirements. This dissipation can also be seen in the Noether charge plot at a time of $t \approx 326~m^{-1}$ where the total charge that should remain constant but begins to fall. The lack of sufficient resolution inside the black hole is however not problematic for the external simulation; the errors accumulated are trapped inside the event horizon. Figure~(\ref{boson:fig:f7}) shows that the total Noether charge rapidly decays to zero at late time as it falls into the black hole and is dissipated. 
@@ -400,9 +428,9 @@ Figure (\ref{boson:fig:f10}) plots $|\vp|_{\rm max}$ and the total Noether charg
  \begin{figure}[h!]
   \caption{Left: Maximum of $|\vp|$ during evolution, Right: Total integrated Noether charge $N$.}
   \centering
-  \subfloat{\includegraphics[width=0.5\textwidth]{data/graze_modphi.pdf}}
+  \subfloat{\includegraphics[width=0.5\textwidth]{data/graze_modphi_nicer.pdf}}
   \hfill
-  \subfloat{\includegraphics[width=0.5\textwidth]{data/graze_N.pdf}}
+  \subfloat{\includegraphics[width=0.5\textwidth]{data/graze_N_nicer.pdf}}
   \label{boson:fig:f10}
 \end{figure} 
 
@@ -418,14 +446,14 @@ Figure (\ref{boson:fig:f10}) plots $|\vp|_{\rm max}$ and the total Noether charg
 \begin{figure}[h!]
   \caption{Gravitational wave signal of the grazing boson star collision. The $l,m=2,2$ and $l,m=2,0$ modes of the $\Psi_4$ Newman-Penrose scalar are given.}
   \centering
-  \subfloat{\includegraphics[width=0.5\textwidth]{data/graze_weyl22.pdf}}
+  \subfloat{\includegraphics[width=0.5\textwidth]{data/graze_weyl_nicer.pdf}}
   \label{boson:fig:f12}
 \end{figure}
 
  \begin{figure}[h!] 
 \caption{Left: Comparison of late time Noether charge $N$ between headon collision and grazing collision of two boson stars. Right: Late time plot of the Noether charge of the grazing collision only.}
-\subfloat{\includegraphics[width=0.45\textwidth]{data/late_time_N.pdf}}
-\subfloat{\includegraphics[width=0.45\textwidth]{data/noether_zoom.pdf}}
+\subfloat{\includegraphics[width=0.45\textwidth]{data/late_time_N_nicer.pdf}}
+\subfloat{\includegraphics[width=0.45\textwidth]{data/noether_zoom_nicer.pdf}}
 \label{boson:fig:fff}
 \end{figure} 
 

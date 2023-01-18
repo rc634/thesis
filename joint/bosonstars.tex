@@ -8,11 +8,11 @@
 
 \section{Mathematical Modelling of Boson Stars}
 \subsection{The Action} \label{boson:sec:action}
-The Boson Stars considered are a complex Klein Gordon Scalar field, $\varphi$, minimally coupled to gravity. The action is the Einstein-Hilbert vacuum action plus the matter action for curved space,
+The Boson Stars considered \color{orchid} consist of a \color{black} complex Klein Gordon Scalar field, $\varphi$, minimally coupled to gravity. The action is the Einstein-Hilbert vacuum action plus the matter action for curved space,
 \begin{gather} S = \int_\mathcal{M}\left[\mathcal{L}_{EH} + \mathcal{L}_M\right] \sqrt{-g}\,\dd x^4, \\
  \L_{EH} = \frac{c^4}{16\pi G}R, \\
  \L_{M} =-\frac{1}{2}g^{\mu\nu}\nabla_\mu \bar{\varphi} \nabla_\nu \varphi - \frac{1}{2}V(|\varphi|^2),  \end{gather}
-Here $V$ is the Klein-Gordon potential and it's effect on boson stars is discussed in \cite{Schunck:2003kk} \cite{Liebling:2012fv}. Some common choices of potentials are,
+Here $V$ is the Klein-Gordon potential and its effect on boson stars is discussed in \cite{Schunck:2003kk} \cite{Liebling:2012fv}. Some common choices of potentials are,
 \begin{align}
 V_{\rm mini} &= \frac{m^2 c^2}{\hbar^2 }|\vp|^2,\label{boson:eq:Vmini} \\
 V_{\rm int} &= \frac{m^2 c^2}{\hbar^2 }|\vp|^2 + \frac{1}{2}\Lambda_4|\vp|^4 ,\\
@@ -33,12 +33,12 @@ T_{\mu\nu} &= \frac{1}{2}\nabla_{\mu}\bar{\varphi}\nabla_{\nu}\varphi+\frac{1}{2
 \subsubsection{Comparison of Boson Stars to Neutron Stars}
 Boson stars differ greatly to neutron stars; studying neutron stars requires the fermionic, or ordinary fluid, stress tensor $\bs{T}_F$; 
 \begin{equation} T^{\mu\nu}_F = \left[\rho c^2+ {P} \right]\frac{u^\mu u^\nu}{c^2} + P g^{\mu\nu} + 2u^{(\mu}q^{\nu)}+\pi^{\mu\nu}+ ...\,\,.\end{equation} 
-The continuity equation from Eq.~(\ref{intro:eq:cont}), $\nabla_\nu T^{\mu\nu}=0 $, returns the highly nonlinear relativistic Navier-Stokes equations of curved space. The viscosity term $\pi^{\mu\nu}$ and heat flux $q^\mu$ are often omitted for simplicity. The remaining variables $\rho$, $P$ and $u^\mu$ are the fluid density, pressure and worldline tangent. Just as in flat space, the Navier-Stokes equations can develop shockwaves and the use of sophisticated shock capturing schemes is required, unlike the linear Klein-Gordon equation which is linear in the principal part.
+The continuity equation from Eq.~(\ref{intro:eq:cont}), $\nabla_\nu T^{\mu\nu}=0 $, returns the highly nonlinear relativistic Navier-Stokes equations of curved space. The viscosity term $\pi^{\mu\nu}$ and heat flux $q^\mu$ are often omitted for simplicity. The remaining variables $\rho$, $P$ and $u^\mu$ are the fluid density, pressure and worldline tangent. Just as in flat space, the Navier-Stokes equations can develop shockwaves and the use of sophisticated shock capturing schemes is required, unlike the linear Klein-Gordon equation which is linear in the principal part. \color{gren} of course the lienar KG eqn can still blow up - i need to find a way of explaining how scalar fields are easier to simulate \color{black}
 
 
 \subsection{Solitons} \label{boson:sec:soliton}
 A soliton is a wave packet that exhibits particle-like behaviour. More precisely, in classical field theory, a soliton
-is a field or set of fields in a localised configuration that travels at constant speed without dispersing. This is a property of solutions to the linear wave equation but many solitonic solutions exist for non-linear differential equations as well. For
+is a field or set of fields in a localised configuration that travels at constant speed \color{orchid} while maintaining its shape \color{black}. This is a property of solutions to the linear wave equation but many solitonic solutions exist for non-linear differential equations as well. For
 our purposes, we look for solitons in the Einstein-Klein-Gordon (EKG) system which are self gravitating
 localised scalar field and metric configurations. In the case of the real scalar field it was shown that
 there are no long lived solitons \cite{diez2013no}; however promoting the field to a complex scalar we can find a spherically
@@ -49,7 +49,7 @@ Traditionally, the polar areal gauge has been used for the metric's ansatz,
 \begin{equation}g_{\mu\nu}\dd x^\mu \dd x^\nu =- a^2(r)\dd t^2 + b^2(r) \dd r^2 + r^2 \left[ \dd \theta^2 + \sin^2\theta \dd \phi^2\right],\label{boson:eq:polaransatz}\end{equation}
 where the boundary condition $b^2(0)=1$ is demanded to avoid a conical singularity at the origin. However an isotropic gauge is more useful for simulations due to easier conversion to Cartesian space-coordinates, for more information on isotropic coordinates see section \ref{intro:sec:bh_theory}. The polar areal solution must then be transformed into an isotropic solution. Alternatively, the approach taken in this report, is to start with an isotropic ansatz,
 \begin{equation} g_{\mu\nu}\dd x^\mu \dd x^\nu =- \Omega^2(r)\dd t^2 + \Psi^2(r)\dd \bm{x}^2,\label{boson:eq:metricansatz}\end{equation}
-where $\dd \bm{x}^2$ denotes the euclidean 3D line element; this changes between spherical polar or Cartesian coordinates trivially. This ends up being slightly harder to solve for numerically, but no conversion to isotropic coordinates is needed afterwards.
+where $\dd \bm{x}^2$ denotes the euclidean 3D line element; this changes between spherical polar or Cartesian coordinates trivially. This ends up being slightly harder to solve for numerically, but no conversion to isotropic coordinates is needed afterwards. \color{orchid} The conformal gauge also lends itslef better to constraint solving schemes. \color{black}
 
 To get a set of ODEs to solve for the functions $\{\Omega(r), \Psi(r),\Phi(r)\}$ we must turn to the Einstein equation and Klein Gordon equation. The Einstein equations for $\{\mu,\nu\}=\{0,0\},\{1,1\},\{2,2\}$ are the only components that give unique non-zero equations in spherical symmetry; they are,
 \begin{gather}
@@ -112,10 +112,10 @@ The Noether charge of the complex scalar field is associated with the following 
 \vp \rightarrow \vp e^{i\epsilon} &\approx \vp + i\epsilon \vp , \\ 
 \quad\bar{\vp} \rightarrow \bar{\vp} e^{-i\epsilon}  &\approx \bar{\vp} - i\epsilon \bar{\vp},
 \end{align}
-which leaves the Lagrangian unchanged and therefore the total action. The associated conserved current $j$ and current density $\mathcal{J}$ are then,
+which leaves the Lagrangian unchanged and therefore the total action. The associated conserved current $\bs{j}$ is then,
 \begin{align} 
 j^\mu &= \frac{\delta \L}{\delta \nabla_\mu\vp}\delta \vp + \frac{\delta \L}{\delta \nabla_\mu \bar{\vp}}\delta \bar{\vp},\\
- j^\mu &=  ig^{\mu\nu}\left[\vp\nabla_\nu\bar{\vp} - \bar{\vp}\nabla_\nu\vp\right],
+ &=  ig^{\mu\nu}\left[\vp\nabla_\nu\bar{\vp} - \bar{\vp}\nabla_\nu\vp\right],
   \end{align}
   where the current satisfies the conservation equation,
 \begin{align}
@@ -136,11 +136,11 @@ is also true and even in curved space the current $\bs{\mathcal{J}}$ obeys a con
   \int^{t_1}_{t_0}\left[\int_{\Sigma_t} \partial_0 \mathcal{J}^0 \dd x^3 \right]\dd t &= -\int^{t_1}_{t_0}\left[\int_{\partial \Sigma_t} \hat{s}_i \mathcal{J}^i \dd x^2 \right]\dd t , \\
 \int^{t_1}_{t_0}\left[\int_{\Sigma_t} \partial_0 \mathcal{J}^0 \dd x^3 \right]\dd t &= 0 \label{boson:eq:halfwaypointQ} ,
 \end{align}
-where the flat space divergence theorem was used and $\hat{\bs{s}}$ is the flat space normal to $\partial \Sigma_t$, the boundary of $\Sigma_t$. The term containing $\hat{s}_i\mathcal{J}^i$ integrates to zero over $\partial \Sigma_t$ due to $\mathcal{J}$ vanishing on $\partial \Sigma_t$. The $\mathcal{J}^0$ term can be simplified by permuting the time derivative using,
+where the flat space divergence theorem was used and $\hat{\bs{s}}$ is the flat space normal to $\partial \Sigma_t$, the boundary of $\Sigma_t$. The term containing $\hat{s}_i\mathcal{J}^i$ integrates to zero over $\partial \Sigma_t$ due to $\bs{\mathcal{J}}$ vanishing on $\partial \Sigma_t$. The $\mathcal{J}^0$ term can be simplified by permuting the time derivative using,
 \begin{equation} 
 \partial_0 \int_{\Sigma_t}\mathcal{J}^0 \dd x^3 = \int_{\Sigma_t}\partial_0 \mathcal{J}^0 \dd x^3 + \lim_{\Delta x^0\rightarrow0}\left[ \frac{1}{\Delta x^0}\int_{\Delta \Sigma_t}\left[ \mathcal{J}^0 +\Delta x^0 \partial_0 \mathcal{J}^0\right] \dd x^3 \right],
 \end{equation}
-where the last term vanishes as $\mathcal{J}$ vanishes on $\Delta \Sigma_t$ near $\partial\Sigma$, and Eq.~(\ref{boson:eq:halfwaypointQ}) becomes,
+where the last term vanishes as $\bs{\mathcal{J}}$ vanishes on $\Delta \Sigma_t$ near $\partial\Sigma$, and Eq.~(\ref{boson:eq:halfwaypointQ}) becomes,
 \begin{equation} 
 \int^{t_1}_{t_0}\left[\partial_0 \int_{\Sigma_t} \mathcal{J}^0 \dd x^3 \right]\dd t = 0,
 \end{equation} 
@@ -169,6 +169,8 @@ Equivalently, the Noether charge density $\mathcal{N}$ is ,
 \end{equation}
 
 The ideas of this section concerning conserved charges are extended in chapter \ref{q:sec:q} with applications to continuity equations in energy, momentum, angular momentum and Noether charges for spin-1 Proca fields. The results of this section have all been derived for an infinite volume where only a charge density $\mathcal{Q}$ needs be considered. Chapter \ref{q:sec:q} considers continuity equations in a finite volume $V$ so must also consider the flux density $\mathcal{F}$ of conserved particles through $\partial V$ (the boundary of $V$) and the source density $\mathcal{S}$ (creation and destruction of $\mathcal{Q}$) in $V$. 
+
+\color{choral} I'm a bit confused what you mean here? As far as i understood control theory was about inverting differential equations / picking a correct forcing term or BC's or IC's to achive a desired solution? \color{black}
 
 \subsection{Boosted Boson Stars and Black Holes}\label{boson:sec:boost}
 Let us now consider a moving star, this corresponds to boosting a stationary soliton solution. There is no unique way of doing this as any coordinate transformation that reduces to a Minkowski spacetime boost at large radius is valid. All the degrees of freedom we have can be absorbed into a coordinate gauge choice so it makes sense to choose the trivial, constant valued boost, with rapidity $\chi = \mathrm{arctanh} (v)$ for a velocity $v$, from Special Relativity. Using Cartesian coordinates, the boost matrix $\bs{\Lambda}$ for a boost in the $x$ direction is,
@@ -251,6 +253,8 @@ The boost formalism described here can be applied to a Black Hole spacetime by s
  \Psi &= \left[1+\frac{M}{2r}\right]^2,
  \end{align}
  corresponding to the isotropic Schwarzschild black hole given in section \ref{intro:sec:bh_theory}.
+
+ \color{choral} are you talking about this paper? https://arxiv.org/pdf/1909.06135.pdf \color{black}
  
 
 %  \newpage

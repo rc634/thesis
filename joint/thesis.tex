@@ -62,6 +62,9 @@
 
 
 \definecolor{purple}{RGB}{38,0,75}
+\definecolor{orchid}{RGB}{138,100,195}
+\definecolor{choral}{RGB}{236,99,89}
+\definecolor{gren}{RGB}{0,200,0}
 \pagecolor{white}
 \color{black}
 
@@ -113,7 +116,7 @@ General relativity (GR), published in 1915 by Albert Einstein, is the modern des
 
 This thesis is concerned with the modelling of collisions of compact objects using numerical relativity (NR) and developing diagnostics for these simulations. The code used for the simulations is GRChombo, a modern NR code with adaptive mesh refinement (AMR) that supports both the BSSN and CCZ4 formulations. The compact objects modelled are black holes and boson stars. 
 
-Boson stars are a self gravitating complex scalar field configuration governed by the Klein Gordon equation in curved space. These are stars composed of spin zero boson particles rather than atoms like regular fermionic star. Boson stars are interesting for a number of reasons, one being that scalar fields exist in nature and may condense to star-like objects called boson stars. Collisions of these boson stars emit gravitational waves that are detectable at LIGO and other gravitational wave detectors. Boson stars are also a candidate for dark matter clusters permeating galaxies.
+Boson stars are a {\color{orchid} theoretical} self gravitating complex scalar field configuration governed by the Klein Gordon equation in curved space. These are stars composed of spin zero boson particles rather than atoms like regular fermionic stars. \color{choral} Can I just remove this strong statement? \color{black} Collisions of these boson stars emit gravitational waves that are detectable at LIGO and other gravitational wave detectors. Boson stars are also a candidate for dark matter clusters permeating galaxies.
 
 In order to collide compact objects one must superpose the initial data for two objects; this generally is not valid in GR and violates the Einstein Equation. While the initial data for black hole binaries is well known, the initial data for two boson stars is not. The plain superposition of two boson star solutions causes significant artefacts in simulations and an important part of this thesis is the exploration of improvements to naive superposition methods. 
 
@@ -199,6 +202,11 @@ Mass Ratios}
 
 
 \include{bhkick}
+
+\color{orchid}
+\chapter{Conclusions and Bibliography}
+\include{conc}
+\color{black}
 
 % \newpage {STUFF TO DO}
 
