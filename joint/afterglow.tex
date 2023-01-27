@@ -49,20 +49,20 @@ the long-lived post-merger GW emission or {\it afterglow} resulting
 from the merger of two BSs into a single compact but horizon-free
 remnant (see \ref{ag:fig:GW_signal}).
 First indications of such an afterglow were noted in Ref.~\cite{Helfer:2018vtq} in the case of a head-on collision resulting in a highly perturbed BS. Here, we demonstrate that this afterglow can be very long lived, with barely any decay in amplitude following a transient burst during the merger phase itself. The characteristics of this post-merger afterglow contrast sharply with the corresponding GW signatures of most BH or NS mergers, which, if
-resulting in BH formation, are dominated by the exponential quasi-normal ringdown. 
+resulting in BH formation, are dominated by the exponential quasi-normal ringdown.
 
 
 
 We illustrate and explore in detail the gravitational afterglow
-of BSs for the case of the inspiral and merger 
+of BSs for the case of the inspiral and merger
 of two equal-mass BSs in a collision with a non-zero impact parameter. For the moderate compactness of the initial binary constituents chosen in our simulations, the final state of the collision
-is a highly perturbed BS with decreasing spin. Crucially, this spin-down occurs on a time scale {\it much longer} than a single GW oscillation time period.  The associated long-lived GW afterglow may exhibit information about the post-merger dynamics of such systems. In particular, we find an intriguing correlation between the phases of different GW multipoles and the dynamical spin amplitude. 
+is a highly perturbed BS with decreasing spin. Crucially, this spin-down occurs on a time scale {\it much longer} than a single GW oscillation time period.  The associated long-lived GW afterglow may exhibit information about the post-merger dynamics of such systems. In particular, we find an intriguing correlation between the phases of different GW multipoles and the dynamical spin amplitude.
 
 
 
 The results of this work suggest that using standard merger templates consisting mostly of the inspiral and merger contributions may be insufficient to capture fundamental dynamics of a boson-star merger event. Rather, comprehensive BS searches likely require extended waveform templates which also capture the rich post-merger GW afterglow phenomenology.
 
-In \ref{ag:section:inital_data} we 
+In \ref{ag:section:inital_data} we
 briefly summarize our computational framework, list the parameters
 of our initial configurations and the grid setups employed in their
 time evolution, and introduce the diagnostics specific
@@ -93,7 +93,7 @@ Sec.~\ref{ag:sec:methods} and Sec.~\ref{ag:sec:numacc}.
 
 
 
-\subsection{Simulation Setup}\label{ag:section:inital_data} 
+\subsection{Simulation Setup}\label{ag:section:inital_data}
 
 Throughout this work, we model BSs as a complex scalar field
 minimally coupled to the gravitational sector of a Lorentzian
@@ -110,7 +110,7 @@ matter term for a complex scalar field, as in section \ref{boson:sec:action},
     V(\varphi) = m^2 \bar{\varphi} \varphi;
 \end{equation}
  this choice of potential results in BS solutions that are referred to as {\it mini-boson stars}
-\cite{ Kaup:1968zz,Gleiser:1988rq,Jetzer:1988vr}. 
+\cite{ Kaup:1968zz,Gleiser:1988rq,Jetzer:1988vr}.
 
 
 
@@ -163,15 +163,15 @@ consequence of any fine tuning of initial data.
     \centering
     \begin{tabular}{ c  c  c  c  c  c  c  c  c}
      \hline \\[-10pt]
-      & Run & $N$      & $d_{\text{init}}~[m^{-1}]$   & $b~[m^{-1}]$  & $v_x$ &  $M~[{M_{\rm pl}}^2~m^{-1}]$  \\[3pt] 
+      & Run & $N$      & $d_{\text{init}}~[m^{-1}]$   & $b~[m^{-1}]$  & $v_x$ &  $M~[{M_{\rm pl}}^2~m^{-1}]$  \\[3pt]
      \hline \\[-10pt]
-     low &  1    & 256 & 80 & 8  & 0.1 & 0.395(0) \\ 
-     medium &  2   & 320 & 80 & 8 & 0.1 & 0.395(0) \\ 
-     high &  3    & 384 & 80 & 8 & 0.1 &  0.395(0)\\ 
-     ultra-high &  4    & 448 & 80 & 8 & 0.1 &  0.395(0) \\[2pt] 
+     low &  1    & 256 & 80 & 8  & 0.1 & 0.395(0) \\
+     medium &  2   & 320 & 80 & 8 & 0.1 & 0.395(0) \\
+     high &  3    & 384 & 80 & 8 & 0.1 &  0.395(0)\\
+     ultra-high &  4    & 448 & 80 & 8 & 0.1 &  0.395(0) \\[2pt]
      \hline
     \end{tabular}
-    \caption{{\bf Overview} of the simulations. Here, $M$ is the individual mass of each boson star, $v_x$ the initial velocity, $b$ the impact parameter, $d_{\rm init}$ the initial distance in the $x$ direction, $b$ the vertical offset or {\it impact parameter} and $N$ is the number of cells on the coarsest AMR Level (which sets the resolution of the respective runs). We allow for seven extra refinement levels. } 
+    \caption{{\bf Overview} of the simulations. Here, $M$ is the individual mass of each boson star, $v_x$ the initial velocity, $b$ the impact parameter, $d_{\rm init}$ the initial distance in the $x$ direction, $b$ the vertical offset or {\it impact parameter} and $N$ is the number of cells on the coarsest AMR Level (which sets the resolution of the respective runs). We allow for seven extra refinement levels. }
     \label{ag:tab:Overview Runs}
 \end{table}
 
@@ -183,13 +183,13 @@ whose implementation in {\sc GRChombo} is described in detail in
 Ref.~\cite{Radia:2021smk}, we compute in our simulations
 two diagnostic quantities specific to the BS systems under study.
 
-First, we introduce the mass measure 
+First, we introduce the mass measure
  \begin{equation}
     M = \int_{\Omega} \rho \sqrt{\gamma} dV~,\label{ag:eqn:Massmeasure}
 \end{equation}
 where $\rho = T_{\mu\nu}n^{\mu}n^{\nu}$ is the energy density as measured
 by observers moving along the normal vector $n^\mu$ to the
-spatial hypersurfaces. 
+spatial hypersurfaces.
 The second
 is a time dependent
 measure $\tilde{L}$, defined in Eq.~(\ref{ag:eqn:DefAngMom}),
@@ -238,7 +238,7 @@ Refs.~\cite{Palenzuela:2017kcg,Bezares:2018qwa}.
     momentum $\tilde{L}$ (see definition in  \ref{ag:eqn:DefAngMom}) inside a coordinate sphere of radius $60~m^{-1}$ as a function of time. We compute
     $\tilde{L}$ in two ways, (i) via integrating the outgoing flux -- solid lines (see \ref{ag:eqn:DefAngMomFlux}) -- and (ii) as a volume-integral --
     dotted lines. This was plotted using run 2 of Table~\ref{ag:tab:Overview
-    Runs}}
+    Runs}.}
 \label{ag:fig:AngMom}
 \end{center}
 \end{figure*}
@@ -302,9 +302,9 @@ Second, the oscillations occur on a much shorter time scale.
 \begin{figure}[h!]
 \begin{center}
     {\includegraphics[width=0.7\columnwidth]{ag_fig/mass_over_time.pdf}}
-    \caption{{\bf The estimated mass} using \ref{ag:eqn:Massmeasure} 
-    contained inside a box $\Omega$ with side length $40~m^{-1}$ as computed for the ``medium'' 
-    resolution run 2 of Table \ref{ag:tab:Overview Runs}. 
+    \caption{{\bf The estimated mass} using \ref{ag:eqn:Massmeasure}
+    contained inside a box $\Omega$ with side length $40~m^{-1}$ as computed for the ``medium''
+    resolution run 2 of Table \ref{ag:tab:Overview Runs}.
     Since the BSs are
     not initially inside this box, the mass at $t = 0$ is close to zero. The small fluctuations after merger
    are due to the gauge-dependence of the measure.
@@ -360,7 +360,7 @@ cf.~also Fig.~\ref{ag:fig:Convergence} below.
 
 
 The afterglow signal (without the prodigious merger burst)
-is also shown in Fig.~\ref{ag:fig:Fourier} together with 
+is also shown in Fig.~\ref{ag:fig:Fourier} together with
 its Fourier spectrum. The frequency spectrum demonstrates
 contributions on many time scales, but also reveals a
 narrow dominant peak at $f_{\rm dom}\approx
@@ -399,7 +399,7 @@ first order.
     of $r\Psi_4$}: We perform a Fourier
     transformation of the tail of the gravitational wave signal of Run 2 in Table~\ref{ag:tab:Overview Runs}.
     We find excellent agreement between the displayed
-    spectrum for the $(2,0)$ mode and the corresponding Fourier transform of the $(2,2)$ mode; in particular, both yield the same peak frequency. 
+    spectrum for the $(2,0)$ mode and the corresponding Fourier transform of the $(2,2)$ mode; in particular, both yield the same peak frequency.
     }
 \label{ag:fig:Fourier}
 \end{center}
@@ -409,13 +409,13 @@ first order.
 \begin{figure}[h!]
 \begin{center}
 {\includegraphics[width=0.6\columnwidth]{ag_fig/Energy_Power.pdf}}
-\caption{{\bf Radiated GW energy over time}: We calculate the energy and power radiated in gravitational waves from Run 2 of Table~\ref{ag:tab:Overview Runs}. 
+\caption{{\bf Radiated GW energy over time}: We calculate the energy and power radiated in gravitational waves from Run 2 of Table~\ref{ag:tab:Overview Runs}.
 We observe no significant reduction in the GW radiation over the simulation time, allowing us to estimate a lower bound on the half-life of the signal.
     }
 \label{ag:fig:EnergyPower}
 \end{center}
 \end{figure}
- 
+
 
 
 
@@ -428,15 +428,15 @@ at $t\approx 15\,000~m^{-1}$, the radiated energy computed
 according to Eq.~(\ref{ag:eq:GWpower}) including
 infall and merger has reached
 $(0.04 \pm 0.0014)~\% $ of the initial mass,
-corresponding to an average rate of $2.5 \times 10^{-8} M_{\rm init}~m$ (see dotted line in \ref{ag:fig:EnergyPower}). 
+corresponding to an average rate of $2.5 \times 10^{-8} M_{\rm init}~m$ (see dotted line in \ref{ag:fig:EnergyPower}).
 The radiated energy and power are shown
 as functions of time in Fig.~\ref{ag:fig:EnergyPower}
 and clearly show an approximately linear increase in
-$E_{\rm GW}$ during the afterglow phase. 
+$E_{\rm GW}$ during the afterglow phase.
 This significant amount of post-merger GW emission in itself is a
 striking signature of exotic binary merger progenitors
-that distinguishes them from BH binaries devoid 
-of significant post-merger radiation beyond the quasi-normal ringdown. 
+that distinguishes them from BH binaries devoid
+of significant post-merger radiation beyond the quasi-normal ringdown.
 By using windowing of the GW signal, we find that the rate of radiation in the afterglow (excluding the merger peak) decreases by about $20 \%$ over the course of the simulation.
 Note that the decay in GWs is much more protracted than the drop in the angular momentum displayed in Fig.~\ref{ag:fig:AngMom}.
 Clearly, the system loses angular momentum much more rapidly
@@ -515,7 +515,7 @@ Fig.~\ref{ag:fig:GW_signal}), coinciding
 exactly with the time during which the angular momentum
 drops to a negligible level.
 We tentatively conclude that through this synchronization,
-the GW afterglow carries important information about the remnant's dynamical evolution. 
+the GW afterglow carries important information about the remnant's dynamical evolution.
 
 Given the extraordinary length of the afterglow signal, one
 would expect the radiation from numerous BS merger events
@@ -528,7 +528,7 @@ phenomenology will be required to relate theoretical
 estimates of the GW background to hypothesized BS populations.
 We reiterate, however, that nothing about our BS configurations
 has been fine-tuned, so that we expect the afterglow to be a
-rather generic feature of BS coalescences as long as these do 
+rather generic feature of BS coalescences as long as these do
 not promptly form a black hole.
 
 
@@ -583,7 +583,7 @@ not promptly form a black hole.
 % -\nabla_\mu \nabla^\mu\varphi+\frac{\partial V(\varphi)}{\partial \vert{\varphi}\vert^2}\varphi=0~.
 % \end{equation}
 % We implement this equation as a first-order system in
-% terms of the CCZ4 variables in the form 
+% terms of the CCZ4 variables in the form
 % \begin{align}
 % &\partial_t \varphi = -\alpha \Pi +\beta^i\partial_i \varphi  ~ , \\
 % \begin{split} &\partial_t \Pi = \beta^i \partial_i \Pi - \chi \tilde{\gamma}^{ij}\partial_i \varphi \partial_j \alpha + \alpha\bigg( K\Pi + \frac{\partial V(\varphi)}{\partial \vert \varphi \vert^2}\varphi  \\
@@ -599,9 +599,9 @@ not promptly form a black hole.
 % &\rho = n_\mu \,n_\nu\,T^{\mu \nu}\,,\quad S_i = -\gamma_{i\mu }\,n_\nu\,T^{\mu \nu}\,, \nonumber \\
 % &S_{ij} = \gamma_{i\mu }\,\gamma_{j\nu}\,T^{\mu \nu}\,,\quad S = \gamma^{ij}\,S_{ij} ~,
 % \end{align}
-% are  
+% are
 % \begin{align} \label{ag:eq:Mattereqns}
-% &\rho = \frac{1}{2}\Pi  \bar{\Pi} + \frac{1}{2} \partial_{i} \varphi \partial^{i} \bar{\varphi} +\frac{1}{2}V(\varphi)~, \\ 
+% &\rho = \frac{1}{2}\Pi  \bar{\Pi} + \frac{1}{2} \partial_{i} \varphi \partial^{i} \bar{\varphi} +\frac{1}{2}V(\varphi)~, \\
 % &S_i  = \frac{1}{2}\left(\bar{\Pi} \partial_{i} \varphi + {\Pi} \partial_{i} \bar{\varphi} \right)  ~,
 % \label{ag:eq:Si} \\
 % &S_{ij} = \partial_{(i} \varphi \partial_{j)} \bar{\varphi}  -  \frac{1}{2} \gamma_{ij}\left( \partial_{k} \varphi \partial^{k} \bar{\varphi}-\Pi  \bar{\Pi} + V(\varphi)\right) ~.
@@ -616,12 +616,12 @@ not promptly form a black hole.
 
 
 
-\subsection{Angular momentum measure}\label{ag:sec:methods}
+\subsection{Angular Momentum Measure}\label{ag:sec:methods}
 
 \begin{figure*}[h!]
 \begin{center}
     {\includegraphics[width=0.75\columnwidth]{ag_fig/FigureRobinPaper.png}}
-\caption{{\bf Schematic representation of the angular momentum measure}: We illustrate the origin of the different quantities 
+\caption{{\bf Schematic representation of the angular momentum measure}: We illustrate the origin of the different quantities
 appearing in the conservation equation
 (\ref{ag:eqn:conserved_ang}): The angular momentum
     ${L}$, the {angular momentum flux} $F$ and the
@@ -652,12 +652,12 @@ We next define the angular angular momentum
     \mathbin{{L = \int_{\Sigma} \mathcal{Q} \sqrt{\gamma}\,
     \dd^3x}}\,,
 \end{equation}
-with the volume element $\sqrt{\gamma}$ on the spatial hypersurface $\Sigma$, which in our case is a sphere of finite radius, and 
-\begin{align}   
-    \mathcal{Q} = -S_\phi, 
+with the volume element $\sqrt{\gamma}$ on the spatial hypersurface $\Sigma$, which in our case is a sphere of finite radius, and
+\begin{align}
+    \mathcal{Q} = -S_\phi,
 \end{align}
 where $S_\phi = S_i (\partial_\phi)^i$ is the azimuthal component of
-the mixed space-time projection $S_i$ given by Eq.~(\ref{ag:eq:Si}). 
+the mixed space-time projection $S_i$ given by Eq.~(\ref{ag:eq:Si}).
 We also integrate the angular momentum flux density $\mathcal{F}$ through
 $\partial \Sigma$, to get the total angular momentum flux
 \begin{equation}
@@ -677,7 +677,7 @@ boundary, i.e.
     \partial_t {L} = {F}.
 \end{equation}
 However, in general dynamical spacetimes, we do not have such
-a Killing vector and angular momentum is not conserved in this simple manner. 
+a Killing vector and angular momentum is not conserved in this simple manner.
 Instead, we obtain a further term representing curvature contributions on the right-hand side of Eq.~(\ref{ag:eq:traditional_conservation})
 which effectively acts as a further source or sink of momentum for the matter \cite{Croft:2022gks,Clough:2021qlv}. This term is given by
 \begin{equation}
@@ -696,7 +696,7 @@ We can thus generalize \ref{ag:eq:traditional_conservation} to the exact conserv
     \partial_t\mathbin{{L}} +\,
     \mathbin{{\Delta}} =
     \mathbin{F}~;\label{ag:eqn:conserved_ang}
-\end{equation} 
+\end{equation}
 a schematic overview of the different contributions to this balance
 law is shown in Fig.~\ref{ag:fig:AngMomTrick}. In the flat-space limit $\gamma_{ij}
 \rightarrow \delta_{ij}$, so that
@@ -705,11 +705,11 @@ symmetry of flat spacetime.
 
 In our simulations we introduce the adjusted angular momentum
 defined as
-%track $\tilde{L}$, which starts at time $t_0$ given by 
+%track $\tilde{L}$, which starts at time $t_0$ given by
 \begin{equation}
  \tilde{L} = {L}+\int_{0}^t {\Delta} \,\dd t, \label{ag:eqn:DefAngMom}~,
 \end{equation}
-which obeys the equation 
+which obeys the equation
 \begin{equation}
 \label{ag:eq:modified conservation}\partial_t\tilde{L} = {F}.
 \end{equation}
@@ -731,10 +731,10 @@ Its calculation does therefore not require extrapolation
 to infinity (as is needed, for example, for the calculation
 of the GW signal) nor even asymptotic flatness of the underlying spacetime.
 However, to relate it to a more physical measure, such as the ADM angular momentum of the spacetime, we do require such conditions.
-Also note that for matter fields decaying to zero on the surface of $\Sigma$ the quantity $\tilde{L}$ (but not $L$) is constant in time for a general spacetime. 
+Also note that for matter fields decaying to zero on the surface of $\Sigma$ the quantity $\tilde{L}$ (but not $L$) is constant in time for a general spacetime.
 
 In practice, we monitor the conservation of $\tilde{L}$ as follows.
-We calculate our angular momentum measure by integrating (i) the angular momentum (see \ref{ag:eqn:DefAngMom}), and (ii) integrating the flux $F$ (see \ref{ag:eqn:DefAngMomFlux}) over time; we set the integration constant equal to ${L}(t=0)$. Having thus obtained two measures for the same quantity allows us to estimate the uncertainty by taking the difference between the two; see \ref{ag:fig:ViolCons} for the evolution of the error. 
+We calculate our angular momentum measure by integrating (i) the angular momentum (see \ref{ag:eqn:DefAngMom}), and (ii) integrating the flux $F$ (see \ref{ag:eqn:DefAngMomFlux}) over time; we set the integration constant equal to ${L}(t=0)$. Having thus obtained two measures for the same quantity allows us to estimate the uncertainty by taking the difference between the two; see \ref{ag:fig:ViolCons} for the evolution of the error.
 Using the final value of $\tilde{L}$ obtained for Run 2
 (see Table \ref{ag:tab:Overview Runs}) inside the volume of
 a coordinate sphere of coordinate radius $60~m^{-1}$, we estimate the final spin
@@ -743,17 +743,17 @@ of the merged BS as $0.0321 \pm 0.0007~{M_{\rm pl}}^2 m^{-2}$.
 \subsection{Numerical Accuracy}
 \label{ag:sec:numacc}
 
-To assess the accuracy of our results we have performed simulations with four different resolution given, in terms of the number of points in each direction on the coarsest level, by $N = \{256,320,384,448\}$, all for a box width 
+To assess the accuracy of our results we have performed simulations with four different resolution given, in terms of the number of points in each direction on the coarsest level, by $N = \{256,320,384,448\}$, all for a box width
 of $1024~m^{-1}$. As demonstrated in Fig.~\ref{ag:fig:Convergence}, the individual wave signals obtained for this range of resolution are
 in excellent agreement.
-More quantitatively, we observe convergence at about 1st order convergence using the four resolutions for the $\ell = 2~m=2$ mode of $r\Psi_4$. Additionally, we estimate the discretization and error from the finite extraction region in $r\Psi_4$ and we find that the latter dominates, causing a $\sim 7\%$ error. 
+More quantitatively, we observe convergence at about 1st order convergence using the four resolutions for the $\ell = 2~m=2$ mode of $r\Psi_4$. Additionally, we estimate the discretization and error from the finite extraction region in $r\Psi_4$ and we find that the latter dominates, causing a $\sim 7\%$ error.
 
 
 \begin{figure}[h!]
 \begin{center}
 {\includegraphics[width=0.7\columnwidth]{ag_fig/ang_error_flux_with_radius_60.pdf}}
     \caption{{\bf Angular momentum error }: We numerically
-    verify the conservation Eq.~\ref{ag:eqn:conserved_ang} for the simulations with parameters 
+    verify the conservation Eq.~\ref{ag:eqn:conserved_ang} for the simulations with parameters
     given in Table \ref{ag:tab:Overview Runs}. In the continuum limit this
     quantity becomes zero. The colored curves
     obtained for different resolutions demonstrate
@@ -772,7 +772,7 @@ To calculate the energy (see Fig.~\ref{ag:fig:EnergyPower}) we used the the $\el
 \begin{equation}\label{ag:eq:GWpower}
     \frac{{\rm d}E}{{\rm d}t} = \lim_{r\rightarrow \infty} \frac{1}{16 \pi} \sum_{\ell = 2, m} \left|\int_{t_0}^{t}  r\Psi_{4,\ell m}{\rm d}t^\prime \right|^2~,
 \end{equation}
-where we apply an 5th order Butterworth high-pass filter (using the scipy implementation \cite{jones_scipy_2001}) on the integral $r\Psi_{4,\ell m}$. As otherwise accumulating numerical error causes a  drift in the Energy over time. 
-We estimate the error, similarly as for $r\Psi_4$, using both the discretisation error as well as the error from the finite extraction radius. For the discretisation error we use Richardson extrapolation assuming 1st order convergence to estimate the error. Similarly to before, we find that the error in the finite extraction radius dominates, giving us the value $ 0.04~\% \pm 0.0014~\% $. 
+where we apply an 5th order Butterworth high-pass filter (using the scipy implementation \cite{jones_scipy_2001}) on the integral $r\Psi_{4,\ell m}$. As otherwise accumulating numerical error causes a  drift in the Energy over time.
+We estimate the error, similarly as for $r\Psi_4$, using both the discretisation error as well as the error from the finite extraction radius. For the discretisation error we use Richardson extrapolation assuming 1st order convergence to estimate the error. Similarly to before, we find that the error in the finite extraction radius dominates, giving us the value $ 0.04~\% \pm 0.0014~\% $.
 
-Lastly to calculate the average rate of emission, we simply perform a linear fit over the whole energy over time signal of the largest radius of the ``medium'' run (see Fig.~\ref{ag:fig:EnergyPower}). We also perform this fit on a rolling window of $3000~m^{-1}$ to determine any reduction of radiation over time. Excluding the merger, we find the rate roughly declines by $20 \%$ over the simulation time. 
+Lastly to calculate the average rate of emission, we simply perform a linear fit over the whole energy over time signal of the largest radius of the ``medium'' run (see Fig.~\ref{ag:fig:EnergyPower}). We also perform this fit on a rolling window of $3000~m^{-1}$ to determine any reduction of radiation over time. Excluding the merger, we find the rate roughly declines by $20 \%$ over the simulation time.

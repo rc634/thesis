@@ -26,14 +26,33 @@ Varying the action with respect to the metric and scalar field return the Einste
 \begin{align} R_{\mu\nu} - \frac{1}{2}R g_{\mu\nu} &=  \frac{8\pi G}{c^4} T_{\mu\nu}  ,\\
 g^{\mu\nu}\nabla_\mu\nabla_\nu \vp &= \frac{\partial V}{\partial |\vp|^2}\vp .\label{boson:eq:KGeqn}\end{align}
 Collectively these are known as the Einstein-Klein-Gordon (EKG) equations. From Eq.~(\ref{intro:eq:Tdef}), the boson-specific stress energy tensors are,
-\begin{align}  
+\begin{align}
 T_{\mu\nu} :&= -2\frac{\delta \mathcal{L}_{M}}{\delta g^{\mu\nu}}+g_{\mu\nu}\mathcal{L}_M, \\
 T_{\mu\nu} &= \frac{1}{2}\nabla_{\mu}\bar{\varphi}\nabla_{\nu}\varphi+\frac{1}{2}\nabla_{\nu}\bar{\varphi}\nabla_{\mu}\varphi-\frac{1}{2}g_{\mu\nu}\left[g^{\alpha\beta}\nabla_\alpha\bar{\varphi}\nabla_\beta\varphi + V\right] \label{boson:eq:KGT}.
 \end{align}
+
+
 \subsubsection{Comparison of Boson Stars to Neutron Stars}
-Boson stars differ greatly to neutron stars; studying neutron stars requires the fermionic, or ordinary fluid, stress tensor $\bs{T}_F$; 
-\begin{equation} T^{\mu\nu}_F = \left[\rho c^2+ {P} \right]\frac{u^\mu u^\nu}{c^2} + P g^{\mu\nu} + 2u^{(\mu}q^{\nu)}+\pi^{\mu\nu}+ ...\,\,.\end{equation} 
-The continuity equation from Eq.~(\ref{intro:eq:cont}), $\nabla_\nu T^{\mu\nu}=0 $, returns the highly nonlinear relativistic Navier-Stokes equations of curved space. The viscosity term $\pi^{\mu\nu}$ and heat flux $q^\mu$ are often omitted for simplicity. The remaining variables $\rho$, $P$ and $u^\mu$ are the fluid density, pressure and worldline tangent. Just as in flat space, the Navier-Stokes equations can develop shockwaves and the use of sophisticated shock capturing schemes is required, unlike the linear Klein-Gordon equation which is linear in the principal part. \color{gren} of course the lienar KG eqn can still blow up - i need to find a way of explaining how scalar fields are easier to simulate \color{black}
+Boson stars differ greatly to neutron stars; studying neutron stars requires the
+fermionic, or ordinary fluid, stress tensor $\bs{T}_F$;
+\begin{equation} T^{\mu\nu}_F = \left[\rho c^2+ {P} \right]\frac{u^\mu u^\nu}{c^2}
++ P g^{\mu\nu} + 2u^{(\mu}q^{\nu)}+\pi^{\mu\nu}+ ...\,\,.\end{equation}
+The continuity equation from Eq.~(\ref{intro:eq:cont}), $\nabla_\nu T^{\mu\nu}=0 $,
+returns the highly nonlinear relativistic Navier-Stokes equations of curved space.
+The viscosity term $\pi^{\mu\nu}$ and heat flux $q^\mu$ are often omitted for simplicity.
+The remaining variables $\rho$, $P$ and $u^\mu$ are the fluid density, pressure and
+worldline tangent.
+
+\color{orchid}
+In flat space, the Navier-Stokes equations can develop
+shockwaves and the use of sophisticated shock capturing schemes is required. In
+contrast, the flat space Klein-Gordon equation (with the quadratic potential given
+in Eq.~(\ref{boson:eq:Vmini})) is linear and strongly hyperbolic. Moving to curved space,
+the Klein-Gordon equation (in conjunction with Einstein's equation) can produce
+divergences in the scalar field $\vp$; one example is gravitational collapse to a
+black hole. In practice, boson stars with sensible potential functions are
+often stable and simple to simulate numerically; for this reason boson stars
+are a good proxy for compact objects in general relativity. \color{black}
 
 
 \subsection{Solitons} \label{boson:sec:soliton}
@@ -69,7 +88,7 @@ To get a set of ODEs to solve for the functions $\{\Omega(r), \Psi(r),\Phi(r)\}$
   \end{align}
 Simplifying the Einstein Equations and combining with the Klein Gordon equation we get three ODES to solve; the EKG system has been reduced to two second order ODES and a first order ODE,
 \begin{gather}
-\Omega '=\frac{\Omega}{r\Psi'+\Psi}\left[2 \pi  G r \Psi \left[\Phi'^2 -\Psi^2 
+\Omega '=\frac{\Omega}{r\Psi'+\Psi}\left[2 \pi  G r \Psi \left[\Phi'^2 -\Psi^2
    V+\frac{\omega ^2 \Phi^2 \Psi^2}{\Omega^2} \right]  -\Psi '-\frac{r \Psi '^2}{2 \Psi} \right] \label{boson:eq:EKGODE1}
 ,\\{ \Psi'' = \frac{\Psi'^2}{2\Psi} - \frac{2\Psi'}{r}-2\pi G \left[V \Psi^3 + \Phi'^2\Psi+ \frac{ \omega^2\Phi^2\Psi^3}{\Omega^2}\right] } \label{boson:eq:EKGODE2}
 ,\\ \Phi'' = \Phi\Psi^2\left[V'-\frac{\omega^2}{\Omega^2}\right] - \Phi'\left[\frac{\Omega'}{\Omega} +\frac{\Psi'}{\Psi}+\frac{2}{r} \right]. \label{boson:eq:EKGODE3}
@@ -78,19 +97,24 @@ This is turned into a set of five first order ODES to numerically integrate from
 
 \subsection{3+1 Klein Gordon System} \label{boson:sec:3+1kgeqn}
 Now let us project the Klein Gordon equation in a 3+1 split to get the evolution equations. The first step is to turn the second order Klein-Gordon equation into two first order differential equations (in time),
-\begin{align} 
+\begin{align}
 \partial_t \vp = ...  \quad {\rm and}\quad \partial_t \Pi = ... \,,
 \end{align}
 where $\Pi$ is the foliation dependant definition of conjugate momentum to the complex scalar field defined by,
 \begin{equation} \Pi:= -\L_n \vp. \label{boson:eq:Pidef}\end{equation}
 Above, $\bs{n}$ is the unit normal vector to $\Sigma_t$. Decomposing the Klein Gordon Equation gives,
-\begin{equation} 
-\nabla^\mu \nabla_\mu \vp = V' \vp = \frac{1}{\sqrt{-g}} \partial_\mu \left[ \sqrt{-g}\left[\gamma^{\mu\nu}-n^\mu n^\nu\right]\partial_\nu \vp\right] = \frac{1}{\sqrt{-g}} \partial_\mu \left[ \sqrt{-g}\left[\D^\mu\vp-n^\mu \L_n\vp\right]\right]. 
+\begin{equation}
+\nabla^\mu \nabla_\mu \vp = V' \vp = \frac{1}{\sqrt{-g}} \partial_\mu \left[ \sqrt{-g}\left[\gamma^{\mu\nu}-n^\mu n^\nu\right]\partial_\nu \vp\right]
+= \frac{1}{\sqrt{-g}} \partial_\mu \left[ \sqrt{-g}\left[\D^\mu\vp-n^\mu \L_n\vp\right]\right].
 \end{equation}
 The term with $\D^\mu$ simplifies like,
-\begin{equation}\frac{1}{\sqrt{-g}} \partial_\mu \left[ \sqrt{-g}\D^\mu\vp\right] =  \frac{1}{\alpha\sqrt{\gamma}} \partial_\mu \left[\alpha\sqrt{\gamma}\D^\mu\vp\right]  = \D_\mu \D^\mu \vp + \D^\mu \vp \,\partial_\mu \ln \alpha,\end{equation}
+\begin{equation}\frac{1}{\sqrt{-g}} \partial_\mu \left[ \sqrt{-g}\D^\mu\vp\right] =
+\frac{1}{\alpha\sqrt{\gamma}} \partial_\mu \left[\alpha\sqrt{\gamma}\D^\mu\vp\right]  =
+\D_\mu \D^\mu \vp + \D^\mu \vp \,\frac{1}{\alpha}\partial_\mu  \alpha,\end{equation}
 and the remainder becomes
-\begin{equation}-\frac{1}{\sqrt{-g}} \partial_\mu \left[ \sqrt{-g}n^\mu \L_n\vp\right] = -\left[\nabla \cdot n + n\cdot \partial\right]\L_n\vp = -\K\Pi + \L_n \Pi.\end{equation}
+\begin{equation}-\frac{1}{\sqrt{-g}} \partial_\mu \left[ \sqrt{-g}n^\mu \L_n\vp\right]
+= \nabla_\mu( n^\mu \Pi )
+= -\K\Pi + \L_n \Pi.\end{equation}
 Combining these results, the Klein Gordon equation becomes,
 \begin{align}
  \L_m \Pi &= - \D^\mu\vp\,\partial_\mu \alpha+\alpha\left[\K\Pi - \D_\mu \D^\mu \vp  + V'\vp\right], \\
@@ -105,15 +129,15 @@ The final matter term we must decompose is the Klein-Gordon stress tensor in Eq.
 ,\\ S_{ij} &= \perp^\mu_i \perp^\nu_j T_{\mu\nu} = \D_{(i}\vp\D_{j)}\bar{\vp} - \frac{1}{2}\left[ \gamma^{ij}\D_i\vp\D_j\bar{\vp} - |\Pi|^2 + V(|\vp|^2)\right].\end{align}
 
 \subsection{Klein Gordon's Noether Charge}
-The complex scalar field has a conserved quantity called the Noether charge. The Noether charge represents the number of particles minus the number of antiparticles described by the field theory. In a numerical simulation a conserved quantity can be used to check the quality of a simulation as with good resolution the total charge should be conserved. 
+The complex scalar field has a conserved quantity called the Noether charge. The Noether charge represents the number of particles minus the number of antiparticles described by the field theory. In a numerical simulation a conserved quantity can be used to check the quality of a simulation as with good resolution the total charge should be conserved.
 
 The Noether charge of the complex scalar field is associated with the following U(1) symmetry,
 \begin{align}
-\vp \rightarrow \vp e^{i\epsilon} &\approx \vp + i\epsilon \vp , \\ 
+\vp \rightarrow \vp e^{i\epsilon} &\approx \vp + i\epsilon \vp , \\
 \quad\bar{\vp} \rightarrow \bar{\vp} e^{-i\epsilon}  &\approx \bar{\vp} - i\epsilon \bar{\vp},
 \end{align}
 which leaves the Lagrangian unchanged and therefore the total action. The associated conserved current $\bs{j}$ is then,
-\begin{align} 
+\begin{align}
 j^\mu &= \frac{\delta \L}{\delta \nabla_\mu\vp}\delta \vp + \frac{\delta \L}{\delta \nabla_\mu \bar{\vp}}\delta \bar{\vp},\\
  &=  ig^{\mu\nu}\left[\vp\nabla_\nu\bar{\vp} - \bar{\vp}\nabla_\nu\vp\right],
   \end{align}
@@ -131,26 +155,26 @@ Using Eq.~(\ref{intro:eq:div_vector}), the conservation equation can be re-writt
  \end{align}
 is also true and even in curved space the current $\bs{\mathcal{J}}$ obeys a conservation equation; this means there must be some conserved charge $\mathcal{Q}$ associated with the current. Integrating Eq.~(\ref{boson:eq:divJ}) over a manifold $\M$ gives,
 \begin{align}
- \int_{\M}\partial_\mu \mathcal{J}^\mu \dd x^4&=0, \\ 
+ \int_{\M}\partial_\mu \mathcal{J}^\mu \dd x^4&=0, \\
  \int^{t_1}_{t_0}\left[\int_{\Sigma_t} \partial_0 \mathcal{J}^0 \dd x^3 \right]\dd t &= -\int^{t_1}_{t_0}\left[\int_{\Sigma_t} \partial_i \mathcal{J}^i \dd x^3 \right]\dd t , \\
   \int^{t_1}_{t_0}\left[\int_{\Sigma_t} \partial_0 \mathcal{J}^0 \dd x^3 \right]\dd t &= -\int^{t_1}_{t_0}\left[\int_{\partial \Sigma_t} \hat{s}_i \mathcal{J}^i \dd x^2 \right]\dd t , \\
 \int^{t_1}_{t_0}\left[\int_{\Sigma_t} \partial_0 \mathcal{J}^0 \dd x^3 \right]\dd t &= 0 \label{boson:eq:halfwaypointQ} ,
 \end{align}
 where the flat space divergence theorem was used and $\hat{\bs{s}}$ is the flat space normal to $\partial \Sigma_t$, the boundary of $\Sigma_t$. The term containing $\hat{s}_i\mathcal{J}^i$ integrates to zero over $\partial \Sigma_t$ due to $\bs{\mathcal{J}}$ vanishing on $\partial \Sigma_t$. The $\mathcal{J}^0$ term can be simplified by permuting the time derivative using,
-\begin{equation} 
+\begin{equation}
 \partial_0 \int_{\Sigma_t}\mathcal{J}^0 \dd x^3 = \int_{\Sigma_t}\partial_0 \mathcal{J}^0 \dd x^3 + \lim_{\Delta x^0\rightarrow0}\left[ \frac{1}{\Delta x^0}\int_{\Delta \Sigma_t}\left[ \mathcal{J}^0 +\Delta x^0 \partial_0 \mathcal{J}^0\right] \dd x^3 \right],
 \end{equation}
 where the last term vanishes as $\bs{\mathcal{J}}$ vanishes on $\Delta \Sigma_t$ near $\partial\Sigma$, and Eq.~(\ref{boson:eq:halfwaypointQ}) becomes,
-\begin{equation} 
+\begin{equation}
 \int^{t_1}_{t_0}\left[\partial_0 \int_{\Sigma_t} \mathcal{J}^0 \dd x^3 \right]\dd t = 0,
-\end{equation} 
+\end{equation}
 and the formula for the conserved charge $Q$ can be read off as,
-\begin{align} 
+\begin{align}
 \partial_0 &Q=0,\\
 &Q = \int_{\Sigma_t}\mathcal{J}^0 \dd x^3 .
 \end{align}
-The charge density $\mathcal{Q}$ is defined as, 
-\begin{align} 
+The charge density $\mathcal{Q}$ is defined as,
+\begin{align}
 &Q := \int_{\Sigma_t} \mathcal{Q}\sqrt{\gamma} \,\dd x^3 ,\\
 \mathcal{Q}&= \frac{\mathcal{J}^0}{\sqrt{\gamma}} = \frac{\sqrt{-g}j^0}{\sqrt{\gamma}} = \alpha j^0,
 \end{align}
@@ -160,15 +184,15 @@ Finally we get an expression for the total Noether charge $N=Q$,
 N =i \int_{\Sigma_t} \sqrt{-g}\left[ \vp \nabla^0 \bar{\vp} - \bar{\vp}\nabla^0 \vp\right] \dd x^3.
 \end{equation}
 Using $\sqrt{-g} = \alpha \sqrt{\gamma}$ again and $\alpha \nabla^0 \vp = -n_\mu \nabla^\mu \vp = \Pi$ from Eq.~(\ref{boson:eq:Pidef}) we get the following neat formula,
-\begin{equation} 
+\begin{equation}
 N = i\int_{\Sigma_t}\left[ \vp \bar{\Pi}-\bar{\vp}\Pi\right] \sqrt{\gamma}\,\dd x^3.
 \end{equation}
 Equivalently, the Noether charge density $\mathcal{N}$ is ,
-\begin{equation} 
+\begin{equation}
 \mathcal{N} = i\left( \vp \bar{\Pi}-\bar{\vp}\Pi\right) .
 \end{equation}
 
-The ideas of this section concerning conserved charges are extended in chapter \ref{q:sec:q} with applications to continuity equations in energy, momentum, angular momentum and Noether charges for spin-1 Proca fields. The results of this section have all been derived for an infinite volume where only a charge density $\mathcal{Q}$ needs be considered. Chapter \ref{q:sec:q} considers continuity equations in a finite volume $V$ so must also consider the flux density $\mathcal{F}$ of conserved particles through $\partial V$ (the boundary of $V$) and the source density $\mathcal{S}$ (creation and destruction of $\mathcal{Q}$) in $V$. 
+The ideas of this section concerning conserved charges are extended in chapter \ref{q:sec:q} with applications to continuity equations in energy, momentum, angular momentum and Noether charges for spin-1 Proca fields. The results of this section have all been derived for an infinite volume where only a charge density $\mathcal{Q}$ needs be considered. Chapter \ref{q:sec:q} considers continuity equations in a finite volume $V$ so must also consider the flux density $\mathcal{F}$ of conserved particles through $\partial V$ (the boundary of $V$) and the source density $\mathcal{S}$ (creation and destruction of $\mathcal{Q}$) in $V$.
 
 \color{choral} I'm a bit confused what you mean here? As far as i understood control theory was about inverting differential equations / picking a correct forcing term or BC's or IC's to achive a desired solution? \color{black}
 
@@ -177,7 +201,7 @@ Let us now consider a moving star, this corresponds to boosting a stationary sol
 \begin{equation}
 \Lambda_\nu^\mu =  \exp\begin{pmatrix} 0 & -\chi & 0& 0 \\ -\chi & 0 & 0 & 0\\ 0 & 0&1&0 \\ 0&0&0&1\end{pmatrix} = \begin{pmatrix} \cosh(\chi) & -\sinh(\chi) & 0& 0 \\ -\sinh(\chi) & \cosh(\chi) & 0 & 0\\ 0 & 0&1&0 \\ 0&0&0&1\end{pmatrix},
 \end{equation}
-as discussed in section \ref{intro:sec:minkowski_space}. Declaring the boosted frame and lab frame (in which the star is moving with a positive speed $v$) to have coordinates $x^\mu$ and $\tilde{x}^\mu$, 
+as discussed in section \ref{intro:sec:minkowski_space}. Declaring the boosted frame and lab frame (in which the star is moving with a positive speed $v$) to have coordinates $x^\mu$ and $\tilde{x}^\mu$,
 \begin{equation}
 \tilde{x}^\mu = [\Lambda^{-1}]^{\mu}_{\,\,\,\nu}x^{\nu},
 \end{equation}
@@ -196,13 +220,13 @@ and the metric in the boosted frame and lab frame are,
 \begin{align}
  g_{\mu\nu} &= \mathrm{diag} \{ -\Omega^2, \Psi^2,  \Psi^2, \Psi^2\} ,\\
  \tilde{g}_{\mu\nu}&=\begin{pmatrix} -\Omega^2\cosh^2 (\chi) + \Psi^2 \sinh^2 (\chi) & \sinh(\chi)\cosh(\chi)\left[\Omega^2-\Psi^2\right] & 0& 0 \\  \sinh(\chi)\cosh(\chi)\left[\Omega^2-\Psi^2\right] & \Psi^2 \cosh^2 (\chi) - \Omega^2 \sinh^2 (\chi) & 0 & 0\\ 0 & 0&\Psi^2&0 \\ 0&0&0&\Psi^2\end{pmatrix},
- \end{align} 
+ \end{align}
  respectively. Comparing the boosted metric $\tilde{\bs{g}}$ to the $3+1$ decomposed metric in Eq.~(\ref{nr:eq:admmetric}) we can read off the shift vector $\tilde{\beta}_i$, the 3-metric $\tilde{\gamma}_{ij}$ and obtain the lapse and metric determinant,
-\begin{align} 
-\tilde{\alpha}^2 &= \frac{\Psi ^2 \Omega ^2}{\Psi ^2 \cosh ^2(\chi) -\Omega ^2 \sinh ^2(\chi) },\\ 
+\begin{align}
+\tilde{\alpha}^2 &= \frac{\Psi ^2 \Omega ^2}{\Psi ^2 \cosh ^2(\chi) -\Omega ^2 \sinh ^2(\chi) },\\
 \tilde{\gamma} &= \det \tilde{\gamma}_{ij} = \Psi^4\left[ \Psi^2 \cosh^2 (\chi) - \Omega^2 \sinh^2(\chi)\right].
 \end{align}
-The conformal 3-metric, with unit determinant is, 
+The conformal 3-metric, with unit determinant is,
 \begin{equation} \bar{\gamma}_{ij} = \tilde{\gamma}^{-\frac{1}{3}}\left(
 \begin{array}{ccc}
  \Psi ^2 \cosh ^2(\chi) -\Omega ^2 \sinh ^2(\chi)  & 0 & 0 \\
@@ -210,28 +234,28 @@ The conformal 3-metric, with unit determinant is,
  0 & 0 & \Psi ^2 \\
 \end{array}
 \right),\end{equation}
-where normally $\tilde{\gamma}_{ij}$ is the conformal 3-metric, but to avoid confusion it is denoted $\bar{\gamma}_{ij}$ in this section. 
+where normally $\tilde{\gamma}_{ij}$ is the conformal 3-metric, but to avoid confusion it is denoted $\bar{\gamma}_{ij}$ in this section.
 
 Turning our attention to the matter fields now we only need to change the coordinate dependence, like $\vp(x)\rightarrow \vp(\tilde{x})$, given that $\vp$ and $\Pi$ are (complex) scalar fields. Given that $\tilde{t}=0$ describes a time slice in the lab frame (where the star has non-zero velocity), $t = \tilde{x}\sinh(\chi)$ in the rest frame and we get the following boosted complex scalar field,
 \begin{equation}\vp = \Phi(r)e^{i\omega \tilde{x}\sinh(\chi)}, \end{equation}
 where $r$ is the radius in the boosted frame; $r = \sqrt{\tilde{x}^2\cosh^2(\chi) +\tilde{y}^2 + \tilde{z}^2}$.
-Note the field is modulated by an oscillatory phase now with wavenumber $k = \omega \tilde{x} \sinh(\chi)$; nodal planes in $\Re(\vp)$ appear perpendicular to velocity. The conjugate momentum $\tilde{\Pi}$, defined in Eq.~(\ref{boson:eq:Pidef}), in the rest frame it becomes, 
+Note the field is modulated by an oscillatory phase now with wavenumber $k = \omega \tilde{x} \sinh(\chi)$; nodal planes in $\Re(\vp)$ appear perpendicular to velocity. The conjugate momentum $\tilde{\Pi}$, defined in Eq.~(\ref{boson:eq:Pidef}), in the rest frame it becomes,
 \begin{equation} \tilde{\Pi}(\tilde{x}^\mu) = -\L_{\tilde{n}} \vp(\tilde{x}^\mu)=-\frac{1}{\tilde{\alpha}}\tilde{m}\cdot \tilde{\partial}\vp = -\frac{1}{\tilde{\alpha}}\left[ \tilde{\partial}_t - \tilde{\beta}^i\tilde{\partial}_{i}\right]\Phi(r)e^{i\omega t}.\end{equation}
-Inconveniently we can not simply evaluate $\tilde{\Pi}$ in the lab frame from $\Pi$ in the co-moving frame as the two frames have a different spacetime foliation and the normal vector as $\bs{n}\neq \tilde{\bs{n}}$ and is genuinely changed; not just transforming components under coordinate transformation. Explicitly writing the contra-variant components of the shift vector, 
+Inconveniently we can not simply evaluate $\tilde{\Pi}$ in the lab frame from $\Pi$ in the co-moving frame as the two frames have a different spacetime foliation and the normal vector as $\bs{n}\neq \tilde{\bs{n}}$ and is genuinely changed; not just transforming components under coordinate transformation. Explicitly writing the contra-variant components of the shift vector,
 \begin{equation} \tilde{\beta}^i = \left(\frac{\sinh (\chi)  \cosh (\chi)  \left[\Omega ^2-\Psi ^2\right]}{\Psi ^2 \cosh
    ^2(\chi) -\Omega ^2 \sinh ^2(\chi) },0,0\right),\end{equation}
 and using the following derivative formulae,
-\begin{align} 
+\begin{align}
 {\partial}_{\tilde{t}} &= \cosh(\chi) \partial_t - \sinh(\chi) \partial_x, \\
 {\partial}_{\tilde{x}} &= \cosh(\chi) \partial_x - \sinh(\chi) \partial_t,\\
  \partial_t\vp &=\Phi\partial_te^{i\omega t} =i\omega \Phi e^{i\omega t},\\
  \partial_x\vp &=\frac{\partial r}{\partial x}\frac{\partial \Phi}{\partial r}e^{i\omega t} = \frac{x}{r}\Phi'e^{i\omega t} ,
  \end{align}
-we get an expression for the conjugate momentum of a boosted star. Setting $\tilde{t}=0$ gives the conjugate momentum on the surface $\tilde{t}=0$ to be used as initial conditions in the lab frame, 
+we get an expression for the conjugate momentum of a boosted star. Setting $\tilde{t}=0$ gives the conjugate momentum on the surface $\tilde{t}=0$ to be used as initial conditions in the lab frame,
 \begin{equation} \widetilde{\Pi} = -\frac{1}{\tilde{\alpha}}\left[ i\omega \Phi \left( \cosh(\chi)+\tilde{\beta}^{\tilde{x}}\sinh(\chi)\right)- \frac{\tilde{x}\cosh(\chi)}{r}\Phi'\left( \sinh(\chi)+\tilde{\beta}^{\tilde{x}} \cosh(\chi)\right)  \right]e^{i\omega \tilde{x}\sinh(\chi)}.\end{equation}
 The penultimate ingredient is the intrinsic curvature $\tilde{\bs{\K}}$, defined in Eq.~(\ref{nr:eq:Kij}). Similarly to the conjugate momentum, the definition of $\tilde{\bs{\K}}$ depends on the spacetime foliation so using ${\K}_{ij}=0$ in the stars rest frame and using the tensor transformation to conclude that $\tilde{\K}_{ij}=0$ in the lab frame is incorrect. Instead the components $\tilde{\K}_{ij}$ must be calculated from scratch with the correct normal vector $\bs{n}$ as follows,
 \begin{equation} \widetilde{\K}_{\mu\nu} := -\frac{1}{2}\L_{\tilde{n}}\tilde{\gamma}_{\mu\nu} =-\frac{1}{2\tilde{\alpha}}\L_{\tilde{m}}\tilde{\gamma}_{\mu\nu} = -\frac{1}{2\tilde{\alpha}}\left[ \tilde m \cdot \tilde{\partial}\tilde{\gamma}_{\mu\nu} +  \tilde{\gamma}_{\mu\rho}\tilde{\partial}_\nu \tilde{m}^\rho +\tilde{\gamma}_{\nu\rho}\tilde{\partial}_\mu \tilde{m}^\rho\right].\end{equation}
-The explicit form for the components of $\tilde{\K}_{ij}$ are 
+The explicit form for the components of $\tilde{\K}_{ij}$ are
 \begin{align} \widetilde{\K}_{xx} &= \tilde{\alpha}\cosh^2(\chi)\sinh(\chi)\frac{x }{r}\frac{ \left[2 \Psi^2 \Omega' -\tanh^2(\chi) \Omega^2 \Omega'-\Psi \Omega \Psi'\right]}{ \Psi^2 \Omega},\\
   \widetilde{\K}_{xy} &= \tilde{\alpha}\sinh(\chi)\cosh(\chi)\frac{y}{r}\frac{ \left[\Omega' \Psi- \Psi' \Omega\right]}{ \Psi \Omega },\\
   \widetilde{\K}_{xz} &= \tilde{\alpha}\sinh(\chi)\cosh(\chi)\frac{z}{r}\frac{  \left[\Omega' \Psi- \Psi' \Omega\right]}{ \Psi \Omega },\\
@@ -245,8 +269,8 @@ The final object needed is the three-dimensional connection symbols $\Upsilon^i_
 \Upsilon^i_{jk} = \frac{1}{2}\gamma^{im}\left( \partial_k \gamma_{jm} +  \partial_j \gamma_{mk} -  \partial_m \gamma_{jk} \right).
  \end{equation}
 
-The boost formalism described here can be applied to a Black Hole spacetime by setting, 
-\begin{align} 
+The boost formalism described here can be applied to a Black Hole spacetime by setting,
+\begin{align}
 \vp&=0,\\
 \Pi&=0,\\
 \Omega &= \frac{1-\frac{M}{2r}}{1+\frac{M}{2r}}, \\
@@ -255,37 +279,24 @@ The boost formalism described here can be applied to a Black Hole spacetime by s
  corresponding to the isotropic Schwarzschild black hole given in section \ref{intro:sec:bh_theory}.
 
  \color{choral} are you talking about this paper? https://arxiv.org/pdf/1909.06135.pdf \color{black}
- 
+
 
 %  \newpage
 %  MIGHT JUST DELETE THIS SECTION
- 
+
 %  \subsection{Spherical Harmonics in Curved Space DO I KEEP THIS SECTION? MAYBE JUST FOR INTERPITING SOME SIMS}
 %  Spherical harmonics are an orthonormal function basis for the surface of a sphere. They arise when looking for solutions to the 3D spherical polar Laplacian
 %  \begin{equation} \nabla^2 \vp= \frac{1}{\sqrt{|g|}}\partial_{\mu}\left( \sqrt{|g|}g^{\mu\nu}\partial_\nu \vp\right), \quad \mu,\nu \in \{1,2,3\} .\end{equation}
 %  On the hypersurface $r=1$ we get the following metric
 %  \begin{equation} g_{\mu\nu} = \begin{pmatrix} 1 & 0 \\ 0 & \sin^2 \theta\end{pmatrix},\end{equation}
 %  and on this surface the spherical harmonics $Y_{lm}(\theta,\phi)$ satisfy the following condition.
-%  \begin{equation} \D_\mu \D^\mu Y_{lm}(\theta,\phi) = -l(l+1)Y_{lm}(\theta,\phi), \quad x^\mu \in \{\theta,\phi\}\end{equation} 
+%  \begin{equation} \D_\mu \D^\mu Y_{lm}(\theta,\phi) = -l(l+1)Y_{lm}(\theta,\phi), \quad x^\mu \in \{\theta,\phi\}\end{equation}
 %  This means we can take any spherically symmetric and static metric with $g_{\phi\phi} = \sin^2\theta g_{\theta\theta}$ and replace the angular part of the wave equation with $l(l+1)$. For a spherically symmetric spacetime this gives the Klein Gordon equation for scalar hair.
 %  \begin{equation} \nabla_\mu \nabla^\mu \vp = V' \vp, \quad \vp = T(t)R(r)Y_{lm}(\theta,\phi)\end{equation}
 %  \begin{equation}\vp^{-1}\nabla_\mu \nabla^\mu \vp = g^{tt}\frac{\ddot{T}}{T} +  \frac{1}{R\sqrt{|g|}}\partial_{r}\left( \sqrt{|g|}g^{rr}\partial_r R\right) -{l(l+1)}g^{\theta\theta} \end{equation}
-%  This is a second order ODE for the radial profile $R$ and is an eigenvalue problem for $\omega$ if we assume $T=e^{i\omega t}$. Assuming $T=e^{-kt}$ can be done on-top of the black hole metric () and requires the assumption of no back reaction of the scalar field on the metric; this gives an eigenvalue problem in $k$ instead. This leads to the following ODE for the radial profile. 
+%  This is a second order ODE for the radial profile $R$ and is an eigenvalue problem for $\omega$ if we assume $T=e^{i\omega t}$. Assuming $T=e^{-kt}$ can be done on-top of the black hole metric () and requires the assumption of no back reaction of the scalar field on the metric; this gives an eigenvalue problem in $k$ instead. This leads to the following ODE for the radial profile.
 %  \begin{equation} \frac{1}{R\sqrt{|g|}}\partial_{r}\left( \sqrt{|g|}\Psi^{-4}\partial_r R\right)  = k^2 \frac{\Omega^2}{\Psi^2} + \frac{l(l+1)}{r^2 \Psi^4} + V'\end{equation}
 % Simulations shown later involve boson stars of mass $M$ and black holes of mass $M\rightarrow 10M$; these simulations often produce scalar hair about these black holes that is orders of magnitude less massive than the boson stars. In this regime the above equation is assumed relevant.
 
 
-% MAYBE JUST USE THIS SECTION TO TALK ABOUT THE COLLISIONS THAT MAYBE SEEM TO FOLLOW THIS RULE ... SAY HOW EVEN THOUGHT ITS NOT REALLY SPHERICALLY SYMMETRIC MAYBE IT CAN BE APPROXIMATES BY THIS? AND WE CAN'T USE SUPERPOSISION OF SOLUTIONS REALLY 
-
-
-
-
-
-
-
-
-
-
-
-
-
+% MAYBE JUST USE THIS SECTION TO TALK ABOUT THE COLLISIONS THAT MAYBE SEEM TO FOLLOW THIS RULE ... SAY HOW EVEN THOUGHT ITS NOT REALLY SPHERICALLY SYMMETRIC MAYBE IT CAN BE APPROXIMATES BY THIS? AND WE CAN'T USE SUPERPOSISION OF SOLUTIONS REALLY

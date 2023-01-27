@@ -7,13 +7,13 @@
 %\pagenumbering{arabic}
 
 
-\section{Numerical Relativity}\label{nr:sec:nr} 
+\section{Numerical Relativity}\label{nr:sec:nr}
 \subsection{Spacetime Foliation} \label{nr:sec:foliation}
-Einstein's equation is a classical field equation which, along with an equation of motion for any matter, governs the dynamics of spacetime curvature, 
+Einstein's equation is a classical field equation which, along with an equation of motion for any matter, governs the dynamics of spacetime curvature,
 \begin{equation}\label{nr:eq:einstein}R_{\mu\nu} - \frac{1}{2} Rg_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}.\end{equation}
-The above version is fully covariant, agnostic of the definition of time, and many solutions are known analytically, for instance black hole geometries. When the system of interest becomes more complicated, such as the case of orbiting objects which will be discussed later, finding an analytic expression becomes impossible. For low energy dynamics, Newtonian theory, post-Newtonian theory and perturbation theory can make more progress; however this work focuses on the highly nonlinear regime where numerical relativity is presently the only hope to solve Einstein's equations. To do this it is common to split the 4-dimensional spacetime into 3+1 dimensions, evolving a 3-dimensional manifold (maybe with matter) on a computer along the final 4th dimension. To do this we need to define a suitable hypersurface $\Sigma \in \M$ where $\M$ is the 4-dimensional manifold representing the entire spacetime. This is usually done by demanding the hypersurface $\Sigma_t$ be the set of points $p \in \M$ where some scalar function $f:\M\mapsto \mathbb{R}$ satisfies $f(p)=t$. This hypersurface should be a Cauchy surface, intersecting all causal curves only once, or a partial Cauchy surface which intersects all causal curves at most once. 
-Generally we will choose a partial Cauchy surface covering a finite region of $\Sigma_t$ due to the finite memory of computers. 
-% However, by picking certain compactified coordinates it is possible to use a Cauchy surface [REF]. 
+The above version is fully covariant, agnostic of the definition of time, and many solutions are known analytically, for instance black hole geometries. When the system of interest becomes more complicated, such as the case of orbiting objects which will be discussed later, finding an analytic expression becomes impossible. For low energy dynamics, Newtonian theory, post-Newtonian theory and perturbation theory can make more progress; however this work focuses on the highly nonlinear regime where numerical relativity is presently the only hope to solve Einstein's equations. To do this it is common to split the 4-dimensional spacetime into 3+1 dimensions, evolving a 3-dimensional manifold (maybe with matter) on a computer along the final 4th dimension. To do this we need to define a suitable hypersurface $\Sigma \in \M$ where $\M$ is the 4-dimensional manifold representing the entire spacetime. This is usually done by demanding the hypersurface $\Sigma_t$ be the set of points $p \in \M$ where some scalar function $f:\M\mapsto \mathbb{R}$ satisfies $f(p)=t$. This hypersurface should be a Cauchy surface, intersecting all causal curves only once, or a partial Cauchy surface which intersects all causal curves at most once.
+Generally we will choose a partial Cauchy surface covering a finite region of $\Sigma_t$ due to the finite memory of computers.
+% However, by picking certain compactified coordinates it is possible to use a Cauchy surface [REF].
 A foliation $\mathcal{F}$ is then the union of a set of $\Sigma_t$ for some range of the parameter $t$,
 \begin{equation}\mathcal{F} = \cup_t(\Sigma_t) \subseteq \M.\end{equation}
 This means we should be careful to pick a parameter $t$ such that the foliation is not self intersecting for the parameter range that covers the region of $\M$ that we are interested in simulating. The time coordinate in a suitable coordinate system works in many cases; it also gives the physical interpretation of $\Sigma_t$ being an instant of time. Now we define the unit normal vector $\bs{n}$ to $\Sigma_t$,
@@ -22,7 +22,7 @@ where $\dd t_\mu=\partial_\mu t$ is the exterior derivative of $t$.
 For simplicity we define the lapse function $\alpha$ to be
 \begin{equation}\alpha :=  \frac{1}{\sqrt{|g_{\mu\nu}\nabla^\mu t \nabla^\nu t|}}. \end{equation}
 giving us $n_\mu = -\alpha \dd t_\mu$ as well as the {\it normal evolution} vector $m_\mu = \alpha n_\mu$. Defining two infinitesimally close points $p\in\Sigma_t$ and $q\in\Sigma_{t'}$, where $ q^\mu = p^\mu + m^\mu\delta t$ and $t' = t+ \delta t$, we see,
-\begin{equation} t(q) = t(p^\mu +  m^\mu\delta t) = t(p) + \frac{\partial t^{\,}}{\partial x^\mu}m^\mu\delta t = t(p) + \dd t_\mu m^\mu \delta t =  t(p) + \delta t,\end{equation} 
+\begin{equation} t(q) = t(p^\mu +  m^\mu\delta t) = t(p) + \frac{\partial t^{\,}}{\partial x^\mu}m^\mu\delta t = t(p) + \dd t_\mu m^\mu \delta t =  t(p) + \delta t,\end{equation}
 showing that $m^\mu$ connects $\Sigma_t$ and $\Sigma_{t'}$ for any point $p\in \Sigma_t$; therefore when creating evolution equations we should consider Lie derivatives $\L_m$ along $m^\mu$ rather than $\L_n$.
 
 \color{choral} Given that we split everything into $\L_t$ later I might just leave this alone. We haven't covered $m^\mu = t^\mu - \beta^\mu$ yet. \color{black}
@@ -35,7 +35,7 @@ With the notion of a spacetime foliation we should define how to project tensors
 X^\mu_\perp &= -n^\mu n_\nu X^\nu .\end{align}
 Considering scalars such as $\phi = w_\mu X^\mu$ or $\psi = T^{\mu\nu}w_\mu w_\nu$, and remembering scalars do not vary under projection, it is straightforward to show that any tensor $T$ can be projected by contracting a projection operator $\bs{\perp}$ on any free index,
 \begin{equation} {T_\|}^{ij ...}_{\;\;\;\;\;\;\;kl ...} = {\mathcal{T}}^{ij ...}_{\;\;\;\;\;\;\;kl ...} =\perp^{i}_{\mu}\perp^{j}_{\nu}\perp^{\rho}_{k}\perp^{\sigma}_{l}\cdot\cdot\cdot\, T^{\mu\nu ...}_{\;\;\;\;\;\;\;\;\;\;\rho\sigma ...}.\end{equation}
-We can find the 3-metric $\gamma_{\mu\nu}$ of $\Sigma_t$ by projecting $g_{\mu\nu}$, 
+We can find the 3-metric $\gamma_{\mu\nu}$ of $\Sigma_t$ by projecting $g_{\mu\nu}$,
 \begin{equation} \label{nr:eq:gammaij}
 \gamma_{ij} = \perp^\mu_i \perp^\nu_j g_{\mu\nu} = g_{\mu\nu} + n_\mu n_\nu\quad \Rightarrow \quad \gamma^i_j = \perp^i_j,
 \end{equation}
@@ -44,7 +44,7 @@ and we find it is equal to the projector $\bs{\perp}$; this has to be the case a
 \K &= \K_i^i = -\bs{\nabla} \cdot \bs{n},\end{align}
 where $a_i = \bs{n}\cdot\bs{\nabla} n_i $ is called the Eulerian acceleration; it should be noted that $\K_{ij}$ is symmetric. It can also be shown to take the following form,
 \begin{equation}\label{nr:eq:lmL=alnK} \K_{ij} = -\frac{1}{2}\L_n \gamma_{ij} = -\frac{1}{2\alpha}\L_m \gamma_{ij},\end{equation}
-which gives the intuitive explanation of $\K_{ij}$ being related to the rate of change of the 3-metric $\gamma_{ij}$ with respect to the foliation. 
+which gives the intuitive explanation of $\K_{ij}$ being related to the rate of change of the 3-metric $\gamma_{ij}$ with respect to the foliation.
 
 The next object to discuss is the covariant 3-derivative $\D_i$. This is the covariant derivative belonging to $\Sigma_t$ and hence it's arguments should be tensors belonging to $\Sigma_t$; it should be noted that $\mathcal{D}_i  \neq \perp^\mu_i \nabla_\mu$ for a generic non-scalar tensorial arguments. The covariant 3-derivative is instead found from,
 \begin{align} {\mathcal{T}}^{ij ...}_{\;\;\;\;\;\;\;kl ...} &=\perp^{i}_{\mu}\perp^{j}_{\nu}\perp^{\rho}_{k}\perp^{\sigma}_{l}\cdot\cdot\cdot\, T^{\mu\nu ...}_{\;\;\;\;\;\;\;\;\;\;\rho\sigma ...},\\
@@ -61,7 +61,7 @@ and allows us to evaluate the Lie derivative of the projector $\perp^i_j$,
 &= 0.
 \end{align}
 The result $\L_m \perp^i_j=0$ is very important, it tells us that the projector commutes with $\L_m$ and as a result any tensor $\bs{T}$ which when projected onto $\Sigma_t$, written $\bs{\T}$, satisfies
-\begin{equation}  \label{nr:eq:LmT}\L_m {\mathcal{T}}^{ij ...}_{\;\;\;\;\;\;\;kl ...} =   \perp^{i}_{\mu}\perp^{j}_{\nu}\perp^{\rho}_{k}\perp^{\sigma}_{l}\L_m{{T}}^{\mu\nu ...}_{\;\;\;\;\;\;\;\;\;\;\rho\sigma ...}.\end{equation} 
+\begin{equation}  \label{nr:eq:LmT}\L_m {\mathcal{T}}^{ij ...}_{\;\;\;\;\;\;\;kl ...} =   \perp^{i}_{\mu}\perp^{j}_{\nu}\perp^{\rho}_{k}\perp^{\sigma}_{l}\L_m{{T}}^{\mu\nu ...}_{\;\;\;\;\;\;\;\;\;\;\rho\sigma ...}.\end{equation}
 In other words, evolving a projected tensor along integral curves of $m$ leaves the tensor parallel to $\Sigma_t$.
 
 
@@ -71,9 +71,9 @@ The decomposition of the 4-dimensional curvature tensors into a combination of 3
 
 \subsubsection{The Gauss Equations}
 From the definition of the Riemann tensor in section~\ref{intro:sec:curvature} we know,
-\begin{align} 
+\begin{align}
 [\mathcal{D}_ i \mathcal{D}_ j -\mathcal{D}_ j \mathcal{D}_ i ]v^ k  = \mathcal{R}^ k _{\,\,\, m  i  j }v^ m  , \\
- [\nabla_\alpha\nabla_\beta-\nabla_\beta\nabla_\alpha]X^\gamma = {R}^\gamma_{\,\,\,\lambda \alpha\beta}X^\lambda  , 
+ [\nabla_\alpha\nabla_\beta-\nabla_\beta\nabla_\alpha]X^\gamma = {R}^\gamma_{\,\,\,\lambda \alpha\beta}X^\lambda  ,
  \end{align}
 where $\bs{X}\in \M$ and $v^ m = \perp^ m  _\rho v^\rho$ is tangent to $\Sigma_t$. Expanding the $\mathcal{D}$'s in terms of $\nabla$'s gives,
 \begin{equation} \mathcal{D}_ i  \mathcal{D}_ j  v^ k  = \perp^\mu_ i  \perp_ j ^\sigma \perp^ k _\xi \nabla_\mu(\perp^\nu_\sigma \perp^\xi_\rho \nabla_\nu v^\rho),\end{equation}
@@ -87,8 +87,8 @@ Contracting again and realising $R_{\mu\nu\rho\sigma}n^\mu n^\nu n^\rho n^\sigma
 \subsubsection{The Codazzi Equations}
 The Codazzi relations are derived from a different start point. Instead of projecting the Riemann tensor fully onto $\Sigma_t$ with projection operators $\bs{\perp}$ and a spacelike vector $\bs{v}$, it is now projected with a timelike vector $\bs{n}$,
 \begin{equation}\label{nr:eq:Riem(n)}  [\nabla_\alpha\nabla_\beta-\nabla_\beta\nabla_\alpha]n^\gamma = {R}^\gamma_{\,\,\,\lambda \alpha\beta}n^\lambda ,\end{equation}
-and again projecting to $\Sigma_t$ with three projection operators. The following relations are used 
-\begin{align} 
+and again projecting to $\Sigma_t$ with three projection operators. The following relations are used
+\begin{align}
 \nabla_ j  n^ k  &= -\mathcal{K}^ k _{\,\,\, j } - a^ k  n_ j ,\\
  \perp^ i _\mu \perp^ j _\nu \perp^\rho_ k  \nabla_ i  \nabla_ j  n^ k  &= -\mathcal{D}_ i  \mathcal{K}^ k _{\,\,\, j } + a^ k  \mathcal{K}_{ i  j },
  \end{align}
@@ -101,15 +101,15 @@ and the contracted Codazzi relation,
 Finally we turn our attention to the Ricci equation, the projection of the Riemann tensor twice onto $\Sigma_t$ and twice contracting with $\bs{n}$. This is done by projecting Eq~(\ref{nr:eq:Riem(n)}) with two projectors $\bs{\perp}$ and one timelike $\bs{n}$. If we contract with $n^\gamma$ then the antisymmetry in the first two Riemann tensor indices would identically give to zero, therefore the unique choice (up to a minus sign) is to project with $n^\beta$,
 \begin{align}
 R_{\gamma\lambda\alpha\beta}n^\lambda n^\beta &=
- n^\beta \left[ \nabla_\alpha\nabla_\beta-\nabla_\beta\nabla_\alpha\right]n_\gamma, 
+ n^\beta \left[ \nabla_\alpha\nabla_\beta-\nabla_\beta\nabla_\alpha\right]n_\gamma,
 \end{align}
 and project the remaining free indices with $\bs{\perp}$ like,
 \begin{align} \label{nr:eq:Rngng}
 \perp_i^\gamma \perp^\alpha_j R_{\gamma\lambda\alpha\beta}n^\lambda n^\beta &=
- \perp_i^\gamma \perp^\alpha_j n^\beta \left[ \nabla_\alpha\nabla_\beta-\nabla_\beta\nabla_\alpha\right]n_\gamma. 
+ \perp_i^\gamma \perp^\alpha_j n^\beta \left[ \nabla_\alpha\nabla_\beta-\nabla_\beta\nabla_\alpha\right]n_\gamma.
 \end{align}
 Rearranging Eqs.~(\ref{nr:eq:Kij}) and (\ref{nr:eq:dlnalpha}) we obtain,
-\begin{align} \nabla_\sigma n_\mu &= -\mathcal{K}_{\mu\sigma}-n_\sigma \mathcal{D}_\mu \ln(\alpha), 
+\begin{align} \nabla_\sigma n_\mu &= -\mathcal{K}_{\mu\sigma}-n_\sigma \mathcal{D}_\mu \ln(\alpha),
 \end{align}
 which can be used to expand the right hand side of Eq.~(\ref{nr:eq:Rngng}),
 \begin{align} \label{nr:eq:Rngng}
@@ -118,11 +118,11 @@ which can be used to expand the right hand side of Eq.~(\ref{nr:eq:Rngng}),
  \perp_i^\gamma \perp^\alpha_j n^\beta \left[ -\nabla_\alpha (n_\beta \mathcal{D}_\gamma \ln(\alpha)) +\nabla_\beta (n_\alpha \mathcal{D}_\gamma \ln(\alpha))\right], \\
  &=
  \perp_i^\gamma \perp^\alpha_j n^\beta n^\sigma \nabla_\sigma \K_{\gamma\alpha} +  \perp^i_\gamma \perp^\alpha_j   \K_{\gamma\beta} \nabla_\alpha n^\beta  \\ \nonumber&\quad+
- \perp_i^\gamma \perp^\alpha_j n^\beta \left[ -n_\beta \nabla_\alpha ( \mathcal{D}_\gamma \ln(\alpha)) +n_\alpha \nabla_\beta \mathcal{D}_\gamma \ln(\alpha)  
- + ( \mathcal{D}_\gamma \ln(\alpha))  \nabla_\beta n_\alpha\right], \\ 
+ \perp_i^\gamma \perp^\alpha_j n^\beta \left[ -n_\beta \nabla_\alpha ( \mathcal{D}_\gamma \ln(\alpha)) +n_\alpha \nabla_\beta \mathcal{D}_\gamma \ln(\alpha)
+ + ( \mathcal{D}_\gamma \ln(\alpha))  \nabla_\beta n_\alpha\right], \\
   &=
  \perp_i^\gamma \perp^\alpha_j n^\beta n^\sigma \nabla_\sigma \K_{\gamma\alpha} -   \K_{ik} \K^k_{\,\,\,j}  \\ \nonumber&\quad+
- \mathcal{D}_j \mathcal{D}_i \ln(\alpha) + \mathcal{D}_i \ln(\alpha) \mathcal{D}_j \ln(\alpha)   , \\ 
+ \mathcal{D}_j \mathcal{D}_i \ln(\alpha) + \mathcal{D}_i \ln(\alpha) \mathcal{D}_j \ln(\alpha)   , \\
  &=
  \perp_i^\gamma \perp^\alpha_j n^\beta n^\sigma \nabla_\sigma \K_{\gamma\alpha} -   \K_{ik} \K^k_{\,\,\,j}  + \frac{1}{\alpha} \mathcal{D}_j \mathcal{D}_i \alpha   ,
 \end{align}
@@ -158,7 +158,7 @@ Finally, the space-space projection gives the 6 evolution PDEs. This time start 
 \end{align}
 where we used $T = \left[ \gamma^{\mu\nu} - n^\mu n^\nu\right]T_{\mu\nu} = \S-\rho$. When projecting the Ricci tensor, we use the contracted Gauss equation but replace the term with $R^\mu_{\,\,\,\nu\rho\sigma}$ with the Ricci equation~(\ref{nr:eq:riccieq}). Rearranging gives a normal evolution for the extrinsic curvature,
 \begin{equation} \L_m \K_{ij} = -\D_j\D_i \alpha + \alpha \left[ \R_{ij} + \K\K_{ij} - 2\K^k_i\K_{kj} + 4\pi \left[ \gamma_{ij}\left[ \S-\rho\right]-2\S_{ij}\right]\right].\end{equation}
-Along with the definition of $\K_{ij}$ in Eq.~(\ref{nr:eq:lmL=alnK}), 
+Along with the definition of $\K_{ij}$ in Eq.~(\ref{nr:eq:lmL=alnK}),
 \begin{equation} \label{nr:eq:Lmgamma}
 \L_m \gamma_{ij} = -2\alpha \K_{ij},
 \end{equation}
@@ -173,20 +173,20 @@ this gives the normal evolution equations for $\gamma_{ij}$ and $\K_{ij}$. In $4
 \color{orchid} There is a large gauge freedom associated with picking coordinates in general relativity; we choose to use a level set of the time coordinate $x^0=t$ to define our foliation hypersurfaces $\Sigma_t$. \color{black} The other three coordinates $x^i$ for $i\in[1,2,3]$ can be used to span each hypersurface $\Sigma_t$ however we define. It is conventional to split the normal evolution vector $m^\mu$ into time $t^\mu$ and space parts $\beta^\mu$,
 \begin{align}
 \label{nr:eq:tmu} t^\mu &= \left( 1,0,0,0\right), \\
-\label{nr:eq:betamu} \beta^\mu &= \left( 0,\beta^1,\beta^2,\beta^3\right), 
+\label{nr:eq:betamu} \beta^\mu &= \left( 0,\beta^1,\beta^2,\beta^3\right),
 \end{align}
 such that,
 \begin{align}
 \label{nr:eq:m1} m^\mu &= t^\mu - \beta^\mu  = (\partial_0)^\mu - \beta^i (\partial_i)^\mu, \\
-\label{nr:eq:m2} m^\mu &= \left( 1,-\beta^1,-\beta^2,-\beta^3\right). 
+\label{nr:eq:m2} m^\mu &= \left( 1,-\beta^1,-\beta^2,-\beta^3\right).
 \end{align}
 We can view $t^\mu$ as the (not necessarily causal) worldline for a simulation gridpoint, hence we would like to evolve our PDEs along $t^\mu$ on a computer. In other words, integral curves of $t^\mu$ must have constant spatial coordinates on $\Sigma_t$. Equation~(\ref{nr:eq:m2}), along with the definitions $\bs{m} = \alpha \bs{n}$ and $\bs{n}^2=-1$, specifies $n^\mu$ and $n_\mu$,
-\begin{align} 
-n^\mu &=  \frac{1}{\alpha}\left( 1,-\beta^1,-\beta^2,-\beta^3\right),\\  
+\begin{align}
+n^\mu &=  \frac{1}{\alpha}\left( 1,-\beta^1,-\beta^2,-\beta^3\right),\\
 n_\mu &= -\alpha\left( 1,0,0,0\right).
 \end{align}
 The decomposed metric can be calculated, using the property that $\bs{\beta}$ is tangent to $\Sigma_t$ and orthogonal to $\bs{m}$,
-\begin{align} 
+\begin{align}
 g_{00} &= \bs{g}(\bs{\partial}_0,\bs{\partial}_0) = \bs{g}(\bs{m} + \beta^i \bs{\partial}_i,\bs{m} + \beta^j\bs{\partial}_j) = \bs{g}(\bs{m},\bs{m}) + \beta^i \beta_j \langle \bs{\partial}_i,{\bs{\mathrm{d}}} \bs{x}^j \rangle = -\alpha^2 + \beta^i \beta_i ,\\
  g_{0i} &= \bs{g} (\bs{\partial}_0,\bs{\partial}_i) =  \bs{g}(\bs{m} + \beta^j \bs{\partial}_j, \bs{\partial}_i) =   \beta^j\bs{g}( \bs{\partial}_j, \bs{\partial}_i) = \beta_i,\\
  g_{ij} &= \bs{g}(\bs{\partial}_i,\bs{\partial}_j) = \bs{\gamma}(\bs{\partial}_i,\bs{\partial}_j) = \gamma_{ij}.
@@ -211,7 +211,7 @@ Now that we have some coordinates suitable for the spacetime foliation we can fi
 for any tensor $\bs{T}$ as $\partial_\nu t^\mu=0$. This can be used to expand the Lie derivative along $m^\mu$,
 \begin{equation} \L_m = \L_{t} - \L_\beta  = \partial_t - \L_\beta,\end{equation}
 and the ADM equations can be written by substituting $\L_m\rightarrow \partial_t - \L_\beta$ in the normal evolution equations in section \ref{nr:sec:einsteindecomp} for $\bs{\K}$ and $\bs{\gamma}$. The ADM equations are,
-\begin{align} 
+\begin{align}
 \partial_t \K_{ij} &= \L_\beta \K_{ij}  -\D_j\D_i \alpha + \alpha \left[ \R_{ij} + \K\K_{ij} - 2\K^k_i\K_{kj} + 4\pi \left[ \gamma_{ij}\left[ \S-\rho\right]-2\S_{ij}\right]\right],\\
 \partial_t \gamma_{ij} &= \L_\beta \gamma_{ij} - 2\alpha\K_{ij}.\end{align}
 Unfortunately, these PDEs turn out to be an ill-posed \color{orchid} initial value problem with typical gauges \color{black} \cite{frittelli2000ill}; this means that the time evolution of these equations does not generally depend smoothly on the initial data.
@@ -219,7 +219,7 @@ Unfortunately, these PDEs turn out to be an ill-posed \color{orchid} initial val
 
 \subsection{BSSN} \label{nr:sec:bssn}
 To tackle the ill-posedness of the ADM equations in section \ref{nr:sec:ADM} we now discuss the Baumgarte-Shapiro-Shibata-Nakamura (BSSN) formalism \cite{Baumgarte:1998te} The first step in BSSN is to decompose the 3-metric into the conformal metric $\tilde{\gamma}_{ij}$ and the conformal factor $\chi$,
-\begin{align} 
+\begin{align}
 \tilde{\gamma}_{ij} &= \chi \gamma_{ij},\\
  \det{\tilde{\gamma}_{ij}} &= \tilde{\gamma} = \chi^3\gamma = 1,
 \end{align}
@@ -227,29 +227,29 @@ with the above being the convention used in {\sc GRChombo} described in section 
 $\tilde{\gamma}_{ij} = \psi^{-4}\gamma_{ij}$ or $\tilde{\gamma}_{ij} =e^{-\phi}\gamma_{ij}$.
 Along with this the extrinsic curvature $\K_{ij}$ is conformally decomposed with $\chi$ and modified to be trace free,
 \begin{equation} \tilde{A}_{ij} = \chi\left[ \K_{ij}-\frac{1}{3}\K\gamma_{ij}\right], \end{equation} so that $\tilde{A}_{ij}\gamma^{ij}=0$.
-During an evolution the condition $\trace{\tilde{A}_{ij}=0}$ (and sometimes $\tilde{\gamma}=1$) is enforced which is observed to improve numerical stability; it is unclear why this works beyond heuristic arguments. As discussed later in section \ref{nr:sec:gaugeconditions}, the definition of $\chi = \gamma^{-1/3}$ is good for black hole simulations where $\gamma\rightarrow\infty$ but $\chi \rightarrow 0$. For example the isotropic Schwarzschild metric has, 
+During an evolution the condition $\trace{\tilde{A}_{ij}=0}$ (and sometimes $\tilde{\gamma}=1$) is enforced which is observed to improve numerical stability; it is unclear why this works beyond heuristic arguments. As discussed later in section \ref{nr:sec:gaugeconditions}, the definition of $\chi = \gamma^{-1/3}$ is good for black hole simulations where $\gamma\rightarrow\infty$ but $\chi \rightarrow 0$. For example the isotropic Schwarzschild metric has,
 \begin{align}
 \gamma &= \left[ 1+ \frac{M}{2r}\right]^{12},\\
 \chi &=\left[ \frac{r}{\frac{M}{2} + r}\right]^4.
-\end{align} 
+\end{align}
 
-The next step is to introduce the conformal connection functions as auxiliary variables, 
-\begin{align} 
+The next step is to introduce the conformal connection functions as auxiliary variables,
+\begin{align}
 \tilde{\Upsilon}^i &= \tilde{\gamma}^{jk}\tilde{\Upsilon}^i_{\,\;jk} = -\partial_i \tilde{\gamma}^{ij},\\
  \tilde{\Upsilon}^i_{\,\;jk} &= \frac{1}{2}\tilde{\gamma}^{il}\left[ \partial_j \tilde{\gamma}_{kl} + \partial_k \tilde{\gamma}_{lj} - \partial_l \tilde{\gamma}_{jk}\right] = \Upsilon^i_{\;\,jk} + \left[ \delta^i_j \partial_k + \delta^i_k \partial_j - \gamma^{il}\gamma_{jk}\partial_l\right] \ln \sqrt{\chi},
  \end{align}
 where $\Gamma^i_{\,\,\,jk}$ are the Christoffel symbols of $\Sigma_t$ as shown in Eq.~(\ref{nr:eq:3connection}).
-This reduces the set of vacuum evolution variables to $\{\chi,\tilde{\gamma}_{ij},\K,\tilde{\A}_{ij},\tilde{\Upsilon}^i \}$. It is conventional to use $-\partial_i \tilde{\gamma}^{ij}$ to evaluate the conformal connection coefficients when they appear in the RHS of an equation, but $\partial_j \tilde{\Upsilon}^i$ is calculated by differentiating the evolution variable $\tilde{\Upsilon}^i$. One final necessity, not included in the CCZ4 \color{orchid} (or Z4) \color{black} formulation discussed later, is to add multiples of the constraint equations (in section \ref{nr:sec:einsteindecomp}) to the evolution equations to change the characteristic matrix and improve stability. 
+This reduces the set of vacuum evolution variables to $\{\chi,\tilde{\gamma}_{ij},\K,\tilde{\A}_{ij},\tilde{\Upsilon}^i \}$. It is conventional to use $-\partial_i \tilde{\gamma}^{ij}$ to evaluate the conformal connection coefficients when they appear in the RHS of an equation, but $\partial_j \tilde{\Upsilon}^i$ is calculated by differentiating the evolution variable $\tilde{\Upsilon}^i$. One final necessity, not included in the CCZ4 \color{orchid} (or Z4) \color{black} formulation discussed later, is to add multiples of the constraint equations (in section \ref{nr:sec:einsteindecomp}) to the evolution equations to change the characteristic matrix and improve stability.
 
-The BSSN formalism is not the only way to find a well-posed set of evolution equations for general relativity. Another strongly hyperbolic formalism is the generalised harmonic gauge \cite{Garfinkle:2001ni} \cite{garfinkle2002harmonic} \cite{Pretorius:2004jg} \cite{Pretorius:2005gq} with, 
+The BSSN formalism is not the only way to find a well-posed set of evolution equations for general relativity. Another strongly hyperbolic formalism is the generalised harmonic gauge \cite{Garfinkle:2001ni} \cite{garfinkle2002harmonic} \cite{Pretorius:2004jg} \cite{Pretorius:2005gq} with,
 \begin{equation}\Box x^\mu = H^\mu,\end{equation}
 for some functions $H^\mu$.
 
 
 \subsection{Z4 Formalism}
-The Z4 formalism \cite{gundlach2005constraint} generalises the Einstein equation to include an unphysical field $Z_\mu$, along with damping terms parameterised by $\kappa_1$, $\kappa_2$, 
+The Z4 formalism \cite{gundlach2005constraint} generalises the Einstein equation to include an unphysical field $Z_\mu$, along with damping terms parameterised by $\kappa_1$, $\kappa_2$,
 \begin{equation}\label{nr:eq:z4einstein} R_{\mu\nu} + \nabla_\mu Z_\nu + \nabla_\nu Z_\mu - \kappa_1\left[ n_\mu Z_\nu + n_\nu Z_\mu - [1+\kappa_2]g_{\mu\nu}n^\alpha Z_\alpha\right] = 8\pi G \left[T_{\mu\nu}- \frac{1}{2}Tg_{\mu\nu} \right].\end{equation}
-Of course regular General Relativity is recovered by setting $Z_\mu=0$. It can be shown that achieving $Z_\mu=0$ whilst dynamically evolving $Z_\mu$  is equivalent to solving the constraints. $Z_\mu$ is subjected to a wave equation, transporting constraint violation off the computational domain. It can be shown that the system is driven to $Z_\mu =0$ for $k_1>0$ and $k_2>-1$. It is much cheaper to evolve the variables $Z_\mu$, driven to zero, than to solve four elliptic PDEs for the constraints $\{\mathcal{H},\M^i\}$ on each timestep. 
+Of course regular General Relativity is recovered by setting $Z_\mu=0$. It can be shown that achieving $Z_\mu=0$ whilst dynamically evolving $Z_\mu$  is equivalent to solving the constraints. $Z_\mu$ is subjected to a wave equation, transporting constraint violation off the computational domain. It can be shown that the system is driven to $Z_\mu =0$ for $k_1>0$ and $k_2>-1$. It is much cheaper to evolve the variables $Z_\mu$, driven to zero, than to solve four elliptic PDEs for the constraints $\{\mathcal{H},\M^i\}$ on each timestep.
 
 
 \subsection{CCZ4} \label{nr:sec:ccz4}
@@ -289,9 +289,9 @@ A similar process returns the remaining CCZ4 equations but care should be taken 
 In the CCZ4 equations there is an additional parameter $\kappa_3$ premultiplying terms in the evolution of $\hat{\Upsilon}^i$ which experimentally were found to lead to instabilities in black hole simulations \cite{PhysRevD.85.064040}; setting $\kappa_3<1$ stabilises the simulation but at the cost of covariance. Later on it was realised that setting $\kappa_3=1$ and $\alpha\kappa_1\rightarrow\kappa_1$ retains covariance as well as numerical stability \cite{Alic:2013xsa}; in this work $\kappa_1=0.1$, $\kappa_2=0$ and $\kappa_3=1$ is used.
 
 
-The CCZ4 scheme proves several benefits. 
+The CCZ4 scheme proves several benefits.
 \begin{itemize}
-\item Any initial data that does not satisfy the constraints will generally not do so during evolution when using the BSSN formalism either. Given that superposition of solutions in GR does not generally give a new solution, but does approximate one for separated compact objects, all the simulated binaries considered in this work will have non constraint satisfying initial data. 
+\item Any initial data that does not satisfy the constraints will generally not do so during evolution when using the BSSN formalism either. Given that superposition of solutions in GR does not generally give a new solution, but does approximate one for separated compact objects, all the simulated binaries considered in this work will have non constraint satisfying initial data.
 \item Constraint satisfying initial data can also develop constraint violation over time; one reason being that finite resolution imposes some small deviation from the continuum solution. More importantly, the use of adaptive mesh refinement (discussed in section \ref{grchombo:sec:grchombo}) introduces interpolation errors into the simulation at the boundary of the different grid resolution levels. The use of the CCZ4 scheme can also help to reduce the constraint violation generated in this way.
 \item Sommerfeld boundary conditions (discussed in section \ref{grchombo:sec:sommerfeld}) used are inexact in GR and will introduce errors at the outer boundary that ruin constraint satisfaction. \color{gren} sommerfeld are ill posed? \color{black}
 \end{itemize}
@@ -303,7 +303,7 @@ In all the cases above, the CCZ4 system forces the evolution towards constraint 
 
 \color{gren} PUT A FEW BOOK CITATIONS IN HERE! \color{black}
 
-The lapse $\alpha$ and shift $\beta^i$ are freely specifiable on a hypersurface $\Sigma_t$ being gauge variables, however they must be chosen carefully along with a suitable initial Cauchy surface $\Sigma_{t_0}$ and initial data. $\Sigma_{t_0}$ should be a smooth non-intersecting Cauchy surface as described in section \ref{nr:sec:foliation} and contain smooth initial data. It is also wise to avoid singularities (both coordinate and physical) on this surface. As an example, consider the simulation of a single Schwarzschild black hole. Figure~\ref{nr:fig:eddington-finkelstein} (left) shows how an initial data surface could extend to the singularity if polar-areal coordinates are used. Figure~\ref{nr:fig:eddington-finkelstein} also shows how the physical singularity is avoided when using isotropic coordinates. In this work the isotropic gauge is used; not only does this provide an initial Cauchy surface free of physical singularities but also allows for trivial swapping between spherical polar and Cartesian (used in simulations) coordinates. However, for a poor choice of lapse function, even a well chosen $\Sigma_{t_0}$ can advance to the physical singularity in finite simulation time. 
+The lapse $\alpha$ and shift $\beta^i$ are freely specifiable on a hypersurface $\Sigma_t$ being gauge variables, however they must be chosen carefully along with a suitable initial Cauchy surface $\Sigma_{t_0}$ and initial data. $\Sigma_{t_0}$ should be a smooth non-intersecting Cauchy surface as described in section \ref{nr:sec:foliation} and contain smooth initial data. It is also wise to avoid singularities (both coordinate and physical) on this surface. As an example, consider the simulation of a single Schwarzschild black hole. Figure~\ref{nr:fig:eddington-finkelstein} (left) shows how an initial data surface could extend to the singularity if polar-areal coordinates are used. Figure~\ref{nr:fig:eddington-finkelstein} also shows how the physical singularity is avoided when using isotropic coordinates. In this work the isotropic gauge is used; not only does this provide an initial Cauchy surface free of physical singularities but also allows for trivial swapping between spherical polar and Cartesian (used in simulations) coordinates. However, for a poor choice of lapse function, even a well chosen $\Sigma_{t_0}$ can advance to the physical singularity in finite simulation time.
 
 %   \begin{figure}[h]
 %   \caption{Penrose Diagrams, $\Sigma_{t_0}$ dashed, Left: Ingoing Eddington-Finkelstein Coordinates, Right: Isotropic Coordinates.}
@@ -317,26 +317,26 @@ The lapse $\alpha$ and shift $\beta^i$ are freely specifiable on a hypersurface 
   \caption{Penrose Diagram of the maximally extended Schwarzschild spacetime; the top (future) squiggle represents the spacelike black hole singulary and the bottom (past) squiggle represents the white hole singularity. In the right hand diagram, the straight dashed line labelled by $\Sigma_{\rm iso}$ represent the initial hypersurface $\Sigma_{t_0}$ for $t=0$ in isotropic coordinates. In the left hand diagram, the dashed line labelled by $\Sigma_{\rm pa}$ represent the initial hypersurface $\Sigma_{t_0}$ for $t=0$ in polar-areal coordinates. Notably $\Sigma_{\rm pa}$ initially touches the physical singularity whereas $\Sigma_{t_0}$ does not; additionally $\Sigma_{\rm pa}$ is not a Cauchy surface as there exist causal curves which can intersect it multiple times.}
   \centering
   \subfloat{\includegraphics[width=0.50\textwidth]{png/penrose_sc.pdf}} \hfill
-  \subfloat{\includegraphics[width=0.50\textwidth]{png/penrose_iso.pdf}} 
+  \subfloat{\includegraphics[width=0.50\textwidth]{png/penrose_iso.pdf}}
   \label{nr:fig:eddington-finkelstein}\label{nr:fig:isotropic}\label{boson:fig:f1}
 \end{figure}
 
 \subsubsection{Lapse Slicing Conditions}
 
-The simplest lapse choice would be to enforce $\alpha=1$, called geodesic slicing, with the hypersurface following integral curves of $n^\mu$; given that geodesics can converge this can lead to hypersurface self-intersection which breaks the definition of a Cauchy surface and the simulation will likely fail. Another problem is that a black hole singularity can be reached in finite simulation time. 
+The simplest lapse choice would be to enforce $\alpha=1$, called geodesic slicing, with the hypersurface following integral curves of $n^\mu$; given that geodesics can converge this can lead to hypersurface self-intersection which breaks the definition of a Cauchy surface and the simulation will likely fail. Another problem is that a black hole singularity can be reached in finite simulation time.
 
 An alternative slicing condition is the maximal slicing condition which keeps the volume element $\sqrt{-g}$ constant along geodesics. This means as $\gamma\rightarrow\infty$ nearing a singularity $\alpha\rightarrow0$ from Eq.~(\ref{nr:eq:gay}), causing the hypersurface to advance more slowly before a singularity is reached as demonstrated in Fig.~(\ref{nr:fig:singularity_avoiding}). This property is called singularity avoiding and is crucial for numerical stability unless using excision\footnote{Excision is the practice of cutting singularities out of the computational domain while supplying suitable boundary conditions about the excised region}. Maximal slicing can be implemented by forcing $\mathcal{K} = \partial_t \K = 0\,\forall \,t$ which requires a slow elliptic solve for $\alpha$ at each timestep. Instead of performing this slow elliptic solve, $\alpha$ is promoted to an evolution variable and is evolved along with every other simulation variable. To do this we can pick an algebraic slicing condition of the Bona-Masso type,
 \begin{equation}\L_m \alpha = \partial_t \alpha - \beta^i \partial_i \alpha = -\alpha^2 f(\alpha)\K. \end{equation}
 Using this with $f = 2\alpha^{-1}$ gives,
 \begin{equation}\L_m \alpha = \partial_t \alpha - \beta^i \partial_i \alpha = -2\alpha \K, \label{nr:eq:1pluslog} \end{equation}
-which is called 1+log slicing; this is very common in Numerical Relativity codes. In practice 1+log slicing is strongly singularity avoiding reaching $\alpha=0$ before the singularity. This is modified in the CCZ4 scheme to, 
+which is called 1+log slicing; this is very common in Numerical Relativity codes. In practice 1+log slicing is strongly singularity avoiding reaching $\alpha=0$ before the singularity. This is modified in the CCZ4 scheme to,
 \begin{equation}\partial_t \alpha = -2\alpha\left[ \K-2\Theta\right] + \beta^i \partial_i \alpha.\end{equation}
-Using Gaussian normal coordinates $\beta^i=0$ and provided $\Theta=0$, the 1+log slicing condition reduces to, 
+Using Gaussian normal coordinates $\beta^i=0$ and provided $\Theta=0$, the 1+log slicing condition reduces to,
 \begin{equation} \alpha = 1+ \ln \gamma,\end{equation}
 giving the slicing condition it's name \cite{alcubierre2008introduction}.
 
 \begin{figure}[h!]
-    \includegraphics[width=0.9\textwidth]{png/slicing.pdf} 
+    \includegraphics[width=0.9\textwidth]{png/slicing.pdf}
       \caption{Diagram showing the time evolution of a hypersurface using a singularity avoiding slicing condition. The vertical squiggled line represents a physical singularity that is formed at some point in spacetime, potentially from the collapse of matter to a black hole.} \label{nr:fig:singularity_avoiding}
 \end{figure}
 
@@ -345,22 +345,38 @@ giving the slicing condition it's name \cite{alcubierre2008introduction}.
 
 The simplest choice for the shift vector would be $\beta^i=0$ but this can cause great stretching and shearing of integral curves of $m^\mu$ in the neighbourhood of a singularity as in Fig.~(\ref{nr:fig:singularity_avoiding}); the effect of this is that neighbouring gridpoints may have large differences in field values leading to inaccurate and unstable evolutions.
 
- Another negative side effect is that the computational domain can fall inside an event horizon in black hole simulations. To counteract this we want to employ a shift vector that minimises hypersurface shear $\sigma_{ij}$ which can be defined as \cite{smarr1978kinematical}, 
+ Another negative side effect is that the computational domain can fall inside an event horizon in black hole simulations. To counteract this we want to employ a shift vector that minimises hypersurface shear $\sigma_{ij}$ which can be defined as \cite{smarr1978kinematical},
 \begin{equation} \sigma_{ij}:= \perp^\mu_i \perp^\nu_j \left[\nabla_{(\mu} n_{\nu)}-\frac{1}{3}\gamma^{ab}\nabla_{(a} n_{b)} \gamma_{\mu\nu}\right], \end{equation}
 where $\sigma_{ij}$ is tracefree corresponding to shearing rather than inflation or expansion. Minimising the total shear $\Sigma$,
 \begin{equation} \Sigma = \int \sigma_{ij}\sigma^{ij}\sqrt{\gamma}\,\dd x^3,\end{equation}
-with respect to $\beta^i$ leads to an elliptic PDE to be solved for each $\beta^i$ at each time step that minimises shear, 
+with respect to $\beta^i$ leads to an elliptic PDE to be solved for each $\beta^i$ at each time step that minimises shear,
 \begin{equation} \delta \Sigma = 0 \rightarrow \D_i\sigma^{ij}=0.\end{equation}
 This is known as the minimal distortion shift condition. Promoting the $\beta^i$ to evolution variables is computationally cheaper than solving a set of PDEs at each time step. A very common choice is to promote the elliptic PDE for $\beta^i$ into a hyperbolic equation via introducing a $\partial_t^2\beta^i$ term and an artificial damping term parameterised by $\eta$. This becomes a damped wave equation and is supposed to transport away any part of $\beta^i$ which does not satisfy $\D_i \sigma^{ij}=0$. This works well with Sommerfeld (outgoing wave) boundary conditions given in section \ref{grchombo:sec:sommerfeld}. The standard Gamma driver shift condition is,
-\begin{align} 
+\begin{align}
 \partial_t \beta^i &= FB^i,\label{nr:eq:gammadriver1}\\
  \partial_t B^i &= \partial_t \tilde{\Gamma}^i - \eta B^i,\label{nr:eq:gammadriver2}\end{align}
 where $F=3/4$ and $\eta=1$ are used throughout this work.
 
 \subsubsection{Moving Puncture Gauge}
-The moving puncture gauge is the combination of the 1+log slicing lapse condition in Eq.~(\ref{nr:eq:1pluslog}) and the Gamma driver shift condition in Eqs.~(\ref{nr:eq:gammadriver1}) and (\ref{nr:eq:gammadriver2}). In 2006, the moving puncture gauge allowed for the first successful simulation of a black hole binary \cite{PhysRevLett.96.111101} in the \color{orchid} BSSN \color{black} formalism\footnote{It should be noted that a black-hole binary had been sucessfully simulated before by \cite{Bruegmann:2003aw} in 2003 with co-rotating coordinates and \cite{Pretorius:2005gq} in 2005 using the generalised harmonic gauge.} without the use of excision. \color{gren} maybe david/others deserve a citation here for z4c/ccz4. \color{black} Even though $\chi\rightarrow 0$, or $\gamma \rightarrow \infty$, at the centre of a black hole, as long as a minimum value for $\chi$ (such as $\chi=10^{-4}$) is enforced a simulation can run. Even though it is unphysical to modify a physical variable, any errors caused by this are localised to well within the event horizon and as a result do not propagate away from the puncture. \color{gren} with correct gauge conditions numerical error is limited to light speed travel? \color{black}
+The moving puncture gauge (MPG) is the combination of the 1+log slicing lapse condition
+in Eq.~(\ref{nr:eq:1pluslog}) and the Gamma driver shift condition in
+Eqs.~(\ref{nr:eq:gammadriver1}) and (\ref{nr:eq:gammadriver2}). In 2006, the
+moving puncture gauge allowed for the first successful simulation of a black hole
+binary \cite{PhysRevLett.96.111101} in the \color{orchid} BSSN \color{black}
+formalism\footnote{It should be noted that a black-hole binary had been sucessfully
+simulated before by \cite{Bruegmann:2003aw} in 2003 with co-rotating coordinates
+and \cite{Pretorius:2005gq} in 2005 using the generalised harmonic gauge.} without
+the use of excision. \color{gren} maybe david/others deserve a citation here for
+z4c/ccz4. \color{black} Even though $\chi\rightarrow 0$, or $\gamma \rightarrow \infty$,
+at the centre of a black hole, as long as a minimum value for $\chi$
+(such as $\chi=10^{-4}$) is enforced a simulation can run. \color{orchid} Even though it is
+unphysical to modify a physical variable, the success of the MPG is often attributed
+to the causal shielding\footnote{\color{orchid} Errors that propagate at (or below) light speed
+will be trapped by the event horizon. } provided by the
+event horizon. Additionally, any extremely sharp field configurations produced will
+be partially suppressed by a numerical dissipation scheme.\color{black}
 
-Not only does the moving puncture gauge safeguard the divergence of fields at the puncture, but it allows the puncture to move; hence the name {\it moving} puncture gauge. Near the puncture, the lapse $\alpha$ becomes vanishingly small and the 1+log slicing condition in Eq.~(\ref{nr:eq:1pluslog}) becomes,
+Not only does the MPG safeguard the divergence of fields at the puncture, but it allows the puncture to move; hence the name {\it moving} puncture gauge. Near the puncture, the lapse $\alpha$ becomes vanishingly small and the 1+log slicing condition in Eq.~(\ref{nr:eq:1pluslog}) becomes,
 \begin{equation}
 \partial_t \alpha = \beta^i \partial_i \alpha, \label{nr:eq:betavel}
 \end{equation}
@@ -374,6 +390,3 @@ which can be compared to Eq.~(\ref{nr:eq:betavel}) to show that
 \beta^i = -\frac{\partial }{\partial t}x^i_{\rm punc}\,.
 \end{equation}
 This shows that the puncture must move along integral curves of $-\beta^i$.
-
-
-

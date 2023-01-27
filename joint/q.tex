@@ -36,10 +36,10 @@ This says the rate of change of a charge in a volume $V$ is equal to the flux ac
 where $S$ is defined in Eq.~(\ref{q:eq:S_def_int}); ${S}$ is the source of $\bs{J}$ in $V$ which can be understood as the destruction or creation of charge $Q$. Eq.~(\ref{q:first_qfs}) is a simplified version of Eq.~(\ref{q:qfs_system}), later referred to as the QFS system.
 
 
-Evaluation of the continuity equations above, and their corresponding charges ${Q}$, have many uses in the study of fundamental fields in Numerical Relativity. One such use is the measurement of the Noether current $\bs{J}$ of a complex scalar/vector field which arises from a $U(1)$ gauge symmetry of the matter fields $\psi_j$ of the form $\psi_j \rightarrow \psi_j e^{\mathrm{i}a} \sim \psi_j + 
-{\rm i} a \psi_j$ for some small constant $a$ and $j \in \{1,2,...,n\}$. The total charge $Q$, also called Noether charge in this case, is useful to track during numerical simulations as it gives insight into the numerical quality of a simulation. A violation of Noether charge conservation can arise from insufficient resolution in some region of the simulation or due to boundary conditions in a finite volume simulation. In the case of Sommerfeld (outgoing wave) boundary conditions \cite{Alcubierre:2002kk} we might expect charge to be transported out of a finite computational domain and the total charge $Q$ in the simulation should decrease. Monitoring only ${Q}$ within some volume $V$, it is impossible to tell whether Noether charge violation is due to a flux ${F}$ through the surface $\partial V$ or undesirable numerical inaccuracies such as dissipation. It is more useful to check whether the continuity Eq.~(\ref{q:first_qf}) (or equivalently Eq.~(\ref{q:first_qfs}) if there were a non-zero source term) is obeyed for a finite domain $V$; if this fails there is likely a problem as the continuity equations should be exactly observed for general spacetimes. 
+Evaluation of the continuity equations above, and their corresponding charges ${Q}$, have many uses in the study of fundamental fields in Numerical Relativity. One such use is the measurement of the Noether current $\bs{J}$ of a complex scalar/vector field which arises from a $U(1)$ gauge symmetry of the matter fields $\psi_j$ of the form $\psi_j \rightarrow \psi_j e^{\mathrm{i}a} \sim \psi_j +
+{\rm i} a \psi_j$ for some small constant $a$ and $j \in \{1,2,...,n\}$. The total charge $Q$, also called Noether charge in this case, is useful to track during numerical simulations as it gives insight into the numerical quality of a simulation. A violation of Noether charge conservation can arise from insufficient resolution in some region of the simulation or due to boundary conditions in a finite volume simulation. In the case of Sommerfeld (outgoing wave) boundary conditions \cite{Alcubierre:2002kk} we might expect charge to be transported out of a finite computational domain and the total charge $Q$ in the simulation should decrease. Monitoring only ${Q}$ within some volume $V$, it is impossible to tell whether Noether charge violation is due to a flux ${F}$ through the surface $\partial V$ or undesirable numerical inaccuracies such as dissipation. It is more useful to check whether the continuity Eq.~(\ref{q:first_qf}) (or equivalently Eq.~(\ref{q:first_qfs}) if there were a non-zero source term) is obeyed for a finite domain $V$; if this fails there is likely a problem as the continuity equations should be exactly observed for general spacetimes.
 
-Another use of the continuity equations is to measure the amount of energy-momentum belonging to matter fields within a volume $V$. This has many possible applications such as calculating the total energy or momentum of compact objects such as boson stars and neutron stars. The energy-momentum of matter obeys a conservation law in General Relativity as given by Penrose \cite{10.2307/2397365} where the considered spacetime is assumed to admit a Killing vector. In the case a Killing vector exists then a conserved current $\bs{J}$ associated with the energy-momentum tensor $\bs{T}$ can be identified. The current is $J^\mu = T^\mu_\nu \xi^\nu$ for some Killing vector $\bs{\xi}$ and satisfies $\nabla_\mu J^\mu = 0$. If $\bs{\xi}$ is a Killing vector then Eq.~(\ref{q:first_qf}) is the correct continuity equation and the charge $Q$ is conserved. In General Relativity the existence of Killing vectors is rare, reserved for spacetimes with special symmetries. Generic dynamic spacetimes with no symmetries, such as inspirals and grazing collisions of compact objects, have no easily identifiable Killing vector fields. If there is no Killing vector the divergence of $\bs{J}$ becomes $\nabla_\mu J^\mu = T^{\mu\nu}\nabla_\mu \xi_\nu$ and the source term ${S}$ is non-zero. Now Eq.~(\ref{q:first_qfs}) is the correct continuity equation and the charge $Q$ is no longer conserved. In section \ref{q:sect:mattercont} we will show how the choice of $\bs{\xi}$ affects the type of current $\bs{J}$, and therefore charge $Q$, obtained. While measures of energy or momentum are interesting in their own right, the measure of Eq.~(\ref{q:first_qfs}) within some volume ${V}$ can be a good measure of numerical quality of a simulation in a similar fashion to the measure of Noether charge mentioned already. 
+Another use of the continuity equations is to measure the amount of energy-momentum belonging to matter fields within a volume $V$. This has many possible applications such as calculating the total energy or momentum of compact objects such as boson stars and neutron stars. The energy-momentum of matter obeys a conservation law in General Relativity as given by Penrose \cite{10.2307/2397365} where the considered spacetime is assumed to admit a Killing vector. In the case a Killing vector exists then a conserved current $\bs{J}$ associated with the energy-momentum tensor $\bs{T}$ can be identified. The current is $J^\mu = T^\mu_\nu \xi^\nu$ for some Killing vector $\bs{\xi}$ and satisfies $\nabla_\mu J^\mu = 0$. If $\bs{\xi}$ is a Killing vector then Eq.~(\ref{q:first_qf}) is the correct continuity equation and the charge $Q$ is conserved. In General Relativity the existence of Killing vectors is rare, reserved for spacetimes with special symmetries. Generic dynamic spacetimes with no symmetries, such as inspirals and grazing collisions of compact objects, have no easily identifiable Killing vector fields. If there is no Killing vector the divergence of $\bs{J}$ becomes $\nabla_\mu J^\mu = T^{\mu\nu}\nabla_\mu \xi_\nu$ and the source term ${S}$ is non-zero. Now Eq.~(\ref{q:first_qfs}) is the correct continuity equation and the charge $Q$ is no longer conserved. In section \ref{q:sect:mattercont} we will show how the choice of $\bs{\xi}$ affects the type of current $\bs{J}$, and therefore charge $Q$, obtained. While measures of energy or momentum are interesting in their own right, the measure of Eq.~(\ref{q:first_qfs}) within some volume ${V}$ can be a good measure of numerical quality of a simulation in a similar fashion to the measure of Noether charge mentioned already.
 
 When dealing with black hole spacetimes resolution requirements typically become very strict towards the singularity and lead to a local violation of Eqs.~(\ref{q:first_qf}) and (\ref{q:first_qfs}). This might not doom a simulation as for most physical applications in GR singularities are contained by an event horizon and are therefore causally disconnected from the rest of the simulation; a resolution problem in the vicinity of a singularity therefore may not propagate to the exterior. It could be helpful instead to consider a volume $\bar{V}$ equal to $V$ but removing a set of finite volumes $\tilde{V}_i$ which surround any singularities. Testing Eqs.~(\ref{q:first_qf}) and (\ref{q:first_qfs}) in volume $\bar{V}$ would then give a measure of the simulation resolution untainted by the resolution issues at a singularity.
 
@@ -66,12 +66,12 @@ For a spacetime $(\mathcal{M},\bs{g})$ we start by defining a vector field $\bs{
 \begin{align}
 \label{q:continuity_eqn_def}\nabla_\mu J^\mu = S,
 \end{align}
-where $S$ is a source term and describes the non-conservation of $\bs{J}$. In the case $S=0$ the current is conserved. We are interested in the charge density $\mathcal{Q}$ and source density $\mathcal{S}$ associated with $\bs{J}$ in a spatial 3-volume $V\in\Sigma$. Here $\Sigma$ is the usual 3-dimensional spacelike manifold $\Sigma$ consisting of the set of all points with constant time coordinate $t$, equipped with metric $\bs{\gamma}$. We are also interested in the flux density $\mathcal{F}$ through $\partial V$, the boundary of $V$ with metric $\bs{\sigma}$. $\Sigma$ is spanned by spatial coordinates $x^i$ related to the full spacetime coordinates $x^\mu$ by $ x^\mu = \{t,x^i \}$. The normal to $\Sigma$ is the unit co-vector $\bf{n}$ defined as, 
+where $S$ is a source term and describes the non-conservation of $\bs{J}$. In the case $S=0$ the current is conserved. We are interested in the charge density $\mathcal{Q}$ and source density $\mathcal{S}$ associated with $\bs{J}$ in a spatial 3-volume $V\in\Sigma$. Here $\Sigma$ is the usual 3-dimensional spacelike manifold $\Sigma$ consisting of the set of all points with constant time coordinate $t$, equipped with metric $\bs{\gamma}$. We are also interested in the flux density $\mathcal{F}$ through $\partial V$, the boundary of $V$ with metric $\bs{\sigma}$. $\Sigma$ is spanned by spatial coordinates $x^i$ related to the full spacetime coordinates $x^\mu$ by $ x^\mu = \{t,x^i \}$. The normal to $\Sigma$ is the unit co-vector $\bf{n}$ defined as,
 \begin{align}
 \label{q:n_def}
 n_\mu :&= \frac{\nabla_\mu t}{\sqrt{g^{\rho\sigma}\nabla_\rho t \nabla_\sigma t}} = -(\alpha,0,0,0), \\
-\label{q:n_def2} n^\mu &= \frac{1}{\alpha}\left(t^\mu - \beta^\mu \right)= \frac{1}{\alpha} (1, -\beta^i ) , 
-\end{align} 
+\label{q:n_def2} n^\mu &= \frac{1}{\alpha}\left(t^\mu - \beta^\mu \right)= \frac{1}{\alpha} (1, -\beta^i ) ,
+\end{align}
 where $(\alpha,\beta^i)$ are the usual lapse and shift from the ADM 3+1 spacetime decomposition \cite{2008}. The reader is directed to section~\ref{nr:sec:nr} or \cite{gourgoulhon20073+} for a comprehensive introduction to the $3+1$ decomposition. In Eq.~(\ref{q:n_def2}), $t^\mu = (1,0,0,0)$ is the future directed vector and is distinct from $n^\mu$. Time vector $\bs{t}$ is useful as its integral curves form lines of constant spatial coordinates. With this knowledge we can define the 4-volume $M$, the spatial 3-volume $V$ evolved along integral curves of $\bs{t}$ between times $t_0\leq t\leq t_0 + \delta t$ in the limit $\delta t\rightarrow 0$. Finally we define the 3-dimensional volume $H$, with metric $\bs h$. $H$ is the evolution of $\partial V$ along integral curves of $\bs{t}$ between times $t_0\leq t \leq t_0 + \delta t$ and is the 3-volume the flux crosses; clearly our definition of $H$ will affect our definition of flux density. There is no reason to choose the timelike vector $\bs{t}$, rather than $\bs{n}$, to evolve $V$ and $\partial V$ in time and both will result in a different definition of flux density. However, it is shown in section~\ref{q:sect:generality} that these two choices result in the same total integrated flux. A diagram summarising the relevant geometry can be found in Fig.~\ref{q:fig:qfs_geometry}.
 
 \begin{figure}[h]
@@ -84,7 +84,7 @@ With the relevant geometry discussed we can derive the QFS system, Eq.~(\ref{q:f
 \begin{align} \label{q:master_integral}
 \int_{M } \bs{\nabla}\cdot \bs{J} \sqrt{-g} \;\dd x^4 &= \int_{M } S \sqrt{-g} \;\dd x^4.
 \end{align}
-Let us start by using Gauss' theorem for curved space, discussed in section~\ref{intro:sec:div} or~\cite{baumgarte_shapiro_2010}, on the left hand side, 
+Let us start by using Gauss' theorem for curved space, discussed in section~\ref{intro:sec:div} or~\cite{baumgarte_shapiro_2010}, on the left hand side,
 \begin{align} \label{q:master_gauss}
 \int_{M } \bs{\nabla}\cdot \bs{J} \sqrt{-g}\;\dd x^4  = \int_{\partial M } \hat{\bs{s}} \cdot \bs{J} \sqrt{{}^{(3)}{g}} \;\dd x^3 ,
 \end{align}
@@ -93,9 +93,9 @@ with $\sqrt{{}^{(3)}g}$ being the volume element of a generic 3-surface and $\ha
 &\left(\int^{(t=t_0)}_{V} - \int^{(t=t_0+\delta t)}_{V} \right)\bs{n} \cdot \bs{J} \sqrt{\gamma} \,\dd^3 x ,\nonumber \\
 &=-\int_{V}\left[\left(\bs{n} \cdot \bs{J} \sqrt{\gamma}\right)_{t+\delta t} - \left(\bs{n} \cdot \bs{J} \sqrt{\gamma}\right)_{t}\right] \,\dd^3 x, \\
 \label{q:q_int}&=-\delta t\,\partial_t \int_{V} \bs{n} \cdot \bs{J} \sqrt{\gamma}\,\dd^3 x ,
-\end{align} 
+\end{align}
 where we made use of the fact that the coordinate volume $V$ is constant for all times due to it evolving in time with $t^\mu$. Here $\sqrt{\gamma}$ is the volume element on the spacelike manifold $\Sigma$. Now let us evaluate the integral over $H$, with metric $\bs{h}$ of signature $\{-,+,+\}$,
-\begin{align} 
+\begin{align}
 &\int_{H} \bs{N} \cdot \bs{J} \sqrt{-h} \,\dd^2 x\,\dd t, \nonumber \\
 &=\int_{\partial V}  \bs{N} \cdot \bs{J} \sqrt{-h} \,\dd^2 x\int_t^{t+\delta t}\dd t, \\
 \label{q:f_int}&=\delta_t \int_{\partial V} \bs{N} \cdot \bs{J} \sqrt{-h} \,\dd^2 x,
@@ -108,21 +108,21 @@ where $\bs{N}$ is the unit normal to $H$ as shown in Fig.~\ref{q:fig:qfs_geometr
 \end{align}
 Combining Eqs.~(\ref{q:q_int}), (\ref{q:f_int}) and (\ref{q:s_int}) transforms Eq.~(\ref{q:master_integral}) into,
 \begin{equation} \label{q:qfs_system}
-\partial_t \int_{V} \mathcal{Q} \sqrt{\gamma} \,\dd^3 x  = \int_{\partial V} \mathcal{F} \sqrt{\sigma} \,\dd^2 x  
+\partial_t \int_{V} \mathcal{Q} \sqrt{\gamma} \,\dd^3 x  = \int_{\partial V} \mathcal{F} \sqrt{\sigma} \,\dd^2 x
  - \int_{V} \mathcal{S} \sqrt{\gamma} \,\dd^3 x,
 \end{equation}
 where the density, flux density and source density ($\mathcal{Q}, \mathcal{F}, \mathcal{S}$) of angular momentum are defined as,
 \begin{align}
 \label{q:q_def}\mathcal{Q} :&= J^\mu n_\mu , \\
 \label{q:flux_def}\mathcal{F} :&= \frac{\sqrt{-h}}{\sqrt{\sigma}}J^\mu N_\mu , \\
-\label{q:source_def}\mathcal{S} :&= \alpha S. 
-\end{align} 
+\label{q:source_def}\mathcal{S} :&= \alpha S.
+\end{align}
 The integrated version of these quantities can be written as
 \begin{align}
 \label{q:eq:Q_def_int}{Q} :&= \int_V \mathcal{Q}\sqrt{\gamma}\,\dd^3 x , \\
 \label{q:eq:F_def_int}{F} :&= \int_{\partial V}  \mathcal{F}\sqrt{\sigma}\,\dd^2 x , \\
-\label{q:eq:S_def_int}{S} :&= \int_V \mathcal{S}\sqrt{\gamma}\,\dd^3 x. 
-\end{align} 
+\label{q:eq:S_def_int}{S} :&= \int_V \mathcal{S}\sqrt{\gamma}\,\dd^3 x.
+\end{align}
 For later sections it is useful to split the normal vector $\bs{N}$ into its spacelike and timelike parts,
 \begin{align}
 \label{q:3plus1n}N_\mu = \pN_\mu - \bs{n} \cdot \bs{N} n_\mu,
@@ -131,7 +131,7 @@ where $\pN_\mu = \perp^\nu_\mu N_\nu$ is the projected part of $\bs{N}$ onto $\S
 \begin{align}
 \label{q:perp} \perp^\nu_\mu = \delta^\nu_\mu + n^\mu n_\nu.
 \end{align}
-Using Eqs.~(\ref{q:3plus1n}) and (\ref{q:perp}) the flux term becomes, 
+Using Eqs.~(\ref{q:3plus1n}) and (\ref{q:perp}) the flux term becomes,
 \begin{align}
 \mathcal{F} &= \frac{\sqrt{-h}}{\sqrt{\sigma}}J^\mu (\pN_\mu - \bs{n} \cdot \bs{N} n_\mu), \\
   \label{q:3plus1f} &= \frac{\sqrt{-h}}{\sqrt{\sigma}} (\gamma^{\mu\nu} J_\mu N_\nu - \bs{n} \cdot \bs{N} \mathcal{Q}).
@@ -173,7 +173,7 @@ Using Cramer's rule for the inverse of a matrix with Eqs.~(\ref{q:eqn:hmn}) and 
 \begin{align}
 \label{q:eqn:htt}h^{tt} = \frac{{\sigma}}{h},
 \end{align}
-and reading from Eq.~(\ref{q:eqn:projmetric}) gives 
+and reading from Eq.~(\ref{q:eqn:projmetric}) gives
 \begin{align}
 {}^{(4)}h^{tt} &=      g^{tt} - N^t N^t, \\
 \label{q:eqn:htt2}&= -\frac{1}{\alpha^2}\left(\frac{\gamma^{rr}}{g^{rr}} \right).
@@ -187,9 +187,9 @@ which shows that $h^{tt}={}^{(4)}h^{tt}$. Combining Eqs.~(\ref{q:eqn:htt}) and (
 \begin{align}
      \label{q:rootminushexpand}\sqrt{-h} = \alpha \sqrt{\sigma} \sqrt{\frac{g^{rr}}{\gamma^{rr}}}.
 \end{align}
-Using this with Eq.~(\ref{q:radial_N}) we can expand Eq.~(\ref{q:flux_def}) for the flux term $\mathcal{F}$, 
+Using this with Eq.~(\ref{q:radial_N}) we can expand Eq.~(\ref{q:flux_def}) for the flux term $\mathcal{F}$,
 \begin{align}
- \label{q:spherical_flux}\mathcal{F}&=  \frac{\sqrt{-h}}{\sqrt{\sigma}} J^\mu N_\mu = \frac{\alpha}{\sqrt{\gamma^{rr}}} J^r, 
+ \label{q:spherical_flux}\mathcal{F}&=  \frac{\sqrt{-h}}{\sqrt{\sigma}} J^\mu N_\mu = \frac{\alpha}{\sqrt{\gamma^{rr}}} J^r,
  \end{align}
  but for practical purposes it is helpful to decompose this in terms of 3+1 variables as in Eq.~(\ref{q:3plus1f}),
  \begin{align}
@@ -212,9 +212,9 @@ It is straightforward to re-derive the results of this section for other extract
 \subsection{Noether Currents} \label{q:sect:noether}
 
 In this section we apply the previous results of the QFS system Eq.~(\ref{q:qfs_system})
-to the continuity of Noether charge for both a complex scalar and the Proca field. The charge $\mathcal{Q}$ represents the number density of particles. Since the total particle number minus antiparticle number is always conserved the conservation law is exact and the source term $\mathcal{S}$ vanishes. 
+to the continuity of Noether charge for both a complex scalar and the Proca field. The charge $\mathcal{Q}$ represents the number density of particles. Since the total particle number minus antiparticle number is always conserved the conservation law is exact and the source term $\mathcal{S}$ vanishes.
 
-Globally the total Noether charge should be conserved, however in numerical simulation this might not always be the case. Two common ways for non-conservation to occur are for the matter to interact with the simulation boundary conditions (often unproblematic) or some region of the simulation being insufficiently resolved (often problematic). Without knowledge of the Noether flux it is difficult to know what a change in Noether charge should be attributed to. If a large extraction volume containing the relevant physics shows a violation of Eq.~(\ref{q:qfs_system}) then the change in total Noether charge being due to boundary conditions can be ruled out and resolution is likely the culprit. 
+Globally the total Noether charge should be conserved, however in numerical simulation this might not always be the case. Two common ways for non-conservation to occur are for the matter to interact with the simulation boundary conditions (often unproblematic) or some region of the simulation being insufficiently resolved (often problematic). Without knowledge of the Noether flux it is difficult to know what a change in Noether charge should be attributed to. If a large extraction volume containing the relevant physics shows a violation of Eq.~(\ref{q:qfs_system}) then the change in total Noether charge being due to boundary conditions can be ruled out and resolution is likely the culprit.
 
 When considering black hole spacetimes it is common for Noether charge to be dissipated as matter approaches the singularity; this is due to resolution requirements typically becoming very high in this region. The violation of Eq.~(\ref{q:qfs_system}) inside a black hole horizon might not cause any resolution problems for the black hole exterior however due to causal disconnection. If the extraction volume is modified to exclude finite regions containing any black hole singularities then Eq.~(\ref{q:qfs_system}) could be used to monitor the conservation of Noether charge away from troublesome singularities. This would be a good way of checking the resolution of a matter field in situations such as boson/Proca stars colliding with black holes or scalar/vector accretion onto a black hole.
 
@@ -226,7 +226,7 @@ In this section we consider the conserved Noether current associated with a comp
 \begin{equation}
 \label{q:csfl}\mathcal{L} = \left(\frac{1}{16 \pi }R -\frac{1}{2}g^{\mu\nu}\nabla_\mu \bar{\vp} \nabla_\nu \vp - \frac{1}{2}V(\vp \bar{\vp}) \right)\sqrt{-g},
 \end{equation}
-where $V$ is some real potential function. There is a U(1) symmetry where a complex rotation of the scalar field $\vp \rightarrow \vp e^{\rmi a}$, for constant $a$, leaves the action unchanged. The associated Noether current $\bs{J}$ can be found in \cite{liebling2017dynamical}, 
+where $V$ is some real potential function. There is a U(1) symmetry where a complex rotation of the scalar field $\vp \rightarrow \vp e^{\rmi a}$, for constant $a$, leaves the action unchanged. The associated Noether current $\bs{J}$ can be found in \cite{liebling2017dynamical},
 \begin{align}
 J^\mu = \rmi g^{\mu\nu}(\vp\partial_\nu \bar\vp - \bar\vp\partial_\nu \vp),
 \end{align}
@@ -253,7 +253,7 @@ The Complex vector field $\bs{A}$, also called a Proca field, has Lagrangian
 where $F_{\mu\nu} = \nabla_\mu A_\nu - \nabla_\nu A_\mu$. Again $V$ is some real potential function. The action is invariant under a similar $U(1)$ complex rotation of the vector field $A^\mu \rightarrow A^\mu e^{\rmi a}$ for constant $a$. Following \cite{Minamitsuji_2018} this leads to the following Noether current $\bs{J}$,
 \begin{align}
 J_\mu = \rmi\left(\bar{A}^\nu F_{\mu\nu} - A^\nu \bar{F}_{\mu\nu} \right),
-\end{align} 
+\end{align}
 which again satisfies $\bs{\nabla}\cdot \bs{J} =0$ and the source term vanishes. Defining a $3+1$ decomposition compatible with \cite{Zilh_o_2015} gives,
 \begin{align}
 A_\mu &:= n_\mu \Phi + a_\mu, \\
@@ -283,7 +283,7 @@ where $\phi$, $\bs{E}$, $\bs{a}$ and $\bs{B}$ all belong to $\Sigma$. Additional
  \end{align}
  where the Christoffel symbols from $D_\mu$ in $B_{\mu\nu}$ cancel out. Putting this into the expression for the Proca Noether flux we get,
  \begin{align}
-  \begin{split}\mathcal{F}&= \frac{\sqrt{-h}}{\sqrt{\sigma}} \{ \rmi\gamma^{\mu\rho}{N}_\rho [\bar{\Phi} E_\mu  -\Phi  \bar{E}_{\mu} +\bar{a}^\nu (\partial_\mu a_\nu - \partial_\nu a_\mu) \\ &\quad\quad\quad\quad\quad-  a^\nu (\partial_\mu \bar{a}_\nu - \partial_\nu \bar{a}_\mu)] - \bs{n} \cdot \bs{N}  \mathcal{Q}\},\end{split} 
+  \begin{split}\mathcal{F}&= \frac{\sqrt{-h}}{\sqrt{\sigma}} \{ \rmi\gamma^{\mu\rho}{N}_\rho [\bar{\Phi} E_\mu  -\Phi  \bar{E}_{\mu} +\bar{a}^\nu (\partial_\mu a_\nu - \partial_\nu a_\mu) \\ &\quad\quad\quad\quad\quad-  a^\nu (\partial_\mu \bar{a}_\nu - \partial_\nu \bar{a}_\mu)] - \bs{n} \cdot \bs{N}  \mathcal{Q}\},\end{split}
  \end{align}
  and equation (\ref{q:3plus1fluxspherical}) gives the flux term for a spherical extraction surface,
  \begin{align} \begin{split}
@@ -306,7 +306,7 @@ where $\phi$, $\bs{E}$, $\bs{a}$ and $\bs{B}$ all belong to $\Sigma$. Additional
 \subsection{Energy-Momentum Currents} \label{q:sect:mattercont}
 To find the current associated with energy-momentum we consider a vector field $\bs{J}$ defined with respect to a second vector field $\bs{\xi}$ and the stress tensor $\bs{T}$ by
 \begin{align}
-\label{q:Killing current}J^\mu := T^\mu_\nu \xi^\nu. 
+\label{q:Killing current}J^\mu := T^\mu_\nu \xi^\nu.
 \end{align}
 Calculating the divergence of this vector leads to the following continuity equation,
 \begin{align}
@@ -338,16 +338,16 @@ where $x$ and $y$ are Cartesian coordinates related to spherical polar coordinat
 \end{align}
 Using Eq.~(\ref{q:3plus1fluxspherical}), for a spherical extraction surface, the flux term becomes,
 \begin{align}
- \mathcal{F} &= \alpha\frac{\sqrt{g^{rr}}}{\sqrt{\gamma^{rr}}} (\gamma^{\mu r} S_{\phi\mu} N_r -\frac{\beta^r}{\alpha}N_r S_\phi), \\ 
- &= \alpha\frac{\sqrt{g^{rr}}}{\sqrt{\gamma^{rr}}} (\gamma^{\mu r} S_{\phi\mu} N_r -\frac{\beta^r}{\alpha}N_r S_\phi), \\ 
+ \mathcal{F} &= \alpha\frac{\sqrt{g^{rr}}}{\sqrt{\gamma^{rr}}} (\gamma^{\mu r} S_{\phi\mu} N_r -\frac{\beta^r}{\alpha}N_r S_\phi), \\
+ &= \alpha\frac{\sqrt{g^{rr}}}{\sqrt{\gamma^{rr}}} (\gamma^{\mu r} S_{\phi\mu} N_r -\frac{\beta^r}{\alpha}N_r S_\phi), \\
   \label{q:final_flux} &= \frac{1}{\sqrt{\gamma^{rr}}}\left(\alpha \gamma^{\mu r}S_{\phi\mu} -\beta^r S_\phi\right)
-\end{align} 
+\end{align}
 in spherical polar coordinates. The explicit expansion of the source term $\mathcal{S}$ is left for the section \ref{q:sect:source}, but the result is given here,
-\begin{align}\label{q:s_explicit_angmom} 
+\begin{align}\label{q:s_explicit_angmom}
 \begin{split}\mathcal{S} &= \alpha S^\mu_{\nu}{}^{(3)}\partial_\mu \xi^\nu + \alpha S^\mu_{\nu} {}^{(3)}\Gamma^\nu_{\,\,\,\mu \sigma} \xi^\sigma \\&\quad- S_\nu \beta^i \partial_i \xi^\nu  + S_\nu \xi^\mu \partial_\mu \beta^\nu - \rho \xi^\mu \partial_\mu \alpha.
 \end{split}
 \end{align}
-As noted in section~\ref{q:sect:source}, when choosing a coordinate system to evaluate $\mathcal{S}$, if $\bs{\xi}$ is a coordinate basis vector then the $\partial_i \xi^j$ terms vanish. 
+As noted in section~\ref{q:sect:source}, when choosing a coordinate system to evaluate $\mathcal{S}$, if $\bs{\xi}$ is a coordinate basis vector then the $\partial_i \xi^j$ terms vanish.
 
 It would be simple to re-derive these results for linear momentum, by using $\bs{\xi} = \bs{\partial_i}$ for momentum in the $x^i$ direction for example, where $x^i$ is some Cartesian spatial coordinate. Results for linear momentum can be found in \cite{Clough_2021}.
 
@@ -370,12 +370,12 @@ from Eq.~(\ref{q:q_def}). Similarly, combining Eqs.~(\ref{q:flux_def}) and (\ref
 \begin{align}\mathcal{F} &= \frac{\sqrt{-h}}{\sqrt{\sigma}}T^\mu_\nu N_\mu \xi^\nu, \\
             &= \frac{\sqrt{-h}}{\sqrt{\sigma}}T^\mu_\nu (\pN_\mu - \bs{n}\cdot \bs{N} n_\mu) (\alpha n^\nu + \beta^\nu), \\
     \begin{split} &= \frac{\sqrt{-h}}{\sqrt{\sigma}}(-\bs{n}\cdot \bs{N}\alpha\rho -  \pN_\mu S^\mu \alpha \\&\quad\quad\quad+ \bs{n}\cdot \bs{N} S_\mu \beta^\mu + \pN^\mu \beta^\nu S_{\mu\nu}), \end{split}
-\end{align} 
+\end{align}
 and Eqs.~(\ref{q:radial_N}) and (\ref{q:rootminushexpand}) can be used for a spherical extraction surface,
-\begin{align} 
- \mathcal{F} = \frac{1}{\sqrt{\gamma^{rr}}}(\alpha \rho \beta^r - \alpha^2 S^r   +  \alpha S^r_\mu\beta^\mu - \beta^\mu S_\mu \beta^r ). 
-\end{align} 
- The source term is omitted here as the expression derived in section~\ref{q:sect:source} assumes that $\bs{\xi}$ is spacelike. For energy continuity a timelike approximate Killing vector $\bs{\xi}$ is used and leads to a different expression for the source term that can be found in \cite{Clough_2021} along with the above density $\mathcal{Q}$ and flux term $\mathcal{F}$. 
+\begin{align}
+ \mathcal{F} = \frac{1}{\sqrt{\gamma^{rr}}}(\alpha \rho \beta^r - \alpha^2 S^r   +  \alpha S^r_\mu\beta^\mu - \beta^\mu S_\mu \beta^r ).
+\end{align}
+ The source term is omitted here as the expression derived in section~\ref{q:sect:source} assumes that $\bs{\xi}$ is spacelike. For energy continuity a timelike approximate Killing vector $\bs{\xi}$ is used and leads to a different expression for the source term that can be found in \cite{Clough_2021} along with the above density $\mathcal{Q}$ and flux term $\mathcal{F}$.
 
 
 
@@ -394,16 +394,16 @@ and Eqs.~(\ref{q:radial_N}) and (\ref{q:rootminushexpand}) can be used for a sph
 
 \subsection{Numerical Application} \label{q:sect:results}
 To numerically test the QFS system, given in Eq.~(\ref{q:qfs_system}), for angular momentum an example spacetime consisting of colliding boson stars is simulated in 3D using {\sc GRChombo} \cite{clough2015grchombo} \cite{Andrade2021}. {\sc GRChombo} is a modern, open source, Numerical Relativity code with fully Adaptive Mesh Refinement (AMR) using the Berger-Rigoutsos block-structured adaptive
-mesh algorithm \cite{PhysRevD.67.104005}. The CCZ4 constraint damping formulation \cite{PhysRevD.67.104005,PhysRevD.85.064040} is used with the moving puncture gauge \cite{PhysRevLett.96.111101,PhysRevLett.96.111102}. Time integration is done with 4th order Runge-Kutta method of lines. 
+mesh algorithm \cite{PhysRevD.67.104005}. The CCZ4 constraint damping formulation \cite{PhysRevD.67.104005,PhysRevD.85.064040} is used with the moving puncture gauge \cite{PhysRevLett.96.111101,PhysRevLett.96.111102}. Time integration is done with 4th order Runge-Kutta method of lines.
 
 
 
 
 \subsubsection{Numerical Setup of Simulations}
 
-The boson stars are composed of a complex scalar field $\vp$, minimally coupled to gravity with the Lagrangian given in Eq.~(\ref{q:csfl}). Boson stars are stable self-gravitating spherically symmetric solutions of the Einstein-Klein-Gordon system in curved space; for a detailed review see \cite{liebling2017dynamical}. In this work, the Klein-Gordon potential is chosen to be $V=m^2 \vp \bar{\vp}$, where $m$ is the mass of a bosonic particle, leading to so called {\it mini boson stars}. The Kaup limit for the maximum mass of a mini boson star can be found numerically as approximately 
+The boson stars are composed of a complex scalar field $\vp$, minimally coupled to gravity with the Lagrangian given in Eq.~(\ref{q:csfl}). Boson stars are stable self-gravitating spherically symmetric solutions of the Einstein-Klein-Gordon system in curved space; for a detailed review see \cite{liebling2017dynamical}. In this work, the Klein-Gordon potential is chosen to be $V=m^2 \vp \bar{\vp}$, where $m$ is the mass of a bosonic particle, leading to so called {\it mini boson stars}. The Kaup limit for the maximum mass of a mini boson star can be found numerically as approximately
 \begin{equation} M_{\mathrm{Kaup}} \sim 0.633 ~\frac{\hbar c}{G m} = 0.633 ~M_{pl}^2 ~m^{-1}, \end{equation}
-where the physical constants are included for completeness, but have numerical value $1$ in Planck units. Notably, the maximum mass of a mini boson star scales inversely with the boson particle mass $m$. 
+where the physical constants are included for completeness, but have numerical value $1$ in Planck units. Notably, the maximum mass of a mini boson star scales inversely with the boson particle mass $m$.
 
 The Lagrangian in Eq.~(\ref{q:csfl}) with potential $V=m^2 \vp \bar{\vp}$ is unchanged up to an overall constant under a rescaling of the boson mass like $m \rightarrow b m$, for some dimensionless constant $b$, while simultaneously rescaling $x^\mu \rightarrow b^{-1} x^\mu$ for coordinates with dimension length/time. Consequently a mini boson star solution, categorised by the central scalar field amplitude $\vp_c$, represents a one parameter family of solutions with ADM mass and radius inversely proportional to $m$. To keep the choice of $m$ arbitrary the coordinates used in the simulation are $m x^\mu$, which are exactly Planck units in the case $m=1$ (i.e. the Planck mass).
 
@@ -429,28 +429,28 @@ e_2&:= \frac{{Q}-\bar{Q}}{{Q}},
 where the source term is not absorbed into $Q$. Again, Eq.~(\ref{q:qfs_system}) implies that $Q = \bar{Q}$, or $e_2=0$, in the continuum limit.
 
 \begin{figure}[h!]
-{\includegraphics[width=0.6\columnwidth]{png/Qplot_20.0.png}}
+{\includegraphics[width=0.6\columnwidth]{png/Qplot_20_0.png}}
 \caption{ Integrated angular momentum within radius $r<20 ~m^{-1}$. $Q$ is the  angular momentum integral in Eq.~(\ref{q:eq:Q_def_num}) and $\hat{Q}$ includes the source term as in Eq.~(\ref{q:eq:Q_hat_def_num}). The black dashed line indicates the Newtonian calculation for the angular momentum given in Eq.~(\ref{q:eq:newtQ}). The boson stars initially start outside the extraction radius. }
 \label{q:fig:Q_20}
 \end{figure}
 
 \begin{figure}[h!]
-{\includegraphics[width=0.6\columnwidth]{png/Qplot_40.0.png}}
+{\includegraphics[width=0.6\columnwidth]{png/Qplot_40_0.png}}
 \caption{ Integrated angular momentum within radius $r<40 ~m^{-1}$. Quantities plotted are identical to Fig.~\ref{q:fig:Q_20}. The boson stars initially start intersecting the extraction radius.  }
 \label{q:fig:Q_40}
 \end{figure}
 
 \begin{figure}[h!]
-{\includegraphics[width=0.6\columnwidth]{png/Qplot_60.0.png}}
+{\includegraphics[width=0.6\columnwidth]{png/Qplot_60_0.png}}
 \caption{ Integrated angular momentum within radius $r<60 ~m^{-1}$. Quantities plotted are identical to Figs.~\ref{q:fig:Q_20} and \ref{q:fig:Q_40}. The boson stars initially start inside the extraction radius.  }
 \label{q:fig:Q_60}
 \end{figure}
 
 
-The initial data of the numerical simulations consists of two boson stars, each with mass $M=0.395(0)~m^{-1}$, boosted towards each other in a grazing configuration. The data for two single boosted stars are superposed as in Ref.~\cite{helfer2021malaise} to minimise errors in the Hamiltonian and momentum constraints and spurious oscillations in the scalar field amplitudes of the stars. 
-The physical domain is a cube of size $L=1024 ~m^{-1}$, the centre of this domain locates the origin of the Cartesian coordinates $x$, $y$ and $z$. The stars are placed at $x_0^i=\pm(40,4,0)~m^{-1}$ with respect to the centre of the physical domain, giving an initial impact parameter $d=8~m^{-1}$, and the boost velocity is $v^i=\mp(0.1,0,0)$ along the $x$ axis. The stars travel towards each other and undergo a grazing collision to form a short lived dense object at time $t \sim 375 ~m^{-1}$. Afterwards, much of the scalar field (and angular momentum) leaves the extraction radii as it is ejected to spatial infinity. Figures.~\ref{q:fig:Q_20}, \ref{q:fig:Q_40} and \ref{q:fig:Q_60} show the angular momentum within radii $r = \{20,40,60\}~m^{-1}$. The Newtonian angular momentum for this configuration is 
+The initial data of the numerical simulations consists of two boson stars, each with mass $M=0.395(0)~m^{-1}$, boosted towards each other in a grazing configuration. The data for two single boosted stars are superposed as in Ref.~\cite{helfer2021malaise} to minimise errors in the Hamiltonian and momentum constraints and spurious oscillations in the scalar field amplitudes of the stars.
+The physical domain is a cube of size $L=1024 ~m^{-1}$, the centre of this domain locates the origin of the Cartesian coordinates $x$, $y$ and $z$. The stars are placed at $x_0^i=\pm(40,4,0)~m^{-1}$ with respect to the centre of the physical domain, giving an initial impact parameter $d=8~m^{-1}$, and the boost velocity is $v^i=\mp(0.1,0,0)$ along the $x$ axis. The stars travel towards each other and undergo a grazing collision to form a short lived dense object at time $t \sim 375 ~m^{-1}$. Afterwards, much of the scalar field (and angular momentum) leaves the extraction radii as it is ejected to spatial infinity. Figures.~\ref{q:fig:Q_20}, \ref{q:fig:Q_40} and \ref{q:fig:Q_60} show the angular momentum within radii $r = \{20,40,60\}~m^{-1}$. The Newtonian angular momentum for this configuration is
 \begin{equation}\label{q:eq:newtQ}Mdv=0.316(0) m^{-2}\end{equation}
- which is in close agreement with $Q$ and $\hat{Q}$ in Figs.~\ref{q:fig:Q_20}, \ref{q:fig:Q_40} and \ref{q:fig:Q_60} while the matter is contained by the extraction radii. Given that we are dealing with a fully non-linear spacetime in general relativity there is no reason why the naive Newtonian angular momentum should agree so well with the numerically integrated values $Q$ or $\hat{Q}$; this could be due to the mass of the stars being $M=0.395(0) ~m^{-1}$, well below the Kaup limit $M_{\rm{Kaup}} \sim 0.633 ~m^{-1}$ and the mild boost velocities $v=0.1$. In the case that the star masses/densities and velocities tend to zero we expect general relativity to approach the Newtonian limit; conversely for large masses/densities and boost velocities the Newtonian estimate likely becomes less accurate. 
+ which is in close agreement with $Q$ and $\hat{Q}$ in Figs.~\ref{q:fig:Q_20}, \ref{q:fig:Q_40} and \ref{q:fig:Q_60} while the matter is contained by the extraction radii. Given that we are dealing with a fully non-linear spacetime in general relativity there is no reason why the naive Newtonian angular momentum should agree so well with the numerically integrated values $Q$ or $\hat{Q}$; this could be due to the mass of the stars being $M=0.395(0) ~m^{-1}$, well below the Kaup limit $M_{\rm{Kaup}} \sim 0.633 ~m^{-1}$ and the mild boost velocities $v=0.1$. In the case that the star masses/densities and velocities tend to zero we expect general relativity to approach the Newtonian limit; conversely for large masses/densities and boost velocities the Newtonian estimate likely becomes less accurate.
 
  Finally we note in Figs.~\ref{q:fig:Q_20}, \ref{q:fig:Q_40} and \ref{q:fig:Q_60} that the source-corrected density variable $\hat{Q}$ is less prone to oscillations than $Q$ and is closer to being constant at early times when no angular momentum flux is radiated. $\hat{Q}$ has another advantage over $Q$; at extraction radii sufficiently far from any matter $\hat{Q}$ will remain constant due to the flux $\mathcal{F}$ vanishing. $Q$ will only remain constant if the source term integral $\delta Q_S$ also remains constant which does not happen in general dynamic spacetimes, even for large extraction radii.
 
@@ -468,7 +468,7 @@ The physical domain is a cube of size $L=1024 ~m^{-1}$, the centre of this domai
 \end{figure}
 \begin{figure}[h]
 {\includegraphics[width=0.65\columnwidth]{png/paper_conv40.png}}
-\caption{ Relative error $e_2$, from Eq.~(\ref{q:eq:r2def}), for the total angular momentum at extraction radius $r=40 ~m^{-1}$; the total angular momentum ${Q}$ excludes the source term. Figure includes four convergence simulations with $N\in\{320,384,448\}$ gridpoints along the coarse grid.} 
+\caption{ Relative error $e_2$, from Eq.~(\ref{q:eq:r2def}), for the total angular momentum at extraction radius $r=40 ~m^{-1}$; the total angular momentum ${Q}$ excludes the source term. Figure includes four convergence simulations with $N\in\{320,384,448\}$ gridpoints along the coarse grid.}
 \label{q:fig:r2}
 \end{figure}
 
@@ -478,7 +478,7 @@ Three numerical simulations are used to test the convergence of the angular mome
 
 
 We now obtain the order of convergence $\omega$ of $e_1$. It is convenient to express $e_1$ as three functions $\{f_1,f_2,f_3\}$ corresponding to the three different resolution simulations with $N=\{320,384,448\}$ and $f_\infty$ to denote the continuum limit solution. A traditional convergence analysis, as in \cite{PresTeukVettFlan92}, assumes that the numerical error of a function (i.e. difference from $f_\infty$) is dominated by a term proportional to $\Delta x_i^\omega$ for an order of convergence $\omega$; thus we can write
-\begin{equation}\label{q:eq:convdef}f_i + E (\Delta x_i)^\omega = f_\infty\end{equation} 
+\begin{equation}\label{q:eq:convdef}f_i + E (\Delta x_i)^\omega = f_\infty\end{equation}
 for some constant coefficient $E$ for all resolutions $i$. Equation (\ref{q:eq:convdef}) with $i=\{1,2,3\}$ can be used to eliminate both $E$ and $f_\infty$ giving the well known result
 \begin{equation}
 \label{q:eq:trad_conv_def}\frac{f_3-f_2}{f_2-f_1} = \frac{ \Delta x_3^\omega-\Delta x_2^\omega }{ \Delta x_2^\omega-\Delta x_1^\omega }
@@ -508,7 +508,7 @@ Similarly to before, we can define a deviation factor $\tilde{\mathcal{D}}$,
 \end{equation}
 which time averages the violation of Eq.~(\ref{q:eq:conv_to_zero}). The black curve in Fig.~\ref{q:fig:D} plots Eq.~(\ref{q:eq:zeroconv}) versus $\omega$ and the order of convergence to zero can be estimated by minimising $\tilde{\mathcal{D}}(\omega)$ with respect to $\omega$. As can be seen in Fig.~\ref{q:fig:D}, the order of convergence convergence to zero is approximately $1.9$.
 \begin{figure}[h]
-{\includegraphics[width=0.65\columnwidth]{png/conv_order_40.0.png}}
+{\includegraphics[width=0.65\columnwidth]{png/conv_order_40_0.png}}
 \caption{Estimating the order of convergence $\omega$ of the angular momentum error $e_1$ in Fig.~\ref{q:fig:r1} at extraction radius $r=40 ~m^{-1}$. The red curve gives the deviation from ideal traditional convergence $\mathcal{D}$, defined by Eq. (\ref{q:eq:tradconv}), as a function of $\omega$. The black curve shows the deviation from ideal convergence to zero $\tilde{\mathcal{D}}$, using the definition given in Eq. (\ref{q:eq:zeroconv}), as a function of $\omega$.  For both curves the estimated order of convergence is found by minimisation with respect to $\omega$; this gives $\omega=3.2$ for traditional convergence and $\omega=1.9$ for convergence to zero. }
 \label{q:fig:D}
 \end{figure}
@@ -526,21 +526,21 @@ which time averages the violation of Eq.~(\ref{q:eq:conv_to_zero}). The black cu
 
 
 
-%An exact convergence analysis is hard for a few reasons. Firstly, even though the tagging criterion for regridding was chosen to give as similar grid structure as possible between the different resolution simulations, getting a perfect match is impossible due to the unpredictable nature of AMR. Having a different grid structure between two different resolution simulations means we are not executing a traditional convergence analysis for all points in the simulation, just an approximation to one. The AMR uses interpolation at the boundary of each level, to calculate ghost zones, that introduces errors that depend on the grid structure. This means the variation of grid structure between convergence runs also introduces errors in a way that do not arise in traditional convergence testing. Gridpoints occupy different physical positions for each different resolution, as well as individual levels within one simulation, as the code uses cell centred gridpoints. This means that the set of gridpoints used in volume integrals of the density and source terms will depend on the finest AMR level being used aswell as the overall resolution. This is particularly problematic when an extraction surface intersects a region being frequently regrid - this was found to render the extraction radius $r=20~m^{-1}$ too noisy to calculate the relative errors $e_1$ and $e_2$. Finally the flux integral is done over a spherical surface with an interpolation method which is close but not exactly the same as the surface of the "Lego sphere" volume that density and source are integrated over. This difference should vanish in the continuum limit. 
+%An exact convergence analysis is hard for a few reasons. Firstly, even though the tagging criterion for regridding was chosen to give as similar grid structure as possible between the different resolution simulations, getting a perfect match is impossible due to the unpredictable nature of AMR. Having a different grid structure between two different resolution simulations means we are not executing a traditional convergence analysis for all points in the simulation, just an approximation to one. The AMR uses interpolation at the boundary of each level, to calculate ghost zones, that introduces errors that depend on the grid structure. This means the variation of grid structure between convergence runs also introduces errors in a way that do not arise in traditional convergence testing. Gridpoints occupy different physical positions for each different resolution, as well as individual levels within one simulation, as the code uses cell centred gridpoints. This means that the set of gridpoints used in volume integrals of the density and source terms will depend on the finest AMR level being used aswell as the overall resolution. This is particularly problematic when an extraction surface intersects a region being frequently regrid - this was found to render the extraction radius $r=20~m^{-1}$ too noisy to calculate the relative errors $e_1$ and $e_2$. Finally the flux integral is done over a spherical surface with an interpolation method which is close but not exactly the same as the surface of the "Lego sphere" volume that density and source are integrated over. This difference should vanish in the continuum limit.
 
 \subsection{Conclusion} \label{q:sect:conclusion}
 
 
 A derivation of the QFS system (\ref{q:qfs_system}) for continuity equations, valid locally for general spacetimes, is derived and applied to spherical integration surfaces. Although spherical extraction surfaces are used, the methods of section \ref{q:sect:sphere} can be applied to general extraction surfaces with minor adjustments. The QFS system is used to calculate the well known Noether charge densities for complex scalar and complex vector (Proca) fields along with novel expressions for the flux variable $\mathcal{F}$ in section \ref{q:sect:noether}. Next the QFS system for energy momentum currents associated with matter are found and the main result of this chapter is the explicit derivation of the angular momentum QFS variables $\mathcal{Q}$,  $\mathcal{F}$ and $\mathcal{S}$. The three variables can be used to measure the angular momentum of matter within a region, the flux of angular momentum of matter through the boundary of that region and the transfer of angular momentum between matter and curvature; they can also be used with Eq.~(\ref{q:qfs_system}) to determine the numerical quality of a simulation as the QFS system is exactly satisfied in the continuum limit. In section \ref{q:sect:results} the combination of variables $\mathcal{Q}$ and $\mathcal{S}$ is shown to be a superior measure of angular momentum than integrals of only the charge density $\mathcal{Q}$ in two ways; firstly its measurement is less prone to oscillations and secondly it is conserved in the large radius limit.
 
-The QFS system for angular momentum is numerically tested on a dynamic non-linear spacetime consisting of two colliding boson stars; the collision has a small impact parameter giving rise to a non-zero total angular momentum. The stars promptly collide and form a highly perturbed, localised scalar field configuration partially retaining angular momentum. The total angular momentum of the spacetime is measured using the QFS variables (Eqs.~(\ref{q:bigq}), (\ref{q:final_flux}) and (\ref{q:s_explicit_angmom})) and is shown to agree well with the Newtonian approximation. This is a good check on the normalisation of the QFS variables as they should return the Newtonian calculation in the low energy limit; even though we simulate a fully non-linear spacetime the density and boost velocity of the stars are mild. The final numerical result is the convergence test of the QFS system which measures the relative error described in \ref{q:sect:results}. The relative error converges to zero with order $\omega\approx 1.9$ in the continuum limit and the highest resolution simulation gives a fractional error of approximately $3 \%$ in the total angular momentum after $8000$ time units. 
+The QFS system for angular momentum is numerically tested on a dynamic non-linear spacetime consisting of two colliding boson stars; the collision has a small impact parameter giving rise to a non-zero total angular momentum. The stars promptly collide and form a highly perturbed, localised scalar field configuration partially retaining angular momentum. The total angular momentum of the spacetime is measured using the QFS variables (Eqs.~(\ref{q:bigq}), (\ref{q:final_flux}) and (\ref{q:s_explicit_angmom})) and is shown to agree well with the Newtonian approximation. This is a good check on the normalisation of the QFS variables as they should return the Newtonian calculation in the low energy limit; even though we simulate a fully non-linear spacetime the density and boost velocity of the stars are mild. The final numerical result is the convergence test of the QFS system which measures the relative error described in \ref{q:sect:results}. The relative error converges to zero with order $\omega\approx 1.9$ in the continuum limit and the highest resolution simulation gives a fractional error of approximately $3 \%$ in the total angular momentum after $8000$ time units.
 
 The QFS system is straightforward to implement and it is hoped these results will be useful to the Numerical Relativity community for better measurement of local energy-momentum of matter and Noether charge aswell as powerful check on simulation resolution.
 
 
 % \subsection*{Acknowledgements} \label{q:sect:thanks}
 % I would like to thank Katy Clough, Bo-Xuan Ge, Thomas Helfer, Eugene Lim, Miren Radia and Ulrich Sperhake for many helpful conversations. This work is supported by STFC-CDT PhD funding, PRACE Grant No. 2020225359 and DIRAC RAC13 Grant
-% No. ACTP238. Computations were performed on the Cambridge Service for Data Driven Discovery (CSD3) system, the Data Intensive at Leicester (DIaL3) and the Juwels cluster at GCS@FZJ, Germany. 
+% No. ACTP238. Computations were performed on the Cambridge Service for Data Driven Discovery (CSD3) system, the Data Intensive at Leicester (DIaL3) and the Juwels cluster at GCS@FZJ, Germany.
 
 
 
@@ -561,12 +561,12 @@ Let us decompose each piece separately. Starting with the spacelike tensor $S_{\
 S_{\mu\nu}\nabla^\mu \xi^\nu &= (S_{\rho \sigma}\perp^\rho _\mu \perp^\sigma_\nu )\nabla^\mu ( \perp^\nu_n \xi^n ),  \\
 &= S_{\rho \sigma}(\perp^\rho _\mu \perp^b_\nu \nabla^\mu ( \perp^\nu_n \xi^n )),  \\
 &= S_{\mu\nu} D^\mu \xi^\nu, \\
-&= S^i_{j}\partial_i \xi^j + S^i_{j} {}^{(3)}\Gamma^j_{\,\,\,i k} \xi^k, 
+&= S^i_{j}\partial_i \xi^j + S^i_{j} {}^{(3)}\Gamma^j_{\,\,\,i k} \xi^k,
 \label{q:eq:S1}
 \end{align}
 where we used the idempotence of the projector $\bs{\perp}$ on components $S_{\mu\nu}$ and $\xi^\mu$ which are already projected onto $\Sigma$. Here $\bs{D}$ and ${}^{(3)}\Gamma^j_{\,\,\,i k}$ are the covariant derivative and Christoffel symbol components of $\Sigma$. Some algebra shows that the terms containing $S_\mu$ become
-\begin{align} 
-\label{q:eq:S2}S_\nu n^\mu \nabla_\mu \xi^\nu + S^\mu n_\nu \nabla_\mu \xi^\nu  &= S_\nu \mathcal{L}_n \xi^\nu, 
+\begin{align}
+\label{q:eq:S2}S_\nu n^\mu \nabla_\mu \xi^\nu + S^\mu n_\nu \nabla_\mu \xi^\nu  &= S_\nu \mathcal{L}_n \xi^\nu,
 \end{align}
 where we used the fact that $S^0 = 0$, $n_{i\neq0}=0$ and that the we are free to swap between $\partial_\mu \leftrightarrow \nabla_\mu$ derivatives in a Lie derivative. Finally the $\rho$ term simplifies, using $\nabla_\mu (n^\nu n_\nu) = 0$, to
 \begin{align} \label{q:eq:S3}
@@ -579,10 +579,10 @@ Combining Eqs.~(\ref{q:eq:S1}), (\ref{q:eq:S2}) and (\ref{q:eq:S3}) we can write
 We can expand the Lie derivatives to partial derivatives, for ease of numerical implementation, with the following assumptions $n_\mu S^\mu = 0$, $\xi^0 = 0$, $n_{i\neq0}=0$ and $\partial \xi^0 = 0$.
 \begin{align}
 S_\nu \mathcal{L}_n \xi^\nu &= -\frac{1}{\alpha} S_\nu \beta^i \partial_i \xi^\nu  + \frac{1}{\alpha}S_\nu \xi^\mu \partial_\mu \beta^\nu \\
-\rho n_\nu \mathcal{L}_n \xi^\nu &= -\frac{1}{\alpha} \rho \xi^\mu \partial_\mu \alpha 
+\rho n_\nu \mathcal{L}_n \xi^\nu &= -\frac{1}{\alpha} \rho \xi^\mu \partial_\mu \alpha
 \end{align}
 This gives us our final form for the angular momentum source density,
-\begin{align}\label{q:s_explicit} 
+\begin{align}\label{q:s_explicit}
 \begin{split}
 \mathcal{S} &= \alpha S^\mu_{\nu}{}^{(3)}\partial_\mu \xi^\nu + \alpha S^\mu_{\nu} {}^{(3)}\Gamma^\nu_{\,\,\,\mu \sigma} \xi^\sigma \\&\quad- S_\nu \beta^i \partial_i \xi^\nu  + S_\nu \xi^\mu \partial_\mu \beta^\nu - \rho \xi^\mu \partial_\mu \alpha.
 \end{split}
@@ -608,22 +608,22 @@ Here we demonstrate that the choice of 4-volume $M$ integrated in Eq.~(\ref{q:ma
 We start again by using Gauss' theorem like in Eq.~(\ref{q:master_gauss}) which results in three surface integrals over $V_1\in\Sigma_t$, $V_2\in\Sigma_{t+\delta t}$, and $\tilde{H}$,
 \begin{align} \begin{split}
 \int_{\tilde{M}} \bs{\nabla} \cdot \bs{J} \sqrt{-g} \, \dd^4 x =& -\int^{t=t_0+\delta t}_{V_2} \bs{n} \cdot \bs{J} \sqrt{\gamma} \,\dd^3 x \\
-                                                             & +\int^{t=t_0}_{V_1} \bs{n} \cdot \bs{J} \sqrt{\gamma} \,\dd^3 x \\ 
+                                                             & +\int^{t=t_0}_{V_1} \bs{n} \cdot \bs{J} \sqrt{\gamma} \,\dd^3 x \\
                                                              & +\int_{\tilde{H}} \tilde{\bs N} \cdot \bs{J} \sqrt{-\tilde{h}} \, \dd x^2 \dd t,
 \end{split}\end{align}
-where $\bs{\tilde{N}}$ is the unit normal to $\tilde{H}$. Starting with the integrals over $V_1$ and $V_2 = V_1 + \delta V$ we get, 
+where $\bs{\tilde{N}}$ is the unit normal to $\tilde{H}$. Starting with the integrals over $V_1$ and $V_2 = V_1 + \delta V$ we get,
 \begin{align}
--\int^{t=t_0+\delta t}_{V_2} \bs{n} \cdot \bs{J} \sqrt{\gamma} \,\dd^3 x  &+\int^{t=t_0}_{V_1} \bs{n} \cdot \bs{J} \sqrt{\gamma} \,\dd^3 x, \\ 
- \label{q:dsigma dt bit}=-\delta t \,\partial_t \int_{V_1} \bs{n} \cdot \bs{J} \sqrt{\gamma} \,\dd^3 x  &-\int_{\delta V} \bs{n} \cdot \bs{J} \sqrt{\gamma} \,\dd^3 x, 
+-\int^{t=t_0+\delta t}_{V_2} \bs{n} \cdot \bs{J} \sqrt{\gamma} \,\dd^3 x  &+\int^{t=t_0}_{V_1} \bs{n} \cdot \bs{J} \sqrt{\gamma} \,\dd^3 x, \\
+ \label{q:dsigma dt bit}=-\delta t \,\partial_t \int_{V_1} \bs{n} \cdot \bs{J} \sqrt{\gamma} \,\dd^3 x  &-\int_{\delta V} \bs{n} \cdot \bs{J} \sqrt{\gamma} \,\dd^3 x,
 \end{align}
 with the new integral over $\delta V$ appearing because $V_1\neq V_2$ as $V_1$ is evolved along integral curves of $\bs{n}$ rather than time basis vector $\bs{t}=\bs{\partial_t}$; this is demonstrated in Fig.~\ref{q:fig:qfs_comparison}. In the limit that $\delta t \rightarrow 0$ it can be seen that,
 \begin{align} \label{q:deltasigmabit}
 \int_{\delta V} \bs{n} \cdot \bs{J} \sqrt{\gamma} \,\dd^3 x = -\delta t \int_{\partial V_1} \beta^i s_i\, \bs{n} \cdot \bs{J} \sqrt{\gamma} \,\dd^2 x,
 \end{align}
-where $s_i$ are the components of the unit normal to the coordinate surface $\partial V_1$ in $\mathbb{R}^3$ rather than $\Sigma_t$. The overall negative sign in Eq.~(\ref{q:deltasigmabit}) comes from the defined direction of the shift vector $\bs{\beta}$ as seen Fig.~\ref{q:fig:qfs_comparison}. Addressing the integral over $\tilde{H}$ gives,  
+where $s_i$ are the components of the unit normal to the coordinate surface $\partial V_1$ in $\mathbb{R}^3$ rather than $\Sigma_t$. The overall negative sign in Eq.~(\ref{q:deltasigmabit}) comes from the defined direction of the shift vector $\bs{\beta}$ as seen Fig.~\ref{q:fig:qfs_comparison}. Addressing the integral over $\tilde{H}$ gives,
 \begin{align}
  \int_{\partial V_1}\int_{t_0}^{t_0 + \delta t}\tilde{\bs N} &\cdot \bs{J} \sqrt{-\tilde{h}} \, \dd x^2 \dd t, \nonumber \\
- \label{q:htildepart}=\delta t \int_{\partial V_1} \tilde{\bs N} &\cdot \bs{J} \sqrt{-\tilde{h}} \, \dd x^2.  
+ \label{q:htildepart}=\delta t \int_{\partial V_1} \tilde{\bs N} &\cdot \bs{J} \sqrt{-\tilde{h}} \, \dd x^2.
 \end{align}
 Combining Eqs.~(\ref{q:dsigma dt bit}), (\ref{q:deltasigmabit}) and (\ref{q:htildepart}) and a source term like in (\ref{q:master_integral}) we get,
 \begin{align}
@@ -636,21 +636,21 @@ which is in the same form as Eq.~(\ref{q:qfs_system}) with definitions,
 \mathcal{Q} :&= J^\mu n_\mu, \\
 \label{q:unfinished_flux}\mathcal{F} :&= \frac{\sqrt{-\tilde h}}{\sqrt{\sigma}}J^\mu \tilde N_\mu +  \frac{\sqrt{\gamma}}{\sqrt{\sigma}}\beta^i s_i\, \mathcal{Q} , \\
 \mathcal{S} :&= \alpha S,
-\end{align} 
+\end{align}
 where we used $\bs{n} \cdot \bs{J} = \mathcal{Q}$ for the flux term. The density term $\mathcal{Q}$ and source term $\mathcal{S}$ are agnostic to our choice of extraction surface and its time evolution so have turned out the same as Eqs.~(\ref{q:q_def}) and (\ref{q:source_def}). At first glance the flux term $\mathcal{F}$ seems different to Eq.~(\ref{q:3plus1f}) but evaluating this term in a coordinate basis will show otherwise.
 
 
-Choosing a spherical extraction surface as in Section \ref{q:sect:sphere} and using spherical polar coordinates, $x^\mu = \{t,r,\theta,\phi\}$, $V_1$ becomes the coordinate 3-volume $r\leq r_0$, $t=t_0$. The unit normal $\bs{\tilde{N}}$ satisfies $\bs{\tilde{N}}\cdot \bs{n} =0$ so $\tilde N^\mu = (0,\tilde N^i)$ where, 
+Choosing a spherical extraction surface as in Section \ref{q:sect:sphere} and using spherical polar coordinates, $x^\mu = \{t,r,\theta,\phi\}$, $V_1$ becomes the coordinate 3-volume $r\leq r_0$, $t=t_0$. The unit normal $\bs{\tilde{N}}$ satisfies $\bs{\tilde{N}}\cdot \bs{n} =0$ so $\tilde N^\mu = (0,\tilde N^i)$ where,
 \begin{align}
-\tilde N_i &= \frac{\nabla_i (r-r_0)}{\sqrt{\gamma^{jk}\nabla_j (r-r_0) \nabla_k (r-r_0)}}, \\ 
+\tilde N_i &= \frac{\nabla_i (r-r_0)}{\sqrt{\gamma^{jk}\nabla_j (r-r_0) \nabla_k (r-r_0)}}, \\
  &= (\frac{1}{\sqrt{\gamma^{rr}}},0,0),
 \end{align}
 and the flat space normal has components is $s^i = s_i = (1,0,0)$ with respect to spherical polar coordinates over a different flat manifold. Using Eqs.~(\ref{q:sigma metric}) and (\ref{q:sigma det}) with Cramer's rule for matrix inverse, it can be shown that,
 \begin{align}
-\gamma^{rr} &= \frac{\det \sigma_{ab}}{ \det \gamma_{ij}} = \frac{\sqrt{\sigma}^2}{\sqrt{\gamma}^2}, \\ 
+\gamma^{rr} &= \frac{\det \sigma_{ab}}{ \det \gamma_{ij}} = \frac{\sqrt{\sigma}^2}{\sqrt{\gamma}^2}, \\
 \label{q:htt}\tilde{h}^{tt} &= \frac{\det \sigma_{ab}}{\det \tilde h_{ij}} = -\frac{\sqrt{\sigma}^2}{\sqrt{-\tilde h}^2},
 \end{align}
-where it should be noted that $\tilde h < 0$ and $\sigma > 0$. Deriving Eq.~(\ref{q:htt}) uses the fact that $\tilde H$ intersects $\Sigma$ on $\partial V_1$ and therefore must have the same line element for variations in angular coordinates; hence $g_{\theta\theta}=\tilde{h}_{\theta\theta}$, $g_{\theta\phi}=\tilde{h}_{\theta\phi}$ and $g_{\phi\phi}=\tilde{h}_{\phi\phi}$. The final component we need is to calculate $\tilde h^{tt}$ which can be done by projecting the 4-metric $\bs g$ onto $\tilde H$ as, 
+where it should be noted that $\tilde h < 0$ and $\sigma > 0$. Deriving Eq.~(\ref{q:htt}) uses the fact that $\tilde H$ intersects $\Sigma$ on $\partial V_1$ and therefore must have the same line element for variations in angular coordinates; hence $g_{\theta\theta}=\tilde{h}_{\theta\theta}$, $g_{\theta\phi}=\tilde{h}_{\theta\phi}$ and $g_{\phi\phi}=\tilde{h}_{\phi\phi}$. The final component we need is to calculate $\tilde h^{tt}$ which can be done by projecting the 4-metric $\bs g$ onto $\tilde H$ as,
 \begin{align}
 {}^{(4)}\tilde{h}^{\mu\nu} &= g^{\mu\nu} - \tilde{N}^\mu \tilde{N}^\nu,\\
 {}^{(4)}\tilde{h}^{tt} &= g^{tt} - \tilde{N}^t\tilde{N}^t,\\
@@ -660,12 +660,12 @@ where ${}^{(4)}\tilde{\bs{h}}$ is a 4-tensor belonging to $\mathcal{M}$ and $\ti
 \begin{align}
   \sqrt{-\tilde{h}} &= \alpha \sqrt{\sigma},
 \end{align}
-again noting $\tilde h<0$. Now we can re-write the flux (\ref{q:unfinished_flux}) term as, 
+again noting $\tilde h<0$. Now we can re-write the flux (\ref{q:unfinished_flux}) term as,
 \begin{align}
 \mathcal{F} &= \alpha J_\mu \tilde N^\mu +  \frac{1}{\sqrt{\gamma^{rr}}}\beta^i s_i\, \mathcal{Q} , \\
 \mathcal{F} &= \alpha\gamma^{ r\nu} J_\nu \tilde N_r +  \frac{1}{\sqrt{\gamma^{rr}}}\beta^r \, \mathcal{Q} , \\
-            &= \frac{1}{\sqrt{\gamma^{rr}}}( \alpha \gamma^{ r\nu} J_\nu +  \beta^r \, \mathcal{Q} ), 
-\end{align} 
+            &= \frac{1}{\sqrt{\gamma^{rr}}}( \alpha \gamma^{ r\nu} J_\nu +  \beta^r \, \mathcal{Q} ),
+\end{align}
 and this is identical to Eq.~(\ref{q:3plus1fluxspherical}) found earlier.
 
 
