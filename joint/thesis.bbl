@@ -47,9 +47,38 @@ J.-w. Lee and I.-g. Koh, ``Galactic halos as boson stars,'' {\em Physical
 F.~E. Schunck and E.~W. Mielke, ``General relativistic boson stars,'' {\em
   Classical and Quantum Gravity}, vol.~20, no.~20, p.~R301, 2003.
 
+\bibitem{carroll2019spacetime}
+S.~M. Carroll, {\em An introduction to general relativity, Spacetime and
+  geometry}.
+\newblock Cambridge University Press, 2019.
+
+\bibitem{gourgoulhon20073+}
+E.~Gourgoulhon, ``3+ 1 formalism and bases of numerical relativity,'' {\em
+  arXiv preprint gr-qc/0703035}, 2007.
+
+\bibitem{bar2010elementary}
+C.~B{\"a}r, {\em Elementary differential geometry}.
+\newblock Cambridge University Press, 2010.
+
 \bibitem{einstein1905electrodynamics}
 A.~Einstein {\em et~al.}, ``On the electrodynamics of moving bodies,'' {\em
   Annalen der physik}, vol.~17, no.~10, pp.~891--921, 1905.
+
+\bibitem{gourgoulhon2016special}
+{\'E}.~Gourgoulhon, {\em Special relativity in general frames}.
+\newblock Springer, 2016.
+
+\bibitem{Wald1984}
+R.~M. Wald, {\em General {R}elativity}.
+\newblock The {U}niversity of {C}hicago {P}ress, {C}hicago and {L}ondon, 1984.
+
+\bibitem{Misner1973}
+C.~W. Misner, K.~S. Thorne, and J.~A. Wheeler, {\em Gravitation}.
+\newblock W. H. Freeman, New York, 1973.
+
+\bibitem{Carroll:1997ar}
+S.~M. Carroll, ``Lecture notes on general relativity,'' 1997.
+\newblock arXiv:gr-qc/9712019.
 
 \bibitem{mcvittie1933mass}
 G.~C. McVittie, ``The mass-particle in an expanding universe,'' {\em Monthly
@@ -60,6 +89,15 @@ D.~Hilbert, ``Die grundlagen der physik [foundations of physics],'' {\em
   Nachrichten von der Gesellschaft der Wissenschaften zu
   G{\"o}ttingen--Mathematisch-Physikalische Klasse}, vol.~3, p.~395, 1915.
 
+\bibitem{baumgarte_shapiro_2010}
+T.~W. Baumgarte and S.~L. Shapiro, {\em Numerical Relativity: Solving
+  Einstein's Equations on the Computer}.
+\newblock Cambridge University Press, 2010.
+
+\bibitem{alcubierre2008introduction}
+M.~Alcubierre, {\em Introduction to 3+ 1 numerical relativity}, vol.~140.
+\newblock Oxford University Press, 2008.
+
 \bibitem{frittelli2000ill}
 S.~Frittelli and R.~G{\'o}mez, ``Ill-posedness in the einstein equations,''
   {\em Journal of Mathematical Physics}, vol.~41, no.~8, pp.~5535--5549, 2000.
@@ -68,6 +106,23 @@ S.~Frittelli and R.~G{\'o}mez, ``Ill-posedness in the einstein equations,''
 T.~W. Baumgarte and S.~L. Shapiro, ``On the {N}umerical integration of
   {E}instein's field equations,'' {\em Phys. Rev. D}, vol.~59, p.~024007, 1998.
 \newblock gr-qc/9810065.
+
+\bibitem{Gundlach:2006tw}
+C.~Gundlach and J.~M. Mart{\'i}n-Garc{\'i}a, ``{Well-posedness of formulations
+  of the Einstein equations with dynamical lapse and shift conditions},'' {\em
+  Phys. Rev. D}, vol.~74, p.~024016, 2006.
+\newblock gr-qc/0604035.
+
+\bibitem{Cao:2011fu}
+Z.~Cao and D.~Hilditch, ``{Numerical stability of the Z4c formulation of
+  general relativity},'' {\em Phys. Rev. D}, vol.~85, p.~124032, 2012.
+\newblock arXiv:1111.2177 [gr-qc].
+
+\bibitem{Gundlach:2004jp}
+C.~Gundlach and J.~M. Mart\'in-Garc\'ia, ``Symmetric hyperbolicity and
+  consistent boundary conditions for second-order {E}instein equations,'' {\em
+  Phys. Rev. D}, vol.~70, p.~044032, 2004.
+\newblock gr-qc/0403019.
 
 \bibitem{Garfinkle:2001ni}
 D.~Garfinkle, ``Harmonic coordinate method for simulating generic
@@ -93,6 +148,11 @@ C.~Gundlach, G.~Calabrese, I.~Hinder, and J.~M. Mart{\'\i}n-Garc{\'\i}a,
   ``Constraint damping in the z4 formulation and harmonic gauge,'' {\em
   Classical and Quantum Gravity}, vol.~22, no.~17, p.~3767, 2005.
 
+\bibitem{Bernuzzi:2009ex}
+S.~Bernuzzi and D.~Hilditch, ``{Constraint violation in free evolution schemes:
+  Comparing BSSNOK with a conformal decomposition of Z4},'' {\em Phys. Rev. D},
+  vol.~81, p.~084003, 2010.
+
 \bibitem{PhysRevD.85.064040}
 D.~Alic, C.~Bona-Casas, C.~Bona, L.~Rezzolla, and C.~Palenzuela, ``Conformal
   and covariant formulation of the z4 system with constraint-violation
@@ -102,10 +162,6 @@ D.~Alic, C.~Bona-Casas, C.~Bona, L.~Rezzolla, and C.~Palenzuela, ``Conformal
 D.~Alic, W.~Kastaun, and L.~Rezzolla, ``{Constraint damping of the conformal
   and covariant formulation of the Z4 system in simulations of binary neutron
   stars},'' {\em Phys. Rev. D}, vol.~88, no.~6, p.~064049, 2013.
-
-\bibitem{alcubierre2008introduction}
-M.~Alcubierre, {\em Introduction to 3+ 1 numerical relativity}, vol.~140.
-\newblock Oxford University Press, 2008.
 
 \bibitem{smarr1978kinematical}
 L.~Smarr and J.~W. York~Jr, ``Kinematical conditions in the construction of
@@ -120,6 +176,17 @@ M.~Campanelli, C.~O. Lousto, P.~Marronetti, and Y.~Zlochower, ``Accurate
 B.~Br{\"u}gmann, W.~Tichy, and N.~Jansen, ``Numerical simulation of orbiting
   black holes,'' {\em Phys. Rev. Lett.}, vol.~92, p.~211101, 2004.
 \newblock gr-qc/0312112.
+
+\bibitem{alic2012conformal}
+D.~Alic, C.~Bona-Casas, C.~Bona, L.~Rezzolla, and C.~Palenzuela, ``Conformal
+  and covariant formulation of the z4 system with constraint-violation
+  damping,'' {\em Physical Review D}, vol.~85, no.~6, p.~064040, 2012.
+
+\bibitem{Hilditch:2012fp}
+D.~Hilditch, S.~Bernuzzi, M.~Thierfelder, Z.~Cao, W.~Tichy, and
+  B.~Br{\"u}gmann, ``{Compact binary evolutions with the Z4c formulation},''
+  {\em Phys. Rev. D}, vol.~88, p.~084057, 2013.
+\newblock arXiv:1212.2901 [gr-qc].
 
 \bibitem{Schunck:2003kk}
 F.~E. Schunck and E.~W. Mielke, ``{General relativistic boson stars},'' {\em
@@ -595,11 +662,6 @@ D.~R. Brill and R.~W. Lindquist, ``Interaction {E}nergy in {G}eometrostatics,''
 P.~C. Aichelburg and R.~U. Sexl, ``{On the Gravitational field of a massless
   particle},'' {\em Gen. Rel. Grav.}, vol.~2, pp.~303--312, 1971.
 
-\bibitem{Bernuzzi:2009ex}
-S.~Bernuzzi and D.~Hilditch, ``{Constraint violation in free evolution schemes:
-  Comparing BSSNOK with a conformal decomposition of Z4},'' {\em Phys. Rev. D},
-  vol.~81, p.~084003, 2010.
-
 \bibitem{Alic:2011gg}
 D.~Alic, C.~Bona-Casas, C.~Bona, L.~Rezzolla, and C.~Palenzuela, ``{Conformal
   and covariant formulation of the Z4 system with constraint-violation
@@ -662,15 +724,6 @@ K.~Clough, ``Continuity equations for general matter: applications in numerical
 R.~Arnowitt, S.~Deser, and C.~W. Misner, ``Republication of: The dynamics of
   general relativity,'' {\em General Relativity and Gravitation}, vol.~40,
   p.~1997–2027, Aug 2008.
-
-\bibitem{gourgoulhon20073+}
-E.~Gourgoulhon, ``3+ 1 formalism and bases of numerical relativity,'' {\em
-  arXiv preprint gr-qc/0703035}, 2007.
-
-\bibitem{baumgarte_shapiro_2010}
-T.~W. Baumgarte and S.~L. Shapiro, {\em Numerical Relativity: Solving
-  Einstein's Equations on the Computer}.
-\newblock Cambridge University Press, 2010.
 
 \bibitem{liebling2017dynamical}
 S.~L. Liebling and C.~Palenzuela, ``Dynamical boson stars,'' {\em Living

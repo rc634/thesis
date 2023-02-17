@@ -9,6 +9,7 @@
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{amsmath,mathtools}
+\usepackage{csquotes}
 \usepackage{tikz}
 \usepackage{tabularx}
 \usepackage{array}
@@ -116,7 +117,7 @@ General relativity (GR), published in 1915 by Albert Einstein, is the modern des
 
 This thesis is concerned with the modelling of collisions of compact objects using numerical relativity (NR) and developing diagnostics for these simulations. The code used for the simulations is GRChombo, a modern NR code with adaptive mesh refinement (AMR) that supports both the BSSN and CCZ4 formulations. The compact objects modelled are black holes and boson stars.
 
-Boson stars are a {\color{orchid} theoretical} self gravitating complex scalar field configuration governed by the Klein Gordon equation in curved space. These are stars composed of spin zero boson particles rather than atoms like regular fermionic stars. \color{choral} Can I just remove this strong statement? \color{black} Collisions of these boson stars emit gravitational waves that are detectable at LIGO and other gravitational wave detectors. Boson stars are also a candidate for dark matter clusters permeating galaxies.
+Boson stars are a theoretical self gravitating complex scalar field configuration governed by the Klein Gordon equation in curved space. These are stars composed of spin zero boson particles rather than atoms like regular fermionic stars. Collisions of these boson stars emit gravitational waves that are detectable at LIGO and other gravitational wave detectors. Boson stars are also a candidate for dark matter clusters permeating galaxies.
 
 In order to collide compact objects one must superpose the initial data for two objects; this generally is not valid in GR and violates the Einstein Equation. While the initial data for black hole binaries is well known, the initial data for two boson stars is not. The plain superposition of two boson star solutions causes significant artefacts in simulations and an important part of this thesis is the exploration of improvements to naive superposition methods.
 
@@ -126,8 +127,7 @@ The previous innovations for the binary initial data, which significantly reduce
 
 Finally, we investigate the impact of nonzero eccentricity on the kick magnitude and gravitational-wave emission of non-spinning, unequal-mass black hole binaries. Here "kick" refers to the radiation of linear momentum to the centre of mass of a merging black hole binary system. Recent numerical relativity calculations have shown that eccentricity can lead to an approximate 25 percent increase in recoil velocities for equal-mass, spinning binaries with spins lying in the orbital plane; these are “superkick” configurations. We confirm that nonzero eccentricities at merger can lead to kicks which are larger by up to approximately 25 percent relative to the quasicircular case for non-spinning, unequal-mass black hole binaries. We also find that the kick velocity has an oscillatory dependence on eccentricity, which we interpret as a consequence of changes in the angle between the infall direction at merger and the apoapsis (or periapsis) direction.
 
-\color{choral} are you asking me wether i know the effect of constraint violation on bh kicks? because i do not! is 
-something telling you this could be important?  \color{black}
+
 \newpage
 
 
@@ -184,7 +184,7 @@ something telling you this could be important?  \color{black}
 
 
 
- \chapter{Malaise and Remedy of Binary Boson Star Initial Data}
+ \chapter{Malaise and Remedy of Binary Boson Star Initial Data} \label{malaise}
 
  \include{malaise}
 

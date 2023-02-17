@@ -8,7 +8,7 @@
 
 \section{Mathematical Modelling of Boson Stars}
 \subsection{The Action} \label{boson:sec:action}
-The Boson Stars considered \color{orchid} consist of a \color{black} complex Klein Gordon Scalar field, $\varphi$, minimally coupled to gravity. The action is the Einstein-Hilbert vacuum action plus the matter action for curved space,
+The Boson Stars considered consist of a complex Klein Gordon Scalar field, $\varphi$, minimally coupled to gravity. The action is the Einstein-Hilbert vacuum action plus the matter action for curved space,
 \begin{gather} S = \int_\mathcal{M}\left[\mathcal{L}_{EH} + \mathcal{L}_M\right] \sqrt{-g}\,\dd x^4, \\
  \L_{EH} = \frac{c^4}{16\pi G}R, \\
  \L_{M} =-\frac{1}{2}g^{\mu\nu}\nabla_\mu \bar{\varphi} \nabla_\nu \varphi - \frac{1}{2}V(|\varphi|^2),  \end{gather}
@@ -43,7 +43,6 @@ The viscosity term $\pi^{\mu\nu}$ and heat flux $q^\mu$ are often omitted for si
 The remaining variables $\rho$, $P$ and $u^\mu$ are the fluid density, pressure and
 worldline tangent.
 
-\color{orchid}
 In flat space, the Navier-Stokes equations can develop
 shockwaves and the use of sophisticated shock capturing schemes is required. In
 contrast, the flat space Klein-Gordon equation (with the quadratic potential given
@@ -52,12 +51,12 @@ the Klein-Gordon equation (in conjunction with Einstein's equation) can produce
 divergences in the scalar field $\vp$; one example is gravitational collapse to a
 black hole. In practice, boson stars with sensible potential functions are
 often stable and simple to simulate numerically; for this reason boson stars
-are a good proxy for compact objects in general relativity. \color{black}
+are a good proxy for compact objects in general relativity.
 
 
 \subsection{Solitons} \label{boson:sec:soliton}
 A soliton is a wave packet that exhibits particle-like behaviour. More precisely, in classical field theory, a soliton
-is a field or set of fields in a localised configuration that travels at constant speed \color{orchid} while maintaining its shape \color{black}. This is a property of solutions to the linear wave equation but many solitonic solutions exist for non-linear differential equations as well. For
+is a field or set of fields in a localised configuration that travels at constant speed while maintaining its shape. This is a property of solutions to the linear wave equation but many solitonic solutions exist for non-linear differential equations as well. For
 our purposes, we look for solitons in the Einstein-Klein-Gordon (EKG) system which are self gravitating
 localised scalar field and metric configurations. In the case of the real scalar field it was shown that
 there are no long lived solitons \cite{diez2013no}; however promoting the field to a complex scalar we can find a spherically
@@ -68,7 +67,7 @@ Traditionally, the polar areal gauge has been used for the metric's ansatz,
 \begin{equation}g_{\mu\nu}\dd x^\mu \dd x^\nu =- a^2(r)\dd t^2 + b^2(r) \dd r^2 + r^2 \left[ \dd \theta^2 + \sin^2\theta \dd \phi^2\right],\label{boson:eq:polaransatz}\end{equation}
 where the boundary condition $b^2(0)=1$ is demanded to avoid a conical singularity at the origin. However an isotropic gauge is more useful for simulations due to easier conversion to Cartesian space-coordinates, for more information on isotropic coordinates see section \ref{intro:sec:bh_theory}. The polar areal solution must then be transformed into an isotropic solution. Alternatively, the approach taken in this report, is to start with an isotropic ansatz,
 \begin{equation} g_{\mu\nu}\dd x^\mu \dd x^\nu =- \Omega^2(r)\dd t^2 + \Psi^2(r)\dd \bm{x}^2,\label{boson:eq:metricansatz}\end{equation}
-where $\dd \bm{x}^2$ denotes the euclidean 3D line element; this changes between spherical polar or Cartesian coordinates trivially. This ends up being slightly harder to solve for numerically, but no conversion to isotropic coordinates is needed afterwards. \color{orchid} The conformal gauge also lends itslef better to constraint solving schemes. \color{black}
+where $\dd \bm{x}^2$ denotes the euclidean 3D line element; this changes between spherical polar or Cartesian coordinates trivially. This ends up being slightly harder to solve for numerically, but no conversion to isotropic coordinates is needed afterwards. The conformal gauge also lends itself better to constraint solving schemes.
 
 To get a set of ODEs to solve for the functions $\{\Omega(r), \Psi(r),\Phi(r)\}$ we must turn to the Einstein equation and Klein Gordon equation. The Einstein equations for $\{\mu,\nu\}=\{0,0\},\{1,1\},\{2,2\}$ are the only components that give unique non-zero equations in spherical symmetry; they are,
 \begin{gather}
@@ -194,8 +193,6 @@ Equivalently, the Noether charge density $\mathcal{N}$ is ,
 
 The ideas of this section concerning conserved charges are extended in chapter \ref{q:sec:q} with applications to continuity equations in energy, momentum, angular momentum and Noether charges for spin-1 Proca fields. The results of this section have all been derived for an infinite volume where only a charge density $\mathcal{Q}$ needs be considered. Chapter \ref{q:sec:q} considers continuity equations in a finite volume $V$ so must also consider the flux density $\mathcal{F}$ of conserved particles through $\partial V$ (the boundary of $V$) and the source density $\mathcal{S}$ (creation and destruction of $\mathcal{Q}$) in $V$.
 
-\color{choral} I'm a bit confused what you mean here? As far as i understood control theory was about inverting differential equations / picking a correct forcing term or BC's or IC's to achive a desired solution? \color{black}
-
 \subsection{Boosted Boson Stars and Black Holes}\label{boson:sec:boost}
 Let us now consider a moving star, this corresponds to boosting a stationary soliton solution. There is no unique way of doing this as any coordinate transformation that reduces to a Minkowski spacetime boost at large radius is valid. All the degrees of freedom we have can be absorbed into a coordinate gauge choice so it makes sense to choose the trivial, constant valued boost, with rapidity $\chi = \mathrm{arctanh} (v)$ for a velocity $v$, from Special Relativity. Using Cartesian coordinates, the boost matrix $\bs{\Lambda}$ for a boost in the $x$ direction is,
 \begin{equation}
@@ -277,8 +274,6 @@ The boost formalism described here can be applied to a Black Hole spacetime by s
  \Psi &= \left[1+\frac{M}{2r}\right]^2,
  \end{align}
  corresponding to the isotropic Schwarzschild black hole given in section \ref{intro:sec:bh_theory}.
-
- \color{choral} are you talking about this paper? https://arxiv.org/pdf/1909.06135.pdf \color{black}
 
 
 %  \newpage

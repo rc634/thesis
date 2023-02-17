@@ -1,7 +1,153 @@
-\section{Conclusions}
-\subsection{Conclusions 1} \label{conc:sect:conc1}
-stuff
-\subsection{Conclusions 2} \label{conc:sect:conc2}
-stuff 2
-\subsection{Conclusions 3} \label{conc:sect:conc3}
-electric boogaloo
+\section{Summary}
+
+This thesis starts with a general introduction to differential geometry,
+tensor calculus and general relativity. Next, a more specialised introduction to the
+3+1 spacetime decomposition, numerical relativity and compact objects, with focus
+on boson stars, was given. After this the details of
+numerical methods for PDE's and {\sc GRChombo}, the main numerical code used throughout
+the thesis, were covered. Along with this, the creation of boson star initial data is given in
+detail along with simple examples of their collisions in three spatial dimensions.
+The head-on collision result in the prompt collapse to a black hole and the grazing
+collision (a collision with small grazing parameter) results in the formation of
+a black hole with a quasi-long lived scalar field configuration.
+
+Superposing solutions in general relativity generally does not constitute a new
+solution of Einstein's equation; the superposed solution will violate the Hamiltonian
+and momentum constraints in Eqs(\ref{nr:eq:ham}) \, \& \, (\ref{nr:eq:mom}). While
+constraint satisfying initial data for black hole binaries is well known at this point,
+the same cannot be said about boson star binaries. When superimposing
+compact objects in general relativity, the overall constraint violation reduces with
+increasing separation of the objects; it is common in the literature to produce
+boson star binary initial data with plain superposition making the object separation
+large where feasible. In chapter \ref{malaise} we have conducted symmetric boson
+star collisions and compare two superposition schemes. The two superposition schemes
+are the regular naive superposition of section \ref{grchombo:sec:superposition}
+and the modified superposition scheme of section \ref{mal:sec:improvedsuperposition}.
+Our results showed that the modified superposition scheme is a major improvement
+over the naive superposition method when measuring the constraint equations. Additionally,
+naive superposition was observed to induce spurious unphysical behaviour such as
+excited stars and gravitational collapse. However, the modified superposition
+scheme is not perfect, there is still some residual constraint violation; on the
+other hand this scheme could be a useful first guess in a true constraint solver
+when one becomes available. Given the simplicity of implementation and
+effectiveness of the modified superposition scheme we recommend its use to the
+general numerical relativity community. A future study to considering non-symmetric
+binaries is certainly warranted.
+
+\subsection{QFS stuff}
+
+The QFS system for a generic continuity equation in curved space is derived in
+section (\ref{q:qfs_system}) and is explicitly given for spherical coordinate
+surfaces. The QFS system is first used to derive expressions for the Noether charge
+flux density $\mathcal{F}$ of a complex scalar field and a complex Proca field;
+both fields have a global $U(1)$ symmetry which gives rise to the conserved Noether charge.
+Additionally, the QFS system is used to re-derive the well known Noether charge density
+$\mathcal{Q}$.
+Next, expressions for $\mathcal{Q}$, $\mathcal{F}$ and $\mathcal{S}$ are derived for
+energy momentum-currents (of matter) where $\mathcal{S}$ represents the creation/destruction of
+charge; $\mathcal{S}$ is called the source term. These expressions are then given for use
+with angular momentum explicity; expressions for the energy density are also given
+in agreement with the literature. The three variables give an intuitive understanding
+of the behaviour of angular momentum (or any charge) where $\mathcal{Q}$ is the amount of
+angular momentum in the matter field, $\mathcal{F}$ is the flux leaving an arbitrary
+surface and $\mathcal{S}$ is the destruction or creation of angular momentum; the
+destruction/creation of angular momentum of the matter field can be understood as
+the transfer of angular momentum between matter and curvature.
+
+In addition to the intuitive understanding of local angular momentum (and charges with
+continuity equations in general) bought by the QFS system it
+also has numerical uses. One use is that combining the PROPERLY CONSERVED MEASURE.
+Additionally, the QFS equation can be used as an extra check on the resolution of
+a numerical relativity evolution. In the continuum limit, the QFS equation [REF]
+should be obeyed exactly and the error measures defined in [REF] SHOW THIS - MAYBE LINK THIS WITH TEH NUMERICAL BIT.
+
+
+After the derivation and technical background of the QFS system had been derived, it
+was applied to an example spacetime. This example consists of the numerical simulation
+of a boson star collision using {\sc GRchombo}, described in section \ref{grchombo:sec:grchombo}.
+ending in the formation of a quasi-stable object.
+
+tested on boson star collision
+maybe describe the collision
+the measure was useful to quantify teh remainng angular momentum and waht is dissipated in S
+agreement with newton - explain why we dont mind agreeing with newton
+shows approx 3rd order convergence
+erorr of $3\%$ after 8000 times units
+
+
+
+
+Given the ability to measure the flux through an arbitrary surface, the QFS system is
+well suited to cutting out unwanted volumes or including only desired surfaces. Including
+only a given volume is useful if we want to check the resolution (or make more
+accurate measures) of a region of spacetime rather than the entirety of the numerical grid. For example
+in the simulation of
+Cutting out pre-specified volumes could be useful in black hole spacetimes where we
+don't want to perform a measure within a certain radius of the singularity. One caveat of
+this approach is that the effect of a moving volume (with respect to the coordinates)
+has not been computed here and would need to be taken into account if it is to be used;
+an example where we might want a moving volume is to track a black hole.
+
+say something about movig volumes for future study?
+
+
+
+It is hoped that the QFS system will be useful to the Numerical Relativity community
+for better measurement of local energy-momentum of matter and Noether charge aswell
+as powerful check on simulation resolution.
+
+
+
+
+
+\section{Copied Stuff}
+
+
+
+In this work a study of continuity of matter in general relativity is extended to
+include angular momentum of matter and Noether currents associated with gauge
+symmetries. Expressions for the Noether charge and flux of complex scalar fields
+and complex Proca fields are found using this formalism. Expressions for the
+angular momentum density, flux and source are also derived which are then applied
+to a numerical relativity collision of boson stars in 3D with non-zero impact
+parameter as an illustration of the methods.
+
+A derivation of the QFS system (\ref{q:qfs_system}) for continuity equations,
+valid locally for general spacetimes, is derived and applied to spherical integration
+surfaces. Although spherical extraction surfaces are used, the methods of section
+\ref{q:sect:sphere} can be applied to general extraction surfaces with minor adjustments.
+The QFS system is used to calculate the well known Noether charge densities for
+complex scalar and complex vector (Proca) fields along with novel expressions for
+the flux variable $\mathcal{F}$ in section \ref{q:sect:noether}. Next the QFS system
+for energy momentum currents associated with matter are found and the main result
+of this chapter is the explicit derivation of the angular momentum QFS variables
+$\mathcal{Q}$,  $\mathcal{F}$ and $\mathcal{S}$. The three variables can be used
+to measure the angular momentum of matter within a region, the flux of angular
+momentum of matter through the boundary of that region and the transfer of angular
+momentum between matter and curvature; they can also be used with Eq.~(\ref{q:qfs_system})
+to determine the numerical quality of a simulation as the QFS system is exactly
+satisfied in the continuum limit. In section \ref{q:sect:results} the combination
+of variables $\mathcal{Q}$ and $\mathcal{S}$ is shown to be a superior measure of
+angular momentum than integrals of only the charge density $\mathcal{Q}$ in two
+ways; firstly its measurement is less prone to oscillations and secondly it is
+conserved in the large radius limit. THIS PARAGRAPH IS PASTED, CANT USE
+
+The QFS system for angular momentum was then numerically tested on a dynamic non-linear
+spacetime consisting of two colliding boson stars; the collision has a small impact
+parameter giving rise to a non-zero total angular momentum. The stars promptly
+collide and form a highly perturbed, localised scalar field configuration partially
+retaining angular momentum. The total angular momentum of the spacetime is
+measured using the QFS variables (Eqs.~(\ref{q:bigq}), (\ref{q:final_flux}) and
+(\ref{q:s_explicit_angmom})) and is shown to agree well with the Newtonian
+approximation. This is a good check on the normalisation of the QFS variables as
+they should return the Newtonian calculation in the low energy limit; even though
+we simulate a fully non-linear spacetime the density and boost velocity of the
+stars are mild. The final numerical result is the convergence test of the QFS system
+which measures the relative error described in \ref{q:sect:results}. The relative
+error converges to zero with order $\omega\approx 1.9$ in the continuum limit
+and the highest resolution simulation gives a fractional error of approximately
+$3 \%$ in the total angular momentum after $8000$ time units. THIS PARAGRAPH IS PASTED CANT USE
+
+\subsection{spinning bs paper stuff}
+
+\subsection{black holes stuff}

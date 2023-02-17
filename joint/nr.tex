@@ -17,15 +17,20 @@ Generally we will choose a partial Cauchy surface covering a finite region of $\
 A foliation $\mathcal{F}$ is then the union of a set of $\Sigma_t$ for some range of the parameter $t$,
 \begin{equation}\mathcal{F} = \cup_t(\Sigma_t) \subseteq \M.\end{equation}
 This means we should be careful to pick a parameter $t$ such that the foliation is not self intersecting for the parameter range that covers the region of $\M$ that we are interested in simulating. The time coordinate in a suitable coordinate system works in many cases; it also gives the physical interpretation of $\Sigma_t$ being an instant of time. Now we define the unit normal vector $\bs{n}$ to $\Sigma_t$,
-\begin{equation} \color{orchid}n^\alpha = -\frac{\nabla^\alpha t}{\sqrt{|g_{\mu\nu}\nabla^\mu t \nabla^\nu t|}} \quad \& \quad  n_\alpha = -\frac{dt_\alpha}{\sqrt{|g_{\mu\nu}\nabla^\mu t \nabla^\nu t|}},\color{black}\end{equation}
+\begin{equation} n^\alpha = -\frac{\nabla^\alpha t}{\sqrt{|g_{\mu\nu}\nabla^\mu t \nabla^\nu t|}} \quad \& \quad  n_\alpha = -\frac{dt_\alpha}{\sqrt{|g_{\mu\nu}\nabla^\mu t \nabla^\nu t|}},\end{equation}
 where $\dd t_\mu=\partial_\mu t$ is the exterior derivative of $t$.
 For simplicity we define the lapse function $\alpha$ to be
 \begin{equation}\alpha :=  \frac{1}{\sqrt{|g_{\mu\nu}\nabla^\mu t \nabla^\nu t|}}. \end{equation}
 giving us $n_\mu = -\alpha \dd t_\mu$ as well as the {\it normal evolution} vector $m_\mu = \alpha n_\mu$. Defining two infinitesimally close points $p\in\Sigma_t$ and $q\in\Sigma_{t'}$, where $ q^\mu = p^\mu + m^\mu\delta t$ and $t' = t+ \delta t$, we see,
 \begin{equation} t(q) = t(p^\mu +  m^\mu\delta t) = t(p) + \frac{\partial t^{\,}}{\partial x^\mu}m^\mu\delta t = t(p) + \dd t_\mu m^\mu \delta t =  t(p) + \delta t,\end{equation}
-showing that $m^\mu$ connects $\Sigma_t$ and $\Sigma_{t'}$ for any point $p\in \Sigma_t$; therefore when creating evolution equations we should consider Lie derivatives $\L_m$ along $m^\mu$ rather than $\L_n$.
+showing that $m^\mu$ connects $\Sigma_t$ and $\Sigma_{t'}$ for any point $p\in \Sigma_t$;
+therefore when creating evolution equations we should consider Lie derivatives $\L_m$ along
+$m^\mu$ rather than $\L_n$.
 
-\color{choral} Given that we split everything into $\L_t$ later I might just leave this alone. We haven't covered $m^\mu = t^\mu - \beta^\mu$ yet. \color{black}
+Two very popular books often used as an introduction to numerical relativity are
+\cite{baumgarte_shapiro_2010} and \cite{alcubierre2008introduction}. For a very detailed
+account of the 3+1 formalism the reader is directed to \cite{gourgoulhon20073+}.
+
 
 
 
@@ -170,7 +175,7 @@ this gives the normal evolution equations for $\gamma_{ij}$ and $\K_{ij}$. In $4
     \includegraphics[width=0.65\textwidth]{png/ADM_screeny.png}
     \caption{An illustration of two hypersurfaces $\Sigma_t$ and $\Sigma_{t+\delta}$ and how they are connected by $m^\mu$. As can be seen, integral curves of $t^\mu$ have constant spatial coordinates $x^i$.  }
 \end{figure}
-\color{orchid} There is a large gauge freedom associated with picking coordinates in general relativity; we choose to use a level set of the time coordinate $x^0=t$ to define our foliation hypersurfaces $\Sigma_t$. \color{black} The other three coordinates $x^i$ for $i\in[1,2,3]$ can be used to span each hypersurface $\Sigma_t$ however we define. It is conventional to split the normal evolution vector $m^\mu$ into time $t^\mu$ and space parts $\beta^\mu$,
+There is a large gauge freedom associated with picking coordinates in general relativity; we choose to use a level set of the time coordinate $x^0=t$ to define our foliation hypersurfaces $\Sigma_t$. The other three coordinates $x^i$ for $i\in[1,2,3]$ can be used to span each hypersurface $\Sigma_t$ however we define. It is conventional to split the normal evolution vector $m^\mu$ into time $t^\mu$ and space parts $\beta^\mu$,
 \begin{align}
 \label{nr:eq:tmu} t^\mu &= \left( 1,0,0,0\right), \\
 \label{nr:eq:betamu} \beta^\mu &= \left( 0,\beta^1,\beta^2,\beta^3\right),
@@ -214,20 +219,34 @@ and the ADM equations can be written by substituting $\L_m\rightarrow \partial_t
 \begin{align}
 \partial_t \K_{ij} &= \L_\beta \K_{ij}  -\D_j\D_i \alpha + \alpha \left[ \R_{ij} + \K\K_{ij} - 2\K^k_i\K_{kj} + 4\pi \left[ \gamma_{ij}\left[ \S-\rho\right]-2\S_{ij}\right]\right],\\
 \partial_t \gamma_{ij} &= \L_\beta \gamma_{ij} - 2\alpha\K_{ij}.\end{align}
-Unfortunately, these PDEs turn out to be an ill-posed \color{orchid} initial value problem with typical gauges \color{black} \cite{frittelli2000ill}; this means that the time evolution of these equations does not generally depend smoothly on the initial data.
+Unfortunately, these PDEs turn out to be an ill-posed initial value problem with typical gauges \cite{frittelli2000ill}; this means that the time evolution of these equations does not generally depend smoothly on the initial data.
 
 
 \subsection{BSSN} \label{nr:sec:bssn}
-To tackle the ill-posedness of the ADM equations in section \ref{nr:sec:ADM} we now discuss the Baumgarte-Shapiro-Shibata-Nakamura (BSSN) formalism \cite{Baumgarte:1998te} The first step in BSSN is to decompose the 3-metric into the conformal metric $\tilde{\gamma}_{ij}$ and the conformal factor $\chi$,
+To tackle the ill-posedness of the ADM equations in section \ref{nr:sec:ADM} we
+now discuss the Baumgarte-Shapiro-Shibata-Nakamura (BSSN) formalism \cite{Baumgarte:1998te}
+The first step in BSSN is to decompose the 3-metric into the conformal metric
+$\tilde{\gamma}_{ij}$ and the conformal factor $\chi$,
 \begin{align}
 \tilde{\gamma}_{ij} &= \chi \gamma_{ij},\\
  \det{\tilde{\gamma}_{ij}} &= \tilde{\gamma} = \chi^3\gamma = 1,
 \end{align}
-with the above being the convention used in {\sc GRChombo} described in section \ref{grchombo:sec:grchombo}. Other conventions include factors such as
+with the above being the convention used in {\sc GRChombo} described in section
+\ref{grchombo:sec:grchombo}. Other conventions include factors such as
 $\tilde{\gamma}_{ij} = \psi^{-4}\gamma_{ij}$ or $\tilde{\gamma}_{ij} =e^{-\phi}\gamma_{ij}$.
-Along with this the extrinsic curvature $\K_{ij}$ is conformally decomposed with $\chi$ and modified to be trace free,
-\begin{equation} \tilde{A}_{ij} = \chi\left[ \K_{ij}-\frac{1}{3}\K\gamma_{ij}\right], \end{equation} so that $\tilde{A}_{ij}\gamma^{ij}=0$.
-During an evolution the condition $\trace{\tilde{A}_{ij}=0}$ (and sometimes $\tilde{\gamma}=1$) is enforced which is observed to improve numerical stability; it is unclear why this works beyond heuristic arguments. As discussed later in section \ref{nr:sec:gaugeconditions}, the definition of $\chi = \gamma^{-1/3}$ is good for black hole simulations where $\gamma\rightarrow\infty$ but $\chi \rightarrow 0$. For example the isotropic Schwarzschild metric has,
+Along with this the extrinsic curvature $\K_{ij}$ is conformally decomposed with
+$\chi$ and modified to be trace free,
+\begin{equation}
+\tilde{A}_{ij} = \chi\left[ \K_{ij}-\frac{1}{3}\K\gamma_{ij}\right],
+ \end{equation}
+ so that $\tilde{A}_{ij}\gamma^{ij}=0$.
+During an evolution the algebraic constraint $\trace{\tilde{A}_{ij}=0}$ (and sometimes
+$\tilde{\gamma}=1$) is enforced which avoids the undesirable growth of numerical error
+\cite{Gundlach:2006tw,Cao:2011fu}.
+As discussed later in
+section \ref{nr:sec:gaugeconditions}, the definition of $\chi = \gamma^{-1/3}$
+is good for black hole simulations where $\gamma\rightarrow\infty$ but $\chi
+\rightarrow 0$. For example the isotropic Schwarzschild metric has,
 \begin{align}
 \gamma &= \left[ 1+ \frac{M}{2r}\right]^{12},\\
 \chi &=\left[ \frac{r}{\frac{M}{2} + r}\right]^4.
@@ -235,28 +254,78 @@ During an evolution the condition $\trace{\tilde{A}_{ij}=0}$ (and sometimes $\ti
 
 The next step is to introduce the conformal connection functions as auxiliary variables,
 \begin{align}
-\tilde{\Upsilon}^i &= \tilde{\gamma}^{jk}\tilde{\Upsilon}^i_{\,\;jk} = -\partial_i \tilde{\gamma}^{ij},\\
- \tilde{\Upsilon}^i_{\,\;jk} &= \frac{1}{2}\tilde{\gamma}^{il}\left[ \partial_j \tilde{\gamma}_{kl} + \partial_k \tilde{\gamma}_{lj} - \partial_l \tilde{\gamma}_{jk}\right] = \Upsilon^i_{\;\,jk} + \left[ \delta^i_j \partial_k + \delta^i_k \partial_j - \gamma^{il}\gamma_{jk}\partial_l\right] \ln \sqrt{\chi},
+ \tilde{\Upsilon}^i_{\,\;jk} &= \frac{1}{2}\tilde{\gamma}^{il}\left[ \partial_j \tilde{\gamma}_{kl} + \partial_k \tilde{\gamma}_{lj} - \partial_l \tilde{\gamma}_{jk}\right] = \Upsilon^i_{\;\,jk} + \left[ \delta^i_j \partial_k + \delta^i_k \partial_j - \gamma^{il}\gamma_{jk}\partial_l\right] \ln \sqrt{\chi},\\
+ \tilde{\Upsilon}^i &= \tilde{\gamma}^{jk}\tilde{\Upsilon}^i_{\,\;jk} = -\partial_i \tilde{\gamma}^{ij},
  \end{align}
-where $\Gamma^i_{\,\,\,jk}$ are the Christoffel symbols of $\Sigma_t$ as shown in Eq.~(\ref{nr:eq:3connection}).
-This reduces the set of vacuum evolution variables to $\{\chi,\tilde{\gamma}_{ij},\K,\tilde{\A}_{ij},\tilde{\Upsilon}^i \}$. It is conventional to use $-\partial_i \tilde{\gamma}^{ij}$ to evaluate the conformal connection coefficients when they appear in the RHS of an equation, but $\partial_j \tilde{\Upsilon}^i$ is calculated by differentiating the evolution variable $\tilde{\Upsilon}^i$. One final necessity, not included in the CCZ4 \color{orchid} (or Z4) \color{black} formulation discussed later, is to add multiples of the constraint equations (in section \ref{nr:sec:einsteindecomp}) to the evolution equations to change the characteristic matrix and improve stability.
+where $\Gamma^i_{\,\,\,jk}$ are the Christoffel symbols of $\Sigma_t$ as shown
+in Eq.~(\ref{nr:eq:3connection});
+this reduces the set of vacuum evolution variables to $\{\chi,\tilde{\gamma}_{ij},
+\K,\tilde{\A}_{ij},\tilde{\Upsilon}^i \}$. The idea behind introducing the $\tilde{\Upsilon}^i$ is that
+their derivatives ($\partial_j\tilde{\Upsilon}^i$) encode second derivatives of the metric
+that ruin strong hyperbolicity in the ADM equations; instead these offending terms are
+encoded as first derivatives of a new evolution variable and are removed from the principal symbol governing the
+hyperbolicity of the equations. It is conventional to use $-\partial_i
+\tilde{\gamma}^{ij}$ to evaluate the conformal connection coefficients when they
+appear in the RHS of an equation, but $\partial_j \tilde{\Upsilon}^i$ is calculated
+by differentiating the evolution variable $\tilde{\Upsilon}^i$.
 
-The BSSN formalism is not the only way to find a well-posed set of evolution equations for general relativity. Another strongly hyperbolic formalism is the generalised harmonic gauge \cite{Garfinkle:2001ni} \cite{garfinkle2002harmonic} \cite{Pretorius:2004jg} \cite{Pretorius:2005gq} with,
+One final detail, not mentioned in the Z4 and CCZ4 formulations discussed
+later, is the addition of multiples of the Hamiltonian and Momentum
+constraint equations (in section
+\ref{nr:sec:einsteindecomp}) to the evolution equations to change the
+characteristic matrix and improve stability. This is not always necessary and
+can depend on the gauge used, for more information see \cite{Gundlach:2004jp}.
+
+The BSSN formalism is not the only way to find a well-posed set of evolution
+equations for general relativity. Another strongly hyperbolic formalism is the
+generalised harmonic gauge \cite{Garfinkle:2001ni,garfinkle2002harmonic,Pretorius:2004jg,Pretorius:2005gq} with,
 \begin{equation}\Box x^\mu = H^\mu,\end{equation}
 for some functions $H^\mu$.
 
 
 \subsection{Z4 Formalism}
-The Z4 formalism \cite{gundlach2005constraint} generalises the Einstein equation to include an unphysical field $Z_\mu$, along with damping terms parameterised by $\kappa_1$, $\kappa_2$,
-\begin{equation}\label{nr:eq:z4einstein} R_{\mu\nu} + \nabla_\mu Z_\nu + \nabla_\nu Z_\mu - \kappa_1\left[ n_\mu Z_\nu + n_\nu Z_\mu - [1+\kappa_2]g_{\mu\nu}n^\alpha Z_\alpha\right] = 8\pi G \left[T_{\mu\nu}- \frac{1}{2}Tg_{\mu\nu} \right].\end{equation}
-Of course regular General Relativity is recovered by setting $Z_\mu=0$. It can be shown that achieving $Z_\mu=0$ whilst dynamically evolving $Z_\mu$  is equivalent to solving the constraints. $Z_\mu$ is subjected to a wave equation, transporting constraint violation off the computational domain. It can be shown that the system is driven to $Z_\mu =0$ for $k_1>0$ and $k_2>-1$. It is much cheaper to evolve the variables $Z_\mu$, driven to zero, than to solve four elliptic PDEs for the constraints $\{\mathcal{H},\M^i\}$ on each timestep.
+The Z4 formalism \cite{gundlach2005constraint} generalises the Einstein equation
+to include an unphysical field $Z_\mu$, along with damping terms parameterised by
+$\kappa_1$, $\kappa_2$,
+\begin{equation}
+\label{nr:eq:z4einstein} R_{\mu\nu} + \nabla_\mu Z_\nu +
+\nabla_\nu Z_\mu - \kappa_1\left[ n_\mu Z_\nu + n_\nu Z_\mu -
+[1+\kappa_2]g_{\mu\nu}n^\alpha Z_\alpha\right] = 8\pi G \left[T_{\mu\nu}-
+\frac{1}{2}Tg_{\mu\nu} \right].
+\end{equation}
+Of course regular General Relativity is recovered by setting $Z_\mu=0$. It can
+be shown that achieving $Z_\mu=0$ whilst dynamically evolving $Z_\mu$  is
+equivalent to solving the constraints. Taking the divergence of
+the trace reverse of Eq.~(\ref{nr:eq:z4einstein}),
+and noting that both $G_{\mu\nu}$ and $T_{\mu\nu}$ are divergenceless, gives
+\begin{equation}
+\nabla^\nu \nabla_\nu Z_\mu  + R_{\mu\nu}Z^\nu = -\kappa_1 \nabla^\nu
+\left( n_\mu Z_\nu + n_\nu Z_\mu + \kappa_2 g_{\mu\nu} n^\alpha Z_\alpha\right).
+\end{equation}
+$Z_\mu$ is subjected to a wave equation,
+transporting constraint violation off the computational domain. It can be shown
+that the system is driven to $Z_\mu =0$ for $k_1>0$ and $k_2>-1$. It is much
+cheaper to evolve the variables $Z_\mu$, driven to zero, than to solve four
+elliptic PDEs for the constraints $\{\mathcal{H},\M^i\}$ on each timestep.
 
 
 \subsection{CCZ4} \label{nr:sec:ccz4}
-Merging the conformal decomposition of the BSSN formalism with the constraint damping Z4 formalism gives the conformal covariant Z4 (CCZ4) formalism. The additional modifications,
+Merging the conformal decomposition of the BSSN formalism with the constraint damping Z4 formalism leads to
+Z4c formalism \cite{Bernuzzi:2009ex} and the conformal covariant Z4 (CCZ4) formalism.
+The purpose of this is to get a formalism combining the strong hyperbolicity
+of the BSSN equations and the constraint damping effects of the Z4 system.
+In this thesis
+we will use the CCZ4 formalism which employs the additional modifications,
 \begin{align} \Theta &= -n\cdot Z  = -\alpha Z^0,\\
 \hat{\Upsilon}^i &= \tilde{\Upsilon}^i + \frac{2\gamma^{ij}Z_j}{\chi},\end{align}
-are made, leaving us with the following set of vacuum evolution variables $\{\chi, \tilde{\gamma}_{ij},\K,\tilde{\A}_{ij},\hat{\Upsilon}^i,\Theta \}$. Notably the pair of variables $\R_{ij} + \D_{(i}Z_{j)}$ and its traced version $\R + \bs{\D}\cdot \bs{Z}$, always appear together; separately they would ruin strong hyperbolicity but together they do not. The evolution equations can now be found in the CCZ4 scheme by applying a 3+1 decomposition to the Z4 modified Einstein equation~(\ref{nr:eq:z4einstein}) and proceding as in the BSSN formalism. To illustrate this, we derive the equation of motion for $\chi$ in the CCZ4 formalism. Using Eqs.~(\ref{intro:eq:mdmmdm}) and (\ref{nr:eq:Lmgamma}) with $\chi^{-3}=\gamma$ we obtain,
+leaving us with the following set of vacuum evolution variables
+$\{\chi, \tilde{\gamma}_{ij},\K,\tilde{\A}_{ij},\hat{\Upsilon}^i,\Theta \}$.
+The evolution equations can now
+be found in the CCZ4 scheme by applying a 3+1 decomposition to the Z4 modified
+Einstein equation~(\ref{nr:eq:z4einstein}) and proceding as in the BSSN formalism.
+To illustrate this, we derive the equation of motion for $\chi$ in the CCZ4 formalism.
+Using Eqs.~(\ref{intro:eq:mdmmdm}) and (\ref{nr:eq:Lmgamma}) with $\chi^{-3}=\gamma$
+we obtain,
 \begin{align}
 \L_m {\gamma} = \gamma \gamma^{ij} \L_m \gamma_{ij} = -2 \gamma \alpha \gamma^{ij} \K_{ij} = -2\gamma \alpha \K.
 \end{align}
@@ -268,7 +337,7 @@ This can be used to simplify the Lie derivative of $\chi$,
 \L_m \chi &= \L_m \gamma^{-\frac{1}{3}}  ,\\
 &=-\frac{1}{3}\gamma^{-\frac{4}{3}}\L_m \gamma  ,\\
 &=\frac{2}{3}\gamma^{-\frac{1}{3}} \alpha \K ,\\
-&=\frac{2}{3}\chi\gamma \alpha \K ,
+&=\frac{2}{3}\chi \alpha \K ,
 \end{align}
 where Eq.~(\ref{intro:eq:Ltensordensity2}) has been used with $\bs{\mathcal{T}}=\chi$ as $\chi$ is a scalar density of weight $\omega=-2/3$. Re-arranging gives the equation of motion for $\chi$,
 \begin{equation}
@@ -286,24 +355,41 @@ A similar process returns the remaining CCZ4 equations but care should be taken 
 & + 2\tilde{\gamma}^{ij}\left[ \alpha\partial_j\Theta -\Theta \partial_j\alpha \right] -2\tilde{\A}^{ij}\partial_j\alpha - \alpha\left[ \frac{4}{3}\tilde{\gamma}^{ij}\partial_j\K + 3\tilde{\A}^{ij}\frac{\partial_j \chi}{\chi}\right]\nonumber\\
 & -\left[ \tilde{\Upsilon}^j + 2\kappa_3 \frac{Z^j}{\chi}\right]\partial_j \beta^i + 2\alpha \tilde{\Upsilon}^i_{\,\,\,jk}\tilde{\A}^{jk} + \tilde{\gamma}^{jk}\partial_j\partial_k \beta^i + \frac{1}{3} \tilde{\gamma}^{ij}\partial_k \partial_j \beta^k - 16\pi G \alpha \tilde{\gamma}^{ij}\S_j, \\
 \partial_t \vp &= \beta^k\partial_k \vp - \alpha\Pi ,\label{nr:eq:ccz4kg1}.\end{align}
-In the CCZ4 equations there is an additional parameter $\kappa_3$ premultiplying terms in the evolution of $\hat{\Upsilon}^i$ which experimentally were found to lead to instabilities in black hole simulations \cite{PhysRevD.85.064040}; setting $\kappa_3<1$ stabilises the simulation but at the cost of covariance. Later on it was realised that setting $\kappa_3=1$ and $\alpha\kappa_1\rightarrow\kappa_1$ retains covariance as well as numerical stability \cite{Alic:2013xsa}; in this work $\kappa_1=0.1$, $\kappa_2=0$ and $\kappa_3=1$ is used.
+In the CCZ4 equations there is an additional parameter $\kappa_3$ premultiplying terms in the evolution of $\hat{\Upsilon}^i$ which experimentally were found to lead to instabilities in black hole simulations \cite{PhysRevD.85.064040}; setting $\kappa_3<1$ stabilises the simulation but at the cost of covariance. Later on it was realised that setting $\kappa_3=1$ and $\alpha\kappa_1\rightarrow\kappa_1$ retains covariance as well as numerical stability \cite{Alic:2013xsa}; in this work $\kappa_1=0.1$, $\kappa_2=0$ and $\kappa_3=1$ is used. Notably the pair of variables $\R_{ij} + \D_{(i}Z_{j)}$, and its traced version
+$\R + \bs{\D}\cdot \bs{Z}$, always appear together; separately they would ruin
+strong hyperbolicity but together they do not.
 
 
 The CCZ4 scheme proves several benefits.
 \begin{itemize}
 \item Any initial data that does not satisfy the constraints will generally not do so during evolution when using the BSSN formalism either. Given that superposition of solutions in GR does not generally give a new solution, but does approximate one for separated compact objects, all the simulated binaries considered in this work will have non constraint satisfying initial data.
 \item Constraint satisfying initial data can also develop constraint violation over time; one reason being that finite resolution imposes some small deviation from the continuum solution. More importantly, the use of adaptive mesh refinement (discussed in section \ref{grchombo:sec:grchombo}) introduces interpolation errors into the simulation at the boundary of the different grid resolution levels. The use of the CCZ4 scheme can also help to reduce the constraint violation generated in this way.
-\item Sommerfeld boundary conditions (discussed in section \ref{grchombo:sec:sommerfeld}) used are inexact in GR and will introduce errors at the outer boundary that ruin constraint satisfaction. \color{gren} sommerfeld are ill posed? \color{black}
+\item Sommerfeld boundary conditions (discussed in section \ref{grchombo:sec:sommerfeld}) used are inexact in GR and will introduce errors at the outer boundary that ruin constraint satisfaction and in the worst case scenario cause a simulation to crash. Again, the CCZ4 scheme can be used to help combat this.
 \end{itemize}
-In all the cases above, the CCZ4 system forces the evolution towards constraint satisfaction, despite the numerical errors and approximations. There is a caveat, even if a simulation satisfies the constraints, there is no guarantee it is the desired solution to Einstein's equation. \color{orchid} Additionally, the damping is more efficient for small amplitude and high frequency erorrs. \color{black}
+In all the cases above, the CCZ4 system forces the evolution towards constraint satisfaction, despite the numerical errors and approximations. There is a caveat, even if a simulation satisfies the constraints, there is no guarantee it is the desired solution to Einstein's equation. Additionally, the damping is more efficient for small amplitude and high frequency errors.
 
 
 
 \subsection{Gauge Conditions}\label{nr:sec:gaugeconditions}
 
-\color{gren} PUT A FEW BOOK CITATIONS IN HERE! \color{black}
-
-The lapse $\alpha$ and shift $\beta^i$ are freely specifiable on a hypersurface $\Sigma_t$ being gauge variables, however they must be chosen carefully along with a suitable initial Cauchy surface $\Sigma_{t_0}$ and initial data. $\Sigma_{t_0}$ should be a smooth non-intersecting Cauchy surface as described in section \ref{nr:sec:foliation} and contain smooth initial data. It is also wise to avoid singularities (both coordinate and physical) on this surface. As an example, consider the simulation of a single Schwarzschild black hole. Figure~\ref{nr:fig:eddington-finkelstein} (left) shows how an initial data surface could extend to the singularity if polar-areal coordinates are used. Figure~\ref{nr:fig:eddington-finkelstein} also shows how the physical singularity is avoided when using isotropic coordinates. In this work the isotropic gauge is used; not only does this provide an initial Cauchy surface free of physical singularities but also allows for trivial swapping between spherical polar and Cartesian (used in simulations) coordinates. However, for a poor choice of lapse function, even a well chosen $\Sigma_{t_0}$ can advance to the physical singularity in finite simulation time.
+The lapse $\alpha$ and shift $\beta^i$ are freely specifiable on a hypersurface
+$\Sigma_t$ being gauge variables, however they must be chosen carefully along with
+a suitable initial Cauchy surface $\Sigma_{t_0}$ and initial data. $\Sigma_{t_0}$
+should be a smooth non-intersecting Cauchy surface as described in section
+\ref{nr:sec:foliation} and contain smooth initial data. It is also wise to avoid
+singularities (both coordinate and physical) on this surface. As an example,
+consider the simulation of a single Schwarzschild black hole.
+Figure~\ref{nr:fig:eddington-finkelstein} (left) shows how an initial data
+surface could extend to the singularity if polar-areal coordinates are used.
+Figure~\ref{nr:fig:eddington-finkelstein} also shows how the physical singularity
+is avoided when using isotropic coordinates. In this work the isotropic gauge is
+used; not only does this provide an initial Cauchy surface free of physical
+singularities but also allows for trivial swapping between spherical polar and
+Cartesian (used in simulations) coordinates. However, for a poor choice of
+lapse function, even a well chosen $\Sigma_{t_0}$ can advance to the physical
+singularity in finite simulation time.  For a comprehensive introduction to gauge
+conditions the reader is directed to
+\cite{baumgarte_shapiro_2010,alcubierre2008introduction,gourgoulhon20073+}.
 
 %   \begin{figure}[h]
 %   \caption{Penrose Diagrams, $\Sigma_{t_0}$ dashed, Left: Ingoing Eddington-Finkelstein Coordinates, Right: Isotropic Coordinates.}
@@ -362,19 +448,21 @@ The moving puncture gauge (MPG) is the combination of the 1+log slicing lapse co
 in Eq.~(\ref{nr:eq:1pluslog}) and the Gamma driver shift condition in
 Eqs.~(\ref{nr:eq:gammadriver1}) and (\ref{nr:eq:gammadriver2}). In 2006, the
 moving puncture gauge allowed for the first successful simulation of a black hole
-binary \cite{PhysRevLett.96.111101} in the \color{orchid} BSSN \color{black}
+binary \cite{PhysRevLett.96.111101} in the BSSN
 formalism\footnote{It should be noted that a black-hole binary had been sucessfully
 simulated before by \cite{Bruegmann:2003aw} in 2003 with co-rotating coordinates
 and \cite{Pretorius:2005gq} in 2005 using the generalised harmonic gauge.} without
-the use of excision. \color{gren} maybe david/others deserve a citation here for
-z4c/ccz4. \color{black} Even though $\chi\rightarrow 0$, or $\gamma \rightarrow \infty$,
+the use of excision. In 2012 the first simulations of black-hole binaries
+using constraint damping schemes (in the MPG) such as CCZ4 \cite{alic2012conformal}
+and Z4c \cite{Hilditch:2012fp} were achieved.
+Although $\chi\rightarrow 0$, or $\gamma \rightarrow \infty$,
 at the centre of a black hole, as long as a minimum value for $\chi$
-(such as $\chi=10^{-4}$) is enforced a simulation can run. \color{orchid} Even though it is
+(such as $\chi=10^{-4}$) is enforced a simulation can run. Even though it is
 unphysical to modify a physical variable, the success of the MPG is often attributed
-to the causal shielding\footnote{\color{orchid} Errors that propagate at (or below) light speed
+to the causal shielding\footnote{Errors that propagate at (or below) light speed
 will be trapped by the event horizon. } provided by the
 event horizon. Additionally, any extremely sharp field configurations produced will
-be partially suppressed by a numerical dissipation scheme.\color{black}
+be partially suppressed by a numerical dissipation scheme.
 
 Not only does the MPG safeguard the divergence of fields at the puncture, but it allows the puncture to move; hence the name {\it moving} puncture gauge. Near the puncture, the lapse $\alpha$ becomes vanishingly small and the 1+log slicing condition in Eq.~(\ref{nr:eq:1pluslog}) becomes,
 \begin{equation}

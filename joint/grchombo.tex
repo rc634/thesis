@@ -7,14 +7,23 @@
 
 
 \section{Numerical Methods} \label{grchombo:sec:numericalmethods}
-{ \color{orchid}
+
 \subsection{Introduction to Numerical Methods}
 
-In classical physics it is common for a system to be described by the solution of a differential equation (or a set of differential equations) subjected to suitable boundary conditions. There exist many cases, where the system is sufficiently simple, in which the differential equation(s) can be solved analytically; some well known examples include Newton's equation of gravity for orbits, the Schrödinger equation for certain potentials (such as the infinite square well and the quadratic potential) and Maxwell's equations for propagating electromagnetic fields.
+In classical physics it is common for a system to be described by the solution of a differential equation (or a set of differential equations) subjected to suitable boundary conditions. There exist many cases, where the system is sufficiently simple, in which the differential equation(s) can be solved analytically; some well known examples include Newton's equation of gravity for orbits, the Schrödinger equation for certain potentials (such as the infinite square well and the quadratic potential) and Maxwell's equations for electromagnetic fields.
 
-In four space-time dimensions, general relativity is a set of ten coupled non-linear differential equations. The complexity of general relativity means that analytic solutions are usually restricted to spacetimes with many symmetries or simplifying assumptions. Some common examples are single eternal black hole solutions, cosmological solutions for a uniform universe and the flat Minkowski space. In the case of colliding compact objects (such as black holes, neutron stars or boson stars) there is no analytic solution and numerical methods are the only way to solve the differential equations governing the system.
+In four space-time dimensions, general relativity is a set of ten coupled non-linear differential equations. The complexity of general relativity means that analytic solutions are usually restricted to spacetimes with symmetries or simplifying assumptions. Some common examples are single eternal black hole solutions, cosmological solutions for a uniform universe and the flat Minkowski space. In the case of colliding compact objects (such as black holes, neutron stars or boson stars) there is no analytic solution and numerical methods are the only way to solve the differential equations governing the system.
 
-The rest of section \ref{grchombo:sec:numericalmethods} introduces the reader into the basic concepts in numerical methods such as discretisation, boundary conditions and time evolution. Section \ref{grchombo:sec:grchombo} describes {\sc GRChombo}, the numerical relativity code used throughout this thesis, and is loosely based on the collaboration paper \cite{Andrade2021}. From section \ref{grchombo:sec:units} onward, the rest of the chapter is my own work towards reproducing known boson star initial data (but in the isotropic gauge) and my own work simulating boson star collisions using a simple superposition scheme.}
+The rest of section \ref{grchombo:sec:numericalmethods} introduces the reader to
+the basic concepts in numerical methods such as discretisation, boundary conditions
+and time evolution. Section \ref{grchombo:sec:grchombo} describes {\sc GRChombo},
+the numerical relativity code used throughout this thesis, and is loosely based on
+the collaboration paper \cite{Andrade2021}. From section \ref{grchombo:sec:units}
+onward, the rest of the chapter covers the numerical creation of known boson star
+initial data for use in simulations; the solution is found directly in the isotropic gauge
+rather than the polar areal gauge used in the literature \cite{Schunck:2003kk,Liebling:2012fv}.
+Finally numerical simulations of a head-on and grazing boson star collision are
+presented in Section~\ref{grchombo:sec:bscollisions}.
 
 \subsection{Numerical Discretisation of Spacetime} \label{grchombo:sec:numericaldisc}
 
@@ -24,7 +33,7 @@ To calculate gradients on a lattice, we can consider a two dimensional manifold 
 \begin{equation}
 \frac{\dd f}{\dd x} := \lim_{\delta x \rightarrow 0} \left( \frac{f(x+\delta x)-f(x)}{\delta x} \right),
 \end{equation}
-as there no longer exist two points $x$ and $x+\delta x$ that are infinitesimally close to each other. Derivatives are now \color{orchid} approximately \color{black} calculated by comparing gridpoints a finite distance from each other. To elucidate this idea, a formula for the second derivative is calculated. First we pick five lattice points, equally spaced by $\Delta x$, with coordinates $\{x_{-2},x_{-1},x_{0},x_{1},x_{2}\}$, and writing $f(x_i) = f_i$. Then using the well known formula for the Taylor expansion of a function about a point $x_0$,
+as there no longer exist two points $x$ and $x+\delta x$ that are infinitesimally close to each other. Derivatives are now approximately calculated by comparing gridpoints a finite distance from each other. To elucidate this idea, a formula for the second derivative is calculated. First we pick five lattice points, equally spaced by $\Delta x$, with coordinates $\{x_{-2},x_{-1},x_{0},x_{1},x_{2}\}$, and writing $f(x_i) = f_i$. Then using the well known formula for the Taylor expansion of a function about a point $x_0$,
 \begin{equation}
 f(x) = f(x_0) + (x-x_0) f'(x_0) + \frac{(x-x_0)^2}{2!}f''(x_0) + \frac{(x-x_0)^3}{3!}f'''(x_0) + ... \,, \label{grchombo:eq:taylor}
 \end{equation}
@@ -57,7 +66,7 @@ where the $+$ or $-$ sign is taken for even or odd parity variables and $\phi_i 
 \phi_{n+1} = \pm\phi_{n}, \quad \phi_{n+2} = \pm\phi_{n-1}, \quad \phi_{n+3} = \pm\phi_{n-2}, \quad ... \, .
 \end{align}
 
-Generic boundary conditions can be imposed by assigning values to ghost cells similarly to above. Although the examples given in this section are in one dimension, the ideas generalise to arbitrary dimensions. \color{choral} removed offending word "straightforewardly" \color{black}
+Generic boundary conditions can be imposed by assigning values to ghost cells similarly to above. Although the examples given in this section are in one dimension, the ideas generalise to arbitrary dimensions.
 
 
 \subsubsection{Sommerfeld Boundary Conditions} \label{grchombo:sec:sommerfeld}
@@ -81,7 +90,7 @@ In general relativity, Sommerfeld boundary conditions are commonly used with $v=
  \begin{itemize}
  \item Sommerfeld boundary conditions are derived in spherical symmetry and flat space; spacetimes often asymptote to spherically symmetric flat space, but this is only approximately true for finite radii.
 \item Matter doesn't always obey a wave equation or propagate at the speed of light.
-\item Gravitational waves only obey a linear wave equation under special circumstances such as \color{choral} removed Brill \color{black} small amplitude waves in flat space; again this problem is alleviated at large radius in an asymptotically flat space.
+\item Gravitational waves only obey a linear wave equation under special circumstances such as small amplitude waves in flat space; again this problem is alleviated at large radius in an asymptotically flat space.
 \end{itemize}
 It has been found experimentally in my work that ensuring the boundary conditions are sufficiently far away from any compact objects is very important in maintaining accuracy of the simulation when using Sommerfeld boundary conditions.
 
@@ -238,20 +247,21 @@ While {\sc GRChombo} can be used to simulate traditional spacetimes, such as bin
 black hole inspirals \cite{radia2021anomalies}, it excels at simulating novel
 physics due to its adaptable code structure and AMR. The advantage of AMR is that
 regions needing higher resolution are assigned (and de-assigned) dynamically
-during run time; this requires no pre-determined grid structure. \color{orchid} Other NR codes,
+during run time; this requires no pre-determined grid structure. Other NR codes,
 such as {\sc Lean} \cite{Sperhake:2006cy} or the
-{\sc Einstein-Toolkit} \cite{loffler2012einstein} \cite{Zilhao:2013hia}
-\cite{EinsteinToolkit}, must either rely on pre-determined grid structures or
+{\sc Einstein-Toolkit}
+\cite{loffler2012einstein,Zilhao:2013hia,EinsteinToolkit},
+must either rely on pre-determined grid structures or
 regrid by tracking BH punctures of the centres of compact objects;
-while these methods are often very successful\footnote{For example in simulating binaries},
+while these methods are often very successful\footnote{For example in simulating binaries.},
 AMR is especially useful for simulations of novel spacetimes that can
-develop features requiring high resolution in unexpected places. \color{black} {\sc GRChombo}
+develop features requiring high resolution in unexpected places. {\sc GRChombo}
 has also successfully simulated ring-like configurations \cite{PhysRevD.99.104028},
-\color{orchid} inhomogeneous spacetimes \cite{Aurrekoetxea_2020} and black-hole
-collisions in higher dimensions\footnote{\color{orchid} In this paper \cite{Andrade:2020dgc}
-the black-hole collisions form {\it dumbell} shaped horizons that pinch off.
-\color{black}} \cite{Andrade:2020dgc} which would be difficult to accurately
-resolve \color{black} with a conventional pre-specified grid structure.
+inhomogeneous spacetimes \cite{Aurrekoetxea_2020} and black-hole
+collisions in higher dimensions\footnote{ In this paper \cite{Andrade:2020dgc}
+the black-hole collisions form {\it dumbell} shaped horizons that pinch off.}
+\cite{Andrade:2020dgc} which would be difficult to accurately
+resolve with a conventional pre-specified grid structure.
 
 
 \subsection{Simulation Units}\label{grchombo:sec:units}
@@ -413,7 +423,7 @@ This whole process requires a few seconds runtime for a high resolution 500,000 
 
 
 
-Figure~\ref{boson:fig:f1} shows the numerically obtained radial profile of a mini boson star ($\Lambda=0$) and an excited mini boson star. Note two mass definitions are plotted; \color{orchid} the aspect mass defined in Eq.~(\ref{malaise:eq:aspect_mass_def}) and a pseudo-ADM mass. The conventional ADM mass \cite{arnowitt1962dynamics} is defined as
+Figure~\ref{boson:fig:f1} shows the numerically obtained radial profile of a mini boson star ($\Lambda=0$) and an excited mini boson star. Note two mass definitions are plotted; the aspect mass defined in Eq.~(\ref{malaise:eq:aspect_mass_def}) and a pseudo-ADM mass. The conventional ADM mass \cite{arnowitt1962dynamics} is defined as
 \begin{equation}
 M_{\rm ADM} := \frac{1}{16\pi}\lim_{r\rightarrow\infty}\oint_{s_r} N^i \gamma^{jk}\left(\partial_j \gamma_{ik} - \partial_i \gamma_{jk} \right) \dd A,
 \end{equation}
@@ -430,7 +440,7 @@ the expected result of $M$. We define the {\it pseudo-AMD mass} as
 \begin{equation}
 M_{\rm psADM}(r):=- r^2 \partial_r \Psi ,\label{boson:eq:admlike}
 \end{equation}
-which of course satisfies $M_{\rm ADM} = M_{\rm psADM}(\infty)$. \color{black}
+which of course satisfies $M_{\rm ADM} = M_{\rm psADM}(\infty)$.
 
  Polytropic fluid star initial data has also been calculated as a preliminary test
  of the code; they are easier to create as they do not require solving an eigenvalue
@@ -470,7 +480,12 @@ $\sim 0.7\%$ and $N$ is conserved to the $\sim 0.07\%$ level until time $t=320~m
 
   \begin{figure}[h!]
   \caption{Left: Maximum of $|\vp|$ during the evolution, Right: Total integrated Noether charge $N$.
-  \color{choral} This noise (in $|\vp|_{\rm max}$) is at the 5sf level! Do you still want me to comment on it?}
+  The initial noise seen in the two figures is attributed to junk radiation from
+  refinement boundaries and is potentially exacerbated by the gauge settling from
+  the initial gauge to the moving puncture gauge used. The lower-amplitude oscillation
+  seen continuously in the left figure is due to finite resolution when calculating
+  the maximum value $\varphi_{\rm max} = [{\rm Re}(\varphi)^2 + {\Im}(\varphi)^2]_{\rm max}$
+  on any gridpoint. }
   \centering
   \subfloat{\includegraphics[width=0.5\textwidth]{data/star_modphi_nicer.pdf}}
   \hfill
@@ -502,7 +517,7 @@ where the super-scripts ${}^{(1)}$ and ${}^{(2)}$ refer to the separate compact 
 \begin{equation} \alpha = \sqrt{\chi},\end{equation}
 ensuring that the lapse is real and non-negative everywhere on $\Sigma_t$.
 
-Superposing two solutions in general relativity usually no longer satisfies the Einstein equation; the Hamiltonian constraint Eq.~(\ref{nr:eq:ham}) and momentum constraints Eq.~(\ref{nr:eq:mom}) are violated. For asymptotically flat compact objects, the constraint violation reduces to zero as the object separation tends to infinity. In the case of finite separations, the CCZ4 scheme in section \ref{nr:sec:ccz4} aims to drive the constraint violation towards zero and hence a true solution of Einstein's equation; \color{orchid} in practice, the CCZ4 scheme is more efficient at damping low amplitude, high-frequency violations and will not fully reduce long-wavelength violations \cite{gundlach2005constraint}\color{black}. The collisions of compact objects in section \ref{grchombo:sec:bscollisions} use this naive superposition scheme. Section \ref{mal:sec:improvedsuperposition} explores a technique to improve the naive superposition of compact objects.
+Superposing two solutions in general relativity usually no longer satisfies the Einstein equation; the Hamiltonian constraint Eq.~(\ref{nr:eq:ham}) and momentum constraints Eq.~(\ref{nr:eq:mom}) are violated. For asymptotically flat compact objects, the constraint violation reduces to zero as the object separation tends to infinity. In the case of finite separations, the CCZ4 scheme in section \ref{nr:sec:ccz4} aims to drive the constraint violation towards zero and hence a true solution of Einstein's equation; in practice, the CCZ4 scheme is more efficient at damping low amplitude, high-frequency violations and will not fully reduce long-wavelength violations \cite{gundlach2005constraint}. The collisions of compact objects in section \ref{grchombo:sec:bscollisions} use this naive superposition scheme. Section \ref{mal:sec:improvedsuperposition} explores a technique to improve the naive superposition of compact objects.
 
 
 
@@ -569,9 +584,20 @@ The dynamics of the two boson stars are shown in Fig.~(\ref{boson:fig:ff7}) whic
 
 
 
-\subsubsection{Grazing Collision}
+\subsubsection{Grazing Collision} \label{grchombo:sec:graze}
 
-Figure (\ref{boson:fig:f10}) plots $|\vp|_{\rm max}$ and the total Noether charge ($N$) versus time for the grazing collision. At time $t\approx 309~m^{-1}$, $|\vp|_{\rm max}$ rapidly increases and a black hole is soon formed. The black hole is assumed to be spinning due to the collapsing matter containing angular momentum. At time $t\approx 356 ~m^{-1}$ there is a temporal maximum in $|\vp|_{\rm max}$; similarly to the headon collision, this is caused by diverging resolution requirements near the black hole centre and does not affect the exterior spacetime. Consequently, the Noether charge plot shows a drop in charge at a time of $t \approx355~m^{-1}$.
+Figure (\ref{boson:fig:f10}) plots $|\vp|_{\rm max}$ and the total Noether charge
+($N$) versus time for the grazing collision. At time $t\approx 309~m^{-1}$,
+$|\vp|_{\rm max}$ rapidly increases and a black hole is soon formed. The black
+hole is assumed\footnote{\color{orchid} No horizon measure, or measure of angular
+momentum of matter
+falling into the black hole, has been done for this simulation -
+these measures would be warranted in any future study.}
+to be spinning due to the collapsing matter containing angular
+momentum. At time $t\approx 356 ~m^{-1}$ there is a temporal maximum in $|\vp|_{\rm max}$;
+similarly to the headon collision, this is caused by diverging resolution requirements
+near the black hole centre and does not affect the exterior spacetime. Consequently,
+the Noether charge plot shows a drop in charge at a time of $t \approx355~m^{-1}$.
  \begin{figure}[h!]
   \caption{Left: Maximum of $|\vp|$ during evolution, Right: Total integrated Noether charge $N$.}
   \centering
@@ -583,10 +609,7 @@ Figure (\ref{boson:fig:f10}) plots $|\vp|_{\rm max}$ and the total Noether charg
 
 
 
-\newpage A simulation of the grazing collision with point masses has been done using Newtons laws. The time taken for closest approach (with separation $s = 2.33~m^{-1}$) is $t=315.8~m^{-1}$; at this separation the finite sized stars would collide. Snapshots of the grazing boson star collision using numerical relativity (in full general relativity) are shown in Fig.~(\ref{boson:fig:ff10}) plotting the scalar field modulus $|\vp|$ in the $x,y$ plane. The stars collide at time $300~m^{-1} < t < ~m^{-1}$ which is in good agreement with the Newtonian approximation. Soon after collision, an over-density of the scalar field develops and collapses to a black hole; this black hole is thought to be spinning due to the angular momentum of the collapsing matter. The black hole subsequently accretes most of the surrounding scalar field leaving a quasi-long-lived rotating toroidal scalar field configuration surrounding the black hole. This late time toroidal scalar field configuration will be referred to as a {\it toroidal wig} due to it being "fake" hair. The late time toroidal wig seems to settle to a rotationally symmetric configuration, with no quadrupole moment, and does not emit a significant gravitational wave signal; this can be seen in Fig.~(\ref{boson:fig:f12}) which plots the $l,m=2,2$ and $l,m=2,0$ modes of $\Psi_4$.
-
-
-
+A simulation of the grazing collision with point masses has been done using Newtons laws. The time taken for closest approach (with separation $s = 2.33~m^{-1}$) is $t=315.8~m^{-1}$; at this separation the finite sized stars would collide. Snapshots of the grazing boson star collision using numerical relativity (in full general relativity) are shown in Fig.~(\ref{boson:fig:ff10}) plotting the scalar field modulus $|\vp|$ in the $x,y$ plane. The stars collide at time $300~m^{-1} < t < ~m^{-1}$ which is in good agreement with the Newtonian approximtion. Soon after collision, an over-density of the scalar field develops and collapses to a black hole; this black hole is thought to be spinning due to the angular momentum of the collapsing matter. The black hole subsequently accretes most of the surrounding scalar field leaving a quasi-long-lived rotating toroidal scalar field configuration surrounding the black hole. This late time toroidal scalar field configuration will be referred to as a {\it toroidal wig} due to it being \enquote{fake} hair. The late time toroidal wig seems to settle to a rotationally symmetric configuration, with no quadrupole moment, and does not emit a significant gravitational wave signal; this can be seen in Fig.~(\ref{boson:fig:f12}) which plots the $l,m=2,2$ and $l,m=2,0$ modes of $\Psi_4$.
 
 
 
