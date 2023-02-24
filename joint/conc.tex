@@ -14,7 +14,7 @@ a black hole with a quasi-long lived scalar field configuration.
 Superposing solutions in general relativity generally does not constitute a new
 solution of Einstein's equation; the superposed solution will violate the Hamiltonian
 and momentum constraints in Eqs(\ref{nr:eq:ham}) \, \& \, (\ref{nr:eq:mom}). While
-constraint satisfying initial data for black hole binaries is well known at this point,
+constraint satisfying initial data for black-hole binaries is well known at this point,
 the same cannot be said about boson star binaries. When superimposing
 compact objects in general relativity, the overall constraint violation reduces with
 increasing separation of the objects; it is common in the literature to produce
@@ -82,7 +82,7 @@ well suited to cutting out unwanted volumes or including only desired surfaces. 
 only a given volume is useful if we want to check the resolution (or make more
 accurate measures) of a region of spacetime rather than the entirety of the numerical grid. For example
 in the simulation of
-Cutting out pre-specified volumes could be useful in black hole spacetimes where we
+Cutting out pre-specified volumes could be useful in black-hole spacetimes where we
 don't want to perform a measure within a certain radius of the singularity. One caveat of
 this approach is that the effect of a moving volume (with respect to the coordinates)
 has not been computed here and would need to be taken into account if it is to be used;
@@ -150,4 +150,62 @@ $3 \%$ in the total angular momentum after $8000$ time units. THIS PARAGRAPH IS 
 
 \subsection{spinning bs paper stuff}
 
-\subsection{black holes stuff}
+Combining the aforementioned superposition improvement scheme,
+
+
+
+\subsection{black holes final}
+
+Finally, the consequences of non-zero eccentricity on the gravitational wave signal
+and the kick magnitude and direction
+of un-equal mass Schwarzschild black-hole binaries has been studied. A kick is a
+gravitational phenomenon where a system radiates linear momentum (in gravitational waves)
+resuting in the centre of mass being \enquote{kicked} in the opposite direction. A series of
+binaries with mass ratios $q=2/3, 1/2, {\rm and} 1/3$ which complete about 3 orbits
+in the quasicircular limit are simulated. We also examine a comparison set of
+simulations with $q=1/2$, and a greater initial
+separation, which completes approximately six orbits in the quasicircular limit.
+In all cases the black holes were initially placed on the x-axis with boosts of
+equal and opposite momentum perpendicular to the x-axis; therefore the x-axis is
+initially the periapsis.
+
+In the black-hole binaries simulted, a maximum in the kick magnitude is seen for an eccentricity
+of $e\sim 0.5$ and is approximately $25\%$ larger than the quasi circular case. In addition
+to this, the kick magnitude is seen to oscillate, with respect to eccentricity, by
+$\sim 10\%$ of the quasicircular limit. As the eccenticity tends to unity,
+in the case of a headon collision, the kick magnitude becomes small. These simulations
+are simulated with two codes, {\sc GRChombo} and {\sc Lean}; both codes show an error
+budget of $3$-$4\,\%$.
+
+The oscillatory behaviour of the kick magnitude is attributed to the final infall
+angle (or direction) with respect to the periapsis of the black holes in merger.
+The notion of an infall angle in
+general relativity is not well defined and it is approximated here by considering the
+angle made by the final kick to the x-axis. When the kick magnitude is plotted as a
+function of infall angle (in Figure~\ref{bhkick:fig:theta-plots}) it displays the
+hypothesized oscillatory behaviour with an period close to $2\pi$; any deviation
+here is attributed to periapsis precession.
+
+The dependance of the oscillatory behaviour of the kick with respect to the initial
+eccenticity is explored the the aforementioned second set of simulations with
+$q=1/2$ and a larger initial deparation (or a less negative binding energy). The
+oscillations are more pronounced in this situation which is attributed to the longer
+infall time which gives more time for phase differences between similar binaries to
+build up.
+
+While the findings of these black-hole kick simulations answer many questions, they
+also ask more. For one, from a study of two sets of simulations with differnt
+initial separations we are led to believe
+that the oscillatory dependance of the kick on; to what extent this is hidden by
+gravitational circularisation
+\footnote{Gravitational circularisation refers to the natural phenomenon in general
+relativity where eccentricity is damped over time eventually turning an eccentric
+binary into a quasi-circular one.}
+is unknown. A study of long eccentic inspirals would likely require post newtonian
+methods and . Other interesting studies could include tracking the precession of
+the periapsis in this strong gravity regime and the potential study of kicks in
+high boost graxing collisions or even the possibility of kicks in compact objecty
+binaries such as boson stars.
+
+\subsection{stuff}
+add future works to all the bits here ..

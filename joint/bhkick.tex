@@ -8,7 +8,7 @@
   % %[PRD \textbf{101} (2020) 024044]
   % Here we investigate the impact of nonzero eccentricity on the kick
   % magnitude and gravitational-wave emission of nonspinning,
-  % unequal-mass black hole binaries. We confirm that nonzero
+  % unequal-mass black-hole binaries. We confirm that nonzero
   % eccentricities at merger can lead to kicks which are larger by
   % up to $\sim 25\,\%$ relative to the quasicircular case.
   % We also find that the kick velocity $v$ has an oscillatory
@@ -58,7 +58,7 @@ formation of naked singularities in the form of BHs spinning above the
 Kerr limit; see
 e.g.~Refs.~\cite{Campanelli:2006uy,Sperhake:2009jz}. Therefore, GW emission
 is a necessary ingredient of the theory of general relativity, in the
-sense that it avoids the formation of spacetime singularities and
+sense that it avoids the formation of naked spacetime singularities and
 preserves its predictive power.
 
 In this chapter, we focus on the radiated linear momentum, which
@@ -161,7 +161,7 @@ dynamical formation channels of stellar-origin BH binaries could
 result in a non-negligible population of merging BHs that still retain
 moderate eccentricities at frequencies relevant for ground-based GW
 detection (see,
-e.g.,Refs.~\cite{Samsing:2017rat,Samsing:2017xmd,Samsing:2017oij,Rodriguez:2018pss,Samsing:2020tda,Tagawa:2020jnc}).
+e.g., Refs.~\cite{Samsing:2017rat,Samsing:2017xmd,Samsing:2017oij,Rodriguez:2018pss,Samsing:2020tda,Tagawa:2020jnc}).
 Furthermore, the presence of astrophysical media such as
 accretion disks may increase the eccentricity during the inspiral
 \cite{Cardoso:2020iji}.
@@ -179,14 +179,14 @@ the binary~\cite{Nishizawa:2016jji,Breivik:2016ddj,Nishizawa:2016eza}.
 If confirmed, a nonzero eccentricity would hint at a possible
 dynamical origin for this event~\cite{Romero-Shaw:2020thy}.
 
-Eccentricity is expected to play an even more prominent role for
-massive BH binaries: the dynamics of these binaries in stellar and
-gaseous environments is expected to lead to distinct (but generically
-nonzero) orbital eccentricities by the time the binaries enter the
-LISA sensitivity window (see Ref.~\cite{Roedig:2011rn} and references
+\color{orchid}
+Eccentricity is expected to play an even more prominent role for massive
+BH binaries: the dynamics of these binaries in stellar and gaseous
+environments may lead to nonzero orbital eccentricities by the time the
+binaries enter the LISA sensitivity window (see Ref.~\cite{Roedig:2011rn} and references
 therein). Even larger eccentricities are possible if BH binary
 coalescence occurs through the interaction with a third
-BH~\cite{Bonetti:2018tpf}.
+BH~\cite{Bonetti:2018tpf}. \color{black}
 
 Our work is an exploration of the effect of large eccentricities near
 merger, and it differs in several ways from the catalog of eccentric,
@@ -416,7 +416,9 @@ in a sequence.
 We have parametrized the configurations within a sequence by their
 initial tangential momentum $p$, but we would like to measure the
 eccentricity of these configurations. Unfortunately, there is no
-gauge-invariant measure of eccentricity~\cite{Loutrel:2018ydu} and the
+gauge-invariant measure of eccentricity~\cite{Loutrel:2018ydu}
+\color{orchid} that is valid for the entire inspiral \color{black}
+and the
 ambiguity in any definition is particularly pronounced in the late
 stages of inspiral from which our simulations start. Following
 Ref.~\cite{Sperhake:2007gu}, we use the formalism in
@@ -590,7 +592,17 @@ evaluate them at the finite extraction radius $r=r_{\mathrm{ex}}$, as given
 in Table \ref{bhkick:tab:sequences}. A discussion of the error this introduces is
 given in the following section.
 
-In order to exclude the spurious radiation inherent in Bowen-York initial
+In order to exclude the spurious radiation
+\footnote{\color{orchid}
+Bowen-York initial data for a black-hole binary is typically thought of as a
+combination of the \enquote{true} black-hole binary solution plus \enquote{something else}.
+While the initial data is constraint satisfying to numerical round off error, it doesn't
+exactly describe the physics we desire. This \enquote{something else} radiates away at early
+times and contributes to \enquote{junk radiation} - this radiation is unphysical
+and is ommitted from our analysis as we are only interesed in astrophysical
+phenomenology here.
+\color{black}}
+ inherent in Bowen-York initial
 data, we start the integration in Eqs.~\eqref{bhkick:eq:Erad}, \eqref{bhkick:eq:Prad},
 \eqref{bhkick:eq:Jrad}, and \eqref{bhkick:eq:Plmrad} at $t_0 = 50M + r_{\mathrm{ex}}$. The
 recoil velocity is computed from the radiated momentum according to
@@ -1056,8 +1068,7 @@ binary systems in external gravitational background potentials in
 Refs.~\cite{Hamilton:2019a,Hamilton:2019b}. If there is a single
 conclusion to draw from the results of this work, it is the
 surprisingly rich phenomenology of the GW signals of eccentric compact
-binaries---even in the absence of spins---which merits as much as it
-requires further investigation.
+binaries - even in the absence of spins - which merits further investigation.
 
 % %=============================================================================
 % \begin{acknowledgments}
