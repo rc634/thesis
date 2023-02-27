@@ -686,6 +686,11 @@ M.~Radia, U.~Sperhake, K.~Clough, A.~Drew, E.~A. Lim, and J.~L. Ripley,
   ``Numerical relativity with adaptive mesh refinement:obtaining accurate+
   results with grchombo.'' in preparation.
 
+\bibitem{Simone_1995}
+L.~E. Simone, E.~Poisson, and C.~M. Will, ``Head-on collision of compact
+  objects in general relativity: Comparison of post-newtonian and perturbation
+  approaches,'' {\em Physical Review D}, vol.~52, pp.~4481--4496, oct 1995.
+
 \bibitem{Binnington:2009bb}
 T.~Binnington and E.~Poisson, ``{Relativistic theory of tidal Love numbers},''
   {\em Phys. Rev. D}, vol.~80, p.~084018, 2009.
@@ -1100,6 +1105,13 @@ S.~Yoshida, Y.~Eriguchi, and T.~Futamase, ``{Quasinormal modes of boson
 C.~V\'asquez~Flores, A.~Parisi, C.-S. Chen, and G.~Lugones, ``{Fundamental
   oscillation modes of self-interacting bosonic dark stars},'' {\em JCAP},
   vol.~06, p.~051, 2019.
+
+\bibitem{Sperhake:2007gu}
+U.~Sperhake, E.~Berti, V.~Cardoso, J.~A. Gonz{\'a}lez, B.~Br{\"u}gmann, and
+  M.~Ansorg, ``Eccentric binary black-hole mergers: The transition from
+  inspiral to plunge in general relativity,'' {\em Phys. Rev. D}, vol.~78,
+  p.~064069, 2008.
+\newblock arXiv:0710.3823 [gr-qc].
 
 \bibitem{Aggarwal:2020olq}
 N.~Aggarwal {\em et~al.}, ``{Challenges and opportunities of gravitational-wave
@@ -1522,13 +1534,6 @@ M.~Ansorg, B.~Br{\"u}gmann, and W.~Tichy, ``A single-domain spectral method for
 \bibitem{Paschalidis:2013oya}
 V.~Paschalidis, Z.~B. Etienne, R.~Gold, and S.~L. Shapiro, ``{An efficient
   spectral interpolation routine for the TwoPunctures code}.'' 4 2013.
-
-\bibitem{Sperhake:2007gu}
-U.~Sperhake, E.~Berti, V.~Cardoso, J.~A. Gonz{\'a}lez, B.~Br{\"u}gmann, and
-  M.~Ansorg, ``Eccentric binary black-hole mergers: The transition from
-  inspiral to plunge in general relativity,'' {\em Phys. Rev. D}, vol.~78,
-  p.~064069, 2008.
-\newblock arXiv:0710.3823 [gr-qc].
 
 \bibitem{Brugmann:2008zz}
 B.~Br{\"u}gmann, J.~A. Gonz{\'a}lez, M.~D. Hannam, S.~Husa, U.~Sperhake, and

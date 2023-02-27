@@ -383,12 +383,12 @@ line element can be written as
 \end{equation}
 %
 where $\Phi$ and $\psi$ are functions of $r$ only. The metric can be compared to
-the metric of the isotropic Schwarzschild metric by setting,
+the metric of the isotropic schwarzschild metric by setting,
 \begin{equation}
 \psi(r) = \left(1+\frac{M(r)}{2 r} \right) \label{malaise:eq:aspect_mass_def},
 \end{equation}
 and defining the aspect mass function $M(r)$ approximating the mass inside a given
-radius $r$. At large radius the boson star spacetime approaches the vacuum
+radius $r$. At large radius the boson star spacetime approaches the vaccum
 black-hole spacetime, $M(r)$ is constant and $M(\infty)$ gives the
 ADM mass\footnote{It should be noted that the aspect mass is not equivalent to
 the ADM mass at finite radii, only for large radius in an asymptotically flat spacetime.}
@@ -1141,7 +1141,7 @@ The non constraint-satisfying initial data of the boson-star binary is thought o
 combination of the \enquote{true} boson-star binary solution plus \enquote{something else}.
 This \enquote{something else} radiates away at early
 times and contributes to \enquote{junk radiation} - this radiation is unphysical
-and is omitted from our analysis as we are only interested in astrophysical
+and is ommitted from our analysis as we are only interesed in astrophysical
 phenomenology here.
 \color{black}}
 by starting the integration
@@ -1531,14 +1531,14 @@ the adjustment, the initial data contain some residual constraint violations\foo
 \color{orchid}
 Un-doing the normalisation by the factor $16 \pi \rho_{\rm ctrl} \sim 50$, the maximum
 constraint violation is approximately $\mathcal{H} \approx 0.01$ near the centre
-of a star in the improved initial data for a boson-star binary. 
+of a star in the imporved initial data for a boson-star binary. 
 This is comparable to roughly same value $\mathcal{H} \approx 0.01$ found for
 a black-hole binary in Figure 3 of \cite{Sperhake:2006cy}. This comparison of a 
 boson-star binary to a black-hole binary should be taken with a pinch of salt as they are 
-different objects and the black-hole example does not have an identical 
+differnet objets and the black-hole example does not have an identical 
 grid structure. In other words it should not be assumed that there are no more improvements 
 that can be made in the Hamiltonian constraint of a boson-star binary. Additionally, 
-the momentum constraint is not as successfully remedied by the modified initial data scheme.
+the momentum constraint is not as successfully remidied by the modified initial data scheme.
 \color{black}
 };
 it should therefore primarily be regarded as an improved initial guess for

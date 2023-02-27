@@ -3,32 +3,56 @@
 \section{Introduction}
 \subsection{Introduction to General Relativity}
 
-The modern theory of gravity, published by Albert Einstein in 1915, is general relativity (GR). It is a geometric theory relying on curved spaces and differential geometry. GR is a generalisation of Einstein's theory of special relativity (SR) to include matter and gravity. Where the main idea behind SR was that the laws of physics are identical in any non-accelerating frame, GR includes the gravitational force (and subsequently matter) by postulating that the laws of physics are identical in any free-falling frame. In a universe without gravity or matter GR is equivalent to SR.
+The modern theory of gravity, published by Albert Einstein in 1915, is general
+relativity (GR). It is a geometric theory relying on curved spaces and differential
+geometry. GR is a generalisation of Einstein's theory of special relativity (SR)
+to include matter and gravity. Where the main idea behind SR was that the laws of
+physics are identical in any non-accelerating frame
+\footnote{What is meant here is that on cannot determine the absolute velocity of a
+frame of reference from an experiment, not that special relativity fails to describe
+accelerating frames. },
+GR includes the gravitational
+force (and subsequently matter) by postulating that the laws of physics are identical
+in any free-falling frame. In a universe without gravity or matter GR is equivalent
+to SR.
 
-GR also supersedes Newton's theory of gravity when gravity becomes stronger. In Newtonian theory, two masses orbit each other in a constant circle or ellipse; the ellipses can precess in the presence of extra masses. However, the calculated precession rate of Mercury about the sun using Newton's theory of gravity was too slow; Einstein correctly calculated the precession rate using GR. This initial success proved to the world that Einstein's theory was the best current description of gravity. In the weak gravity limit, GR replicates Newton's theory of gravity; the precession of Mercury is the most stark deviation from Newton's theory in the solar system as it is closest to the sun where gravity is the strongest. 
+GR also supersedes Newton's theory of gravity when gravity becomes strong. In Newtonian theory, two masses orbit each other in a constant circle or ellipse; the ellipses can precess in the presence of extra masses. However, the calculated precession rate of Mercury about the sun using Newton's theory of gravity was too slow; Einstein correctly calculated the precession rate using GR. This initial success proved to the world that Einstein's theory was the best current description of gravity. In the weak gravity limit, GR replicates Newton's theory of gravity; the precession of Mercury is a particularly prominant deviation from Newton's theory in the solar system as it is closest planet to the sun where gravity is the strongest. Ontop of this precession GR predicts that the time averaged separation of a two-body orbit can be seen to decrease, hence the objects are inspiralling. The orbital energy lost is released as a gravitational wave (GW) signal. Inspiral and radiation become more pronounced at lower separations and with heavier objects. Approximations to GR can be used in this regime, for example post Newtonian (PN) theory which expands GR in powers of $c$ (the speed of light in vacuum).
 
-Other new effects predicted by GR include gravitational time dilation and light ray deflection. Gravitational time dilation is similar to time dilation in SR which states that an observer at rest would age more quickly (in their own frame) compared to a quickly moving observer. Gravitational time dilation states that an observer in a stronger gravitational field will age more slowly than one in a weaker gravitational field; this effect has been verified by comparing two atomic clocks where one is left on the surface of the earth and one is elevated. Light ray deflection occurs when a beam of light passes close by an object with a strong gravitational field - the stronger the field the more the light beam is deflected. This can be seen when distant bright objects pass behind matter such as black holes or large clusters of matter.
+Other new effects predicted by GR include gravitational time dilation and the correction to light ray deflection. Gravitational time dilation is similar to time dilation in SR which states that an observer at rest would age more quickly (in their own frame) compared to a quickly moving observer. Gravitational time dilation states that an observer in a stronger gravitational field will age more slowly than one in a weaker gravitational field; this effect has been verified by comparing two atomic clocks where one is left on the surface of the earth and one is elevated. Light ray deflection occurs when a beam of light passes close by an object with a strong gravitational field - the stronger the field the more the light beam is deflected. This can be seen when distant bright objects pass behind matter such as black holes or large clusters of matter. While one can model light ray deflection using Newtonain phsyics, this description is not correct and general relativity is needed for accurate predictions.
 
-When gravity becomes moderately strong, Newtons theory starts to become quite inaccurate. After many orbits of two heavy objects the time averaged separation can be seen to decrease, hence the objects are inspiralling. The orbital energy lost is released as a gravitational wave (GW) signal. Inspiralling and radiation becomes more pronounced at lower separations and with heavier objects. Approximations to GR can be used in this regime, for example post Newtonian (PN) theory. Another example is the neutron star (NS), an object so dense that all of the electrons in an atom are forced to combine with nearby protons and reduce all matter to a dense lattice of neutrons. The gravitational field on the surface of a NS is of order $10^{11}$ times stronger than on earth's surface and the internal physics of the NS is not well known to date.
+In the strong gravity regime GR deviates entirely from Newtonian theory leading to a plethora of exotic results. One major group of examples are black holes (BHs), the most compact known macroscopic objects with such a strong gravitational pull that even light cannot escape. These dense objects can be produced by the collapse of heavy dying stars, implosions of supernovae, and collisions of very dense objects such as NSs or other heavy stars; the collapse of matter to a black hole itself is not described by Newtonian physics. Another example is the neutron star (NS), an object so dense that all of the electrons in an atom are forced to combine with nearby protons and reduce all matter to a dense lattice of neutrons. The gravitational field on the surface of a NS is of order $10^{11}$ times stronger than on earth's surface and the internal physics of NSs is not well known to date.
 
-In the strong gravity regime GR deviates entirely from Newtonian theory leading to a plethora of exotic results. One major group of examples are black holes (BHs), the densest known macroscopic objects with such a strong gravitational pull that even light cannot escape. These dense objects can be produced by the collapse of large dying stars, implosions of supernovae, and collisions of very dense objects such as NSs or other heavy stars; the collapse of matter to a black hole itself is not described by Newtonian physics.
+At the centre of a black hole, GR predicts a gravitational singularity; a point (or set of points) where spacetime curvature diverges. It is presumed that Einstein's theory breaks down towards a singularity which is deemed unphysical. Theories such as loop quantum gravity (LQG) and string theory (ST) try to reconcile GR with quantum mechanics which might alleviate this problem. Sadly there is no definitive answer as to what happens near a gravitational singularity, this is in part due to the lack of experimental data to draw from. The weak cosmic censorship conjecture states that all physical singularities are hidden inside an event horizon (EH). Informally the EH can be thought of as the surface containing the black hole interior; the set of all points that cannot send information to a distant external observer. Formally, the EH is the causal past of {\it future null infinity}, denoted $\mathcal{I}^+$, the surface reached by outward directed photons in the infinite future. Points inside an EH are {\it causally disconnected} from the exterior.
 
-At the centre of a black hole, GR predicts a singularity; a single infinitely dense point surrounded by vacuum. It is presumed that Einstein's theory breaks down towards a singularity which is deemed unphysical. Theories such as loop quantum gravity (LQG) and string theory (ST) try to reconcile GR with quantum mechanics which is thought might alleviate this problem. Sadly there is no definitive answer as to what happens near a gravitational singularity, this is in part due to the lack of experimental data to draw from. The weak cosmic censorship conjecture states that all physical singularities are hidden inside an event horizon (EH). The EH is a surface containing all points that cannot send information to $\mathcal{I}^+$, the surface reached by out-directed photons in the infinite future; points inside an EH are {\it causally disconnected} from the exterior. 
-
-GR also describes physics at the largest scales. The application of GR to the entire universe is called Cosmology. Cosmology can be used to describe the big bang, early universe expansion and late universe inflation. Cosmology can also be used to describe a universe with small matter and gravitational perturbations on top of a uniform background which is currently the best large scale description of the universe.
+GR also describes physics at the largest scales. The universe can be modelled as an isotropic (but not necessarily flat) spatial hypersurface with a time dependent scale factor; this spacetime is known as the Friedmann–Lemaître–Robertson–Walker (FLRW) spacetime. The application of GR to the entire universe is called Cosmology and can be used to describe the big bang, early universe expansion and late universe inflation. Cosmology is also very successfully modelled in the framework of perturbation theory on an FLRW background.
 
 One final noteworthy prediction of GR is gravitational waves. In 2015 GWs were detected by the Laser Interferometer Gravitational-Wave Observatory (LIGO) which lead to the 2017 Nobel prize in physics. Many subsequent signals from inspiralling BH-BH and BH-BS inspirals have been measured which agree with the waveforms predicted by NR simulations and PN theories. This recent discovery has lead to an increase in interest in gravitational physics - especially systems with observable GWs.
 
+
+
 \subsection{Introduction to Compact Objects and Boson Stars}
-The first non-trivial solution to Einstein's equation found was that of the spherically symmetric, static and asymptotically flat vacuum spacetime by Karl Schwarzschild in 1916. The solution was designed to be used outside a spherically symmetric, non-spinning, body of mass; however it also turned out to provide use in describing black holes. This metric was then modified by Tolman, Oppenheimer and Volkov in 1939 to describe the non-vacuum case of a constant density neutron star. 
+The first non-trivial solution to Einstein's equation found was that of the spherically symmetric, static and asymptotically flat vacuum spacetime by Karl Schwarzschild in 1916. The solution was designed to be used outside a spherically symmetric, non-spinning, body of mass; however it also turned out to provide use in describing black holes. This metric was then modified by Tolman, Oppenheimer and Volkov in 1939 to describe the non-vacuum case of a spherically symmetric neutron star; this required a non-zero matter distribution.
 
-Black holes in the universe generally spin; any black hole forming from the collapse of matter will inherit the angular momentum of the matter as it collapses. Another way to see this is that the space of black hole solutions has zero size compared to the space of spinning black holes; the non-spinning black hole is a fine tuned black hole with spin zero. Rotating black holes were first described by Roy Kerr in 1963, and are subsequently called Kerr black holes. The collisions of black holes (with or without spin) is also successfully described by GR, however this phenomenon is far too complicated to solve analytically. Numerical relativity (NR), the exact simulation of GR using methods to solve partial differential equations (PDEs), is needed to describe black hole collisions and inspirals. 
+Black holes in the universe generally spin; any black hole forming from the collapse of matter will inherit the angular momentum of the matter as it collapses. Another way to see this is that non-spinning black holes are a subset of measure zero in the set of spinning black holes; the non-spinning black hole is a fine tuned black hole with spin zero. Rotating black holes were first described by Roy Kerr in 1963, and are subsequently called Kerr black holes. The collisions of black holes (with or without spin) are also successfully described by GR, however this phenomenon is far too complicated to solve analytically. Numerical relativity (NR), the exact \footnote{Exact up to numerical error.} simulation of GR using methods to solve partial differential equations (PDEs), is needed to describe black hole collisions and inspirals.
 
-The study of compact exotic objects can be traced back to John Wheeler who investigated Geons in 1955 for their potential similarity to elementary particles. Geons are gravito-electromagnetic objects with the name arising from "gravitational electromagnetic entity". In 1968 David Kaup published \cite{Kaup:1968zz} describing what he called "Klein-Gordon Geons", nowadays referred to as boson stars. Importantly, boson stars are a localised complex Klein-Gordon configuration, with the real counterparts being unstable. Variants such as (Spin 1) Proca stars \cite{brito2016proca}, electromagnetically charged boson stars and many others have been studied. 
+The study of compact exotic objects can be traced back to John Wheeler who investigated Geons in 1955 for their potential similarity to elementary particles. Geons are gravito-electromagnetic objects with the name arising from \enquote{gravitational electromagnetic entity}. In 1968 David Kaup discovered a solution dubbed {\it Klein-Gordon Geons} \cite{Kaup:1968zz}, nowadays called boson stars. Importantly, boson stars are a localised complex Klein-Gordon configuration, with the real counterparts being unstable. Variants such as (Spin 1) Proca stars \cite{brito2016proca}, electromagnetically charged boson stars and many others have been studied.
 
-Interest in boson stars remains for many reasons. Given the recent discovery of the Higgs boson, we know that scalar fields exist in nature and any gravitational wave signals created by compact objects could theoretically be detected with modern gravitational wave interferometers. Secondly, boson stars are a good candidate for dark matter halos \cite{lee1996galactic} \cite{schunck2003general}. Boson stars are also useful as a proxy to other compact objects in general relativity; there is a lot of freedom in the construction of different types of boson star and they can be fine tuned to model dense neutron stars for one example. The advantage this would have over simulating a real fluid is that the Klein Gordon equation is linear in the principal part meaning smooth data must always remain smooth; this avoids shocks and conserves particle numbers relatively well with less sophisticated numerical schemes. 
+Interest in boson stars remains strong for many reasons. Given the recent discovery
+of the Higgs boson, we know that at least one scalar field exist in nature and any
+gravitational wave signals created by compact objects could theoretically be detected
+with modern gravitational wave interferometers. Secondly, boson stars are a good
+candidate for dark matter halos \cite{lee1996galactic} \cite{schunck2003general}.
+Boson stars are also useful as a proxy to other compact objects in general relativity;
+there is a lot of freedom in the construction of different types of boson star
+and they can be tuned to provide an approximate model of dense neutron stars for
+one example. The advantage this would have over simulating a real fluid is that
+the Klein Gordon equation is linear in the principal part and
+is less prone to shocks and instabilities; consequently, conserved
+quantities are relatively well conserved with less sophisticated numerical schemes.
 
-On a slightly different topic, collisions of boson stars could be a natural method to produce scalar hair around black holes which will be discussed later in more detail in section \ref{grchombo:sec:bscollisions}.
+On a slightly different topic, collisions of boson stars could be a natural method
+to produce scalar hair around black holes which will be discussed later in more
+detail in section \ref{grchombo:sec:bscollisions}.
 
 \subsection{Conventions} \label{intro:sec:conventions}
 Throughout this thesis physical quantities will be expressed as a dimensionless ratio of the Planck length ${L_{\rm pl}}$, time ${T_{\rm pl}}$ and mass ${M_{\rm pl}}$ unless stated otherwise; for example Newtons equation of gravity would be written as
@@ -41,13 +65,13 @@ The Einstein summation convention for tensor indices will be used extensively; t
 index free notation and normal font ($T_{\mu\nu,...}$) for the components.
 The dot product between two vectors or vector fields will be written interchangeably as $\bs{A} \cdot \bs{B} \leftrightarrow {A}_\mu {B}^\mu$ for readability.
 Additionally, $\nabla_\mu$ denotes the covariant derivative and $\partial_\mu$
-is the partial derivative, both with respect to coordinate $x^\mu$. The metric signature will always be $(-,+,+,+)$. 
+is the partial derivative, both with respect to coordinate $x^\mu$. The metric signature will always be $(-,+,+,+)$.
 
-When considering the ADM decomposition, as in section \ref{nr:sec:nr}, objects can be associated with both a $3+1$ dimensional manifold $\M$ or a $3$ dimensional hypersurface $\Sigma$. To distinguish between these, standard Roman letters such as $R$ represent the object belonging to $\M$ and calligraphic letters such as $\mathcal{R}$ correspond to the object belonging to $\Sigma$. 
+When considering the ADM decomposition, as in section \ref{nr:sec:nr}, objects can be associated with both a $3+1$ dimensional manifold $\M$ or a $3$ dimensional hypersurface $\Sigma$. To distinguish between these, standard Roman letters such as $R$ represent the object belonging to $\M$ and calligraphic letters such as $\mathcal{R}$ correspond to the object belonging to $\Sigma$.
 
 Finally, unless stated otherwise, Greek indices such
 as $\{\alpha, \beta, ..., \mu, \nu, ...\}$ label generic dimension tensor components (often 4 dimensions) whereas late Latin indices such as $\{i, j, k, ...\}$ label
-three dimensional tensor components and early Latin indices such as $\{a, b, ...\}$ label two dimensional ones. 
+three dimensional tensor components and early Latin indices such as $\{a, b, ...\}$ label two dimensional ones.
 
 
 
@@ -59,7 +83,7 @@ three dimensional tensor components and early Latin indices such as $\{a, b, ...
 
 
 
-Everyone's first encounter with geometry will cover Pythagoras' theorem; arguably the most famous and useful equation in existence. Pythagoras' equation relates the sidelengths of a right angled triangle, it says that $s^2 = x^2 + y^2$ for a triangle with height $y$, width $x$ and hypotenuse length $s$. This can be shown very simply by looking at Fig.~\ref{intro:fig:pythag_proof}. The area of the partially rotated square is $s^2$, but we can also calculate it from the the area of the larger square $A_{sq}$ and subtracting four times the area of one of the triangles $A_{tr}$. Given that $A_{sq} = (x+y)^2$ and $A_{tr} = \frac{1}{2}xy$, then 
+Everyone's first encounter with geometry will cover Pythagoras' theorem; arguably the most famous and useful equation in existence. Pythagoras' equation relates the sidelengths of a right angled triangle, it says that $s^2 = x^2 + y^2$ for a triangle with height $y$, width $x$ and hypotenuse length $s$. This can be shown very simply by looking at Fig.~\ref{intro:fig:pythag_proof}. The area of the partially rotated square is $s^2$, but we can also calculate it from the the area of the larger square $A_{sq}$ and subtracting four times the area of one of the triangles $A_{tr}$. Given that $A_{sq} = (x+y)^2$ and $A_{tr} = \frac{1}{2}xy$, then
 \begin{equation}
 s^2 = (x+y)^2-2xy = x^2 + y^2,
 \end{equation}
@@ -83,16 +107,15 @@ way to deal with curves, tensor calculus and differential tensor equations in cu
 introduction to DG, we should start with a manifold $\M$ which is an $N$ dimensional space that locally looks
 like $\rspace^N$, $N$ dimensional Euclidean space. This is important as at a point $p\in\M$ we can find infinitesimally
 close neighbouring points $p + \delta p \in \M$. In the following sections we will explore curves, functions, tensors and calculus on manifolds using DG.
-
-
-
+Two introductory texts covering the basics of DG, for application to general relativity,
+are \cite{carroll2019spacetime} and \cite{gourgoulhon20073+}. For a more dedicated
+DG textbook the reader is directed to \cite{bar2010elementary}.
 
 \subsection{Functions, Curves and Tensors on Manifolds}
-A real scalar function $f$ over $\M$ maps any point $p\in \M$ to a real number, denoted 
-$f : p \rightarrow \rspace$. An important example of a set of scalar functions is the coordinate system $\phi$, $\phi : p \rightarrow \rspace^N$,
-this is normally written $x^\mu$ where $\mu\in\{0,1,...,N-1\}$ is an index labelling the coordinate. The map $\phi$ is called a chart,
+A real scalar function $f$ over $\M$ maps any point $p\in \M$ to a real number, denoted
+$f : p \rightarrow \rspace$. An important example of a set of scalar functions is the coordinate system $\phi$, $\phi : p \rightarrow \rspace^N$ on some neighbourhood of $p$. This is normally written $x^\mu$ where $\mu\in\{0,1,...,N-1\}$ is an index labelling the coordinate. The map $\phi$ is called a chart,
 and unlike Euclidean space one chart may not be enough to cover the entire manifold; in this case a set
-of compatible charts should be smoothly joined, collectively known as an atlas.
+of compatible charts should be smoothly\footnote{Smoothness here referring to infinite differentaibility, $C^\infty$.} joined, collectively known as an atlas.
 
 Now that functions have been discussed, the next simplest object we can discuss is a curve, or path, through $\M$. A curve $\Gamma$ is a set of smoothly connected points $p(\lambda)\in \M$ that smoothly depend on an input parameter $\lambda \in [\lambda_0,\lambda_1]$. This can be expressed in terms of coordinates as $x^\mu(\lambda)$ where $\phi:p(\lambda) \rightarrow x^\mu(\lambda)$. Differentiating a function $f$ along $\Gamma$ with respect to $\lambda$ gives
 \begin{equation} \label{intro:eq:dfdl}
@@ -102,27 +125,27 @@ where the Einstein summation convention was invoked, summing over all values of 
 \begin{equation} \label{intro:eq:ddl}
 \frac{\dd}{\dd \lambda} = \frac{\dd x^\nu}{\dd \lambda}\partial_\nu.
 \end{equation}
-The operator $\dd/\dd \lambda $ can act on any function $f$ and return a new function $\tilde{f}$ over $\M$, this is written as $\dd/\dd \lambda (f) = \tilde{f}$ where $\tilde{f}:p\rightarrow \rspace$ for $p\in\M$. We can also think of $\dd/\dd \lambda$ as a vector $\bs{X}$ with components $X^\mu=\dd x^\mu / \dd \lambda$ and basis vectors $\bs{e}_\mu:=\partial_\mu$ taken from Eq.~(\ref{intro:eq:ddl}). The vector $\bs{X}$ can be written as $\bs{X} = X^\mu \bs{e}_\mu$ and can act on a general function $f$ over $\M$ as $\bs{X}(f) = X^\mu \bs{e}_\mu(f) = X^\mu \partial_\mu f$. Considering the set of all possible curves through a points $p\in\M$, the tangent vector components $\dd x^\mu / \dd \lambda$ span an $N$ dimensional space with basis $\bs{e}_\mu = \partial_\mu$; this space is called the tangent space and is denoted as $\T_p(\M)$ at a point $p\in\M$. 
+The operator $\dd/\dd \lambda $ can act on any function $f$ and return a new function $\tilde{f}$ over $\Gamma$, this is written as $\dd/\dd \lambda (f) = \tilde{f}$ where $\tilde{f}:p(\lambda)\rightarrow \rspace$. We can also think of $\dd/\dd \lambda$ as a vector $\bs{X}$ with components $X^\mu=\dd x^\mu / \dd \lambda$ and basis vectors $\bs{e}_\mu:=\partial_\mu$ taken from Eq.~(\ref{intro:eq:ddl}). The vector $\bs{X}$ can be written as $\bs{X} = X^\mu \bs{e}_\mu$ and can act on a general function $f$ over $\M$ as $\bs{X}(f) = X^\mu \bs{e}_\mu(f) = X^\mu \partial_\mu f$. Considering the set of all possible curves through a points $p\in\M$, the tangent vector components $\dd x^\mu / \dd \lambda$ span an $N$ dimensional space with basis $\bs{e}_\mu = \partial_\mu$; this space is called the tangent space and is denoted as $\T_p(\M)$ at a point $p\in\M$.
 
-The next object to discuss is the co-vector which is defined as a map from vectors to real numbers; not to be confused with the dot product in section \ref{intro:sec:dotprod}. Similarly to vectors, a co-vector $\bs{\omega}$ can be expressed as a sum of components $\omega_\mu$ and basis co-vectors $\bs{\theta}^\mu$ like $\bs{\omega} = \omega_\mu \bs{\theta}^\mu$. Contrary to vectors, co-vector components have downstairs indices and the basis has upstairs indices; this choice improves the readability of tensor equations when working with components. A co-vector can map a vector to a real number like $\bs{\omega}:\bs{X} \rightarrow \rspace$ or $\bs{\omega}(\bs{X}) \rightarrow \rspace$. Vectors are equally able to map co-vectors to real numbers, denoted as $\bs{X}:\bs{\omega}\rightarrow\rspace$. Co-vectors are defined such that $\bs{\theta}^\mu : \bs{e}_\nu = \delta^\mu_\nu$ where $\delta^\mu_\nu$ are the components of the Kroneka delta equating to zero unless $\mu=\nu$ in which case they are one. The operation of a generic co-vector $\bs{\omega}$ on a generic vector $\bs{X}$ is
+The next object to discuss is the co-vector which is defined as a map from vectors to real numbers; not to be confused with the dot product in section \ref{intro:sec:dotprod}. Similarly to vectors, a co-vector $\bs{\omega}$ can be expressed as a sum of components $\omega_\mu$ and basis co-vectors $\bs{\theta}^\mu$ like $\bs{\omega} = \omega_\mu \bs{\theta}^\mu$. Contrary to vectors, co-vector components have downstairs indices and the basis has upstairs indices; this choice improves the readability of tensor equations when working with components. A co-vector can map a vector to a real number like $\bs{\omega}:\bs{X} \rightarrow \rspace$ or $\bs{\omega}(\bs{X}) \rightarrow \rspace$. Vectors are equally able to map co-vectors to real numbers, denoted as $\bs{X}:\bs{\omega}\rightarrow\rspace$. The co-vectors basis is defined such that $\bs{\theta}^\mu : \bs{e}_\nu = \delta^\mu_\nu$ where $\delta^\mu_\nu$ are the components of the Kroneka delta equating to zero unless $\mu=\nu$ in which case they are one. The operation of a generic co-vector $\bs{\omega}$ on a generic vector $\bs{X}$ is
 \begin{equation}
 \bs{\omega}: \bs{X} = \omega_\mu X^\nu \bs{\theta}^\mu:\bs{e}_\nu = \omega_\mu X^\nu \delta^\mu_\nu = \omega_\mu X^\mu \in \rspace.
 \end{equation}
-This map is linear and identical under reversing the order of operation; $\bs{\omega} : \bs{X} = \bs{X} : \bs{\omega}$. Similarly to vectors, the set of all possible co-vectors at a point $p\in\M$ span an N-dimensional space called the co-tangent space, written as $\T^*_p(\M)$. 
+This map is linear and identical under reversing the order of operation; $\bs{\omega} : \bs{X} = \bs{X} : \bs{\omega}$. Similarly to vectors, the set of all possible co-vectors at a point $p\in\M$ span an N-dimensional space called the co-tangent space, written as $\T^*_p(\M)$.
 
 \subsubsection{Multilinear Maps and Tensors}
-Generalising the previous linear maps between vectors and co-vectors gives the multilinear map. Consider a tensor $\bs{T}$, this can be expressed in component form like 
+Generalising the previous linear maps between vectors and co-vectors gives the multilinear map. Consider a tensor $\bs{T}$, this can be expressed in component form like
 \begin{equation}\bs{T} = T^{\alpha\beta, ...}_{\mu\nu,...} \bs{e}_\alpha\otimes\bs{e}_\beta \otimes... \otimes\bs{\theta}^\mu \otimes\bs{\theta}^\nu\otimes...
 \end{equation}
-for an arbitrary number of outer products of vector and co-vector bases. A tensor with $m$ co-vector bases and $n$ vector bases is called an $(m,n)$ tensor and has a rank of $m+n$. Vectors, co-vectors and scalars are $(1,0)$, $(0,1)$ and $(0,0)$ tensors respectively.  Tensors can act as multilinear maps between tensors. We have already seen how a vector and co-vector can map each other to a scalar, let's extend this with an example. An $(0,2)$ tensor, $\bs{T}=T_{\mu\nu}\bs{\theta}^\mu\otimes\bs{\theta}^\nu$ at $p\in\M$, can map two vectors $\bs{X}$ and $\bs{Y}$ to a scalar as shown, 
+for an arbitrary number of outer products of vector and co-vector bases. A tensor with $m$ co-vector bases and $n$ vector bases is called an $(m,n)$ tensor and has a rank of $m+n$. Vectors, co-vectors and scalars are $(1,0)$, $(0,1)$ and $(0,0)$ tensors respectively.  Tensors can act as multilinear maps between tensors. We have already seen how a vector and co-vector can map each other to a scalar, let's extend this with an example. An $(0,2)$ tensor, $\bs{T}=T_{\mu\nu}\bs{\theta}^\mu\otimes\bs{\theta}^\nu$ at $p\in\M$, can map two vectors $\bs{X}$ and $\bs{Y}$ to a scalar as shown,
 \begin{align}
-\bs{T}(\bs{X},\bs{Y}) 
+\bs{T}(\bs{X},\bs{Y})
 &=T_{\mu\nu}X^\alpha Y^\beta \bs{\theta}^\mu \otimes \bs{\theta}^\nu (\bs{e}_\alpha,\bs{e}_\beta),\\
 &= T_{\mu\nu}X^\alpha Y^\beta (\bs{\theta}^\mu:\bs{e}_\alpha)( \bs{\theta}^\nu:\bs{e}_\beta) ,\\
 &= T_{\mu\nu}X^\alpha Y^\beta \delta^\mu_\alpha  \delta^\nu_\beta ,\\
 &= T_{\mu\nu}X^\mu Y^\nu.
 \end{align}
-The multilinear map can also output generic tensors, for example consider 
+The multilinear map can also output generic tensors, for example consider
 \begin{equation}
 \bs{T}(\bs{X},\star) = T_{\mu\nu} X^\alpha (\bs{\theta}^\mu:\bs{e}_\alpha)\bs{\theta}^\nu = T_{\mu\nu}X^\mu \bs{\theta}^\nu,
 \end{equation}
@@ -131,19 +154,23 @@ which uses the $(0,2)$ tensor $\bs{T}$ to map the vector $\bs{X}$ to a co-vector
 One final example of a mapping is from a single tensor to a lower rank tensor, this is called contraction. To illustrate this, let's take a $(1,3)$ tensor $\bs{Z} = Z^\alpha_{\,\,\,\mu\nu\rho} \bs{e}_\alpha \otimes\bs{\theta}^\mu\otimes\bs{\theta}^\nu\otimes\bs{\theta}^\rho$. We can choose to use the basis vector $\bs{e}_\alpha$ to act on any of the three co-vector bases, choosing $\bs{\theta}^\mu$ this is
 \begin{equation}
 Z^\alpha_{\,\,\,\mu\nu\rho} (\bs{e}_\alpha : \bs{\theta}^\mu)\bs{\theta}^\nu\otimes\bs{\theta}^\rho = Z^\mu_{\,\,\,\mu\nu\rho}\bs{\theta}^\nu\otimes\bs{\theta}^\rho = \tilde{Z}_{\nu\rho}\bs{\theta}^\nu\otimes\bs{\theta}^\rho,
-\end{equation} 
-where $\tilde{Z}_{\nu\rho} = Z^\mu_{\,\,\,\mu\nu\rho}$. Tensors are central to general relativity, objects such as curvature, matter and paths will be described by tensor fields\footnote{A tensor field assigns a tensor to each point on a manifold $\mathcal{M}$; in this work the assigning will be continuous and tensors assigned to two infinitesimally close points $(p,p+\delta p)$ will be infinitesimally similar to each other.}. 
+\end{equation}
+where $\tilde{Z}_{\nu\rho} = Z^\mu_{\,\,\,\mu\nu\rho}$. Tensors are central to general
+relativity, objects such as curvature, matter and paths will be described by tensor fields
+\footnote{A tensor field assigns a tensor to each point on a manifold $\mathcal{M}$.
+In this work the assignment will be smooth except for where coordinate singularities, or physical singularities, occur.
+}.
 
 
 
 
 
 \subsection{The Inner Product and the Metric} \label{intro:sec:dotprod}
-To introduce the notion of length on a tangent plane $\T_p(\M)$ at a point $p\in\M$ the metric tensor $\bs{g}$ is introduced. The metric tensor has components, 
+To introduce the notion of length on a tangent plane $\T_p(\M)$ at a point $p\in\M$ the metric tensor $\bs{g}$ is introduced. The metric tensor defines the inner product (or dot product) on $\T_p(\M)$ like,
 \begin{equation}
-g_{\mu\nu} = \bs{e}_\mu \cdot \bs{e}_\nu,
+ \bs{e}_\mu \cdot \bs{e}_\nu=g_{\mu\nu}.
 \end{equation}
-where $\bs{e}_\mu \cdot \bs{e}_\nu$ represents the inner product (or dot product) on $\T_p(\M)$; clearly the metric is symmetric by construction as $\bs{e}_\mu \cdot \bs{e}_\nu=\bs{e}_\nu \cdot \bs{e}_\mu$. The inner product can be thought of as a multilinear map,
+The metric is symmetric by construction which ensures that $\bs{e}_\mu \cdot \bs{e}_\nu=\bs{e}_\nu \cdot \bs{e}_\mu$. The inner product can be thought of as a multilinear map,
 \begin{gather}
 \bs{g} : (\bs{X} , \bs{Y}) \rightarrow \rspace , \quad \mathrm{or} \quad
 \bs{g}(\bs{X},\bs{Y}) = g_{\mu\nu} X^\mu Y^\nu,
@@ -163,15 +190,15 @@ Another way to think of the inner product is that the metric maps a vector $\bs{
 \end{align}
 this use of the metric to map a vector to it's corresponding co-vector (and vice-versa) is extremely useful. Without loss of information we can write $\Xi_\nu = X_\nu$ to make it obvious that $X_\nu = X^\mu g_{\mu\nu}$ and this convention will be used from now on.
 
-The metric also assigns an inner product and a length measure on the co-tangent plane $\T^*_p(\M)$ but instead using the inverse components $g^{\mu\nu} = (g^{-1})_{\mu\nu}$,
+The metric also assigns an inner product and a length measure on the co-tangent plane $\T^*_p(\M)$ but instead using the inverse components $g^{\mu\nu} \equiv (g^{-1})_{\mu\nu}$,
 \begin{equation}
 g^{\mu\nu} = \bs{\theta}^\mu \cdot \bs{\theta}^\nu.
 \end{equation}
-Similarly to before the inner product of two co-vectors $\bs{\omega}$ and $\bs{\sigma}$ is
+Similarly to before, the inner product of two co-vectors $\bs{\omega}$ and $\bs{\sigma}$ is
 \begin{equation}
 \bs{\omega} \cdot \bs{Y} = \omega_\mu \sigma_\nu \bs{\theta}^\mu \cdot \bs{\theta}^\nu = \omega_\mu \sigma_\nu g^{\mu\nu} = \omega_\mu \sigma^\mu.
 \end{equation}
-The reason that $g^{\mu\nu}$ must be the inverse matrix of $g_{\mu\nu}$ is as follows. For a vector $X^\mu \bs{e}_\mu$ and a co-vector $\omega_\mu \bs{\theta}^\mu$ we would like, 
+The reason that $g^{\mu\nu}$ must be the inverse matrix of $g_{\mu\nu}$ is as follows. For a vector $X^\mu \bs{e}_\mu$ and a co-vector $\omega_\mu \bs{\theta}^\mu$ we would like,
 \begin{align}
 \bs{X} : \bs{\omega} &= \bs{g}(\bs{X},\star) : \bs{g}^{-1}(\bs{\omega},\star) ,\\
 X^\mu \omega_\mu  &= X_\mu \omega^\mu ,\\
@@ -192,21 +219,21 @@ We now discuss the maps between two manifolds $M$ and $N$. This has many uses su
 Define a smooth map $\Phi : M \rightarrow N$ between manifolds on some coordinate patch labelling coordinates $x^\mu\in M$ and $y^\mu\in N$. The map $\Phi:x^\mu \rightarrow y^\mu$ gives $y^\mu = \Phi^\mu(x^\nu)$, or equivalently $y^\mu(x^\nu)$. Scalar functions must also map trivially,
 \begin{equation}
 f_N(y^\mu(x^\nu))=f_M(x^\mu),
-\end{equation} 
- where $f_N\in N$ and $f_M \in M$, thus we will no longer identify which manifold a function is on. The map $\Phi$ allows us to push the vector $\bs{X}\in\T_p(M)$ to $\Phi_* \bs{X} \in \T_q(N)$, where $q=\Phi(p)$, in a way such that it's action on a function $f$ is the same in either manifold. 
+\end{equation}
+ where $f_N$ and $f_M$ span $N$ and $M$ respectively, thus we will no longer identify which manifold a function is on. The map $\Phi$ allows us to push the vector $\bs{X}\in\T_p(M)$ to $\Phi_* \bs{X} \in \T_q(N)$, where $q=\Phi(p)$, in a way such that its action on a function $f$ is the same in either manifold.
 \begin{align}
 \bs{X}(f)\Big|_p &= \Phi_*\bs{X}(f)\Big|_q ,\\
 X^\mu \frac{\partial f}{\partial x^\mu}  &= (\Phi_* X)^\nu\frac{\partial f}{\partial y^\nu} , \\
 \left( X^\mu \frac{\partial y^\nu}{\partial x^\mu}\right) \frac{\partial f}{\partial y^\nu}  &= (\Phi_* X)^\nu\frac{\partial f}{\partial y^\nu},
-\end{align} 
+\end{align}
 and hence the components of the push-forward $\Phi_* \bs{X}$ can be read off,
 \begin{equation}
 (\Phi_* X)^\mu = \frac{\partial y^\mu}{\partial x^\nu}X^\nu.
 \end{equation}
-Given a co-vector field $\bs{\omega} \in \T^*_p(N)$ we can pull the field back from $\T^*_p(M) \leftarrow \T^*_q(N)$, denoted $\Phi^*\bs{\omega}$, by demanding that $\Phi^*\bs{\omega}(\bs{X})\big|_p = \bs{\omega}(\Phi_* \bs{X})\big|_q$. Evaluating this gives 
+Given a co-vector field $\bs{\omega} \in \T^*_p(N)$ we can pull the field back from $\T^*_p(M) \leftarrow \T^*_q(N)$, denoted $\Phi^*\bs{\omega}$, by demanding that $\Phi^*\bs{\omega}(\bs{X})\big|_p = \bs{\omega}(\Phi_* \bs{X})\big|_q$. Evaluating this gives
 \begin{align}
 \Phi^*\bs{\omega}(\bs{X})\Big|_p &= \bs{\omega}(\Phi_* \bs{X})\Big|_q, \\
-(\Phi^* \omega)_\mu X^\mu&= \omega_\nu (\Phi_*X)^\nu , \\ 
+(\Phi^* \omega)_\mu X^\mu&= \omega_\nu (\Phi_*X)^\nu , \\
 (\Phi^* \omega)_\mu X^\mu&= \omega_\nu \frac{\partial y^\nu}{\partial x^\mu} X^\mu ,
 \end{align}
 and the components of the pull-back $\Phi_*\bs{\omega}$ can be read off,
@@ -221,19 +248,38 @@ The pull-back of a generic $(0,q)$ tensor and the push-forward of a generic $(p,
 
 
 \subsubsection{Diffeomorphisms}
-So far we have only discussed the one way mapping $\Phi :M \rightarrow N$ which requires a well behaved $\partial y^\nu / \partial x^\mu$. A diffeomorphism is an isomorphism\footnote{An isomorphism is a structure preserving bijective map between sets.} between smooth manifolds $\Phi :M \rightarrow N$, meaning $M$ and $N$ have the same number of dimensions. Two infinitesimally close points $\{p,p+\delta p\}\in\M$ map to two infinitesimally close points $(q,q+\delta q)\in\mathcal{N}$ meaning that open sets are preserved. Given that a diffeomorphism is smooth bijective map then it must be inevitable with inverse map $\Phi^{-1}:N \rightarrow M$, and $y^\nu(x^\mu)$ has a smooth inverse $x^\nu(y^\mu)$. When an inverse map $\Phi^{-1}$ is defined then the pull-back of $(p,0)$ tensors from $N$ to $M$ along with the push-forward of $(0,q)$ tensors from $M$ to $N$ is possible. This means it is possible to push or pull generic tensors between $M$ and $N$ in any direction. The tangent spaces associated with $p \in \M$ or $q \in \mathcal{N}$ are therefore also preserved under mapping meaning that local structure on the manifold is preserved under the mapping. Two common examples of diffeomorphisms are coordinate changes and translations.
+So far we have only discussed the one way mapping $\Phi :M \rightarrow N$ which
+requires a well behaved $\partial y^\nu / \partial x^\mu$. A diffeomorphism is an
+isomorphism\footnote{An isomorphism is a structure
+preserving bijective map between sets; in this context structure preserving applies
+to the preservation of open sets allowing for the mapping of derivatives.}
+between smooth manifolds $\Phi :M \rightarrow N$,
+meaning $M$ and $N$ have the same number of dimensions. Two infinitesimally close
+points $\{p,p+\delta p\}\in\M$ map to two infinitesimally close points
+$(q,q+\delta q)\in\mathcal{N}$ meaning that open sets are preserved. Given that
+a diffeomorphism is smooth bijective map then it must be inevitible with inverse
+map $\Phi^{-1}:N \rightarrow M$, and $y^\nu(x^\mu)$ has a smooth inverse $x^\nu(y^\mu)$.
+When an inverse map $\Phi^{-1}$ is defined then the pull-back of $(p,0)$ tensors
+from $N$ to $M$ along with the push-forward of $(0,q)$ tensors from $M$ to $N$ is
+possible. This means it is possible to push or pull generic tensors between $M$
+and $N$ in any direction. The tangent spaces associated with $p \in \M$ or $q \in \mathcal{N}$
+are therefore also preserved under mapping meaning that local structure on the
+manifold is preserved under the mapping. Two common examples of diffeomorphisms
+are coordinate changes and translations.
 
 \subsubsection{Projection Mappings}
-As mentioned, maps between manifolds can be used to project tensors to lower dimensional embedded surfaces. This requires us to consider an $m$-dimensional manifold $M$ with metric $g_{\mu\nu}$ and coordinates $x^\mu$ as well as an embedded $n$-dimensional surface $N$ where $n<m$. We can treat $N$ as a separate $n$ dimensional manifold with metric $h_{\mu\nu}$. As before, we can define a map $\Phi:x^\mu \rightarrow y^\mu$ and the pullback of the metric demands that,
+As mentioned, maps between manifolds can be used to project tensors to lower dimensional embedded surfaces. This requires us to consider an $m$-dimensional manifold $M$ with metric $g_{\mu\nu}$ and coordinates $x^\mu$ as well as an embedded $n$-dimensional surface $N$ where $n<m$. We can treat $N$ as a separate $n$-dimensional manifold with metric $h_{\mu\nu}$. As before, we can define a map $\Phi:x^\mu \rightarrow y^\mu$ and the pullback of the metric demands that,
 \begin{equation}
 {}^{(m)}h_{\rho\sigma} = {}^{(n)}h_{\mu\nu}\frac{\partial y^\mu  }{\partial x^\rho  } \frac{\partial y^\nu  }{\partial x^\sigma  },
 \end{equation}
 where ${}^{(m)}\bs{h}$ represents m-dimensional the tensor on $M$ and ${}^{(n)}\bs{h}$ represents n-dimensional the tensor on $N$; of course ${}^{(n)}\bs{h}$ and $\bs{h}$ are completely identical.
 
+
 In the case that $n=m-1$, which is a projection into one less dimension, a convenient form for ${}^{(n)}\bs{h}$ can be found. If the image of $N$ in $M$ has everywhere an $m$-dimensional unit normal $\bs{n}$, then a vector $\bs{X}\in \T_p(\M)$ for $p\in N$ can be projected onto $N$ like,
 \begin{equation}
 ({}^{(m)}\overrightarrow{{X}})^\mu = (\delta^\mu_\nu \mp n^\mu n_\nu )X^\nu,
 \end{equation}
+
 where the sign is negative if $|\bs{n}|^2=1$ and positive if $|\bs{n}|^2 = -1$. It should be noted that strictly, $\overrightarrow{\bs{X}} \in \T_p(\M)$. To avoid confusion we will denote the $m$-dimensional projected vector as ${}^{(m)}\overrightarrow{\bs{X}}$ and vector existing in the $n$-dimensional manifold $N$ as ${}^{(n)}\overrightarrow{\bs{X}}$. The projection guarantees that,
 \begin{align}
 {}^{(n)}\bs{h} ({}^{(n)}\overrightarrow{\bs{X}},{}^{(n)}\overrightarrow{\bs{X}}  ) &= \bs{g} ({}^{(m)}\overrightarrow{\bs{X}},{}^{(m)}\overrightarrow{\bs{X}}  ),\\
@@ -244,20 +290,38 @@ which gives a formula for the projected metric ${}^{(m)}\bs{h} \in \M$,
 \begin{equation}
 {}^{(m)}h_{\mu\nu} = g_{\mu\nu} \mp n_\mu n_\nu.
 \end{equation}
-The use of this projected metric to project general tensors to lower dimensions is explored in detail in section \ref{nr:sec:3plus1} and heavily relied upon in section \ref{q:def:q}.
+The use of this projected metric to project general tensors to lower dimensions is explored in detail in section \ref{nr:sec:3plus1} and heavily relied upon in chapter \ref{q:sec:q}.
 
-Mapping to lower dimensional surface of $d$-dimensions can be done similarly by adding an extra mutually-orthogonal unit vector for each reduced dimension like,
+Mapping to lower dimensional surface of $d$-dimensions can be done similarly by
+adding an extra mutually-orthogonal unit vector for each reduced dimension like,
 \begin{equation}
-{}^{(d)}h_{\mu\nu} = g_{\mu\nu} \mp n^{(1)}_\mu n^{(1)}_\nu  \mp n^{(2)}_\mu n^{(2)}_\nu + ... \,\,.
+{}^{(m)}h_{\mu\nu} = g_{\mu\nu} \mp n^{(1)}_\mu n^{(1)}_\nu  \mp n^{(2)}_\mu n^{(2)}_\nu + ... \,\,.
 \end{equation}
 
-The metric $\tilde{\bs{h}}$ on an $a$-dimensional sub-surface $A\in\M$ can be explicitly calculated from the pushforward of ${}^{(m)}\tilde{\bs{h}}$ considering the diffeomorphism $\Phi^A$ that maps the image of $A$ embedded in $\mathcal{M}$ to an a-dimensional manifold $\mathcal{A}$. The resulting metric is, 
+The metric $\tilde{\bs{h}}$ on an $a$-dimensional sub-surface $A\in\M$ can be explicitly calculated from the pushforward of ${}^{(m)}\tilde{\bs{h}}$ considering the diffeomorphism $\Phi^A$ that maps the image of $A$ embedded in $\mathcal{M}$ to an a-dimensional manifold $\mathcal{A}$. The resulting metric is,
 \begin{equation}
 (\Phi^A_* g)_{ij} = \tilde{h}_{ij} = \frac{\partial x^\mu}{\partial z^i} \frac{\partial x^\nu}{\partial z^j} {}^{(m)}\tilde{h}_{\mu\nu}  = \frac{\partial x^\mu}{\partial z^i} \frac{\partial x^\nu}{\partial z^j}\left( g_{\mu\nu}\mp n^{(1)}_\mu n^{(1)}_\nu  \mp n^{(2)}_\mu n^{(2)}_\nu + ...  \right), \label{intro:eq:projectedmetric}
 \end{equation}
 where the $\bs{n}^{(i)}$ are a set of orthogonal unit vectors perpendicular to $A$; $x^\mu$ span $\M$ and $z^i$ span $\mathcal{A}$.
 
+\subsubsection{Null Hypersurfaces}
 
+So far we have avoided mentioning projections onto null hypersurfaces. For a 2-dimensional
+hypersurface $\Sigma_{UV}$ (which is a sub-manifold of $\M$) to be null it must have two distinct null vectors
+$\bs{U}$ and $\bs{V}$ at all points $p \in \Sigma_{UV}$. By construction, $\bs{U}^2 = \bs{V}^2=0$,
+but we are free to specify $\bs{U}\cdot \bs{V}$; it will be useful to define
+$\bs{U}\cdot \bs{V} = 1$ for this purpose. Now the pullback of the metric on $\Sigma_{UV}$ to $\mathcal{M}$ is
+given by,
+\begin{equation}
+{}^{(m)}h_{\mu\nu} =  U_\mu V_\nu + V_\mu U_\nu,
+\end{equation}
+which, as expected, satisfies ${}^{(m)}\bs{h}(\bs{U},\bs{U})=0$, ${}^{(m)}\bs{h}(\bs{V},\bs{V})=0$
+and ${}^{(m)}\bs{h}(\bs{U},\bs{V})=1$. Suppose we have another vector $\bs{Z}$
+(not necessarily null)
+which is orthogonal to $\Sigma_{UV}$ we must have $\bs{U}\cdot \bs{Z} = \bs{V}\cdot \bs{Z} =0$
+and therefore ${}^{(m)}\bs{h}(\bs{Z},\star)=0$; as expected $\bs{Z}$ is annihilated
+by the pullback of the metric as it has no
+projected length on $\Sigma_{UV}$.
 
 \subsection{Lie Derivatives}\label{intro:sec:lie_deriv}
 
@@ -265,9 +329,11 @@ The Lie derivative of a tensor at a point $p$ is the rate of change of a tensor 
 \begin{align}
 \L_{a \xi + b \zeta}\bs{T}  &= a \L_\xi\bs{T}  + b \L_\zeta\bs{T} ,\\
 \L_\xi (a \bs{T} + b \bs{W}) & = a \L_\xi \bs{T} + b \L_\xi \bs{W} , \\
-\L_\xi (f \bs{T} ) &= \bs{T} \L_\xi f + f \L_\xi \bs{T} \label{intro:eq:lie_liebnitz},
+\L_\xi (\bs{S} \otimes \bs{T} ) &= \bs{T} \otimes \L_\xi \bs{S} + \bs{S} \otimes \L_\xi \bs{T} \label{intro:eq:lie_liebnitz},
 \end{align}
-for constant $\{a,b\}$, function $f$ and generic tensor fields $\bs{T}$ and $\bs{W}$ of same rank. Note that while the partial derivative is linear in first argument like $\partial_{f \xi} = f \partial_\xi$ for a function $f$, the Lie derivative is only linear in first argument if $f$ is a constant.
+
+for constant $\{a,b\}$, tensor field $\bs{S}$ and tensor fields $\bs{T}$ and $\bs{W}$
+of same rank. This final property is known as Leibniz rule. Note that while the partial derivative is linear in first argument like $\partial_{f \xi} = f \partial_\xi$ for a function $f$, the Lie derivative is only linear in first argument if $f$ is a constant.
 
 The simplest example is the Lie derivative of a scalar field $\phi$, denoted $\L_\xi \phi$ with respect to vector field $\bs \xi$,
 \begin{align} \label{intro:eq:Lxiphi}
@@ -275,8 +341,8 @@ The simplest example is the Lie derivative of a scalar field $\phi$, denoted $\L
 &= \lim_{\epsilon \rightarrow 0}\left[\frac{\phi(x^\mu + \epsilon \xi^\mu) - \phi(x^\mu)}{\epsilon} \right] , \\
 &= \xi^\mu \partial_\mu \phi,
 \end{align}
-which reduces to the partial derivative of $\phi$ with along $\bs{\xi}$. Next let's calculate the Lie derivative of a vector field $\bs{X}$ with respect to vector field $\bs\xi$. Starting with the same definition as Eq.~(\ref{intro:eq:Lxiphi}), and using $y^\mu = x^\mu + \epsilon \xi^\mu$, the Lie derivative of $\bs X$ is, 
-\begin{align} 
+which reduces to the partial derivative of $\phi$ with along $\bs{\xi}$. Next let's calculate the Lie derivative of a vector field $\bs{X}$ with respect to vector field $\bs\xi$. Starting with the same definition as Eq.~(\ref{intro:eq:Lxiphi}), and using $y^\mu = x^\mu + \epsilon \xi^\mu$, the Lie derivative of $\bs X$ is,
+\begin{align}
 (\L_\xi {X})^\mu &= \lim_{\epsilon \rightarrow 0}\left[\frac{(\Phi^*X\vert_q)^\mu - {X\vert_p}^\mu}{\epsilon} \right] , \\
 &= \lim_{\epsilon \rightarrow 0}\left[\frac{ \frac{\partial x^\mu}{\partial y^\nu}X^\nu(x^\rho + \epsilon \xi^\rho) - X^\mu(x^\rho)}{\epsilon} \right] , \\
 &= \lim_{\epsilon \rightarrow 0}\left[\frac{ (\delta_\nu^\mu - \epsilon \partial_\nu \xi^\mu)X^\nu(x^\rho + \epsilon \xi^\rho) - X^\mu(x^\rho)}{\epsilon} \right] , \\
@@ -294,7 +360,7 @@ The Lie derivative for co-vectors and tensors can be derived in the same way, bu
 \end{align}
 Derivatives of a generic tensor $\bs{T}$ follows simply, for example,
 \begin{equation}(\L_\xi T )^{\alpha\beta ...}_{\,\,\,\,\,\,\mu\nu...} = \xi^\sigma \partial_\sigma T^{\alpha\beta ...}_{\,\,\,\,\,\,\mu\nu...} + T^{\alpha\beta ...}_{\,\,\,\,\,\,\sigma\nu...} \partial_\mu \xi^\sigma + T^{\alpha\beta ...}_{\,\,\,\,\,\,\mu\sigma...} \partial_\nu \xi^\sigma + ... - T^{\sigma\beta ...}_{\,\,\,\,\,\,\mu\nu...}\partial_\sigma \xi^\alpha - T^{\alpha\sigma ...}_{\,\,\,\,\,\,\mu\nu...}\partial_\sigma \xi^\beta - ...\,.
-\end{equation} 
+\end{equation}
 Lie derivatives will prove useful in section \ref{nr:sec:einsteindecomp} and \ref{nr:sec:ccz4} to describe the time evolution of tensors in general relativity. The flow of time can be described as a diffeomorphism with respect to a suitable time vector $\tilde{\bs{t}}$ and the Lie derivative $\L_{\tilde{\bs{t}}}$ gives the rate of change of objects with respect to this flow of time.
 
 
@@ -328,14 +394,14 @@ Following from measuring the length of a curve now we can now measure volumes on
 \begin{equation}
 V = \int_{M} w(x^\mu) \dd x^1 \dd x^2 ... \dd x^n,
 \end{equation}
-over $M$. To find $w(x^\mu)$, start by defining an orthogonal coordinate transformation $x^\mu \rightarrow \tilde{x}^\mu$ such that $\tilde{\bs{g}}$ is diagonal and $\det(\bs{g})=\det(\tilde{\bs{g}})$; this is always possible as $\bs{g}$ is real and symmetric. In this coordinate system, the volume $\delta V$ in an infinitesimal cuboid, with $i$'th sidelength $\delta \tilde{x}^i$, is
+over $M$. To find $w(x^\mu)$, start by defining a smooth and invertible orthogonal coordinate transformation $x^\mu \rightarrow \tilde{x}^\mu$ such that $\tilde{\bs{g}}$ is diagonal and $\det(\bs{g})=\det(\tilde{\bs{g}})$; this is always possible as $\bs{g}$ is real and symmetric. In this coordinate system, the volume $\delta V$ in an infinitesimal cuboid, with $i$'th sidelength $\delta \tilde{x}^i$, is
 \begin{align}
-\delta V &=  \left( \sqrt{\tilde{g}_{11}}\delta \tilde{x}^1 \right)\left(\sqrt{\tilde{g}_{22}}\delta \tilde{x}^2 \right)... \left(\sqrt{\tilde{g}_{nn}}\delta \tilde{x}^n\right) , 
+\delta V &=  \left( \sqrt{\tilde{g}_{11}}\delta \tilde{x}^1 \right)\left(\sqrt{\tilde{g}_{22}}\delta \tilde{x}^2 \right)... \left(\sqrt{\tilde{g}_{nn}}\delta \tilde{x}^n\right) ,
 \end{align}
 where Eq.~(\ref{intro:eq:coord_interval_length}) was used to get the length between each $\tilde{x}^i$ and $\tilde{x}^i + \delta \tilde{x}^i$. Given that $\tilde{\bs{g}}$ is diagonal we know the $i$'th eigenvalue $\tilde{\lambda}_i = \tilde{g}_{ii}$ and therefore $\det(\tilde{\bs{g}})$ = $\prod_i \tilde{g}_{ii}$. Thus the volume $\delta V$ can be rewritten,
 \begin{align}
-\delta V &=  \sqrt{|\det(\tilde{\bs{g}})|}\delta \tilde{x}^1 \delta \tilde{x}^2  ... \delta \tilde{x}^n , 
-\end{align} 
+\delta V &=  \sqrt{|\det(\tilde{\bs{g}})|}\delta \tilde{x}^1 \delta \tilde{x}^2  ... \delta \tilde{x}^n ,
+\end{align}
 and the formula for the finite volume of $M$ is,
 \begin{equation} \label{intro:eq:volume_curved}
 V = \int_{M} \sqrt{|\det(\tilde{\bs{g}})|} \dd \tilde{x}^1 \dd \tilde{x}^2 ... \dd \tilde{x}^n,
@@ -349,33 +415,40 @@ which holds for any non-diagonal, real and symmetric metric $\bs{g}$. In general
 \begin{equation}
 V = \int_{M}\sqrt{-g} \,\dd {x}^1 \dd {x}^2 ... \dd {x}^n.
 \end{equation}
-Equation~(\ref{intro:eq:volume_curved2}) can also be used to find the volume (or area) of a lower dimensional sub-volume. First cover the new sub-volume $A$ with coordinates $z^\mu$, where $\mu\in\{1,2,...,m\}$ for $m<n$, and then calculate the metric $\tilde{\bs{h}}$ which can be done using Eq.~(\ref{intro:eq:projectedmetric}). The area $V_A$ of $A$ is then, 
+Equation~(\ref{intro:eq:volume_curved2}) can also be used to find the volume (or area) of a lower dimensional sub-volume. First cover the new sub-volume $A$ with coordinates $z^\mu$, where $\mu\in\{1,2,...,m\}$ for $m<n$, and then calculate the metric $\tilde{\bs{h}}$ which can be done using Eq.~(\ref{intro:eq:projectedmetric}). The area $V_A$ of $A$ is then,
 \begin{equation} \label{intro:eq:area_int}
 V_A = \int_{A}\sqrt{|\tilde{h}|} \,\dd {z}^1 \dd {z}^2 ... \dd {z}^m,
 \end{equation}
-which can be seen by mapping to an a-dimensional manifold $\mathcal{A}$ that is diffeomorphic to $A$ and applying Eq.~(\ref{intro:eq:volume_curved2}). These volume formulae are very useful in general relativity and have many uses in this thesis, especially throughout section \ref{q:def:q}.
+which can be seen by mapping to an a-dimensional manifold $\mathcal{A}$ that is diffeomorphic to $A$ and applying Eq.~(\ref{intro:eq:volume_curved2}). These volume formulae are very useful in general relativity and have many uses in this thesis, especially throughout chapter \ref{q:sec:q}.
 
 
  \subsection{Geodesics} \label{intro:sec:geodesics}
 
-
- For a manifold equipped with metric $(\M,g)$ the curve with shortest distance between two points $p,q\in\M$ is called a geodesic. To find the geodesic joining $p$ and $q$ we need to use calculus of variations on the total length $\Delta s$ from Eq.~(\ref{intro:eq:Delta_s}) of a general curve between two points. Given that the integrand $\L$ of Eq.~(\ref{intro:eq:Delta_s}) is a function $\L(x^\mu,\dot{x}^\mu)$, where the dot denotes differentiation by $\lambda$, we can use the Euler-Lagrange equation,
+ For a manifold equipped with metric $(\M,g)$ the curve with extremised distance
+ between two points $p,q\in\M$ is called a geodesic. As mentioned earlier, the metric
+ defines distance on a manifold and to find the geodesic joining
+ $p$ and $q$ we need to use calculus of variations on the total length $\Delta s$
+ from Eq.~(\ref{intro:eq:Delta_s}) of a general curve between two points. Given
+ that the integrand $\L$ of Eq.~(\ref{intro:eq:Delta_s}) is a function
+ $\L(x^\mu,\dot{x}^\mu)$, where the dot denotes differentiation by $\lambda$,
+ we can use the Euler-Lagrange equation,
 \begin{align}
 \frac{\partial{\L}}{\partial x^\mu} - \frac{\dd}{\dd \lambda}\frac{\partial \L}{\partial \dot{x}^\mu} = 0,
 \end{align}
-to give a differential equation with solution being a geodesic. Applying the EL equation to the integrand of Eq.~(\ref{intro:eq:Delta_s}) is algebraically messy, it is easier\footnote{Given that $\L$ is homogeneous to degree k, $\dot{x}^i \partial \L / \partial \dot{x}^i = k\L$ for constant k, one can show that $\dd\L/\dd\lambda=0$ if the Euler-Lagrange equation is assumed.} to square the integrand and start from $\L^2$ giving the same solution if $\dd \L / \dd \lambda=0$, 
+to give a differential equation with solution being a geodesic. Applying the EL equation to the integrand of Eq.~(\ref{intro:eq:Delta_s}) is algebraically messy, it is easier\footnote{Given that $\L$ is homogeneous to degree k, $\dot{x}^i \partial \L / \partial \dot{x}^i = k\L$ for constant k, one can show that $\dd\L/\dd\lambda=0$ if the Euler-Lagrange equation is assumed.} to square the integrand and start from $\L^2$ giving the same solution if $\dd \L / \dd \lambda=0$,
 \begin{align}
 \frac{\partial{\L^2}}{\partial x^\alpha} &- \frac{\dd}{\dd \lambda}\frac{\partial \L^2}{\partial \dot{x}^\alpha} = 0, \\
 \frac{\partial}{\partial x^\alpha} \left(g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu\right) &- \frac{\dd}{\dd \lambda}\frac{\partial }{\partial \dot{x}^\alpha}\left(g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu\right) = 0, \\
 (\partial_\alpha g_{\mu\nu})\dot{x}^\mu\dot{x}^\nu &- 2\frac{\dd}{\dd \lambda}\left(g_{\alpha\nu}\dot{x}^\nu\right) = 0, \\
-(\partial_\alpha g_{\mu\nu})\dot{x}^\mu\dot{x}^\nu &- 2\left(\dot{x}^\rho \partial_\rho \left(g_{\alpha\nu}\right)\dot{x}^\nu\right) - 2\ddot{x}^\nu g_{\alpha\nu} =0. 
+(\partial_\alpha g_{\mu\nu})\dot{x}^\mu\dot{x}^\nu &- 2\left(\dot{x}^\rho \partial_\rho \left(g_{\alpha\nu}\right)\dot{x}^\nu\right) - 2\ddot{x}^\nu g_{\alpha\nu} =0.
 \end{align}
 Rearranging and multiplying by $g^{\alpha\beta}$ gives,
 \begin{align}
 \ddot{x}^\beta &+ \frac{1}{2}g^{\alpha\beta}\left(\partial_{\mu}g_{\alpha\nu} +\partial_{\nu}g_{\alpha\mu} -\partial_{\alpha}g_{\mu\nu} \right)\dot{x}^\mu\dot{x}^\nu=0,\\
  \ddot{x}^\beta &+ \Gamma^\beta_{\,\,\,\mu\nu}\dot{x}^\mu\dot{x}^\nu=0, \label{intro:eq:geodesic}
 \end{align}
-where $\Gamma^\beta_{\,\,\,\mu\nu}$ is the components of the connection-symbol from Eq.~(\ref{intro:eq:christoffel_def}). A trivial solution to Eq.~(\ref{intro:eq:geodesic}) is in flat space using Cartesian coordinates where $\Gamma^\beta_{\,\,\,\mu\nu}=0$ and therefore $\ddot{x}^\beta=0$ so $\dot{x}^\beta$ is a constant; this tells us the shortest distance between two points in flat space is a straight line. In other words, geodesics are straight lines in flat space.
+where $\Gamma^\beta_{\,\,\,\mu\nu}$ are the components of the connection symbol which will be re-visited in Section~(\ref{intro:sec:levicivita}). A trivial solution to Eq.~(\ref{intro:eq:geodesic}) is in flat space using Cartesian coordinates where $\Gamma^\beta_{\,\,\,\mu\nu}=0$ and therefore $\ddot{x}^\beta=0$ so $\dot{x}^\beta$ is a constant; this tells us the shortest distance between two points in flat space is a straight line. In other words, geodesics are straight lines in flat space.
+
 
 
 \subsubsection*{Non-Affine Geodesics}
@@ -396,11 +469,17 @@ The non-affine geodesic equation can be can be found by re-deriving the Geodesic
 \frac{\dd}{\dd \lambda}\frac{\partial \L}{\partial \dot{x}^\mu}&=\frac{\dd}{\dd \lambda} \left( \frac{1}{\L}g_{\mu\alpha}\dot{x}^\mu\right),\\
 &= \frac{1}{\L}g_{\mu\alpha}\ddot{x}^\mu +  \frac{1}{\L}\dot{x}^\nu\dot{x}^\mu\partial_\nu g_{\mu\alpha} + g_{\mu\alpha}\dot{x}^\mu \frac{\dd}{\dd \lambda} \frac{1}{\L}.
 \end{align}
-Rearranging and using the Euler-Lagrange equation as in the previous section gives 
+Rearranging and using the Euler-Lagrange equation as in the previous section gives
 \begin{equation}
-\ddot{x}^\beta &+ \Gamma^\beta_{\,\,\,\mu\nu}\dot{x}^\mu\dot{x}^\nu=-\L \frac{\dd \L}{\dd \lambda} \dot{x}^\alpha,
+\ddot{x}^\beta + \Gamma^\beta_{\,\,\,\mu\nu}\dot{x}^\mu\dot{x}^\nu=-\L \frac{\dd \L}{\dd \lambda} \dot{x}^\alpha,
 \end{equation}
 which is the non-affine geodesic equation.
+
+
+
+
+
+
 
 
 
@@ -409,7 +488,16 @@ which is the non-affine geodesic equation.
 
 
 \subsection{General Covariance and Coordinate transformations}\label{intro:sec:cov}
-Many laws of physics can be expressed as tensor field equations where a tensor field is the assignment of a tensor to each point in space. This assignment must be smooth as it is to describe physical quantities. The power of tensor algebra and tensor calculus is that if a tensor field equation can be written in one coordinate system then  it must hold (in index form) in all regular coordinate systems. This is a consequence of the tensor transformation law. Looking back, we can write a generic vector $\bs{X}$ as $X^\mu \bs{e}_\mu = X^\mu \partial_\mu$ and if we choose a coordinate transformation $x^\mu \rightarrow \tilde{x}^\mu$ then we see that in the transformed coordinate system the vector field $\bs{X}$, written $\tilde{\bs{X}}$, becomes
+Many laws of physics can be expressed as tensor field equations where a tensor
+field is the assignment of a tensor to each point in space;
+this assignment should be smooth if we want to calculate the derivatives.
+The power of tensor algebra and tensor calculus is that if a tensor field equation
+can be written in one coordinate system then  it must hold (in index form) in all
+regular coordinate systems. This is a consequence of the tensor transformation law.
+Looking back, we can write a generic vector
+$\bs{X}$ as $X^\mu \bs{e}_\mu = X^\mu \partial_\mu$ and if we choose a coordinate
+transformation $x^\mu \rightarrow \tilde{x}^\mu$ then we see that in the transformed
+coordinate system the vector field $\bs{X}$, written $\tilde{\bs{X}}$, becomes
 \begin{align}
 \tilde{\bs X} &= \tilde{X}^\mu\frac{\partial}{\partial \tilde{x}^\mu}, \\
               &= \tilde{X}^\mu\frac{\partial x^\nu}{\partial \tilde{x}^\mu}\frac{\partial}{\partial {x}^\nu}, \\
@@ -447,7 +535,7 @@ A tensor density is the generalisation of a tensor field obeying the tensor tran
 &= \sqrt{\det\left(-g_{\alpha \beta} \frac{\partial x^\alpha}{\partial \tilde{x}^\mu}  \frac{\partial x^\beta}{\partial \tilde{x}^\nu} \right)} ,\\
 &= \sqrt{-g} \det\left(\frac{\partial x^\alpha}{\partial \tilde{x}^\mu}\right)\label{intro:eq:rootgtrans},
 \end{align}
-and as can be seen, the volume element picks up a factor of the determinant of the Jacobian. A tensor density $\bs{\mathcal{T}}$ of weight $w$ can be written in the form, 
+and as can be seen, the volume element picks up a factor of the determinant of the Jacobian. A tensor density $\bs{\mathcal{T}}$ of weight $w$ can be written in the form,
 \begin{equation}\bs{\mathcal{T}} = \sqrt{-g}^w\bs{T},\end{equation}
  where $\bs{T}$ is a tensor obeying the tensor transformation law. It should be noted that a tensor density of weight zero is a regular tensor and the weight of a tensor has nothing to do with the rank of the tensor.
 
@@ -456,9 +544,9 @@ and as can be seen, the volume element picks up a factor of the determinant of t
 \subsubsection{Lie Derivatives of Tensor Densities}
 To calculate the Lie derivative of a tensor density, first the Lie derivative of $\sqrt{-g}$ should be calculated, and in order to calculate the Lie derivative of the volume element a preliminary result is needed. Following the definition of a Lie derivative in section \ref{intro:sec:lie_deriv} and setting $y^\mu = x^\mu + \epsilon \xi^\mu$, the determinant of the Jacobian matrix is,
 \begin{align}
- \det\left(\frac{\partial y^\mu}{\partial x^\rho}\right) 
-&= \det\left(\delta^\mu_\rho + \epsilon \frac{\partial \xi^\mu}{\partial x^\rho}\right) ,\\[7pt] 
-&= \det\begin{pmatrix} 
+ \det\left(\frac{\partial y^\mu}{\partial x^\rho}\right)
+&= \det\left(\delta^\mu_\rho + \epsilon \frac{\partial \xi^\mu}{\partial x^\rho}\right) ,\\[7pt]
+&= \det\begin{pmatrix}
 1+\epsilon\frac{\partial \xi^1}{\partial x^1}& \epsilon\frac{\partial \xi^1}{\partial x^2}& \epsilon\frac{\partial \xi^1}{\partial x^3}& \epsilon\frac{\partial \xi^1}{\partial x^4}\\[7pt]
 \epsilon\frac{\partial \xi^2}{\partial x^1}& 1+\epsilon\frac{\partial \xi^2}{\partial x^2}& \epsilon\frac{\partial \xi^2}{\partial x^3}& \epsilon\frac{\partial \xi^2}{\partial x^4}\\[7pt]
 \epsilon\frac{\partial \xi^3}{\partial x^1}& \epsilon\frac{\partial \xi^3}{\partial x^2}& 1+\epsilon\frac{\partial \xi^3}{\partial x^3}& \epsilon\frac{\partial \xi^3}{\partial x^4}\\[7pt]
@@ -480,7 +568,7 @@ Given that $\L_\xi \sqrt{-g}$ has been calculated, it is straightforward to calc
 \begin{equation} \label{intro:eq:Ltensordensity}
 \L_\xi \bs{\mathcal{T}} = \sqrt{-g}^w \left( \L_\xi \bs{T} + w \bs{T} \left(   \frac{1}{\sqrt{-g}} \xi^\mu \partial_\mu \sqrt{-g} + \partial_\mu \xi^\mu \right) \right).
 \end{equation}
-As would be expected, setting $w=0$ returns the regular Lie derivative of a tensor. This can also be written as, 
+As would be expected, setting $w=0$ returns the regular Lie derivative of a tensor. This can also be written as,
 \begin{equation} \label{intro:eq:Ltensordensity2}
 \L_\xi \bs{\mathcal{T}} =  \widetilde{\L}_\xi \bs{\T} + w \bs{\T}  \partial_\mu \xi^\mu ,
 \end{equation}
@@ -492,20 +580,38 @@ where $ \widetilde{\L}_\xi$ is the differential operator equivalent to the Lie d
 
 \subsection{The Covariant Derivative}\label{intro:sec:covariant_derivative}
 
-There are many types of derivative on a manifold that we care about in the context of General Relativity. The simplest is the partial derivative, 
+There are many types of derivative on a manifold that we care about in the context of General Relativity. The simplest is the partial derivative,
 \begin{equation}
 \partial_\mu = \frac{\partial}{\partial x^\mu},
-\end{equation} 
-which works much the same as always. Two other derivatives are the exterior derivative\footnote{The antisymmetric derivative of a differential $n$-form (totally antisymmetric co-tensor of rank $n$) that returns a differential ($n+1$)-form. } and the Lie derivative which is discussed in section \ref{intro:sec:lie_deriv}. 
+\end{equation}
+which works much the same as always. Two other derivatives are the exterior derivative\footnote{The antisymmetric derivative of a differential $n$-form (totally antisymmetric co-tensor of rank $n$) that returns a differential ($n+1$)-form. } and the Lie derivative which is discussed in section \ref{intro:sec:lie_deriv}.
 
-The purpose of the covariant derivative, denoted $\nabla_\mu$, is to generalise the partial derivative to curved spaces (or curvilinear coordinates). The covariant derivative exactly reduces to the partial derivative ($\partial_\mu$) in flat space with Cartesian coordinates. As suggested by the name, the covariant derivative of an object is covariant; it obeys the tensor transformation law of section \ref{intro:sec:cov}. The covariant derivative uses a vector field $\bs{X}$ to map a $(p,q)$ tensor field $\bs{T}$ to 
- a $(p,q)$ tensor field ${\bs{\nabla}_{\bs{X}}} \bs{T}$. Requiring the covariant derivative of a tensor to return another tensor may sound pedantic but it allows the writing of physical differential equations that are covariant, i.e.~that hold in all coordinate systems. Encoding the laws of physics with tensor differential equations is explored in more detail in section \ref{intro:sec:curvedspacephysics}. 
+The purpose of the covariant derivative, denoted $\nabla_\mu$, is to generalise
+the partial derivative to curved spaces (or curvilinear coordinates).
+The covariant derivative exactly reduces to the partial derivative ($\partial_\mu$)
+in flat space with Cartesian coordinates. As suggested by the name, the covariant
+derivative of an object is covariant\footnote
+{Strictly speaking, the partial derivative $\partial_\mu$ is covariant
+under a coordinate transformation but does not map to the same geometric object as
+$\partial/\partial \tilde{x}^\mu$ in the new coordinate system. This can also be
+demontrated by imagining the basis vector $\bs{e}_\mu$ instead, while this is a perfectly good
+vector it does not map to $\tilde{\bs{e}}_\mu$ (the basis vector in using coordinates
+$\tilde{x}^\mu$) under a coordinate transformation.
+}; it obeys the tensor transformation law of
+section \ref{intro:sec:cov}.
+The covariant derivative uses a vector field $\bs{X}$
+to map a $(p,q)$ tensor field $\bs{T}$ to
+a $(p,q)$ tensor field ${\bs{\nabla}_{\bs{X}}} \bs{T}$. Requiring the covariant
+derivative of a tensor to return another tensor may sound pedantic but it allows
+the writing of physical differential equations that are covariant, i.e.~that hold
+in all coordinate systems. Encoding the laws of physics with tensor differential
+equations is explored in more detail in section \ref{intro:sec:curvedspacephysics}.
 
 To be the analogue of the partial derivative, the covariant derivative must be linear in first argument, linear in second argument and obey the Leibniz rule,
 \begin{align}
 \label{intro:eq:cov-lin}\bs{\nabla}_{f\bs{X} + g\bs{Y}}\bs{T} &= f\bs{\nabla}_{\bs{X}}\bs{T} + g\bs{\nabla}_{\bs{Y}}\bs{T} , \\
 \label{intro:eq:cov-ass}\bs{\nabla}_{\bs{X}}( a\bs{T} + b\bs{W}) &= a\bs{\nabla}_{\bs{X}}\bs{T} + b\bs{\nabla}_{\bs{X}}\bs{W} , \\
-\label{intro:eq:cov-pro}\bs{\nabla}_{\bs{X}}( f\bs{T}) &= f\bs{\nabla}_{\bs{X}}\bs{T} + \bs{T} \bs{\nabla}_{\bs{X}}f , 
+\label{intro:eq:cov-pro}\bs{\nabla}_{\bs{X}}( f\bs{T}) &= f\bs{\nabla}_{\bs{X}}\bs{T} + \bs{T} \bs{\nabla}_{\bs{X}}f ,
 \end{align}
 where $a$ and $b$ are constants, $f$ and $g$ are functions on $\M$ and $\bs{T}$ and $\bs{W}$ are tensors of equal rank. These are exactly the same as the conditions imposed on Lie derivatives in section \ref{intro:sec:lie_deriv}. From now on the covariant derivative $\bs{\nabla}_{\bs{e}_\mu}$ with respect to a basis vector $\bs{e}_\mu$ will be written as $\nabla_\mu$.
 
@@ -515,38 +621,40 @@ Let us start by finding the covariant derivative of a of a scalar field $\varphi
                                                         &=\frac{\partial x^\nu}{\partial\tilde{x}^\mu}\frac{\partial}{\partial {x}^\nu} {\varphi},
 \end{align}
 and therefore the $\nabla_\mu \vp = \partial_\mu \varphi$. Note that $\varphi=\tilde{\varphi}$ for any point $p$ as a scalar remains unchanged in a coordinate transformation. Complications arise when taking the partial derivative of any other higher rank tensor; let's demonstrate this with a vector $\bs{X}$.
+
+
 \begin{align}
 \frac{\partial}{\partial \tilde{x}^\mu} \tilde{X}^\alpha &= \frac{\partial}{\partial \tilde{x}^\mu}\left( \frac{\partial \tilde{x}^\alpha}{\partial x^\beta}{X}^\beta\right),\\
                                                          &= \frac{\partial x^\nu}{\partial \tilde{x}^\mu}\frac{\partial}{\partial {x}^\nu}\left( \frac{\partial \tilde{x}^\alpha}{\partial x^\beta}{X}^\beta\right),\\
                                                          &= \underbrace{\frac{\partial \tilde{x}^\alpha}{\partial x^\beta}\frac{\partial x^\nu}{\partial \tilde{x}^\mu}}_{\mathrm{Tensor}\,\,\rm{transformation}\,\,\rm{law}}\frac{\partial}{\partial {x}^\nu} {X}^\beta + {X}^\beta\frac{\partial x^\nu}{\partial \tilde{x}^\mu}\frac{\partial}{\partial {x}^\nu}\left( \frac{\partial \tilde{x}^\alpha}{\partial x^\beta}\right),
 \end{align}
-and as can be seen, only the first term on the right hand side should exist if the components $\partial_\mu X^\alpha$ were to obey the tensor transformation law. 
+and as can be seen, only the first term on the right hand side should exist if the components $\partial_\mu X^\alpha$ were to obey the tensor transformation law.
 
 The problem with performing differentiation on tensors is that it requires the comparison of tensors at two different (infinitesimally close) tangent spaces. Lie derivatives circumvented this problem by comparing two tangent planes with a pullback defined by a diffeomorphism. Another way of overcoming this problem is to consider how the coordinate basis vectors change over the manifold, not just the components. Defining the covariant derivative of the basis vector as
 \begin{equation}
 \bs{\nabla}_{\bs{e}_\rho} \bs{e}_\nu = \nabla_\rho \bs{e}_\nu := \Gamma^\mu_{\,\,\,\nu\rho}\bs{e}_\mu,
 \end{equation}
-where $\Gamma^\mu_{\,\,\,\nu\rho}$ is called the connection due to it defining a connection between neighbouring tangent spaces. The connection can be used to get the covariant derivative of the vector field $\bs{X}=X^\rho \bs{e}_\rho$,
+where $\Gamma^\mu_{\,\,\,\nu\rho}$ is called the connection symbol\footnote{This symbol is also called the {\it Christoffel symbol} or the {\it connection coefficients}.} due to it defining a connection between neighbouring tangent spaces. The connection can be used to get the covariant derivative of the vector field $\bs{X}=X^\rho \bs{e}_\rho$,
 \begin{align}
 \nabla_\rho (X^\nu \bs{e}_\nu) &= (\partial_\rho X^\nu )\bs{e}_\nu + X^\nu (\nabla_\rho \bs{e}_\nu),\\
 &= (\partial_\rho X^\nu )\bs{e}_\nu + X^\nu \Gamma^\mu_{\,\,\,\nu\rho}\bs{e}_\mu,\\
 &= (\partial_\rho X^\mu + \Gamma^\mu_{\,\,\,\nu\rho} X^\nu )\bs{e}_\mu.
 \end{align}
-Note that on the first line above we have used $\nabla_\rho X^\nu=\partial_\rho X^\nu$ as the $X^\nu$ are being treated as a set of scalar function coefficients multiplying the basis vectors $\bs{e}_\mu$. Strictly we should write the covariant derivative of $\bs{X}$ as, 
+Note that on the first line above we have used $\nabla_\rho X^\nu=\partial_\rho X^\nu$ as the $X^\nu$ are being treated as a set of scalar function coefficients multiplying the basis vectors $\bs{e}_\mu$. Strictly we should write the covariant derivative of $\bs{X}$ as,
 \begin{align}\label{intro:eq:gradX_thingy}
-\bs{\nabla X} &= (\nabla X)^{\,\,\,\mu}_\sigma \bs{e}_\mu \otimes \bs{\theta}^\sigma, 
+\bs{\nabla X} &= (\nabla X)^{\,\,\,\mu}_\sigma \bs{e}_\mu \otimes \bs{\theta}^\sigma,
 \end{align}
-but for convenience the coefficients $(\nabla X)^{\,\,\,\mu}_\sigma$ are usually denoted as, 
+but for convenience the coefficients $(\nabla X)^{\,\,\,\mu}_\sigma$ are usually denoted as,
 \begin{align}
 {\nabla}_{\sigma} X^\mu &= \partial_\sigma X^\mu + \Gamma^\mu_{\,\,\,\nu\sigma} X^\nu.
 \end{align}
 This is a slight abuse of notation as $\nabla_\sigma X^\mu$ might be understood as the covariant derivative of the components $X^\mu$, but really it denotes the component $\bs{\theta}^\sigma\cdot(\bs{\nabla X})\cdot \bs{e}_\mu$ where $\bs{\nabla X}$ is given in Eq.~(\ref{intro:eq:gradX_thingy}).
 
-Given that the covariant derivative of a scalar reduces to the partial derivative we can see that, 
+Given that the covariant derivative of a scalar reduces to the partial derivative we can see that,
 \begin{equation}
 \nabla_\rho (\bs{e}_\mu : \bs{\theta}^\nu) = 0,\label{intro:eq:cov_connection_1}
 \end{equation}
-and using the Leibniz rule (\ref{intro:eq:cov-pro}), 
+and using the Leibniz rule (\ref{intro:eq:cov-pro}),
 \begin{align}
 \nabla_\rho (\bs{e}_\nu : \bs{\theta}^\mu) &= (\nabla_\rho \bs{e}_\nu):\bs{\theta}^\mu + \bs{e}_\nu:(\nabla_\rho \bs{\theta}^\mu),\\
  &= (\Gamma^\sigma_{\,\,\,\nu\rho}\bs{e}_\sigma):\bs{\theta}^\mu + \bs{e}_\nu:(\nabla_\rho \bs{\theta}^\mu),\\
@@ -554,7 +662,7 @@ and using the Leibniz rule (\ref{intro:eq:cov-pro}),
 \end{align}
 Combining Eqs.~(\ref{intro:eq:cov_connection_1}) and (\ref{intro:eq:cov_connection_2}) gives
 \begin{equation}
-  \bs{e}_\nu:(\nabla_\rho \bs{\theta}^\mu) &= -\Gamma^\mu_{\,\,\,\nu\rho},
+  \bs{e}_\nu:(\nabla_\rho \bs{\theta}^\mu) = -\Gamma^\mu_{\,\,\,\nu\rho},
 \end{equation}
 and therefore we must have
 \begin{equation}
@@ -571,7 +679,7 @@ Again, we used have $\nabla_\sigma \omega_\alpha = \partial_\sigma \omega_\alpha
 
 The covariant derivative of a general tensor can be found by following the simple rule of adding a connection symbol term for each index, for example,
 \begin{equation}
-\nabla_\mu T^{\alpha\beta ...}_{\,\,\,\lambda\nu ...} = \partial_\mu T^{\alpha\beta ...}_{\,\,\,\lambda\nu ...} 
+\nabla_\mu T^{\alpha\beta ...}_{\,\,\,\lambda\nu ...} = \partial_\mu T^{\alpha\beta ...}_{\,\,\,\lambda\nu ...}
 + \Gamma^{\alpha}_{\,\,\,\sigma \mu} T^{\sigma\beta ...}_{\,\,\,\lambda\nu ...} + \Gamma^{\beta}_{\,\,\,\sigma\mu} T^{\alpha\sigma ...}_{\,\,\,\lambda\nu ...} + ...
 - \Gamma^{\sigma}_{\,\,\,\lambda\mu} T^{\alpha\beta ...}_{\,\,\,\sigma\nu ...} - \Gamma^{\sigma}_{\,\,\,\nu\mu} T^{\alpha\beta ...}_{\,\,\,\lambda\sigma ...} - ...
 \,\,.\end{equation}
@@ -580,40 +688,53 @@ The covariant derivative of a general tensor can be found by following the simpl
 
 \subsection{The Connection}\label{intro:sec:levicivita}
 
-In flat space we are used to the idea that the partial derivative commutes, i.e. $\partial_\mu \partial_\nu = \partial_\nu \partial_\mu$, and this remains true by definition in curved space. However, the covariant derivative does not generally commute, $\nabla_\mu \nabla_\nu \neq \nabla_\nu \nabla_\mu$. Applying $\nabla_\mu \nabla_\nu - \nabla_\nu \nabla_\mu$ to a scalar field $\varphi$ gives,
+In flat space we are used to the idea that the partial derivative commutes, i.e.
+$\partial_\mu \partial_\nu = \partial_\nu \partial_\mu$, and this remains true
+by definition in curved space\footnote{
+One could also interpret $\partial_\mu \partial_\nu- \partial_\nu\partial_\mu$ as
+the commutation of basis vectors $\bs{e}_\mu(\bs{e}_\nu)-\bs{e}_\nu(\bs{e}_\mu) =
+[e_\mu]^\alpha \partial_\alpha ([e_\nu]^\beta)\partial_\beta -
+[e_\nu]^\alpha \partial_\alpha ([e_\mu]^\beta)\partial_\beta$. This is only vanishes
+in the case that all the components $[e_\mu]^\alpha$ of the basis vectors are
+constant. A special case where $[e_\mu]^\alpha = \delta^\alpha_\mu$ is called the coordinate basis.
+}.
+However, the covariant derivative does not generally
+commute, $\nabla_\mu \nabla_\nu \neq \nabla_\nu \nabla_\mu$. Applying
+$\nabla_\mu \nabla_\nu - \nabla_\nu \nabla_\mu$ to a scalar field $\varphi$ gives,
+
 \begin{align}
 (\nabla_\mu \nabla_\nu  - \nabla_\nu \nabla_\mu )\varphi &= \nabla_\mu \nabla_\nu \varphi - \nabla_\nu \nabla_\mu \varphi , \\
                                                &= \nabla_\mu \partial_\nu \varphi - \nabla_\nu \partial_\mu \varphi , \\
-                                               &= (\partial_\mu \partial_\nu  - \partial_\nu \partial_\mu )\varphi -  \Gamma^{\sigma}_{\,\,\,\nu\mu} \partial_\sigma \varphi + \Gamma^{\sigma}_{\,\,\,\mu\nu} \partial_\sigma \varphi,\\ 
-                                               &=(\Gamma^{\sigma}_{\,\,\,\mu\nu}  - \Gamma^{\sigma}_{\,\,\,\nu\mu}) \partial_\sigma \varphi, 
+                                               &= (\partial_\mu \partial_\nu  - \partial_\nu \partial_\mu )\varphi -  \Gamma^{\sigma}_{\,\,\,\nu\mu} \partial_\sigma \varphi + \Gamma^{\sigma}_{\,\,\,\mu\nu} \partial_\sigma \varphi,\\
+                                               &=(\Gamma^{\sigma}_{\,\,\,\mu\nu}  - \Gamma^{\sigma}_{\,\,\,\nu\mu}) \partial_\sigma \varphi,
 \end{align}
-where we have used the fact that $\nabla_\mu \varphi = \partial_\mu \varphi$ for a scalar field. This non-commutativity of derivatives of a scalar field is known as torsion. 
+where we have used the fact that $\nabla_\mu \varphi = \partial_\mu \varphi$ for a scalar field. This non-commutativity of derivatives of a scalar field is known as torsion.
 
 \subsubsection{Torsion}
 If a connection is torsion free then $(\nabla_\mu \nabla_\nu  - \nabla_\nu \nabla_\mu )\varphi=0$ which implies $\Gamma^{\sigma}_{\,\,\,\nu\mu}  = \Gamma^{\sigma}_{\,\,\,\mu\nu}$. This leads to two important tensor identities; first the antisymmetric derivative of a co-vector,
-\begin{align} 
+\begin{align}
 \nabla_\mu A_\nu - \nabla_\nu A_\mu &= \partial_\mu A_\nu - \partial_\nu A_\nu - \underbrace{(\Gamma^\sigma_{\,\,\,\nu\mu}- \Gamma^\sigma_{\,\,\,\mu\nu})}_{=0}A_\sigma, \\[-9pt]
-\nabla_\mu A_\nu - \nabla_\nu A_\mu &= \partial_\mu A_\nu - \partial_\nu A_\nu, 
+\nabla_\mu A_\nu - \nabla_\nu A_\mu &= \partial_\mu A_\nu - \partial_\nu A_\nu,
 \end{align}
 and the second identity,
-\begin{align} 
+\begin{align}
 \bs{\nabla}_{\bs{X}} \bs{Y} - \bs{\nabla}_{\bs{Y}}\bs{X} &= (X^\mu \nabla_\mu Y^\nu - Y^\mu \nabla_\mu X^\nu ) \bs{e}_\nu, \\
-&= (X^\mu \partial_\mu Y^\nu - Y^\mu \partial_\mu X^\nu  + \Gamma^\nu_{\,\,\,\sigma\mu} X^\mu Y^\sigma - \Gamma^\nu_{\,\,\,\sigma\mu} Y^\mu X^\sigma) \bs{e}_\nu, \\ 
-&= (X^\mu \partial_\mu Y^\nu - Y^\mu \partial_\mu X^\nu  + (\Gamma^\nu_{\,\,\,\sigma\mu}  - \Gamma^\nu_{\,\,\,\mu\sigma}) X^\mu Y^\sigma) \bs{e}_\nu, \\ 
-&= (X^\mu \partial_\mu Y^\nu - Y^\mu \partial_\mu X^\nu  ) \bs{e}_\nu, \\ \bs{\nabla}_{\bs{X}} \bs{Y} - \bs{\nabla}_{\bs{Y}}\bs{X}&= [\bs{X},\bs{Y}]. 
+&= (X^\mu \partial_\mu Y^\nu - Y^\mu \partial_\mu X^\nu  + \Gamma^\nu_{\,\,\,\sigma\mu} X^\mu Y^\sigma - \Gamma^\nu_{\,\,\,\sigma\mu} Y^\mu X^\sigma) \bs{e}_\nu, \\
+&= (X^\mu \partial_\mu Y^\nu - Y^\mu \partial_\mu X^\nu  + (\Gamma^\nu_{\,\,\,\sigma\mu}  - \Gamma^\nu_{\,\,\,\mu\sigma}) X^\mu Y^\sigma) \bs{e}_\nu, \\
+&= (X^\mu \partial_\mu Y^\nu - Y^\mu \partial_\mu X^\nu  ) \bs{e}_\nu, \\ \bs{\nabla}_{\bs{X}} \bs{Y} - \bs{\nabla}_{\bs{Y}}\bs{X}&= [\bs{X},\bs{Y}].
 \end{align}
-Here the {\it commutator bracket} $[\bs{X},\bs{Y}]$ of two vectors $\bs{X}$ and $\bs{Y}$ is defined by, 
+Here the {\it commutator bracket} $[\bs{X},\bs{Y}]$ of two vectors $\bs{X}$ and $\bs{Y}$ is defined by,
 \begin{align}
 [X^\mu \partial_\mu,Y^\nu \partial_\nu] &= X^\mu \partial_\mu (Y^\nu \partial_\nu) - Y^\nu \partial_\nu (X^\mu \partial_\mu) ,\\
 &= X^\mu \partial_\mu Y^\nu  - Y^\nu \partial_\nu (X^\mu ) \partial_\mu + X^\mu Y^\nu \partial_\mu  \partial_\nu - Y^\nu X^\mu\partial_\nu  \partial_\mu ,\\
 &= (X^\mu \partial_\mu Y^\nu  - Y^\mu \partial_\mu X^\nu ) \partial_\nu ,
 \end{align}
-where the basis vector $\bs{e}_\mu$ has been written as $\partial_\mu$ with the intention of acting on a function $f$ over the manifold $\M$.
+where the basis vector $\bs{e}_\mu$ has been written as $\partial_\mu$ with the intention of acting on a function $f$ over the manifold $\M$. Note that the components of the commutator bracket are equivalent to the Lie derivative $\L_X \bs{Y}$.
 
 \subsubsection{Metric Compatibility}
-Another property that can be imposed on the connection is metric compatibility; this is $\nabla_\mu g_{\rho\sigma}=0$, where $\bs{g}$ is the metric tensor. This immediately tells us $\nabla_\mu g^{\alpha\beta}=0$ since, 
+Another property that can be imposed on the connection is metric compatibility; this is $\nabla_\mu g_{\rho\sigma}=0$, where $\bs{g}$ is the metric tensor. This immediately tells us $\nabla_\mu g^{\alpha\beta}=0$ since,
 \begin{align}
-\nabla_\mu \delta^\alpha_\rho &= 0, \\ 
+\nabla_\mu \delta^\alpha_\rho &= 0, \\
 &=  \nabla_\mu(g^{\alpha \nu}g_{\nu \rho}) ,\\
 &= g_{\nu \rho}\nabla_\mu g^{\alpha \nu} + g^{\alpha \nu}\underbrace{\nabla_\mu g_{\nu \rho}}_{=0},
 \end{align}
@@ -626,7 +747,7 @@ and the derivative of the length of a vector $\bs{X}$ is given by,
 
 
 \subsubsection{The Levi-Civita Connection}
-As it turns out, a connection that obeys Eqs.~(\ref{intro:eq:cov-lin},\ref{intro:eq:cov-ass} $\&$ \ref{intro:eq:cov-pro}), is both torsion-free and metric-compatible, is uniquely determined. This connection is called the Levi-Civita connection. The Levi-Civita connection will always be assumed from now on and is given by, 
+As it turns out, a connection that obeys Eqs.~(\ref{intro:eq:cov-lin}, \ref{intro:eq:cov-ass} $\&$ \ref{intro:eq:cov-pro}), is both torsion-free and metric-compatible, is uniquely determined. This connection is called the Levi-Civita connection. The Levi-Civita connection will always be assumed from now on and is given by,
 \begin{equation} \label{intro:eq:christoffel_def}
 \Gamma^\rho_{\,\,\mu\nu} = \frac{1}{2}g^{\rho\sigma} ( \partial_{\mu} g_{\sigma\nu} + \partial_{\nu} g_{\mu\sigma} - \partial_{\sigma} g_{\nu\mu} ),
 \end{equation}
@@ -637,16 +758,16 @@ which is also called Christoffel symbol of the second kind. The connection coeff
 is called the Christoffel symbol of the first kind. It is very important to note that even though the connection symbols may look like a tensor they are not a tensor. This can demonstrated by applying the tensor transformation law to the Christoffel symbol of the first kind,
 \begin{align}
 2\tilde{\Gamma}_{\sigma\mu\nu} &= \tilde{\partial}_\mu \tilde{g}_{\sigma\nu} + \tilde{\partial}_{\nu} \tilde{g}_{\mu\sigma} - \tilde{\partial}_{\sigma} \tilde{g}_{\nu\mu} ,\\
-&= \frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu}\partial_\alpha \left( \frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}  \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu}  {g}_{\beta\gamma}\right) 
-+ \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu}\partial_\gamma \left(\frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}  \frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu} {g}_{\alpha\beta}\right)  
+&= \frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu}\partial_\alpha \left( \frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}  \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu}  {g}_{\beta\gamma}\right)
++ \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu}\partial_\gamma \left(\frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}  \frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu} {g}_{\alpha\beta}\right)
 - \frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}\partial_\beta \left(\frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu}  \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu} {g}_{\gamma\alpha}\right)  ,\\
-\begin{split}&=\frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu}\frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}  \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu} \left( \partial_\alpha {g}_{\beta\gamma} + \partial_\gamma  {g}_{\alpha\beta} - \partial_\beta {g}_{\gamma\alpha}\right) 
-\\ & \quad \quad \quad \quad  + \frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu} {g}_{\beta\gamma}\partial_\alpha \left( \frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}  \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu}  \right) 
-+ \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu}{g}_{\alpha\beta}\partial_\gamma \left(\frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}  \frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu} \right)  
+\begin{split}&=\frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu}\frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}  \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu} \left( \partial_\alpha {g}_{\beta\gamma} + \partial_\gamma  {g}_{\alpha\beta} - \partial_\beta {g}_{\gamma\alpha}\right)
+\\ & \quad \quad \quad \quad  + \frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu} {g}_{\beta\gamma}\partial_\alpha \left( \frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}  \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu}  \right)
++ \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu}{g}_{\alpha\beta}\partial_\gamma \left(\frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}  \frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu} \right)
 - \frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}{g}_{\gamma\alpha}\partial_\beta \left(\frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu}  \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu} \right)  ,\end{split}\\
 \begin{split}&=2\frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu}\frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}  \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu} \Gamma_{\beta \alpha \gamma}
-\\ & \quad \quad \quad \quad  + \frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu} {g}_{\beta\gamma}\partial_\alpha \left( \frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}  \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu}  \right) 
-+ \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu}{g}_{\alpha\beta}\partial_\gamma \left(\frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}  \frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu} \right)  
+\\ & \quad \quad \quad \quad  + \frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu} {g}_{\beta\gamma}\partial_\alpha \left( \frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}  \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu}  \right)
++ \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu}{g}_{\alpha\beta}\partial_\gamma \left(\frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}  \frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu} \right)
 - \frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}{g}_{\gamma\alpha}\partial_\beta \left(\frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu}  \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu} \right)  ,\end{split}\\
 &=2\frac{\partial {x}^\alpha}{\partial \tilde{x}^\mu}\frac{\partial {x}^\beta}{\partial \tilde{x}^\sigma}  \frac{\partial {x}^\gamma}{\partial \tilde{x}^\nu} \Gamma_{\beta \alpha \gamma} + \Xi_{\sigma\mu\nu}  .\\
 \end{align}
@@ -660,25 +781,25 @@ The covariant derivative $\nabla$, described in section \ref{intro:sec:covariant
 A special example of a Lie derivative is of the metric tensor, $\bs{g}$, giving
 \begin{align}
 (\L_\xi g)_{\mu\nu} &= \xi^\rho \partial_\rho g_{\mu\nu} + g_{\rho\nu}\partial_\mu \xi^\rho + g_{\mu\rho}\partial_\nu \xi^\rho, \\
-&= \xi^\rho {\nabla_\rho g_{\mu\nu}} + g_{\rho\nu}\nabla_\mu \xi^\rho  + g_{\mu\rho}\nabla_\nu \xi^\rho, 
+&= \xi^\rho {\nabla_\rho g_{\mu\nu}} + g_{\rho\nu}\nabla_\mu \xi^\rho  + g_{\mu\rho}\nabla_\nu \xi^\rho,
 \end{align}
 where $\nabla_\rho g_{\mu\nu}=0$ from metric compatibility, described in section \ref{intro:sec:levicivita}. In the case the Lie derivative vanishes we get Killing's equation
 \begin{equation}
 \nabla_{\mu}\xi_\nu + \nabla_\nu \xi_\mu =0,
-\end{equation} 
-and a vector field $\bs\xi$ satisfying Killing's equation is called a Killing vector. Killings equation will be very important in section \ref{q:sec:q}.
+\end{equation}
+and a vector field $\bs\xi$ satisfying Killing's equation is called a Killing vector. Killings equation will be very important in chapter \ref{q:sec:q}.
 
 \subsubsection{Normal Coordinates} \label{intro:sec:normal_coords}
 
-Consider the set of all affinely parameterised geodesics, parameterised with $\lambda$, passing through the point $p$ on a manifold $\M$. At $p$, each geodesic has a tangent vector $X^\mu\big|_p$. For all geodesics, define $p$ to be the origin with $\lambda=0$ and $x^\mu=0$. Following a geodesic associated with $X^\mu\big|_p$ to a parameter value of $\lambda$ will map to a new point $q$ close to $p$ for small enough $\lambda$. Normal coordinates $x^\mu(\lambda)$ at $q(\lambda)$ are defined such that $x^\mu(\lambda) = \lambda X^\mu\big|_p$. Given that $X^\mu\big|_p$ is constant, the geodesic equation, from Eq.~(\ref{intro:eq:geodesic}), becomes 
+Consider a set of affinely parameterised geodesics, parameterised with $\lambda$, passing through the point $p$ on a manifold $\M$  that span a small finite neighbourhood about $p$. At $p$, each geodesic has a tangent vector $X^\mu\big|_p$. For all geodesics, define $p$ to be the origin with $\lambda=0$ and $x^\mu=0$. Following a geodesic associated with $X^\mu\big|_p$ to a parameter value of $\lambda$ will map to a new point $q$ close to $p$ for small enough $\lambda$. Normal coordinates $x^\mu(\lambda)$ at $q(\lambda)$ are defined such that $x^\mu(\lambda) = \lambda X^\mu\big|_p$. Given that $X^\mu\big|_p$ is constant, the geodesic equation, from Eq.~(\ref{intro:eq:geodesic}), becomes
 \begin{equation}
 \frac{\dd ^2 x^\mu(\lambda)}{\dd \lambda^2} +  \Gamma^\alpha_{\,\,\,\mu\nu} \frac{\dd x^\mu(\lambda)}{\dd \lambda}  \frac{\dd x^\nu(\lambda)}{\dd \lambda} = \Gamma^\alpha_{\,\,\,\mu\nu}X^\mu\big|_p  X^\nu\big|_p =0.
 \end{equation}
-Using the Levi-Civita connection, the connection symbol is symmetric in the lower two indices and this implies $\Gamma^\alpha_{\,\,\,\mu\nu}=0$ as the geodesic equation must hold for generic $X^\mu\big|_p$. From the definition of the covariant derivative, 
+Using the Levi-Civita connection, the connection symbol is symmetric in the lower two indices and this implies $\Gamma^\alpha_{\,\,\,\mu\nu}=0$ as the geodesic equation must hold for generic $X^\mu\big|_p$. From the definition of the covariant derivative,
 \begin{equation}
 \partial_\alpha g_{\mu\nu} = \nabla_\alpha g_{\mu\nu} + \Gamma^{\beta}_{\,\,\,\alpha\nu}g_{\mu\beta} + \Gamma^{\beta}_{\,\,\,\alpha\mu}g_{\beta \nu},
 \end{equation}
-which must vanish in normal coordinates as $\Gamma^\alpha_{\,\,\,\mu\nu}=0$ and the Levi-Civita connection demands $\nabla_\alpha g_{\mu\nu}=0$. Therefore, it is possible to construct a coordinate system such that at one point $p$ both $\partial_\alpha g_{\mu\nu}=0$ and $\Gamma^\alpha_{\,\,\,\mu\nu}=0$; importantly $\partial_\alpha \partial_\beta g_{\mu\nu}\neq 0$. As well as the metric's first derivative vanishing at $p$, it is also possible to demand that $g_{\mu\nu}\big|_p = \eta_{\mu\nu}$, the Minkowski metric defined in section \ref{intro:sec:minkowski_space}. This can be done with a set of ${}^{(j)}X^\mu \big|_p$, one for each normal coordinate $x^j$, that satisfy 
+which must vanish in normal coordinates as $\Gamma^\alpha_{\,\,\,\mu\nu}=0$ and the Levi-Civita connection demands $\nabla_\alpha g_{\mu\nu}=0$. Therefore, it is possible to construct a coordinate system such that at one point $p$ both $\partial_\alpha g_{\mu\nu}=0$ and $\Gamma^\alpha_{\,\,\,\mu\nu}=0$; importantly $\partial_\alpha \partial_\beta g_{\mu\nu}\neq 0$. As well as the metric's first derivative vanishing at $p$, it is also possible to demand that $g_{\mu\nu}\big|_p = \eta_{\mu\nu}$, the Minkowski metric defined in section \ref{intro:sec:minkowski_space}. This can be done with a set of ${}^{(j)}X^\mu \big|_p$, one for each normal coordinate $x^j$, that satisfy
 \begin{equation} \bs{g}({}^{(j)}\bs{X}\big|_p , {}^{(k)}\bs{X}\big|_p) = \eta_{jk}. \end{equation}
 
 
@@ -693,7 +814,7 @@ We have already seen that with the Levi-Civita connection, the antisymmetrised s
 \begin{align}
 (\nabla_\mu \nabla_\nu  - \nabla_\nu \nabla_\mu )X^\sigma &=(\partial_\mu \nabla_\nu  - \partial_\nu \nabla_\mu )X^\sigma + (\Gamma^{\sigma}_{\,\,\,\mu\rho}\nabla_\nu -\Gamma^{\sigma}_{\,\,\,\nu\rho}\nabla_\mu  )X^\rho - \underbrace{(\Gamma^{\rho}_{\,\,\,\nu\mu} - \Gamma^{\rho}_{\,\,\,\mu\nu})}_{=0}\nabla_\rho X^\sigma , \\
                          &=\underbrace{(\partial_\mu \partial_\nu  - \partial_\nu \partial_\mu )}_{=0}X^\sigma + (\partial_\mu \Gamma^\sigma_{\,\,\,\nu\rho}  - \partial_\nu \Gamma^\sigma_{\,\,\,\mu\rho} )X^\rho + (\Gamma^{\sigma}_{\,\,\,\mu\rho}\nabla_\nu -\Gamma^{\sigma}_{\,\,\,\nu\rho}\nabla_\mu  )X^\rho  , \\
-                         &=(\partial_\mu \Gamma^\sigma_{\,\,\,\nu\rho}  - \partial_\nu \Gamma^\sigma_{\,\,\,\mu\rho} )X^\rho + (\Gamma^{\sigma}_{\,\,\,\mu\rho}\partial_\nu -\Gamma^{\sigma}_{\,\,\,\nu\rho}\partial_\mu  )X^\rho 
+                         &=(\partial_\mu \Gamma^\sigma_{\,\,\,\nu\rho}  - \partial_\nu \Gamma^\sigma_{\,\,\,\mu\rho} )X^\rho + (\Gamma^{\sigma}_{\,\,\,\mu\rho}\partial_\nu -\Gamma^{\sigma}_{\,\,\,\nu\rho}\partial_\mu  )X^\rho
                          + (\Gamma^{\sigma}_{\,\,\,\mu\rho}\Gamma^\rho_{\,\,\,\nu\lambda} -\Gamma^{\sigma}_{\,\,\,\nu\rho}\Gamma^\rho_{\,\,\,\mu\lambda} )X^\lambda,\\
                          &=X^\rho(\partial_\mu \Gamma^\sigma_{\,\,\,\nu\rho}  - \partial_\nu \Gamma^\sigma_{\,\,\,\mu\rho} ) + (\Gamma^{\sigma}_{\,\,\,\mu\rho}\Gamma^\rho_{\,\,\,\nu\lambda} -\Gamma^{\sigma}_{\,\,\,\nu\rho}\Gamma^\rho_{\,\,\,\mu\lambda} )X^\lambda,
 \end{align}
@@ -703,11 +824,11 @@ where one should note that whenever a term appears after a derivative here it is
 \end{equation}
 and setting $\bs{X} = \bs{e}_{\rho}$, the coordinate basis vector associated with the $x^\rho$ coordinate, the Riemann tensor can be written as
 \begin{equation}
-R^\sigma_{\,\,\,\rho\mu\nu} = \partial_\mu \Gamma^\sigma_{\,\,\,\nu\rho}  - \partial_\nu \Gamma^\sigma_{\,\,\,\mu\rho}  + \Gamma^{\sigma}_{\,\,\,\mu\lambda}\Gamma^\lambda_{\,\,\,\nu\rho} -\Gamma^{\sigma}_{\,\,\,\nu\lambda}\Gamma^\lambda_{\,\,\,\mu\rho}. 
+R^\sigma_{\,\,\,\rho\mu\nu} = \partial_\mu \Gamma^\sigma_{\,\,\,\nu\rho}  - \partial_\nu \Gamma^\sigma_{\,\,\,\mu\rho}  + \Gamma^{\sigma}_{\,\,\,\mu\lambda}\Gamma^\lambda_{\,\,\,\nu\rho} -\Gamma^{\sigma}_{\,\,\,\nu\lambda}\Gamma^\lambda_{\,\,\,\mu\rho}.
 \end{equation}
 
 \subsubsection{Symmetries of the Riemann Tensor}
-Now we will discuss the symmetries of the Riemann tensor. Firstly, from the definition of the Riemann tensor, it follows that $R^\sigma_{\,\,\,\rho \mu\nu} = -R^\sigma_{\,\,\,\rho\nu\mu}$; this can be written succinctly as $R^\sigma_{\,\,\,\rho[\mu\nu]}=0$. 
+Now we will discuss the symmetries of the Riemann tensor. Firstly, from the definition of the Riemann tensor, it follows that $R^\sigma_{\,\,\,\rho \mu\nu} = -R^\sigma_{\,\,\,\rho\nu\mu}$; this can be written succinctly as $R^\sigma_{\,\,\,\rho[\mu\nu]}=0$.
 
 The second symmetry of the Riemann tensor is most conveniently derived using normal coordinates (described in section \ref{intro:sec:normal_coords}). At a point $p$ where $\Gamma^\mu_{\,\,\,\nu\rho}=0$ (but $\partial_\alpha \Gamma^\mu_{\,\,\,\nu\rho}\neq 0$) to get
 \begin{equation}
@@ -738,7 +859,7 @@ as all the Christoffel symbols generated by the covariant derivative cancel and 
 \end{align}
 Antisymmetrising over $\lambda,\rho$ and $\sigma$ makes each term vanish as the triple partial derivatives always contain two of the antisymmetrised indices and must vanish.
 
-To summarise, we have the following symmetries of the Riemann tensor; 
+To summarise, we have the following symmetries of the Riemann tensor;
 \begin{align}
 R_{\sigma\rho[\mu\nu]}&=0, \\
 R_{\sigma\rho\mu\nu}&=R_{\mu\nu\sigma\rho},\\
@@ -758,7 +879,7 @@ Contracting the the Riemann tensor with $g^{\mu\nu}$ or $g^{\sigma\rho}$ would g
 R=g^{\rho\nu}R_{\rho\nu}.
 \end{equation}
 
-We can also take the trace of the Bianchi identity in Eq.~(\ref{intro:eq:bianchi}) which gives us 
+We can also take the trace of the Bianchi identity in Eq.~(\ref{intro:eq:bianchi}) which gives us
 \begin{align}
 g^{\lambda\mu}g^{\rho\nu} (\nabla_\lambda R_{\sigma\rho\mu\nu} + \nabla_\rho R_{\lambda\sigma\mu\nu} + \nabla_\sigma R_{\rho\lambda\mu\nu}) &= 0 , \\
  \nabla^\mu R_{\sigma\mu} + \nabla^\nu R_{\sigma\nu} - \nabla_\sigma R &= 0 , \\
@@ -767,7 +888,7 @@ g^{\lambda\mu}g^{\rho\nu} (\nabla_\lambda R_{\sigma\rho\mu\nu} + \nabla_\rho R_{
 
 Defining the Einstein tensor $\bs{G}$,
 \begin{equation}
-G_{\mu\nu} := R_{\mu\nu} - \frac{1}{2}g_{\mu\nu}R, 
+G_{\mu\nu} := R_{\mu\nu} - \frac{1}{2}g_{\mu\nu}R,
 \end{equation}
 and using the contracted Bianchi identity with $\bs{\nabla}\bs{g}=0$ from metric compatibility,
 \begin{align}
@@ -792,7 +913,7 @@ Both $k$ and $R$ are scalar fields so they provide us with a coordinate invarian
 % \begin{align}
 % \nabla_\mu X^\mu &= \partial_\mu X^\mu + \Gamma^\mu_{\,\,\,\mu\nu}X^\nu , \\
 % &= \partial_\mu X^\mu + \frac{1}{2}g^{\mu\rho}\left(\partial_\mu g_{\rho\nu}+\partial_\nu g_{\mu\rho}-\partial_\rho g_{\mu\nu}\right)X^\nu , \\
-% &= \partial_\mu X^\mu + \frac{1}{2}g^{\mu\rho}\partial_\nu g_{\mu\rho}X^\nu. 
+% &= \partial_\mu X^\mu + \frac{1}{2}g^{\mu\rho}\partial_\nu g_{\mu\rho}X^\nu.
 % \end{align}
 % To simplify any further, we need to prove a matrix identity for a symmetric real matrix $\bs{M}$ with determinant $M$,
 % \begin{equation}\label{intro:eq:mdmmdm}
@@ -803,7 +924,7 @@ Both $k$ and $R$ are scalar fields so they provide us with a coordinate invarian
 % M^{-1} \partial_\mu M &= \partial_\mu \ln(|M|) ,\\
 % &= \partial_\mu \ln\left(\left| \prod_i \lambda_i\right|\right) ,\\
 % &= \partial_\mu \sum_i \ln(\left|  \lambda_i\right|) ,\\
-% &= \sum_i \lambda_k^{-1}\partial_\mu \lambda_k. 
+% &= \sum_i \lambda_k^{-1}\partial_\mu \lambda_k.
 % \end{align}
 % Now we will show that the right hand side of Eq.~(\ref{intro:eq:mdmmdm}) equals this. To do so we start by decomposing $\bs{M}$ into a diagonal matrix $\bs{D}$ like
 % \begin{align}
@@ -833,7 +954,7 @@ Both $k$ and $R$ are scalar fields so they provide us with a coordinate invarian
 % \begin{equation} \label{intro:eq:gdggdg}
 % g^{\mu\rho}\partial_\nu g_{\mu\rho} = g^{-1} \partial_\nu g,
 % \end{equation}
-% and the covariant divergence $\nabla_\mu X^\mu$ of a vector $\bs{X}$ simplifies to 
+% and the covariant divergence $\nabla_\mu X^\mu$ of a vector $\bs{X}$ simplifies to
 % \begin{align}
 % \nabla_\mu X^\mu &= \partial_\mu X^\mu + \frac{1}{2g}\partial_\mu g ,\\
 % &= \frac{1}{\sqrt{|g|}}\partial_\mu \left(\sqrt{|g|}X^\mu\right),
@@ -842,7 +963,7 @@ Both $k$ and $R$ are scalar fields so they provide us with a coordinate invarian
 % \begin{equation} \label{intro:eq:div_vector}
 % \bs{\nabla}\cdot \bs{X} = \nabla_\mu X^\mu = \frac{1}{\sqrt{-g}}\partial_\mu (\sqrt{-g}X^\mu).
 % \end{equation}
-% This equation will have much use later in section \ref{q:sect:derive} where the divergence of a vector will be integrated over a finite $n$-dimensional volume $M$ in $\M$. In order to do this, the divergence theorem of curved space is used, this is 
+% This equation will have much use later in section \ref{q:sect:derive} where the divergence of a vector will be integrated over a finite $n$-dimensional volume $M$ in $\M$. In order to do this, the divergence theorem of curved space is used, this is
 % \begin{equation} \label{intro:eq:properdivtheorem}
 % \int_M \bs{\nabla} \cdot \bs{X} \sqrt{|{}^{(n)}g|} \,\dd^n x = \sum_i \int_{\partial M_i} \bs{s}^{(i)} \cdot \bs{X} \sqrt{|{}^{(n-1)}g^{(i)}|} \,\dd^{n-1} x,
 % \end{equation}
@@ -852,7 +973,7 @@ Both $k$ and $R$ are scalar fields so they provide us with a coordinate invarian
 
 \subsection{The Divergence Theorem}\label{intro:sec:div}
 
-There is a generalisation of the divergence theorem to curved spaces, using differential geometry, which will be important in sections [FIX THIS]\ref{q:sec:derive}. However, before we discuss the divergence theorem, we must derive a preliminary matrix identity for a real symmetric matrix $\bs{M}$ with determinant $M$,
+There is a generalisation of the divergence theorem to curved spaces, using differential geometry, which will have many uses throughout this work; especially section \ref{q:sec:q}. However, before we discuss the divergence theorem, we must derive a preliminary matrix identity for a real symmetric matrix $\bs{M}$ with determinant $M$,
 \begin{equation}\label{intro:eq:mdmmdm}
 M^{-1} \partial_\mu M = M^{-1}_{ij} \partial_\mu M_{ij} = \mathrm{Tr}(\bs{M}^{-1} \partial_\mu \bs{M}).
 \end{equation}
@@ -861,7 +982,7 @@ Simplifying the left hand side in terms of the eigenvalues $\lambda_i$ of $\bs{M
 M^{-1} \partial_\mu M &= \partial_\mu \ln(|M|) ,\\
 &= \partial_\mu \ln\left(\left| \prod_i \lambda_i\right|\right) ,\\
 &= \partial_\mu \sum_i \ln(\left|  \lambda_i\right|) ,\\
-&= \sum_i \lambda_k^{-1}\partial_\mu \lambda_k. 
+&= \sum_i \lambda_k^{-1}\partial_\mu \lambda_k.
 \end{align}
 Now we will show that the right hand side of Eq.~(\ref{intro:eq:mdmmdm}) equals this. To do so we start by decomposing $\bs{M}$ into a diagonal matrix $\bs{D}$ like
 \begin{align}
@@ -894,13 +1015,13 @@ Now we can find a convenient form of the divergence $\nabla_\mu X^\mu$ of a vect
 \begin{align}
 \nabla_\mu X^\mu &= \partial_\mu X^\mu + \Gamma^\mu_{\,\,\,\mu\nu}X^\nu , \\
 &= \partial_\mu X^\mu + \frac{1}{2}g^{\mu\rho}\left(\partial_\mu g_{\rho\nu}+\partial_\nu g_{\mu\rho}-\partial_\rho g_{\mu\nu}\right)X^\nu , \\
-&= \partial_\mu X^\mu + \frac{1}{2}g^{\mu\rho}\partial_\nu g_{\mu\rho}X^\nu. 
+&= \partial_\mu X^\mu + \frac{1}{2}g^{\mu\rho}\partial_\nu g_{\mu\rho}X^\nu.
 \end{align}
 Applying Eq.~(\ref{intro:eq:mdmmdm}) to the metric $\bs{g}$ gives,
 \begin{equation} \label{intro:eq:gdggdg}
 g^{\mu\rho}\partial_\nu g_{\mu\rho} = g^{-1} \partial_\nu g,
 \end{equation}
-and the covariant divergence $\nabla_\mu X^\mu$ of a vector $\bs{X}$ simplifies to 
+and the covariant divergence $\nabla_\mu X^\mu$ of a vector $\bs{X}$ simplifies to
 \begin{align}
 \nabla_\mu X^\mu &= \partial_\mu X^\mu + \frac{1}{2g}\partial_\mu g ,\\
 &= \frac{1}{\sqrt{|g|}}\partial_\mu \left(\sqrt{|g|}X^\mu\right),
@@ -909,23 +1030,38 @@ which in the standard pseudo-Riemannian spacetime is often written
 \begin{equation} \label{intro:eq:div_vector}
 \bs{\nabla}\cdot \bs{X} = \nabla_\mu X^\mu = \frac{1}{\sqrt{-g}}\partial_\mu (\sqrt{-g}X^\mu).
 \end{equation}
-This equation will have much use later in section \ref{q:sect:derive} where the divergence of a vector will be integrated over a finite $n$-dimensional volume $V$ in $\M$. In order to do this, the divergence theorem of curved space is used, 
+This equation will have much use later in section \ref{q:sect:derive} where the divergence of a vector will be integrated over a finite $n$-dimensional volume $V$ in $\M$. In order to do this, the divergence theorem of curved space is used,
 \begin{equation} \label{intro:eq:properdivtheorem}
 \int_V \bs{\nabla} \cdot \bs{X} \sqrt{|{}^{(n)}g|} \,\dd^n x = \sum_i \int_{\partial V_i} \bs{s}^{(i)} \cdot \bs{X} \sqrt{|{}^{(n-1)}g^{(i)}|} \,\dd^{n-1} x,
 \end{equation}
 where the surface of $V$ is divided into a set of $(n-1)$-dimensional surfaces $\partial V_i$; for each of these surfaces there is an $(n-1)$-dimensional metric ${}^{(n-1)}\bs{g}^{(i)}$ with determinant ${}^{(n-1)} g ^{(i)}$ and unit normal vector $\bs{s}^{(i)}$ with ${}^{(n-1)}\bs{g}^{(i)}(\bs{s}^{(i)},\bs{s}^{(i)})=\pm 1$. When dealing with a pseudo-Riemannian manifold, we need to take care of the direction of $\bs{s}^{(i)}$; in the case that $\bs{s}^{(i)}$ is timelike it should be in-directed, and if it's spacelike then it should be out-directed. The correct direction of the $\bs{s}^{(i)}$ can be readily checked by computing Eq.~(\ref{intro:eq:properdivtheorem}) in a non-curved manifold.
 
+
+
+
+
+
+
+
+
+
+
+
 \newpage
 \section{Relativity}
 
+
 \subsection{Special Relativity}
 
-In the nineteenth century, it was widely believed that the universe was permeated by an invisible luminous aether. It was thought that light travels at a fixed speed through this aether; the aether could be thought of as a universal rest frame. Consequently moving towards/away from a light source would cause the speed of oncoming light to vary. With that line of thought one could measure the earths speed through the aether by setting up an interferometer experiment. An interferometer sends a light beam through a splitter, dividing the beam into two perpendicular paths. The two beams then reach a separate mirror and are reflected to a half-mirror that recombines the two beams after they have travelled identical distance. If the time taken for the two beams to complete their identical length journeys differs then an interference pattern will be seen at a detector placed behind the half-mirror due to the phase change between the two beams. In 1887, Michelson and Morley conducted their famous interferometer experiment to measure the earth's velocity through the aether. They expected to see interference when the different beams made different angles with the earth's velocity through the aether. However, no matter which way they oriented the experiment there was no interference pattern. This implied that light moved at exactly the same speed in any direction; this is only possible if earth is in the rest frame of the aether, but this cannot possibly be true as the planet accelerates round a circular path around the Sun that is following a larger circular path (in the Milky Way) and so on. This famous result demonstrated that the speed of light (in vacuum) is the same in any direction in all inertial (non-accelerating) frames - a result that defied Newtonian physics. This was a crucial hint that a new theory of dynamics was needed. 
+In the nineteenth century, it was widely believed that the universe was permeated by an invisible luminous aether. It was thought that light travels at a fixed speed through this aether; the aether could be thought of as a universal rest frame. Consequently moving towards/away from a light source would cause the speed of oncoming light to vary. With that line of thought one could measure the earths speed through the aether by setting up an interferometer experiment. An interferometer sends a light beam through a splitter, dividing the beam into two perpendicular paths. The two beams then reach a separate mirror and are reflected to a half-mirror that recombines the two beams after they have travelled identical distance. If the time taken for the two beams to complete their identical length journeys differs then an interference pattern will be seen at a detector placed behind the half-mirror due to the phase change between the two beams. In 1887, Michelson and Morley conducted their famous interferometer experiment to measure the earth's velocity through the aether. They expected to see interference when the different beams made different angles with the earth's velocity through the aether. However, no matter which way they oriented the experiment there was no interference pattern. This implied that light moved at exactly the same speed in any direction; this is only possible if earth is in the rest frame of the aether, but this cannot possibly be true as the planet accelerates round a circular path around the Sun that is following a larger circular path (in the Milky Way) and so on. This famous result demonstrated that the speed of light (in vacuum) is the same in any direction in all inertial (non-accelerating) frames - a result that defied Newtonian physics. This was a crucial hint that a new theory of dynamics was needed.
 
-In 1905, Einstein published "On the Electrodynamics of Moving Bodies" \cite{einstein1905electrodynamics} which contained a description of Special Relativity (SR). SR is essentially the idea that the laws of physics (excluding gravity) are the same in any inertial rest frame. A consequence of this is that it is impossible to measure the velocity of your own rest frame and no inertial frame is special. One big problem with SR is that it does not properly describe gravity and thus describes an infinite vacuum universe; this is a problem that will be addressed in the next sections. SR alone contains many interesting results such as time dilation, length contraction and the inclusion of time in distance measures. 
+In 1905, Einstein published \enquote{On the Electrodynamics of Moving Bodies} \cite{einstein1905electrodynamics} which contained a description of Special Relativity (SR). SR is essentially the idea that the laws of physics (excluding gravity) are the same in any inertial rest frame. A consequence of this is that it is impossible to measure the velocity of your own rest frame and no inertial frame is special. One big problem with SR is that it does not properly describe gravity and thus describes an infinite vacuum universe; this is a problem that will be addressed in the next sections. SR alone contains many interesting results such as time dilation, length contraction and the inclusion of time in distance measures.
+For a modern textbook on SR that deals with the basics aswell as more complicated topics such as acceleration, tensor fields and
+the incompatibility of gravity with SR see \cite{gourgoulhon2016special}. A more
+direct, but adequate, account of SR can be found at the beginning of the textbook \cite{carroll2019spacetime}.
 
 \subsubsection{Minkowski Space}\label{intro:sec:minkowski_space}
-In Newtonian physics the metric of flat space, using Cartesian coordinates, is, 
+In Newtonian physics the metric of flat space, using Cartesian coordinates, is,
 \begin{equation}
 g_{ij} = \delta_{ij} = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix},
 \end{equation}
@@ -943,17 +1079,17 @@ and the line element is,
 \end{equation}
 where the speed of light has been set to unity again. Having a metric on a 4-dimensional spacetime is a non-intuitive concept where time is included into geometry and paths through spacetime can have negative length.
 
-Transforming between two inertial frames moving at constant velocity with respect to each other is done with a {\it boost} in special relativity. Boosting from frame $S$ with coordinates $x^\mu$ to $\tilde{S}$ with coordinates $\tilde{x}^\mu$ we can write, 
+Transforming between two inertial frames moving at constant velocity with respect to each other is done with a {\it boost} in special relativity. Boosting from frame $S$ with coordinates $x^\mu$ to $\tilde{S}$ with coordinates $\tilde{x}^\mu$ we can write,
 \begin{equation}
 \dd \tilde{x}^\mu = \frac{\partial \tilde{x}^\mu}{\partial x^\nu} \dd x^\nu = \Lambda^\mu_{\,\,\,\nu} \dd x^\nu,
 \end{equation}
 where we will call $\bs{\Lambda}$ the boost matrix. Considering a boost along the $x$ direction with a speed $v$,
 \begin{align}
-\dd \tilde{t} &= \gamma (\dd t-v\dd x), \\ 
-\dd \tilde{x} &= \gamma (\dd x-v\dd t), \\ 
-\dd \tilde{y} &= \dd y, \\ 
-\dd \tilde{z} &= \dd z,  
-\end{align} 
+\dd \tilde{t} &= \gamma (\dd t-v\dd x), \\
+\dd \tilde{x} &= \gamma (\dd x-v\dd t), \\
+\dd \tilde{y} &= \dd y, \\
+\dd \tilde{z} &= \dd z,
+\end{align}
 where $\gamma = 1/\sqrt{1-v^2}$ is the Lorentz factor. This transformation may seem odd at first glance but ensures that every inertial frame agrees on the same speed of light in all directions. For boosts in general directions $\bs{\Lambda}$ should be rotated with a spatial rotation matrix using the tensor transformation law.
 
 
@@ -962,10 +1098,18 @@ where $\gamma = 1/\sqrt{1-v^2}$ is the Lorentz factor. This transformation may s
 
 It is a well known result of Newtonian physics that in a rotating reference frame, with angular velocity $\omega$, a test particle will experience three fictitious forces; the centrifugal force that grows with distance from the origin, the Coriolis force that depends on the velocity of the test particle, and the Euler force depending on $\partial_t \omega$. From the point of view of an observer in the rotating frame a free test particle would appear to accelerate which is a violation of Newton's first law if there is no external force. The curved path followed by the particle in the rotating reference frame is of course a constant-speed straight line in the non-rotating inertial frame, and therefore the particle follows a geodesic. It is possible (but very involved) to do a coordinate transformation from the inertial frame to the rotating frame and find the metric $\tilde{\eta}_{\mu\nu}$ in the rotating frame using the tensor transformation law; it would then be possible to compute the geodesics in the rotating frame using Eq.~(\ref{intro:eq:geodesic}).
 
-The gravitational force can also be described as a fictitious force. In a non-accelerating frame, the path of a particle moving without external force is seen to accelerate towards massive bodies. The presence of matter density causes geodesics to curve. This is a property also possessed by curved spaces; the paths followed by a free particle on a curved background is often curved itself. Einstein's idea to incorporate gravity into relativity was to change the flat spacetime of special relativity to a curved spacetime; this theory is general relativity.  In general relativity inertial frames are defined as freely falling frames (under gravity) following geodesics in curved space. The gravitational force is a fictitious force arising from an observer not being in an inertial frame. This explains why an observer standing on earth experiences a reaction force, the frame of the observer is not following a geodesic (not an inertial frame) and therefore to counteract the fictitious gravitational force the ground must push back with a reaction force. In the inertial frame, the observer standing on the earth is accelerated upwards by the earth's surface.
+The gravitational force can also be described as a fictitious force. In a non-accelerating frame, the path of a particle moving without external force is seen to accelerate towards massive bodies. The presence of matter density causes geodesics to curve. This is a property also possessed by curved spaces; the path followed by a free particle on a curved background is often curved itself. Einstein's idea to incorporate gravity into relativity was to change the flat spacetime of special relativity to a curved spacetime; this theory is general relativity.  In general relativity inertial frames are defined as freely falling frames (under gravity) following geodesics in curved space. The gravitational force is a fictitious force arising from an observer not being in an inertial frame. This explains why an observer standing on earth experiences a reaction force, the frame of the observer is not following a geodesic (not an inertial frame) and therefore to counteract the fictitious gravitational force the ground must push back with a reaction force. In the local inertial frame, the observer standing on the earth is accelerated upwards by the earth's surface.
+
+There are countless textbooks relevant to general relativity. Two noteworthy
+classics are {\it \enquote{General Relativity}} by R. Wald \cite{Wald1984} and
+{\it \enquote{Gravitation}} by Misner, Thorne and Wheeler \cite{Misner1973}.
+A good modern textbook is
+{\it \enquote{An Introduction to General Relativity, SPACETIME and GEOMETRY}} by S. Carroll
+\cite{carroll2019spacetime}; this is freely available online in
+lecture note form \cite{Carroll:1997ar}.
 
 \subsubsection{Worldlines and Causality}
-Consider a particle moving through spacetime, the motion can be described with coordinates $x^\mu(\tau)$ which is called a worldline. Here $\tau$ denotes {\it proper time}, the time experienced by the particle following the worldline. The 4-velocity along a worldline is, 
+Consider a particle moving through spacetime, the motion can be described with coordinates $x^\mu(\tau)$ which is called a worldline. Here $\tau$ denotes {\it proper time}, the time experienced by the particle following the worldline. The 4-velocity along a worldline is,
 \begin{equation}
 v^\mu(\tau) = \frac{\dd x^\mu}{\dd \tau}(\tau).
 \end{equation}
@@ -975,15 +1119,33 @@ In general relativity, the line element $\dd s$ elapsed along a coordinate inter
 \end{equation}
 and for a particle with 4-velocity $\bs{v}$ is,
 \begin{equation}
-\dd s ^2 = g_{\mu\nu} \frac{\dd x^\mu}{\dd \tau}  \frac{\dd x^\nu}{\dd \tau} \dd \tau^2 = g_{\mu\nu} v^\mu v^\nu \dd \tau^2 = \bs{v} \cdot \bs{v} \,\dd \tau^2. 
+\dd s ^2 = g_{\mu\nu} \frac{\dd x^\mu}{\dd \tau}  \frac{\dd x^\nu}{\dd \tau} \dd \tau^2 = g_{\mu\nu} v^\mu v^\nu \dd \tau^2 = \bs{v} \cdot \bs{v} \,\dd \tau^2.
 \end{equation}
-As shown in section \ref{intro:sec:geodesics}, if a worldline $x^\mu(\lambda)$ parameterised by $\lambda$ is a geodesic then $g_{\mu\nu} \dot{x}^\mu \dot{x}^\nu$ is constant where the dot denotes a derivative with respect to $\lambda$. Equating $\lambda=\tau$ gives $\dot{x}^\mu = v^\mu$ which tells us that $\bs{v} \cdot \bs{v}$, or $|\bs{v}|^2$, is constant along a world line. If $|\bs{v}|^2<0$ then the geodesic is {\it timelike}; similarly if $|\bs{v}|^2>0$ then the geodesic is {\it spacelike}. In the special case that $|\bs{v}|^2=0$, the curve is called {\it null}. Physical massive particles must travel along timelike intervals and massless particles must travel along null ones. Information cannot travel faster than light (which follows null geodesics) and hence all spacelike intervals are intraversable. Given that $|\bs{v}|^2$ is a scalar, it is unchanged by a coordinate transformation, this means that all observers in all frames (and using any coordinate system) will agree on whether an interval is timelike, spacelike or null.
-
-
+As shown in section \ref{intro:sec:geodesics}, if a worldline $x^\mu(\lambda)$
+parameterised by $\lambda$ is a geodesic then $g_{\mu\nu} \dot{x}^\mu \dot{x}^\nu$
+is constant where the dot denotes a derivative with respect to $\lambda$.
+Equating $\lambda=\tau$ gives $\dot{x}^\mu = v^\mu$ which tells us that $\bs{v}
+\cdot \bs{v}$, or $|\bs{v}|^2$, is constant along a world line. If $|\bs{v}|^2<0$
+then the geodesic is {\it timelike}; similarly if $|\bs{v}|^2>0$ then the geodesic
+is {\it spacelike}. In the special case that $|\bs{v}|^2=0$, the curve is called
+{\it null}. Locally, physical massive particles must travel along timelike intervals and
+massless particles must travel along null ones. Information cannot travel faster
+than light (which follows null geodesics) and hence all spacelike intervals are
+locally intraversable. Given that $|\bs{v}|^2$ is a scalar, it is unchanged by a coordinate
+transformation, this means that all observers in all frames
+(and using any coordinate system) will agree on whether an interval is timelike,
+spacelike or null.
 
 \subsection{Physics in Curved Space} \label{intro:sec:curvedspacephysics}
 
-General relativity postulates that (locally) the laws of physics in a free falling frame are indistinguishable from special relativity. Any equation of motions that we want to hold in general relativity must agree with special relativity in the flat-space limit. As a general rule, if there is a law of physics expressed as a differential equation in Minkowski space that we want to use in curved space, we must replace all partial derivatives of fields with co-variant derivatives of tensor fields. This process is called the minimal coupling approach and is explored in more detail at the end of section \ref{intro:sec:gr_from_lagrangean}.
+General relativity postulates that (locally) the laws of physics in a free falling
+frame are indistinguishable from special relativity. Any equations of motion that
+we want to hold in general relativity must agree with special relativity in the
+flat-space limit. As a general rule, if there is a law of physics expressed as a
+differential equation in Minkowski space that we want to use in curved space, we
+must replace all partial derivatives of fields with co-variant derivatives of
+tensor fields. This process is called the minimal coupling approach and is explored in more detail
+at the end of section \ref{intro:sec:gr_from_lagrangean}.
 
 
 
@@ -992,16 +1154,16 @@ General relativity postulates that (locally) the laws of physics in a free falli
 
 
 \subsubsection{The Wave Equation}
-To derive the curved space wave equation we start with the wave equation for a scalar field $\phi$ in Minkowski space, 
+To derive the curved space wave equation we start with the wave equation for a scalar field $\phi$ in Minkowski space,
 \begin{equation}
 \frac{1}{c^2}\frac{\partial^2}{\partial t^2} \phi(x^i,t) - \left(\frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}+\frac{\partial^2}{\partial z^2} \right)\phi(x^i,t)=0, \label{intro:eq:fullflatwave}
 \end{equation}
-using Cartesian coordinates and $c$ as the speed of light which we will set to one. While this equation is Lorentz invariant\footnote{Lorentz in variance is to be invariant under a boost, also called a Lorentz transformation.} it is not generally covariant, changing coordinates can change the explicit form of the equation of motion. In SR, using the language of tensor calculus, we can write the wave equation as, 
+using Cartesian coordinates and $c$ as the speed of light which we will set to one. While this equation is Lorentz invariant\footnote{Lorentz invariance is to be invariant under a boost, also called a Lorentz transformation.} it is not generally covariant, changing coordinates can change the explicit form of the equation of motion. In SR, using the language of tensor calculus, we can write the wave equation as,
 \begin{equation}
 \eta^{\mu\nu}\partial_\mu\partial_\nu\phi=0\label{intro:eq:waveeqn},
 \end{equation}
 where $\eta^{\mu\nu}$ is the inverse metric of flat space. To adapt this to curved space we follow the minimal coupling procedure and replace $\bs{\eta} \rightarrow \bs{g}$ and $\partial_\mu \rightarrow \nabla_\mu$ giving,
-\begin{equation} 
+\begin{equation}
 g^{\mu\nu}\nabla_\mu \nabla_\nu\phi =0. \label{intro:eq:grwave}
 \end{equation}
 This equation is fully covariant as it is a contraction of a tensor with some covariant derivatives; it is a tensor differential equation. Writing the laws of physics as tensor equations is useful as they can be written without reference to an explicit coordinate system. If a coordinate system is then picked, assuming knowledge of $g_{\mu\nu}$, then the wave equation becomes
@@ -1009,22 +1171,33 @@ This equation is fully covariant as it is a contraction of a tensor with some co
 g^{\mu\nu}\nabla_\mu \nabla_\nu \phi &= g^{\mu\nu}\nabla_\mu \partial_\nu \phi =0,\\
 &= g^{\mu\nu}\partial_\mu \partial_\nu \phi - g^{\mu\nu}\Gamma^\rho_{\,\,\mu\nu}\partial_\rho \phi,
 \end{align}
-in terms of partial derivatives and covariant derivatives. 
+in terms of partial derivatives and covariant derivatives.
 
 Equation~(\ref{intro:eq:grwave}) is not the only tensor equation that returns Eq.~(\ref{intro:eq:fullflatwave}) in the limit of flat space (and Cartesian coordinates). What is to stop us arbitrarily adding terms that vanish in the flat-space limit? For a simple example one is free to choose the wave equation to be,
 \begin{align}
 g^{\mu\nu}\nabla_\mu\nabla_\nu \phi + f(\phi) R^n = 0, \label{intro:eq:modified_wave}
 \end{align}
-for constant $n$, function $f$ and the Ricci scalar $R$ from section \ref{intro:sec:curvature}. This equation certainly returns the regular wave equation in the low curvature limit as $R\rightarrow 0$. Following the rules of minimal coupling, the general rule is to keep things simple and terms such as $R$ which are proportional to second order derivatives of the metric are thought to be less dominant that terms such as $\Gamma^\mu_{\,\,\,\rho\sigma}$ which are proportional to first derivatives of the metric. Navigating this minefield of which terms to include in the laws of physics is tricky and leads to the topic of modified gravity as discussed at the end of section \ref{intro:sec:gr_from_lagrangean}.
-
-
+for constant $n$, function $f$ and the Ricci scalar $R$ from section
+\ref{intro:sec:curvature}. This equation certainly returns the regular wave equation
+in the low curvature limit as $R\rightarrow 0$. Following the ideas of minimal
+coupling, the general rule is to keep things simple and avoid un-necessary terms -
+especially if these terms contain higher order derivatives of the metric
+\footnote{$R$ contains second derivatives of the metric but $\Gamma^\alpha_{\,\,\,\mu\nu}$
+only containst first derivatives.}
+which are generally thought to matter only when curvature becomes very large.
+This procedure can also become more complicated
+when dealing with tensors of higher ranks. Navigating this minefield of which terms to
+include in the laws of physics is tricky and leads to the topic of modified gravity
+as discussed at the end of section \ref{intro:sec:gr_from_lagrangean}.
 
 
 
 
 
 \subsubsection{Electromagnetism}
-Electromagnetism can also be written in terms of tensor differential equations suitable for use in curved space. Traditionally, Maxwell's equations of electromagnetism are written as,
+Electromagnetism can also be written in terms of tensor differential equations
+suitable for use in curved space. Traditionally, Maxwell's equations of
+electromagnetism (in vacuum) are written as,
 \begin{align}
 \bs{\nabla} \cdot \bs{E} &= \frac{\rho}{\epsilon_0} ,\label{intro:eq:max1}\\
 \bs{\nabla} \cdot \bs{B} &= 0 ,\label{intro:eq:max2}\\
@@ -1053,14 +1226,15 @@ as $\mu_0 \epsilon_0 = c^{-2} = 1$ in natural units. The other two Maxwell Eqs.~
 \begin{align}
 \partial_{[\mu} F_{\alpha\beta]} &= \partial_\mu\partial_\alpha A_\beta - \partial_\mu\partial_\beta A_\alpha
 +\partial_\alpha\partial_\beta A_\mu - \partial_\alpha\partial_\mu A_\beta
-\partial_\beta\partial_\mu A_\alpha - \partial_\beta\partial_\alpha A_\mu ,\\\partial_{[\mu} F_{\alpha\beta]} &=0,
++\partial_\beta\partial_\mu A_\alpha - \partial_\beta\partial_\alpha A_\mu ,\\\partial_{[\mu} F_{\alpha\beta]} &=0,
 \end{align}
 which is equivalent to $\nabla_{[\mu}F_{\alpha\beta]}$ due to the cancellation of Christoffel symbols.
 
 
 
 \subsubsection{The Stress-Energy-Momentum Tensor}
-At the heart of field theory in physics is the stress-energy-momentum tensor $\bs{T}$, also called the energy-momentum tensor or stress tensor for short. Roughly speaking, component $T^{00}$ is energy density, components $T^{0i}=T^{i0}$ contain energy flux or momentum density and components $T^{ij}=T^{ji}$ contain momentum fluxes. The diagonal part of $T^{ij}$ can also be though of as containing pressure and the off-diagonal terms containing shear stress. In flat space, the conservation of energy and momentum can be written as, 
+At the heart of field theory in physics is the stress-energy-momentum tensor $\bs{T}$, also called the energy-momentum tensor or stress tensor for short. The component $T^{00}$ contains the energy density as measured by an observer co-moving with the coordinate system.
+Similarly, components $T^{0i}=T^{i0}$ contain energy flux or momentum density and components $T^{ij}=T^{ji}$ contain momentum fluxes. The diagonal part of $T^{ij}$ can also be though of as containing pressure and the off-diagonal terms containing shear stress. In flat space, the conservation of energy and momentum can be written as,
 \begin{equation}
 \partial_\mu T^{\mu\nu} =0,\label{intro:eq:cont_def_chap1}
 \end{equation}
@@ -1069,30 +1243,30 @@ in the absence of external forces. Equation~(\ref{intro:eq:cont_def_chap1}) is a
 \partial_0 T^{00} &= - \partial_i T^{i0}, \\
 \partial_0 T^{0j} &= - \partial_i T^{ij},
 \end{align}
-where the first equation states {\it "The rate of change of energy density is equal and opposite to the divergence of energy flux density"} and the second equation states {\it "The rate of change of momentum density is equal and opposite to the divergence of momentum flux density"}. 
+where the first equation states {\it \enquote{The rate of change of energy density is equal and opposite to the divergence of energy flux density}} and the second equation states {\it \enquote{The rate of change of momentum density is equal and opposite to the divergence of momentum flux density}}.
 
 The stress tensor plays an important role in curved space and the continuity equation becomes,
 \begin{align}
 \nabla_\mu T^{\mu\nu} = \partial_\mu T^{\mu\nu}  + \Gamma^\mu_{\,\,\,\mu \rho}T^{\rho \nu}  + \Gamma^\nu_{\,\,\,\mu\rho}T^{\mu\rho}= 0\label{intro:eq:cont},
 \end{align}
-where the partial derivative has been replaced with a covariant derivative in accordance with minimal coupling. This can be rewritten using Eq.~(\ref{intro:eq:div_vector}) as, 
+where the partial derivative has been replaced with a covariant derivative in accordance with minimal coupling. This can be rewritten using Eq.~(\ref{intro:eq:div_vector}) as,
 \begin{align}
 \partial_\mu( \sqrt{-g} T^{\mu\nu})  &=-\sqrt{-g} \Gamma^\nu_{\,\,\,\mu\rho}T^{\mu\rho},\\
 \partial_\mu( \T^{\mu\nu})  &=-\Gamma^\nu_{\,\,\,\mu\rho}\T^{\mu\rho},
 \end{align}
-where the second equation writes the stress tensor as a tensor density $\bs{\T} = \sqrt{-g} \bs{T}$ making the equation resemble the flat space continuity equation more closely. This modification of traditional continuity of energy and momentum to curved spaces will be revisited in section \ref{q:sec:q}.
+where the second equation writes the stress tensor as a tensor density $\bs{\T} = \sqrt{-g} \bs{T}$ making the equation resemble the flat space continuity equation more closely. This modification of traditional continuity of energy and momentum to curved spaces will be revisited in chapter \ref{q:sec:q}.
 
 
 \subsection{The Einstein Equation}
-We have already seen how the equations of motion for matter can be promoted to curved space; building on the vague notion of matter causing spacetime curvature it would be helpful to have a mathematical law saying how much curvature is caused by a given matter distribution. The first guess that Einstein arrived at was to write $R_{\mu\nu}=kT_{\mu\nu}$ for some constant $k$. The problem is that given $\nabla_\mu T^{\mu\nu}=0$ is the generic equation of continuity for matter, it would imply $\nabla_\mu R^{\mu\nu}$ vanishes which is not generally true. As shown in Eq.~(\ref{intro:eq:einstein_tensor_div}), the Einstein tensor $G_{\mu\nu}$ does satisfy $\nabla_\mu G^{\mu\nu}=0$; the next simplest guess at a physical law for spacetime curvature would be $G_{\mu\nu} = k T_{\mu\nu}$. Remarkably this turns out to be correct and has successfully described many\footnote{These phenomena include, but are not limited to, stars, black holes (BHs), collisions of BH's and/or stars and gravitational waves.} gravitational phenomena. The Einstein equation,
+We have already seen how the equations of motion for matter can be promoted to curved space; building on the vague notion of matter causing spacetime curvature it would be helpful to have a mathematical law saying how much curvature is caused by a given matter distribution. The first guess that Einstein arrived at was to write $R_{\mu\nu}=kT_{\mu\nu}$ for some constant $k$. The problem is that given $\nabla_\mu T^{\mu\nu}=0$ is the generic equation of continuity for matter, it would imply $\nabla_\mu R^{\mu\nu}$ vanishes which is not generally true. As shown in Eq.~(\ref{intro:eq:einstein_tensor_div}), the Einstein tensor $G_{\mu\nu}$ does satisfy $\nabla_\mu G^{\mu\nu}=0$; the next simplest guess at a physical law for spacetime curvature would be $G_{\mu\nu} = k T_{\mu\nu}$. Remarkably this turns out to be correct and has successfully described many gravitational phenomena. The Einstein equation,
 \begin{equation}\label{intro:eq:einstein}
 R_{\mu\nu} - \frac{1}{2}g_{\mu\nu}R = \frac{8 \pi G}{c^4}T_{\mu\nu},
 \end{equation}
-where $G_{\mu\nu} = R_{\mu\nu}- g_{\mu\nu}R/2$, is at the core of general relativity. This equation relates spacetime curvature, encoded in the Einstein tensor $G_{\mu\nu}$, to the matter distribution described by the stress tensor $T_{\mu\nu}$. This leads nicely to Wheeler's insightful one line summary of general relativity: 
+where $G_{\mu\nu} = R_{\mu\nu}- g_{\mu\nu}R/2$, is at the core of general relativity. This equation relates spacetime curvature, encoded in the Einstein tensor $G_{\mu\nu}$, to the matter distribution described by the stress tensor $T_{\mu\nu}$. This leads nicely to Wheeler's insightful one line summary of general relativity:
 
-{\it \begin{center}{"Spacetime tells matter how to move; matter tells spacetime how to curve."}\end{center} } 
+{\it \begin{center}{\enquote{Spacetime tells matter how to move; matter tells spacetime how to curve.}}\end{center} }
 
-This deceptively simple equation can describe an enourmous amount of vastly diverse spacetime geometries including regular flat Minkowski space, black holes, stars, planets, gravitational waves and even the entire universe; to properly describe the entire universe a small modification has to be made to this equation as discussed at the end of this section. 
+This deceptively simple equation describes an enormous number of vastly diverse spacetime geometries including regular flat Minkowski space, black holes, stars, planets, gravitational waves and even the entire universe; to properly describe the entire universe a small modification (with large consequences on global behaviour) has to be made to this equation as discussed at the end of this section.
 
 
 
@@ -1100,11 +1274,11 @@ This deceptively simple equation can describe an enourmous amount of vastly dive
 
 In the case of a vacuum spacetime with $T_{\mu\nu}=0$ the Einstein equation simplifies greatly to
 \begin{equation}G_{\mu\nu}=0.\end{equation}
-Taking the trace of the above equation and the definition of $G_{\mu\nu}=R_{\mu\nu}-g_{\mu\nu}R/2$, we see that, 
+Taking the trace of the above equation and the definition of $G_{\mu\nu}=R_{\mu\nu}-g_{\mu\nu}R/2$, we see that,
 \begin{align}
 g^{\mu\nu}G_{\mu\nu}=0=g^{\mu\nu}\left(R_{\mu\nu}-\frac{1}{2}Rg_{\mu\nu}\right) = R\left(1-\frac{D}{2}\right),
 \end{align}
-where $D$ is the number of spacetime dimensions. Clearly for $D\neq 2$ a vanishing Einstein tensor implies a vanishing Ricci scalar $R$; if the Ricci scalar vanishes then the Einstein equation in vacuum simplifies to 
+where $D$ is the number of spacetime dimensions. Clearly for $D\neq 2$ a vanishing Einstein tensor implies a vanishing Ricci scalar $R$; if the Ricci scalar vanishes then the Einstein equation in vacuum simplifies to
 \begin{equation}
 R_{\mu\nu} = 0.
 \end{equation}
@@ -1128,7 +1302,7 @@ where $T=g^{\mu\nu}T_{\mu\nu}$ is the trace of the stress tensor and $D$ is the 
 
 
 \subsection{Black Holes}\label{intro:sec:bh_theory}
- As it turns out, vacuum General Relativity can describe more than just Minkowski space. Arguably the most important family of solutions to Einstein's equations in vacuum are black holes. The first black hole solution was found by Karl Schwarzschild, whose surname fittingly means {"\it black shield"} in German. This solution, known as the Schwarzschild solution, was discovered in 1916 with the intention of computing the spacetime curvature in the vacuum about a spherically symmetric mass such as stars and planets. The solution for $g_{\mu\nu}$ was assumed to take the following ansatz,
+ As it turns out, vacuum General Relativity can describe more than just Minkowski space. Arguably the most important family of solutions to Einstein's equations in vacuum are black holes. The first black-hole solution was found by Karl Schwarzschild, whose surname fittingly means {\enquote{\it black shield}} in German. This solution, known as the Schwarzschild solution, was discovered in 1916 with the intention of computing the spacetime curvature in the vacuum about a spherically symmetric mass such as stars and planets. The solution for $g_{\mu\nu}$ was assumed to take the following ansatz,
  \begin{equation} \label{intro:eq:sc_ansatz}
 \dd s^2 = g_{\mu\nu} \dd x^\mu \dd x^\nu= -A(r) \dd t^2 + B(r) \dd r^2 + r^2 \left(\dd \theta + \sin^2(\theta) \dd \phi^2\right),
  \end{equation}
@@ -1138,7 +1312,7 @@ which is manifestly spherically symmetric and static; in the case $A(r)=B(r)=1$ 
  \end{equation}
 The constants $G$ and $c$ are included for completeness, but are equal to one in geometric units or Planck units. The Schwarzschild solution describes the spacetime around a non-spinning sphere of mass $m$ and as $r\rightarrow \infty$ or $m\rightarrow 0$ we approach the vacuum Minkowski spacetime as desired. What Schwarzschild did not realise before his untimely death was that his solution could in fact be trusted down to vanishing radii and describes the eternal (or static), non-spinning black hole of mass $m$ called the Schwarzschild black hole.
 
-Many other black hole solutions have been found to date. These solutions include the spinning {\it Kerr} black hole, non-spinning electromagnetically charged {\it Reissner-Nordström} black hole and spinning electromagnetically charged {\it Kerr-Newman} black hole. Non asymptotically flat black holes in cosmological backgrounds have also been found \cite{mcvittie1933mass}. In modified gravity theories, briefly discussed in section \ref{intro:sec:gr_from_lagrangean}, exotic black hole solutions (often coupled to other fields such as scalar fields) exist.
+Many other black-hole solutions have been found to date. These solutions include the spinning {\it Kerr} black hole, non-spinning electromagnetically charged {\it Reissner-Nordström} black hole and spinning electromagnetically charged {\it Kerr-Newman} black hole. Non asymptotically flat black holes in cosmological backgrounds have also been found \cite{mcvittie1933mass}. In modified gravity theories, briefly discussed in section \ref{intro:sec:gr_from_lagrangean}, exotic black-hole solutions (often coupled to other fields such as scalar fields) exist.
 
 
 \subsubsection*{Polar-Areal Coordinates }
@@ -1148,8 +1322,9 @@ A=\int_0^\pi\left[\int_0^{2\pi} \sqrt{\sigma}\Big|_{t=t_0,r=r_0} \,\dd \phi\righ
 \end{equation}
 where $\sigma$ is the metric determinant on the surface. Evaluating this explicitly for the Schwarzschild metric with $\sqrt{\sigma} = \sqrt{g_{\theta\theta}  g_{\phi\phi}} = r^2 \sin(\theta)$ gives
 \begin{equation}
-A=\int_0^\pi\left[\int_0^{2\pi} \sqrt{g_{\phi\phi} g_{\theta\theta}}\Big|_{t=t_0,r=r_0} \,\dd \phi\right] \,\dd \theta=  r_0^2 \int_0^\pi\left[\int_0^{2\pi} \,\dd \phi\right]  \sin^2(\theta)\,\dd \theta = 4 \pi r_0^2.
+A=\int_0^\pi\left[\int_0^{2\pi} \sqrt{g_{\phi\phi} g_{\theta\theta}}\Big|_{t=t_0,r=r_0} \,\dd \phi\right] \,\dd \theta=  r_0^2 \int_0^\pi\left[\int_0^{2\pi} \,\dd \phi\right]  \sin^2(\theta)\,\dd \theta = 4 \pi r_0^2,
 \end{equation}
+as expected.
 
 
 
@@ -1158,15 +1333,15 @@ A=\int_0^\pi\left[\int_0^{2\pi} \sqrt{g_{\phi\phi} g_{\theta\theta}}\Big|_{t=t_0
 There is obviously some kind problem at radius $r_s=2m$ (or $r_s=2mG/c^2$ in S.I. units), known as the Schwarzschild radius, as $g_{rr}$ diverges here. For physical planets and stars observed the radius of the object is much larger than the Schwarzschild radius so the solution should not be trusted inside the object as it has been derived in vacuum. But in order to describe black holes we must consider radii down to $r=0$. The problem at the Schwarzschild radius is due to the choice of coordinates and is not physically problematic. An easy way to show this is to compute a curvature scalar\footnote{Scalar curvature invariants are useful since if they diverge in one coordinate system then they must diverge in all coordinate systems as they do not transform under coordinate transformations. It should be noted that $\sqrt{-g}$ is a scalar density and not a true scalar so is not a scalar curvature invariant.} and show that it is finite and smooth at $r=r_s$. The first choice of curvature scalar might be the Ricci scalar, but this is zero in vacuum so is not useful for this purpose. Vacuum general relativity asserts that $R_{\mu\nu}=0$, while that guarantees that $R=0$ it does not guarantee that $R_{\mu\nu\rho\sigma}=0$. Another curvature scalar is the Kretschmann scalar $k$, defined in Eq.~(\ref{intro:eq:Kretschdef}), which does not generally vanish in vacuum. Calculating the Kretschmann scalar for the Schwarzschild metric gives,
 \begin{equation}
 k_{\rm sc} = \frac{48 m^2}{r^6}, \label{intro:eq:Kretsch}
-\end{equation} 
-in polar-areal coordinates. As can be seen, $k_{\rm sc}$ is continuous and infinitely differentiable at $r=2m$. However, as $r\rightarrow0$, $k_{\rm sc}\rightarrow \infty$ and there is a real coordinate independent singularity called a physical singularity. 
+\end{equation}
+in polar-areal coordinates. As can be seen, $k_{\rm sc}$ is continuous and infinitely differentiable at $r=2m$. However, as $r\rightarrow0$, $k_{\rm sc}\rightarrow \infty$ and there is a real coordinate independent singularity called a physical singularity.
 
 To remove the coordinate singularity at $r=2m$, new coordinates can be introduced. One example is to use ingoing-Eddington-Finkelstein coordinates $\{ v,\tilde{r},\theta,\phi \}$ defined by
 \begin{align}
 \frac{\dd \tilde{r}}{\dd r} &= \left(1-\frac{2m}{r}\right), \\
 v &= t + \tilde{r},
-\end{align} 
-which transforms the line element to, 
+\end{align}
+which transforms the line element to,
 \begin{equation}
 g_{\mu\nu}\dd x^\mu \dd x^\nu = -\left( 1-\frac{2m}{r}\right) \dd v^2 + 2 \dd v \dd r + r^2 \left(\dd \theta + \sin^2(\theta) \dd \phi^2\right),
 \end{equation}
@@ -1187,38 +1362,38 @@ where $\dd s^2_{\rm flat}$ is the flat space Euclidean line element. For example
 g_{\mu\nu} \dd x^\mu \dd x^\nu &= -\Omega(\rho)^2 \dd t^2 + \Psi^2(\rho) \left( \dd \rho^2 + \rho^2 \left( \dd \theta^2 + \sin^2(\theta) \dd \phi^2 \right)\right) ,\\
  &= -\Omega(\rho)^2 \dd t^2 + \Psi^2(\rho) \left( {\dd x^2 + \dd y^2 + \dd z^2 }\,\right),
 \end{align}
-where $\rho^2 = x^2 + y^2 + z^2$. 
+where $\rho^2 = x^2 + y^2 + z^2$.
 
-The Schwarzschild black hole solution can also be expressed in isotropic coordinates,
-\begin{align} \label{intro:eq:iso_bh}
-= -\left(\frac{1-\frac{m}{2\rho}}{1+\frac{m}{2\rho}} \right)^2 \dd t^2 + \left(1+\frac{m}{2\rho} \right)^4 \dd s_{\rm flat}^2.
+The Schwarzschild black-hole solution can also be expressed in isotropic coordinates, the line element is
+\\[-5pt]\begin{align} \label{intro:eq:iso_bh}
+g_{\mu\nu} \dd x^\mu x^\nu = -\left(\frac{1-\frac{m}{2\rho}}{1+\frac{m}{2\rho}} \right)^2 \dd t^2 + \left(1+\frac{m}{2\rho} \right)^4 \dd s_{\rm flat}^2.
 \end{align}
-As $\rho \rightarrow \infty$ the line element reduces to that of the Minkowski spacetime. At the radius $\rho= m/2$, $g_{tt}$ vanishes (similarly to polar areal coordinates) and this is the Schwarzschild radius in isotropic coordinates. At first glance one might think that there is also the same physical singularity at $\rho=0$. However, if a new radial coordinate $\xi$ is used, where $\rho = \frac{m^2}{4\xi}$, the line element becomes, 
+As $\rho \rightarrow \infty$ the line element reduces to that of the Minkowski spacetime. At the radius $\rho= m/2$, $g_{tt}$ vanishes (similarly to polar areal coordinates) and this is the Schwarzschild radius in isotropic coordinates. At first glance one might think that there is also the same physical singularity at $\rho=0$. However, if a new radial coordinate $\xi$ is used, where $\rho = \frac{m^2}{4\xi}$, the line element becomes,
 \begin{equation}
 g_{\mu\nu} \dd x^\mu x^\nu = -\left(\frac{1-\frac{m}{2\xi}}{1+\frac{m}{2\xi}} \right)^2 \dd t^2 + \left(1+\frac{m}{2\xi} \right)^4 \left(\dd \xi^2 + \xi^2(\dd \theta^2 + \sin^2 (\theta) \dd \phi^2) \right).
 \end{equation}
-This is an intriguing result, inverting the radial coordinate about $\rho=2/m$ has returned an identical metric. Given that at $\rho=\infty$ we have flat space this implies that at $\xi=\infty$ (or $\rho=0$) there is another separate flat space, not the physical singularity that might have been expected. The black hole exterior $m/2<\rho<\infty$ must be identical to the volume $m/2<\xi<\infty$ (also written as $m/2>\rho>0$), hence there are two asymptotically flat universes joined by the surface $\rho=m/2$; this surface is the Einstein-Rosen bridge. The Einstein-Rosen bridge is not traversable, to cross this bridge would require a spacelike worldline or faster than light travel which is forbidden. The geometry of the isotropic black hole is shown in Fig.~(\ref{intro:fig:scbh_er}).
+This is an intriguing result, inverting the radial coordinate about $\rho=2/m$ has returned an identical metric. Given that at $\rho=\infty$ we have flat space this implies that at $\xi=\infty$ (or $\rho=0$) there is another separate flat space, not the physical singularity that might have been expected. The black-hole exterior $m/2<\rho<\infty$ must be identical to the volume $m/2<\xi<\infty$ (also written as $m/2>\rho>0$), hence there are two asymptotically flat universes joined by the surface $\rho=m/2$; this surface is the Einstein-Rosen bridge. The Einstein-Rosen bridge is not traversable, to cross this bridge would require a spacelike worldline or faster than light travel which is forbidden. The geometry of the isotropic black hole is shown in Fig.~(\ref{intro:fig:scbh_er}).
 
 \begin{figure}[h!]
 \centering
-    \includegraphics[width=0.6\textwidth]{png/scbh_er_bridge.png}
-    \caption{This diagram shows the geometry of the spacetime covered by isotropic coordinates. There are two asymptotically flat ends joined by the Einstein-Rosen bridge at $r=\xi=m/2$.}
+    \includegraphics[width=0.75\textwidth]{png/tuuube.pdf}
+    \caption{This diagram shows the geometry of the spacetime covered by isotropic coordinates. There are two asymptotically flat ends joined by the Einstein-Rosen bridge at $\rho=\xi=m/2$.}
     \label{intro:fig:scbh_er}
 \end{figure}
 
-The reason that the physical singularity at $\rho=0$ does not appear in isotropic coordinates is deceptively simple; in isotropic coordinates $\rho=0$ does not correspond to the same point on the manifold as $r=0$ does in the polar areal gauge for any value of $t$, $\theta$ or $\phi$. Infact, the physical singularity of the black hole is outside of the patch on the manifold covered by isotropic coordinates. This can be illustrated by computing the Kretschmann scalar in isotropic coordinates. Using isotropic radial coordinate $\xi$ and polar areal radius $r$ we can write,
+The reason that the physical singularity at $\rho=0$ does not appear in isotropic coordinates is deceptively simple; in isotropic coordinates $\rho=0$ does not correspond to the same point on the manifold as $r=0$ does in the polar areal gauge for any value of $t$, $\theta$ or $\phi$. Infact, the physical singularity of the black hole is outside of the patch on the manifold covered by isotropic coordinates. This can be illustrated by computing the Kretschmann scalar in isotropic coordinates. Using the isotropic radial coordinate $\xi$ and polar areal radius $r$ we can write,
 \begin{equation}
 \xi \left(1 +\frac{m}{2\xi} \right)^2 = r,
 \end{equation}
-by comparing the $\dd\theta$ part of the line element. Substituting this into Eq.~(\ref{intro:eq:Kretsch}), the Kretschmann scalar in isotropic coordinates is,
+by comparing the $\dd\theta^2$ part of the line element. Substituting this into Eq.~(\ref{intro:eq:Kretsch}), the Kretschmann scalar in isotropic coordinates is,
 \begin{equation}
 k_{\rm iso} =  \frac{48 m^2\xi^6}{\left(\xi + \frac{m}{2} \right)^{12}}.
 \end{equation}
-This is finite for $0\leq \xi \leq \infty$ and hence there is no physical singularity covered by isotropic coordinates. In fact we can make a stronger deduction. The value of the Kretschmann scalar on the event horizon is,
+This is finite for $0\leq \xi \leq \infty$ and hence there is no physical singularity covered by isotropic coordinates; infact we can make the stronger statement that isotropic coordinates do not penetrate the event horizon. The value of the Kretschmann scalar on the event horizon is,
 \begin{equation}
 k_{\rm EH} = \frac{3}{4 m^4}.
 \end{equation}
-In isotropic coordinates, the minimum value that $k_{\rm iso}$ can take is found by $\partial k_{\rm iso} / \partial \xi =0 $ which has a turning point at $\xi = m/2$. At $\xi = m/2$ the value of $k_{\rm iso}$ is $3/(4m^4)$ which is therefore the minimum value of $k_{\rm iso}$. Given that $k<k_{\rm EH}$ in the interior of a black hole and $k_{\rm iso}\geq k_{\rm EH} \,\forall\, \xi$ then isotropic coordinates do not penetrate the event horizon.    
+In isotropic coordinates, the maximum value that $k_{\rm iso}$ can take is found by $\partial k_{\rm iso} / \partial \xi =0 $ which has a turning point at $\xi = m/2$. At $\xi = m/2$ the value of $k_{\rm iso}$ is $3/(4m^4)$ and given that $k>k_{\rm EH}$ in the interior of a black hole and $k_{\rm iso}\leq k_{\rm EH} \,\forall\, \xi$ then isotropic coordinates do not penetrate the event horizon.
 
 
 
@@ -1227,16 +1402,16 @@ In isotropic coordinates, the minimum value that $k_{\rm iso}$ can take is found
 % NO9T SURE I NEED TO DISCUSS PENROSE DIAGRAMS HERE?
 
 
-% RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT 
+% RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT
 
 % \begin{figure}[h!]
 % \centering
 %     \includegraphics[width=0.65\textwidth]{png/penrose_mink.png}
-%     \caption{Diagram for proof of Penrose diagram of Minkowski space (left) and black hole formation from collapse (right). As shown from a point $p$, a null geodesic can fall into a black hole, but once inside can never return. }
+%     \caption{Diagram for proof of Penrose diagram of Minkowski space (left) and black-hole formation from collapse (right). As shown from a point $p$, a null geodesic can fall into a black hole, but once inside can never return. }
 %     \label{intro:fig:scbh_penrose}
 % \end{figure}
 
-% RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT 
+% RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT
 
 % \begin{figure}[H]
 % \centering
@@ -1245,7 +1420,7 @@ In isotropic coordinates, the minimum value that $k_{\rm iso}$ can take is found
 %     \label{intro:fig:scbh_penrose}
 % \end{figure}
 
-% RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT 
+% RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT
 
 
 
@@ -1264,12 +1439,12 @@ In isotropic coordinates, the minimum value that $k_{\rm iso}$ can take is found
 % \end{equation}
 % where $a(t)$ is the scale factor of the universe and the spacelike metric $\bs{\gamma}$ is given by,
 % \begin{align}
-% \gamma_{ij} \dd x^i \dd x^j = 
+% \gamma_{ij} \dd x^i \dd x^j =
 % \Bigg\{
 % \begin{array}{ll}
 % {\dd r^2} + \sin^2(r) \left(\dd \theta^2 + \sin^2(\theta) \dd \phi^2 \right)\quad&, \,\,\,(\mathrm{closed}) \\
 % \dd r^2 + r^2 \left(\dd \theta^2 + \sin^2(\theta) \dd \phi^2 \right)\,\quad\quad&, \,\,\,(\mathrm{flat}) \\
-% {\dd r^2} + \sinh^2(r) \left(\dd \theta^2 + \sin^2(\theta) \dd \phi^2 \right)&, \,\,\,(\mathrm{hyperbolic} ) 
+% {\dd r^2} + \sinh^2(r) \left(\dd \theta^2 + \sin^2(\theta) \dd \phi^2 \right)&, \,\,\,(\mathrm{hyperbolic} )
 % \end{array}
 % \end{align}
 % for either uniformly curved hyperbolic space, uniformly curved closed space or flat space. This spacetime is called the Friedmann–Lemaître–Robertson–Walker spacetime and the trace of Einstein's equation in four dimensions becomes,
@@ -1278,7 +1453,7 @@ In isotropic coordinates, the minimum value that $k_{\rm iso}$ can take is found
 % \end{equation}
 % where Planck units are used and $T=T_{\mu\nu}g^{\mu\nu}$. It should be noted that $R$ and $T$ are constant over the entire spatial domain of the spacetime for a moment of time. This form of Einstein's equation makes it abundantly clear that the cosmological constant has the same effect on curvature as a uniform matter distribution. In the case $4 \Lambda = 8 \pi T$, Einstein's equation is once again $R=0$ and can be solved with the flat metric of Minkowski (but now it is not in vacuum unless $T=\Lambda=0$). If $8\pi T> 4\Lambda$, then the spatial hypersurface of the universe is closed and finite sized. Finally, if $4\Lambda > 8 \pi T$ then the spatial hypersurface of the universe is open or hyperbolic; as a radial geodesics is followed, the amount of space grows faster than the $r^2$ as expected in flat space.
 
-% Putting the ansatz for the metric and stress tensor into the Einstein equation returns an ODE for $a(t)$. Along with an equation of state, $P(\rho)$, the continuity equation $\nabla_\mu T^{\mu\nu}=0$ returns an ODE for $\rho(t)$. The two solutions $\rho(t)$ and $a(t)$, along with knowledge of whether the spatial time-slices are flat, closed or hyperbolic, fully specify the spacetime. These solutions cover many topics such as the big bang, inflation, universe expansion, bouncing cosmologies (ending with a big crunch) and also Minkowski space given the correct conditions. 
+% Putting the ansatz for the metric and stress tensor into the Einstein equation returns an ODE for $a(t)$. Along with an equation of state, $P(\rho)$, the continuity equation $\nabla_\mu T^{\mu\nu}=0$ returns an ODE for $\rho(t)$. The two solutions $\rho(t)$ and $a(t)$, along with knowledge of whether the spatial time-slices are flat, closed or hyperbolic, fully specify the spacetime. These solutions cover many topics such as the big bang, inflation, universe expansion, bouncing cosmologies (ending with a big crunch) and also Minkowski space given the correct conditions.
 
 
 
@@ -1287,16 +1462,16 @@ A common procedure in theoretical physics is to encapsulate the solution space i
 \begin{equation}
 S = \int \mathcal{L} \sqrt{-g} \,\dd x^4.
 \end{equation}
-Using the calculus of variation on this action returns differential equations governing the system. As found by Hilbert \cite{hilbert1915grundlagen} the following Lagrangian density $\mathcal{L}=R$, equal to the Ricci scalar, returns the vacuum Einstein equations under varying with respect to $g^{\mu\nu}$.
+Using the calculus of variation on this action returns differential equations governing the system. As found by Hilbert \cite{hilbert1915grundlagen} the following Lagrangian density $\mathcal{L}=R$, equal to the Ricci scalar, returns the vacuum Einstein equation under varying with respect to $g^{\mu\nu}$.
 \begin{align}
-\delta S &= \int \left[\sqrt{-g} (\delta R) + R (\delta \sqrt{-g})\right]\,\dd x^4 \\
-&= \int \left[\sqrt{-g} \delta(g^{\mu\nu}R_{\mu\nu}) -\frac{1}{2} \sqrt{-g} g_{\mu\nu}R (\delta g^{\mu\nu})\right]\,\dd x^4 \\
-&= \int \left[\sqrt{-g}g^{\mu\nu}(\delta R_{\mu\nu}) + \sqrt{-g}\left(R_{\mu\nu}-\frac{1}{2}R g_{\mu\nu} \right)\delta g^{\mu\nu}\right]\,\dd x^4 \label{intro:eq:varric}
-\end{align}  
+\delta S &= \int \left[\sqrt{-g} (\delta R) + R (\delta \sqrt{-g})\right]\,\dd x^4, \\
+&= \int \left[\sqrt{-g} \delta(g^{\mu\nu}R_{\mu\nu}) -\frac{1}{2} \sqrt{-g} g_{\mu\nu}R (\delta g^{\mu\nu})\right]\,\dd x^4, \\
+&= \int \left[\sqrt{-g}g^{\mu\nu}(\delta R_{\mu\nu}) + \sqrt{-g}\left(R_{\mu\nu}-\frac{1}{2}R g_{\mu\nu} \right)\delta g^{\mu\nu}\right]\,\dd x^4 \label{intro:eq:varric},
+\end{align}
 where we have used Eq.~(\ref{intro:eq:gdggdg}) to vary $\sqrt{-g}$. Remembering that the difference of two Christoffel symbols such as,
 \begin{equation}
 \delta \Gamma^{\lambda}_{\,\,\,\mu\nu} = \Gamma^{\lambda}_{\,\,\,\mu\nu}|_{g^{\mu\nu}+\delta g^{\mu\nu}} - \Gamma^{\lambda}_{\,\,\,\mu\nu}|_{g^{\mu\nu}}
-\end{equation} 
+\end{equation}
 is a tensor, and using normal coordinates discussed in section \ref{intro:sec:normal_coords} the left hand term of Eq.~(\ref{intro:eq:varric}) becomes
 \begin{align}
 g^{\mu\nu} \delta R_{\mu\nu} &= g^{\mu\nu}\left( \partial_\lambda \delta\Gamma^{\lambda}_{\,\,\,\mu\nu} - \partial_\nu \delta\Gamma^{\lambda}_{\,\,\,\mu\lambda} \right), \\
@@ -1307,12 +1482,12 @@ g^{\mu\nu} \delta R_{\mu\nu} &= g^{\mu\nu}\left( \partial_\lambda \delta\Gamma^{
 The first expression follows from contracting Eq.~(\ref{intro:eq:riemann_normalcoords}) for the Riemann tensor with normal coordinates and the second line swaps $\nabla_\mu \rightarrow \partial_\mu$ which are equivalent using normal coordinates. Putting everything together, $\delta S$ becomes
 \begin{align}
 \delta S &= \int \left[ \nabla_\mu X^\mu + \left( R_{\mu\nu}-\frac{1}{2}Rg_{\mu\nu}\right)\right]\sqrt{-g}\,\dd x^4, \\
-&= \int_B X^\mu \hat{s}_\mu \sqrt{|{}^{(3)}g|}\dd x^3 + \int \left[  R_{\mu\nu}-\frac{1}{2}Rg_{\mu\nu}\right]\sqrt{-g}\,\dd x^4, \\
+&= \int_B X^\mu \hat{s}_\mu \sqrt{|{}^{(3)}g|}\dd x^3 + \int \left[  R_{\mu\nu}-\frac{1}{2}Rg_{\mu\nu}\right]\sqrt{-g}\,\dd x^4,
 \end{align}
-where the integral over $B$ represents the surface integral over the boundary of our spacetime with metric ${}^{(3)}g_{ij}$; on B $\delta g^{\mu\nu}\rightarrow 0 $ and therefore $X^\mu \rightarrow 0$. Setting $\dd S =0$ implies
+where the integral over $B$ represents the surface integral over the boundary of our spacetime with metric ${}^{(3)}g_{ij}$ and unit normal $\hat{\bs{s}}$; on B $\delta g^{\mu\nu}\rightarrow 0 $ and therefore $X^\mu \rightarrow 0$. Setting $\dd S =0$ implies
 \begin{equation}
 R_{\mu\nu}-\frac{1}{2}Rg_{\mu\nu}=0,
-\end{equation} 
+\end{equation}
 which is the vacuum Einstein equation.
 
 \subsubsection*{Non-Vacuum Spacetimes}
@@ -1334,7 +1509,7 @@ which is solved by $\L_\Lambda = -2\Lambda$. Comparing the matter term instead r
 \begin{align}
 T_{\mu\nu}:&=-\frac{2}{\sqrt{-g}}\frac{\delta (\L_m \sqrt{-g})}{\delta g^{\mu\nu}},\\
 &= -2\frac{\delta \L_m}{\delta g^{\mu\nu}} + g_{\mu\nu} \L_m .\label{intro:eq:Tdef}
-\end{align} 
+\end{align}
 Collecting these results, the full Lagrangian is,
 \begin{align}
 \L = R + \frac{16 \pi G}{c^4} \L_m -2\Lambda,
@@ -1347,7 +1522,7 @@ The form of $\L_m$ is problem specific, depending on the type of matter. The equ
 \begin{equation}
 \sqrt{-g}\frac{\delta \L}{\delta \phi_i} -\partial_\mu \left(\sqrt{-g}\frac{\delta\L}{\delta \partial_\mu \phi_i}\right)=0.
 \end{equation}
-If the $\phi_i$ are scalar fields then the equation of motion simplifies, using Eq.~(\ref{intro:eq:div_vector}), to 
+If the $\phi_i$ are scalar fields then the equation of motion simplifies, using Eq.~(\ref{intro:eq:div_vector}), to
 \begin{equation}
 \frac{\delta \L}{\delta \phi_i} - \nabla_\mu \left(\frac{\delta\L}{\delta \nabla_\mu \phi_i}\right)=0.
 \end{equation}
@@ -1366,7 +1541,7 @@ S_f = \int \left( aRf(\psi) - b g^{\mu\nu}\partial_\mu \psi \partial_\nu \psi \r
 \end{equation}
 for some function $f$; note that if $f$ is constant then this action reduces to Eq.~(\ref{intro:eq:wavelagrangean}) for the minimally coupled scalar field. Varying $S_f$ with respect to $g^{\mu\nu}$ gives a modification of the Einstein equation,
 \begin{equation}
-f(\psi) R_{\mu\nu} - \frac{1}{2} R f(\psi)g_{\mu\nu} + R \frac{\delta f}{\delta g^{\mu\nu}}(\psi) = \frac{b}{a} \left(\nabla_\mu \psi \nabla_\nu \psi-\frac{1}{2} g_{\mu\nu} g^{\rho\sigma}\nabla_\rho \psi \nabla_\sigma\psi  \right), 
+f(\psi) R_{\mu\nu} - \frac{1}{2} R f(\psi)g_{\mu\nu} + R \frac{\delta f}{\delta g^{\mu\nu}}(\psi) = \frac{b}{a} \left(\nabla_\mu \psi \nabla_\nu \psi-\frac{1}{2} g_{\mu\nu} g^{\rho\sigma}\nabla_\rho \psi \nabla_\sigma\psi  \right),
 \end{equation}
 where a new type of term $ R \frac{\delta f}{\delta g^{\mu\nu}}(\psi)$ coupling gravity and matter has arisen; note this becomes the regular Einstein equation for a spacetime with a real massless scalar field $\psi$ if $f$ is constant. Varying $S_f$ with respect to $\psi$ instead gives the modified wave equation,
 \begin{equation}
@@ -1374,7 +1549,7 @@ g^{\mu\nu}\nabla_\mu \nabla_\nu \psi + \frac{a}{b}R \frac{\partial f}{\partial \
 \end{equation}
 which is equivalent to Eq.~(\ref{intro:eq:modified_wave}); note that this returns the regular curved space wave equation if $\partial f / \partial \psi=0$ and the regular wave equation in the flat-space limit for general $f$ since $R^\mu_{\,\,\,\nu\rho\sigma}=0$. Other popular methods of modifying gravity include second order curvature terms like $R^2$, $R_{\mu\nu}R^{\mu\nu}$, $R_{\mu\nu\rho\sigma}R^{\mu\nu\rho\sigma}$, even higher powers of curvature or different couplings between matter and curvature in the Lagrangian.
 
-The Lagrangian formulation of general relativity is especially useful for the more theoretical aspects of general relativity such as exotic matter and modified gravity. General relativity is not thought of as the correct or final theory of gravity. It is a classical field theory and does not describe particles or quantum mechanics. To date no successful quantisation of general relativity has been developed. Another problem with general relativity is that at the centre of black holes there are singularities which are usually viewed as unphysical. A similar singularity exists for the Coulomb force of a point particle and is resolved by quantum field theory (QFT); it is thought a similar thing may happen in a QFT for gravity but it is currently unknown.
+The Lagrangian formulation of general relativity is especially useful for the more theoretical aspects of general relativity such as exotic matter and modified gravity. General relativity is not thought of as the correct or final theory of gravity. It is a classical field theory and does not describe particles or quantum mechanics. To date no completely successful quantisation of general relativity has been developed. Another problem with general relativity is that at the centre of black holes there are singularities which are usually viewed as unphysical. A similar singularity exists for the Coulomb force of a point particle and is resolved by quantum field theory (QFT); it is thought a similar thing may happen in a QFT for gravity but it is currently unknown.
 
 Theories such as string theory and loop quantum gravity have attempted to describe a quantum theory of gravity but it is notoriously difficult to derive observable effects from them. Many modified gravity theories aim to describe the first leading-order deviation from general relativity towards quantum gravity. It is thought that deviations from general relativity might be seen in extremely high curvature regimes but there is no conclusive experimental evidence to date.
 
@@ -1382,30 +1557,30 @@ Theories such as string theory and loop quantum gravity have attempted to descri
 % \section{Might Delete}
 
 % \subsection{Differential Forms - MIGHT DELETE}
-% A differential $p$-form is an antisymetric $(0,p)$ tensor; the tensor components (e.g. $A_{\alpha\beta...\zeta}$) vanish if there is a repeating index, equal $1$ for an even permutation of indeces (like 1,2,3,...,N) and $-1$ for an odd permutation (such as 2,1,3,4,...,N). Note that a $0$-form is a function, a $1$-form is a co-vector and for an $N$-dimensional manifold the $N$-form is unique and the $p$-forms with $p>N$ vanish. 
+% A differential $p$-form is an antisymetric $(0,p)$ tensor; the tensor components (e.g. $A_{\alpha\beta...\zeta}$) vanish if there is a repeating index, equal $1$ for an even permutation of indeces (like 1,2,3,...,N) and $-1$ for an odd permutation (such as 2,1,3,4,...,N). Note that a $0$-form is a function, a $1$-form is a co-vector and for an $N$-dimensional manifold the $N$-form is unique and the $p$-forms with $p>N$ vanish.
 
 % When considering differential forms, the conventional covector basis is often changed from $\bs{\theta}^\mu$ to $\dd x^\mu$ which will lend itself nicely to integrating p-forms on manifolds later. This convention means we can write the metric as $\bs{g} = g_{\mu\nu} \dd x^\mu \otimes \dd x^\nu$; the same can be done for any tensor. Note that the metric cannot be a $2$-form as it is not a symmetric tensor, infact the metric is a symmetric tensor.
 
-% Differential forms have their own unique differential operator called the exterior derivative, it acts on a p-form and returns a $p+1$-form. For a $p$-form $\bs{A} = A_\mu \dd x^\mu$, the exterior derivative is given by 
+% Differential forms have their own unique differential operator called the exterior derivative, it acts on a p-form and returns a $p+1$-form. For a $p$-form $\bs{A} = A_\mu \dd x^\mu$, the exterior derivative is given by
 % \begin{equation}
 % (\dd A)_{\mu_1 ... \mu_{p+1}} = (p+1)\partial_{[ \mu_1}A_{\mu_2 ... \mu_{p+1}]},
 % \end{equation}
-% where the square brackets mean the antisymmetric [check as i might need epsilons here ]. This derivative guarentees to return a tensor without the need for a connection or metric on the manifold, unlike the partial derivative that we will see next. One common example of an exterior derivative is of a 1-form, say $\bs{A}$, giving 
+% where the square brackets mean the antisymmetric [check as i might need epsilons here ]. This derivative guarentees to return a tensor without the need for a connection or metric on the manifold, unlike the partial derivative that we will see next. One common example of an exterior derivative is of a 1-form, say $\bs{A}$, giving
 % \begin{equation}
 % (\dd A)_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu,
 % \end{equation}
-% which returns a 2-form. To be a 2-form the tensor must be antisymmetric under swapping indeces like $(\dd A)_{\mu\nu} = -(\dd A)_{\nu\mu}$, which is trivially true, and must transform like a tensor. Performing a coordinate transformation on $(\dd A)_{\mu\nu}$ we see it transforms like 
+% which returns a 2-form. To be a 2-form the tensor must be antisymmetric under swapping indeces like $(\dd A)_{\mu\nu} = -(\dd A)_{\nu\mu}$, which is trivially true, and must transform like a tensor. Performing a coordinate transformation on $(\dd A)_{\mu\nu}$ we see it transforms like
 % \begin{align}
-% \frac{\partial}{\partial \tilde{x}^\mu}\tilde{A}_\nu - \frac{\partial}{\partial \tilde{x}^\nu} \tilde{A}_\mu &= 
-% \frac{\partial x^\rho}{\partial \tilde{x}^\mu}\frac{\partial}{\partial {x}^\rho}\left(\frac{\partial {x}^\sigma}{\partial\tilde{x}^\nu}A_\sigma\right) 
+% \frac{\partial}{\partial \tilde{x}^\mu}\tilde{A}_\nu - \frac{\partial}{\partial \tilde{x}^\nu} \tilde{A}_\mu &=
+% \frac{\partial x^\rho}{\partial \tilde{x}^\mu}\frac{\partial}{\partial {x}^\rho}\left(\frac{\partial {x}^\sigma}{\partial\tilde{x}^\nu}A_\sigma\right)
 % - \frac{\partial x^\sigma}{\partial \tilde{x}^\nu}\frac{\partial}{\partial {x}^\sigma}\left(\frac{\partial {x}^\rho}{\partial\tilde{x}^\mu}A_\rho\right) ,\\
 % &= \frac{\partial x^\rho}{\partial \tilde{x}^\mu}\frac{\partial {x}^\sigma}{\partial\tilde{x}^\nu}\left(\frac{\partial}{\partial {x}^\rho} A_\sigma - \frac{\partial}{\partial {x}^\sigma} A_\rho\right)
-% + 
+% +
 % \frac{\partial x^\rho}{\partial \tilde{x}^\mu}\frac{\partial}{\partial {x}^\rho}\left(\frac{\partial {x}^\sigma}{\partial\tilde{x}^\nu}\right) A_\sigma
 % - \frac{\partial x^\sigma}{\partial \tilde{x}^\nu}\frac{\partial}{\partial {x}^\sigma}\left(\frac{\partial {x}^\rho}{\partial\tilde{x}^\mu}\right)A_\rho ,\\
 % &= \frac{\partial x^\rho}{\partial \tilde{x}^\mu}\frac{\partial {x}^\sigma}{\partial\tilde{x}^\nu}\left(\frac{\partial}{\partial {x}^\rho} A_\sigma - \frac{\partial}{\partial {x}^\sigma} A_\rho\right)
-% + 
-% \left(  \frac{\partial^2 {x}^\rho}{\partial \tilde{x}^\mu\partial\tilde{x}^\nu} 
+% +
+% \left(  \frac{\partial^2 {x}^\rho}{\partial \tilde{x}^\mu\partial\tilde{x}^\nu}
 % - \frac{\partial^2 {x}^\rho}{\partial\tilde{x}^\nu\partial\tilde{x}^\mu} \right)A_\rho ,\\
 % &= \frac{\partial x^\rho}{\partial \tilde{x}^\mu}\frac{\partial {x}^\sigma}{\partial\tilde{x}^\nu}\left(\frac{\partial}{\partial {x}^\rho} A_\sigma - \frac{\partial}{\partial {x}^\sigma} A_\rho\right),
 % \end{align}
@@ -1413,7 +1588,7 @@ Theories such as string theory and loop quantum gravity have attempted to descri
 
 % COVER HER THAT DD GIVES ZERO?
 % HODGE ? REWRITE DIFF EQNS WITH FORM NOTATION AND HODGE THEORY?
-% PROVE 
+% PROVE
 
 
 
@@ -1421,7 +1596,7 @@ Theories such as string theory and loop quantum gravity have attempted to descri
 % \subsection{Parallel Transport - MIGHT DELETE}
 
 
-% Parallel transport is the procedure of moving tensors along a smooth curve in a manifold. The curve $\Gamma$ can be expressed parametrically as $x^\mu(\tau)$ with respect to a parameter $\tau$, this automatically gives us the tangent vector $\bs{X}$ to $\Gamma$ like 
+% Parallel transport is the procedure of moving tensors along a smooth curve in a manifold. The curve $\Gamma$ can be expressed parametrically as $x^\mu(\tau)$ with respect to a parameter $\tau$, this automatically gives us the tangent vector $\bs{X}$ to $\Gamma$ like
 % \begin{equation}
 % X^\mu(\tau) = \frac{\partial x^\mu(\tau)}{\partial \tau} = \dot{x}^\mu.
 % \end{equation}
@@ -1441,7 +1616,7 @@ Theories such as string theory and loop quantum gravity have attempted to descri
 
 
 % \subsection{Low Curvature Limit of General Relativity - MIGHT DELETE}
-% An important use of General Relativity is it's use in the low curvature limit. The simplest example of this would be Special Relativity; if General Relativity i[DO] reproduce Special Relativity in the limit of vanishing curvature then it is. We work with the assumption of a vacuum spacetime with no Cosmological constant and seek solutions to the Einstein equation with metric $g_{\mu\nu} = \eta_{\mu\nu}$ where 
+% An important use of General Relativity is it's use in the low curvature limit. The simplest example of this would be Special Relativity; if General Relativity i[DO] reproduce Special Relativity in the limit of vanishing curvature then it is. We work with the assumption of a vacuum spacetime with no Cosmological constant and seek solutions to the Einstein equation with metric $g_{\mu\nu} = \eta_{\mu\nu}$ where
 % \begin{equation}
 % \eta_{\mu\nu} = \begin{pmatrix} -1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\\end{pmatrix}
 % \end{equation}
@@ -1469,10 +1644,10 @@ Theories such as string theory and loop quantum gravity have attempted to descri
 %                         R=& ({\eta^{\mu\nu}-h^{\mu\nu}})R_{\mu\nu},\\
 %                           &= \eta^{\mu\nu}\eta^{\rho\sigma}(\partial_\mu \partial_\rho h_{\sigma \nu} - \partial_\sigma \partial_\rho h_{\mu\nu}) +\mathcal{O}(h^2).
 % \end{align}
-% To simplify the solving of Einsteins eqn [FIX THIS] we can consider coordinate transformation like $x^\mu \rightarrow x^\mu + \zeta^\mu$ where $\zeta^\mu\ll1$. It can easily be shown that to first order in $\zeta^\mu$ and $h_{\mu\nu}$ that $h_{\mu\nu}$ transforms like 
+% To simplify the solving of Einsteins eqn [FIX THIS] we can consider coordinate transformation like $x^\mu \rightarrow x^\mu + \zeta^\mu$ where $\zeta^\mu\ll1$. It can easily be shown that to first order in $\zeta^\mu$ and $h_{\mu\nu}$ that $h_{\mu\nu}$ transforms like
 % \begin{equation}
 % h_{\mu\nu} \rightarrow h_{\mu\nu} + \partial_{\mu}\zeta_\nu + \partial_\nu \zeta_\mu
-% \end{equation} 
+% \end{equation}
 % where raising/lowering the indeces of $\bs{\zeta}$ is done with $\bs{\eta}$ as terms of order $\mathcal{O}(h)\mathcal{O}(\zeta)$ are ignored.
 
 
@@ -1482,6 +1657,3 @@ Theories such as string theory and loop quantum gravity have attempted to descri
 
 
 % [MENTION : GW'S, PRECESSION, LIGHT DEFLECTION, TIME DILATION AROUND EARTH/SUN, MAYBE MENTION INTERSTELLAR'S TIME DILATION? ARE THESE REALLY LOW ENERGY LIMIT? MENTION POST NEWTONIAN OTHER THINGS?]
-
-
-

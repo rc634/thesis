@@ -21,7 +21,7 @@ LIGO and Virgo observatories has opened up a new window on the
 Universe. This window has led to new probes of the nature of black holes
 (BHs) and to a wealth of astrophysical findings, challenging our
 understanding of stellar evolution and binary population models \cite{LIGOScientific:2016aoc,LIGOScientific:2018jsj,LIGOScientific:2020kqk,LIGOScientific:2021psn}.
-However, one of the most exciting and as yet unrealised prospects is
+However, one of the most exciting and as yet unrealized prospects is
 to use GWs to shed light on the nature of the dark matter (DM)
 component of the Universe's energy budget. In the absence of direct
 couplings between dark and baryonic matter, gravitational interactions will be the only way to
@@ -38,7 +38,7 @@ found for different types of bosons, including scalars \cite{Sanchis-Gual:2020mz
 
 Binary coalescences involving BSs
 represent a promising channel to observationally
-identify or constrain their populations. Their potentially high compactness implies that mergers can generate GWs detectable with present GW observatories. Most present work in the literature on BSs focuses on the GW signatures generated during the pre-merger infall or inspiral
+identify or constrain their populations. Their potentially high compactness implies that mergers can generate GWs detectable with present GW observatories. Most present work in the literature on BSs focusses on the GW signatures generated during the pre-merger infall or inspiral
 \cite{Herdeiro:2020kba,Cardoso:2017cfl,Sennett:2017etc,Diamond:2021dth,Pacilio:2020jza} and during the
 merger phase itself \cite{Amin:2020vja,Sanchis-Gual:2018oui,Sanchis-Gual:2020mzb,Sanchis_Gual_2019,Widdicombe:2019woy,
 Helfer:2018vtq,Palenzuela:2017kcg,Bezares:2018qwa,Liebling:2012fv,Choptuik:2009ww,Palenzuela:2007dm,Bezares:2017mzk,
@@ -63,7 +63,7 @@ is a highly perturbed BS with decreasing spin. Crucially, this spin-down occurs 
 The results of this work suggest that using standard merger templates consisting mostly of the inspiral and merger contributions may be insufficient to capture fundamental dynamics of a boson-star merger event. Rather, comprehensive BS searches likely require extended waveform templates which also capture the rich post-merger GW afterglow phenomenology.
 
 In \ref{ag:section:inital_data} we
-briefly summarise our computational framework, list the parameters
+briefly summarize our computational framework, list the parameters
 of our initial configurations and the grid setups employed in their
 time evolution, and introduce the diagnostics specific
 to our simulations. In Sec.~\ref{ag:sec:Remannt},
@@ -84,7 +84,7 @@ Sec.~\ref{ag:sec:methods} and Sec.~\ref{ag:sec:numacc}.
     in the orbital plane for a
     grazing collision of two boson stars
     of equal mass $M=0.395~{M_{\rm pl}}^2 m^{-1}$ starting with initial horizontal distance $80~m^{-1}$, impact
-    parameter $b=8~m^{-1}$ (vertical centre to centre distance) and initial velocity $v=\pm 0.1$
+    parameter $b=8~m^{-1}$ (vertical center to center distance) and initial velocity $v=\pm 0.1$
     in the $x$ (horizontal) direction. A video of the merger can be found at \url{https://youtu.be/JE5FRG7kgvU}.}
 \label{ag:fig:Panellog}}
 \end{center}
@@ -116,7 +116,7 @@ matter term for a complex scalar field, as in section \ref{boson:sec:action},
 
 
 Our construction of boson-star binary initial data can loosely
-be summarised in the following three steps.
+be summarized in the following three steps.
 \begin{enumerate}
     \item Generate a stationary, non-rotating solution for a single boson star (\ref{boson:sec:soliton}).
     \item Apply a Lorentz boost to obtain a single star with linear momentum (\ref{boson:sec:boost}).
@@ -343,7 +343,7 @@ with barely any signs of diminuition up to the end of our
 simulation, however, drastically
 differs from the familiar ringdown of a merged black hole. This
 {\it afterglow} signal is the main result of our study. We
-emphasise that this signal is well resolved (rather than
+emphasize that this signal is well resolved (rather than
 merely displaying numerical noise), and also persists with
 negligible variation under changes in the numerical resolution
 of our grid. As discussed in more detail in
@@ -461,10 +461,10 @@ initial mass.
     a crude estimate of for a similar black-hole collision radiating
     $\sim 2 \%$ of the initial mass.
     It is unclear what effect the ignored component of momentum parallel to 
-    initial boost in the boson-star binary has. 
+    inital boost in the boson-star binary has. 
     \color{black}
 }. \color{choral} Are you happy now David? this is the best black hole data i could find
-and they are gravitationally bound with elliptic orbits whereas the boson star is not bound (in Newtonian theory) and is a hyperbolic orbit.
+and they are gravitationally bound with ellyptic orbits whereas the boson star is not bound (in newtonian theory) and is a hyperbolic orbit.
 \color{black}
 By using windowing of the GW signal, we find that the rate of radiation in the afterglow (excluding the merger peak) decreases by about $20 \%$ over the course of the simulation.
 Note that the decay in GWs is much more protracted than the drop in the angular momentum displayed in Fig.~\ref{ag:fig:AngMom}.
@@ -481,11 +481,11 @@ of the $(2,2)$ and $(2,0)$ modes are almost exactly
 in anti-phase around merger and remain so in the early afterglow
 around $t\sim 1\,000~m^{-1}$. At late times
 $t\gtrsim 3\,000~m^{-1}$, however, the
-two modes are almost synchronised with their extrema
+two modes are almost synchronized with their extrema
 in good overlap.
-The timing of this synchronisation coincides remarkably well
+The timing of this synchronization coincides remarkably well
 with the drop in angular momentum shown in Fig.~\ref{ag:fig:AngMom}
-and we hypothesise the two effects are causally related.
+and we hypothesize the two effects are causally related.
 This would imply a concrete observational signature of the
 BS angular momentum in the emitted GW afterglow signal.
 
@@ -530,7 +530,7 @@ in compact-binary-coalescence and continuous-GW searches
 \cite{LIGOScientific:2019yhl,KAGRA:2021una,LIGOScientific:2021jlr,LIGOScientific:2021oez,LIGOScientific:2022lsr,LIGOScientific:2022pjk,LIGOScientific:2021hvc,LIGOScientific:2021ozr}.
 \color{orchid} Notably the late time scalar field configuration radiates angular
 momentum a few orders of magnitude slower than suggested by perturbation theory;
-the dramatic failure of perturbation theory in this case is a consequence of
+the dramatic failure of perturbation theory in this case is a consequency of
 the highly nonlinear nature of the object in question.
 \color{black}
 
@@ -538,11 +538,11 @@ There are several implications resulting from our
 findings. In terms of search strategies, as mentioned in the introduction, these signatures are likely to be missed if we focus exclusively on constructing pre-merger inspiral and merger waveform templates. The systematic construction of waveform templates for post-merger signatures of this type of binaries
 is in its infancy at present and an immediate challenge
 for further work consists in identifying an effective
-parameterisation of the GW signatures. Our results furthermore
+parameterization of the GW signatures. Our results furthermore
 demonstrate an efficient loss of angular momentum in BS mergers
 resulting in a horizon-less remnant, consistent with previous studies noticing that the spin of rotating BSs decays with a fairly short half-life of $4\times 10^3~m^{-1}$ \cite{Sanchis-Gual:2019ljs}. We also observe
 a remarkable correlation between the BS remnant's spin-down
-in Fig.~\ref{ag:fig:AngMom} with a gradual synchronisation
+in Fig.~\ref{ag:fig:AngMom} with a gradual synchronization
 of the local extrema in the GW amplitudes of the $(2,2)$
 and $(2,0)$ modes; from near anti-alignment of the
 peaks around merger and shortly thereafter, the extrema
@@ -551,7 +551,7 @@ interval $\Delta t \approx 2\,000~m^{-1}$ (see
 Fig.~\ref{ag:fig:GW_signal}), coinciding
 exactly with the time during which the angular momentum
 drops to a negligible level.
-We tentatively conclude that through this synchronisation,
+We tentatively conclude that through this synchronization,
 the GW afterglow carries important information about the remnant's dynamical evolution.
 
 Given the extraordinary length of the afterglow signal, one
@@ -562,7 +562,7 @@ to that expected from more traditional binary mergers
 \cite{Croon:2018ftb}. Evidently, more exploration of the
 underlying BS parameter space and the resulting afterglow
 phenomenology will be required to relate theoretical
-estimates of the GW background to hypothesised BS populations.
+estimates of the GW background to hypothesized BS populations.
 We reiterate, however, that nothing about our BS configurations
 has been fine-tuned, so that we expect the afterglow to be a
 rather generic feature of BS coalescences as long as these do
@@ -729,7 +729,7 @@ of the 3+1 variables is
 \end{align}
 for a spacelike vector $\bs\xi$. The corresponding term
 for a timelike vector $\bs\xi$ is given (see Eq.~(19) in \cite{Clough:2021qlv}).
-We can thus generalise \ref{ag:eq:traditional_conservation} to the exact conservation law
+We can thus generalize \ref{ag:eq:traditional_conservation} to the exact conservation law
 \begin{equation}
     \partial_t\mathbin{{L}} +\,
     \mathbin{{\Delta}} =
@@ -785,20 +785,20 @@ To assess the accuracy of our results we have performed simulations with four di
 of $1024~m^{-1}$. As demonstrated in Fig.~\ref{ag:fig:Convergence}, the individual wave signals obtained for this range of resolution are
 in excellent agreement.
 More quantitatively, we observe convergence at about 1st order convergence
-using the four resolutions for the $\ell = 2~m=2$ mode of $r\Psi_4$. Additionally, we estimate the discretisation and error from the finite extraction region in $r\Psi_4$ and we find that the latter dominates, causing a $\sim 7\%$ error.
+using the four resolutions for the $\ell = 2~m=2$ mode of $r\Psi_4$. Additionally, we estimate the discretization and error from the finite extraction region in $r\Psi_4$ and we find that the latter dominates, causing a $\sim 7\%$ error.
 
-\color{choral} i actually re-ran the 
+\color{choral} i actaulyl re-ran the 
 convergence analysis of the original gw data for just an initial time 
 and it was no better. i asked Uli and he thinks the wave signal for 
-boson stars may be trickier to get to converge than black holes. 
-one reason is that there are just more fields, and both the real and imaginary
+boson stars may be tricker to get to converge than black holes. 
+one reason is that there are just more fields, adn both the real and imaginary
 scalar fields are oscillating wildly. Stars are also less stiff to 
 mutual perturbation than black holes. So there may be high frequency noise
 entering the boson star wave signal. I'm really not sure what I should put here in 
 the text to comment on the convergence - maybe just a reiteration of that i've put here?
 
-the differences in the wave signals at different resolutions are very small though (sub percent ish) so we are well resolved just not in a nice convergent regime. Also 
-AMR always has a tricky relationship with convergence in general.
+the differences in the wave signals at different reslutions are very small though (sub percent ish) so we are well resolved jsut not in a nice convergent regime. Also 
+amr always has a tricky relationship with convergence in general.
 \color{black}
 
 
@@ -808,7 +808,7 @@ AMR always has a tricky relationship with convergence in general.
     \caption{{\bf Angular momentum error }: We numerically
     verify the conservation Eq.~\ref{ag:eqn:conserved_ang} for the simulations with parameters
     given in Table \ref{ag:tab:Overview Runs}. In the continuum limit this
-    quantity becomes zero. The coloured curves
+    quantity becomes zero. The colored curves
     obtained for different resolutions demonstrate
     conservation with excellent accuracy of
     about $\sim 0.8\%$ error after 16000$~m^{-1}$

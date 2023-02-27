@@ -4,7 +4,7 @@ This thesis starts with a general introduction to differential geometry,
 tensor calculus and general relativity. Next, a more specialised introduction to the
 3+1 spacetime decomposition, numerical relativity and compact objects, with focus
 on boson stars, was given. After this the details of
-numerical methods for PDEs and {\sc GRChombo}, the main numerical code used throughout
+numerical methods for PDE's and {\sc GRChombo}, the main numerical code used throughout
 the thesis, were covered. Along with this, the creation of boson star initial data,
 including boosts and the naive superposition of solutions, is given in
 detail along with simple examples of their collisions in three spatial dimensions.
@@ -58,7 +58,7 @@ $\mathcal{Q}$.
 Next, expressions for $\mathcal{Q}$, $\mathcal{F}$ and $\mathcal{S}$ are derived for
 energy momentum-currents (of matter) where $\mathcal{S}$ represents the creation/destruction of
 charge; $\mathcal{S}$ is called the source term. These expressions are then given for use
-with angular momentum explicitly; expressions for the energy density are also given
+with angular momentum explicity; expressions for the energy density are also given
 in agreement with the literature \cite{Clough_2021}. The three variables give an intuitive understanding
 of the behaviour of angular momentum (or any charge) where $\mathcal{Q}$ is the amount of
 angular momentum in the matter field, $\mathcal{F}$ is the flux leaving an arbitrary
@@ -77,13 +77,13 @@ a numerical relativity evolution. In the continuum limit, the QFS equation~\ref{
 should be obeyed exactly and the error measures defined in section \ref{q:sect:conv} should vanish.
 In the case that Einstein's equation is not assumed to hold in the underlying continuity 
 equation of the QFS system, 
-this error measure will not depend on constraint violation; for example the 
+this error measure will not depend on constaint violation; for example the 
 continuity of energy-momentum currents only assumes that $\nabla_\mu T^{\mu\nu}=0$.
 
 
 After the derivation and technical background of the QFS system had been derived, it
 was applied to an example spacetime. This example consists of the numerical simulation
-of a boson star collision using the {\sc GRChombo} code, described in section \ref{grchombo:sec:grchombo},
+of a boson star collision using the {\sc GRchombo} code, described in section \ref{grchombo:sec:grchombo},
 ending in the formation of a quasi-stable object. Before the collision of the stars, 
 the angular momentum measure agrees well with the Newtonian limit which is a good
 check on the normalisation of the QFS system's angular momentum variable. The relative error 
@@ -115,8 +115,8 @@ as provide a powerful check on simulation resolution.
 
 Combining the aforementioned superposition improvement scheme with the 
 diagnostic power of the QFS system, a boson-star collision with a long-lived 
-remnant was then studied. The boson-star binary performed a grazing collision that 
-promptly collided to form a highly perturbed remnant. This remnant 
+remnant was then studied. The boson-star binary perfomed a grazing collision that 
+promptly collided to form a highly purturbed remnant. This remnant 
 produces a long-lasting gravitational wave (GW) {\it afterglow} which differs greatly from more
 traditional GW sources. This gravitational afterglow provides a distinct channel for 
 detection, given its long timescale, and if these kinds of collisions occur in nature
@@ -156,10 +156,10 @@ In all cases the black holes were initially placed on the x-axis with boosts of
 equal and opposite momentum perpendicular to the x-axis; therefore the x-axis is
 initially the periapsis.
 
-In the black-hole binaries simulated, a maximum in the kick magnitude is seen for an eccentricity
+In the black-hole binaries simulted, a maximum in the kick magnitude is seen for an eccentricity
 of $e\sim 0.5$ and is approximately $25\%$ larger than the quasi circular case. In addition
 to this, the kick magnitude is seen to oscillate, with respect to eccentricity, by
-$\sim 10\%$ of the quasicircular limit. As the eccentricity tends to unity,
+$\sim 10\%$ of the quasicircular limit. As the eccenticity tends to unity,
 in the case of a headon collision, the kick magnitude becomes small. These simulations
 are simulated with two codes, {\sc GRChombo} and {\sc Lean}; both codes show an error
 budget of $3$-$4\,\%$.
@@ -170,11 +170,11 @@ The notion of an infall angle in
 general relativity is not well defined and it is approximated here by considering the
 angle made by the final kick to the x-axis. When the kick magnitude is plotted as a
 function of infall angle (in Figure~\ref{bhkick:fig:theta-plots}) it displays the
-hypothesised oscillatory behaviour with an period close to $2\pi$; any deviation
+hypothesized oscillatory behaviour with an period close to $2\pi$; any deviation
 here is attributed to periapsis precession.
 
-The dependence of the oscillatory behaviour of the kick with respect to the initial
-eccentricity is explored in the second set of simulations with
+The dependance of the oscillatory behaviour of the kick with respect to the initial
+eccenticity is explored in the second set of simulations with
 $q=1/2$ and a larger initial separation (or a less negative binding energy). The
 oscillations are more pronounced in this situation which is attributed to the longer
 infall time which gives more time for phase differences between similar binaries to
@@ -183,13 +183,13 @@ build up.
 While the findings of these black-hole kick simulations answer many questions, they
 also ask more. From a study of two sets of simulations with different
 initial separations we are led to believe
-that the oscillatory dependence of the kick on the initial 
+that the oscillatory dependance of the kick on the initial 
 separation is sensitive; to what extent this is hidden by
 gravitational circularisation
 \footnote{Gravitational circularisation refers to the natural phenomenon in general
 relativity where eccentricity is damped over time eventually turning an eccentric
 binary into a quasi-circular one.}
-over longer inspirals is unknown. A study of long eccentric inspirals would likely require post Newtonian
+over longer inspirals is unknown. A study of long eccentic inspirals would likely require post newtonian
 methods. Other interesting studies could include tracking the precession of
 the periapsis in this strong gravity regime, kicks in
 high boost grazing collisions or even the possibility of kicks in compact-object

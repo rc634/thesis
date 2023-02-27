@@ -1,154 +1,149 @@
-\contentsline {chapter}{\numberline {1}Introduction to Differential Geometry and General Relativity}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Introduction to General Relativity}{2}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Introduction to Compact Objects and Boson Stars}{3}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Conventions}{4}{subsection.1.1.3}
-\contentsline {section}{\numberline {1.2}Differential Geometry}{5}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Introduction to Geometry and Manifolds}{5}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Functions, Curves and Tensors on Manifolds}{6}{subsection.1.2.2}
-\contentsline {subsubsection}{Multilinear Maps and Tensors}{6}{section*.4}
-\contentsline {subsection}{\numberline {1.2.3}The Inner Product and the Metric}{7}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}Maps Between Manifolds}{8}{subsection.1.2.4}
-\contentsline {subsubsection}{Diffeomorphisms}{9}{section*.5}
-\contentsline {subsubsection}{Projection Mappings}{9}{section*.6}
-\contentsline {subsubsection}{Null Hypersurfaces}{10}{section*.7}
-\contentsline {subsection}{\numberline {1.2.5}Lie Derivatives}{11}{subsection.1.2.5}
-\contentsline {subsection}{\numberline {1.2.6}Lengths on Manifolds}{12}{subsection.1.2.6}
-\contentsline {subsection}{\numberline {1.2.7}Volumes on Manifolds}{12}{subsection.1.2.7}
-\contentsline {subsection}{\numberline {1.2.8}Geodesics}{13}{subsection.1.2.8}
-\contentsline {section}{\numberline {1.3}Tensor Calculus and Curvature}{15}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}General Covariance and Coordinate transformations}{15}{subsection.1.3.1}
-\contentsline {subsubsection}{Tensor Densities}{16}{section*.9}
-\contentsline {subsubsection}{Lie Derivatives of Tensor Densities}{16}{section*.10}
-\contentsline {subsection}{\numberline {1.3.2}The Covariant Derivative}{17}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}The Connection}{19}{subsection.1.3.3}
-\contentsline {subsubsection}{Torsion}{20}{section*.11}
-\contentsline {subsubsection}{Metric Compatibility}{20}{section*.12}
-\contentsline {subsubsection}{The Levi-Civita Connection}{21}{section*.13}
-\contentsline {subsubsection}{Lie Derivatives in the Levi Civita Connection}{21}{section*.14}
-\contentsline {subsubsection}{Normal Coordinates}{22}{section*.15}
-\contentsline {subsection}{\numberline {1.3.4}Curvature Tensors}{22}{subsection.1.3.4}
-\contentsline {subsubsection}{Symmetries of the Riemann Tensor}{23}{section*.16}
-\contentsline {subsubsection}{Contractions of the Riemann Tensor}{24}{section*.17}
-\contentsline {subsection}{\numberline {1.3.5}The Divergence Theorem}{24}{subsection.1.3.5}
-\contentsline {section}{\numberline {1.4}Relativity}{27}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Special Relativity}{27}{subsection.1.4.1}
-\contentsline {subsubsection}{Minkowski Space}{27}{section*.18}
-\contentsline {subsection}{\numberline {1.4.2}General Relativity}{28}{subsection.1.4.2}
-\contentsline {subsubsection}{Worldlines and Causality}{29}{section*.19}
-\contentsline {subsection}{\numberline {1.4.3}Physics in Curved Space}{29}{subsection.1.4.3}
-\contentsline {subsubsection}{The Wave Equation}{29}{section*.20}
-\contentsline {subsubsection}{Electromagnetism}{30}{section*.21}
-\contentsline {subsubsection}{The Stress-Energy-Momentum Tensor}{31}{section*.22}
-\contentsline {subsection}{\numberline {1.4.4}The Einstein Equation}{32}{subsection.1.4.4}
-\contentsline {subsubsection}{The Cosmological Constant}{32}{section*.24}
-\contentsline {subsection}{\numberline {1.4.5}Black Holes}{33}{subsection.1.4.5}
-\contentsline {subsubsection}{Coordinate Singularities and Physical Singularities}{34}{section*.26}
-\contentsline {subsubsection}{Isotropic Coordinates}{34}{section*.27}
-\contentsline {subsection}{\numberline {1.4.6}The Lagrangian Formulation of General Relativity}{36}{subsection.1.4.6}
-\contentsline {chapter}{\numberline {2}Numerical Relativity and Boson Stars}{40}{chapter.2}
-\contentsline {section}{\numberline {2.1}Numerical Relativity}{41}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Spacetime Foliation}{41}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}The 3+1 Decomposition}{42}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Gauss, Codazzi and Ricci Equations}{43}{subsection.2.1.3}
-\contentsline {subsubsection}{The Gauss Equations}{43}{section*.31}
-\contentsline {subsubsection}{The Codazzi Equations}{43}{section*.32}
-\contentsline {subsubsection}{The Ricci Equation}{44}{section*.33}
-\contentsline {subsection}{\numberline {2.1.4}Decomposition of Einstein's Equation}{45}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}Foliation Adapted Coordinates}{46}{subsection.2.1.5}
-\contentsline {subsection}{\numberline {2.1.6}ADM Equations}{47}{subsection.2.1.6}
-\contentsline {subsection}{\numberline {2.1.7}BSSN Formalism}{47}{subsection.2.1.7}
-\contentsline {subsection}{\numberline {2.1.8}Z4 Formalism}{48}{subsection.2.1.8}
-\contentsline {subsection}{\numberline {2.1.9}CCZ4 Formalism}{49}{subsection.2.1.9}
-\contentsline {subsection}{\numberline {2.1.10}Gauge Conditions}{51}{subsection.2.1.10}
-\contentsline {subsubsection}{Lapse Slicing Conditions}{51}{section*.36}
-\contentsline {subsubsection}{Shift Conditions}{52}{section*.38}
-\contentsline {subsubsection}{Moving Puncture Gauge}{53}{section*.39}
-\contentsline {section}{\numberline {2.2}Mathematical Modelling of Boson Stars}{54}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Action and Lagrangian}{54}{subsection.2.2.1}
-\contentsline {subsubsection}{Comparison of Boson Stars to Neutron Stars}{54}{section*.40}
-\contentsline {subsection}{\numberline {2.2.2}Solitons}{55}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}3+1 Klein Gordon System}{56}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Klein Gordon's Noether Charge}{57}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Boosted Boson Stars and Black Holes}{59}{subsection.2.2.5}
-\contentsline {chapter}{\numberline {3}Numerical Methods and {\sc GRChombo}}{62}{chapter.3}
-\contentsline {section}{\numberline {3.1}Numerical Methods}{63}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Introduction to Numerical Methods}{63}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Numerical Discretisation of Spacetime}{63}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Boundary Conditions}{64}{subsection.3.1.3}
-\contentsline {subsubsection}{Sommerfeld Boundary Conditions}{65}{section*.41}
-\contentsline {subsection}{\numberline {3.1.4}The Method of Lines}{65}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Integration of ODEs}{66}{subsection.3.1.5}
-\contentsline {subsubsection}{The Runge Kutta Method}{67}{section*.42}
-\contentsline {section}{\numberline {3.2}\sc GRChombo}{68}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Overview of {\sc GRChombo}}{68}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Simulation Units}{69}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Boson Star Initial Data}{69}{subsection.3.2.3}
-\contentsline {subsubsection}{Shooting Method}{70}{section*.43}
-\contentsline {subsection}{\numberline {3.2.4}Single Star Evolution}{73}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Superposition of Initial Data}{73}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Collisions of Boson Stars}{74}{subsection.3.2.6}
-\contentsline {subsubsection}{Headon Collision}{74}{section*.47}
-\contentsline {subsubsection}{Grazing Collision}{76}{section*.50}
-\contentsline {chapter}{\numberline {4}Malaise and Remedy of Binary Boson Star Initial Data}{80}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{81}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Boson Star Initial Data}{83}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Boson Star Binary Initial Data}{84}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Simple Superposition of Boson Stars}{85}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Improved Superposition}{86}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Models and Results}{87}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Initial Constraint Violations}{87}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Convergence and Numerical Uncertainties}{89}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Radiated Gravitational Wave Energy}{90}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Evolution of the Scalar Amplitude and Gravitational Collapse}{93}{subsection.4.3.4}
-\contentsline {section}{\numberline {4.4}Conclusions}{95}{section.4.4}
-\contentsline {section}{\numberline {4.5}Analytic Treatment of the Hamiltonian Constraint}{96}{section.4.5}
-\contentsline {chapter}{\numberline {5}Local Continuity of Angular Momentum and Noether Charge for Matter in General Relativity}{97}{chapter.5}
-\contentsline {section}{\numberline {5.1}Local Continuity of Angular Momentum and Noether Charge for Matter in General Relativity}{98}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Introduction}{98}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Derivation of the QFS System}{99}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Application to Spherical extraction}{102}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Noether Currents}{104}{subsection.5.1.4}
-\contentsline {subsubsection}{Complex Scalar Fields}{104}{section*.68}
-\contentsline {subsubsection}{Complex Vector Fields}{105}{section*.69}
-\contentsline {subsection}{\numberline {5.1.5}Energy-Momentum Currents}{106}{subsection.5.1.5}
-\contentsline {subsubsection}{Angular Momentum}{107}{section*.70}
-\contentsline {subsubsection}{Energy}{108}{section*.71}
-\contentsline {subsection}{\numberline {5.1.6}Numerical Application}{108}{subsection.5.1.6}
-\contentsline {subsubsection}{Numerical Setup of Simulations}{108}{section*.72}
-\contentsline {subsubsection}{Convergence Analysis}{111}{section*.76}
-\contentsline {subsection}{\numberline {5.1.7}Conclusion}{114}{subsection.5.1.7}
-\contentsline {subsection}{\numberline {5.1.8}Source Term Calculation}{115}{subsection.5.1.8}
-\contentsline {subsection}{\numberline {5.1.9}Generality of Result}{116}{subsection.5.1.9}
-\contentsline {chapter}{\numberline {6}The Gravitational Afterglow of Boson Stars}{119}{chapter.6}
-\contentsline {section}{\numberline {6.1}The Gravitational Afterglow of Boson Stars}{120}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Introduction}{120}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Simulation Setup}{121}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}The Merger Remnant}{123}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}Gravitational Wave Signal}{124}{subsection.6.1.4}
-\contentsline {subsection}{\numberline {6.1.5}Conclusion}{127}{subsection.6.1.5}
-\contentsline {subsection}{\numberline {6.1.6}Angular Momentum Measure}{128}{subsection.6.1.6}
-\contentsline {subsection}{\numberline {6.1.7}Numerical Accuracy}{131}{subsection.6.1.7}
-\contentsline {chapter}{\numberline {7}Anomalies in the Gravitational Recoil of Eccentric Black-Hole Mergers with Unequal Mass Ratios}{132}{chapter.7}
-\contentsline {section}{\numberline {7.1}Introduction}{133}{section.7.1}
-\contentsline {section}{\numberline {7.2}Computational Framework and Set of Simulations}{135}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Numerical Methods}{135}{subsection.7.2.1}
-\contentsline {subsubsection}{\textsc {GRChombo} setup}{135}{section*.92}
-\contentsline {subsubsection}{\textsc {Lean} setup}{135}{section*.93}
-\contentsline {subsubsection}{Initial Data}{136}{section*.94}
-\contentsline {subsection}{\numberline {7.2.2}Black-Hole Binary Configurations}{136}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Diagnostics}{137}{subsection.7.2.3}
-\contentsline {section}{\numberline {7.3}Results}{139}{section.7.3}
-\contentsline {section}{\numberline {7.4}Conclusions}{144}{section.7.4}
-\contentsline {section}{\numberline {7.5}Numerical Accuracy}{145}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}\textsc {GRChombo} Convergence}{147}{subsection.7.5.1}
-\contentsline {subsection}{\numberline {7.5.2}\textsc {Lean} Convergence}{147}{subsection.7.5.2}
-\contentsline {subsection}{\numberline {7.5.3}Comparison between \textsc {GRChombo} and \textsc {Lean}}{148}{subsection.7.5.3}
-\contentsline {section}{\numberline {7.6}\textsc {GRChombo} Tagging Criterion}{149}{section.7.6}
-\contentsline {chapter}{\numberline {8}Conclusions and Bibliography}{150}{chapter.8}
-\contentsline {section}{\numberline {8.1}Summary}{151}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}QFS stuff}{151}{subsection.8.1.1}
-\contentsline {section}{\numberline {8.2}Copied Stuff}{152}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}spinning bs paper stuff}{153}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}black holes final}{153}{subsection.8.2.2}
-\contentsline {subsection}{\numberline {8.2.3}stuff}{154}{subsection.8.2.3}
+\contentsline {chapter}{\numberline {1}Introduction to Differential Geometry and General Relativity}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Introduction to General Relativity}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Introduction to Compact Objects and Boson Stars}{3}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Conventions}{4}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Differential Geometry}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Introduction to Geometry and Manifolds}{5}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Functions, Curves and Tensors on Manifolds}{6}{subsection.1.2.2}%
+\contentsline {subsubsection}{Multilinear Maps and Tensors}{6}{section*.4}%
+\contentsline {subsection}{\numberline {1.2.3}The Inner Product and the Metric}{7}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Maps Between Manifolds}{8}{subsection.1.2.4}%
+\contentsline {subsubsection}{Diffeomorphisms}{9}{section*.5}%
+\contentsline {subsubsection}{Projection Mappings}{9}{section*.6}%
+\contentsline {subsubsection}{Null Hypersurfaces}{10}{section*.7}%
+\contentsline {subsection}{\numberline {1.2.5}Lie Derivatives}{10}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}Lengths on Manifolds}{12}{subsection.1.2.6}%
+\contentsline {subsection}{\numberline {1.2.7}Volumes on Manifolds}{12}{subsection.1.2.7}%
+\contentsline {subsection}{\numberline {1.2.8}Geodesics}{13}{subsection.1.2.8}%
+\contentsline {section}{\numberline {1.3}Tensor Calculus and Curvature}{15}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}General Covariance and Coordinate transformations}{15}{subsection.1.3.1}%
+\contentsline {subsubsection}{Tensor Densities}{16}{section*.9}%
+\contentsline {subsubsection}{Lie Derivatives of Tensor Densities}{16}{section*.10}%
+\contentsline {subsection}{\numberline {1.3.2}The Covariant Derivative}{17}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}The Connection}{19}{subsection.1.3.3}%
+\contentsline {subsubsection}{Torsion}{20}{section*.11}%
+\contentsline {subsubsection}{Metric Compatibility}{20}{section*.12}%
+\contentsline {subsubsection}{The Levi-Civita Connection}{21}{section*.13}%
+\contentsline {subsubsection}{Lie Derivatives in the Levi Civita Connection}{21}{section*.14}%
+\contentsline {subsubsection}{Normal Coordinates}{22}{section*.15}%
+\contentsline {subsection}{\numberline {1.3.4}Curvature Tensors}{22}{subsection.1.3.4}%
+\contentsline {subsubsection}{Symmetries of the Riemann Tensor}{22}{section*.16}%
+\contentsline {subsubsection}{Contractions of the Riemann Tensor}{23}{section*.17}%
+\contentsline {subsection}{\numberline {1.3.5}The Divergence Theorem}{24}{subsection.1.3.5}%
+\contentsline {section}{\numberline {1.4}Relativity}{27}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Special Relativity}{27}{subsection.1.4.1}%
+\contentsline {subsubsection}{Minkowski Space}{27}{section*.18}%
+\contentsline {subsection}{\numberline {1.4.2}General Relativity}{28}{subsection.1.4.2}%
+\contentsline {subsubsection}{Worldlines and Causality}{28}{section*.19}%
+\contentsline {subsection}{\numberline {1.4.3}Physics in Curved Space}{29}{subsection.1.4.3}%
+\contentsline {subsubsection}{The Wave Equation}{29}{section*.20}%
+\contentsline {subsubsection}{Electromagnetism}{30}{section*.21}%
+\contentsline {subsubsection}{The Stress-Energy-Momentum Tensor}{31}{section*.22}%
+\contentsline {subsection}{\numberline {1.4.4}The Einstein Equation}{32}{subsection.1.4.4}%
+\contentsline {subsubsection}{The Cosmological Constant}{32}{section*.24}%
+\contentsline {subsection}{\numberline {1.4.5}Black Holes}{33}{subsection.1.4.5}%
+\contentsline {subsubsection}{Coordinate Singularities and Physical Singularities}{34}{section*.26}%
+\contentsline {subsubsection}{Isotropic Coordinates}{34}{section*.27}%
+\contentsline {subsection}{\numberline {1.4.6}The Lagrangian Formulation of General Relativity}{36}{subsection.1.4.6}%
+\contentsline {chapter}{\numberline {2}Numerical Relativity and Boson Stars}{40}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Numerical Relativity}{41}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Spacetime Foliation}{41}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}The 3+1 Decomposition}{41}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Gauss, Codazzi and Ricci Equations}{43}{subsection.2.1.3}%
+\contentsline {subsubsection}{The Gauss Equations}{43}{section*.31}%
+\contentsline {subsubsection}{The Codazzi Equations}{43}{section*.32}%
+\contentsline {subsubsection}{The Ricci Equation}{44}{section*.33}%
+\contentsline {subsection}{\numberline {2.1.4}Decomposition of Einstein's Equation}{44}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Foliation Adapted Coordinates}{46}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}ADM Equations}{47}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.1.7}BSSN Formalism}{47}{subsection.2.1.7}%
+\contentsline {subsection}{\numberline {2.1.8}Z4 Formalism}{48}{subsection.2.1.8}%
+\contentsline {subsection}{\numberline {2.1.9}CCZ4 Formalism}{49}{subsection.2.1.9}%
+\contentsline {subsection}{\numberline {2.1.10}Gauge Conditions}{51}{subsection.2.1.10}%
+\contentsline {subsubsection}{Lapse Slicing Conditions}{51}{section*.36}%
+\contentsline {subsubsection}{Shift Conditions}{52}{section*.38}%
+\contentsline {subsubsection}{Moving Puncture Gauge}{53}{section*.39}%
+\contentsline {section}{\numberline {2.2}Mathematical Modelling of Boson Stars}{54}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Action and Lagrangian}{54}{subsection.2.2.1}%
+\contentsline {subsubsection}{Comparison of Boson Stars to Neutron Stars}{54}{section*.40}%
+\contentsline {subsection}{\numberline {2.2.2}Solitons}{55}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}3+1 Klein Gordon System}{56}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Klein Gordon's Noether Charge}{57}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Boosted Boson Stars and Black Holes}{58}{subsection.2.2.5}%
+\contentsline {chapter}{\numberline {3}Numerical Methods and {\sc GRChombo}}{62}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Numerical Methods}{63}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Introduction to Numerical Methods}{63}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Numerical Discretisation of Spacetime}{63}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Boundary Conditions}{64}{subsection.3.1.3}%
+\contentsline {subsubsection}{Sommerfeld Boundary Conditions}{65}{section*.41}%
+\contentsline {subsection}{\numberline {3.1.4}The Method of Lines}{65}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Integration of ODEs}{66}{subsection.3.1.5}%
+\contentsline {subsubsection}{The Runge Kutta Method}{67}{section*.42}%
+\contentsline {section}{\numberline {3.2}\sc GRChombo}{68}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Overview of {\sc GRChombo}}{68}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Simulation Units}{69}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Boson Star Initial Data}{69}{subsection.3.2.3}%
+\contentsline {subsubsection}{Shooting Method}{70}{section*.43}%
+\contentsline {subsection}{\numberline {3.2.4}Single Star Evolution}{73}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Superposition of Initial Data}{73}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Collisions of Boson Stars}{74}{subsection.3.2.6}%
+\contentsline {subsubsection}{Headon Collision}{74}{section*.47}%
+\contentsline {subsubsection}{Grazing Collision}{75}{section*.50}%
+\contentsline {chapter}{\numberline {4}Malaise and Remedy of Binary Boson Star Initial Data}{79}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{80}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Boson Star Initial Data}{82}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Boson Star Binary Initial Data}{83}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Simple Superposition of Boson Stars}{83}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Improved Superposition}{85}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Models and Results}{86}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Initial Constraint Violations}{86}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Convergence and Numerical Uncertainties}{88}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Radiated Gravitational Wave Energy}{88}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Evolution of the Scalar Amplitude and Gravitational Collapse}{90}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Conclusions}{94}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Analytic Treatment of the Hamiltonian Constraint}{95}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Local Continuity of Angular Momentum and Noether Charge for Matter in General Relativity}{96}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Local Continuity of Angular Momentum and Noether Charge for Matter in General Relativity}{97}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Introduction}{97}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Derivation of the QFS System}{98}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Application to Spherical extraction}{101}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Noether Currents}{103}{subsection.5.1.4}%
+\contentsline {subsubsection}{Complex Scalar Fields}{103}{section*.68}%
+\contentsline {subsubsection}{Complex Vector Fields}{104}{section*.69}%
+\contentsline {subsection}{\numberline {5.1.5}Energy-Momentum Currents}{105}{subsection.5.1.5}%
+\contentsline {subsubsection}{Angular Momentum}{105}{section*.70}%
+\contentsline {subsubsection}{Energy}{106}{section*.71}%
+\contentsline {subsection}{\numberline {5.1.6}Numerical Application}{107}{subsection.5.1.6}%
+\contentsline {subsubsection}{Numerical Setup of Simulations}{107}{section*.72}%
+\contentsline {subsubsection}{Convergence Analysis}{110}{section*.76}%
+\contentsline {subsection}{\numberline {5.1.7}Conclusion}{112}{subsection.5.1.7}%
+\contentsline {subsection}{\numberline {5.1.8}Source Term Calculation}{113}{subsection.5.1.8}%
+\contentsline {subsection}{\numberline {5.1.9}Generality of Result}{114}{subsection.5.1.9}%
+\contentsline {chapter}{\numberline {6}The Gravitational Afterglow of Boson Stars}{118}{chapter.6}%
+\contentsline {section}{\numberline {6.1}The Gravitational Afterglow of Boson Stars}{119}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Introduction}{119}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Simulation Setup}{120}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}The Merger Remnant}{121}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Gravitational Wave Signal}{123}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Conclusion}{126}{subsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.1.6}Angular Momentum Measure}{127}{subsection.6.1.6}%
+\contentsline {subsection}{\numberline {6.1.7}Numerical Accuracy}{130}{subsection.6.1.7}%
+\contentsline {chapter}{\numberline {7}Anomalies in the Gravitational Recoil of Eccentric Black-Hole Mergers with Unequal Mass Ratios}{132}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduction}{133}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Computational Framework and Set of Simulations}{135}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Numerical Methods}{135}{subsection.7.2.1}%
+\contentsline {subsubsection}{\textsc {GRChombo} setup}{135}{section*.92}%
+\contentsline {subsubsection}{\textsc {Lean} setup}{135}{section*.93}%
+\contentsline {subsubsection}{Initial Data}{136}{section*.94}%
+\contentsline {subsection}{\numberline {7.2.2}Black-Hole Binary Configurations}{136}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Diagnostics}{137}{subsection.7.2.3}%
+\contentsline {section}{\numberline {7.3}Results}{139}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Conclusions}{144}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Numerical Accuracy}{145}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}\textsc {GRChombo} Convergence}{145}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}\textsc {Lean} Convergence}{147}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}Comparison between \textsc {GRChombo} and \textsc {Lean}}{147}{subsection.7.5.3}%
+\contentsline {section}{\numberline {7.6}\textsc {GRChombo} Tagging Criterion}{148}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Conclusions and Bibliography}{150}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Concluding Remarks}{151}{section.8.1}%
