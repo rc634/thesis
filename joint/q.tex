@@ -533,10 +533,10 @@ $(f_2-f_1 )(\Delta x_3^\omega - \Delta x_2^\omega)/(\Delta x_2^\omega - \Delta x
 for three orders of convergence $\omega=\{2,3,4\}$; the two expressions should
 be equal for an ideal order of convergence $\omega$. It can be seen by eye that
 $\omega=3$
-\footnote{\color{orchid} The code uses a mix of 4th order accurate operations such as spatial
+\footnote{The code uses a mix of 4th order accurate operations such as spatial
 derivatives and time evolution schemes along with 3rd order accurate interpolation
 methods at AMR boundaries.} is approximately
-\footnote{\color{orchid} Obtaining a strict convergence series with
+\footnote{Obtaining a strict convergence series with
 AMR is difficult as the regions chosen for extra refinement by the tagging criterion
 are chosen dynamically at runtime. This means the grid structure of different resolution
 runs will typically not be identical. Care was taken when choosing a tagging criterion
