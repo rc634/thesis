@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  18 MAY 2023 19:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.6)  19 MAY 2023 14:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1095,6 +1095,32 @@ Package shellesc Info: Restricted shell escape enabled on input line 77.
 Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
 
 )
+(/usr/local/texlive/2022/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen325
+\ESO@tempdimb=\dimen326
+)
+\AM@pagewidth=\dimen327
+\AM@pageheight=\dimen328
+\AM@fboxrule=\dimen329
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count374
+\AM@pagebox=\box129
+\AM@global@opts=\toks50
+\AM@pagecnt=\count375
+\AM@toc@title=\toks51
+\c@AM@survey=\count376
+\AM@templatesizebox=\box130
+)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
 
@@ -1102,11 +1128,11 @@ Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
 Package: import 2020/04/01  v 6.2
 ))
 
-Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 82.
+Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 85.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 82
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 85
 .
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1122,24 +1148,24 @@ LaTeX Warning: Label `boson:fig:f1' multiply defined.
 ) (./malaise.aux) (./q.aux) (./afterglow.aux) (./bhkick.aux) (./conc.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1177,17 +1203,17 @@ LaTeX Font Info:    ... okay on input line 82.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count374
-\scratchdimen=\dimen325
-\scratchbox=\box129
-\nofMPsegments=\count375
-\nofMParguments=\count376
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count377
-\MPscratchDim=\dimen326
-\MPnumerator=\count378
-\makeMPintoPDFobject=\count379
-\everyMPtoPDFconversion=\toks51
+\scratchcounter=\count377
+\scratchdimen=\dimen330
+\scratchbox=\box131
+\nofMPsegments=\count378
+\nofMParguments=\count379
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count380
+\MPscratchDim=\dimen331
+\MPnumerator=\count381
+\makeMPintoPDFobject=\count382
+\everyMPtoPDFconversion=\toks53
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1197,7 +1223,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 82.
+Package hyperref Info: Link coloring OFF on input line 85.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1209,16 +1235,16 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count380
+\c@section@level=\count383
 )
-LaTeX Info: Redefining \ref on input line 82.
-LaTeX Info: Redefining \pageref on input line 82.
-LaTeX Info: Redefining \nameref on input line 82.
+LaTeX Info: Redefining \ref on input line 85.
+LaTeX Info: Redefining \pageref on input line 85.
+LaTeX Info: Redefining \nameref on input line 85.
  (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
-\c@lstlisting=\count381
+\c@lstlisting=\count384
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
@@ -1230,38 +1256,107 @@ Package: fr-subfig 2007/12/24 v0.1g (beta) floatrow: additions for subfig
 \FBsc@max=\skip150
 \FBso@max=\skip151
 )
-<png/camlogo.png, id=437, 1792.44656pt x 2258.4375pt>
+(/usr/local/texlive/2022/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+
+pdfTeX warning: pdflatex (file ./deposit_and_copying_declaration.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<deposit_and_copying_declaration.pdf, id=437, 597.55246pt x 845.07718pt>
+File: deposit_and_copying_declaration.pdf Graphic file (type pdf)
+<use deposit_and_copying_declaration.pdf>
+Package pdftex.def Info: deposit_and_copying_declaration.pdf  used on input lin
+e 89.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+
+
+pdfTeX warning: pdflatex (file ./deposit_and_copying_declaration.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+File: deposit_and_copying_declaration.pdf Graphic file (type pdf)
+<use deposit_and_copying_declaration.pdf>
+Package pdftex.def Info: deposit_and_copying_declaration.pdf  used on input lin
+e 89.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+
+
+pdfTeX warning: pdflatex (file ./deposit_and_copying_declaration.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./deposit_and_copying_declaration.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<deposit_and_copying_declaration.pdf, id=440, page=1, 597.55246pt x 845.07718pt
+>
+File: deposit_and_copying_declaration.pdf Graphic file (type pdf)
+<use deposit_and_copying_declaration.pdf, page 1>
+Package pdftex.def Info: deposit_and_copying_declaration.pdf , page1 used on in
+put line 89.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: deposit_and_copying_declaration.pdf Graphic file (type pdf)
+<use deposit_and_copying_declaration.pdf, page 1>
+Package pdftex.def Info: deposit_and_copying_declaration.pdf , page1 used on in
+put line 89.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: deposit_and_copying_declaration.pdf Graphic file (type pdf)
+<use deposit_and_copying_declaration.pdf, page 1>
+Package pdftex.def Info: deposit_and_copying_declaration.pdf , page1 used on in
+put line 89.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: deposit_and_copying_declaration.pdf Graphic file (type pdf)
+<use deposit_and_copying_declaration.pdf, page 1>
+Package pdftex.def Info: deposit_and_copying_declaration.pdf , page1 used on in
+put line 89.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: deposit_and_copying_declaration.pdf Graphic file (type pdf)
+<use deposit_and_copying_declaration.pdf, page 1>
+Package pdftex.def Info: deposit_and_copying_declaration.pdf , page1 used on in
+put line 89.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[1
+
+ <./deposit_and_copying_declaration.pdf>]
+<png/camlogo.png, id=510, 1792.44656pt x 2258.4375pt>
 File: png/camlogo.png Graphic file (type png)
 <use png/camlogo.png>
-Package pdftex.def Info: png/camlogo.png  used on input line 151.
+Package pdftex.def Info: png/camlogo.png  used on input line 157.
 (pdftex.def)             Requested size: 173.71863pt x 218.8614pt.
- [1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./png/c
-amlogo.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.206 \newpage
+l.187 \end{titlepage}
+                                % Activate to display a given date or no date
+[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./png
+/camlogo.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.212 \newpage
                [1]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.225 
+l.231 
        [2]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.235 \newpage
+l.241 \newpage
                [3]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.251 \newpage
+l.257 \newpage
                [4] (./thesis.toc
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
 .
@@ -1325,7 +1420,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.254 \newpage
+l.260 \newpage
                [7]
 Chapter 1.
 [1
@@ -1341,7 +1436,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  [2
 
 ] [3] [4]
-<pics/pythag_proof2.png, id=647, 256.5585pt x 247.1634pt>
+<pics/pythag_proof2.png, id=720, 256.5585pt x 247.1634pt>
 File: pics/pythag_proof2.png Graphic file (type png)
 <use pics/pythag_proof2.png>
 Package pdftex.def Info: pics/pythag_proof2.png  used on input line 98.
@@ -1368,7 +1463,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1367--1368
 
  []
 
-<png/tuuube.pdf, id=1210, 345.4506pt x 211.75111pt>
+<png/tuuube.pdf, id=1282, 345.4506pt x 211.75111pt>
 File: png/tuuube.pdf Graphic file (type pdf)
 <use png/tuuube.pdf>
 Package pdftex.def Info: png/tuuube.pdf  used on input line 1379.
@@ -1385,7 +1480,7 @@ Chapter 2.
  (./nr.tex [41
 
 ] [42] [43] [44]
-<png/ADM_screeny.png, id=1389, 916.42375pt x 900.36375pt>
+<png/ADM_screeny.png, id=1461, 916.42375pt x 900.36375pt>
 File: png/ADM_screeny.png Graphic file (type png)
 <use png/ADM_screeny.png>
 Package pdftex.def Info: png/ADM_screeny.png  used on input line 175.
@@ -1401,18 +1496,18 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [50]
-<png/penrose_sc.pdf, id=1525, 1360.84412pt x 740.7675pt>
+<png/penrose_sc.pdf, id=1597, 1360.84412pt x 740.7675pt>
 File: png/penrose_sc.pdf Graphic file (type pdf)
 <use png/penrose_sc.pdf>
 Package pdftex.def Info: png/penrose_sc.pdf  used on input line 405.
 (pdftex.def)             Requested size: 248.16516pt x 135.08438pt.
-<png/penrose_iso.pdf, id=1526, 1360.84412pt x 740.7675pt>
+<png/penrose_iso.pdf, id=1598, 1360.84412pt x 740.7675pt>
 File: png/penrose_iso.pdf Graphic file (type pdf)
 <use png/penrose_iso.pdf>
 Package pdftex.def Info: png/penrose_iso.pdf  used on input line 406.
 (pdftex.def)             Requested size: 248.16516pt x 135.08438pt.
  [51 <./png/penrose_sc.pdf> <./png/penrose_iso.pdf>]
-<png/slicing.pdf, id=1565, 464.69609pt x 260.17201pt>
+<png/slicing.pdf, id=1636, 464.69609pt x 260.17201pt>
 File: png/slicing.pdf Graphic file (type pdf)
 <use png/slicing.pdf>
 Package pdftex.def Info: png/slicing.pdf  used on input line 425.
@@ -1437,24 +1532,24 @@ Chapter 3.
  (./grchombo.tex [63
 
 ] [64] [65] [66] [67] [68] [69] [70]
-<png/bosonstar_groundstate.png, id=1955, 462.528pt x 346.896pt>
+<png/bosonstar_groundstate.png, id=2028, 462.528pt x 346.896pt>
 File: png/bosonstar_groundstate.png Graphic file (type png)
 <use png/bosonstar_groundstate.png>
 Package pdftex.def Info: png/bosonstar_groundstate.png  used on input line 368.
 
 (pdftex.def)             Requested size: 238.23642pt x 178.67725pt.
-<png/bosonstar_excitedstate.png, id=1956, 462.528pt x 346.896pt>
+<png/bosonstar_excitedstate.png, id=2029, 462.528pt x 346.896pt>
 File: png/bosonstar_excitedstate.png Graphic file (type png)
 <use png/bosonstar_excitedstate.png>
 Package pdftex.def Info: png/bosonstar_excitedstate.png  used on input line 374
 .
 (pdftex.def)             Requested size: 238.23642pt x 178.67725pt.
-<png/ADM_vs_PC.png, id=1962, 1284.8pt x 963.6pt>
+<png/ADM_vs_PC.png, id=2035, 1284.8pt x 963.6pt>
 File: png/ADM_vs_PC.png Graphic file (type png)
 <use png/ADM_vs_PC.png>
 Package pdftex.def Info: png/ADM_vs_PC.png  used on input line 406.
 (pdftex.def)             Requested size: 238.23642pt x 178.6749pt.
-<png/ADM_vs_r99.png, id=1963, 1284.8pt x 963.6pt>
+<png/ADM_vs_r99.png, id=2036, 1284.8pt x 963.6pt>
 File: png/ADM_vs_r99.png Graphic file (type png)
 <use png/ADM_vs_r99.png>
 Package pdftex.def Info: png/ADM_vs_r99.png  used on input line 408.
@@ -1465,28 +1560,28 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [71 <./png/bosonstar_groundstate.png> <./png/bosonstar_excitedstate.png>]
 [72 <./png/ADM_vs_PC.png> <./png/ADM_vs_r99.png>]
-<data/star_modphi_nicer.pdf, id=2001, 752.33072pt x 458.9145pt>
+<data/star_modphi_nicer.pdf, id=2073, 752.33072pt x 458.9145pt>
 File: data/star_modphi_nicer.pdf Graphic file (type pdf)
 <use data/star_modphi_nicer.pdf>
 Package pdftex.def Info: data/star_modphi_nicer.pdf  used on input line 490.
 (pdftex.def)             Requested size: 248.16516pt x 151.37222pt.
-<data/star_N_nicer.pdf, id=2002, 740.7675pt x 424.94759pt>
+<data/star_N_nicer.pdf, id=2074, 740.7675pt x 424.94759pt>
 File: data/star_N_nicer.pdf Graphic file (type pdf)
 <use data/star_N_nicer.pdf>
 Package pdftex.def Info: data/star_N_nicer.pdf  used on input line 492.
 (pdftex.def)             Requested size: 248.16516pt x 142.35994pt.
  [73 <./data/star_modphi_nicer.pdf> <./data/star_N_nicer.pdf>]
-<data/headon_modphi_nicer.pdf, id=2114, 573.10112pt x 386.64452pt>
+<data/headon_modphi_nicer.pdf, id=2185, 573.10112pt x 386.64452pt>
 File: data/headon_modphi_nicer.pdf Graphic file (type pdf)
 <use data/headon_modphi_nicer.pdf>
 Package pdftex.def Info: data/headon_modphi_nicer.pdf  used on input line 562.
 (pdftex.def)             Requested size: 248.16516pt x 167.42204pt.
-<data/headon_N_nicer.pdf, id=2115, 565.87411pt x 394.5942pt>
+<data/headon_N_nicer.pdf, id=2186, 565.87411pt x 394.5942pt>
 File: data/headon_N_nicer.pdf Graphic file (type pdf)
 <use data/headon_N_nicer.pdf>
 Package pdftex.def Info: data/headon_N_nicer.pdf  used on input line 564.
 (pdftex.def)             Requested size: 248.16516pt x 173.04997pt.
-<data/headon_weyl_nicer.pdf, id=2116, 739.3221pt x 457.46912pt>
+<data/headon_weyl_nicer.pdf, id=2187, 739.3221pt x 457.46912pt>
 File: data/headon_weyl_nicer.pdf Graphic file (type pdf)
 <use data/headon_weyl_nicer.pdf>
 Package pdftex.def Info: data/headon_weyl_nicer.pdf  used on input line 571.
@@ -1496,12 +1591,12 @@ Package pdftex.def Info: data/headon_weyl_nicer.pdf  used on input line 571.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [74 <./data/headon_modphi_nicer.pdf> <./data/headon_N_nicer.pdf>]
-<data/graze_modphi_nicer.pdf, id=2220, 628.74902pt x 413.3844pt>
+<data/graze_modphi_nicer.pdf, id=2292, 628.74902pt x 413.3844pt>
 File: data/graze_modphi_nicer.pdf Graphic file (type pdf)
 <use data/graze_modphi_nicer.pdf>
 Package pdftex.def Info: data/graze_modphi_nicer.pdf  used on input line 604.
 (pdftex.def)             Requested size: 248.16516pt x 163.16203pt.
-<data/graze_N_nicer.pdf, id=2221, 640.31218pt x 411.2163pt>
+<data/graze_N_nicer.pdf, id=2293, 640.31218pt x 411.2163pt>
 File: data/graze_N_nicer.pdf Graphic file (type pdf)
 <use data/graze_N_nicer.pdf>
 Package pdftex.def Info: data/graze_N_nicer.pdf  used on input line 606.
@@ -1510,41 +1605,41 @@ Package pdftex.def Info: data/graze_N_nicer.pdf  used on input line 606.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<data/graze_weyl_nicer.pdf, id=2224, 714.02759pt x 456.02371pt>
+<data/graze_weyl_nicer.pdf, id=2296, 714.02759pt x 456.02371pt>
 File: data/graze_weyl_nicer.pdf Graphic file (type pdf)
 <use data/graze_weyl_nicer.pdf>
 Package pdftex.def Info: data/graze_weyl_nicer.pdf  used on input line 619.
 (pdftex.def)             Requested size: 248.16516pt x 158.49039pt.
 [75 <./data/headon_weyl_nicer.pdf>]
-<data/late_time_N_nicer.pdf, id=2279, 732.81781pt x 458.9145pt>
+<data/late_time_N_nicer.pdf, id=2351, 732.81781pt x 458.9145pt>
 File: data/late_time_N_nicer.pdf Graphic file (type pdf)
 <use data/late_time_N_nicer.pdf>
 Package pdftex.def Info: data/late_time_N_nicer.pdf  used on input line 625.
 (pdftex.def)             Requested size: 223.34712pt x 139.86717pt.
-<data/noether_zoom_nicer.pdf, id=2280, 683.6742pt x 426.39299pt>
+<data/noether_zoom_nicer.pdf, id=2352, 683.6742pt x 426.39299pt>
 File: data/noether_zoom_nicer.pdf Graphic file (type pdf)
 <use data/noether_zoom_nicer.pdf>
 Package pdftex.def Info: data/noether_zoom_nicer.pdf  used on input line 626.
 (pdftex.def)             Requested size: 223.34712pt x 139.29175pt.
-<modphi/headon_mod_phi0011.png, id=2282, 1606.0pt x 1606.0pt>
+<modphi/headon_mod_phi0011.png, id=2354, 1606.0pt x 1606.0pt>
 File: modphi/headon_mod_phi0011.png Graphic file (type png)
 <use modphi/headon_mod_phi0011.png>
 Package pdftex.def Info: modphi/headon_mod_phi0011.png  used on input line 639.
 
 (pdftex.def)             Requested size: 248.16516pt x 248.14325pt.
-<modphi/headon_mod_phi0012.png, id=2283, 1606.0pt x 1606.0pt>
+<modphi/headon_mod_phi0012.png, id=2355, 1606.0pt x 1606.0pt>
 File: modphi/headon_mod_phi0012.png Graphic file (type png)
 <use modphi/headon_mod_phi0012.png>
 Package pdftex.def Info: modphi/headon_mod_phi0012.png  used on input line 640.
 
 (pdftex.def)             Requested size: 248.16516pt x 248.14325pt.
-<modphi/headon_mod_phi0014.png, id=2284, 1606.0pt x 1606.0pt>
+<modphi/headon_mod_phi0014.png, id=2356, 1606.0pt x 1606.0pt>
 File: modphi/headon_mod_phi0014.png Graphic file (type png)
 <use modphi/headon_mod_phi0014.png>
 Package pdftex.def Info: modphi/headon_mod_phi0014.png  used on input line 642.
 
 (pdftex.def)             Requested size: 248.16516pt x 248.14325pt.
-<modphi/headon_mod_phi0020.png, id=2285, 1606.0pt x 1606.0pt>
+<modphi/headon_mod_phi0020.png, id=2357, 1606.0pt x 1606.0pt>
 File: modphi/headon_mod_phi0020.png Graphic file (type png)
 <use modphi/headon_mod_phi0020.png>
 Package pdftex.def Info: modphi/headon_mod_phi0020.png  used on input line 643.
@@ -1552,22 +1647,22 @@ Package pdftex.def Info: modphi/headon_mod_phi0020.png  used on input line 643.
 (pdftex.def)             Requested size: 248.16516pt x 248.14325pt.
  [76 <./data/graze_modphi_nicer.pdf> <./data/graze_N_nicer.pdf> <./data/graze_w
 eyl_nicer.pdf> <./data/late_time_N_nicer.pdf> <./data/noether_zoom_nicer.pdf>]
-<modphi/graze_mod_phi0012.png, id=2520, 1606.0pt x 1606.0pt>
+<modphi/graze_mod_phi0012.png, id=2592, 1606.0pt x 1606.0pt>
 File: modphi/graze_mod_phi0012.png Graphic file (type png)
 <use modphi/graze_mod_phi0012.png>
 Package pdftex.def Info: modphi/graze_mod_phi0012.png  used on input line 654.
 (pdftex.def)             Requested size: 248.16516pt x 248.14325pt.
-<modphi/graze_mod_phi0013.png, id=2521, 1606.0pt x 1606.0pt>
+<modphi/graze_mod_phi0013.png, id=2593, 1606.0pt x 1606.0pt>
 File: modphi/graze_mod_phi0013.png Graphic file (type png)
 <use modphi/graze_mod_phi0013.png>
 Package pdftex.def Info: modphi/graze_mod_phi0013.png  used on input line 655.
 (pdftex.def)             Requested size: 248.16516pt x 248.14325pt.
-<modphi/graze_mod_phi0016.png, id=2522, 1606.0pt x 1606.0pt>
+<modphi/graze_mod_phi0016.png, id=2594, 1606.0pt x 1606.0pt>
 File: modphi/graze_mod_phi0016.png Graphic file (type png)
 <use modphi/graze_mod_phi0016.png>
 Package pdftex.def Info: modphi/graze_mod_phi0016.png  used on input line 657.
 (pdftex.def)             Requested size: 248.16516pt x 248.14325pt.
-<modphi/graze_mod_phi0020.png, id=2523, 1606.0pt x 1606.0pt>
+<modphi/graze_mod_phi0020.png, id=2595, 1606.0pt x 1606.0pt>
 File: modphi/graze_mod_phi0020.png Graphic file (type png)
 <use modphi/graze_mod_phi0020.png>
 Package pdftex.def Info: modphi/graze_mod_phi0020.png  used on input line 658.
@@ -1581,13 +1676,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.3.9
 .1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.284 \include{grchombo}
+l.290 \include{grchombo}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.3.9
 .2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.284 \include{grchombo}
+l.290 \include{grchombo}
                          <./modphi/headon_mod_phi0011.png> <./modphi/headon_mod
 _phi0012.png> <./modphi/headon_mod_phi0014.png> <./modphi/headon_mod_phi0020.pn
 g>] [78 <./modphi/graze_mod_phi0012.png> <./modphi/graze_mod_phi0013.png> <./mo
@@ -1603,7 +1698,7 @@ Chapter 4.
  (./malaise.tex [80
 
 ] [81]
-<malaise_source/statBS.pdf, id=2736, 845.1575pt x 597.23125pt>
+<malaise_source/statBS.pdf, id=2808, 845.1575pt x 597.23125pt>
 File: malaise_source/statBS.pdf Graphic file (type pdf)
 <use malaise_source/statBS.pdf>
 Package pdftex.def Info: malaise_source/statBS.pdf  used on input line 417.
@@ -1613,7 +1708,7 @@ Package pdftex.def Info: malaise_source/statBS.pdf  used on input line 417.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [82] [83 <./malaise_source/statBS.pdf, page is rotated 270 degrees>]
-<malaise_source/BosonStarTrick.png, id=2807, 961.09714pt x 540.61714pt>
+<malaise_source/BosonStarTrick.png, id=2878, 961.09714pt x 540.61714pt>
 File: malaise_source/BosonStarTrick.png Graphic file (type png)
 <use malaise_source/BosonStarTrick.png>
 Package pdftex.def Info: malaise_source/BosonStarTrick.png  used on input line 
@@ -1627,44 +1722,44 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<malaise_source/constraints.pdf, id=2854, 708.6475pt x 584.1825pt>
+<malaise_source/constraints.pdf, id=2926, 708.6475pt x 584.1825pt>
 File: malaise_source/constraints.pdf Graphic file (type pdf)
 <use malaise_source/constraints.pdf>
 Package pdftex.def Info: malaise_source/constraints.pdf  used on input line 902
 .
 (pdftex.def)             Requested size: 347.4297pt x 286.41237pt.
  [86] [87 <./malaise_source/constraints.pdf>]
-<malaise_source/conv_tmBS_Erad.pdf, id=2891, 709.65125pt x 538.01pt>
+<malaise_source/conv_tmBS_Erad.pdf, id=2963, 709.65125pt x 538.01pt>
 File: malaise_source/conv_tmBS_Erad.pdf Graphic file (type pdf)
 <use malaise_source/conv_tmBS_Erad.pdf>
 Package pdftex.def Info: malaise_source/conv_tmBS_Erad.pdf  used on input line 
 1036.
 (pdftex.def)             Requested size: 347.4297pt x 263.40555pt.
-<malaise_source/conv_tsBS_Erad.pdf, id=2894, 710.655pt x 549.05125pt>
+<malaise_source/conv_tsBS_Erad.pdf, id=2966, 710.655pt x 549.05125pt>
 File: malaise_source/conv_tsBS_Erad.pdf Graphic file (type pdf)
 <use malaise_source/conv_tsBS_Erad.pdf>
 Package pdftex.def Info: malaise_source/conv_tsBS_Erad.pdf  used on input line 
 1058.
 (pdftex.def)             Requested size: 347.4297pt x 268.43427pt.
-<malaise_source/erad.pdf, id=2903, 713.66624pt x 549.05125pt>
+<malaise_source/erad.pdf, id=2975, 713.66624pt x 549.05125pt>
 File: malaise_source/erad.pdf Graphic file (type pdf)
 <use malaise_source/erad.pdf>
 Package pdftex.def Info: malaise_source/erad.pdf  used on input line 1154.
 (pdftex.def)             Requested size: 347.4297pt x 267.2865pt.
  [88] [89 <./malaise_source/conv_tmBS_Erad.pdf>]
-<malaise_source/mini_psi20.pdf, id=2945, 722.7pt x 534.99875pt>
+<malaise_source/mini_psi20.pdf, id=3016, 722.7pt x 534.99875pt>
 File: malaise_source/mini_psi20.pdf Graphic file (type pdf)
 <use malaise_source/mini_psi20.pdf>
 Package pdftex.def Info: malaise_source/mini_psi20.pdf  used on input line 1333
 .
 (pdftex.def)             Requested size: 347.4297pt x 257.19649pt.
-<malaise_source/soli_psi20.pdf, id=2948, 701.62125pt x 534.99875pt>
+<malaise_source/soli_psi20.pdf, id=3019, 701.62125pt x 534.99875pt>
 File: malaise_source/soli_psi20.pdf Graphic file (type pdf)
 <use malaise_source/soli_psi20.pdf>
 Package pdftex.def Info: malaise_source/soli_psi20.pdf  used on input line 1344
 .
 (pdftex.def)             Requested size: 347.4297pt x 264.92723pt.
-<malaise_source/ampctr_sBS.pdf, id=2955, 695.59875pt x 534.99875pt>
+<malaise_source/ampctr_sBS.pdf, id=3026, 695.59875pt x 534.99875pt>
 File: malaise_source/ampctr_sBS.pdf Graphic file (type pdf)
 <use malaise_source/ampctr_sBS.pdf>
 Package pdftex.def Info: malaise_source/ampctr_sBS.pdf  used on input line 1377
@@ -1685,7 +1780,7 @@ Chapter 5.
  (./q.tex [97
 
 ] [98]
-<png/qfs_simple.png, id=3152, 1045.65656pt x 1087.81406pt>
+<png/qfs_simple.png, id=3223, 1045.65656pt x 1087.81406pt>
 File: png/qfs_simple.png Graphic file (type png)
 <use png/qfs_simple.png>
 Package pdftex.def Info: png/qfs_simple.png  used on input line 78.
@@ -1697,12 +1792,12 @@ he QFS sys-tem, Eq. ([]5.1.3[]), by in-te-grat-ing Eq. ([]5.1.4[])
  []
 
 [99 <./png/qfs_simple.png>] [100] [101] [102] [103] [104] [105] [106] [107]
-<png/Qplot_20_0.png, id=3381, 565.1514pt x 370.0224pt>
+<png/Qplot_20_0.png, id=3452, 565.1514pt x 370.0224pt>
 File: png/Qplot_20_0.png Graphic file (type png)
 <use png/Qplot_20_0.png>
 Package pdftex.def Info: png/Qplot_20_0.png  used on input line 453.
 (pdftex.def)             Requested size: 297.80121pt x 194.98735pt.
-<png/Qplot_40_0.png, id=3388, 573.1011pt x 388.8126pt>
+<png/Qplot_40_0.png, id=3459, 573.1011pt x 388.8126pt>
 File: png/Qplot_40_0.png Graphic file (type png)
 <use png/Qplot_40_0.png>
 Package pdftex.def Info: png/Qplot_40_0.png  used on input line 459.
@@ -1711,7 +1806,7 @@ Package pdftex.def Info: png/Qplot_40_0.png  used on input line 459.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<png/Qplot_60_0.png, id=3391, 581.7735pt x 391.7034pt>
+<png/Qplot_60_0.png, id=3462, 581.7735pt x 391.7034pt>
 File: png/Qplot_60_0.png Graphic file (type png)
 <use png/Qplot_60_0.png>
 Package pdftex.def Info: png/Qplot_60_0.png  used on input line 465.
@@ -1728,7 +1823,7 @@ sts of two bo-son stars, each with mass $\OML/lmm/m/it/10.95 M \OT1/lmr/m/n/10.
  []
 
 [108 <./png/Qplot_20_0.png>]
-<png/paper_conv40_2.png, id=3418, 527.571pt x 352.6776pt>
+<png/paper_conv40_2.png, id=3489, 527.571pt x 352.6776pt>
 File: png/paper_conv40_2.png Graphic file (type png)
 <use png/paper_conv40_2.png>
 Package pdftex.def Info: png/paper_conv40_2.png  used on input line 486.
@@ -1737,7 +1832,7 @@ Package pdftex.def Info: png/paper_conv40_2.png  used on input line 486.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<png/paper_conv40.png, id=3421, 529.0164pt x 349.7868pt>
+<png/paper_conv40.png, id=3492, 529.0164pt x 349.7868pt>
 File: png/paper_conv40.png Graphic file (type png)
 <use png/paper_conv40.png>
 Package pdftex.def Info: png/paper_conv40.png  used on input line 491.
@@ -1747,7 +1842,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [109 <./png/Qplot_40_0.png> <./png/Qplot_60_0.png>] [110 <./png/paper_conv40_2.
 png>]
-<png/paper_conv123.png, id=3450, 670.75594pt x 651.18282pt>
+<png/paper_conv123.png, id=3522, 670.75594pt x 651.18282pt>
 File: png/paper_conv123.png Graphic file (type png)
 <use png/paper_conv123.png>
 Package pdftex.def Info: png/paper_conv123.png  used on input line 548.
@@ -1756,7 +1851,7 @@ Package pdftex.def Info: png/paper_conv123.png  used on input line 548.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<png/conv_order_40_0.png, id=3465, 586.44093pt x 379.4175pt>
+<png/conv_order_40_0.png, id=3537, 586.44093pt x 379.4175pt>
 File: png/conv_order_40_0.png Graphic file (type png)
 <use png/conv_order_40_0.png>
 Package pdftex.def Info: png/conv_order_40_0.png  used on input line 571.
@@ -1766,7 +1861,7 @@ Package pdftex.def Info: png/conv_order_40_0.png  used on input line 571.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [112 <./png/paper_conv123.png>] [113 <./png/conv_order_40_0.png>]
-<png/qfs_coloured.png, id=3520, 1041.8925pt x 1084.05pt>
+<png/qfs_coloured.png, id=3591, 1041.8925pt x 1084.05pt>
 File: png/qfs_coloured.png Graphic file (type png)
 <use png/qfs_coloured.png>
 Package pdftex.def Info: png/qfs_coloured.png  used on input line 674.
@@ -1787,14 +1882,14 @@ Chapter 6.
  (./afterglow.tex [119
 
 ]
-<ag_fig/modphi_plot_axes_log.png, id=3770, 1011.78pt x 578.16pt>
+<ag_fig/modphi_plot_axes_log.png, id=3841, 1011.78pt x 578.16pt>
 File: ag_fig/modphi_plot_axes_log.png Graphic file (type png)
 <use ag_fig/modphi_plot_axes_log.png>
 Package pdftex.def Info: ag_fig/modphi_plot_axes_log.png  used on input line 81
 .
 (pdftex.def)             Requested size: 496.33032pt x 283.61847pt.
  [120 <./ag_fig/modphi_plot_axes_log.png>] [121]
-<ag_fig/ang_integrated_flux_with_radius_60.pdf, id=3830, 1156.32pt x 433.62pt>
+<ag_fig/ang_integrated_flux_with_radius_60.pdf, id=3901, 1156.32pt x 433.62pt>
 File: ag_fig/ang_integrated_flux_with_radius_60.pdf Graphic file (type pdf)
 <use ag_fig/ang_integrated_flux_with_radius_60.pdf>
 Package pdftex.def Info: ag_fig/ang_integrated_flux_with_radius_60.pdf  used on
@@ -1802,18 +1897,18 @@ Package pdftex.def Info: ag_fig/ang_integrated_flux_with_radius_60.pdf  used on
 (pdftex.def)             Requested size: 496.33032pt x 186.12213pt.
 
 [122 <./ag_fig/ang_integrated_flux_with_radius_60.pdf>]
-<ag_fig/mass_over_time.pdf, id=3882, 867.24pt x 578.16pt>
+<ag_fig/mass_over_time.pdf, id=3954, 867.24pt x 578.16pt>
 File: ag_fig/mass_over_time.pdf Graphic file (type pdf)
 <use ag_fig/mass_over_time.pdf>
 Package pdftex.def Info: ag_fig/mass_over_time.pdf  used on input line 313.
 (pdftex.def)             Requested size: 347.4297pt x 231.6216pt.
  [123 <./ag_fig/mass_over_time.pdf>]
-<ag_fig/AllModes.pdf, id=3911, 957.61432pt x 360.50275pt>
+<ag_fig/AllModes.pdf, id=3982, 957.61432pt x 360.50275pt>
 File: ag_fig/AllModes.pdf Graphic file (type pdf)
 <use ag_fig/AllModes.pdf>
 Package pdftex.def Info: ag_fig/AllModes.pdf  used on input line 361.
 (pdftex.def)             Requested size: 496.33032pt x 186.8464pt.
-<ag_fig/Convergence.pdf, id=3917, 867.24pt x 578.16pt>
+<ag_fig/Convergence.pdf, id=3988, 867.24pt x 578.16pt>
 File: ag_fig/Convergence.pdf Graphic file (type pdf)
 <use ag_fig/Convergence.pdf>
 Package pdftex.def Info: ag_fig/Convergence.pdf  used on input line 389.
@@ -1822,7 +1917,7 @@ Package pdftex.def Info: ag_fig/Convergence.pdf  used on input line 389.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ag_fig/FFT_analysis.pdf, id=3920, 722.7pt x 722.7pt>
+<ag_fig/FFT_analysis.pdf, id=3991, 722.7pt x 722.7pt>
 File: ag_fig/FFT_analysis.pdf Graphic file (type pdf)
 <use ag_fig/FFT_analysis.pdf>
 Package pdftex.def Info: ag_fig/FFT_analysis.pdf  used on input line 404.
@@ -1830,7 +1925,7 @@ Package pdftex.def Info: ag_fig/FFT_analysis.pdf  used on input line 404.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ag_fig/Energy_Power.pdf, id=3923, 722.7pt x 722.7pt>
+<ag_fig/Energy_Power.pdf, id=3994, 722.7pt x 722.7pt>
 File: ag_fig/Energy_Power.pdf Graphic file (type pdf)
 <use ag_fig/Energy_Power.pdf>
 Package pdftex.def Info: ag_fig/Energy_Power.pdf  used on input line 419.
@@ -1840,7 +1935,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [124 <./ag_fig/AllModes.pdf>] [125 <./ag_fig/Convergence.pdf>] [126 <./ag_fig/F
 FT_analysis.pdf>]
-<ag_fig/FigureRobinPaper.png, id=4023, 961.09714pt x 540.61714pt>
+<ag_fig/FigureRobinPaper.png, id=4094, 961.09714pt x 540.61714pt>
 File: ag_fig/FigureRobinPaper.png Graphic file (type png)
 <use ag_fig/FigureRobinPaper.png>
 Package pdftex.def Info: ag_fig/FigureRobinPaper.png  used on input line 655.
@@ -1854,7 +1949,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: Reference `ag:eq:Si' on page 128 undefined on input line 693.
 
 [128 <./ag_fig/FigureRobinPaper.png>] [129]
-<ag_fig/ang_error_flux_with_radius_60.pdf, id=4083, 867.24pt x 578.16pt>
+<ag_fig/ang_error_flux_with_radius_60.pdf, id=4155, 867.24pt x 578.16pt>
 File: ag_fig/ang_error_flux_with_radius_60.pdf Graphic file (type pdf)
 <use ag_fig/ang_error_flux_with_radius_60.pdf>
 Package pdftex.def Info: ag_fig/ang_error_flux_with_radius_60.pdf  used on inpu
@@ -1890,28 +1985,28 @@ Overfull \hbox (5.20445pt too wide) in paragraph at lines 545--551
  []
 
 [137]
-<bhkick/kick-q1_5-wlabel.pdf, id=4374, 359.3425pt x 351.3125pt>
+<bhkick/kick-q1_5-wlabel.pdf, id=4446, 359.3425pt x 351.3125pt>
 File: bhkick/kick-q1_5-wlabel.pdf Graphic file (type pdf)
 <use bhkick/kick-q1_5-wlabel.pdf>
 Package pdftex.def Info: bhkick/kick-q1_5-wlabel.pdf  used on input line 639.
 (pdftex.def)             Requested size: 238.23642pt x 232.91763pt.
-<bhkick/kick-q3-wlabel.pdf, id=4375, 359.3425pt x 351.3125pt>
+<bhkick/kick-q3-wlabel.pdf, id=4447, 359.3425pt x 351.3125pt>
 File: bhkick/kick-q3-wlabel.pdf Graphic file (type pdf)
 <use bhkick/kick-q3-wlabel.pdf>
 Package pdftex.def Info: bhkick/kick-q3-wlabel.pdf  used on input line 644.
 (pdftex.def)             Requested size: 238.23642pt x 232.91763pt.
-<bhkick/kick-q2-wlabel.pdf, id=4376, 359.3425pt x 351.3125pt>
+<bhkick/kick-q2-wlabel.pdf, id=4448, 359.3425pt x 351.3125pt>
 File: bhkick/kick-q2-wlabel.pdf Graphic file (type pdf)
 <use bhkick/kick-q2-wlabel.pdf>
 Package pdftex.def Info: bhkick/kick-q2-wlabel.pdf  used on input line 649.
 (pdftex.def)             Requested size: 238.23642pt x 232.91763pt.
-<bhkick/kick-q2l-wlabel.pdf, id=4377, 359.3425pt x 351.3125pt>
+<bhkick/kick-q2l-wlabel.pdf, id=4449, 359.3425pt x 351.3125pt>
 File: bhkick/kick-q2l-wlabel.pdf Graphic file (type pdf)
 <use bhkick/kick-q2l-wlabel.pdf>
 Package pdftex.def Info: bhkick/kick-q2l-wlabel.pdf  used on input line 654.
 (pdftex.def)             Requested size: 238.23642pt x 232.91763pt.
  [138]
-<bhkick/quasicircular-fit2.pdf, id=4413, 335.2525pt x 222.8325pt>
+<bhkick/quasicircular-fit2.pdf, id=4485, 335.2525pt x 222.8325pt>
 File: bhkick/quasicircular-fit2.pdf Graphic file (type pdf)
 <use bhkick/quasicircular-fit2.pdf>
 Package pdftex.def Info: bhkick/quasicircular-fit2.pdf  used on input line 736.
@@ -1920,30 +2015,30 @@ Package pdftex.def Info: bhkick/quasicircular-fit2.pdf  used on input line 736.
  [139 <./bhkick/kick-q1_5-wlabel.pdf> <./bhkick/kick-q3-wlabel.pdf> <./bhkick/k
 ick-q2-wlabel.pdf> <./bhkick/kick-q2l-wlabel.pdf>] [140 <./bhkick/quasicircular
 -fit2.pdf>]
-<bhkick/kick-theta.pdf, id=4462, 336.25626pt x 223.83624pt>
+<bhkick/kick-theta.pdf, id=4533, 336.25626pt x 223.83624pt>
 File: bhkick/kick-theta.pdf Graphic file (type pdf)
 <use bhkick/kick-theta.pdf>
 Package pdftex.def Info: bhkick/kick-theta.pdf  used on input line 830.
 (pdftex.def)             Requested size: 248.16516pt x 165.19904pt.
-<bhkick/theta-extrema.pdf, id=4463, 335.2525pt x 218.8175pt>
+<bhkick/theta-extrema.pdf, id=4534, 335.2525pt x 218.8175pt>
 File: bhkick/theta-extrema.pdf Graphic file (type pdf)
 <use bhkick/theta-extrema.pdf>
 Package pdftex.def Info: bhkick/theta-extrema.pdf  used on input line 837.
 (pdftex.def)             Requested size: 248.16516pt x 161.97583pt.
  [141 <./bhkick/kick-theta.pdf> <./bhkick/theta-extrema.pdf>]
-<bhkick/mode-kick-extrema.pdf, id=4506, 358.33875pt x 281.05pt>
+<bhkick/mode-kick-extrema.pdf, id=4578, 358.33875pt x 281.05pt>
 File: bhkick/mode-kick-extrema.pdf Graphic file (type pdf)
 <use bhkick/mode-kick-extrema.pdf>
 Package pdftex.def Info: bhkick/mode-kick-extrema.pdf  used on input line 965.
 (pdftex.def)             Requested size: 347.4297pt x 272.51094pt.
  [142] [143 <./bhkick/mode-kick-extrema.pdf>]
-<bhkick/grchombo-convergence5.pdf, id=4539, 354.32375pt x 349.305pt>
+<bhkick/grchombo-convergence5.pdf, id=4611, 354.32375pt x 349.305pt>
 File: bhkick/grchombo-convergence5.pdf Graphic file (type pdf)
 <use bhkick/grchombo-convergence5.pdf>
 Package pdftex.def Info: bhkick/grchombo-convergence5.pdf  used on input line 1
 115.
 (pdftex.def)             Requested size: 238.23642pt x 234.8646pt.
-<bhkick/lean-convergence4.pdf, id=4540, 351.3125pt x 349.305pt>
+<bhkick/lean-convergence4.pdf, id=4612, 351.3125pt x 349.305pt>
 File: bhkick/lean-convergence4.pdf Graphic file (type pdf)
 <use bhkick/lean-convergence4.pdf>
 Package pdftex.def Info: bhkick/lean-convergence4.pdf  used on input line 1121.
@@ -1956,7 +2051,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [144] [145 <./bhkick/grchombo-convergence5.pdf> <./bhkick/lean-convergence4.p
 df>]
-<bhkick/grchombo-lean-comparison3.pdf, id=4604, 357.335pt x 350.30875pt>
+<bhkick/grchombo-lean-comparison3.pdf, id=4675, 357.335pt x 350.30875pt>
 File: bhkick/grchombo-lean-comparison3.pdf Graphic file (type pdf)
 <use bhkick/grchombo-lean-comparison3.pdf>
 Package pdftex.def Info: bhkick/grchombo-lean-comparison3.pdf  used on input li
@@ -2005,10 +2100,10 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: BDDC9515C99DFB089ED0059612AE4005;21107.
  ) 
 Here is how much of TeX's memory you used:
- 33177 strings out of 478268
- 610286 string characters out of 5846347
- 1039549 words of memory out of 5000000
- 49066 multiletter control sequences out of 15000+600000
+ 33955 strings out of 478268
+ 624384 string characters out of 5846347
+ 1052980 words of memory out of 5000000
+ 49820 multiletter control sequences out of 15000+600000
  587414 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,20n,92p,1904b,761s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2051,10 +2146,10 @@ m/lmsy9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pf
 b></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt9.pfb></usr/loc
 al/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr
 /local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (178 pages, 7224209 bytes).
+Output written on thesis.pdf (179 pages, 7362152 bytes).
 PDF statistics:
- 5242 PDF objects out of 6186 (max. 8388607)
- 4391 compressed objects within 44 object streams
+ 5314 PDF objects out of 6186 (max. 8388607)
+ 4436 compressed objects within 45 object streams
  1599 named destinations out of 1728 (max. 500000)
- 1210 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1230 words of extra memory for PDF output out of 10000 (max. 10000000)
 
