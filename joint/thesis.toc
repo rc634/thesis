@@ -127,7 +127,7 @@
 \contentsline {subsection}{\numberline {6.1.3}The Merger Remnant}{121}{subsection.6.1.3}%
 \contentsline {subsection}{\numberline {6.1.4}Gravitational Wave Signal}{123}{subsection.6.1.4}%
 \contentsline {subsection}{\numberline {6.1.5}Conclusion}{126}{subsection.6.1.5}%
-\contentsline {subsection}{\numberline {6.1.6}Angular Momentum Measure}{127}{subsection.6.1.6}%
+\contentsline {subsection}{\numberline {6.1.6}Angular Momentum Measure}{128}{subsection.6.1.6}%
 \contentsline {subsection}{\numberline {6.1.7}Numerical Accuracy}{130}{subsection.6.1.7}%
 \contentsline {chapter}{\numberline {7}Anomalies in the Gravitational Recoil of Eccentric Black-Hole Mergers with Unequal Mass Ratios}{131}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Introduction}{132}{section.7.1}%

@@ -80,39 +80,137 @@
 \author{Robin Croft}
 %\date{}
 \begin{document}
+
+
+
+% \begin{titlepage}
+% \pagenumbering{gobble}
+%   \centering
+
+%   \centering
+%   {\scshape\LARGE Cambridge University \par}
+%   \vspace{1cm}
+%   {\scshape\Large Doctoral Thesis \par}
+%     \vspace{2cm}
+%     \hrule
+%     \vspace{0.3cm}
+%   {\Large\itshape \par}
+%   {\huge\bfseries Numerical Modelling of the Dynamics and Gravitational Radiation of Compact Binaries in General Relativity\par} \vspace{0.3cm}
+%   \hrule
+
+% \vfill
+
+%     \begin{figure}[h!]
+%   \centering
+%   \subfloat{\includegraphics[width=0.35\textwidth]{png/camlogo.png}\label{fig:f1}}
+% \end{figure}
+
+
+%   \vfill
+%    {\Large
+%    {\bfseries Robin Croft}
+
+%   Supervisor: Dr. Ulrich Sperhake
+
+%   Darwin College
+
+%   October 2022}
+% \vfill {\Large
+% This thesis is submitted for the degree of {\it Doctor of Philosophy}}
+%   \vfill
+
+% %     \begin{figure}[h!]
+% %   \centering
+% %   \subfloat{\includegraphics[width=0.25\textwidth]{png/uni_logo.png}\label{fig:f1}}
+% % \end{figure}
+
+
+% % Bottom of the page
+%  % {\large \today\par}
+% \end{titlepage}						% Activate to display a given date or no date
+
+
+
+
+
+
+
 \begin{titlepage}
 \pagenumbering{gobble}
   \centering
 
   \centering
-  {\scshape\LARGE Cambridge University \par}
-  \vspace{1cm}
-  {\scshape\Large Doctoral Thesis \par}
-    \vspace{2cm}
-    \hrule
-    \vspace{0.3cm}
-  {\Large\itshape \par}
+  
   {\huge\bfseries Numerical Modelling of the Dynamics and Gravitational Radiation of Compact Binaries in General Relativity\par} \vspace{0.3cm}
-  \hrule
-  \vfill
-   Author: Robin Croft
+ 
+
 \vfill
-  Supervisor: Dr. Ulrich Sperhake
-  \vfill
 
     \begin{figure}[h!]
   \centering
-  \subfloat{\includegraphics[width=0.25\textwidth]{png/uni_logo.png}\label{fig:f1}}
+  \subfloat{\includegraphics[width=0.35\textwidth]{png/camlogo.png}\label{fig:f1}}
 \end{figure}
+
+
+  \vfill
+   {\Large
+   {\bfseries \LARGE Robin Croft}\vspace{0.2cm}
+
+  Supervisor: Dr. Ulrich Sperhake
+  \vspace{-0.2cm}
+
+  Darwin College
+
+  University of Cambridge}
+\vfill {\Large
+This thesis is submitted for the degree of 
+
+{\it Doctor of Philosophy}}
+  \vfill
+
+  {\Large October 2022}
+
+%     \begin{figure}[h!]
+%   \centering
+%   \subfloat{\includegraphics[width=0.25\textwidth]{png/uni_logo.png}\label{fig:f1}}
+% \end{figure}
 
 
 % Bottom of the page
  % {\large \today\par}
-\end{titlepage}						% Activate to display a given date or no date
+\end{titlepage}           % Activate to display a given date or no date
 
 
-\abstract
+
+
+
+
+
+
+
+
 \vspace{2cm}
+
+\begin{center}{\LARGE \bfseries{Declaration}}\end{center}
+
+\vspace{2cm}
+
+This thesis is the result of my own work and includes nothing which is the outcome of work done in collaboration except as declared in the Preface and specified in the text. I further state that no substantial part of my thesis has already been submitted, or, is being concurrently submitted for any such degree, diploma or other qualification at the University of Cambridge or any other University or similar institution except as declared in the Preface and specified in the text. It does not exceed the prescribed word limit for the relevant Degree Committee. 
+
+\vspace{2cm}
+
+\rightline{Robin Croft}
+
+\rightline{October 2022}
+
+\newpage
+
+{\Huge \centering \bfseries Abstract \par} 
+
+\vspace{2cm}
+
+{\large \bfseries Numerical Modelling of the Dynamics and Gravitational Radiation of Compact Binaries in General Relativity \par} \vspace{1cm}
+
 General relativity (GR), published in 1915 by Albert Einstein, is the modern description of gravity. GR poses that gravitational physics should be described by matter fields existing in a curved space described by differential geometry. The Newtonian gravitational force is viewed as a fictitious force arising from curvature; on the flipside, matter and energy tell space how to curve as described by Einstein's equation. GR can explain a plethora of gravitational phenomena that are beyond the scope of the traditional Newtonian theory of gravity. Some examples of these phenomena are gravitational time dilation, inspiralling and precessing orbits, gravitational waves, inflation and the big bang. Other examples are self gravitating compact objects such as black holes (BH) and the precise modelling neutron stars (NS). The gravitational waves from the inspirals and collisions of BHs and NSs can be measured by large interferometer experiments such as the Laser Interferometer Gravitational-Wave Observatory (LIGO) which lead to the 2017 Nobel prize in physics.
 
 This thesis is concerned with the modelling of collisions of compact objects using numerical relativity (NR) and developing diagnostics for these simulations. The code used for the simulations is GRChombo, a modern NR code with adaptive mesh refinement (AMR) that supports both the BSSN and CCZ4 formulations. The compact objects modelled are black holes and boson stars.
@@ -126,6 +224,12 @@ Conservation laws have many applications in numerical relativity. However, it is
 The previous innovations for the binary initial data, which significantly reduce spurious initial excitations of the scalar field profiles, as well as a measure for the angular momentum are used to study the long-lived post-merger gravitational wave signature of a boson-star binary coalescence. We use full numerical relativity to simulate the post-merger and track the gravitational afterglow over an extended period of time. We find the afterglow to last much longer than the spin-down timescale. This prolonged gravitational wave afterglow provides a characteristic signal that may distinguish it from other astrophysical sources.
 
 Finally, we investigate the impact of nonzero eccentricity on the kick magnitude and gravitational-wave emission of non-spinning, unequal-mass black-hole binaries. Here "kick" refers to the radiation of linear momentum to the centre of mass of a merging black-hole binary system. Recent numerical relativity calculations have shown that eccentricity can lead to an approximate 25 percent increase in recoil velocities for equal-mass, spinning binaries with spins lying in the orbital plane; these are “superkick” configurations. We confirm that nonzero eccentricities at merger can lead to kicks which are larger by up to approximately 25 percent relative to the quasicircular case for non-spinning, unequal-mass black-hole binaries. We also find that the kick velocity has an oscillatory dependence on eccentricity, which we interpret as a consequence of changes in the angle between the infall direction at merger and the apoapsis (or periapsis) direction.
+
+\vspace{2cm}
+
+\rightline{\large Robin Croft}
+
+\rightline{\large October 2022}
 
 
 \newpage
